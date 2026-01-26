@@ -3,75 +3,239 @@ import Layout from '../layouts/Layout.astro';
 import questions from '../data/questions.json';
 ---
 
-<Layout title="Leben in Deutschland Test - All Questions">
-	<main class="container mx-auto px-4 py-12">
-		<div class="text-center mb-12">
-			<h1 class="text-4xl font-bold mb-4">Leben in Deutschland</h1>
-			<p class="text-gray-600 max-w-2xl mx-auto">
-				Prepare for your citizenship test with our comprehensive question bank. 
-				Browse all {questions.length} questions below.
+<Layout title="Leben in Deutschland - Master the Exam">
+	<!-- Navigation -->
+	<nav class="container mx-auto px-4 py-6 flex items-center justify-between relative z-10">
+		<div class="flex items-center gap-3">
+			<div class="w-10 h-10 bg-yellow-400 rounded-lg flex items-center justify-center text-2xl shadow-lg">🇩🇪</div>
+			<span class="font-bold text-xl text-gray-900">Leben in Deutschland</span>
+		</div>
+		<div class="flex gap-6 text-sm font-medium text-gray-600">
+			<a href="/impressum" class="hover:text-blue-600 transition-colors">Impressum</a>
+			<a href="/datenschutz" class="hover:text-blue-600 transition-colors">Privacy</a>
+		</div>
+	</nav>
+
+	<main>
+		<!-- HERO SECTION -->
+		<div class="container mx-auto px-4 py-16 lg:py-24 text-center">
+			<div class="inline-flex items-center gap-2 bg-yellow-50 border border-yellow-200 px-4 py-1.5 rounded-full mb-8">
+				<span class="text-xs font-semibold uppercase tracking-wider text-yellow-800">App Store</span>
+				<div class="flex text-yellow-500 text-sm">★★★★★</div>
+				<span class="text-xs font-bold text-gray-900">5.0</span>
+			</div>
+			
+			<h1 class="text-5xl lg:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-600 mb-6 tracking-tight">
+				Leben in Deutschland
+			</h1>
+			
+			<p class="text-xl text-gray-600 max-w-2xl mx-auto mb-10 leading-relaxed">
+				Get access to all <b>300 official questions</b> and <b>10 state-specific questions</b>. 
+				Study smarter and boost your chances of success with the most up-to-date content!
 			</p>
-		</div>
 
-		<!-- State Links -->
-		<div class="mb-12">
-			<h2 class="text-xl font-semibold mb-4 text-center">Federal States</h2>
-			<div class="flex flex-wrap justify-center gap-3">
-				{[
-					'Baden-Württemberg', 'Bayern', 'Berlin', 'Brandenburg', 'Bremen', 
-					'Hamburg', 'Hessen', 'Mecklenburg-Vorpommern', 'Niedersachsen', 
-					'Nordrhein-Westfalen', 'Rheinland-Pfalz', 'Saarland', 'Sachsen', 
-					'Sachsen-Anhalt', 'Schleswig-Holstein', 'Thüringen'
-				].map(state => {
-					const slug = state.toLowerCase()
-						.replace(/ü/g, 'ue')
-						.replace(/ö/g, 'oe')
-						.replace(/ä/g, 'ae')
-						.replace(/ß/g, 'ss')
-						.replace(/\s+/g, '-');
-					return (
-						<a href={`/${slug}-fragen`} class="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm hover:border-blue-500 hover:text-blue-600 transition-colors">
-							{state}
-						</a>
-					);
-				})}
-			</div>
-		</div>
-
-		<!-- Search & Filter Section -->
-		<div class="max-w-xl mx-auto mb-10">
-			<div class="relative">
-				<input 
-					type="text" 
-					id="searchInput"
-					placeholder="Search for questions..." 
-					class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all shadow-sm"
-				/>
-				<svg class="w-5 h-5 text-gray-400 absolute right-3 top-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-				</svg>
-			</div>
-		</div>
-
-		<div id="questionsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-			{questions.map((q) => (
-				<a href={`/frage/${q.id}`} class="question-card block group" data-question={q.q_de.toLowerCase()} data-id={q.id}>
-					<div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow h-full flex flex-col">
-						<div class="flex items-center justify-between mb-3">
-							<span class="text-sm font-medium text-blue-600 bg-blue-50 px-2 py-1 rounded">Question {q.id}</span>
-							<span class="text-xs text-gray-500 bg-gray-100 px-2 py-1 rounded">{q.area}</span>
-						</div>
-						<h2 class="text-lg font-semibold text-gray-900 group-hover:text-blue-600 transition-colors line-clamp-3">
-							{q.q_de}
-						</h2>
+			<div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-20">
+				<a href="#" class="bg-black text-white px-8 py-4 rounded-xl flex items-center gap-3 hover:bg-gray-800 transition-all transform hover:scale-105 shadow-xl">
+					<svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor"><path d="M17.65 1.48a6.3 6.3 0 00-1.57 5.06 6.3 6.3 0 005.17 1.47 6.28 6.28 0 001.5-5A6.35 6.35 0 0017.65 1.48zm-2.02 6.06c-3.14 0-5.74-1.78-5.74-4.83 0-4.04 3.7-6.04 6.9-6.04 1.13 0 2.27.27 3.3.8-.46.33-1.07.72-1.37.95-1.92-1.12-4.18-1.07-5.9.36-1.52 1.26-1.99 3.12-1.14 4.88.54 1.12 1.5 2.5 3.96 3.88zM18.8 24c-1.2 0-2.38-.63-3.47-1.42-.9.66-2.03 1.42-3.3 1.42C5.9 24 0 18.03 0 10.7 0 5.4 3.4 1.63 7.85 1.63c1.7 0 3.08.7 3.96 1.43.94-.78 2.5-1.43 4.2-1.43 2.13 0 4.14.86 5.6 2.4-5.22 2.76-4.5 9.77.83 12.03-.84 2.58-2.67 5.75-4.55 7.94h.9z"/></svg>
+					<div class="text-left">
+						<div class="text-[10px] font-medium opacity-80 uppercase">Download on the</div>
+						<div class="text-sm font-bold leading-none">App Store</div>
 					</div>
 				</a>
-			))}
+				<a href="#" class="bg-black text-white px-8 py-4 rounded-xl flex items-center gap-3 hover:bg-gray-800 transition-all transform hover:scale-105 shadow-xl">
+					<svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor"><path d="M3.6 21.6l12.9-7.2-12.9-7.2v14.4zm1.2-16.7l12.8 7.1-1.3.7-11.5-6.4v-1.4zm15.7 8.5l-1.9-1.1-13.8-7.7c-.5-.3-1.1-.3-1.6 0-.5.3-.8.8-.8 1.4v12c0 .6.3 1.1.8 1.4.2.1.5.2.8.2.3 0 .6-.1.8-.2l13.8-7.7c.5-.3.8-.8.8-1.4 0-.5-.3-1.1-.8-1.3z"/></svg>
+					<div class="text-left">
+						<div class="text-[10px] font-medium opacity-80 uppercase">Get it on</div>
+						<div class="text-sm font-bold leading-none">Google Play</div>
+					</div>
+				</a>
+			</div>
+
+			<!-- Phone Mockup Placeholder -->
+			<div class="relative max-w-4xl mx-auto mb-32">
+				<div class="absolute inset-0 bg-gradient-to-t from-[#FFFBF4] to-transparent z-10 h-32 bottom-0 w-full"></div>
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-end px-4">
+					<div class="hidden md:block transform translate-y-12 opacity-80">
+						<div class="bg-gray-900 rounded-[2rem] p-3 aspect-[9/19] shadow-2xl border-4 border-gray-800 bg-opacity-90 backdrop-blur">
+							<!-- Screen Content Placeholder -->
+							<div class="bg-purple-100 w-full h-full rounded-[1.5rem] flex items-center justify-center overflow-hidden">
+								<div class="text-center p-4">
+									<div class="w-16 h-16 bg-purple-200 rounded-full mx-auto mb-4 animate-pulse"></div>
+									<div class="h-2 bg-purple-200 rounded w-20 mx-auto mb-2"></div>
+									<div class="h-2 bg-purple-200 rounded w-16 mx-auto"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="transform hover:scale-105 transition-transform duration-500 z-20">
+						<div class="bg-gray-900 rounded-[2.5rem] p-3 aspect-[9/19] shadow-2xl border-8 border-gray-800">
+							<div class="bg-white w-full h-full rounded-[2rem] overflow-hidden flex flex-col relative">
+								<!-- Header -->
+								<div class="bg-purple-600 h-32 p-6 text-white text-left">
+									<div class="text-sm opacity-80 mb-1">Willkommen Alex!</div>
+									<div class="text-xl font-bold">Startseite</div>
+								</div>
+								<!-- Grid -->
+								<div class="p-4 grid grid-cols-2 gap-3 mt-4">
+									{[1,2,3,4].map(i => (
+										<div class="bg-purple-50 rounded-xl aspect-square flex flex-col items-center justify-center shadow-sm">
+											<div class="w-10 h-10 bg-purple-100 rounded-full mb-2"></div>
+											<div class="h-2 bg-purple-200 rounded w-12"></div>
+										</div>
+									))}
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="hidden md:block transform translate-y-12 opacity-80">
+						<div class="bg-gray-900 rounded-[2rem] p-3 aspect-[9/19] shadow-2xl border-4 border-gray-800 bg-opacity-90 backdrop-blur">
+							<div class="bg-indigo-50 w-full h-full rounded-[1.5rem] flex items-center justify-center">
+								<div class="p-6 w-full">
+									<div class="h-32 bg-indigo-100 rounded-xl mb-4 w-full"></div>
+									<div class="space-y-2">
+										<div class="h-10 bg-white rounded-lg w-full shadow-sm"></div>
+										<div class="h-10 bg-indigo-200 rounded-lg w-full shadow-sm"></div>
+										<div class="h-10 bg-white rounded-lg w-full shadow-sm"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-		
-		<div id="noResults" class="hidden text-center py-12 text-gray-500">
-			<p class="text-lg">No questions found matching your search.</p>
+
+		<!-- FEATURES SECTION -->
+		<div class="bg-white py-24">
+			<div class="container mx-auto px-4 text-center">
+				<div class="bg-black text-white text-xs font-bold px-4 py-2 rounded-full inline-block mb-6 uppercase tracking-widest">How It Works</div>
+				<h2 class="text-4xl font-bold text-gray-900 mb-16 max-w-2xl mx-auto">3 modes to master the exam: Learn, Practice, and Exam</h2>
+				
+				<div class="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto items-center">
+					<div class="bg-[#FFFBF4] rounded-3xl p-10 h-full flex flex-col items-center">
+						<h3 class="text-2xl font-bold mb-4">Learn Mode</h3>
+						<p class="text-gray-600 mb-8">Explore all questions with correct answers shown instantly to build your knowledge.</p>
+						<div class="bg-gray-900 rounded-[2rem] p-2 w-48 shadow-xl rotate-[-2deg]">
+							<div class="bg-purple-50 rounded-[1.8rem] h-80 w-full"></div>
+						</div>
+					</div>
+					<div class="bg-[#FFFBF4] rounded-3xl p-10 h-full flex flex-col items-center">
+						<h3 class="text-2xl font-bold mb-4">Practice Mode</h3>
+						<p class="text-gray-600 mb-8">Test yourself without seeing the answers to focus on your recall and understanding.</p>
+						<div class="bg-gray-900 rounded-[2rem] p-2 w-48 shadow-xl rotate-[2deg]">
+							<div class="bg-green-50 rounded-[1.8rem] h-80 w-full"></div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
+
+		<!-- TESTIMONIALS -->
+		<div class="py-24 bg-[#FFFBF4]">
+			<div class="container mx-auto px-4 text-center">
+				<h2 class="text-3xl font-bold mb-12">Trusted by 10,000+ members<br/>all over the world.</h2>
+				<div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto text-left">
+					{[
+						{ text: "This app has been a game-changer for my daily routine. The guided structure is effective.", name: "Emily R." },
+						{ text: "I've tried several apps, but this one stands out because of its focus on clarity. Highly recommended!", name: "Sara Lewis" },
+						{ text: "The variety of modes keeps me coming back every day. I appreciate the focus on both mind and body.", name: "Alex P." }
+					].map((t, i) => (
+						<div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+							<p class="text-gray-600 mb-6 leading-relaxed">"{t.text}"</p>
+							<div class="flex items-center gap-3">
+								<div class="w-10 h-10 bg-gray-200 rounded-full"></div>
+								<span class="font-bold text-gray-900">{t.name}</span>
+							</div>
+						</div>
+					))}
+				</div>
+			</div>
+		</div>
+
+		<!-- WEB UTILITY SECTION (Search & State Links) -->
+		<div class="bg-white py-24 border-t border-gray-100">
+			<div class="container mx-auto px-4">
+				<div class="text-center mb-16">
+					<h2 class="text-3xl font-bold mb-4">Try it on the Web</h2>
+					<p class="text-gray-600">You can also browse all {questions.length} questions directly here.</p>
+				</div>
+				
+				<!-- State Links -->
+				<div class="mb-12">
+					<h3 class="text-sm font-semibold mb-4 text-center uppercase tracking-wider text-gray-400">Select Federal State</h3>
+					<div class="flex flex-wrap justify-center gap-2">
+						{[
+							'Baden-Württemberg', 'Bayern', 'Berlin', 'Brandenburg', 'Bremen', 
+							'Hamburg', 'Hessen', 'Mecklenburg-Vorpommern', 'Niedersachsen', 
+							'Nordrhein-Westfalen', 'Rheinland-Pfalz', 'Saarland', 'Sachsen', 
+							'Sachsen-Anhalt', 'Schleswig-Holstein', 'Thüringen'
+						].map(state => {
+							const slug = state.toLowerCase()
+								.replace(/ü/g, 'ue')
+								.replace(/ö/g, 'oe')
+								.replace(/ä/g, 'ae')
+								.replace(/ß/g, 'ss')
+								.replace(/\s+/g, '-');
+							return (
+								<a href={`/${slug}-fragen`} class="px-3 py-1.5 bg-gray-50 border border-gray-200 rounded-lg text-xs font-medium hover:border-blue-500 hover:text-blue-600 transition-colors">
+									{state}
+								</a>
+							);
+						})}
+					</div>
+				</div>
+
+				<!-- Search & Filter Section -->
+				<div class="max-w-xl mx-auto mb-10">
+					<div class="relative">
+						<input 
+							type="text" 
+							id="searchInput"
+							placeholder="Search for questions (Type ID or Text)..." 
+							class="w-full px-5 py-4 rounded-xl border border-gray-200 bg-gray-50 focus:bg-white focus:ring-2 focus:ring-black focus:border-black outline-none transition-all shadow-sm text-lg"
+						/>
+						<svg class="w-6 h-6 text-gray-400 absolute right-4 top-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+						</svg>
+					</div>
+				</div>
+
+				<div id="questionsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
+					{questions.map((q) => (
+						<a href={`/frage/${q.id}`} class="question-card block group" data-question={q.q_de.toLowerCase()} data-id={q.id}>
+							<div class="bg-white p-5 rounded-xl border border-gray-100 hover:border-blue-500 hover:shadow-lg transition-all h-full flex flex-col group-hover:-translate-y-1">
+								<div class="flex items-center justify-between mb-3">
+									<span class="text-xs font-bold text-blue-600 bg-blue-50 px-2.5 py-1 rounded-md">#{q.id}</span>
+									<span class="text-[10px] font-semibold text-gray-500 uppercase tracking-wide bg-gray-50 px-2 py-1 rounded">{q.area}</span>
+								</div>
+								<h2 class="text-base font-medium text-gray-900 group-hover:text-blue-600 transition-colors line-clamp-3 leading-relaxed">
+									{q.q_de}
+								</h2>
+							</div>
+						</a>
+					))}
+				</div>
+				
+				<div id="noResults" class="hidden text-center py-20 text-gray-400">
+					<p class="text-xl font-medium">No results found.</p>
+					<p class="text-sm">Try searching for a different keyword or question ID.</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- FOOTER -->
+		<footer class="bg-white border-t border-gray-100 py-12">
+			<div class="container mx-auto px-4 text-center">
+				<div class="flex flex-col md:flex-row justify-center items-center gap-8 text-sm text-gray-500 mb-8">
+					<a href="#" class="hover:text-black transition-colors">How it Works</a>
+					<a href="#" class="hover:text-black transition-colors">Download</a>
+					<a href="/impressum" class="hover:text-black transition-colors">Terms of Service</a>
+					<a href="/datenschutz" class="hover:text-black transition-colors">Privacy Policy</a>
+					<a href="#" class="hover:text-black transition-colors">Support</a>
+				</div>
+				<p class="text-xs text-gray-400">&copy; {new Date().getFullYear()} Leben in Deutschland. All rights reserved.</p>
+			</div>
+		</footer>
 
 	</main>
 </Layout>
