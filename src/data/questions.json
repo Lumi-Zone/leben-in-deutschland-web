@@ -1,0 +1,59 @@
+[
+  {
+    "id": 1,
+    "question_de": "Wer wählt den Bundeskanzler / die Bundeskanzlerin in Deutschland?",
+    "options": [
+      "Der Bundesrat",
+      "Die Bundesversammlung",
+      "Das Volk",
+      "Der Bundestag"
+    ],
+    "correct_index": 3,
+    "translations": {
+      "tr": "Almanya'da Şansölye'yi kim seçer?",
+      "ar": "من ينتخب المستشار في ألمانيا؟",
+      "en": "Who elects the Chancellor in Germany?"
+    },
+    "stats": {
+      "wrong_percentage": 45
+    }
+  },
+  {
+    "id": 2,
+    "question_de": "Welche Pflicht gilt für Eltern in Deutschland?",
+    "options": [
+      "Schulpflicht für Kinder",
+      "Haushaltshilfe bezahlen",
+      "Studium finanzieren",
+      "Religionsunterricht"
+    ],
+    "correct_index": 0,
+    "translations": {
+      "tr": "Almanya'da ebeveynler için hangi zorunluluk geçerlidir?",
+      "ar": "ما هو الواجب الذي ينطبق على الوالدين في ألمانيا؟",
+      "en": "What duty applies to parents in Germany?"
+    },
+    "stats": {
+      "wrong_percentage": 12
+    }
+  },
+  {
+    "id": 3,
+    "question_de": "Was ist Deutschland?",
+    "options": [
+      "Eine Monarchie",
+      "Eine Diktatur",
+      "Ein demokratischer und sozialer Bundesstaat",
+      "Ein Fürstentum"
+    ],
+    "correct_index": 2,
+    "translations": {
+      "tr": "Almanya nedir?",
+      "ar": "ما هي ألمانيا؟",
+      "en": "What is Germany?"
+    },
+    "stats": {
+      "wrong_percentage": 5
+    }
+  }
+]

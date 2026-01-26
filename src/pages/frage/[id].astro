@@ -1,0 +1,59 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import QuestionCard from '../../components/QuestionCard';
+import questions from '../../data/questions.json';
+
+export function getStaticPaths() {
+  return questions.map((q) => ({
+    params: { id: q.id.toString() },
+    props: { question: q },
+  }));
+}
+
+const { question } = Astro.props;
+
+// Schema.org JSON-LD
+const schema = {
+  "@context": "https://schema.org/",
+  "@type": "Quiz",
+  "name": `Leben in Deutschland Frage ${question.id}`,
+  "mainEntity": {
+    "@type": "Question",
+    "name": question.question_de,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": question.options[question.correct_index]
+    },
+    "suggestedAnswer": question.options.map((opt, idx) => ({
+      "@type": "Answer",
+      "text": opt,
+      "position": idx
+    }))
+  }
+};
+---
+
+<Layout title={`Frage ${question.id}: ${question.question_de}`}>
+  <main class="container mx-auto px-4 py-8 min-h-screen bg-gray-50 flex flex-col items-center justify-center">
+    
+    <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+
+    <div class="w-full mb-8 text-center">
+      <a href="/" class="text-blue-600 hover:text-blue-800 font-medium">← Back to Overview</a>
+    </div>
+
+    <QuestionCard 
+      client:load 
+      id={question.id} 
+      question={question.question_de}
+      options={question.options}
+      correctIndex={question.correct_index}
+      translations={question.translations}
+      stats={{ wrongPercentage: question.stats.wrong_percentage }}
+    />
+    
+    <div class="mt-12 text-center text-gray-400 text-sm">
+      <p>Leben in Deutschland &copy; {new Date().getFullYear()}</p>
+    </div>
+  </main>
+</Layout>
