@@ -10,9 +10,10 @@ import questions from '../data/questions.json';
 			<div class="w-10 h-10 bg-yellow-400 rounded-lg flex items-center justify-center text-2xl shadow-lg">🇩🇪</div>
 			<span class="font-bold text-xl text-gray-900">Leben in Deutschland</span>
 		</div>
-		<div class="flex gap-6 text-sm font-medium text-gray-600">
-			<a href="/impressum" class="hover:text-blue-600 transition-colors">Impressum</a>
-			<a href="/datenschutz" class="hover:text-blue-600 transition-colors">Privacy</a>
+		<div class="hidden md:flex gap-6 text-sm font-medium text-gray-600">
+			<a href="/terms-of-service" class="hover:text-blue-600 transition-colors">Terms of Service</a>
+			<a href="/datenschutz" class="hover:text-blue-600 transition-colors">Privacy Policy</a>
+			<a href="/subscription-terms" class="hover:text-blue-600 transition-colors">Subscription Terms</a>
 		</div>
 	</nav>
 
@@ -51,33 +52,40 @@ import questions from '../data/questions.json';
 				</a>
 			</div>
 
-			<!-- Phone Mockup Placeholder -->
-			<div class="relative max-w-4xl mx-auto mb-32">
-				<div class="absolute inset-0 bg-gradient-to-t from-[#FFFBF4] to-transparent z-10 h-32 bottom-0 w-full"></div>
-				<div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-end px-4">
-					<div class="hidden md:block transform translate-y-12 opacity-80">
-						<div class="bg-gray-900 rounded-[2rem] p-3 aspect-[9/19] shadow-2xl border-4 border-gray-800 bg-opacity-90 backdrop-blur">
-							<!-- Screen Content Placeholder -->
-							<div class="bg-purple-100 w-full h-full rounded-[1.5rem] flex items-center justify-center overflow-hidden">
-								<div class="text-center p-4">
-									<div class="w-16 h-16 bg-purple-200 rounded-full mx-auto mb-4 animate-pulse"></div>
-									<div class="h-2 bg-purple-200 rounded w-20 mx-auto mb-2"></div>
-									<div class="h-2 bg-purple-200 rounded w-16 mx-auto"></div>
+			<!-- Phone Mockup Carousel -->
+			<div class="relative max-w-6xl mx-auto mb-32 overflow-hidden">
+				<!-- Fade Gradients -->
+				<div class="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-white to-transparent z-20 pointer-events-none hidden md:block"></div>
+				<div class="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-white to-transparent z-20 pointer-events-none hidden md:block"></div>
+
+				<div class="flex overflow-x-auto snap-x snap-mandatory pb-12 gap-8 px-4 md:justify-center no-scrollbar" style="scrollbar-width: none; -ms-overflow-style: none;">
+					
+					<!-- Card 1: Statistics -->
+					<div class="snap-center shrink-0 transform transition-transform duration-500 hover:scale-105">
+						<div class="bg-gray-900 rounded-[2rem] p-3 w-[280px] h-[580px] shadow-2xl border-4 border-gray-800 bg-opacity-90 backdrop-blur">
+							<div class="bg-purple-100 w-full h-full rounded-[1.5rem] flex flex-col overflow-hidden">
+								<div class="bg-purple-200 h-12 flex items-center justify-center font-bold text-purple-800 text-sm">Statistik</div>
+								<div class="p-6 flex-1 flex flex-col items-center justify-center space-y-4">
+									<div class="w-32 h-32 rounded-full border-[12px] border-purple-300 border-t-purple-600 rotation-45"></div>
+									<div class="w-full space-y-2">
+										<div class="h-2 bg-purple-200 rounded w-3/4 mx-auto"></div>
+										<div class="h-2 bg-purple-200 rounded w-1/2 mx-auto"></div>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="transform hover:scale-105 transition-transform duration-500 z-20">
-						<div class="bg-gray-900 rounded-[2.5rem] p-3 aspect-[9/19] shadow-2xl border-8 border-gray-800">
+
+					<!-- Card 2: Main Home (Center) -->
+					<div class="snap-center shrink-0 transform transition-transform duration-500 scale-105 z-10">
+						<div class="bg-gray-900 rounded-[2.5rem] p-3 w-[300px] h-[620px] shadow-2xl border-8 border-gray-800">
 							<div class="bg-white w-full h-full rounded-[2rem] overflow-hidden flex flex-col relative">
-								<!-- Header -->
 								<div class="bg-purple-600 h-32 p-6 text-white text-left">
 									<div class="text-sm opacity-80 mb-1">Willkommen Alex!</div>
 									<div class="text-xl font-bold">Startseite</div>
 								</div>
-								<!-- Grid -->
 								<div class="p-4 grid grid-cols-2 gap-3 mt-4">
-									{[1,2,3,4].map(i => (
+									{[1,2,3,4,5,6].map(_ => (
 										<div class="bg-purple-50 rounded-xl aspect-square flex flex-col items-center justify-center shadow-sm">
 											<div class="w-10 h-10 bg-purple-100 rounded-full mb-2"></div>
 											<div class="h-2 bg-purple-200 rounded w-12"></div>
@@ -87,20 +95,50 @@ import questions from '../data/questions.json';
 							</div>
 						</div>
 					</div>
-					<div class="hidden md:block transform translate-y-12 opacity-80">
-						<div class="bg-gray-900 rounded-[2rem] p-3 aspect-[9/19] shadow-2xl border-4 border-gray-800 bg-opacity-90 backdrop-blur">
-							<div class="bg-indigo-50 w-full h-full rounded-[1.5rem] flex items-center justify-center">
-								<div class="p-6 w-full">
-									<div class="h-32 bg-indigo-100 rounded-xl mb-4 w-full"></div>
+
+					<!-- Card 3: Question View -->
+					<div class="snap-center shrink-0 transform transition-transform duration-500 hover:scale-105">
+						<div class="bg-gray-900 rounded-[2rem] p-3 w-[280px] h-[580px] shadow-2xl border-4 border-gray-800 bg-opacity-90 backdrop-blur">
+							<div class="bg-indigo-50 w-full h-full rounded-[1.5rem] flex flex-col">
+								<div class="p-4 w-full flex-1">
+									<div class="h-2 w-full bg-indigo-200 rounded mb-6"></div>
+									<div class="h-24 bg-indigo-100 rounded-xl mb-4 w-full flex items-center p-4">
+										<div class="text-xs text-indigo-800 font-medium">In Deutschland dürfen Menschen offen...</div>
+									</div>
 									<div class="space-y-2">
-										<div class="h-10 bg-white rounded-lg w-full shadow-sm"></div>
-										<div class="h-10 bg-indigo-200 rounded-lg w-full shadow-sm"></div>
-										<div class="h-10 bg-white rounded-lg w-full shadow-sm"></div>
+										<div class="h-10 bg-white rounded-lg w-full shadow-sm border border-indigo-100"></div>
+										<div class="h-10 bg-indigo-500 rounded-lg w-full shadow-sm"></div>
+										<div class="h-10 bg-white rounded-lg w-full shadow-sm border border-indigo-100"></div>
+										<div class="h-10 bg-white rounded-lg w-full shadow-sm border border-indigo-100"></div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
+
+					<!-- Card 4: Practice Mode -->
+					<div class="snap-center shrink-0 transform transition-transform duration-500 hover:scale-105">
+						<div class="bg-gray-900 rounded-[2rem] p-3 w-[280px] h-[580px] shadow-2xl border-4 border-gray-800 bg-opacity-90 backdrop-blur">
+							<div class="bg-green-50 w-full h-full rounded-[1.5rem] flex flex-col">
+								<div class="bg-green-100 h-12 flex items-center justify-center font-bold text-green-800 text-sm">Üben</div>
+								<div class="p-4 w-full flex-1">
+									<div class="h-20 bg-green-100 rounded-xl mb-4 w-full"></div>
+									<div class="space-y-2">
+										<div class="h-10 bg-green-200 rounded-lg w-full"></div>
+										<div class="h-10 bg-green-200 rounded-lg w-full"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				
+				<!-- Scroll Indicators -->
+				<div class="absolute bottom-4 left-0 right-0 flex justify-center gap-2">
+					<div class="w-2 h-2 rounded-full bg-gray-300"></div>
+					<div class="w-2 h-2 rounded-full bg-gray-800"></div>
+					<div class="w-2 h-2 rounded-full bg-gray-300"></div>
 				</div>
 			</div>
 		</div>
@@ -227,10 +265,9 @@ import questions from '../data/questions.json';
 		<footer class="bg-white border-t border-gray-100 py-12">
 			<div class="container mx-auto px-4 text-center">
 				<div class="flex flex-col md:flex-row justify-center items-center gap-8 text-sm text-gray-500 mb-8">
-					<a href="#" class="hover:text-black transition-colors">How it Works</a>
-					<a href="#" class="hover:text-black transition-colors">Download</a>
-					<a href="/impressum" class="hover:text-black transition-colors">Terms of Service</a>
+					<a href="/terms-of-service" class="hover:text-black transition-colors">Terms of Service</a>
 					<a href="/datenschutz" class="hover:text-black transition-colors">Privacy Policy</a>
+					<a href="/subscription-terms" class="hover:text-black transition-colors">Subscription Terms</a>
 					<a href="#" class="hover:text-black transition-colors">Support</a>
 				</div>
 				<p class="text-xs text-gray-400">&copy; {new Date().getFullYear()} Leben in Deutschland. All rights reserved.</p>
