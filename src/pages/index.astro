@@ -3,27 +3,77 @@ import Layout from '../layouts/Layout.astro';
 import questions from '../data/questions.json';
 ---
 
-<Layout title="Leben in Deutschland Test">
+<Layout title="Leben in Deutschland Test - All Questions">
 	<main class="container mx-auto px-4 py-12">
-		<h1 class="text-4xl font-bold text-center mb-8">Leben in Deutschland</h1>
-		<p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-			Prepare for your citizenship test with our comprehensive question bank.
-		</p>
+		<div class="text-center mb-12">
+			<h1 class="text-4xl font-bold mb-4">Leben in Deutschland</h1>
+			<p class="text-gray-600 max-w-2xl mx-auto">
+				Prepare for your citizenship test with our comprehensive question bank. 
+				Browse all {questions.length} questions below.
+			</p>
+		</div>
 
-		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+		<!-- Search & Filter Section -->
+		<div class="max-w-xl mx-auto mb-10">
+			<div class="relative">
+				<input 
+					type="text" 
+					id="searchInput"
+					placeholder="Search for questions..." 
+					class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all shadow-sm"
+				/>
+				<svg class="w-5 h-5 text-gray-400 absolute right-3 top-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+				</svg>
+			</div>
+		</div>
+
+		<div id="questionsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 			{questions.map((q) => (
-				<a href={`/frage/${q.id}`} class="block group">
-					<div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
-						<div class="flex items-center justify-between mb-2">
-							<span class="text-sm font-medium text-blue-600">Question {q.id}</span>
-							<span class="text-xs text-gray-400">{q.stats.wrong_percentage}% fail rate</span>
+				<a href={`/frage/${q.id}`} class="question-card block group" data-question={q.q_de.toLowerCase()} data-id={q.id}>
+					<div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow h-full flex flex-col">
+						<div class="flex items-center justify-between mb-3">
+							<span class="text-sm font-medium text-blue-600 bg-blue-50 px-2 py-1 rounded">Question {q.id}</span>
+							<span class="text-xs text-gray-500 bg-gray-100 px-2 py-1 rounded">{q.area}</span>
 						</div>
-						<h2 class="text-lg font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
-							{q.question_de}
+						<h2 class="text-lg font-semibold text-gray-900 group-hover:text-blue-600 transition-colors line-clamp-3">
+							{q.q_de}
 						</h2>
 					</div>
 				</a>
 			))}
 		</div>
+		
+		<div id="noResults" class="hidden text-center py-12 text-gray-500">
+			<p class="text-lg">No questions found matching your search.</p>
+		</div>
+
 	</main>
 </Layout>
+
+<script>
+	const searchInput = document.getElementById('searchInput');
+	const cards = document.querySelectorAll('.question-card');
+	const noResults = document.getElementById('noResults');
+
+	searchInput?.addEventListener('input', (e) => {
+		const term = (e.target as HTMLInputElement).value.toLowerCase();
+		let visibleCount = 0;
+
+		cards.forEach((card) => {
+			const text = (card as HTMLElement).dataset.question || '';
+			const id = (card as HTMLElement).dataset.id || '';
+			
+			if (text.includes(term) || id.includes(term)) {
+				(card as HTMLElement).style.display = 'block';
+				visibleCount++;
+			} else {
+				(card as HTMLElement).style.display = 'none';
+			}
+		});
+
+		if (noResults) {
+			noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+		}
+	});
+</script>

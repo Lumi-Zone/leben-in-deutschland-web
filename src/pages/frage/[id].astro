@@ -4,10 +4,34 @@ import QuestionCard from '../../components/QuestionCard';
 import questions from '../../data/questions.json';
 
 export function getStaticPaths() {
-  return questions.map((q) => ({
-    params: { id: q.id.toString() },
-    props: { question: q },
-  }));
+  return questions.map((q) => {
+    // Construct options array from individual fields
+    const options = [q.a1_de, q.a2_de, q.a3_de, q.a4_de];
+    
+    // Determine correct index from solution char 'a' -> 0, 'b' -> 1...
+    const charCode = q.solution.toLowerCase().charCodeAt(0);
+    const correctIndex = charCode - 97; // 'a' is 97
+
+    return {
+      params: { id: q.id.toString() },
+      props: { 
+        question: {
+            ...q,
+            options,
+            correct_index: correctIndex, // Maps 'a'->0, 'b'->1 etc
+            question_de: q.q_de,
+            translations: {
+                tr: q.q_tr,
+                ar: q.q_ar,
+                en: q.q_en
+            },
+            stats: {
+                wrong_percentage: 25 // Placeholder as real validation needed, or use random
+            }
+        } 
+      },
+    };
+  });
 }
 
 const { question } = Astro.props;
