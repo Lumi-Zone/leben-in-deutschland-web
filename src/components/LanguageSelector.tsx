@@ -1,4 +1,5 @@
 import React from 'react';
+import { getLanguageSwitchUrl } from '../utils/navigation';
 
 // Using flagcdn for high-quality, reliable rendering on all OSs (especially Windows where emojis fail)
 const SUPPORTED_LANGUAGES = [
