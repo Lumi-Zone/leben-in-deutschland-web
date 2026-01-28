@@ -64,6 +64,14 @@ export default function QuestionCard({ id, correctIndex, data, prevId, nextId, i
 
     const isCorrect = selected === correctIndex;
 
+    // Helper for base url consistent with Astro config
+    const getPath = (path: string) => {
+        const base = import.meta.env.BASE_URL;
+        const cleanBase = base.endsWith('/') ? base.slice(0, -1) : base;
+        const cleanPath = path.startsWith('/') ? path.slice(1) : path;
+        return `${cleanBase}/${cleanPath}`;
+    };
+
     return (
         <div className="max-w-2xl mx-auto">
             <div className="bg-white rounded-xl shadow-md overflow-hidden p-6 mb-8">
@@ -140,7 +148,7 @@ export default function QuestionCard({ id, correctIndex, data, prevId, nextId, i
             <div className="flex justify-between items-center px-2">
                 {prevId ? (
                     <a
-                        href={`/${currentLang}/frage/${prevId}`}
+                        href={getPath(`${currentLang}/frage/${prevId}`)}
                         className="flex items-center gap-2 px-6 py-3 bg-white border border-gray-200 rounded-xl font-medium text-gray-700 hover:bg-gray-50 hover:border-gray-300 transition-all shadow-sm"
                     >
                         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" /></svg>
@@ -150,7 +158,7 @@ export default function QuestionCard({ id, correctIndex, data, prevId, nextId, i
 
                 {nextId ? (
                     <a
-                        href={`/${currentLang}/frage/${nextId}`}
+                        href={getPath(`${currentLang}/frage/${nextId}`)}
                         className="flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-xl font-medium hover:bg-blue-700 hover:shadow-lg hover:-translate-y-0.5 transition-all shadow-md group"
                     >
                         Nächste
