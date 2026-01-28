@@ -3,8 +3,9 @@ import React from 'react';
 // Helper for base url consistent with Astro config
 const getAsset = (path: string) => {
     const base = import.meta.env.BASE_URL;
-    const p = path.startsWith('/') ? path.slice(1) : path;
-    return `${base}${p}`;
+    const cleanBase = base.endsWith('/') ? base.slice(0, -1) : base;
+    const cleanPath = path.startsWith('/') ? path.slice(1) : path;
+    return `${cleanBase}/${cleanPath}`;
 };
 
 const MOCKUPS = [
