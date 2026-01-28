@@ -13,6 +13,13 @@ export function getStaticPaths() {
 const { lang } = Astro.props;
 const t = useTranslations(lang as any);
 import Header from '../../components/Header.astro';
+
+// Helper for base url
+const getPath = (path: string) => {
+    const base = import.meta.env.BASE_URL;
+    const p = path.startsWith('/') ? path.slice(1) : path;
+    return `${base}${p}`;
+};
 ---
 
 <Layout title={`${t("hero.title")} - Master the Exam`} lang={lang}>
@@ -89,7 +96,7 @@ import Header from '../../components/Header.astro';
                     {questions.slice(0, 6).map((q) => {
                             const qTitle = (q as any)[`q_${lang}`] || q.q_de;
                             return (
-                            <a href={`/${lang}/frage/${q.id}`} class="block group">
+                            <a href={getPath(`${lang}/frage/${q.id}`)} class="block group">
                                 <div class="bg-white p-5 rounded-xl border border-gray-100 hover:border-blue-500 hover:shadow-lg transition-all h-full flex flex-col group-hover:-translate-y-1">
                                     <div class="flex items-center justify-between mb-3">
                                         <span class="text-xs font-bold text-blue-600 bg-blue-50 px-2.5 py-1 rounded-md">#{q.id}</span>
@@ -104,7 +111,7 @@ import Header from '../../components/Header.astro';
                     })}
                 </div>
                     <div class="mt-8">
-                        <a href={`/${lang}/frage/1`} class="text-blue-600 hover:underline font-bold">{t("home.start_quiz")} →</a>
+                        <a href={getPath(`${lang}/frage/1`)} class="text-blue-600 hover:underline font-bold">{t("home.start_quiz")} →</a>
                     </div>
             </div>
         </section>
@@ -113,10 +120,10 @@ import Header from '../../components/Header.astro';
 		<footer class="bg-white border-t border-gray-100 py-12">
 			<div class="container mx-auto px-4 text-center">
 				<div class="flex flex-col md:flex-row justify-center items-center gap-8 text-sm text-gray-500 mb-8">
-					<a href={`/${lang}/terms-of-service`} class="hover:text-black transition-colors">{t("nav.tos")}</a>
-					<a href={`/${lang}/datenschutz`} class="hover:text-black transition-colors">{t("nav.privacy")}</a>
-					<a href={`/${lang}/subscription-terms`} class="hover:text-black transition-colors">{t("nav.subscription")}</a>
-                    <a href={`/${lang}/blog`} class="hover:text-black transition-colors font-semibold text-blue-600">Blog</a>
+					<a href={getPath(`${lang}/terms-of-service`)} class="hover:text-black transition-colors">{t("nav.tos")}</a>
+					<a href={getPath(`${lang}/datenschutz`)} class="hover:text-black transition-colors">{t("nav.privacy")}</a>
+					<a href={getPath(`${lang}/subscription-terms`)} class="hover:text-black transition-colors">{t("nav.subscription")}</a>
+                    <a href={getPath(`${lang}/blog`)} class="hover:text-black transition-colors font-semibold text-blue-600">Blog</a>
 					<a href="#" class="hover:text-black transition-colors">Support</a>
                     <a href="https://x.com/300Fragen" target="_blank" rel="noopener noreferrer" class="hover:text-black transition-colors flex items-center gap-1">
                         <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
@@ -124,22 +131,22 @@ import Header from '../../components/Header.astro';
                     </a>
 				</div>
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-xs text-gray-400 mb-8 pt-8 border-t border-gray-100">
-                    <a href={`/${lang}/baden-wuerttemberg-fragen`} class="hover:text-gray-600 transition-colors">Baden-Württemberg</a>
-                    <a href={`/${lang}/bayern-fragen`} class="hover:text-gray-600 transition-colors">Bayern</a>
-                    <a href={`/${lang}/berlin-fragen`} class="hover:text-gray-600 transition-colors">Berlin</a>
-                    <a href={`/${lang}/brandenburg-fragen`} class="hover:text-gray-600 transition-colors">Brandenburg</a>
-                    <a href={`/${lang}/bremen-fragen`} class="hover:text-gray-600 transition-colors">Bremen</a>
-                    <a href={`/${lang}/hamburg-fragen`} class="hover:text-gray-600 transition-colors">Hamburg</a>
-                    <a href={`/${lang}/hessen-fragen`} class="hover:text-gray-600 transition-colors">Hessen</a>
-                    <a href={`/${lang}/mecklenburg-vorpommern-fragen`} class="hover:text-gray-600 transition-colors">Mecklenburg-Vorpommern</a>
-                    <a href={`/${lang}/niedersachsen-fragen`} class="hover:text-gray-600 transition-colors">Niedersachsen</a>
-                    <a href={`/${lang}/nordrhein-westfalen-fragen`} class="hover:text-gray-600 transition-colors">Nordrhein-Westfalen</a>
-                    <a href={`/${lang}/rheinland-pfalz-fragen`} class="hover:text-gray-600 transition-colors">Rheinland-Pfalz</a>
-                    <a href={`/${lang}/saarland-fragen`} class="hover:text-gray-600 transition-colors">Saarland</a>
-                    <a href={`/${lang}/sachsen-fragen`} class="hover:text-gray-600 transition-colors">Sachsen</a>
-                    <a href={`/${lang}/sachsen-anhalt-fragen`} class="hover:text-gray-600 transition-colors">Sachsen-Anhalt</a>
-                    <a href={`/${lang}/schleswig-holstein-fragen`} class="hover:text-gray-600 transition-colors">Schleswig-Holstein</a>
-                    <a href={`/${lang}/thueringen-fragen`} class="hover:text-gray-600 transition-colors">Thüringen</a>
+                    <a href={getPath(`${lang}/baden-wuerttemberg-fragen`)} class="hover:text-gray-600 transition-colors">Baden-Württemberg</a>
+                    <a href={getPath(`${lang}/bayern-fragen`)} class="hover:text-gray-600 transition-colors">Bayern</a>
+                    <a href={getPath(`${lang}/berlin-fragen`)} class="hover:text-gray-600 transition-colors">Berlin</a>
+                    <a href={getPath(`${lang}/brandenburg-fragen`)} class="hover:text-gray-600 transition-colors">Brandenburg</a>
+                    <a href={getPath(`${lang}/bremen-fragen`)} class="hover:text-gray-600 transition-colors">Bremen</a>
+                    <a href={getPath(`${lang}/hamburg-fragen`)} class="hover:text-gray-600 transition-colors">Hamburg</a>
+                    <a href={getPath(`${lang}/hessen-fragen`)} class="hover:text-gray-600 transition-colors">Hessen</a>
+                    <a href={getPath(`${lang}/mecklenburg-vorpommern-fragen`)} class="hover:text-gray-600 transition-colors">Mecklenburg-Vorpommern</a>
+                    <a href={getPath(`${lang}/niedersachsen-fragen`)} class="hover:text-gray-600 transition-colors">Niedersachsen</a>
+                    <a href={getPath(`${lang}/nordrhein-westfalen-fragen`)} class="hover:text-gray-600 transition-colors">Nordrhein-Westfalen</a>
+                    <a href={getPath(`${lang}/rheinland-pfalz-fragen`)} class="hover:text-gray-600 transition-colors">Rheinland-Pfalz</a>
+                    <a href={getPath(`${lang}/saarland-fragen`)} class="hover:text-gray-600 transition-colors">Saarland</a>
+                    <a href={getPath(`${lang}/sachsen-fragen`)} class="hover:text-gray-600 transition-colors">Sachsen</a>
+                    <a href={getPath(`${lang}/sachsen-anhalt-fragen`)} class="hover:text-gray-600 transition-colors">Sachsen-Anhalt</a>
+                    <a href={getPath(`${lang}/schleswig-holstein-fragen`)} class="hover:text-gray-600 transition-colors">Schleswig-Holstein</a>
+                    <a href={getPath(`${lang}/thueringen-fragen`)} class="hover:text-gray-600 transition-colors">Thüringen</a>
                 </div>
 				<p class="text-xs text-gray-400">&copy; {new Date().getFullYear()} Leben in Deutschland. {t("footer.rights")}</p>
 			</div>

@@ -1,16 +1,23 @@
 import React from 'react';
 
+// Helper for base url consistent with Astro config
+const getAsset = (path: string) => {
+    const base = import.meta.env.BASE_URL;
+    const p = path.startsWith('/') ? path.slice(1) : path;
+    return `${base}${p}`;
+};
+
 const MOCKUPS = [
-    '/mockups/m1.png',
-    '/mockups/m2.png',
-    '/mockups/m3.png',
-    '/mockups/m4.png',
-    '/mockups/m5.png',
-    '/mockups/m6.png',
-    '/mockups/m7.png',
-    '/mockups/m8.png',
-    '/mockups/m9.png',
-    '/mockups/m10.png',
+    getAsset('mockups/m1.png'),
+    getAsset('mockups/m2.png'),
+    getAsset('mockups/m3.png'),
+    getAsset('mockups/m4.png'),
+    getAsset('mockups/m5.png'),
+    getAsset('mockups/m6.png'),
+    getAsset('mockups/m7.png'),
+    getAsset('mockups/m8.png'),
+    getAsset('mockups/m9.png'),
+    getAsset('mockups/m10.png'),
 ];
 
 export default function PhoneSlider() {

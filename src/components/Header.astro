@@ -7,19 +7,25 @@ interface Props {
 
 const { lang } = Astro.props;
 const t = useTranslations(lang as any);
+// Helper to strip leading slash to avoid double slash when prepending base
+const getPath = (path: string) => {
+    const base = import.meta.env.BASE_URL; // usually ends with /
+    const p = path.startsWith('/') ? path.slice(1) : path;
+    return `${base}${p}`;
+};
 ---
 
 <nav class="container mx-auto px-4 py-6 flex items-center justify-between relative z-10">
     <div class="flex items-center gap-4">
-        <a href={`/${lang}/`} class="flex items-center gap-3 group">
-            <img src="/logo.avif" alt="Leben in Deutschland Logo" class="w-12 h-12 object-contain rounded-xl shadow-sm group-hover:scale-105 transition-transform" />
+        <a href={getPath(`${lang}/`)} class="flex items-center gap-3 group">
+            <img src={getPath("logo.avif")} alt="Leben in Deutschland Logo" class="w-12 h-12 object-contain rounded-xl shadow-sm group-hover:scale-105 transition-transform" />
             <span class="font-bold text-xl text-gray-900">{t("nav.home")}</span>
         </a>
     </div>
     <div class="hidden md:flex gap-6 text-sm font-medium text-gray-600">
-        <a href={`/${lang}/faq`} class="hover:text-blue-600 transition-colors">{t("nav.faq")}</a>
-        <a href={`/${lang}/terms-of-service`} class="hover:text-blue-600 transition-colors">{t("nav.tos")}</a>
-        <a href={`/${lang}/datenschutz`} class="hover:text-blue-600 transition-colors">{t("nav.privacy")}</a>
-        <a href={`/${lang}/subscription-terms`} class="hover:text-blue-600 transition-colors">{t("nav.subscription")}</a>
+        <a href={getPath(`${lang}/faq`)} class="hover:text-blue-600 transition-colors">{t("nav.faq")}</a>
+        <a href={getPath(`${lang}/terms-of-service`)} class="hover:text-blue-600 transition-colors">{t("nav.tos")}</a>
+        <a href={getPath(`${lang}/datenschutz`)} class="hover:text-blue-600 transition-colors">{t("nav.privacy")}</a>
+        <a href={getPath(`${lang}/subscription-terms`)} class="hover:text-blue-600 transition-colors">{t("nav.subscription")}</a>
     </div>
 </nav>
