@@ -14,15 +14,30 @@ const { title, lang = 'de', description = "Kostenloses Training für den 'Leben 
 const currentPath = Astro.url.pathname;
 const canonicalURL = new URL(currentPath, Astro.site || 'https://lebenindeutschland.web.app');
 
+// Helper for asset paths
+const asset = (path: string) => {
+    if (path.startsWith('http')) return path;
+    // Remove leading slash if present to avoid double slashes when joining with base
+    const cleanPath = path.startsWith('/') ? path.slice(1) : path;
+    return `${import.meta.env.BASE_URL}${cleanPath}`;
+};
+
 // Generate alternate links for SEO
 const alternates = Object.keys(languages).map(l => {
   let newPath = currentPath;
   const segments = currentPath.split('/').filter(Boolean);
+  
+  // Handle base path logic for alternates if needed, but Astro.url.pathname usually includes base in dev?
+  // Actually simpler: just rely on the structure we have.
+  
   if (segments.length > 0 && segments[0] in languages) {
       segments[0] = l;
       newPath = '/' + segments.join('/');
   }
-  return { lang: l, href: new URL(newPath, Astro.site || 'https://lebenindeutschland.web.app').href };
+  // Ensure newPath doesn't lose the base if it was there? 
+  // For alternate links href, we construct a full URL. 
+  // We'll trust new URL() to handle it effectively or just stick to relative replacement.
+  return { lang: l, href: new URL(newPath, Astro.site || 'https://Lumi-Zone.github.io').href };
 });
 ---
 
@@ -31,7 +46,7 @@ const alternates = Object.keys(languages).map(l => {
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" href="/logo.avif" />
+		<link rel="icon" href={asset("logo.avif")} />
 		<meta name="generator" content={Astro.generator} />
         
         <!-- Primary Meta Tags -->
@@ -45,14 +60,14 @@ const alternates = Object.keys(languages).map(l => {
         <meta property="og:url" content={canonicalURL} />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
-        <meta property="og:image" content={new URL(image, Astro.site || 'https://lebenindeutschland.web.app')} />
+        <meta property="og:image" content={new URL(asset(image), Astro.url)} />
 
         <!-- Twitter -->
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content={canonicalURL} />
         <meta property="twitter:title" content={title} />
         <meta property="twitter:description" content={description} />
-        <meta property="twitter:image" content={new URL(image, Astro.site || 'https://lebenindeutschland.web.app')} />
+        <meta property="twitter:image" content={new URL(asset(image), Astro.url)} />
         
         <!-- Hreflang for Internationalization -->
         {alternates.map(alt => (
