@@ -37,12 +37,15 @@ export function getStaticPaths() {
 }
 
 const { stateName, questions: stateQuestions, lang } = Astro.props;
+import Header from '../../components/Header.astro';
+import { getPath } from '../../utils/navigation';
 ---
 
 <Layout title={`Leben in Deutschland - ${stateName} Fragen`} lang={lang}>
+  <Header lang={lang} />
   <main class="container mx-auto px-4 py-12">
     <div class="mb-8">
-      <a href={`/${lang}/`} class="text-blue-600 hover:text-blue-800 font-medium">← Back to Overview</a>
+      <a href={getPath(`${lang}/`)} class="text-blue-600 hover:text-blue-800 font-medium">← Back to Overview</a>
     </div>
 
     <div class="text-center mb-12">
@@ -57,7 +60,7 @@ const { stateName, questions: stateQuestions, lang } = Astro.props;
          const qAny = q as any;
          const qTitle = qAny[`q_${lang}`] || q.q_de;
          return (
-            <a href={`/${lang}/frage/${q.id}`} class="block group">
+            <a href={getPath(`${lang}/frage/${q.id}`)} class="block group">
             <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow h-full flex flex-col">
                 <div class="flex items-center justify-between mb-3">
                 <span class="text-sm font-medium text-blue-600 bg-blue-50 px-2 py-1 rounded">Question {q.id}</span>

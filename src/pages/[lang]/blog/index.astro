@@ -12,24 +12,16 @@ const { lang } = Astro.props;
 const t = useTranslations(lang as any);
 const posts = await getCollection('blog');
 
+import Header from '../../../components/Header.astro';
+import { getPath } from '../../../utils/navigation';
+
 // Sort by date desc
 const sortedPosts = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 ---
 
 <Layout title="Blog - Leben in Deutschland" lang={lang}>
 	<!-- Navigation -->
-	<nav class="container mx-auto px-4 py-6 flex items-center justify-between relative z-10 bg-white border-b border-gray-100 mb-8">
-		<a href={`/${lang}/`} class="flex items-center gap-3 hover:opacity-80 transition-opacity">
-			<div class="w-10 h-10 bg-yellow-400 rounded-lg flex items-center justify-center text-2xl shadow-lg">🇩🇪</div>
-			<span class="font-bold text-xl text-gray-900">{t("nav.home")}</span>
-		</a>
-		<div class="hidden md:flex gap-6 text-sm font-medium text-gray-600">
-			<a href={`/${lang}/faq`} class="hover:text-blue-600 transition-colors">{t("nav.faq")}</a>
-			<a href={`/${lang}/terms-of-service`} class="hover:text-blue-600 transition-colors">{t("nav.tos")}</a>
-			<a href={`/${lang}/datenschutz`} class="hover:text-blue-600 transition-colors">{t("nav.privacy")}</a>
-			<a href={`/${lang}/subscription-terms`} class="hover:text-blue-600 transition-colors">{t("nav.subscription")}</a>
-		</div>
-	</nav>
+	<Header lang={lang} />
 
   <div class="bg-gray-50 min-h-screen py-12">
     <div class="container mx-auto px-4 max-w-6xl">
@@ -54,7 +46,7 @@ const sortedPosts = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDa
               </div>
               
               <h2 class="text-xl font-bold text-gray-900 mb-3 line-clamp-2">
-                <a href={`/${lang}/blog/${post.slug}`} class="hover:text-blue-600 transition-colors">
+                <a href={getPath(`${lang}/blog/${post.slug}`)} class="hover:text-blue-600 transition-colors">
                   {post.data.title}
                 </a>
               </h2>
@@ -63,7 +55,7 @@ const sortedPosts = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDa
                 {post.data.description}
               </p>
               
-              <a href={`/${lang}/blog/${post.slug}`} class="text-blue-600 font-medium text-sm hover:underline mt-auto inline-flex items-center">
+              <a href={getPath(`${lang}/blog/${post.slug}`)} class="text-blue-600 font-medium text-sm hover:underline mt-auto inline-flex items-center">
                 {t('blog.read_more')} 
                 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
               </a>

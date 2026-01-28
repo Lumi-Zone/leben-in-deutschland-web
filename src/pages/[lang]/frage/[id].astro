@@ -82,15 +82,18 @@ const t = (key: any) => {
 // Re-import useTranslations for the runtime component prop
 import { useTranslations } from '../../../i18n/ui';
 const translate = useTranslations(lang as any);
+import Header from '../../../components/Header.astro';
+import { getPath } from '../../../utils/navigation';
 ---
 
-<Layout title={`Frage ${question.id}: ${currentContent.question}`}>
+<Layout title={`Frage ${question.id}: ${currentContent.question}`} lang={lang}>
+  <Header lang={lang} />
   <main class="container mx-auto px-4 py-8 min-h-screen bg-gray-50 flex flex-col items-center justify-center">
     
     <script type="application/ld+json" set:html={JSON.stringify(schema)} />
 
     <div class="w-full mb-8 text-center">
-      <a href={`/${lang}/`} class="text-blue-600 hover:text-blue-800 font-medium">← Back to Overview</a>
+      <a href={getPath(`${lang}/`)} class="text-blue-600 hover:text-blue-800 font-medium">← Back to Overview</a>
     </div>
 
     <QuestionCard 
