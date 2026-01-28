@@ -1,0 +1,75 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import questions from '../../data/questions.json';
+
+export function getStaticPaths() {
+  const states = [
+    'Baden-Württemberg', 'Bayern', 'Berlin', 'Brandenburg', 'Bremen', 
+    'Hamburg', 'Hessen', 'Mecklenburg-Vorpommern', 'Niedersachsen', 
+    'Nordrhein-Westfalen', 'Rheinland-Pfalz', 'Saarland', 'Sachsen', 
+    'Sachsen-Anhalt', 'Schleswig-Holstein', 'Thüringen'
+  ];
+  
+  const supportedLangs = ['de', 'en', 'tr', 'ar', 'ua', 'ru', 'pl', 'fa', 'ps', 'ro', 'it', 'es'];
+
+  const paths = [];
+
+  supportedLangs.forEach(lang => {
+    states.forEach((state) => {
+        // Slugify state name for URL
+        const slug = state.toLowerCase()
+        .replace(/ü/g, 'ue')
+        .replace(/ö/g, 'oe')
+        .replace(/ä/g, 'ae')
+        .replace(/ß/g, 'ss')
+        .replace(/\s+/g, '-');
+
+        const stateQuestions = questions.filter(q => q.area_code === 'land' && q.thema === state);
+
+        paths.push({
+            params: { lang, state: slug },
+            props: { stateName: state, questions: stateQuestions, lang },
+        });
+    });
+  });
+  
+  return paths;
+}
+
+const { stateName, questions: stateQuestions, lang } = Astro.props;
+---
+
+<Layout title={`Leben in Deutschland - ${stateName} Fragen`} lang={lang}>
+  <main class="container mx-auto px-4 py-12">
+    <div class="mb-8">
+      <a href={`/${lang}/`} class="text-blue-600 hover:text-blue-800 font-medium">← Back to Overview</a>
+    </div>
+
+    <div class="text-center mb-12">
+      <h1 class="text-4xl font-bold mb-4">{stateName} Fragen</h1>
+      <p class="text-gray-600 max-w-2xl mx-auto">
+        Questions for {stateName}
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {stateQuestions.map((q) => {
+         const qAny = q as any;
+         const qTitle = qAny[`q_${lang}`] || q.q_de;
+         return (
+            <a href={`/${lang}/frage/${q.id}`} class="block group">
+            <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow h-full flex flex-col">
+                <div class="flex items-center justify-between mb-3">
+                <span class="text-sm font-medium text-blue-600 bg-blue-50 px-2 py-1 rounded">Question {q.id}</span>
+                <span class="text-xs text-gray-500 bg-gray-100 px-2 py-1 rounded">{stateName}</span>
+                </div>
+                <h2 class="text-lg font-semibold text-gray-900 group-hover:text-blue-600 transition-colors line-clamp-3">
+                {qTitle}
+                </h2>
+            </div>
+            </a>
+         );
+      })}
+    </div>
+  </main>
+</Layout>

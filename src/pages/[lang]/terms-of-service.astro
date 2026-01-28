@@ -1,0 +1,79 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getLegalTranslation } from '../../i18n/legal';
+import { getEntry } from 'astro:content';
+
+export function getStaticPaths() {
+  const supportedLangs = ['de', 'en', 'tr', 'ar', 'ua', 'ru', 'pl', 'fa', 'ps', 'ro', 'it', 'es'];
+  return supportedLangs.map(lang => ({ params: { lang }, props: { lang } }));
+}
+
+const { lang } = Astro.props;
+const t = (key: any) => getLegalTranslation(lang, key);
+
+// Fetch content from collection
+const entry = await getEntry('legal', `terms-${lang}`) || await getEntry('legal', `terms-en`);
+// If absolutely no content found (shouldn't happen if en exists), fallback to empty or error handling
+if (!entry) {
+    throw new Error(`Could not find terms of service content for ${lang} or en fallback`);
+}
+const { Content } = await entry.render();
+import Header from '../../components/Header.astro';
+import ScrollToTop from '../../components/ScrollToTop';
+---
+
+<Layout title={`${t("legal.terms_of_service")} | Leben in Deutschland`} lang={lang}>
+  <Header lang={lang} />
+  <ScrollToTop client:load />
+
+  <main class="container mx-auto px-4 py-12 max-w-7xl">
+
+    <h1 class="text-3xl md:text-4xl font-bold mb-4 uppercase">{t("legal.terms_of_service")}</h1>
+    <p class="text-gray-500 mb-8">{t("legal.last_updated")} {entry.data.lastUpdated}</p>
+    
+    <div class="grid md:grid-cols-[250px_1fr] gap-8 items-start">
+      <!-- Table of Contents -->
+      <aside class="hidden md:block sticky top-8 max-h-[calc(100vh-4rem)] overflow-y-auto pr-4">
+        <h2 class="text-sm font-bold uppercase tracking-wider text-gray-900 mb-4">{t("legal.table_of_contents")}</h2>
+        <nav class="space-y-2 text-sm text-gray-600">
+           <a href="#services" class="block hover:text-blue-600">1. Services</a>
+           <a href="#ip-rights" class="block hover:text-blue-600">2. IP Rights</a>
+           <a href="#user-representations" class="block hover:text-blue-600">3. User Representations</a>
+           <a href="#subscriptions" class="block hover:text-blue-600">4. Subscriptions</a>
+           <a href="#prohibited" class="block hover:text-blue-600">5. Prohibited Activities</a>
+           <a href="#contributions" class="block hover:text-blue-600">6. User Contributions</a>
+           <a href="#contribution-license" class="block hover:text-blue-600">7. Contribution License</a>
+           <a href="#mobile-license" class="block hover:text-blue-600">8. Mobile App License</a>
+           <a href="#advertisers" class="block hover:text-blue-600">9. Advertisers</a>
+           <a href="#services-management" class="block hover:text-blue-600">10. Services Management</a>
+           <a href="#privacy" class="block hover:text-blue-600">11. Privacy Policy</a>
+           <a href="#termination" class="block hover:text-blue-600">12. Term and Termination</a>
+           <a href="#modifications" class="block hover:text-blue-600">13. Modifications</a>
+           <a href="#governing-law" class="block hover:text-blue-600">14. Governing Law</a>
+           <a href="#disputes" class="block hover:text-blue-600">15. Dispute Resolution</a>
+           <a href="#corrections" class="block hover:text-blue-600">16. Corrections</a>
+           <a href="#disclaimer" class="block hover:text-blue-600">17. Disclaimer</a>
+           <a href="#liability" class="block hover:text-blue-600">18. Limitations of Liability</a>
+           <a href="#indemnification" class="block hover:text-blue-600">19. Indemnification</a>
+           <a href="#user-data" class="block hover:text-blue-600">20. User Data</a>
+           <a href="#electronic" class="block hover:text-blue-600">21. Electronic Comms</a>
+           <a href="#california" class="block hover:text-blue-600">22. California Users</a>
+           <a href="#miscellaneous" class="block hover:text-blue-600">23. Miscellaneous</a>
+           <a href="#contact" class="block hover:text-blue-600">24. Contact Us</a>
+        </nav>
+      </aside>
+
+      <!-- Content -->
+      <div class="prose prose-blue max-w-none text-gray-700 prose-headings:font-bold prose-h2:mt-8 prose-h2:mb-4">
+        <Content />
+      </div>
+    </div>
+
+    <div class="mt-20 pt-8 border-t border-gray-200">
+      <a href={`/${lang}/`} class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center gap-2">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+        {t("legal.back_to_home")}
+      </a>
+    </div>
+  </main>
+</Layout>

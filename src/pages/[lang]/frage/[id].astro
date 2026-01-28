@@ -1,0 +1,111 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import QuestionCard from '../../../components/QuestionCard';
+import questions from '../../../data/questions.json';
+
+// Full i18n getStaticPaths
+export function getStaticPaths() {
+  const supportedLangs = ['de', 'en', 'tr', 'ar', 'ua', 'ru', 'pl', 'fa', 'ps', 'ro', 'it', 'es'];
+  
+  // Create flat array of all paths
+  const paths = [];
+  
+  supportedLangs.forEach(lang => {
+    questions.forEach((q, index) => {
+      const charCode = q.solution.toLowerCase().charCodeAt(0);
+      const correctIndex = charCode - 97;
+
+      // Construct translation map
+      const translations: Record<string, { question: string; options: string[] }> = {};
+      supportedLangs.forEach(l => {
+        const qKey = (l === 'de' ? 'q_de' : `q_${l}`) as keyof typeof q;
+        // Cast q to any to allow dynamic access for options as JSON import types are strict
+        const qAny = q as any;
+        const getOpt = (num: number) => qAny[`a${num}_${l}`] || qAny[`a${num}_de`] || "";
+        
+        translations[l] = {
+            question: (q as any)[qKey] || q.q_de || "",
+            options: [getOpt(1), getOpt(2), getOpt(3), getOpt(4)]
+        };
+      });
+
+      const prevId = index > 0 ? questions[index - 1].id : null;
+      const nextId = index < questions.length - 1 ? questions[index + 1].id : null;
+
+      paths.push({
+        params: { lang, id: q.id.toString() },
+        props: { 
+          question: {
+              id: q.id,
+              correct_index: correctIndex,
+              translations,
+              prevId,
+              nextId
+          },
+          lang
+        },
+      });
+    });
+  });
+
+  return paths;
+}
+
+const { question, lang } = Astro.props as { question: any; lang: string };
+
+// Schema.org JSON-LD localizing
+const currentContent = question.translations[lang] || question.translations.de;
+const schema = {
+  "@context": "https://schema.org/",
+  "@type": "Quiz",
+  "name": `Leben in Deutschland Frage ${question.id} (${lang.toUpperCase()})`,
+  "mainEntity": {
+    "@type": "Question",
+    "name": currentContent.question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": currentContent.options[question.correct_index]
+    },
+    "suggestedAnswer": currentContent.options.map((opt, idx) => ({
+      "@type": "Answer",
+      "text": opt,
+      "position": idx
+    }))
+  }
+};
+const t = (key: any) => {
+    // Basic translation helper matching getStaticPaths logic
+    // Ideally we import useTranslations but we are inside getStaticPaths/props scope mostly
+    // Actually we have lang prop here
+    return question.translations[lang]?.[key] || ""; 
+};
+// Re-import useTranslations for the runtime component prop
+import { useTranslations } from '../../../i18n/ui';
+const translate = useTranslations(lang as any);
+---
+
+<Layout title={`Frage ${question.id}: ${currentContent.question}`}>
+  <main class="container mx-auto px-4 py-8 min-h-screen bg-gray-50 flex flex-col items-center justify-center">
+    
+    <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+
+    <div class="w-full mb-8 text-center">
+      <a href={`/${lang}/`} class="text-blue-600 hover:text-blue-800 font-medium">← Back to Overview</a>
+    </div>
+
+    <QuestionCard 
+      client:load 
+      id={question.id} 
+      data={question.translations}
+      correctIndex={question.correct_index}
+      prevId={question.prevId}
+      nextId={question.nextId}
+      initialLang={lang}
+      practiceAppLabel={translate("question.practice_app")}
+    />
+    
+    <div class="mt-12 text-center text-gray-400 text-sm">
+      <p>Leben in Deutschland &copy; {new Date().getFullYear()}</p>
+    </div>
+  </main>
+</Layout>

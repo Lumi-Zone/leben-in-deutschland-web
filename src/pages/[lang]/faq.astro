@@ -1,0 +1,218 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { languages, ui, useTranslations } from '../../i18n/ui';
+
+export async function getStaticPaths() {
+  return Object.keys(languages).map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const t = useTranslations(lang as keyof typeof ui);
+
+// FAQ Data with translations
+const faqData: Record<string, { question: string; answer: string }[]> = {
+  de: [
+    {
+      question: "Was ist der Leben in Deutschland Test?",
+      answer: "Der Test 'Leben in Deutschland' ist eine Prüfung, die Wissen über die deutsche Rechtsordnung, Geschichte und Kultur abfragt. Er ist oft Voraussetzung für die Einbürgerung oder Niederlassungserlaubnis."
+    },
+    {
+      question: "Wie viele Fragen hat der Test?",
+      answer: "Der Test besteht aus 33 Fragen. Davon sind 30 allgemeine Fragen und 3 Fragen, die sich spezifisch auf das Bundesland beziehen, in dem Sie wohnen."
+    },
+    {
+      question: "Wann habe ich den Test bestanden?",
+      answer: "Um den Test zu bestehen, müssen Sie mindestens 15 von 33 Fragen richtig beantworten. Für den Nachweis im Rahmen der Einbürgerung sind häufig 17 richtige Antworten erforderlich."
+    },
+    {
+      question: "Wie kann ich mich anmelden?",
+      answer: "Sie können sich bei den Volkshochschulen (VHS) oder anderen zertifizierten Prüfstellen für den Test anmelden. Die Kosten betragen in der Regel 25 Euro."
+    },
+    {
+      question: "Ist dieser Test vom BAMF anerkannt?",
+      answer: "Die Fragen auf dieser Webseite entsprechen zu 100% dem offiziellen Fragenkatalog des BAMF (Bundesamt für Migration und Flüchtlinge) für den Test 'Leben in Deutschland' (Stand 2026). Sie sind die perfekte Übung für die echte Prüfung. <br><br>Offizielle Quelle: <a href='https://www.bamf.de/DE/Themen/Integration/VerfassungPrinzipien/Einbuergerung/einbuergerung-node.html' target='_blank' rel='noopener noreferrer' class='text-primary-600 hover:underline'>BAMF Einbürgerung</a>"
+    },
+    {
+       question: "Brauche ich einen Integrationskurs oder Politikkurs?",
+       answer: "Oft ist der 'Leben in Deutschland' Test der Abschluss des Orientierungskurses, der Teil des Integrationskurses ist. Ein spezieller Politikkurs kann ebenfalls vorbereiten. Unsere App hilft Ihnen, das gelernte Wissen zu vertiefen und die 310 Fragen sicher zu beherrschen."
+    }
+  ],
+  en: [
+    {
+      question: "What is the Life in Germany test?",
+      answer: "The 'Life in Germany' test (Leben in Deutschland) is an exam that tests knowledge of the German legal system, history, and culture. It is often a requirement for naturalization or a permanent residence permit."
+    },
+    {
+      question: "How many questions are in the test?",
+      answer: "The test consists of 33 questions. 30 are general questions, and 3 are specific to the federal state where you live."
+    },
+    {
+      question: "What is the passing score?",
+      answer: "To pass the test, you must answer at least 15 out of 33 questions correctly. For naturalization purposes, 17 correct answers are often required."
+    },
+    {
+      question: "How can I register?",
+      answer: "You can register for the test at Adult Education Centers (Volkshochschule - VHS) or other certified examination centers. The cost is usually 25 Euros."
+    },
+    {
+      question: "Is this website free?",
+      answer: "Yes, you can practice all official questions on this website for free. We also offer an app for iOS and Android with additional features like an exam mode."
+    },
+    {
+      question: "Is this test recognized by BAMF?",
+      answer: "The questions on this website correspond 100% to the official question catalog of BAMF (Federal Office for Migration and Refugees) for the 'Life in Germany' test (as of 2026). They are the perfect practice for the real exam. <br><br>Official Source: <a href='https://www.bamf.de/EN/Themen/Integration/VerfassungPrinzipien/Einbuergerung/einbuergerung-node.html' target='_blank' rel='noopener noreferrer' class='text-primary-600 hover:underline'>BAMF Naturalization</a>"
+    },
+    {
+       question: "Do I need an integration course or politics course?",
+       answer: "Often, the 'Life in Germany' test is the final exam of the Orientation Course, which is part of the Integration Course. A special politics course can also prepare you. Our app helps you deepen your knowledge and master the 310 questions confidently."
+    }
+  ],
+  tr: [
+    {
+      question: "Leben in Deutschland testi nedir?",
+      answer: "'Leben in Deutschland' (Almanya'da Yaşam) testi, Alman hukuk düzeni, tarihi ve kültürü hakkındaki bilginizi ölçen bir sınavdır. Vatandaşlığa kabul veya daimi oturma izni için genellikle gereklidir."
+    },
+    {
+      question: "Testte kaç soru var?",
+      answer: "Test 33 sorudan oluşur. Bunların 30'u genel sorulardır, 3'ü ise yaşadığınız eyalete özel sorulardır."
+    },
+    {
+      question: "Testi geçmek için kaç doğru yapmalıyım?",
+      answer: "Testi geçmek için 33 sorudan en az 15'ini doğru cevaplamanız gerekir. Vatandaşlık başvurusu için genellikle 17 doğru cevap istenir."
+    },
+    {
+      question: "Nasıl kayıt olabilirim?",
+      answer: "Halk Eğitim Merkezleri (Volkshochschule - VHS) veya diğer sertifikalı sınav merkezleri aracılığıyla kayıt olabilirsiniz. Ücret genellikle 25 Euro'dur."
+    },
+    {
+      question: "Bu web sitesi ücretsiz mi?",
+      answer: "Evet, bu web sitesinde tüm resmi soruları ücretsiz olarak çalışabilirsiniz. Ayrıca, sınav modu gibi ek özellikler sunan iOS ve Android uygulamalarımız da mevcuttur."
+    },
+    {
+      question: "Bu test BAMF tarafından tanınıyor mu?",
+      answer: "Bu web sitesindeki sorular, 'Almanya'da Yaşam' testi için (2026 itibarıyla) BAMF'ın (Federal Göç ve Mülteci Dairesi) resmi soru kataloğuna %100 uymaktadır. Gerçek sınav için mükemmel bir hazırlıktır. <br><br>Resmi Kaynak: <a href='https://www.bamf.de/DE/Themen/Integration/VerfassungPrinzipien/Einbuergerung/einbuergerung-node.html' target='_blank' rel='noopener noreferrer' class='text-primary-600 hover:underline'>BAMF Vatandaşlık</a>"
+    },
+    {
+       question: "Uyum kursuna veya politika kursuna ihtiyacım var mı?",
+       answer: "Genellikle 'Almanya'da Yaşam' testi, Uyum Kursu'nun bir parçası olan Oryantasyon Kursu'nun bitirme sınavıdır. Özel bir politika kursu da sizi hazırlayabilir. Uygulamamız öğrendiklerinizi pekiştirmenize ve 310 soruya hakim olmanıza yardımcı olur."
+    }
+  ],
+  ar: [
+    {
+      question: "ما هو اختبار الحياة في ألمانيا؟",
+      answer: "اختبار 'الحياة في ألمانيا' (Leben in Deutschland) هو امتحان يختبر المعرفة بالنظام القانوني الألماني والتاريخ والثقافة. غالبًا ما يكون شرطًا للحصول على الجنسية أو تصريح الإقامة الدائمة."
+    },
+    {
+      question: "كم عدد الأسئلة في الاختبار؟",
+      answer: "يتكون الاختبار من 33 سؤالًا. 30 منها أسئلة عامة، و 3 أسئلة تتعلق بالولاية الفيدرالية التي تعيش فيها."
+    },
+    {
+      question: "ما هي درجة النجاح؟",
+      answer: "لاجتياز الاختبار، يجب عليك الإجابة بشكل صحيح على ما لا يقل عن 15 من أصل 33 سؤالًا. لأغراض التجنيس، غالبًا ما يُطلب 17 إجابة صحيحة."
+    },
+    {
+      question: "كيف يمكنني التسجيل؟",
+      answer: "يمكنك التسجيل في الاختبار في مراكز تعليم الكبار (VHS) أو مراكز الامتحانات المعتمدة الأخرى. التكلفة عادة ما تكون 25 يورو."
+    },
+    {
+      question: "هل هذا الموقع مجاني؟",
+      answer: "نعم، يمكنك التدرب على جميع الأسئلة الرسمية على هذا الموقع مجانًا. نقدم أيضًا تطبيقًا لنظامي iOS و Android بميزات إضافية مثل وضع الامتحان."
+    },
+    {
+      question: "هل هذا الاختبار معترف به من قبل BAMF؟",
+      answer: "تتوافق الأسئلة الموجودة على هذا الموقع بنسبة 100٪ مع كتالوج الأسئلة الرسمي للمكتب الاتحادي للهجرة واللاجئين (BAMF) لاختبار 'الحياة في ألمانيا' (اعتبارًا من 2026). إنها التدريب المثالي للامتحان الحقيقي. <br><br>المصدر الرسمي: <a href='https://www.bamf.de/DE/Themen/Integration/VerfassungPrinzipien/Einbuergerung/einbuergerung-node.html' target='_blank' rel='noopener noreferrer' class='text-primary-600 hover:underline'>BAMF التجنيس</a>"
+    },
+    {
+       question: "هل أحتاج إلى دورة اندماج أو دورة سياسة؟",
+       answer: "غالبًا ما يكون اختبار 'الحياة في ألمانيا' هو الاختبار النهائي لدورة التوجيه، وهي جزء من دورة الاندماج. يمكن أن تعدك دورة سياسة خاصة أيضًا. يساعدك تطبيقنا على تعميق معرفتك وإتقان 310 أسئلة بثقة."
+    }
+  ]
+};
+
+// Fallback to English or German if specific language data is missing
+const data = faqData[lang as string] || faqData['en'] || faqData['de'];
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": data.map(item => ({
+    "@type": "Question",
+    "name": item.question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": item.answer
+    }
+  }))
+};
+
+import Header from '../../components/Header.astro';
+---
+
+<Layout title={`${t('faq.title')} - Leben in Deutschland`} lang={lang as string}>
+	<!-- Navigation -->
+    <Header lang={lang as string} />
+
+    <main class="min-h-screen bg-tertiary-50 pb-20">
+        <!-- Hero Section -->
+        <section class="bg-white border-b border-tertiary-100 pt-32 pb-16 px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <span class="inline-block px-4 py-1.5 rounded-full bg-primary-100 text-primary-700 font-medium text-sm mb-4">
+                    {t('nav.faq')}
+                </span>
+                <h1 class="text-4xl md:text-5xl font-extrabold text-tertiary-900 mb-6 tracking-tight">
+                    {t('faq.title')}
+                </h1>
+                <p class="text-xl text-tertiary-600 max-w-2xl mx-auto leading-relaxed">
+                    {t('faq.subtitle')}
+                </p>
+            </div>
+        </section>
+
+        <!-- FAQ Content -->
+        <div class="max-w-3xl mx-auto px-4 py-12">
+            <div class="space-y-6">
+                {data.map((item, index) => (
+                    <div class="bg-white rounded-2xl shadow-sm border border-tertiary-100 overflow-hidden group">
+                        <details class="group">
+                            <summary class="flex items-center justify-between p-6 cursor-pointer list-none bg-white hover:bg-tertiary-50 transition-colors">
+                                <h3 class="text-lg font-bold text-tertiary-900 pr-8">{item.question}</h3>
+                                <span class="bg-tertiary-100 group-open:bg-primary-100 text-tertiary-600 group-open:text-primary-600 p-2 rounded-full transition-colors shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transform group-open:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </span>
+                            </summary>
+                            <div class="px-6 pb-6 pt-0 text-tertiary-600 leading-relaxed border-t border-transparent group-open:border-tertiary-100 group-open:pt-4">
+                                {item.answer}
+                            </div>
+                        </details>
+                    </div>
+                ))}
+            </div>
+
+            <!-- Call to Action -->
+            <div class="mt-16 text-center bg-primary-900 rounded-3xl p-8 md:p-12 text-white relative overflow-hidden">
+                <div class="absolute inset-0 bg-[url('/pattern.svg')] opacity-10"></div>
+                <div class="relative z-10">
+                    <h2 class="text-2xl md:text-3xl font-bold mb-4">{t('hero.title')}</h2>
+                    <p class="text-primary-100 mb-8 max-w-lg mx-auto text-lg">
+                        {t('hero.subtitle')}
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href={`/${lang}/`} class="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-white text-primary-900 font-bold hover:bg-primary-50 transition-colors">
+                            {t('home.start_quiz')} 
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                        <a href={`/${lang}/blog`} class="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-primary-800 text-white font-medium hover:bg-primary-700 transition-colors border border-primary-700">
+                            Blog
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    </main>
+</Layout>

@@ -1,0 +1,76 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+import { useTranslations } from '../../../i18n/ui';
+
+export async function getStaticPaths() {
+  const supportedLangs = ['de', 'en', 'tr', 'ar', 'ua', 'ru', 'pl', 'fa', 'ps', 'ro', 'it', 'es'];
+  return supportedLangs.map(lang => ({ params: { lang }, props: { lang } }));
+}
+
+const { lang } = Astro.props;
+const t = useTranslations(lang as any);
+const posts = await getCollection('blog');
+
+// Sort by date desc
+const sortedPosts = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+---
+
+<Layout title="Blog - Leben in Deutschland" lang={lang}>
+	<!-- Navigation -->
+	<nav class="container mx-auto px-4 py-6 flex items-center justify-between relative z-10 bg-white border-b border-gray-100 mb-8">
+		<a href={`/${lang}/`} class="flex items-center gap-3 hover:opacity-80 transition-opacity">
+			<div class="w-10 h-10 bg-yellow-400 rounded-lg flex items-center justify-center text-2xl shadow-lg">🇩🇪</div>
+			<span class="font-bold text-xl text-gray-900">{t("nav.home")}</span>
+		</a>
+		<div class="hidden md:flex gap-6 text-sm font-medium text-gray-600">
+			<a href={`/${lang}/faq`} class="hover:text-blue-600 transition-colors">{t("nav.faq")}</a>
+			<a href={`/${lang}/terms-of-service`} class="hover:text-blue-600 transition-colors">{t("nav.tos")}</a>
+			<a href={`/${lang}/datenschutz`} class="hover:text-blue-600 transition-colors">{t("nav.privacy")}</a>
+			<a href={`/${lang}/subscription-terms`} class="hover:text-blue-600 transition-colors">{t("nav.subscription")}</a>
+		</div>
+	</nav>
+
+  <div class="bg-gray-50 min-h-screen py-12">
+    <div class="container mx-auto px-4 max-w-6xl">
+      <div class="text-center mb-16">
+        <h1 class="text-4xl font-bold text-gray-900 mb-4">{t('blog.title')}</h1>
+        <p class="text-xl text-gray-600 max-w-2xl mx-auto">{t('blog.subtitle')}</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {sortedPosts.map(post => (
+          <article class="bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow overflow-hidden border border-gray-100 flex flex-col h-full">
+            {/* Fallback image if none provided */ }
+            <div class="h-48 bg-gradient-to-r from-blue-500 to-indigo-600 flex items-center justify-center text-white text-4xl font-bold">
+               {post.data.title.charAt(0)}
+            </div>
+            
+            <div class="p-6 flex flex-col flex-1">
+              <div class="flex items-center gap-2 text-xs text-gray-500 mb-3">
+                <span>{post.data.pubDate.toLocaleDateString(lang)}</span>
+                <span>•</span>
+                <span class="bg-blue-50 text-blue-600 px-2 py-0.5 rounded-full font-medium">{post.data.tags?.[0] || 'Allgemein'}</span>
+              </div>
+              
+              <h2 class="text-xl font-bold text-gray-900 mb-3 line-clamp-2">
+                <a href={`/${lang}/blog/${post.slug}`} class="hover:text-blue-600 transition-colors">
+                  {post.data.title}
+                </a>
+              </h2>
+              
+              <p class="text-gray-600 text-sm mb-4 line-clamp-3 leading-relaxed flex-1">
+                {post.data.description}
+              </p>
+              
+              <a href={`/${lang}/blog/${post.slug}`} class="text-blue-600 font-medium text-sm hover:underline mt-auto inline-flex items-center">
+                {t('blog.read_more')} 
+                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+              </a>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </div>
+</Layout>

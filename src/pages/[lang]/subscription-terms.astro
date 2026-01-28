@@ -1,0 +1,59 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getLegalTranslation } from '../../i18n/legal';
+import { getEntry } from 'astro:content';
+
+export function getStaticPaths() {
+  const supportedLangs = ['de', 'en', 'tr', 'ar', 'ua', 'ru', 'pl', 'fa', 'ps', 'ro', 'it', 'es'];
+  return supportedLangs.map(lang => ({ params: { lang }, props: { lang } }));
+}
+
+const { lang } = Astro.props;
+const t = (key: any) => getLegalTranslation(lang, key);
+
+// Fetch content from collection
+const entry = await getEntry('legal', `subscription-${lang}`) || await getEntry('legal', `subscription-en`);
+// If absolutely no content found (shouldn't happen if en exists), fallback to empty
+if (!entry) {
+    throw new Error(`Could not find subscription terms content for ${lang} or en fallback`);
+}
+const { Content } = await entry.render();
+import Header from '../../components/Header.astro';
+import ScrollToTop from '../../components/ScrollToTop';
+---
+
+<Layout title={`${t("legal.subscription_terms")} | Leben in Deutschland`} lang={lang}>
+  <Header lang={lang} />
+  <ScrollToTop client:load />
+
+  <main class="container mx-auto px-4 py-12 max-w-7xl">
+
+    <h1 class="text-3xl md:text-4xl font-bold mb-8 uppercase">{t("legal.subscription_terms")}</h1>
+    
+    <div class="grid md:grid-cols-[250px_1fr] gap-8 items-start">
+      <!-- Table of Contents -->
+      <aside class="hidden md:block sticky top-8 max-h-[calc(100vh-4rem)] overflow-y-auto pr-4">
+        <h2 class="text-sm font-bold uppercase tracking-wider text-gray-900 mb-4">{t("legal.table_of_contents")}</h2>
+        <nav class="space-y-2 text-sm text-gray-600">
+           <a href="#billing" class="block hover:text-blue-600">1. Billing & Renewal</a>
+           <a href="#trial" class="block hover:text-blue-600">2. Free Trial</a>
+           <a href="#cancellation" class="block hover:text-blue-600">3. Cancellation</a>
+           <a href="#changes" class="block hover:text-blue-600">4. Fee Changes</a>
+           <a href="#refunds" class="block hover:text-blue-600">5. Refunds</a>
+        </nav>
+      </aside>
+
+      <!-- Content -->
+      <div class="prose prose-blue max-w-none text-gray-700 prose-headings:font-bold prose-h2:mt-8 prose-h2:mb-4">
+        <Content />
+      </div>
+    </div>
+
+    <div class="mt-20 pt-8 border-t border-gray-200">
+      <a href={`/${lang}/`} class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center gap-2">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+        {t("legal.back_to_home")}
+      </a>
+    </div>
+  </main>
+</Layout>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lebenindeutschland.web.app/sitemap-index.xml
