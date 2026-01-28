@@ -42,8 +42,6 @@ export default function LanguageSelector({ currentLang = 'de' }: Props) {
         setIsOpen(prev => !prev);
     };
 
-    import { getLanguageSwitchUrl } from '../utils/navigation';
-
     // ... (existing constants)
 
     const getTargetUrl = (targetLang: string) => {
