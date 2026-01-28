@@ -1,19 +1,14 @@
 ---
 import { useTranslations } from '../i18n/ui';
 
+import { getPath } from '../utils/navigation';
+
 interface Props {
   lang: string;
 }
 
 const { lang } = Astro.props;
 const t = useTranslations(lang as any);
-// Helper to strip leading slash to avoid double slash when prepending base
-const getPath = (path: string) => {
-    const base = import.meta.env.BASE_URL;
-    const cleanBase = base.endsWith('/') ? base.slice(0, -1) : base;
-    const cleanPath = path.startsWith('/') ? path.slice(1) : path;
-    return `${cleanBase}/${cleanPath}`;
-};
 ---
 
 <nav class="container mx-auto px-4 py-6 flex items-center justify-between relative z-10">

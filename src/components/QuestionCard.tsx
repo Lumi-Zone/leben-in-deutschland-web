@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { getPath } from '../utils/navigation';
 
 interface Props {
     id: number;
@@ -63,14 +64,6 @@ export default function QuestionCard({ id, correctIndex, data, prevId, nextId, i
     };
 
     const isCorrect = selected === correctIndex;
-
-    // Helper for base url consistent with Astro config
-    const getPath = (path: string) => {
-        const base = import.meta.env.BASE_URL;
-        const cleanBase = base.endsWith('/') ? base.slice(0, -1) : base;
-        const cleanPath = path.startsWith('/') ? path.slice(1) : path;
-        return `${cleanBase}/${cleanPath}`;
-    };
 
     return (
         <div className="max-w-2xl mx-auto">

@@ -41,19 +41,17 @@ export default function LanguageSelector({ currentLang = 'de' }: Props) {
         setIsOpen(prev => !prev);
     };
 
+    import { getLanguageSwitchUrl } from '../utils/navigation';
+
+    // ... (existing constants)
+
     const getTargetUrl = (targetLang: string) => {
-        if (typeof window === 'undefined') return `/${targetLang}/`;
-        const path = window.location.pathname;
-        const segments = path.split('/').filter(Boolean);
+        if (typeof window === 'undefined') return `/${targetLang}/`; // Server-side fallback (naive)
 
+        const currentPath = window.location.pathname;
         const knownLangCodes = SUPPORTED_LANGUAGES.map(l => l.code);
-        if (segments.length > 0 && knownLangCodes.includes(segments[0] as Language)) {
-            segments[0] = targetLang;
-        } else {
-            segments.unshift(targetLang);
-        }
 
-        return '/' + segments.join('/');
+        return getLanguageSwitchUrl(currentPath, targetLang, knownLangCodes);
     };
 
     const currentLangObj = SUPPORTED_LANGUAGES.find(l => l.code === currentLang) || SUPPORTED_LANGUAGES[0];
