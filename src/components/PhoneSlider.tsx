@@ -97,13 +97,13 @@ export default function PhoneSlider() {
             <div
                 ref={scrollContainerRef}
                 onScroll={handleScroll}
-                className="flex gap-8 overflow-x-auto snap-x snap-mandatory px-[calc(50vw-140px)] md:px-32 pb-4 scrollbar-hide"
+                className="flex gap-8 overflow-x-auto snap-x snap-mandatory px-[calc(50vw-140px)] md:px-32 pb-4 scrollbar-hide snap-always"
                 style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
             >
                 {sliders.map((src, index) => (
                     <div
                         key={index}
-                        className="relative w-[280px] md:w-[320px] h-[560px] md:h-[640px] shrink-0 transform transition-transform duration-300 hover:scale-[1.02] flex items-center justify-center snap-center"
+                        className="relative w-[280px] md:w-[320px] h-[560px] md:h-[640px] shrink-0 transform transition-transform duration-300 hover:scale-[1.02] flex items-center justify-center snap-center snap-always"
                     >
                         <img
                             src={src}

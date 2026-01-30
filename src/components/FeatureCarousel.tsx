@@ -112,13 +112,13 @@ export default function FeatureCarousel({ lang = 'de' }: FeatureCarouselProps) {
             <div
                 ref={scrollContainerRef}
                 onScroll={handleScroll}
-                className="flex gap-4 md:gap-8 overflow-x-auto snap-x snap-mandatory px-4 md:px-8 pb-4 scrollbar-hide items-center"
+                className="flex gap-4 md:gap-8 overflow-x-auto snap-x snap-mandatory px-4 md:px-8 pb-4 scrollbar-hide items-center snap-always"
                 style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
             >
                 {features.map((feature, idx) => (
                     <div
                         key={idx}
-                        className="w-[85vw] md:w-[450px] lg:w-[500px] shrink-0 bg-[#FFFBF4] rounded-[2rem] p-6 md:p-10 flex flex-col items-center text-center snap-center transition-transform hover:scale-[1.01] border border-gray-100"
+                        className="w-[85vw] md:w-[450px] lg:w-[500px] shrink-0 bg-[#FFFBF4] rounded-[2rem] p-6 md:p-10 flex flex-col items-center text-center snap-center snap-always transition-transform hover:scale-[1.01] border border-gray-100"
                     >
                         <h3 className="text-xl md:text-2xl font-bold mb-3 text-gray-900">
                             {t(feature.titleKey)}

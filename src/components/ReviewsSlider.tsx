@@ -99,7 +99,7 @@ export default function ReviewsSlider({ lang = 'de' }: ReviewsSliderProps) {
                 <div
                     ref={scrollContainerRef}
                     onScroll={handleScroll}
-                    className="flex gap-6 overflow-x-auto snap-x snap-mandatory px-4 md:px-32 pb-4 scrollbar-hide"
+                    className="flex gap-6 overflow-x-auto snap-x snap-mandatory px-4 md:px-32 pb-4 scrollbar-hide snap-always"
                     style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
                 >
                     {reviews.map((review, index) => (
