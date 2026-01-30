@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css";
 import LanguageSelector from '../components/LanguageSelector';
+import SmartAppBanner from '../components/SmartAppBanner';
 import { languages } from '../i18n/ui';
 
 interface Props {
@@ -48,6 +49,7 @@ const alternates = Object.keys(languages).map(l => {
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href={asset("favicon.svg")} />
 		<meta name="generator" content={Astro.generator} />
+        <meta name="apple-itunes-app" content="app-id=6723899981">
         
         <!-- Primary Meta Tags -->
 		<title>{title}</title>
@@ -78,6 +80,7 @@ const alternates = Object.keys(languages).map(l => {
 		<div class="fixed top-4 right-4 z-[9999] pointer-events-auto">
 			<LanguageSelector currentLang={lang as any} client:load />
 		</div>
+        <SmartAppBanner client:only="react" />
 		<slot />
 	</body>
 </html>
