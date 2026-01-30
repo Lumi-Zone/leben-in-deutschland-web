@@ -1,5 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import { getPath } from '../../utils/navigation';
 
 export function getStaticPaths() {
   const supportedLangs = ['de', 'en', 'tr', 'ar', 'ua', 'ru', 'pl', 'fa', 'ps', 'ro', 'it', 'es'];
@@ -13,7 +14,7 @@ const { lang } = Astro.props;
   <main class="container mx-auto px-4 py-12 max-w-3xl">
     <!-- Header with Logo -->
     <nav class="flex items-center gap-4 mb-12">
-        <a href={`/${lang}/`} class="flex items-center gap-3 text-gray-900 hover:text-blue-600 transition-colors group">
+        <a href={getPath(`${lang}/`)} class="flex items-center gap-3 text-gray-900 hover:text-blue-600 transition-colors group">
             <div class="w-10 h-10 bg-yellow-400 rounded-lg flex items-center justify-center text-2xl shadow-sm group-hover:scale-105 transition-transform">🇩🇪</div>
             <span class="font-bold text-lg">Leben in Deutschland</span>
         </a>
@@ -50,7 +51,7 @@ const { lang } = Astro.props;
     </div>
 
     <div class="mt-12 pt-8 border-t border-gray-200">
-      <a href={`/${lang}/`} class="text-blue-600 hover:text-blue-800 font-medium">← Zurück zur Startseite</a>
+      <a href={getPath(`${lang}/`)} class="text-blue-600 hover:text-blue-800 font-medium">← Zurück zur Startseite</a>
     </div>
   </main>
 </Layout>

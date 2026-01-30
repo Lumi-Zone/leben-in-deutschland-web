@@ -4,6 +4,7 @@ import questions from '../../data/questions.json';
 import { useTranslations } from '../../i18n/ui';
 import PhoneSlider from '../../components/PhoneSlider';
 import ReviewsSlider from '../../components/ReviewsSlider';
+import FeatureCarousel from '../../components/FeatureCarousel';
 
 export function getStaticPaths() {
   const supportedLangs = ['de', 'en', 'tr', 'ar', 'ua', 'ru', 'pl', 'fa', 'ps', 'ro', 'it', 'es'];
@@ -66,16 +67,7 @@ import { getPath } from '../../utils/navigation';
 				<div class="bg-black text-white text-xs font-bold px-4 py-2 rounded-full inline-block mb-6 uppercase tracking-widest">{t("features.badge")}</div>
 				<h2 class="text-4xl font-bold text-gray-900 mb-16 max-w-2xl mx-auto">{t("features.title")}</h2>
 				
-				<div class="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto items-center">
-					<div class="bg-[#FFFBF4] rounded-3xl p-10 h-full flex flex-col items-center">
-						<h3 class="text-2xl font-bold mb-4">{t("features.learn.title")}</h3>
-						<p class="text-gray-600 mb-8">{t("features.learn.desc")}</p>
-					</div>
-					<div class="bg-[#FFFBF4] rounded-3xl p-10 h-full flex flex-col items-center">
-						<h3 class="text-2xl font-bold mb-4">{t("features.practice.title")}</h3>
-						<p class="text-gray-600 mb-8">{t("features.practice.desc")}</p>
-					</div>
-				</div>
+				<FeatureCarousel client:visible lang={lang} />
 			</div>
 		</section>
 
@@ -117,8 +109,8 @@ import { getPath } from '../../utils/navigation';
 					<a href={getPath(`${lang}/terms-of-service`)} class="hover:text-black transition-colors">{t("nav.tos")}</a>
 					<a href={getPath(`${lang}/datenschutz`)} class="hover:text-black transition-colors">{t("nav.privacy")}</a>
 					<a href={getPath(`${lang}/subscription-terms`)} class="hover:text-black transition-colors">{t("nav.subscription")}</a>
-                    <a href={getPath(`${lang}/blog`)} class="hover:text-black transition-colors font-semibold text-blue-600">Blog</a>
-					<a href="#" class="hover:text-black transition-colors">Support</a>
+					<a href={getPath(`${lang}/blog`)} class="hover:text-black transition-colors font-semibold text-blue-600">Blog</a>
+					<a href={getPath(`${lang}/support`)} class="hover:text-black transition-colors">{t("nav.support")}</a>
                     <a href="https://x.com/300Fragen" target="_blank" rel="noopener noreferrer" class="hover:text-black transition-colors flex items-center gap-1">
                         <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
                         Follow us

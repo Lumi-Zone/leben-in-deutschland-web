@@ -4,7 +4,7 @@ export const BASE_URL = import.meta.env.BASE_URL.endsWith('/')
 
 /**
  * Strips the BASE_URL from a given path to get the app-relative path.
- * e.g. /my-app/de/faq -> /de/faq
+ * e.g. /my-app/de/support -> /de/support
  */
 export function getAppRelativePath(pathname: string): string {
     const base = BASE_URL;
@@ -28,7 +28,7 @@ export function getAppRelativePath(pathname: string): string {
 
 /**
  * Prepends BASE_URL to a relative path.
- * e.g. /de/faq -> /my-app/de/faq
+ * e.g. /de/support -> /my-app/de/support
  * e.g. logos/logo.png -> /my-app/logos/logo.png
  */
 export function getPath(path: string): string {

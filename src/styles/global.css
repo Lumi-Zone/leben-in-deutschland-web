@@ -93,3 +93,17 @@ html {
 .pause-on-hover:hover .animate-marquee {
   animation-play-state: paused;
 }
+
+@keyframes marquee-3 {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-33.333333%);
+  }
+}
+
+.animate-marquee-3 {
+  animation: marquee-3 60s linear infinite;
+}
