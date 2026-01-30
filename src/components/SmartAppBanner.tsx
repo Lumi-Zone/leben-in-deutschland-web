@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
+import { getPath } from '../utils/navigation';
 
 export default function SmartAppBanner() {
     const [isVisible, setIsVisible] = useState(false);
     const [isAndroid, setIsAndroid] = useState(false);
 
     useEffect(() => {
+        // ... (rest of useEffect)
         // Check if banner was closed previously
         const isClosed = localStorage.getItem('smart-banner-closed');
         if (isClosed) return;
@@ -50,7 +52,7 @@ export default function SmartAppBanner() {
             </button>
 
             <div className="w-12 h-12 rounded-xl bg-purple-600 flex-shrink-0 flex items-center justify-center text-white font-bold text-xl overflow-hidden">
-                <img src="/favicon.svg" alt="App Icon" className="w-full h-full object-cover" />
+                <img src={getPath("logo.png")} alt="App Icon" className="w-full h-full object-cover" />
             </div>
 
             <div className="flex-1 min-w-0">
