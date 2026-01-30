@@ -26,7 +26,7 @@ export default function QuestionCard({ id, correctIndex, data, prevId, nextId, i
     const handlePracticeInApp = () => {
         const appScheme = `lebenindeutschland://question/${id}`;
         // Fallback URLs - User should replace these with real store links
-        const iosStoreUrl = "https://apps.apple.com/tr/app/leben-in-deutschland-2026/id6723899981";
+        const iosStoreUrl = "https://apps.apple.com/app/leben-in-deutschland-2026/id6723899981";
         const androidStoreUrl = "https://play.google.com/store/apps/details?id=com.einbuergerungapp";
 
         // Simple OS detection
