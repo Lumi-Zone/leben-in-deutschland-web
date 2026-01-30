@@ -19,17 +19,17 @@ export default function FeatureCarousel({ lang = 'de' }: FeatureCarouselProps) {
         {
             titleKey: 'features.learn.title' as const,
             descKey: 'features.learn.desc' as const,
-            image: getPath('mockups/m1.png'),
+            image: getPath('mockups/m5.png'),
         },
         {
             titleKey: 'features.practice.title' as const,
             descKey: 'features.practice.desc' as const,
-            image: getPath('mockups/m2.png'),
+            image: getPath('mockups/m6.png'),
         },
         {
             titleKey: 'features.exam.title' as const,
             descKey: 'features.exam.desc' as const,
-            image: getPath('mockups/m3.png'),
+            image: getPath('mockups/m4.png'),
         }
     ];
 
@@ -45,6 +45,8 @@ export default function FeatureCarousel({ lang = 'de' }: FeatureCarouselProps) {
         }
     }, []);
 
+    const scrollTimeout = useRef<NodeJS.Timeout | null>(null);
+
     const handleScroll = () => {
         if (!scrollContainerRef.current) return;
         const container = scrollContainerRef.current;
@@ -52,23 +54,35 @@ export default function FeatureCarousel({ lang = 'de' }: FeatureCarouselProps) {
         const scrollWidth = container.scrollWidth;
         const oneSetWidth = scrollWidth / 3;
 
-        // Tolerance to prevent jitter
-        const tolerance = 10;
+        // Emergency Reset: If very close to the absolute edge (Start of Set 1 or End of Set 3), jump immediately
+        // Set 1 ends at oneSetWidth. Set 3 starts at 2 * oneSetWidth.
+        if (scrollLeft < 50 || scrollLeft > scrollWidth - 50) {
+            container.scrollTo({
+                left: oneSetWidth + (scrollLeft % oneSetWidth),
+                behavior: 'instant' as any
+            });
+            return;
+        }
 
-        // If we've scrolled into the third set (end buffer), jump back to middle
-        if (scrollLeft >= 2 * oneSetWidth - tolerance) {
-            container.scrollTo({
-                left: scrollLeft - oneSetWidth,
-                behavior: 'instant' as any
-            });
-        }
-        // If we've scrolled into the first set (start buffer), jump forward to middle
-        else if (scrollLeft <= oneSetWidth - tolerance) {
-            container.scrollTo({
-                left: scrollLeft + oneSetWidth,
-                behavior: 'instant' as any
-            });
-        }
+        // Debounced Reset: Wait for scroll to stop before jumping back to center
+        if (scrollTimeout.current) clearTimeout(scrollTimeout.current);
+
+        scrollTimeout.current = setTimeout(() => {
+            // Check if we are in the buffer zones (Set 1 or Set 3)
+            // Center set is Set 2 (from oneSetWidth to 2*oneSetWidth)
+            const currentSet = Math.floor(scrollLeft / oneSetWidth);
+
+            if (currentSet !== 1) { // If not in the middle set (index 1)
+                // Calculate precise offset within the set
+                const offsetInSet = scrollLeft % oneSetWidth;
+
+                // Jump to the corresponding position in the middle set (Set 2)
+                container.scrollTo({
+                    left: oneSetWidth + offsetInSet,
+                    behavior: 'instant' as any
+                });
+            }
+        }, 150); // 150ms debounce
     };
 
     const scroll = (direction: 'left' | 'right') => {

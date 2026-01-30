@@ -31,6 +31,8 @@ export default function ReviewsSlider({ lang = 'de' }: ReviewsSliderProps) {
         }
     }, []);
 
+    const scrollTimeout = React.useRef<NodeJS.Timeout | null>(null);
+
     const handleScroll = () => {
         if (!scrollContainerRef.current) return;
         const container = scrollContainerRef.current;
@@ -38,14 +40,29 @@ export default function ReviewsSlider({ lang = 'de' }: ReviewsSliderProps) {
         const scrollWidth = container.scrollWidth;
         const oneSetWidth = scrollWidth / 5;
 
-        const centerSetStart = oneSetWidth * 2;
+        // Emergency Reset: Near 0 or near max
+        if (scrollLeft < 50 || scrollLeft > scrollWidth - 50) {
+            container.scrollTo({
+                left: oneSetWidth * 2 + (scrollLeft % oneSetWidth),
+                behavior: 'instant' as any
+            });
+            return;
+        }
 
-        if (scrollLeft >= centerSetStart + oneSetWidth) {
-            container.scrollLeft = scrollLeft - oneSetWidth;
-        }
-        else if (scrollLeft <= centerSetStart - oneSetWidth) {
-            container.scrollLeft = scrollLeft + oneSetWidth;
-        }
+        if (scrollTimeout.current) clearTimeout(scrollTimeout.current);
+
+        scrollTimeout.current = setTimeout(() => {
+            const currentSet = Math.floor(scrollLeft / oneSetWidth);
+
+            // Center set is index 2 (sets 0,1, [2], 3,4)
+            if (currentSet !== 2) {
+                const offsetInSet = scrollLeft % oneSetWidth;
+                container.scrollTo({
+                    left: oneSetWidth * 2 + offsetInSet,
+                    behavior: 'instant' as any
+                });
+            }
+        }, 150);
     };
 
     const scroll = (direction: 'left' | 'right') => {

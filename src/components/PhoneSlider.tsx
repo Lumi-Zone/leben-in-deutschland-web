@@ -32,26 +32,39 @@ export default function PhoneSlider() {
         }
     }, []);
 
+    const scrollTimeout = React.useRef<NodeJS.Timeout | null>(null);
+
     const handleScroll = () => {
         if (!scrollContainerRef.current) return;
         const container = scrollContainerRef.current;
         const scrollLeft = container.scrollLeft;
         const scrollWidth = container.scrollWidth;
         const oneSetWidth = scrollWidth / 3;
-        const tolerance = 10;
 
-        if (scrollLeft >= 2 * oneSetWidth - tolerance) {
+        // Emergency Reset
+        if (scrollLeft < 50 || scrollLeft > scrollWidth - 50) {
             container.scrollTo({
-                left: scrollLeft - oneSetWidth,
+                left: oneSetWidth + (scrollLeft % oneSetWidth),
                 behavior: 'instant' as any
             });
+            return;
         }
-        else if (scrollLeft <= oneSetWidth - tolerance) {
-            container.scrollTo({
-                left: scrollLeft + oneSetWidth,
-                behavior: 'instant' as any
-            });
-        }
+
+        // Debounced Reset for smooth loop
+        if (scrollTimeout.current) clearTimeout(scrollTimeout.current);
+
+        scrollTimeout.current = setTimeout(() => {
+            const currentSet = Math.floor(scrollLeft / oneSetWidth);
+
+            // If we are not in the center set (index 1)
+            if (currentSet !== 1) {
+                const offsetInSet = scrollLeft % oneSetWidth;
+                container.scrollTo({
+                    left: oneSetWidth + offsetInSet,
+                    behavior: 'instant' as any
+                });
+            }
+        }, 150);
     };
 
     const scroll = (direction: 'left' | 'right') => {
