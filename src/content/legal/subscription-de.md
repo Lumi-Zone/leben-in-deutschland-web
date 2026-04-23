@@ -1,40 +1,39 @@
 ---
 title: "Abonnementbedingungen"
-lastUpdated: "30. September 2024"
+lastUpdated: "23. April 2026"
 ---
 
-Willkommen zu unserer Anwendung! Bitte lesen Sie die folgenden Bedingungen bezüglich unserer Abonnement- und In-App-Kaufoptionen. Durch den Kauf eines Abonnements oder einer lebenslangen Mitgliedschaft stimmen Sie diesen Bedingungen zu.
+Willkommen zu unserer Anwendung. Bitte beachten Sie: In der App gibt es **kein Abonnementmodell**. Es wird ausschließlich ein einmaliger Lifetime-Kauf angeboten.
 
-## Abonnementpläne
+<h2 id="purchase-model">1. Kaufmodell</h2>
 
-*   **Wöchentliches Abonnement:** X,XX $ pro Woche (beinhaltet eine 3-tägige kostenlose Testversion).
-*   **Monatliches Abonnement:** X,XX $ pro Monat.
-*   **Jährliches Abonnement:** X,XX $ pro Jahr.
-*   **Lebenslange Mitgliedschaft:** Einmalige Zahlung von X,XX $.
+Es gibt nur eine Kaufoption:
 
-<h2 id="trial">2. Kostenlose Testversion</h2>
+*   **Lifetime-Zugang (einmalig): 9,99€**
 
-Das wöchentliche Abonnement beinhaltet eine 3-tägige kostenlose Testversion. Wenn Sie das Abonnement nicht vor Ablauf des Testzeitraums kündigen, verlängert sich Ihr Abonnement automatisch zum wöchentlichen Preis.
+Es gibt **keine** wöchentlichen, monatlichen oder jährlichen Abonnements und **keine** Testphase.
 
-<h2 id="billing">1. Abrechnung und Verlängerung</h2>
+<h2 id="price-billing">2. Preis und Abrechnung</h2>
 
-Abonnements werden zum Zeitpunkt des Kaufs über Ihr iTunes/Google Play-Konto abgerechnet. Abonnements verlängern sich automatisch, sofern sie nicht mindestens 24 Stunden vor dem Ende des aktuellen Zeitraums gekündigt werden. Verlängerungsgebühren werden innerhalb von 24 Stunden vor dem Ende des aktuellen Abonnementzeitraums erhoben. Sie können Ihr Abonnement jederzeit über Ihre Kontoeinstellungen verwalten oder kündigen.
+Der Betrag von **9,99€** wird einmalig über Ihr Apple App Store- oder Google Play-Konto abgerechnet.  
+Es gibt **keine automatische Verlängerung** und keine wiederkehrenden Gebühren.
 
-<h2 id="refunds">5. Rückerstattungsrichtlinie</h2>
+<h2 id="access">3. Lifetime-Zugriff</h2>
 
-Alle Gebühren sind nicht erstattungsfähig, und es werden keine Rückerstattungen für ungenutzte Teile der Abonnementlaufzeit gewährt. Sie können Ihr Abonnement jedoch jederzeit kündigen, um zukünftige Gebühren zu vermeiden.
+Der Lifetime-Kauf gewährt dauerhaften Zugriff auf die freigeschalteten App-Funktionen für dieses Produkt.
 
-<h2 id="cancellation">Lebenslange Mitgliedschaft / Kündigung</h2>
+<h2 id="refunds">4. Rückerstattungen</h2>
 
-Die lebenslange Mitgliedschaft ist eine einmalige Zahlung und verlängert sich nicht. Dieser Kauf gewährt Ihnen dauerhaften Zugriff auf die Funktionen der App.
+Rückerstattungen werden durch den jeweiligen Store-Anbieter geregelt (Apple/Google).  
+Bitte nutzen Sie für Erstattungsanfragen die offiziellen Store-Prozesse.
 
-<h2 id="changes">4. Änderungen der Bedingungen</h2>
+<h2 id="changes">5. Änderungen der Bedingungen</h2>
 
 Wir behalten uns das Recht vor, diese Bedingungen jederzeit zu aktualisieren. Alle Änderungen werden Ihnen über die App oder per E-Mail mitgeteilt.
 
 ## Kontaktieren Sie uns
 
-Wenn Sie Fragen zu diesen Bedingungen haben, kontaktieren Sie uns bitte unter [support@example.com](mailto:support@example.com).
+Wenn Sie Fragen zu diesen Bedingungen haben, kontaktieren Sie uns bitte unter [cfstechmobile@gmail.com](mailto:cfstechmobile@gmail.com).
 
 ___
-© 2024 Ihr Firmenname. Alle Rechte vorbehalten.
+© 2026 Leben in Deutschland (Lumi-Zone). Alle Rechte vorbehalten.

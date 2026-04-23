@@ -178,7 +178,7 @@ Wir können nicht garantieren, dass die Dienste jederzeit verfügbar sind. Wir k
 
 <h2 id="governing-law">14. GELTENDES RECHT</h2>
 
-Diese rechtlichen Bedingungen unterliegen den Gesetzen von [relevante Gerichtsbarkeit] und werden in Übereinstimmung mit diesen ausgelegt, und Sie stimmen unwiderruflich zu, dass die Gerichte von [relevante Gerichtsbarkeit] die ausschließliche Zuständigkeit für die Beilegung von Streitigkeiten haben, die im Zusammenhang mit diesen rechtlichen Bedingungen entstehen können.
+Diese rechtlichen Bedingungen unterliegen dem Recht der Bundesrepublik Deutschland und werden entsprechend ausgelegt. Soweit gesetzlich zulässig, gilt als ausschließlicher Gerichtsstand der Sitz des Anbieters.
 
 <h2 id="disputes">15. STREITBEILEGUNG</h2>
 

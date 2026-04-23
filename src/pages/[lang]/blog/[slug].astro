@@ -2,60 +2,272 @@
 import Layout from '../../../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
 import { useTranslations } from '../../../i18n/ui';
+import { getPath } from '../../../utils/navigation';
+import Header from '../../../components/Header.astro';
+import { getBlogImageAlt, getReadingMinutes, normalizeKeyword, resolveBlogImage } from '../../../utils/blog';
 
 export async function getStaticPaths() {
   const supportedLangs = ['de', 'en', 'tr', 'ar', 'ua', 'ru', 'pl', 'fa', 'ps', 'ro', 'it', 'es'];
   const posts = await getCollection('blog');
-  
-  // Generate a route for every language and every post
-  return supportedLangs.flatMap(lang => 
-    posts.map(post => ({
+
+  return supportedLangs.flatMap((lang) =>
+    posts.map((post) => ({
       params: { lang, slug: post.slug },
       props: { post, lang },
     }))
   );
 }
 
-import { getPath } from '../../../utils/navigation';
-import Header from '../../../components/Header.astro';
-// ... imports
-
 const { post, lang } = Astro.props;
 const t = useTranslations(lang as any);
 const { Content } = await post.render();
+const allPosts = await getCollection('blog');
+const allPostsSorted = allPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const currentTags = new Set(post.data.tags ?? []);
+const siteUrl = Astro.site || 'https://lumi-zone.github.io';
+const canonicalPath = getPath(`de/blog/${post.slug}`);
+const canonicalPostUrl = new URL(canonicalPath, siteUrl).href;
+const canonicalBlogIndexUrl = new URL(getPath('de/blog'), siteUrl).href;
+const isPrimaryBlogLocale = lang === 'de';
+const publishedIso = post.data.pubDate.toISOString();
+const readingMinutes = getReadingMinutes(post.body);
+const image = resolveBlogImage(post);
+const imageAlt = getBlogImageAlt(post.data.title);
+const keywords = post.data.tags ?? ['Einbürgerungstest', 'Leben in Deutschland'];
+
+const localeByLang: Record<string, string> = {
+  de: 'de-DE',
+  en: 'en-US',
+  tr: 'tr-TR',
+  ar: 'ar',
+  ua: 'uk-UA',
+  ru: 'ru-RU',
+  pl: 'pl-PL',
+  fa: 'fa-IR',
+  ps: 'ps',
+  ro: 'ro-RO',
+  it: 'it-IT',
+  es: 'es-ES',
+};
+const locale = localeByLang[lang] || 'de-DE';
+const dateFormatter = new Intl.DateTimeFormat(locale, { year: 'numeric', month: 'long', day: 'numeric' });
+
+const relatedPosts = allPosts
+  .filter((entry) => entry.slug !== post.slug)
+  .sort((a, b) => {
+    const aShared = (a.data.tags ?? []).filter((tag) => currentTags.has(tag)).length;
+    const bShared = (b.data.tags ?? []).filter((tag) => currentTags.has(tag)).length;
+    if (aShared !== bShared) return bShared - aShared;
+    return b.data.pubDate.valueOf() - a.data.pubDate.valueOf();
+  })
+  .slice(0, 3)
+  .map((entry) => ({
+    ...entry,
+    image: resolveBlogImage(entry),
+    dateLabel: dateFormatter.format(entry.data.pubDate),
+    tags: entry.data.tags ?? [],
+    url: getPath(`${lang}/blog/${entry.slug}`),
+  }));
+
+const currentIndex = allPostsSorted.findIndex((entry) => entry.slug === post.slug);
+const newerPost = currentIndex > 0 ? allPostsSorted[currentIndex - 1] : null;
+const olderPost = currentIndex >= 0 && currentIndex < allPostsSorted.length - 1 ? allPostsSorted[currentIndex + 1] : null;
+
+const blogPostSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: post.data.title,
+  description: post.data.description,
+  inLanguage: lang,
+  datePublished: publishedIso,
+  dateModified: publishedIso,
+  url: canonicalPostUrl,
+  mainEntityOfPage: canonicalPostUrl,
+  image: [image],
+  author: {
+    '@type': 'Person',
+    name: post.data.author,
+  },
+  articleSection: post.data.tags?.[0] ?? 'Blog',
+  keywords: keywords.join(', '),
+  publisher: {
+    '@type': 'Organization',
+    name: 'Leben in Deutschland',
+    logo: {
+      '@type': 'ImageObject',
+      url: new URL(getPath('logo.png'), siteUrl).href,
+    },
+  },
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      name: t('nav.home'),
+      item: new URL(getPath(`${lang}/`), siteUrl).href,
+    },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      name: t('nav.blog'),
+      item: canonicalBlogIndexUrl,
+    },
+    {
+      '@type': 'ListItem',
+      position: 3,
+      name: post.data.title,
+      item: canonicalPostUrl,
+    },
+  ],
+};
 ---
 
-<Layout title={`${post.data.title} - Leben in Deutschland`} lang={lang}>
-	<!-- Navigation -->
-	<Header lang={lang} />
+<Layout
+  title={`${post.data.title} - Leben in Deutschland`}
+  description={post.data.description}
+  canonical={canonicalPath}
+  keywords={keywords.join(', ')}
+  image={image}
+  imageAlt={imageAlt}
+  ogType="article"
+  publishedTime={publishedIso}
+  modifiedTime={publishedIso}
+  authors={[post.data.author]}
+  noindex={!isPrimaryBlogLocale}
+  disableAlternates={true}
+  rssHref={getPath('rss.xml')}
+  lang={lang}
+>
+  <Header lang={lang} />
+  <script is:inline type="application/ld+json" set:html={JSON.stringify(blogPostSchema)} />
+  <script is:inline type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
 
-  <article class="min-h-screen bg-white">
-    {/* Header */}
-    <div class="bg-gray-50 border-b border-gray-100 py-16">
-        <div class="container mx-auto px-4 max-w-3xl text-center">
-            <div class="flex items-center justify-center gap-2 text-sm text-gray-500 mb-6">
-                <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full font-medium text-xs">{post.data.tags?.[0]}</span>
-                <span>•</span>
-                <time>{post.data.pubDate.toLocaleDateString(lang)}</time>
+  <article class="min-h-screen bg-slate-50 py-8 md:py-10">
+    <div class="container mx-auto px-4 max-w-5xl">
+      <nav class="text-sm text-slate-500 mb-4 flex items-center gap-2 flex-wrap">
+        <a href={getPath(`${lang}/`)} class="hover:text-blue-700 transition-colors">{t('nav.home')}</a>
+        <span>/</span>
+        <a href={getPath(`${lang}/blog`)} class="hover:text-blue-700 transition-colors">{t('nav.blog')}</a>
+        <span>/</span>
+        <span class="text-slate-700 line-clamp-1">{post.data.title}</span>
+      </nav>
+
+      <header class="rounded-2xl border border-slate-200 bg-white shadow-sm overflow-hidden mb-6 md:mb-8">
+        <div class="h-64 md:h-96 bg-slate-100">
+          <img src={image} alt={imageAlt} class="h-full w-full object-cover" loading="eager" decoding="async" />
+        </div>
+        <div class="p-6 md:p-8">
+          <div class="flex flex-wrap items-center gap-2 text-xs text-slate-500 mb-4">
+            <time datetime={publishedIso}>{dateFormatter.format(post.data.pubDate)}</time>
+            <span>•</span>
+            <span>{readingMinutes} min</span>
+            <span>•</span>
+            <span>{post.data.author}</span>
+          </div>
+          <h1 class="text-3xl md:text-5xl font-bold tracking-tight text-slate-900 leading-tight mb-4">{post.data.title}</h1>
+          <p class="text-base md:text-xl text-slate-600 leading-relaxed">{post.data.description}</p>
+          {keywords.length > 0 && (
+            <div class="mt-5 flex flex-wrap gap-2">
+              {keywords.map((tag) => (
+                <a
+                  href={getPath(`${lang}/blog?topic=${encodeURIComponent(normalizeKeyword(tag))}`)}
+                  class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-medium text-slate-700 hover:border-blue-200 hover:text-blue-700 transition-colors"
+                >
+                  {tag}
+                </a>
+              ))}
             </div>
-            <h1 class="text-3xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">{post.data.title}</h1>
-            <p class="text-xl text-gray-600 leading-relaxed">{post.data.description}</p>
+          )}
         </div>
-    </div>
+      </header>
 
-    {/* Content */}
-    <div class="container mx-auto px-4 max-w-3xl py-12">
-        <div class="prose prose-lg prose-blue mx-auto prose-headings:font-bold prose-headings:text-gray-900 prose-p:text-gray-600 prose-li:text-gray-600">
+      <div class="grid gap-6 lg:grid-cols-[minmax(0,1fr)_280px]">
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 md:p-8 shadow-sm">
+          <div class="prose prose-lg max-w-none prose-headings:text-slate-900 prose-headings:font-bold prose-p:text-slate-700 prose-li:text-slate-700 prose-a:text-blue-700 prose-a:font-medium prose-a:no-underline hover:prose-a:underline">
             <Content />
+          </div>
+
+          <div class="mt-10 pt-6 border-t border-slate-100 flex flex-wrap gap-3 justify-between items-center">
+            <a
+              href={getPath(`${lang}/blog`)}
+              class="inline-flex items-center rounded-xl border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50 transition-colors"
+            >
+              {t('blog.back')}
+            </a>
+          </div>
         </div>
 
-        {/* Share/Footer */}
-        <div class="mt-16 pt-8 border-t border-gray-100 flex justify-between items-center">
-            <a href={getPath(`${lang}/blog`)} class="text-gray-500 hover:text-gray-900 font-medium inline-flex items-center">
-                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" /></svg>
-                {t('blog.back')}
-            </a>
-        </div>
+        <aside class="space-y-4">
+          <section class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+            <h2 class="text-sm font-bold uppercase tracking-wide text-slate-900 mb-3">Kern-Keywords</h2>
+            <div class="flex flex-wrap gap-2">
+              {keywords.map((tag) => (
+                <a
+                  href={getPath(`${lang}/blog?topic=${encodeURIComponent(normalizeKeyword(tag))}`)}
+                  class="rounded-full border border-slate-200 bg-slate-50 px-2.5 py-1 text-[11px] font-medium text-slate-700 hover:border-blue-200 hover:text-blue-700 transition-colors"
+                >
+                  {tag}
+                </a>
+              ))}
+            </div>
+          </section>
+
+          {(newerPost || olderPost) && (
+            <section class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+              <h2 class="text-sm font-bold uppercase tracking-wide text-slate-900 mb-3">Weitere Artikel</h2>
+              <div class="space-y-3">
+                {newerPost && (
+                  <a href={getPath(`${lang}/blog/${newerPost.slug}`)} class="block rounded-lg border border-slate-200 bg-slate-50 px-3 py-2.5 hover:bg-slate-100 transition-colors">
+                    <p class="text-[11px] text-slate-500 mb-1">Neuer</p>
+                    <p class="text-sm font-medium text-slate-800 line-clamp-2">{newerPost.data.title}</p>
+                  </a>
+                )}
+                {olderPost && (
+                  <a href={getPath(`${lang}/blog/${olderPost.slug}`)} class="block rounded-lg border border-slate-200 bg-slate-50 px-3 py-2.5 hover:bg-slate-100 transition-colors">
+                    <p class="text-[11px] text-slate-500 mb-1">Älter</p>
+                    <p class="text-sm font-medium text-slate-800 line-clamp-2">{olderPost.data.title}</p>
+                  </a>
+                )}
+              </div>
+            </section>
+          )}
+        </aside>
+      </div>
+
+      {relatedPosts.length > 0 && (
+        <section class="mt-6 rounded-2xl border border-slate-200 bg-white p-5 md:p-6 shadow-sm">
+          <h2 class="text-xl font-bold text-slate-900 mb-4">Ähnliche Beiträge</h2>
+          <div class="grid gap-4 md:grid-cols-3">
+            {relatedPosts.map((entry) => (
+              <article class="rounded-xl border border-slate-200 overflow-hidden bg-white">
+                <a href={entry.url} class="block group">
+                  <div class="h-36 bg-slate-100 overflow-hidden">
+                    <img
+                      src={entry.image}
+                      alt={getBlogImageAlt(entry.data.title)}
+                      loading="lazy"
+                      decoding="async"
+                      class="h-full w-full object-cover group-hover:scale-[1.03] transition-transform duration-300"
+                    />
+                  </div>
+                  <div class="p-4">
+                    <p class="text-xs text-slate-500 mb-2">{entry.dateLabel}</p>
+                    <h3 class="text-sm font-semibold text-slate-900 line-clamp-2 group-hover:text-blue-700 transition-colors mb-2">
+                      {entry.data.title}
+                    </h3>
+                    <p class="text-xs text-slate-600 line-clamp-2">{entry.data.description}</p>
+                  </div>
+                </a>
+              </article>
+            ))}
+          </div>
+        </section>
+      )}
     </div>
   </article>
 </Layout>

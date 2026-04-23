@@ -146,10 +146,36 @@ const schema = {
   }))
 };
 
+const siteUrl = Astro.site || 'https://lumi-zone.github.io';
+const supportUrl = new URL(getPath(`${lang}/support`), siteUrl).href;
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": t('nav.home'),
+      "item": new URL(getPath(`${lang}/`), siteUrl).href
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": t('support.title'),
+      "item": supportUrl
+    }
+  ]
+};
+
 import Header from '../../components/Header.astro';
 ---
 
-<Layout title={`${t('support.title')} - Leben in Deutschland`} lang={lang as string}>
+<Layout
+  title={`${t('support.title')} - Leben in Deutschland`}
+  description={t('support.subtitle')}
+  image="/logo.png"
+  lang={lang as string}
+>
 	<!-- Navigation -->
     <Header lang={lang as string} />
 
@@ -185,7 +211,7 @@ import Header from '../../components/Header.astro';
                 </p>
             </div>
             <div class="space-y-6">
-                {data.map((item, index) => (
+                {data.map((item) => (
                     <div class="bg-white rounded-2xl shadow-sm border border-tertiary-100 overflow-hidden group">
                         <details class="group">
                             <summary class="flex items-center justify-between p-6 cursor-pointer list-none bg-white hover:bg-tertiary-50 transition-colors">
@@ -207,9 +233,7 @@ import Header from '../../components/Header.astro';
                 <div class="absolute inset-0 opacity-10" style={`background-image: url('${import.meta.env.BASE_URL}pattern.svg')`}></div>
                 <div class="relative z-10">
                     <h2 class="text-2xl md:text-3xl font-bold mb-4">{t('hero.title')}</h2>
-                    <p class="text-primary-100 mb-8 max-w-lg mx-auto text-lg">
-                        {t('hero.subtitle')}
-                    </p>
+                    <p class="text-primary-100 mb-8 max-w-lg mx-auto text-lg" set:html={t('hero.subtitle')} />
                     <div class="flex flex-col sm:flex-row gap-4 justify-center">
                         <a href={getPath(`${lang}/`)} class="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-white text-primary-900 font-bold hover:bg-primary-50 transition-colors">
                             {t('home.start_quiz')} 
@@ -218,13 +242,14 @@ import Header from '../../components/Header.astro';
                             </svg>
                         </a>
                         <a href={getPath(`${lang}/blog`)} class="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-primary-800 text-white font-medium hover:bg-primary-700 transition-colors border border-primary-700">
-                            Blog
+                            {t('nav.blog')}
                         </a>
                     </div>
                 </div>
             </div>
         </div>
 
-        <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+        <script is:inline type="application/ld+json" set:html={JSON.stringify(schema)} />
+        <script is:inline type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
     </main>
 </Layout>

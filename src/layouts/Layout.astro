@@ -1,7 +1,5 @@
 ---
 import "../styles/global.css";
-import LanguageSelector from '../components/LanguageSelector';
-import SmartAppBanner from '../components/SmartAppBanner';
 import { languages } from '../i18n/ui';
 import { getPath } from '../utils/navigation';
 
@@ -9,35 +7,88 @@ interface Props {
   title: string;
   lang?: string;
   description?: string;
+  canonical?: string;
+  keywords?: string;
   image?: string;
+  imageAlt?: string;
+  imageWidth?: number;
+  imageHeight?: number;
+  imageType?: string;
+  ogType?: 'website' | 'article';
+  publishedTime?: string;
+  modifiedTime?: string;
+  authors?: string[];
+  noindex?: boolean;
+  disableAlternates?: boolean;
+  rssHref?: string;
 }
 
-const { title, lang = 'de', description = "Kostenloses Training für den 'Leben in Deutschland' Test & Einbürgerungstest. Alle 300+ offiziellen Fragen für 2026. Jetzt üben!", image = "/social-share.jpg" } = Astro.props;
+const {
+	title,
+	lang = 'de',
+	description = "Kostenloses Training für den 'Leben in Deutschland' Test & Einbürgerungstest. Alle 300+ offiziellen Fragen für 2026. Jetzt üben!",
+	canonical,
+	keywords = "leben in deutschland, einbürgerungstest, bamf, 300 fragen, 310 fragen, integrationskurs, politikkurs, prüfung, 2026, test leben in deutschland, einbürgerung",
+	image = "/og/og-default.png",
+	imageAlt = "Leben in Deutschland App - Einbuergerungstest 2026 Vorbereitung",
+	imageWidth = 1200,
+	imageHeight = 630,
+	imageType = "image/png",
+	ogType = 'website',
+	publishedTime,
+	modifiedTime,
+	authors = [],
+	noindex = false,
+	disableAlternates = false,
+	rssHref,
+} = Astro.props;
+const siteUrl = Astro.site || 'https://lumi-zone.github.io';
 const currentPath = Astro.url.pathname;
-const canonicalURL = new URL(currentPath, Astro.site || 'https://lebenindeutschland.web.app');
+const canonicalURL = new URL(currentPath, siteUrl);
+const canonicalHref = canonical ? new URL(canonical, siteUrl).href : canonicalURL.href;
 
+// Generate language alternates while preserving base path and route.
+const languageCodes = Object.keys(languages);
+const baseSegments = getPath('/').split('/').filter(Boolean);
+const pathSegments = currentPath.split('/').filter(Boolean);
+const pathWithoutBase =
+  baseSegments.length > 0 &&
+  baseSegments.every((segment, index) => pathSegments[index] === segment)
+    ? pathSegments.slice(baseSegments.length)
+    : pathSegments;
+const routeSegments =
+  pathWithoutBase.length > 0 && languageCodes.includes(pathWithoutBase[0])
+    ? pathWithoutBase.slice(1)
+    : pathWithoutBase;
 
-// Generate alternate links for SEO
-const alternates = Object.keys(languages).map(l => {
-  let newPath = currentPath;
-  const segments = currentPath.split('/').filter(Boolean);
-  
-  // Handle base path logic for alternates if needed, but Astro.url.pathname usually includes base in dev?
-  // Actually simpler: just rely on the structure we have.
-  
-  if (segments.length > 0 && segments[0] in languages) {
-      segments[0] = l;
-      newPath = '/' + segments.join('/');
-  }
-  // Ensure newPath doesn't lose the base if it was there? 
-  // For alternate links href, we construct a full URL. 
-  // We'll trust new URL() to handle it effectively or just stick to relative replacement.
-  return { lang: l, href: new URL(newPath, Astro.site || 'https://Lumi-Zone.github.io').href };
-});
+const getLocalizedHref = (targetLang: string) =>
+  new URL(getPath([targetLang, ...routeSegments].join('/')), siteUrl).href;
+
+const alternates = languageCodes.map((languageCode) => ({
+  lang: languageCode,
+  href: getLocalizedHref(languageCode),
+}));
+const xDefaultHref = getLocalizedHref('de');
+const socialImagePath = image === '/logo.png' ? '/og/og-default.png' : image;
+const resolvedImagePath =
+	socialImagePath.startsWith('http://') || socialImagePath.startsWith('https://')
+		? socialImagePath
+		: getPath(socialImagePath);
+const socialImageURL = new URL(resolvedImagePath, siteUrl).href;
+const robotsValue = noindex
+	? 'noindex, nofollow, noarchive'
+	: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1';
+const languageMenuItems = languageCodes.map((languageCode) => ({
+  code: languageCode,
+  label: languages[languageCode as keyof typeof languages],
+  href: getPath([languageCode, ...routeSegments].join('/')),
+}));
+const rtlLanguageCodes = new Set(['ar', 'fa', 'ps']);
+const documentDirection = rtlLanguageCodes.has(lang) ? 'rtl' : 'ltr';
 ---
 
 <!doctype html>
-<html lang={lang}>
+<html lang={lang} dir={documentDirection}>
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
@@ -46,36 +97,139 @@ const alternates = Object.keys(languages).map(l => {
         <meta name="apple-itunes-app" content="app-id=6723899981">
         
         <!-- Primary Meta Tags -->
-		<title>{title}</title>
+        <title>{title}</title>
         <meta name="description" content={description} />
-        <meta name="keywords" content="leben in deutschland, einbürgerungstest, bamf, 300 fragen, 310 fragen, integrationskurs, politikkurs, prüfung, 2026, test leben in deutschland, einbürgerung" />
-        <link rel="canonical" href={canonicalURL} />
+        <meta name="robots" content={robotsValue} />
+        <meta name="keywords" content={keywords} />
+        {authors[0] && <meta name="author" content={authors[0]} />}
+        <link rel="canonical" href={canonicalHref} />
+        {rssHref && <link rel="alternate" type="application/rss+xml" title="Blog RSS" href={rssHref} />}
 
         <!-- Open Graph / Facebook -->
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content={canonicalURL} />
+        <meta property="og:type" content={ogType} />
+        <meta property="og:site_name" content="Leben in Deutschland" />
+        <meta property="og:locale" content={lang === 'de' ? 'de_DE' : 'en_US'} />
+        <meta property="og:url" content={canonicalHref} />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
-        <meta property="og:image" content={new URL(getPath(image), Astro.url)} />
+        <meta property="og:image" content={socialImageURL} />
+        <meta property="og:image:secure_url" content={socialImageURL} />
+        <meta property="og:image:alt" content={imageAlt} />
+        <meta property="og:image:type" content={imageType} />
+        <meta property="og:image:width" content={String(imageWidth)} />
+        <meta property="og:image:height" content={String(imageHeight)} />
+        {publishedTime && <meta property="article:published_time" content={publishedTime} />}
+        {modifiedTime && <meta property="article:modified_time" content={modifiedTime} />}
+        {authors.map((author) => <meta property="article:author" content={author} />)}
 
         <!-- Twitter -->
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content={canonicalURL} />
-        <meta property="twitter:title" content={title} />
-        <meta property="twitter:description" content={description} />
-        <meta property="twitter:image" content={new URL(getPath(image), Astro.url)} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@300Fragen" />
+        <meta name="twitter:url" content={canonicalHref} />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
+        <meta name="twitter:image" content={socialImageURL} />
+        <meta name="twitter:image:alt" content={imageAlt} />
         
         <!-- Hreflang for Internationalization -->
-        {alternates.map(alt => (
+        {!disableAlternates && <link rel="alternate" hreflang="x-default" href={xDefaultHref} />}
+        {!disableAlternates && alternates.map(alt => (
             <link rel="alternate" hreflang={alt.lang} href={alt.href} />
         ))}
 	</head>
 	<body>
-		<div class="fixed top-4 right-4 z-[9999] pointer-events-auto">
-			<LanguageSelector currentLang={lang as any} client:load />
+		<a href="#main-content" class="skip-link">Skip to content</a>
+		<div class="language-switcher">
+			<details class="language-menu">
+				<summary class="language-summary" aria-label="Select language">
+					<span class="language-code">{String(lang).toUpperCase()}</span>
+					<svg class="language-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+					</svg>
+				</summary>
+				<nav class="language-panel" aria-label="Language options">
+					<ul class="language-list">
+						{languageMenuItems.map((item) => (
+							<li>
+								<a
+									href={item.href}
+									lang={item.code}
+									class={`language-item ${item.code === lang ? 'is-current' : ''}`}
+									aria-current={item.code === lang ? 'page' : undefined}
+								>
+									<span class="language-item-code">{item.code.toUpperCase()}</span>
+									<span>{item.label}</span>
+								</a>
+							</li>
+						))}
+					</ul>
+				</nav>
+			</details>
 		</div>
-        <SmartAppBanner client:only="react" />
-		<slot />
+		<div id="smart-app-banner" class="smart-banner" hidden>
+			<button type="button" id="smart-banner-close" class="smart-banner-close" aria-label="Close app banner">
+				<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+					<path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
+				</svg>
+			</button>
+
+			<div class="smart-banner-icon" aria-hidden="true">
+				<img src={getPath("logo.png")} alt="" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+			</div>
+
+			<div class="smart-banner-content">
+				<h3>Leben in Deutschland 2026</h3>
+				<p>Lumi-Zone</p>
+			</div>
+
+			<button
+				type="button"
+				id="smart-banner-open"
+				class="smart-banner-open"
+				aria-label="Open app on Google Play"
+			>
+				OPEN
+			</button>
+		</div>
+		<div id="main-content" tabindex="-1">
+			<slot />
+		</div>
+
+		<script is:inline>
+			(() => {
+				const banner = document.getElementById('smart-app-banner');
+				const closeButton = document.getElementById('smart-banner-close');
+				const openButton = document.getElementById('smart-banner-open');
+				if (!banner || !closeButton || !openButton) return;
+
+				let isClosed = false;
+				try {
+					isClosed = localStorage.getItem('smart-banner-closed') === 'true';
+				} catch {
+					isClosed = false;
+				}
+
+				const ua = navigator.userAgent.toLowerCase();
+				const isAndroid = ua.includes('android');
+
+				if (!isClosed && isAndroid) {
+					banner.hidden = false;
+				}
+
+				closeButton.addEventListener('click', () => {
+					banner.hidden = true;
+					try {
+						localStorage.setItem('smart-banner-closed', 'true');
+					} catch {
+						/* no-op */
+					}
+				});
+
+				openButton.addEventListener('click', () => {
+					window.location.href = 'https://play.google.com/store/apps/details?id=com.einbuergerungapp';
+				});
+			})();
+		</script>
 	</body>
 </html>
 
@@ -87,5 +241,203 @@ const alternates = Object.keys(languages).map(l => {
 		margin: 0;
 		width: 100%;
 		height: 100%;
+	}
+
+	.skip-link {
+		position: fixed;
+		top: 0.75rem;
+		left: 0.75rem;
+		padding: 0.5rem 0.75rem;
+		background: #1d4ed8;
+		color: #ffffff;
+		border-radius: 0.5rem;
+		font-weight: 600;
+		text-decoration: none;
+		transform: translateY(-180%);
+		transition: transform 150ms ease;
+		z-index: 10000;
+	}
+
+	.skip-link:focus {
+		transform: translateY(0);
+	}
+
+	.language-menu {
+		position: relative;
+	}
+
+	.language-switcher {
+		position: fixed;
+		top: calc(1rem + env(safe-area-inset-top));
+		right: 1rem;
+		z-index: 60;
+		pointer-events: auto;
+	}
+
+	.language-summary {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.5rem;
+		padding: 0.5rem 0.75rem;
+		border-radius: 0.75rem;
+		border: 1px solid #e5e7eb;
+		background: #ffffff;
+		box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+		font-weight: 700;
+		font-size: 0.875rem;
+		color: #374151;
+		cursor: pointer;
+		list-style: none;
+	}
+
+	.language-summary::-webkit-details-marker {
+		display: none;
+	}
+
+	.language-chevron {
+		width: 1rem;
+		height: 1rem;
+		color: #9ca3af;
+		transition: transform 150ms ease;
+	}
+
+	.language-menu[open] .language-chevron {
+		transform: rotate(180deg);
+	}
+
+	.language-panel {
+		position: absolute;
+		top: calc(100% + 0.5rem);
+		right: 0;
+		min-width: 13rem;
+		max-height: 70vh;
+		overflow-y: auto;
+		border-radius: 0.9rem;
+		border: 1px solid #e5e7eb;
+		background: #ffffff;
+		box-shadow: 0 10px 26px rgba(0, 0, 0, 0.12);
+		padding: 0.35rem;
+	}
+
+	.language-list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.language-item {
+		display: flex;
+		align-items: center;
+		gap: 0.6rem;
+		padding: 0.55rem 0.65rem;
+		border-radius: 0.6rem;
+		font-size: 0.9rem;
+		text-decoration: none;
+		color: #374151;
+	}
+
+	.language-item:hover {
+		background: #f9fafb;
+	}
+
+	.language-item.is-current {
+		background: #eff6ff;
+		color: #1d4ed8;
+	}
+
+	.language-item-code {
+		font-size: 0.72rem;
+		font-weight: 700;
+		letter-spacing: 0.04em;
+		color: #9ca3af;
+		min-width: 2rem;
+	}
+
+	.language-item.is-current .language-item-code {
+		color: #1d4ed8;
+	}
+
+	.smart-banner {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 10000;
+		background: #ffffff;
+		border-bottom: 1px solid #e5e7eb;
+		box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+		padding: 0.65rem 0.75rem;
+		display: flex;
+		align-items: center;
+		gap: 0.65rem;
+		animation: smartBannerSlideDown 180ms ease-out;
+	}
+
+	.smart-banner-close {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0.25rem;
+		border: none;
+		background: transparent;
+		color: #9ca3af;
+		cursor: pointer;
+	}
+
+	.smart-banner-icon {
+		width: 2.7rem;
+		height: 2.7rem;
+		border-radius: 0.75rem;
+		overflow: hidden;
+		background: #f3f4f6;
+		flex-shrink: 0;
+	}
+
+	.smart-banner-content {
+		min-width: 0;
+		flex: 1;
+	}
+
+	.smart-banner-content h3 {
+		margin: 0;
+		font-size: 0.9rem;
+		line-height: 1.2;
+		color: #111827;
+		font-weight: 700;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	.smart-banner-content p {
+		margin: 0.15rem 0 0;
+		font-size: 0.75rem;
+		color: #6b7280;
+	}
+
+	.smart-banner-open {
+		border: none;
+		border-radius: 999px;
+		background: #2563eb;
+		color: #ffffff;
+		font-weight: 700;
+		font-size: 0.75rem;
+		padding: 0.4rem 0.75rem;
+		cursor: pointer;
+	}
+
+	@keyframes smartBannerSlideDown {
+		from {
+			transform: translateY(-100%);
+		}
+		to {
+			transform: translateY(0);
+		}
+	}
+
+	@media (max-width: 1279px) {
+		.language-switcher {
+			top: calc(5.5rem + env(safe-area-inset-top));
+		}
 	}
 </style>

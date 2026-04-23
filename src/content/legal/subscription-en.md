@@ -1,40 +1,39 @@
 ---
 title: "Subscription Terms"
-lastUpdated: "September 30, 2024"
+lastUpdated: "April 23, 2026"
 ---
 
-Welcome to our application! Please review the following terms regarding our subscription and in-app purchase options. By purchasing a subscription or lifetime membership, you agree to these terms.
+Welcome to our application. Please note: the app does **not** offer a subscription model. It only offers a one-time lifetime purchase.
 
-## Subscription Plans
+<h2 id="purchase-model">1. Purchase Model</h2>
 
-*   **Weekly Subscription:** $X.XX per week (includes a 3-day free trial).
-*   **Monthly Subscription:** $X.XX per month.
-*   **Yearly Subscription:** $X.XX per year.
-*   **Lifetime Membership:** One-time payment of $X.XX.
+There is only one purchase option:
 
-## Free Trial
+*   **Lifetime Access (one-time): 9,99€**
 
-The weekly subscription includes a 3-day free trial. If you do not cancel the subscription before the trial period ends, your subscription will automatically renew at the weekly rate.
+There are **no** weekly, monthly, or yearly subscriptions and **no** free trial.
 
-## Billing and Renewal
+<h2 id="price-billing">2. Price and Billing</h2>
 
-Subscriptions are billed to your iTunes/Google Play account at the time of purchase. Subscriptions automatically renew unless canceled at least 24 hours before the end of the current period. Renewal charges will be made within 24 hours prior to the end of the current subscription period. You can manage or cancel your subscription at any time through your account settings.
+The **9,99€** amount is charged once through your Apple App Store or Google Play account.  
+There is **no auto-renewal** and no recurring billing.
 
-## Refund Policy
+<h2 id="access">3. Lifetime Access</h2>
 
-All charges are non-refundable, and refunds will not be provided for any unused portion of the subscription term. However, you can cancel your subscription at any time to avoid future charges.
+The lifetime purchase grants ongoing access to the unlocked app features for this product.
 
-## Lifetime Membership
+<h2 id="refunds">4. Refunds</h2>
 
-The lifetime membership is a one-time payment and does not renew. This purchase grants you permanent access to the app's features.
+Refund decisions are handled by the relevant store provider (Apple/Google).  
+Please use the official store refund process for requests.
 
-## Changes to Terms
+<h2 id="changes">5. Changes to Terms</h2>
 
 We reserve the right to update these terms at any time. Any changes will be communicated to you through the app or via email.
 
 ## Contact Us
 
-If you have any questions about these terms, please contact us at [support@example.com](mailto:support@example.com).
+If you have any questions about these terms, please contact us at [cfstechmobile@gmail.com](mailto:cfstechmobile@gmail.com).
 
 ___
-© 2024 Your Company Name. All rights reserved.
+© 2026 Leben in Deutschland (Lumi-Zone). All rights reserved.

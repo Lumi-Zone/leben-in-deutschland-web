@@ -139,7 +139,7 @@ Wir können diese Datenschutzerklärung von Zeit zu Zeit aktualisieren. Die aktu
 
 <h2 id="contact">12. WIE KÖNNEN SIE UNS BEZÜGLICH DIESER MITTEILUNG KONTAKTIEREN?</h2>
 
-Wenn Sie Fragen oder Kommentare zu dieser Mitteilung haben, können Sie uns per E-Mail kontaktieren.
+Wenn Sie Fragen oder Kommentare zu dieser Mitteilung haben, kontaktieren Sie uns bitte per E-Mail unter [cfstechmobile@gmail.com](mailto:cfstechmobile@gmail.com).
 
 <h2 id="review">13. WIE KÖNNEN SIE DIE DATEN, DIE WIR VON IHNEN SAMMELN, ÜBERPRÜFEN, AKTUALISIEREN ODER LÖSCHEN?</h2>
 

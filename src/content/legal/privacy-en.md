@@ -143,7 +143,7 @@ We may update this Privacy Notice from time to time. The updated version will be
 
 ## 12. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?
 
-If you have questions or comments about this notice, you may contact us by email.
+If you have questions or comments about this notice, please contact us by email at [cfstechmobile@gmail.com](mailto:cfstechmobile@gmail.com).
 
 ## 13. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?
 

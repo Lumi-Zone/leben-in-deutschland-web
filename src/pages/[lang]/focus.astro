@@ -1,0 +1,81 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import FocusPracticeSession from '../../components/FocusPracticeSession';
+import questions from '../../data/questions.json';
+import { useTranslations } from '../../i18n/ui';
+import { getPath } from '../../utils/navigation';
+
+type SupportedLang = 'de' | 'en' | 'tr' | 'ar' | 'ua' | 'ru' | 'pl' | 'fa' | 'ps' | 'ro' | 'it' | 'es';
+
+export function getStaticPaths() {
+  const supportedLangs: SupportedLang[] = ['de', 'en', 'tr', 'ar', 'ua', 'ru', 'pl', 'fa', 'ps', 'ro', 'it', 'es'];
+  return supportedLangs.map((lang) => ({ params: { lang }, props: { lang } }));
+}
+
+const { lang } = Astro.props as { lang: SupportedLang };
+const t = useTranslations(lang);
+
+const pool = questions.map((q) => {
+  const qAny = q as any;
+  const localizedQuestion = qAny[`q_${lang}`] || q.q_de;
+  const optionsDe = [qAny.a1_de, qAny.a2_de, qAny.a3_de, qAny.a4_de];
+  const optionsLocalized = [
+    qAny[`a1_${lang}`] || qAny.a1_de,
+    qAny[`a2_${lang}`] || qAny.a2_de,
+    qAny[`a3_${lang}`] || qAny.a3_de,
+    qAny[`a4_${lang}`] || qAny.a4_de,
+  ];
+  const correctIndex = q.solution.toLowerCase().charCodeAt(0) - 97;
+
+  return {
+    id: q.id,
+    questionDe: q.q_de,
+    questionLocalized: localizedQuestion,
+    optionsDe,
+    optionsLocalized,
+    correctIndex,
+  };
+});
+---
+
+<Layout
+  title={`${t("focus.page_title")} - ${t("hero.title")}`}
+  description={t("focus.subtitle")}
+  image="/logo.png"
+  lang={lang}
+>
+  <Header lang={lang} />
+
+  <main class="container mx-auto px-4 py-10 min-h-screen bg-gray-50">
+    <div class="max-w-5xl mx-auto mb-8 flex flex-wrap gap-3 text-sm">
+      <a href={getPath(`${lang}/`)} class="text-blue-600 hover:text-blue-800 font-medium">← {t("question.back")}</a>
+      <span class="text-gray-300">|</span>
+      <a href={getPath(`${lang}/progress`)} class="text-blue-600 hover:text-blue-800 font-medium">{t("nav.progress")}</a>
+    </div>
+
+    <FocusPracticeSession
+      client:visible
+      lang={lang}
+      pool={pool}
+      labels={{
+        title: t("focus.title"),
+        subtitle: t("focus.subtitle"),
+        start: t("focus.start"),
+        empty: t("focus.empty"),
+        questions: t("focus.questions"),
+        answered: t("focus.answered"),
+        previous: t("focus.previous"),
+        next: t("focus.next"),
+        finish: t("focus.finish"),
+        resultTitle: t("focus.result_title"),
+        score: t("focus.score"),
+        restart: t("focus.restart"),
+        reviewQuestion: t("focus.review_question"),
+        correct: t("focus.correct"),
+        wrong: t("focus.wrong"),
+        correctAnswer: t("focus.correct_answer"),
+      }}
+    />
+  </main>
+</Layout>

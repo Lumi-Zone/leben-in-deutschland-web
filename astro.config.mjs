@@ -8,7 +8,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://Lumi-Zone.github.io',
+  site: 'https://lumi-zone.github.io',
   base: '/leben-in-deutschland-web',
   integrations: [react(), sitemap()],
 

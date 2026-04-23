@@ -1,0 +1,82 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import ExamSimulator from '../../components/ExamSimulator';
+import questions from '../../data/questions.json';
+import { useTranslations } from '../../i18n/ui';
+import { getPath } from '../../utils/navigation';
+
+type SupportedLang = 'de' | 'en' | 'tr' | 'ar' | 'ua' | 'ru' | 'pl' | 'fa' | 'ps' | 'ro' | 'it' | 'es';
+
+export function getStaticPaths() {
+  const supportedLangs: SupportedLang[] = ['de', 'en', 'tr', 'ar', 'ua', 'ru', 'pl', 'fa', 'ps', 'ro', 'it', 'es'];
+  return supportedLangs.map((lang) => ({ params: { lang }, props: { lang } }));
+}
+
+const { lang } = Astro.props as { lang: SupportedLang };
+const t = useTranslations(lang);
+
+const examPool = questions.map((q) => {
+  const qAny = q as any;
+  const localizedQuestion = qAny[`q_${lang}`] || q.q_de;
+  const optionsDe = [qAny.a1_de, qAny.a2_de, qAny.a3_de, qAny.a4_de];
+  const optionsLocalized = [
+    qAny[`a1_${lang}`] || qAny.a1_de,
+    qAny[`a2_${lang}`] || qAny.a2_de,
+    qAny[`a3_${lang}`] || qAny.a3_de,
+    qAny[`a4_${lang}`] || qAny.a4_de,
+  ];
+  const correctIndex = q.solution.toLowerCase().charCodeAt(0) - 97;
+
+  return {
+    id: q.id,
+    questionDe: q.q_de,
+    questionLocalized: localizedQuestion,
+    optionsDe,
+    optionsLocalized,
+    correctIndex,
+  };
+});
+---
+
+<Layout
+  title={`${t("exam.title")} - ${t("hero.title")}`}
+  description={t("exam.subtitle")}
+  image="/logo.png"
+  lang={lang}
+>
+  <Header lang={lang} />
+
+  <main class="container mx-auto px-4 py-10 min-h-screen bg-gray-50">
+    <div class="max-w-5xl mx-auto mb-8">
+      <a href={getPath(`${lang}/`)} class="text-blue-600 hover:text-blue-800 font-medium">← {t("question.back")}</a>
+    </div>
+
+    <ExamSimulator
+      client:visible
+      lang={lang}
+      pool={examPool}
+      labels={{
+        title: t("exam.title"),
+        subtitle: t("exam.subtitle"),
+        start: t("exam.start"),
+        timer: t("exam.timer"),
+        progress: t("exam.progress"),
+        previous: t("exam.previous"),
+        next: t("exam.next"),
+        finish: t("exam.finish"),
+        answered: t("exam.answered"),
+        resultTitle: t("exam.result_title"),
+        passed: t("exam.passed"),
+        failed: t("exam.failed"),
+        score: t("exam.score"),
+        passRule: t("exam.pass_rule"),
+        wrongAnswers: t("exam.wrong_answers"),
+        reviewQuestion: t("exam.review_question"),
+        restart: t("exam.restart"),
+        noQuestions: t("exam.no_questions"),
+        noWrongAnswers: t("exam.no_wrong_answers"),
+      }}
+    />
+  </main>
+</Layout>

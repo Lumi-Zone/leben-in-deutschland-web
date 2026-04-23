@@ -2,67 +2,456 @@
 import Layout from '../../../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
 import { useTranslations } from '../../../i18n/ui';
+import Header from '../../../components/Header.astro';
+import { getPath } from '../../../utils/navigation';
+import { getBlogImageAlt, getReadingMinutes, normalizeKeyword, resolveBlogImage } from '../../../utils/blog';
 
 export async function getStaticPaths() {
   const supportedLangs = ['de', 'en', 'tr', 'ar', 'ua', 'ru', 'pl', 'fa', 'ps', 'ro', 'it', 'es'];
-  return supportedLangs.map(lang => ({ params: { lang }, props: { lang } }));
+  return supportedLangs.map((lang) => ({ params: { lang }, props: { lang } }));
 }
 
 const { lang } = Astro.props;
 const t = useTranslations(lang as any);
 const posts = await getCollection('blog');
-
-import Header from '../../../components/Header.astro';
-import { getPath } from '../../../utils/navigation';
-
-// Sort by date desc
 const sortedPosts = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const isPrimaryBlogLocale = lang === 'de';
+const canonicalPath = getPath('de/blog');
+const siteUrl = Astro.site || 'https://lumi-zone.github.io';
+const blogIndexUrl = new URL(getPath(`${lang}/blog`), siteUrl).href;
+const primaryBlogUrl = new URL(canonicalPath, siteUrl).href;
+
+const localeByLang: Record<string, string> = {
+  de: 'de-DE',
+  en: 'en-US',
+  tr: 'tr-TR',
+  ar: 'ar',
+  ua: 'uk-UA',
+  ru: 'ru-RU',
+  pl: 'pl-PL',
+  fa: 'fa-IR',
+  ps: 'ps',
+  ro: 'ro-RO',
+  it: 'it-IT',
+  es: 'es-ES',
+};
+const locale = localeByLang[lang] || 'de-DE';
+const dateFormatter = new Intl.DateTimeFormat(locale, { year: 'numeric', month: 'long', day: 'numeric' });
+const monthFormatter = new Intl.DateTimeFormat(locale, { year: 'numeric', month: 'long' });
+
+const tagCounts = new Map<string, number>();
+const archiveCounts = new Map<string, { label: string; count: number }>();
+
+const normalizedPosts = sortedPosts.map((post) => {
+  const image = resolveBlogImage(post);
+  const tags = post.data.tags ?? [];
+  const monthKey = post.data.pubDate.toISOString().slice(0, 7);
+
+  tags.forEach((tag) => {
+    tagCounts.set(tag, (tagCounts.get(tag) ?? 0) + 1);
+  });
+
+  const archive = archiveCounts.get(monthKey);
+  if (archive) {
+    archive.count += 1;
+  } else {
+    archiveCounts.set(monthKey, {
+      label: monthFormatter.format(post.data.pubDate),
+      count: 1,
+    });
+  }
+
+  return {
+    ...post,
+    image,
+    imageAlt: getBlogImageAlt(post.data.title),
+    readingMinutes: getReadingMinutes(post.body),
+    dateLabel: dateFormatter.format(post.data.pubDate),
+    monthKey,
+    tags,
+    tagsNormalized: tags.map((tag) => normalizeKeyword(tag)),
+    url: getPath(`${lang}/blog/${post.slug}`),
+    absoluteUrl: new URL(getPath(`${lang}/blog/${post.slug}`), siteUrl).href,
+  };
+});
+
+const topicItems = Array.from(tagCounts.entries())
+  .map(([name, count]) => ({
+    name,
+    count,
+    normalized: normalizeKeyword(name),
+  }))
+  .sort((a, b) => b.count - a.count || a.name.localeCompare(b.name, locale));
+
+const archives = Array.from(archiveCounts.entries())
+  .map(([key, value]) => ({ key, ...value }))
+  .sort((a, b) => b.key.localeCompare(a.key));
+
+const primaryKeywords = topicItems.slice(0, 12).map((topic) => topic.name);
+const seoKeywords = [
+  ...primaryKeywords,
+  'Einbürgerungstest',
+  'Leben in Deutschland',
+  'BAMF Fragen',
+  'Einbürgerung 2026',
+].join(', ');
+
+const heroImage = normalizedPosts[0]?.image ?? '/og/og-default.png';
+const featuredPost = normalizedPosts[0];
+const blogGridPosts = normalizedPosts.slice(1);
+
+const blogListSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: t('blog.title'),
+  description: t('blog.subtitle'),
+  url: isPrimaryBlogLocale ? primaryBlogUrl : blogIndexUrl,
+  inLanguage: lang,
+  mainEntity: {
+    '@type': 'ItemList',
+    itemListOrder: 'https://schema.org/ItemListOrderDescending',
+    numberOfItems: normalizedPosts.length,
+    itemListElement: normalizedPosts.map((post, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      url: post.absoluteUrl,
+      name: post.data.title,
+    })),
+  },
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      name: t('nav.home'),
+      item: new URL(getPath(`${lang}/`), siteUrl).href,
+    },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      name: t('nav.blog'),
+      item: isPrimaryBlogLocale ? primaryBlogUrl : blogIndexUrl,
+    },
+  ],
+};
 ---
 
-<Layout title="Blog - Leben in Deutschland" lang={lang}>
-	<!-- Navigation -->
-	<Header lang={lang} />
+<Layout
+  title={`${t('blog.title')} - Leben in Deutschland`}
+  description={t('blog.subtitle')}
+  image={heroImage}
+  canonical={canonicalPath}
+  keywords={seoKeywords}
+  noindex={!isPrimaryBlogLocale}
+  disableAlternates={true}
+  rssHref={getPath('rss.xml')}
+  lang={lang}
+>
+  <Header lang={lang} />
+  <script is:inline type="application/ld+json" set:html={JSON.stringify(blogListSchema)} />
+  <script is:inline type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
 
-  <div class="bg-gray-50 min-h-screen py-12">
-    <div class="container mx-auto px-4 max-w-6xl">
-      <div class="text-center mb-16">
-        <h1 class="text-4xl font-bold text-gray-900 mb-4">{t('blog.title')}</h1>
-        <p class="text-xl text-gray-600 max-w-2xl mx-auto">{t('blog.subtitle')}</p>
-      </div>
+  <main class="bg-slate-50 min-h-screen py-8 md:py-10">
+    <div class="container mx-auto px-4 max-w-7xl">
+      <header class="mb-8 md:mb-10">
+        <p class="inline-flex items-center rounded-full border border-blue-100 bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-700 mb-4">
+          {t('nav.blog')}
+        </p>
+        <h1 class="text-3xl md:text-5xl font-bold text-slate-900 tracking-tight mb-4">{t('blog.title')}</h1>
+        <p class="text-base md:text-xl text-slate-600 max-w-3xl">{t('blog.subtitle')}</p>
+      </header>
 
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {sortedPosts.map(post => (
-          <article class="bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow overflow-hidden border border-gray-100 flex flex-col h-full">
-            {/* Fallback image if none provided */ }
-            <div class="h-48 bg-gradient-to-r from-blue-500 to-indigo-600 flex items-center justify-center text-white text-4xl font-bold">
-               {post.data.title.charAt(0)}
-            </div>
-            
-            <div class="p-6 flex flex-col flex-1">
-              <div class="flex items-center gap-2 text-xs text-gray-500 mb-3">
-                <span>{post.data.pubDate.toLocaleDateString(lang)}</span>
-                <span>•</span>
-                <span class="bg-blue-50 text-blue-600 px-2 py-0.5 rounded-full font-medium">{post.data.tags?.[0] || 'Allgemein'}</span>
-              </div>
-              
-              <h2 class="text-xl font-bold text-gray-900 mb-3 line-clamp-2">
-                <a href={getPath(`${lang}/blog/${post.slug}`)} class="hover:text-blue-600 transition-colors">
-                  {post.data.title}
-                </a>
-              </h2>
-              
-              <p class="text-gray-600 text-sm mb-4 line-clamp-3 leading-relaxed flex-1">
-                {post.data.description}
-              </p>
-              
-              <a href={getPath(`${lang}/blog/${post.slug}`)} class="text-blue-600 font-medium text-sm hover:underline mt-auto inline-flex items-center">
-                {t('blog.read_more')} 
-                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+      <section class="bg-white border border-slate-200 rounded-2xl p-4 md:p-5 shadow-sm mb-6 md:mb-8" aria-label="Blog filters">
+        <div class="grid gap-3 md:grid-cols-[2fr_1fr]">
+          <label class="relative">
+            <span class="sr-only">Blog durchsuchen</span>
+            <input
+              type="search"
+              placeholder="Titel, Themen oder Schlagwörter suchen"
+              class="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-800 outline-none focus:border-blue-300 focus:ring-2 focus:ring-blue-100"
+              data-blog-search
+            />
+          </label>
+
+          <label>
+            <span class="sr-only">Nach Datum filtern</span>
+            <select
+              class="w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700 outline-none focus:border-blue-300 focus:ring-2 focus:ring-blue-100"
+              data-blog-archive
+            >
+              <option value="all">Alle Zeiträume</option>
+              {archives.map((archive) => (
+                <option value={archive.key}>{archive.label} ({archive.count})</option>
+              ))}
+            </select>
+          </label>
+        </div>
+
+        {topicItems.length > 0 && (
+          <div class="mt-4 flex flex-wrap gap-2">
+            <button
+              type="button"
+              class="px-3 py-1.5 rounded-full text-xs font-semibold border border-blue-200 bg-blue-50 text-blue-700"
+              data-topic-filter="all"
+            >
+              Alle Themen
+            </button>
+            {topicItems.slice(0, 14).map((topic) => (
+              <button
+                type="button"
+                class="px-3 py-1.5 rounded-full text-xs font-semibold border border-slate-200 bg-white text-slate-700 hover:border-blue-200 hover:text-blue-700 transition-colors"
+                data-topic-filter={topic.normalized}
+              >
+                {topic.name}
+              </button>
+            ))}
+          </div>
+        )}
+
+        <p class="mt-4 text-sm text-slate-600">
+          <span class="font-semibold text-slate-900" data-results-count>{normalizedPosts.length}</span> Beiträge angezeigt.
+        </p>
+      </section>
+
+      <div class="grid gap-6 lg:grid-cols-[minmax(0,1fr)_280px]">
+        <div>
+          {featuredPost && (
+            <article
+              class="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm mb-6"
+              data-blog-card
+              data-title={featuredPost.data.title.toLowerCase()}
+              data-description={featuredPost.data.description.toLowerCase()}
+              data-tags={featuredPost.tagsNormalized.join('|')}
+              data-archive={featuredPost.monthKey}
+            >
+              <a href={featuredPost.url} class="block md:grid md:grid-cols-2">
+                <div class="h-56 md:h-full overflow-hidden bg-slate-100">
+                  <img
+                    src={featuredPost.image}
+                    alt={featuredPost.imageAlt}
+                    loading="eager"
+                    decoding="async"
+                    class="h-full w-full object-cover group-hover:scale-[1.03] transition-transform duration-300"
+                  />
+                </div>
+                <div class="p-5 md:p-6 flex flex-col">
+                  <div class="flex flex-wrap items-center gap-2 text-xs text-slate-500 mb-3">
+                    <time datetime={featuredPost.data.pubDate.toISOString()}>{featuredPost.dateLabel}</time>
+                    <span>•</span>
+                    <span>{featuredPost.readingMinutes} min</span>
+                  </div>
+                  <h2 class="text-2xl font-bold text-slate-900 leading-tight mb-3 group-hover:text-blue-700 transition-colors">
+                    {featuredPost.data.title}
+                  </h2>
+                  <p class="text-slate-600 leading-relaxed mb-4 line-clamp-4">{featuredPost.data.description}</p>
+                  <div class="mt-auto flex flex-wrap gap-2">
+                    {featuredPost.tags.slice(0, 4).map((tag) => (
+                      <span class="rounded-full border border-slate-200 bg-slate-50 px-2.5 py-1 text-[11px] font-medium text-slate-700">{tag}</span>
+                    ))}
+                  </div>
+                </div>
               </a>
+            </article>
+          )}
+
+          <div class="grid gap-5 md:grid-cols-2" data-blog-grid>
+            {blogGridPosts.map((post) => (
+              <article
+                class="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm"
+                data-blog-card
+                data-title={post.data.title.toLowerCase()}
+                data-description={post.data.description.toLowerCase()}
+                data-tags={post.tagsNormalized.join('|')}
+                data-archive={post.monthKey}
+              >
+                <a href={post.url} class="block">
+                  <div class="h-48 overflow-hidden bg-slate-100">
+                    <img
+                      src={post.image}
+                      alt={post.imageAlt}
+                      loading="lazy"
+                      decoding="async"
+                      class="h-full w-full object-cover group-hover:scale-[1.03] transition-transform duration-300"
+                    />
+                  </div>
+                  <div class="p-5">
+                    <div class="flex flex-wrap items-center gap-2 text-xs text-slate-500 mb-3">
+                      <time datetime={post.data.pubDate.toISOString()}>{post.dateLabel}</time>
+                      <span>•</span>
+                      <span>{post.readingMinutes} min</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 leading-snug mb-2 line-clamp-2 group-hover:text-blue-700 transition-colors">
+                      {post.data.title}
+                    </h3>
+                    <p class="text-sm text-slate-600 leading-relaxed line-clamp-3 mb-4">{post.data.description}</p>
+                    <div class="flex flex-wrap gap-2">
+                      {post.tags.slice(0, 3).map((tag) => (
+                        <span class="rounded-full border border-slate-200 bg-slate-50 px-2.5 py-1 text-[11px] font-medium text-slate-700">{tag}</span>
+                      ))}
+                    </div>
+                  </div>
+                </a>
+              </article>
+            ))}
+          </div>
+
+          <div class="hidden rounded-2xl border border-slate-200 bg-white p-8 text-center text-slate-600 mt-6" data-empty-state>
+            Für diese Filter wurden keine Beiträge gefunden. Bitte passen Sie die Suche an.
+          </div>
+        </div>
+
+        <aside class="space-y-4">
+          <section class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+            <h2 class="text-sm font-bold uppercase tracking-wide text-slate-900 mb-3">Beliebte Keywords</h2>
+            <div class="flex flex-wrap gap-2">
+              <button
+                type="button"
+                class="px-2.5 py-1 rounded-full text-xs font-semibold border border-blue-200 bg-blue-50 text-blue-700"
+                data-keyword-filter="all"
+              >
+                Tümü
+              </button>
+              {topicItems.slice(0, 16).map((topic) => (
+                <button
+                  type="button"
+                  class="px-2.5 py-1 rounded-full text-xs font-semibold border border-slate-200 bg-white text-slate-700 hover:border-blue-200 hover:text-blue-700 transition-colors"
+                  data-keyword-filter={topic.normalized}
+                >
+                  {topic.name}
+                </button>
+              ))}
             </div>
-          </article>
-        ))}
+          </section>
+
+          <section class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+            <h2 class="text-sm font-bold uppercase tracking-wide text-slate-900 mb-3">Archiv</h2>
+            <ul class="space-y-2 text-sm text-slate-600">
+              {archives.map((archive) => (
+                <li>
+                  <button
+                    type="button"
+                    class="w-full text-left rounded-lg px-2 py-1.5 hover:bg-slate-50 hover:text-slate-900 transition-colors"
+                    data-archive-quick={archive.key}
+                  >
+                    {archive.label} ({archive.count})
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </section>
+        </aside>
       </div>
     </div>
-  </div>
+  </main>
+
+  <script is:inline>
+    (() => {
+      const searchInput = document.querySelector('[data-blog-search]');
+      const archiveSelect = document.querySelector('[data-blog-archive]');
+      const topicButtons = Array.from(document.querySelectorAll('[data-topic-filter]'));
+      const keywordButtons = Array.from(document.querySelectorAll('[data-keyword-filter]'));
+      const quickArchiveButtons = Array.from(document.querySelectorAll('[data-archive-quick]'));
+      const cards = Array.from(document.querySelectorAll('[data-blog-card]'));
+      const resultsCounter = document.querySelector('[data-results-count]');
+      const emptyState = document.querySelector('[data-empty-state]');
+
+      if (!searchInput || !archiveSelect || cards.length === 0) return;
+
+      let activeTopic = 'all';
+      let activeKeyword = 'all';
+
+      const setActiveButton = (buttons, value, attr) => {
+        buttons.forEach((button) => {
+          const isActive = button.getAttribute(attr) === value;
+          button.classList.toggle('bg-blue-50', isActive);
+          button.classList.toggle('border-blue-200', isActive);
+          button.classList.toggle('text-blue-700', isActive);
+          button.classList.toggle('bg-white', !isActive);
+          button.classList.toggle('border-slate-200', !isActive);
+          button.classList.toggle('text-slate-700', !isActive);
+        });
+      };
+
+      const applyFilters = () => {
+        const query = String(searchInput.value || '').trim().toLowerCase();
+        const archive = String(archiveSelect.value || 'all');
+        let visibleCount = 0;
+
+        cards.forEach((card) => {
+          const title = card.getAttribute('data-title') || '';
+          const description = card.getAttribute('data-description') || '';
+          const tagsRaw = card.getAttribute('data-tags') || '';
+          const archiveKey = card.getAttribute('data-archive') || '';
+          const tags = tagsRaw.split('|').filter(Boolean);
+
+          const matchesQuery =
+            query.length === 0 ||
+            title.includes(query) ||
+            description.includes(query) ||
+            tags.some((tag) => tag.includes(query));
+          const matchesTopic = activeTopic === 'all' || tags.includes(activeTopic);
+          const matchesKeyword = activeKeyword === 'all' || tags.includes(activeKeyword);
+          const matchesArchive = archive === 'all' || archiveKey === archive;
+
+          const visible = matchesQuery && matchesTopic && matchesKeyword && matchesArchive;
+          card.classList.toggle('hidden', !visible);
+          if (visible) visibleCount += 1;
+        });
+
+        if (resultsCounter) resultsCounter.textContent = String(visibleCount);
+        if (emptyState) emptyState.classList.toggle('hidden', visibleCount !== 0);
+      };
+
+      topicButtons.forEach((button) => {
+        button.addEventListener('click', () => {
+          activeTopic = button.getAttribute('data-topic-filter') || 'all';
+          setActiveButton(topicButtons, activeTopic, 'data-topic-filter');
+          applyFilters();
+        });
+      });
+
+      keywordButtons.forEach((button) => {
+        button.addEventListener('click', () => {
+          activeKeyword = button.getAttribute('data-keyword-filter') || 'all';
+          setActiveButton(keywordButtons, activeKeyword, 'data-keyword-filter');
+          applyFilters();
+        });
+      });
+
+      quickArchiveButtons.forEach((button) => {
+        button.addEventListener('click', () => {
+          const value = button.getAttribute('data-archive-quick') || 'all';
+          archiveSelect.value = value;
+          applyFilters();
+        });
+      });
+
+      searchInput.addEventListener('input', applyFilters);
+      archiveSelect.addEventListener('change', applyFilters);
+
+      const params = new URLSearchParams(window.location.search);
+      const initialTopic = params.get('topic');
+      if (initialTopic) {
+        const normalizedTopic = initialTopic
+          .toLowerCase()
+          .normalize('NFD')
+          .replace(/\p{Diacritic}/gu, '')
+          .replace(/ß/g, 'ss')
+          .replace(/[^a-z0-9]+/g, '-')
+          .replace(/^-+|-+$/g, '');
+
+        if (topicButtons.some((button) => button.getAttribute('data-topic-filter') === normalizedTopic)) {
+          activeTopic = normalizedTopic;
+          setActiveButton(topicButtons, activeTopic, 'data-topic-filter');
+        }
+      }
+
+      applyFilters();
+    })();
+  </script>
 </Layout>

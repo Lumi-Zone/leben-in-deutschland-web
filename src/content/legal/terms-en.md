@@ -178,7 +178,7 @@ We cannot guarantee the Services will be available at all times. We may experien
 
 ## 14. GOVERNING LAW
 
-These Legal Terms shall be governed by and construed in accordance with the laws of [relevant jurisdiction], and you irrevocably consent that the courts of [relevant jurisdiction] shall have exclusive jurisdiction to resolve any dispute which may arise in connection with these Legal Terms.
+These Legal Terms shall be governed by and construed in accordance with the laws of the Federal Republic of Germany. To the extent permitted by law, the provider's registered seat shall be the exclusive place of jurisdiction.
 
 ## 15. DISPUTE RESOLUTION
 

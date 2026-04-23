@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://lebenindeutschland.web.app/sitemap-index.xml
+Sitemap: https://lumi-zone.github.io/leben-in-deutschland-web/sitemap-index.xml

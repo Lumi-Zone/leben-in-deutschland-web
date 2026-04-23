@@ -1,7 +1,61 @@
 @import "tailwindcss";
 
+@theme {
+  --color-primary-50: #eff6ff;
+  --color-primary-100: #dbeafe;
+  --color-primary-600: #2563eb;
+  --color-primary-700: #1d4ed8;
+  --color-primary-800: #1e40af;
+  --color-primary-900: #1e3a8a;
+
+  --color-tertiary-50: #f8fafc;
+  --color-tertiary-100: #e2e8f0;
+  --color-tertiary-600: #475569;
+  --color-tertiary-700: #334155;
+  --color-tertiary-900: #0f172a;
+
+  --radius-card: 1rem;
+  --radius-button: 0.75rem;
+  --shadow-soft: 0 12px 32px -18px rgb(15 23 42 / 0.4);
+}
+
+:root {
+  --radius-card: 1rem;
+  --radius-button: 0.75rem;
+  --shadow-soft: 0 12px 32px -18px rgb(15 23 42 / 0.4);
+}
+
 html {
   scroll-behavior: smooth;
+}
+
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid var(--color-blue-600);
+  outline-offset: 2px;
+}
+
+*:focus:not(:focus-visible) {
+  outline: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
 
 /* @plugin "@tailwindcss/typography"; */

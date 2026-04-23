@@ -2,7 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import { getPath } from '../../utils/navigation';
 import { getLegalTranslation } from '../../i18n/legal';
-import { getEntry } from 'astro:content';
+import { getCollection } from 'astro:content';
 
 export function getStaticPaths() {
   const supportedLangs = ['de', 'en', 'tr', 'ar', 'ua', 'ru', 'pl', 'fa', 'ps', 'ro', 'it', 'es'];
@@ -13,7 +13,12 @@ const { lang } = Astro.props;
 const t = (key: any) => getLegalTranslation(lang, key);
 
 // Fetch content from collection
-const entry = await getEntry('legal', `privacy-${lang}`) || await getEntry('legal', `privacy-en`);
+const legalEntries = await getCollection('legal');
+const matchEntry = (key: string) =>
+  legalEntries.find(
+    (item) => item.id === key || item.id === `${key}.md` || item.slug === key
+  );
+const entry = matchEntry(`privacy-${lang}`) || matchEntry('privacy-en');
 // If absolutely no content found (shouldn't happen if en exists), fallback to empty
 if (!entry) {
     throw new Error(`Could not find privacy policy content for ${lang} or en fallback`);
@@ -23,9 +28,14 @@ import Header from '../../components/Header.astro';
 import ScrollToTop from '../../components/ScrollToTop';
 ---
 
-<Layout title={`${t("legal.privacy_policy")} | Leben in Deutschland`} lang={lang}>
+<Layout
+  title={`${t("legal.privacy_policy")} | Leben in Deutschland`}
+  description={`${t("legal.privacy_policy")} - Informationen zur Datenverarbeitung bei Leben in Deutschland.`}
+  image="/logo.png"
+  lang={lang}
+>
   <Header lang={lang} />
-  <ScrollToTop client:load />
+  <ScrollToTop client:idle />
 
   <main class="container mx-auto px-4 py-12 max-w-7xl">
 
@@ -35,8 +45,8 @@ import ScrollToTop from '../../components/ScrollToTop';
     <div class="grid md:grid-cols-[250px_1fr] gap-8 items-start">
       <!-- Table of Contents -->
       <aside class="hidden md:block sticky top-8 max-h-[calc(100vh-4rem)] overflow-y-auto pr-4">
-        <h2 class="text-sm font-bold uppercase tracking-wider text-gray-900 mb-4">{t("legal.table_of_contents")}</h2>
-        <nav class="space-y-2 text-sm text-gray-600">
+        <h2 id="privacy-toc-title" class="text-sm font-bold uppercase tracking-wider text-gray-900 mb-4">{t("legal.table_of_contents")}</h2>
+        <nav class="space-y-2 text-sm text-gray-600" aria-labelledby="privacy-toc-title">
            <a href="#summary" class="block hover:text-blue-600">{t("legal.summary")}</a>
            <a href="#collection" class="block hover:text-blue-600">1. Information Collection</a>
            <a href="#processing" class="block hover:text-blue-600">2. Processing Information</a>

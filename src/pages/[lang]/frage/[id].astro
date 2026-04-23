@@ -3,31 +3,60 @@ import Layout from '../../../layouts/Layout.astro';
 import QuestionCard from '../../../components/QuestionCard';
 import questions from '../../../data/questions.json';
 
+type SupportedLang = 'de' | 'en' | 'tr' | 'ar' | 'ua' | 'ru' | 'pl' | 'fa' | 'ps' | 'ro' | 'it' | 'es';
+
+interface TranslationContent {
+  question: string;
+  options: string[];
+}
+
+interface QuestionPageProps {
+  question: {
+    id: number;
+    correct_index: number;
+    translations: { de: TranslationContent } & Partial<Record<SupportedLang, TranslationContent>>;
+    prevId: number | null;
+    nextId: number | null;
+    position: number;
+    total: number;
+  };
+  lang: SupportedLang;
+}
+
 // Full i18n getStaticPaths
 export function getStaticPaths() {
-  const supportedLangs = ['de', 'en', 'tr', 'ar', 'ua', 'ru', 'pl', 'fa', 'ps', 'ro', 'it', 'es'];
-  
+  const supportedLangs: SupportedLang[] = ['de', 'en', 'tr', 'ar', 'ua', 'ru', 'pl', 'fa', 'ps', 'ro', 'it', 'es'];
+
   // Create flat array of all paths
-  const paths = [];
-  
-  supportedLangs.forEach(lang => {
+  const paths: Array<{
+    params: { lang: SupportedLang; id: string };
+    props: QuestionPageProps;
+  }> = [];
+
+  supportedLangs.forEach((lang) => {
     questions.forEach((q, index) => {
       const charCode = q.solution.toLowerCase().charCodeAt(0);
       const correctIndex = charCode - 97;
+      const qAny = q as Record<string, unknown>;
+      const readText = (key: string) => (typeof qAny[key] === 'string' ? qAny[key] as string : '');
 
-      // Construct translation map
-      const translations: Record<string, { question: string; options: string[] }> = {};
-      supportedLangs.forEach(l => {
-        const qKey = (l === 'de' ? 'q_de' : `q_${l}`) as keyof typeof q;
-        // Cast q to any to allow dynamic access for options as JSON import types are strict
-        const qAny = q as any;
-        const getOpt = (num: number) => qAny[`a${num}_${l}`] || qAny[`a${num}_de`] || "";
-        
-        translations[l] = {
-            question: (q as any)[qKey] || q.q_de || "",
-            options: [getOpt(1), getOpt(2), getOpt(3), getOpt(4)]
-        };
-      });
+      const deTranslation: TranslationContent = {
+        question: q.q_de || '',
+        options: [1, 2, 3, 4].map((num) => readText(`a${num}_de`)),
+      };
+
+      const localizedTranslation: TranslationContent = {
+        question: readText(`q_${lang}`) || q.q_de || '',
+        options: [1, 2, 3, 4].map((num) => readText(`a${num}_${lang}`) || readText(`a${num}_de`)),
+      };
+
+      // Keep only German + active language to avoid embedding all locales in each page.
+      const translations: { de: TranslationContent } & Partial<Record<SupportedLang, TranslationContent>> = {
+        de: deTranslation,
+      };
+      if (lang !== 'de') {
+        translations[lang] = localizedTranslation;
+      }
 
       const prevId = index > 0 ? questions[index - 1].id : null;
       const nextId = index < questions.length - 1 ? questions[index + 1].id : null;
@@ -40,7 +69,9 @@ export function getStaticPaths() {
               correct_index: correctIndex,
               translations,
               prevId,
-              nextId
+              nextId,
+              position: index + 1,
+              total: questions.length,
           },
           lang
         },
@@ -51,14 +82,17 @@ export function getStaticPaths() {
   return paths;
 }
 
-const { question, lang } = Astro.props as { question: any; lang: string };
+const { question, lang } = Astro.props as QuestionPageProps;
 
 // Schema.org JSON-LD localizing
 const currentContent = question.translations[lang] || question.translations.de;
+import { useTranslations } from '../../../i18n/ui';
+const translate = useTranslations(lang);
+const questionLabel = `${translate("favorites.goto_question")} ${question.id}`;
 const schema = {
   "@context": "https://schema.org/",
   "@type": "Quiz",
-  "name": `Leben in Deutschland Frage ${question.id} (${lang.toUpperCase()})`,
+  "name": `Leben in Deutschland ${questionLabel} (${lang.toUpperCase()})`,
   "mainEntity": {
     "@type": "Question",
     "name": currentContent.question,
@@ -66,34 +100,67 @@ const schema = {
       "@type": "Answer",
       "text": currentContent.options[question.correct_index]
     },
-    "suggestedAnswer": currentContent.options.map((opt, idx) => ({
+    "suggestedAnswer": currentContent.options.map((opt: string, idx: number) => ({
       "@type": "Answer",
       "text": opt,
       "position": idx
     }))
   }
 };
-const t = (key: any) => {
-    // Basic translation helper matching getStaticPaths logic
-    // Ideally we import useTranslations but we are inside getStaticPaths/props scope mostly
-    // Actually we have lang prop here
-    return question.translations[lang]?.[key] || ""; 
-};
-// Re-import useTranslations for the runtime component prop
-import { useTranslations } from '../../../i18n/ui';
-const translate = useTranslations(lang as any);
 import Header from '../../../components/Header.astro';
 import { getPath } from '../../../utils/navigation';
+
+const siteUrl = Astro.site || 'https://lumi-zone.github.io';
+const questionUrl = new URL(getPath(`${lang}/frage/${question.id}`), siteUrl).href;
+const questionPreview =
+  currentContent.question.length > 130
+    ? `${currentContent.question.slice(0, 127)}...`
+    : currentContent.question;
+const pageDescription = `${translate("hero.title")} - ${translate("question.progress")} ${question.position}/${question.total}. ${questionPreview}`;
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": translate("nav.home"),
+      "item": new URL(getPath(`${lang}/`), siteUrl).href
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": questionLabel,
+      "item": questionUrl
+    }
+  ]
+};
 ---
 
-<Layout title={`Frage ${question.id}: ${currentContent.question}`} lang={lang}>
+<Layout
+  title={`${questionLabel} - ${translate("hero.title")}`}
+  description={pageDescription}
+  image="/logo.png"
+  ogType="article"
+  lang={lang}
+>
   <Header lang={lang} />
   <main class="container mx-auto px-4 py-8 min-h-screen bg-gray-50 flex flex-col items-center justify-center">
     
-    <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    <script is:inline type="application/ld+json" set:html={JSON.stringify(schema)} />
+    <script is:inline type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
 
     <div class="w-full mb-8 text-center">
-      <a href={getPath(`${lang}/`)} class="text-blue-600 hover:text-blue-800 font-medium">← Back to Overview</a>
+      <a href={getPath(`${lang}/`)} class="text-blue-600 hover:text-blue-800 font-medium">← {translate("question.back")}</a>
+      <span class="mx-2 text-gray-300">|</span>
+      <a href={getPath(`${lang}/exam`)} class="text-blue-600 hover:text-blue-800 font-medium">{translate("home.start_exam")}</a>
+      <span class="mx-2 text-gray-300">|</span>
+      <a href={getPath(`${lang}/favorites`)} class="text-blue-600 hover:text-blue-800 font-medium">{translate("nav.favorites")}</a>
+      <span class="mx-2 text-gray-300">|</span>
+      <a href={getPath(`${lang}/progress`)} class="text-blue-600 hover:text-blue-800 font-medium">{translate("nav.progress")}</a>
+      <span class="mx-2 text-gray-300">|</span>
+      <a href={getPath(`${lang}/focus`)} class="text-blue-600 hover:text-blue-800 font-medium">{translate("progress.focus_cta")}</a>
     </div>
 
     <QuestionCard 
@@ -105,6 +172,25 @@ import { getPath } from '../../../utils/navigation';
       nextId={question.nextId}
       initialLang={lang}
       practiceAppLabel={translate("question.practice_app")}
+      resultCorrectLabel={translate("question.correct")}
+      resultWrongLabel={translate("question.wrong")}
+      correctAnswerLabel={translate("question.correct_answer")}
+      prevLabel={translate("question.prev")}
+      nextLabel={translate("question.next")}
+      questionPosition={question.position}
+      questionTotal={question.total}
+      progressLabel={translate("question.progress")}
+      favoriteAddLabel={translate("question.favorite_add")}
+      favoriteRemoveLabel={translate("question.favorite_remove")}
+      shortcutsLabel={translate("question.shortcuts_title")}
+      shortcutSelectLabel={translate("question.shortcuts_select")}
+      shortcutPrevLabel={translate("question.shortcuts_prev")}
+      shortcutNextLabel={translate("question.shortcuts_next")}
+      shortcutFavoriteLabel={translate("question.shortcuts_favorite")}
+      jumpToLabel={translate("question.jump_label")}
+      jumpPlaceholder={translate("question.jump_placeholder")}
+      jumpButtonLabel={translate("question.jump_button")}
+      jumpErrorLabel={translate("question.jump_error")}
     />
     
     <div class="mt-12 text-center text-gray-400 text-sm">

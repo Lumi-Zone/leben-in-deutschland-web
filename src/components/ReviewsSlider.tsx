@@ -1,13 +1,21 @@
 import React from 'react';
-import { getReviews } from '../data/reviews';
+
+interface ReviewItem {
+    author: string;
+    date: string;
+    title: string;
+    text: string;
+    rating: number;
+}
 
 interface ReviewsSliderProps {
     lang?: string;
+    reviewsData: ReviewItem[];
 }
 
-export default function ReviewsSlider({ lang = 'de' }: ReviewsSliderProps) {
+export default function ReviewsSlider({ lang = 'de', reviewsData }: ReviewsSliderProps) {
     const scrollContainerRef = React.useRef<HTMLDivElement>(null);
-    const reviewsData = getReviews(lang);
+    const trackId = 'reviews-slider-track';
 
     // 5 sets for stability
     const reviews = [...reviewsData, ...reviewsData, ...reviewsData, ...reviewsData, ...reviewsData];
@@ -32,6 +40,12 @@ export default function ReviewsSlider({ lang = 'de' }: ReviewsSliderProps) {
     }, []);
 
     const scrollTimeout = React.useRef<NodeJS.Timeout | null>(null);
+
+    React.useEffect(() => {
+        return () => {
+            if (scrollTimeout.current) clearTimeout(scrollTimeout.current);
+        };
+    }, []);
 
     const handleScroll = () => {
         if (!scrollContainerRef.current) return;
@@ -76,6 +90,16 @@ export default function ReviewsSlider({ lang = 'de' }: ReviewsSliderProps) {
         });
     };
 
+    const handleKeyDown = (event: React.KeyboardEvent<HTMLDivElement>) => {
+        if (event.key === 'ArrowLeft') {
+            event.preventDefault();
+            scroll('left');
+        } else if (event.key === 'ArrowRight') {
+            event.preventDefault();
+            scroll('right');
+        }
+    };
+
     return (
         <section className="py-20 bg-gray-50 overflow-hidden group relative">
             <div className="container mx-auto px-4 mb-12 text-center">
@@ -88,18 +112,22 @@ export default function ReviewsSlider({ lang = 'de' }: ReviewsSliderProps) {
             {/* Buttons (Desktop) */}
             <div className="hidden md:block">
                 <button
+                    type="button"
                     onClick={() => scroll('left')}
                     className="absolute left-8 top-1/2 mt-8 -translate-y-1/2 z-20 w-10 h-10 bg-white/90 backdrop-blur-sm rounded-full shadow-lg flex items-center justify-center text-gray-800 hover:bg-white hover:scale-110 transition-all border border-gray-100"
                     aria-label="Previous review"
+                    aria-controls={trackId}
                 >
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-5 h-5">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
                     </svg>
                 </button>
                 <button
+                    type="button"
                     onClick={() => scroll('right')}
                     className="absolute right-8 top-1/2 mt-8 -translate-y-1/2 z-20 w-10 h-10 bg-white/90 backdrop-blur-sm rounded-full shadow-lg flex items-center justify-center text-gray-800 hover:bg-white hover:scale-110 transition-all border border-gray-100"
                     aria-label="Next review"
+                    aria-controls={trackId}
                 >
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-5 h-5">
                         <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
@@ -114,8 +142,12 @@ export default function ReviewsSlider({ lang = 'de' }: ReviewsSliderProps) {
 
                 {/* Scrolling Container */}
                 <div
+                    id={trackId}
                     ref={scrollContainerRef}
                     onScroll={handleScroll}
+                    onKeyDown={handleKeyDown}
+                    tabIndex={0}
+                    aria-label="Scrollable user reviews. Use left and right arrow keys."
                     className="flex gap-6 overflow-x-auto snap-x snap-mandatory px-4 md:px-32 pb-4 scrollbar-hide snap-always"
                     style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
                 >

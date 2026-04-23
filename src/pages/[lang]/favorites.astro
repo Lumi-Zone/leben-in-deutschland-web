@@ -1,0 +1,45 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import FavoritesList from '../../components/FavoritesList';
+import { useTranslations } from '../../i18n/ui';
+import { getPath } from '../../utils/navigation';
+
+type SupportedLang = 'de' | 'en' | 'tr' | 'ar' | 'ua' | 'ru' | 'pl' | 'fa' | 'ps' | 'ro' | 'it' | 'es';
+
+export function getStaticPaths() {
+  const supportedLangs: SupportedLang[] = ['de', 'en', 'tr', 'ar', 'ua', 'ru', 'pl', 'fa', 'ps', 'ro', 'it', 'es'];
+  return supportedLangs.map((lang) => ({ params: { lang }, props: { lang } }));
+}
+
+const { lang } = Astro.props as { lang: SupportedLang };
+const t = useTranslations(lang);
+---
+
+<Layout
+  title={`${t("favorites.page_title")} - ${t("hero.title")}`}
+  description={t("favorites.subtitle")}
+  image="/logo.png"
+  lang={lang}
+>
+  <Header lang={lang} />
+
+  <main class="container mx-auto px-4 py-10 min-h-screen bg-gray-50">
+    <div class="max-w-4xl mx-auto mb-8">
+      <a href={getPath(`${lang}/`)} class="text-blue-600 hover:text-blue-800 font-medium">← {t("question.back")}</a>
+    </div>
+
+    <FavoritesList
+      client:visible
+      lang={lang}
+      labels={{
+        title: t("favorites.title"),
+        subtitle: t("favorites.subtitle"),
+        empty: t("favorites.empty"),
+        remove: t("favorites.remove"),
+        clearAll: t("favorites.clear_all"),
+        gotoQuestion: t("favorites.goto_question"),
+      }}
+    />
+  </main>
+</Layout>

@@ -1,7 +1,6 @@
 ---
 // Root redirect
 const base = import.meta.env.BASE_URL;
-const target = `${base}de/`; 
 // Ensure we don't end up with //de/ if base is / (though unlikely in this config)
 // Actually standard join is safer:
 const redirectUrl = base.endsWith('/') ? `${base}de/` : `${base}/de/`;
