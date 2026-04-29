@@ -10,13 +10,13 @@ interface Props {
 const { lang } = Astro.props;
 const t = useTranslations(lang as any);
 const currentPath = Astro.url.pathname;
+const appDownloadHref = 'https://apps.apple.com/app/leben-in-deutschland-2026/id6723899981';
 
 const navLinks = [
-  { href: getPath(`${lang}/exam`), label: t('nav.exam') },
-  { href: getPath(`${lang}/blog`), label: t('nav.blog') },
-  { href: getPath(`${lang}/progress`), label: t('nav.progress') },
-  { href: getPath(`${lang}/favorites`), label: t('nav.favorites') },
+  { href: getPath(`${lang}/frage/1`), label: t('home.start_quiz') },
+  { href: getPath(`${lang}/exam`), label: t('features.exam.title') },
   { href: getPath(`${lang}/support`), label: t('nav.support') },
+  { href: getPath(`${lang}/blog`), label: t('nav.blog'), featured: true },
 ];
 
 const isActive = (href: string) => currentPath === href || currentPath.startsWith(`${href}/`);
@@ -43,9 +43,13 @@ const isActive = (href: string) => currentPath === href || currentPath.startsWit
               href={link.href}
               aria-current={isActive(link.href) ? 'page' : undefined}
               class={`px-2.5 py-2 rounded-lg whitespace-nowrap transition-colors ${
-                isActive(link.href)
-                  ? 'text-blue-700 bg-blue-50'
-                  : 'hover:text-blue-600 hover:bg-gray-50'
+                link.featured
+                  ? isActive(link.href)
+                    ? 'text-white bg-gradient-to-r from-blue-700 to-cyan-600 shadow-sm'
+                    : 'text-blue-700 bg-blue-50 border border-blue-200 hover:bg-blue-100'
+                  : isActive(link.href)
+                    ? 'text-blue-700 bg-blue-50'
+                    : 'hover:text-blue-600 hover:bg-gray-50'
               }`}
             >
               {link.label}
@@ -53,18 +57,28 @@ const isActive = (href: string) => currentPath === href || currentPath.startsWit
           ))}
       </div>
 
-      <button
-        type="button"
-        class="xl:hidden inline-flex items-center justify-center w-11 h-11 rounded-xl border border-gray-200 text-gray-700 bg-white hover:bg-gray-50 transition-colors"
-        data-mobile-menu-toggle
-        aria-expanded="false"
-        aria-controls="mobile-nav-drawer"
-        aria-label={t('nav.open_menu')}
-      >
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-      </button>
+      <div class="flex items-center gap-2.5">
+        <a
+          href={appDownloadHref}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hidden sm:inline-flex items-center rounded-xl bg-blue-600 px-3.5 py-2 text-xs font-semibold text-white hover:bg-blue-700 transition-colors shadow-sm"
+        >
+          {t('question.practice_app')}
+        </a>
+        <button
+          type="button"
+          class="xl:hidden inline-flex items-center justify-center w-11 h-11 rounded-xl border border-gray-200 text-gray-700 bg-white hover:bg-gray-50 transition-colors"
+          data-mobile-menu-toggle
+          aria-expanded="false"
+          aria-controls="mobile-nav-drawer"
+          aria-label={t('nav.open_menu')}
+        >
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
   </nav>
 
   <div class="xl:hidden fixed inset-0 z-40 bg-gray-900/45 opacity-0 pointer-events-none transition-opacity duration-300" data-mobile-menu-overlay data-mobile-menu-close></div>
@@ -90,14 +104,26 @@ const isActive = (href: string) => currentPath === href || currentPath.startsWit
     </div>
 
     <div class="px-4 py-5 space-y-2">
+      <a
+        href={appDownloadHref}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="block px-4 py-3 rounded-xl font-semibold text-white bg-blue-600 hover:bg-blue-700 transition-colors"
+      >
+        {t('question.practice_app')}
+      </a>
       {navLinks.map((link) => (
         <a
           href={link.href}
           aria-current={isActive(link.href) ? 'page' : undefined}
           class={`block px-4 py-3 rounded-xl font-medium transition-colors ${
-            isActive(link.href)
-              ? 'text-blue-700 bg-blue-50'
-              : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
+            link.featured
+              ? isActive(link.href)
+                ? 'text-white bg-gradient-to-r from-blue-700 to-cyan-600'
+                : 'text-blue-700 bg-blue-50 border border-blue-200 hover:bg-blue-100'
+              : isActive(link.href)
+                ? 'text-blue-700 bg-blue-50'
+                : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
           }`}
         >
           {link.label}

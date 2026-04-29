@@ -1,9 +1,10 @@
 ---
 title: "Die Sozialversicherung: Ein Netz, das auffängt"
 description: "Deutschland ist ein Sozialstaat. Erfahren Sie, wie Kranken-, Renten- und Arbeitslosenversicherung funktionieren."
-pubDate: 2026-02-04
+pubDate: 2025-11-27
+updatedDate: 2025-11-27
 author: "Lern-Coach Team"
-image: "/images/blog/versicherung.jpg"
+image: "https://images.unsplash.com/photo-1635585558406-23471c000853?auto=format&fit=crop&w=1600&q=80"
 tags: ["Soziales", "Versicherung", "Leben"]
 ---
 
@@ -23,3 +24,22 @@ Die Kosten teilen sich in der Regel **Arbeitnehmer** und **Arbeitgeber** je zur 
 
 ## Das Solidaritätsprinzip
 Das System basiert auf Solidarität: Gesunde zahlen für Kranke, Junge für Alte, Besserverdienende für Geringverdiener. Wer mehr verdient, zahlt mehr Beiträge, bekommt aber die gleiche medizinische Leistung wie jemand, der weniger verdient (bei der Krankenversicherung).
+
+<!-- seo-enhanced -->
+## Schnelle Zusammenfassung
+- Gesellschaftsthemen sind zentral für den Alltag und für den Test relevant.
+- Wer Rechte und Pflichten zusammen denkt, lernt deutlich nachhaltiger.
+- Beispiele aus dem echten Leben helfen beim Verstehen komplexer Begriffe.
+
+## Häufige Fragen (FAQ)
+### Warum sind Gesellschaftsthemen im Test so wichtig?
+Sie zeigen, ob zentrale Werte, Regeln und das Zusammenleben in Deutschland verstanden werden.
+
+### Welche Themen sollte ich zuerst lernen?
+Starten Sie mit Grundrechten, Pflichten und demokratischen Prinzipien. Danach sind Spezialthemen leichter einzuordnen.
+
+### Wie wiederhole ich diese Themen effektiv?
+Nutzen Sie kurze Wiederholungszyklen mit konkreten Beispielen aus Alltag, Arbeit und öffentlichem Leben.
+
+## Nächster Schritt
+Als Vertiefung: **[Rechte und Pflichten als Bürger](/de/blog/rechte-und-pflichten)** und **[Das Grundgesetz](/de/blog/das-grundgesetz)**.

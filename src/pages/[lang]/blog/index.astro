@@ -4,7 +4,16 @@ import { getCollection } from 'astro:content';
 import { useTranslations } from '../../../i18n/ui';
 import Header from '../../../components/Header.astro';
 import { getPath } from '../../../utils/navigation';
-import { getBlogImageAlt, getReadingMinutes, normalizeKeyword, resolveBlogImage } from '../../../utils/blog';
+import { getAuthorByName } from '../../../data/blogAuthors';
+import {
+  getBlogImageAlt,
+  getOptimizedImageSizes,
+  getOptimizedImageSrcset,
+  getOptimizedImageUrl,
+  getReadingMinutes,
+  normalizeKeyword,
+  resolveBlogImage,
+} from '../../../utils/blog';
 
 export async function getStaticPaths() {
   const supportedLangs = ['de', 'en', 'tr', 'ar', 'ua', 'ru', 'pl', 'fa', 'ps', 'ro', 'it', 'es'];
@@ -65,7 +74,10 @@ const normalizedPosts = sortedPosts.map((post) => {
   return {
     ...post,
     image,
+    imageSrc: getOptimizedImageUrl(image, 1366),
+    srcset: getOptimizedImageSrcset(image),
     imageAlt: getBlogImageAlt(post.data.title),
+    author: getAuthorByName(post.data.author),
     readingMinutes: getReadingMinutes(post.body),
     dateLabel: dateFormatter.format(post.data.pubDate),
     monthKey,
@@ -222,40 +234,80 @@ const breadcrumbSchema = {
         <div>
           {featuredPost && (
             <article
-              class="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm mb-6"
+              class="group overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm mb-7"
               data-blog-card
               data-title={featuredPost.data.title.toLowerCase()}
               data-description={featuredPost.data.description.toLowerCase()}
               data-tags={featuredPost.tagsNormalized.join('|')}
               data-archive={featuredPost.monthKey}
             >
-              <a href={featuredPost.url} class="block md:grid md:grid-cols-2">
-                <div class="h-56 md:h-full overflow-hidden bg-slate-100">
+              <div class="grid overflow-hidden lg:grid-cols-[1.05fr_0.95fr]">
+                <a href={featuredPost.url} class="order-1 lg:order-2 relative block min-h-[260px] md:min-h-[340px] overflow-hidden bg-slate-100">
                   <img
-                    src={featuredPost.image}
+                    src={featuredPost.imageSrc}
+                    srcset={featuredPost.srcset}
+                    sizes={getOptimizedImageSizes()}
                     alt={featuredPost.imageAlt}
                     loading="eager"
                     decoding="async"
-                    class="h-full w-full object-cover group-hover:scale-[1.03] transition-transform duration-300"
+                    class="h-full w-full object-cover group-hover:scale-[1.04] transition-transform duration-500"
                   />
-                </div>
-                <div class="p-5 md:p-6 flex flex-col">
-                  <div class="flex flex-wrap items-center gap-2 text-xs text-slate-500 mb-3">
+                  <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-900/65 via-slate-900/10 to-transparent"></div>
+                  <div class="absolute bottom-4 left-4 right-4 flex items-end justify-between gap-3">
+                    <span class="inline-flex rounded-full border border-white/35 bg-white/20 px-3 py-1 text-xs font-semibold text-white backdrop-blur-sm">
+                      Empfohlen
+                    </span>
+                    <time class="text-xs font-medium text-white/90" datetime={featuredPost.data.pubDate.toISOString()}>
+                      {featuredPost.dateLabel}
+                    </time>
+                  </div>
+                </a>
+
+                <div class="order-2 lg:order-1 p-6 md:p-7 lg:p-8 bg-gradient-to-br from-white via-slate-50 to-blue-50/40 flex flex-col">
+                  <div class="flex flex-wrap items-center gap-2 text-xs text-slate-500 mb-4">
                     <time datetime={featuredPost.data.pubDate.toISOString()}>{featuredPost.dateLabel}</time>
                     <span>•</span>
                     <span>{featuredPost.readingMinutes} min</span>
+                    <span>•</span>
+                    <a href={getPath(`${lang}/blog/author/${featuredPost.author.slug}`)} class="font-medium hover:text-blue-700 transition-colors">
+                      {featuredPost.data.author}
+                    </a>
                   </div>
-                  <h2 class="text-2xl font-bold text-slate-900 leading-tight mb-3 group-hover:text-blue-700 transition-colors">
-                    {featuredPost.data.title}
+
+                  <h2 class="text-2xl md:text-3xl font-bold text-slate-900 leading-tight tracking-tight mb-3">
+                    <a href={featuredPost.url} class="hover:text-blue-700 transition-colors">
+                      {featuredPost.data.title}
+                    </a>
                   </h2>
-                  <p class="text-slate-600 leading-relaxed mb-4 line-clamp-4">{featuredPost.data.description}</p>
-                  <div class="mt-auto flex flex-wrap gap-2">
+                  <p class="text-slate-600 leading-relaxed mb-5 line-clamp-4 md:line-clamp-5">{featuredPost.data.description}</p>
+
+                  <div class="mb-5 flex flex-wrap gap-2">
                     {featuredPost.tags.slice(0, 4).map((tag) => (
-                      <span class="rounded-full border border-slate-200 bg-slate-50 px-2.5 py-1 text-[11px] font-medium text-slate-700">{tag}</span>
+                      <a
+                        href={getPath(`${lang}/blog/topic/${normalizeKeyword(tag)}`)}
+                        class="rounded-full border border-slate-200 bg-white px-2.5 py-1 text-[11px] font-medium text-slate-700 hover:border-blue-200 hover:text-blue-700 transition-colors"
+                      >
+                        {tag}
+                      </a>
                     ))}
                   </div>
+
+                  <div class="mt-auto flex flex-wrap items-center gap-3">
+                    <a
+                      href={featuredPost.url}
+                      class="inline-flex items-center rounded-xl border border-blue-200 bg-blue-50 px-4 py-2 text-sm font-semibold text-blue-700 hover:bg-blue-100 transition-colors"
+                    >
+                      Artikel lesen
+                    </a>
+                    <a
+                      href={getPath(`${lang}/blog/author/${featuredPost.author.slug}`)}
+                      class="inline-flex items-center rounded-xl border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-700 hover:border-blue-200 hover:text-blue-700 transition-colors"
+                    >
+                      Mehr von {featuredPost.data.author}
+                    </a>
+                  </div>
                 </div>
-              </a>
+              </div>
             </article>
           )}
 
@@ -272,30 +324,43 @@ const breadcrumbSchema = {
                 <a href={post.url} class="block">
                   <div class="h-48 overflow-hidden bg-slate-100">
                     <img
-                      src={post.image}
+                      src={post.imageSrc}
+                      srcset={post.srcset}
+                      sizes={getOptimizedImageSizes()}
                       alt={post.imageAlt}
                       loading="lazy"
                       decoding="async"
                       class="h-full w-full object-cover group-hover:scale-[1.03] transition-transform duration-300"
                     />
                   </div>
-                  <div class="p-5">
-                    <div class="flex flex-wrap items-center gap-2 text-xs text-slate-500 mb-3">
-                      <time datetime={post.data.pubDate.toISOString()}>{post.dateLabel}</time>
-                      <span>•</span>
-                      <span>{post.readingMinutes} min</span>
-                    </div>
-                    <h3 class="text-lg font-bold text-slate-900 leading-snug mb-2 line-clamp-2 group-hover:text-blue-700 transition-colors">
-                      {post.data.title}
-                    </h3>
-                    <p class="text-sm text-slate-600 leading-relaxed line-clamp-3 mb-4">{post.data.description}</p>
-                    <div class="flex flex-wrap gap-2">
-                      {post.tags.slice(0, 3).map((tag) => (
-                        <span class="rounded-full border border-slate-200 bg-slate-50 px-2.5 py-1 text-[11px] font-medium text-slate-700">{tag}</span>
-                      ))}
-                    </div>
-                  </div>
                 </a>
+                <div class="p-5">
+                  <div class="flex flex-wrap items-center gap-2 text-xs text-slate-500 mb-3">
+                    <time datetime={post.data.pubDate.toISOString()}>{post.dateLabel}</time>
+                    <span>•</span>
+                    <span>{post.readingMinutes} min</span>
+                    <span>•</span>
+                    <a href={getPath(`${lang}/blog/author/${post.author.slug}`)} class="hover:text-blue-700 transition-colors">
+                      {post.data.author}
+                    </a>
+                  </div>
+                  <h3 class="text-lg font-bold text-slate-900 leading-snug mb-2 line-clamp-2">
+                    <a href={post.url} class="hover:text-blue-700 transition-colors">
+                      {post.data.title}
+                    </a>
+                  </h3>
+                  <p class="text-sm text-slate-600 leading-relaxed line-clamp-3 mb-4">{post.data.description}</p>
+                  <div class="flex flex-wrap gap-2">
+                    {post.tags.slice(0, 3).map((tag) => (
+                      <a
+                        href={getPath(`${lang}/blog/topic/${normalizeKeyword(tag)}`)}
+                        class="rounded-full border border-slate-200 bg-slate-50 px-2.5 py-1 text-[11px] font-medium text-slate-700 hover:border-blue-200 hover:text-blue-700 transition-colors"
+                      >
+                        {tag}
+                      </a>
+                    ))}
+                  </div>
+                </div>
               </article>
             ))}
           </div>
@@ -307,6 +372,22 @@ const breadcrumbSchema = {
 
         <aside class="space-y-4">
           <section class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+            <h2 class="text-sm font-bold uppercase tracking-wide text-slate-900 mb-3">Themen-Seiten</h2>
+            <ul class="space-y-2 text-sm text-slate-700">
+              {topicItems.slice(0, 12).map((topic) => (
+                <li>
+                  <a
+                    href={getPath(`${lang}/blog/topic/${topic.normalized}`)}
+                    class="block rounded-lg px-2 py-1.5 hover:bg-slate-50 hover:text-blue-700 transition-colors"
+                  >
+                    {topic.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </section>
+
+          <section class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
             <h2 class="text-sm font-bold uppercase tracking-wide text-slate-900 mb-3">Beliebte Keywords</h2>
             <div class="flex flex-wrap gap-2">
               <button
@@ -314,7 +395,7 @@ const breadcrumbSchema = {
                 class="px-2.5 py-1 rounded-full text-xs font-semibold border border-blue-200 bg-blue-50 text-blue-700"
                 data-keyword-filter="all"
               >
-                Tümü
+                Alle
               </button>
               {topicItems.slice(0, 16).map((topic) => (
                 <button
