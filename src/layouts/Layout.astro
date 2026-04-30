@@ -42,7 +42,7 @@ const {
 	disableAlternates = false,
 	rssHref,
 } = Astro.props;
-const siteUrl = Astro.site || 'https://lumi-zone.github.io';
+const siteUrl = Astro.site || 'https://lid-einbuergerung.de';
 const currentPath = Astro.url.pathname;
 const canonicalURL = new URL(currentPath, siteUrl);
 const canonicalHref = canonical ? new URL(canonical, siteUrl).href : canonicalURL.href;

@@ -27,7 +27,7 @@ const sortedPosts = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDa
 
 const isPrimaryBlogLocale = lang === 'de';
 const canonicalPath = getPath('de/blog');
-const siteUrl = Astro.site || 'https://lumi-zone.github.io';
+const siteUrl = Astro.site || 'https://lid-einbuergerung.de';
 const blogIndexUrl = new URL(getPath(`${lang}/blog`), siteUrl).href;
 const primaryBlogUrl = new URL(canonicalPath, siteUrl).href;
 

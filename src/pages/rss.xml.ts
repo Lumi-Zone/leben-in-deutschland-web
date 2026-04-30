@@ -11,7 +11,7 @@ const escapeXml = (value: string) =>
     .replaceAll("'", '&apos;');
 
 export async function GET({ site }: { site: URL | undefined }) {
-  const baseUrl = site ?? new URL('https://lumi-zone.github.io');
+  const baseUrl = site ?? new URL('https://lid-einbuergerung.de');
   const posts = (await getCollection('blog')).sort(
     (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
   );

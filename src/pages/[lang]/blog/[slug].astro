@@ -36,7 +36,7 @@ const allPosts = await getCollection('blog');
 const allPostsSorted = allPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
 const currentTags = new Set(post.data.tags ?? []);
-const siteUrl = Astro.site || 'https://lumi-zone.github.io';
+const siteUrl = Astro.site || 'https://lid-einbuergerung.de';
 const canonicalPath = getPath(`de/blog/${post.slug}`);
 const canonicalPostUrl = new URL(canonicalPath, siteUrl).href;
 const canonicalBlogIndexUrl = new URL(getPath('de/blog'), siteUrl).href;

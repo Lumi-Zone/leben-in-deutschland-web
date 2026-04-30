@@ -8,8 +8,8 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://lumi-zone.github.io',
-  base: '/leben-in-deutschland-web',
+  site: 'https://lid-einbuergerung.de',
+  base: '/',
   integrations: [react(), sitemap()],
 
   vite: {
