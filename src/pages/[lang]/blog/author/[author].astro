@@ -4,6 +4,7 @@ import Header from '../../../../components/Header.astro';
 import { getCollection } from 'astro:content';
 import { useTranslations } from '../../../../i18n/ui';
 import { getPath } from '../../../../utils/navigation';
+import { SUPPORTED_LANGUAGES, type SupportedLang } from '../../../../types/language';
 import { getAllAuthors, getAuthorByName, getAuthorBySlug } from '../../../../data/blogAuthors';
 import {
   getBlogImageAlt,
@@ -15,19 +16,18 @@ import {
 } from '../../../../utils/blog';
 
 export async function getStaticPaths() {
-  const supportedLangs = ['de', 'en', 'tr', 'ar', 'ua', 'ru', 'pl', 'fa', 'ps', 'ro', 'it', 'es'];
   const posts = await getCollection('blog');
   const authors = getAllAuthors();
   const authorSlugs = new Set(authors.map((entry) => entry.slug));
   posts.forEach((post) => authorSlugs.add(toSlug(post.data.author)));
 
-  return supportedLangs.flatMap((lang) =>
+  return SUPPORTED_LANGUAGES.flatMap((lang) =>
     Array.from(authorSlugs).map((authorSlug) => ({ params: { lang, author: authorSlug }, props: { lang, author: authorSlug } }))
   );
 }
 
-const { lang, author } = Astro.props;
-const t = useTranslations(lang as any);
+const { lang, author } = Astro.props as { lang: SupportedLang; author: string };
+const t = useTranslations(lang);
 const posts = await getCollection('blog');
 const matchedPostAuthor = posts.find((post) => toSlug(post.data.author) === author)?.data.author;
 const profile = getAuthorBySlug(author) ?? getAuthorByName(matchedPostAuthor ?? author);

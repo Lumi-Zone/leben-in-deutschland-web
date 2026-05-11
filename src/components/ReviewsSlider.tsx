@@ -58,7 +58,7 @@ export default function ReviewsSlider({ lang = 'de', reviewsData }: ReviewsSlide
         if (scrollLeft < 50 || scrollLeft > scrollWidth - 50) {
             container.scrollTo({
                 left: oneSetWidth * 2 + (scrollLeft % oneSetWidth),
-                behavior: 'instant' as any
+                behavior: 'auto'
             });
             return;
         }
@@ -73,7 +73,7 @@ export default function ReviewsSlider({ lang = 'de', reviewsData }: ReviewsSlide
                 const offsetInSet = scrollLeft % oneSetWidth;
                 container.scrollTo({
                     left: oneSetWidth * 2 + offsetInSet,
-                    behavior: 'instant' as any
+                    behavior: 'auto'
                 });
             }
         }, 150);

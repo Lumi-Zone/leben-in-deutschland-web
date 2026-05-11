@@ -1,14 +1,15 @@
 ---
-import { useTranslations } from '../i18n/ui';
+import { useTranslations, type UiLanguage } from '../i18n/ui';
 
 import { getPath } from '../utils/navigation';
+import type { SupportedLang } from '../types/language';
 
 interface Props {
-  lang: string;
+  lang: SupportedLang;
 }
 
-const { lang } = Astro.props;
-const t = useTranslations(lang as any);
+const { lang } = Astro.props as Props;
+const t = useTranslations(lang as UiLanguage);
 const currentPath = Astro.url.pathname;
 const appDownloadHref = 'https://apps.apple.com/app/leben-in-deutschland-2026/id6723899981';
 

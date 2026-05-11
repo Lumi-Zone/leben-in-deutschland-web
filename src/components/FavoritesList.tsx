@@ -34,11 +34,12 @@ export default function FavoritesList({ lang, labels }: Props) {
 
     return (
         <div className="max-w-4xl mx-auto">
-            <div className="bg-white rounded-3xl border border-gray-100 shadow-sm p-6 md:p-8">
+            <div className="premium-panel p-6 md:p-8">
                 <div className="flex flex-wrap items-center justify-between gap-4 mb-5">
                     <div>
-                        <h2 className="text-2xl font-bold text-gray-900">{labels.title}</h2>
-                        <p className="text-gray-600 mt-1">{labels.subtitle}</p>
+                        <span className="chip mb-2">{labels.title}</span>
+                        <h2 className="section-heading">{labels.title}</h2>
+                        <p className="section-subtitle">{labels.subtitle}</p>
                     </div>
                     {favoriteIds.length > 0 && (
                         <button
@@ -52,15 +53,18 @@ export default function FavoritesList({ lang, labels }: Props) {
                 </div>
 
                 {favoriteIds.length === 0 ? (
-                    <div className="rounded-2xl border border-dashed border-gray-300 bg-gray-50 p-8 text-center text-gray-600">
-                        {labels.empty}
+                    <div className="empty-state">
+                        <div className="mx-auto mb-3 inline-flex h-10 w-10 items-center justify-center rounded-xl border border-slate-200 bg-white text-slate-500">
+                            0
+                        </div>
+                        <p className="text-sm font-medium">{labels.empty}</p>
                     </div>
                 ) : (
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                         {favoriteIds.map((id) => (
                             <div
                                 key={id}
-                                className="flex items-center justify-between rounded-xl border border-gray-200 bg-white px-4 py-3"
+                                className="premium-panel-soft flex items-center justify-between px-4 py-3"
                             >
                                 <a
                                     href={getPath(`${lang}/frage/${id}`)}

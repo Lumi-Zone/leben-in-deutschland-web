@@ -3,15 +3,7 @@ import { getPath } from '../utils/navigation';
 import { markQuestionSolved } from '../utils/learningProgress';
 import { recordHabitAttempt } from '../utils/learningHabits';
 import { readQuestionStats, recordQuestionAttempt } from '../utils/questionStats';
-
-interface FocusQuestion {
-    id: number;
-    questionDe: string;
-    questionLocalized: string;
-    optionsDe: string[];
-    optionsLocalized: string[];
-    correctIndex: number;
-}
+import type { QuestionSessionItem } from '../utils/questions';
 
 interface Labels {
     title: string;
@@ -34,14 +26,14 @@ interface Labels {
 
 interface Props {
     lang: string;
-    pool: FocusQuestion[];
+    pool: QuestionSessionItem[];
     labels: Labels;
     maxQuestions?: number;
 }
 
 const DEFAULT_MAX_QUESTIONS = 25;
 
-function buildSession(pool: FocusQuestion[], maxQuestions: number): FocusQuestion[] {
+function buildSession(pool: QuestionSessionItem[], maxQuestions: number): QuestionSessionItem[] {
     const stats = readQuestionStats();
     const rank = Object.entries(stats.byQuestion)
         .map(([id, stat]) => {
@@ -70,14 +62,14 @@ function buildSession(pool: FocusQuestion[], maxQuestions: number): FocusQuestio
 
     if (rank.length === 0) return [];
 
-    const indexById = new Map<number, FocusQuestion>();
+    const indexById = new Map<number, QuestionSessionItem>();
     pool.forEach((question) => {
         indexById.set(question.id, question);
     });
 
     return rank
         .map((id) => indexById.get(id))
-        .filter((question): question is FocusQuestion => Boolean(question));
+        .filter((question): question is QuestionSessionItem => Boolean(question));
 }
 
 export default function FocusPracticeSession({
@@ -86,7 +78,7 @@ export default function FocusPracticeSession({
     labels,
     maxQuestions = DEFAULT_MAX_QUESTIONS,
 }: Props) {
-    const [sessionQuestions, setSessionQuestions] = useState<FocusQuestion[]>([]);
+    const [sessionQuestions, setSessionQuestions] = useState<QuestionSessionItem[]>([]);
     const [answers, setAnswers] = useState<number[]>([]);
     const [currentIndex, setCurrentIndex] = useState(0);
     const [started, setStarted] = useState(false);
@@ -122,7 +114,7 @@ export default function FocusPracticeSession({
 
     if (sessionQuestions.length === 0) {
         return (
-            <div className="max-w-3xl mx-auto bg-white rounded-3xl border border-gray-100 shadow-sm p-8 text-center">
+            <div className="max-w-3xl mx-auto premium-panel p-8 text-center">
                 <h2 className="text-2xl font-bold text-gray-900 mb-2">{labels.title}</h2>
                 <p className="text-gray-600">{labels.empty}</p>
             </div>
@@ -175,16 +167,16 @@ export default function FocusPracticeSession({
 
     if (!started) {
         return (
-            <div className="max-w-3xl mx-auto bg-white rounded-3xl border border-gray-100 shadow-sm p-8 md:p-10 text-center">
+            <div className="max-w-3xl mx-auto premium-panel p-8 md:p-10 text-center">
                 <h2 className="text-3xl font-bold text-gray-900 mb-4">{labels.title}</h2>
                 <p className="text-gray-600 mb-8">{labels.subtitle}</p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8 text-sm">
-                    <div className="rounded-xl bg-gray-50 border border-gray-100 px-4 py-3">
+                    <div className="premium-panel-soft px-4 py-3">
                         <div className="text-gray-500">{labels.questions}</div>
                         <div className="font-semibold text-gray-900">{sessionQuestions.length}</div>
                     </div>
-                    <div className="rounded-xl bg-gray-50 border border-gray-100 px-4 py-3">
+                    <div className="premium-panel-soft px-4 py-3">
                         <div className="text-gray-500">{labels.answered}</div>
                         <div className="font-semibold text-gray-900">0</div>
                     </div>
@@ -204,7 +196,7 @@ export default function FocusPracticeSession({
     if (finished) {
         return (
             <div className="max-w-4xl mx-auto">
-                <div className="bg-white rounded-3xl border border-gray-100 shadow-sm p-8 md:p-10 mb-8">
+                <div className="premium-panel p-8 md:p-10 mb-8">
                     <h2 className="text-3xl font-bold text-gray-900 mb-4">{labels.resultTitle}</h2>
                     <div className="flex flex-wrap items-center gap-3 mb-6">
                         <span className="text-gray-600">
@@ -223,7 +215,7 @@ export default function FocusPracticeSession({
                     </button>
                 </div>
 
-                <div className="bg-white rounded-3xl border border-gray-100 shadow-sm p-8">
+                <div className="premium-panel p-8">
                     <h3 className="text-xl font-bold text-gray-900 mb-5">
                         {labels.reviewQuestion} ({wrongQuestions.length})
                     </h3>
@@ -255,7 +247,7 @@ export default function FocusPracticeSession({
 
     return (
         <div className="max-w-4xl mx-auto">
-            <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5 md:p-6 mb-5">
+            <div className="premium-panel p-5 md:p-6 mb-5">
                 <div className="flex flex-wrap items-center justify-between gap-3 mb-3">
                     <div className="text-sm text-gray-600">
                         {labels.questions}: <strong className="text-gray-900">{currentIndex + 1}</strong> / {sessionQuestions.length}
@@ -264,15 +256,15 @@ export default function FocusPracticeSession({
                         {labels.answered}: <strong className="text-gray-900">{answeredCount}</strong> / {sessionQuestions.length}
                     </div>
                 </div>
-                <div className="h-2 bg-gray-100 rounded-full overflow-hidden">
+                <div className="ui-progress-track">
                     <div
-                        className="h-full bg-gradient-to-r from-blue-500 to-cyan-500 transition-all"
+                        className="ui-progress-fill transition-all"
                         style={{ width: `${progressPercent}%` }}
                     />
                 </div>
             </div>
 
-            <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 md:p-8">
+            <div className="premium-panel p-6 md:p-8">
                 <h2 className="text-xl font-bold text-gray-900 leading-relaxed mb-2">
                     <span className="text-blue-600 mr-2">#{currentQuestion.id}</span>
                     {currentQuestion.questionDe}

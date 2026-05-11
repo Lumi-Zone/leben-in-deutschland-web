@@ -1,13 +1,14 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { languages, ui, useTranslations } from '../../i18n/ui';
+import { ui, useTranslations } from '../../i18n/ui';
 import { getPath } from '../../utils/navigation';
+import { SUPPORTED_LANGUAGES, type SupportedLang } from '../../types/language';
 
 export async function getStaticPaths() {
-  return Object.keys(languages).map((lang) => ({ params: { lang } }));
+  return SUPPORTED_LANGUAGES.map((lang) => ({ params: { lang }, props: { lang } }));
 }
 
-const { lang } = Astro.params;
+const { lang } = Astro.props as { lang: SupportedLang };
 const t = useTranslations(lang as keyof typeof ui);
 
 // FAQ Data with translations
@@ -131,7 +132,7 @@ const faqData: Record<string, { question: string; answer: string }[]> = {
 };
 
 // Fallback to English or German if specific language data is missing
-const data = faqData[lang as string] || faqData['en'] || faqData['de'];
+const data = faqData[lang] || faqData['en'] || faqData['de'];
 
 const schema = {
   "@context": "https://schema.org",
@@ -174,10 +175,10 @@ import Header from '../../components/Header.astro';
   title={`${t('support.title')} - Leben in Deutschland`}
   description={t('support.subtitle')}
   image="/logo.png"
-  lang={lang as string}
+  lang={lang}
 >
 	<!-- Navigation -->
-    <Header lang={lang as string} />
+    <Header lang={lang} />
 
     <main class="min-h-screen bg-tertiary-50 pb-20">
         <!-- Hero Section -->

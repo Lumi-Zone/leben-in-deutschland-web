@@ -105,20 +105,20 @@ export interface BlogFaqItem {
 }
 
 export function extractFaqFromMarkdown(markdown: string): BlogFaqItem[] {
-  const faqHeaderMatch = markdown.match(/##\\s+Häufige Fragen\\s*\\(FAQ\\)([\\s\\S]*)/i);
+  const faqHeaderMatch = markdown.match(/##\s+Häufige Fragen\s*\(FAQ\)([\s\S]*)/i);
   if (!faqHeaderMatch) return [];
 
   const block = faqHeaderMatch[1];
-  const nextMainSection = block.search(/\\n##\\s+/);
+  const nextMainSection = block.search(/\n##\s+/);
   const faqBlock = nextMainSection >= 0 ? block.slice(0, nextMainSection) : block;
 
-  const questionRegex = /###\\s+(.+)\\n([\\s\\S]*?)(?=\\n###\\s+|$)/g;
+  const questionRegex = /###\s+(.+)\n([\s\S]*?)(?=\n###\s+|$)/g;
   const items: BlogFaqItem[] = [];
 
   let match = questionRegex.exec(faqBlock);
   while (match) {
     const question = match[1].trim();
-    const answer = match[2].replace(/\\n+/g, ' ').replace(/\\s+/g, ' ').trim();
+    const answer = match[2].replace(/\n+/g, ' ').replace(/\s+/g, ' ').trim();
     if (question && answer) items.push({ question, answer });
     match = questionRegex.exec(faqBlock);
   }

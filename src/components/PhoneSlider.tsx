@@ -56,7 +56,7 @@ export default function PhoneSlider() {
         if (scrollLeft < 50 || scrollLeft > scrollWidth - 50) {
             container.scrollTo({
                 left: oneSetWidth + (scrollLeft % oneSetWidth),
-                behavior: 'instant' as any
+                behavior: 'auto'
             });
             return;
         }
@@ -72,7 +72,7 @@ export default function PhoneSlider() {
                 const offsetInSet = scrollLeft % oneSetWidth;
                 container.scrollTo({
                     left: oneSetWidth + offsetInSet,
-                    behavior: 'instant' as any
+                    behavior: 'auto'
                 });
             }
         }, 150);

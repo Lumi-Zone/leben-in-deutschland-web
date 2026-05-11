@@ -43,26 +43,26 @@ export default function ContinueLearningCard({ lang, totalQuestions, labels }: P
     return (
         <section className="py-10">
             <div className="container mx-auto px-4">
-                <div className="max-w-5xl mx-auto rounded-3xl border border-blue-100 bg-gradient-to-br from-white via-blue-50 to-cyan-50 shadow-sm p-6 md:p-8">
+                <div className="max-w-5xl mx-auto premium-panel p-6 md:p-8">
                     <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6">
                         <div className="max-w-2xl">
-                            <span className="inline-flex items-center px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-xs font-semibold mb-4">
+                            <span className="chip mb-4">
                                 {labels.title}
                             </span>
-                            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
+                            <h3 className="section-heading mb-2">
                                 {labels.subtitle}
                             </h3>
-                            <p className="text-sm text-gray-600 mb-5">
+                            <p className="text-sm text-slate-600 mb-5">
                                 {labels.solvedLabel}: <strong>{solvedCount}</strong> / {totalQuestions}
                             </p>
 
-                            <div className="h-2.5 rounded-full bg-white/80 border border-blue-100 overflow-hidden mb-3">
+                            <div className="ui-progress-track mb-3">
                                 <div
-                                    className="h-full bg-gradient-to-r from-blue-600 to-cyan-500 transition-all"
+                                    className="ui-progress-fill transition-all"
                                     style={{ width: `${progressPercent}%` }}
                                 />
                             </div>
-                            <div className="text-sm text-gray-600">
+                            <div className="text-sm text-slate-600">
                                 {progress.lastQuestionId ? (
                                     <>
                                         {labels.lastLabel}: <strong>#{progress.lastQuestionId}</strong>

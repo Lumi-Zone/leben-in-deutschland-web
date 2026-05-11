@@ -47,7 +47,7 @@ export default function FeatureCarousel({ items }: FeatureCarouselProps) {
         if (scrollLeft < 50 || scrollLeft > scrollWidth - 50) {
             container.scrollTo({
                 left: oneSetWidth + (scrollLeft % oneSetWidth),
-                behavior: 'instant' as any
+                behavior: 'auto'
             });
             return;
         }
@@ -67,7 +67,7 @@ export default function FeatureCarousel({ items }: FeatureCarouselProps) {
                 // Jump to the corresponding position in the middle set (Set 2)
                 container.scrollTo({
                     left: oneSetWidth + offsetInSet,
-                    behavior: 'instant' as any
+                    behavior: 'auto'
                 });
             }
         }, 150); // 150ms debounce

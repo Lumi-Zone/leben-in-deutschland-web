@@ -66,14 +66,14 @@ export default function StudyHabitCard({ labels }: Props) {
 
     return (
         <section className="max-w-5xl mx-auto mb-6">
-            <div className="rounded-3xl border border-indigo-100 bg-gradient-to-br from-indigo-50 via-white to-cyan-50 shadow-sm p-6 md:p-8">
+            <div className="premium-panel p-6 md:p-8">
                 <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-5 mb-5">
                     <div>
-                        <span className="inline-flex items-center px-3 py-1 rounded-full bg-indigo-100 text-indigo-700 text-xs font-semibold mb-3">
+                        <span className="chip mb-3">
                             {labels.title}
                         </span>
-                        <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-1">{labels.subtitle}</h2>
-                        <p className="text-sm text-gray-600">{statusText}</p>
+                        <h2 className="section-heading mb-1">{labels.subtitle}</h2>
+                        <p className="text-sm text-slate-600">{statusText}</p>
                     </div>
 
                     <div className="flex flex-wrap items-center gap-2">
@@ -103,32 +103,32 @@ export default function StudyHabitCard({ labels }: Props) {
                     </div>
                 </div>
 
-                <div className="rounded-xl border border-indigo-100 bg-white/80 px-4 py-3 mb-5">
+                <div className="premium-panel-soft px-4 py-3 mb-5">
                     <div className="flex items-center justify-between text-sm mb-2">
-                        <span className="text-gray-600">
+                        <span className="text-slate-600">
                             {labels.todayAttempts}: <strong className="text-gray-900">{todayAttempts}</strong> {labels.attempts}
                         </span>
                         <span className="font-semibold text-indigo-700">{goalPercent}%</span>
                     </div>
-                    <div className="h-2.5 rounded-full bg-indigo-50 overflow-hidden border border-indigo-100">
+                    <div className="ui-progress-track">
                         <div
-                            className="h-full bg-gradient-to-r from-indigo-500 to-cyan-500 transition-all"
+                            className="ui-progress-fill transition-all"
                             style={{ width: `${goalPercent}%` }}
                         />
                     </div>
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-                    <div className="rounded-2xl border border-gray-200 bg-white p-4">
+                    <div className="premium-panel-soft p-4">
                         <p className="text-xs uppercase tracking-wide text-gray-500 font-semibold mb-1">{labels.dailyGoal}</p>
                         <p className="text-2xl font-bold text-gray-900">{habitStore.dailyGoal}</p>
                     </div>
-                    <div className="rounded-2xl border border-gray-200 bg-white p-4">
+                    <div className="premium-panel-soft p-4">
                         <p className="text-xs uppercase tracking-wide text-gray-500 font-semibold mb-1">{labels.currentStreak}</p>
                         <p className="text-2xl font-bold text-gray-900">{habitStore.streakCurrent}</p>
                         <p className="text-xs text-gray-500 mt-1">{labels.days}</p>
                     </div>
-                    <div className="rounded-2xl border border-gray-200 bg-white p-4">
+                    <div className="premium-panel-soft p-4">
                         <p className="text-xs uppercase tracking-wide text-gray-500 font-semibold mb-1">{labels.bestStreak}</p>
                         <p className="text-2xl font-bold text-gray-900">{habitStore.streakBest}</p>
                         <p className="text-xs text-gray-500 mt-1">{labels.days}</p>

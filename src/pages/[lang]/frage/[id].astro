@@ -2,19 +2,18 @@
 import Layout from '../../../layouts/Layout.astro';
 import QuestionCard from '../../../components/QuestionCard';
 import questions from '../../../data/questions.json';
-
-type SupportedLang = 'de' | 'en' | 'tr' | 'ar' | 'ua' | 'ru' | 'pl' | 'fa' | 'ps' | 'ro' | 'it' | 'es';
-
-interface TranslationContent {
-  question: string;
-  options: string[];
-}
+import { SUPPORTED_LANGUAGES, type SupportedLang } from '../../../types/language';
+import {
+  buildQuestionTranslations,
+  parseCorrectIndex,
+  type QuestionTranslationContent,
+} from '../../../utils/questions';
 
 interface QuestionPageProps {
   question: {
     id: number;
     correct_index: number;
-    translations: { de: TranslationContent } & Partial<Record<SupportedLang, TranslationContent>>;
+    translations: { de: QuestionTranslationContent } & Partial<Record<SupportedLang, QuestionTranslationContent>>;
     prevId: number | null;
     nextId: number | null;
     position: number;
@@ -25,38 +24,16 @@ interface QuestionPageProps {
 
 // Full i18n getStaticPaths
 export function getStaticPaths() {
-  const supportedLangs: SupportedLang[] = ['de', 'en', 'tr', 'ar', 'ua', 'ru', 'pl', 'fa', 'ps', 'ro', 'it', 'es'];
-
   // Create flat array of all paths
   const paths: Array<{
     params: { lang: SupportedLang; id: string };
     props: QuestionPageProps;
   }> = [];
 
-  supportedLangs.forEach((lang) => {
+  SUPPORTED_LANGUAGES.forEach((lang) => {
     questions.forEach((q, index) => {
-      const charCode = q.solution.toLowerCase().charCodeAt(0);
-      const correctIndex = charCode - 97;
-      const qAny = q as Record<string, unknown>;
-      const readText = (key: string) => (typeof qAny[key] === 'string' ? qAny[key] as string : '');
-
-      const deTranslation: TranslationContent = {
-        question: q.q_de || '',
-        options: [1, 2, 3, 4].map((num) => readText(`a${num}_de`)),
-      };
-
-      const localizedTranslation: TranslationContent = {
-        question: readText(`q_${lang}`) || q.q_de || '',
-        options: [1, 2, 3, 4].map((num) => readText(`a${num}_${lang}`) || readText(`a${num}_de`)),
-      };
-
-      // Keep only German + active language to avoid embedding all locales in each page.
-      const translations: { de: TranslationContent } & Partial<Record<SupportedLang, TranslationContent>> = {
-        de: deTranslation,
-      };
-      if (lang !== 'de') {
-        translations[lang] = localizedTranslation;
-      }
+      const correctIndex = parseCorrectIndex(q.solution || '');
+      const translations = buildQuestionTranslations(q, lang);
 
       const prevId = index > 0 ? questions[index - 1].id : null;
       const nextId = index < questions.length - 1 ? questions[index + 1].id : null;
@@ -103,7 +80,7 @@ const schema = {
     "suggestedAnswer": currentContent.options.map((opt: string, idx: number) => ({
       "@type": "Answer",
       "text": opt,
-      "position": idx
+      "position": idx + 1
     }))
   }
 };
@@ -146,55 +123,53 @@ const breadcrumbSchema = {
   lang={lang}
 >
   <Header lang={lang} />
-  <main class="container mx-auto px-4 py-8 min-h-screen bg-gray-50 flex flex-col items-center justify-center">
+  <main class="app-page">
     
     <script is:inline type="application/ld+json" set:html={JSON.stringify(schema)} />
     <script is:inline type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
 
-    <div class="w-full mb-8 text-center">
-      <a href={getPath(`${lang}/`)} class="text-blue-600 hover:text-blue-800 font-medium">← {translate("question.back")}</a>
-      <span class="mx-2 text-gray-300">|</span>
-      <a href={getPath(`${lang}/exam`)} class="text-blue-600 hover:text-blue-800 font-medium">{translate("home.start_exam")}</a>
-      <span class="mx-2 text-gray-300">|</span>
-      <a href={getPath(`${lang}/favorites`)} class="text-blue-600 hover:text-blue-800 font-medium">{translate("nav.favorites")}</a>
-      <span class="mx-2 text-gray-300">|</span>
-      <a href={getPath(`${lang}/progress`)} class="text-blue-600 hover:text-blue-800 font-medium">{translate("nav.progress")}</a>
-      <span class="mx-2 text-gray-300">|</span>
-      <a href={getPath(`${lang}/focus`)} class="text-blue-600 hover:text-blue-800 font-medium">{translate("progress.focus_cta")}</a>
-    </div>
+    <div class="app-page-shell">
+      <div class="max-w-5xl mx-auto mb-6 flex flex-wrap gap-2.5">
+        <a href={getPath(`${lang}/`)} class="inline-flex items-center rounded-xl border border-blue-200 bg-blue-50 px-3.5 py-2 text-sm font-semibold text-blue-700 hover:bg-blue-100">← {translate("question.back")}</a>
+        <a href={getPath(`${lang}/exam`)} class="inline-flex items-center rounded-xl border border-indigo-200 bg-indigo-50 px-3.5 py-2 text-sm font-semibold text-indigo-700 hover:bg-indigo-100">{translate("home.start_exam")}</a>
+        <a href={getPath(`${lang}/favorites`)} class="inline-flex items-center rounded-xl border border-amber-200 bg-amber-50 px-3.5 py-2 text-sm font-semibold text-amber-700 hover:bg-amber-100">{translate("nav.favorites")}</a>
+        <a href={getPath(`${lang}/progress`)} class="inline-flex items-center rounded-xl border border-emerald-200 bg-emerald-50 px-3.5 py-2 text-sm font-semibold text-emerald-700 hover:bg-emerald-100">{translate("nav.progress")}</a>
+        <a href={getPath(`${lang}/focus`)} class="inline-flex items-center rounded-xl border border-cyan-200 bg-cyan-50 px-3.5 py-2 text-sm font-semibold text-cyan-700 hover:bg-cyan-100">{translate("progress.focus_cta")}</a>
+      </div>
 
-    <QuestionCard 
-      client:load 
-      id={question.id} 
-      data={question.translations}
-      correctIndex={question.correct_index}
-      prevId={question.prevId}
-      nextId={question.nextId}
-      initialLang={lang}
-      practiceAppLabel={translate("question.practice_app")}
-      resultCorrectLabel={translate("question.correct")}
-      resultWrongLabel={translate("question.wrong")}
-      correctAnswerLabel={translate("question.correct_answer")}
-      prevLabel={translate("question.prev")}
-      nextLabel={translate("question.next")}
-      questionPosition={question.position}
-      questionTotal={question.total}
-      progressLabel={translate("question.progress")}
-      favoriteAddLabel={translate("question.favorite_add")}
-      favoriteRemoveLabel={translate("question.favorite_remove")}
-      shortcutsLabel={translate("question.shortcuts_title")}
-      shortcutSelectLabel={translate("question.shortcuts_select")}
-      shortcutPrevLabel={translate("question.shortcuts_prev")}
-      shortcutNextLabel={translate("question.shortcuts_next")}
-      shortcutFavoriteLabel={translate("question.shortcuts_favorite")}
-      jumpToLabel={translate("question.jump_label")}
-      jumpPlaceholder={translate("question.jump_placeholder")}
-      jumpButtonLabel={translate("question.jump_button")}
-      jumpErrorLabel={translate("question.jump_error")}
-    />
-    
-    <div class="mt-12 text-center text-gray-400 text-sm">
-      <p>Leben in Deutschland &copy; {new Date().getFullYear()}</p>
+      <QuestionCard 
+        client:load 
+        id={question.id} 
+        data={question.translations}
+        correctIndex={question.correct_index}
+        prevId={question.prevId}
+        nextId={question.nextId}
+        initialLang={lang}
+        practiceAppLabel={translate("question.practice_app")}
+        resultCorrectLabel={translate("question.correct")}
+        resultWrongLabel={translate("question.wrong")}
+        correctAnswerLabel={translate("question.correct_answer")}
+        prevLabel={translate("question.prev")}
+        nextLabel={translate("question.next")}
+        questionPosition={question.position}
+        questionTotal={question.total}
+        progressLabel={translate("question.progress")}
+        favoriteAddLabel={translate("question.favorite_add")}
+        favoriteRemoveLabel={translate("question.favorite_remove")}
+        shortcutsLabel={translate("question.shortcuts_title")}
+        shortcutSelectLabel={translate("question.shortcuts_select")}
+        shortcutPrevLabel={translate("question.shortcuts_prev")}
+        shortcutNextLabel={translate("question.shortcuts_next")}
+        shortcutFavoriteLabel={translate("question.shortcuts_favorite")}
+        jumpToLabel={translate("question.jump_label")}
+        jumpPlaceholder={translate("question.jump_placeholder")}
+        jumpButtonLabel={translate("question.jump_button")}
+        jumpErrorLabel={translate("question.jump_error")}
+      />
+      
+      <div class="mt-10 text-center text-slate-400 text-sm">
+        <p>Leben in Deutschland &copy; {new Date().getFullYear()}</p>
+      </div>
     </div>
   </main>
 </Layout>

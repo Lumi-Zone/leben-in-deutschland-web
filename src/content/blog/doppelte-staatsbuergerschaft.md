@@ -2,13 +2,13 @@
 title: "Doppelte Staatsbürgerschaft: Die neuen Regeln"
 description: "Muss ich meine alte Staatsangehörigkeit aufgeben? Alles zur Mehrstaatigkeit im neuen Einbürgerungsrecht."
 pubDate: 2026-02-20
-updatedDate: 2026-02-20
+updatedDate: 2026-04-30
 author: "Rechtsredaktion"
 image: "https://images.unsplash.com/photo-1654163601053-ea0362be3429?auto=format&fit=crop&w=1600&q=80"
 tags: ["Recht", "Einbürgerung", "News"]
 ---
 
-Eine der wichtigsten Änderungen im modernen Staatsangehörigkeitsrecht ist die Hinnahme der Mehrstaatigkeit (doppelte Staatsbürgerschaft). Viele Bewerber fragen sich: Muss ich meinen alten Pass abgeben?
+Eine der wichtigsten Änderungen im Staatsangehörigkeitsrecht ist die Hinnahme der Mehrstaatigkeit. Viele Bewerber fragen sich: Muss ich den alten Pass bei der Einbürgerung aufgeben?
 
 ## Grundsatz: Mehrstaatigkeit wird akzeptiert
 Nach der neuen Rechtslage wird von Einbürgerungsbewerbern **nicht mehr verlangt**, ihre bisherige Staatsangehörigkeit aufzugeben. Deutschland erlaubt nun generell die doppelte Staatsbürgerschaft.
@@ -16,30 +16,30 @@ Nach der neuen Rechtslage wird von Einbürgerungsbewerbern **nicht mehr verlangt
 ### Was bedeutet das für Sie?
 *   Sie können Deutscher werden, ohne Ihre Wurzeln "abschneiden" zu müssen.
 *   Sie behalten die Rechte in Ihrem Herkunftsland (z.B. Erbrecht, Reisefreiheit).
-*   Sie genießen alle Rechte als decktscher Staatsbürger (Wahlrecht, EU-Freizügigkeit).
+*   Sie genießen alle Rechte als deutscher Staatsbürger (Wahlrecht, EU-Freizügigkeit).
 
-## Gibt es Ausnahmen?
-Die Hürde liegt nun meist nicht mehr bei Deutschland, sondern bei Ihrem **Herkunftsland**. 
+## Gibt es trotzdem Grenzen?
+Die Hürde liegt oft nicht bei Deutschland, sondern bei Ihrem **Herkunftsland**. 
 *   Manche Länder entziehen automatisch die Staatsbürgerschaft, wenn man eine andere (die deutsche) annimmt.
 *   Andere Länder erlauben keine doppelte Staatsbürgerschaft und verlangen, dass Sie sich entscheiden.
 
-**Tipp:** Informieren Sie sich vor dem Antrag bei der Botschaft oder dem Konsulat Ihres Herkunftslandes über die dortigen Gesetze. Von deutscher Seite steht dem Doppelpass in der Regel nichts mehr im Wege.
+**Tipp:** Klären Sie vor Antragstellung bei Botschaft oder Konsulat Ihres Herkunftslandes, ob dort Einschränkungen für Mehrstaatigkeit gelten.
 
 <!-- seo-enhanced -->
 ## Schnelle Zusammenfassung
-- Die rechtlichen Voraussetzungen sind der wichtigste Hebel für eine erfolgreiche Einbürgerung.
-- Vollständige Unterlagen sparen oft mehrere Monate Bearbeitungszeit.
-- Offizielle Informationen sollten immer direkt bei Behörde oder BAMF geprüft werden.
+- Deutschland akzeptiert Mehrstaatigkeit bei Einbürgerungen grundsätzlich.
+- Kritisch sind oft die Regeln des Herkunftslandes, nicht die deutschen Vorgaben.
+- Eine frühzeitige Klärung verhindert spätere Überraschungen beim Passstatus.
 
 ## Häufige Fragen (FAQ)
-### Welche Unterlagen sollte ich zuerst vorbereiten?
-Starten Sie mit Identitätsnachweisen, Aufenthaltsdokumenten, Sprachzertifikat und ggf. Testnachweis. Eine vollständige Akte beschleunigt das Verfahren deutlich.
+### Muss ich meine bisherige Staatsangehörigkeit automatisch aufgeben?
+Aus deutscher Sicht in der Regel nein. Ob sie trotzdem verloren geht, hängt häufig vom Recht Ihres Herkunftslandes ab.
 
-### Wie lange dauert die Bearbeitung typischerweise?
-Je nach Behörde und Bundesland kann die Dauer stark variieren. Realistisch ist eine mehrmonatige Bearbeitungszeit.
+### Welche Stelle sollte ich zuerst fragen?
+Für deutsche Verfahrensfragen die Einbürgerungsbehörde, für ausländisches Staatsangehörigkeitsrecht Botschaft oder Konsulat des Herkunftslandes.
 
-### Was ist der häufigste Fehler im Prozess?
-Unvollständige oder veraltete Dokumente. Prüfen Sie vor Abgabe jede Anforderung anhand der aktuellen Behördenliste.
+### Kann ein Land die alte Staatsangehörigkeit trotz deutscher Einbürgerung entziehen?
+Ja, manche Staaten sehen beim Erwerb einer neuen Staatsangehörigkeit automatisch den Verlust der bisherigen vor.
 
 ## Nächster Schritt
-Als Vertiefung: **[Einbürgerung: Ablauf und Voraussetzungen 2026](/de/blog/einbuergerung-ablauf)** und **[Doppelte Staatsbürgerschaft: Die neuen Regeln](/de/blog/doppelte-staatsbuergerschaft)**.
+Als Vertiefung: **[Einbürgerung: Ablauf und Voraussetzungen 2026](/de/blog/einbuergerung-ablauf)**, **[Aufenthaltstitel und Einbürgerung](/de/blog/aufenthaltstitel-und-einbuergerung)** und **[Bearbeitungszeit bei der Einbürgerung](/de/blog/bearbeitungszeit-einbuergerung)**.

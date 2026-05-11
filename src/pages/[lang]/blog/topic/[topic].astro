@@ -4,6 +4,7 @@ import Header from '../../../../components/Header.astro';
 import { getCollection } from 'astro:content';
 import { useTranslations } from '../../../../i18n/ui';
 import { getPath } from '../../../../utils/navigation';
+import { SUPPORTED_LANGUAGES, type SupportedLang } from '../../../../types/language';
 import {
   getBlogImageAlt,
   getOptimizedImageSizes,
@@ -14,7 +15,6 @@ import {
 } from '../../../../utils/blog';
 
 export async function getStaticPaths() {
-  const supportedLangs = ['de', 'en', 'tr', 'ar', 'ua', 'ru', 'pl', 'fa', 'ps', 'ro', 'it', 'es'];
   const posts = await getCollection('blog');
   const topics = new Set<string>();
 
@@ -22,13 +22,13 @@ export async function getStaticPaths() {
     (post.data.tags ?? []).forEach((tag) => topics.add(normalizeKeyword(tag)));
   });
 
-  return supportedLangs.flatMap((lang) =>
+  return SUPPORTED_LANGUAGES.flatMap((lang) =>
     Array.from(topics).map((topic) => ({ params: { lang, topic }, props: { lang, topic } }))
   );
 }
 
-const { lang, topic } = Astro.props;
-const t = useTranslations(lang as any);
+const { lang, topic } = Astro.props as { lang: SupportedLang; topic: string };
+const t = useTranslations(lang);
 const posts = await getCollection('blog');
 
 const localeByLang: Record<string, string> = {

@@ -215,11 +215,12 @@ export default function ProgressInsights({ lang, totalQuestions, questionMeta, l
 
     return (
         <div className="max-w-5xl mx-auto">
-            <section className="bg-white rounded-3xl border border-gray-100 shadow-sm p-6 md:p-8 mb-6">
+            <section className="premium-panel p-6 md:p-8 mb-6">
                 <div className="flex flex-wrap items-center justify-between gap-4 mb-5">
                     <div>
-                        <h2 className="text-2xl md:text-3xl font-bold text-gray-900">{labels.title}</h2>
-                        <p className="text-gray-600 mt-1">{labels.subtitle}</p>
+                        <span className="chip mb-2">{labels.metricAccuracy}</span>
+                        <h2 className="section-heading">{labels.title}</h2>
+                        <p className="section-subtitle">{labels.subtitle}</p>
                     </div>
                     {stats.totalAttempts > 0 && (
                         <button
@@ -233,20 +234,20 @@ export default function ProgressInsights({ lang, totalQuestions, questionMeta, l
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 mb-6">
-                    <div className="rounded-2xl border border-blue-100 bg-blue-50/70 p-4">
+                    <div className="premium-panel-soft p-4">
                         <p className="text-xs uppercase tracking-wide font-semibold text-blue-700 mb-1">{labels.metricSolved}</p>
                         <p className="text-2xl font-bold text-blue-900">{solvedCount}</p>
                         <p className="text-sm text-blue-700/80">/ {totalQuestions}</p>
                     </div>
-                    <div className="rounded-2xl border border-cyan-100 bg-cyan-50/70 p-4">
+                    <div className="premium-panel-soft p-4">
                         <p className="text-xs uppercase tracking-wide font-semibold text-cyan-700 mb-1">{labels.metricAttempts}</p>
                         <p className="text-2xl font-bold text-cyan-900">{stats.totalAttempts}</p>
                     </div>
-                    <div className="rounded-2xl border border-emerald-100 bg-emerald-50/70 p-4">
+                    <div className="premium-panel-soft p-4">
                         <p className="text-xs uppercase tracking-wide font-semibold text-emerald-700 mb-1">{labels.metricAccuracy}</p>
                         <p className="text-2xl font-bold text-emerald-900">{accuracyPercent}%</p>
                     </div>
-                    <div className="rounded-2xl border border-amber-100 bg-amber-50/70 p-4">
+                    <div className="premium-panel-soft p-4">
                         <p className="text-xs uppercase tracking-wide font-semibold text-amber-700 mb-1">{labels.metricFavorites}</p>
                         <p className="text-2xl font-bold text-amber-900">{favoriteCount}</p>
                     </div>
@@ -257,13 +258,13 @@ export default function ProgressInsights({ lang, totalQuestions, questionMeta, l
                 </div>
             </section>
 
-            <section className="bg-white rounded-3xl border border-gray-100 shadow-sm p-6 md:p-8 mb-6">
+            <section className="premium-panel p-6 md:p-8 mb-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-1">{labels.topicTitle}</h3>
                 <p className="text-gray-600 mb-5">{labels.topicSubtitle}</p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                     {topicInsights.map((topic) => (
-                        <div key={topic.areaCode} className="rounded-2xl border border-gray-200 bg-gray-50/50 p-4">
+                        <div key={topic.areaCode} className="premium-panel-soft p-4">
                             <div className="flex items-center justify-between mb-3">
                                 <p className="font-semibold text-gray-900">{topic.areaLabel}</p>
                                 <span className="text-xs font-semibold text-blue-700 bg-blue-50 border border-blue-100 px-2 py-1 rounded-md">
@@ -271,9 +272,9 @@ export default function ProgressInsights({ lang, totalQuestions, questionMeta, l
                                 </span>
                             </div>
 
-                            <div className="h-2 rounded-full bg-gray-200 overflow-hidden mb-3">
+                            <div className="ui-progress-track mb-3">
                                 <div
-                                    className="h-full bg-gradient-to-r from-blue-500 to-cyan-500 transition-all"
+                                    className="ui-progress-fill transition-all"
                                     style={{ width: `${topic.solvedPercent}%` }}
                                 />
                             </div>
@@ -294,11 +295,11 @@ export default function ProgressInsights({ lang, totalQuestions, questionMeta, l
                 </div>
             </section>
 
-            <section className="bg-white rounded-3xl border border-gray-100 shadow-sm p-6 md:p-8">
+            <section className="premium-panel p-6 md:p-8">
                 <h3 className="text-xl font-bold text-gray-900 mb-4">{labels.weakTitle}</h3>
 
                 {weakQuestions.length === 0 ? (
-                    <div className="rounded-2xl border border-dashed border-gray-300 bg-gray-50 p-8 text-center text-gray-600">
+                    <div className="empty-state">
                         {labels.weakEmpty}
                     </div>
                 ) : (

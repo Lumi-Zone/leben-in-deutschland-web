@@ -104,7 +104,7 @@ export default function StateQuestionExplorer({ lang, stateName, questions, labe
 
     return (
         <div className="max-w-6xl mx-auto">
-            <div className="rounded-2xl border border-gray-200 bg-white p-4 md:p-5 shadow-sm mb-6">
+            <div className="premium-panel p-4 md:p-5 mb-6">
                 <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_auto_auto] gap-3">
                     <label className="relative block">
                         <span className="sr-only">{labels.searchAriaLabel}</span>
@@ -198,7 +198,7 @@ export default function StateQuestionExplorer({ lang, stateName, questions, labe
             </div>
 
             {filteredQuestions.length === 0 ? (
-                <div className="rounded-2xl border border-dashed border-gray-300 bg-white p-10 text-center">
+                <div className="empty-state p-10">
                     <h3 className="text-xl font-semibold text-gray-900 mb-2">{labels.emptyTitle}</h3>
                     <p className="text-gray-600">{labels.emptySubtitle}</p>
                 </div>
@@ -212,7 +212,7 @@ export default function StateQuestionExplorer({ lang, stateName, questions, labe
                                 href={getPath(`${lang}/frage/${question.id}`)}
                                 className="block group"
                             >
-                                <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-200 hover:border-blue-400 hover:shadow-md transition-all h-full flex flex-col group-hover:-translate-y-0.5">
+                                <div className="premium-panel-soft p-6 hover:border-blue-400 hover:shadow-md transition-all h-full flex flex-col group-hover:-translate-y-0.5">
                                     <div className="flex items-center justify-between mb-3">
                                         <span className="text-sm font-semibold text-blue-700 bg-blue-50 px-2.5 py-1 rounded-md">
                                             #{question.id}
@@ -237,7 +237,7 @@ export default function StateQuestionExplorer({ lang, stateName, questions, labe
                             <a
                                 key={question.id}
                                 href={getPath(`${lang}/frage/${question.id}`)}
-                                className="block rounded-2xl border border-gray-200 bg-white p-4 md:p-5 hover:border-blue-400 hover:shadow-sm transition-all"
+                                className="block premium-panel-soft p-4 md:p-5 hover:border-blue-400 hover:shadow-sm transition-all"
                             >
                                 <div className="flex items-start justify-between gap-3">
                                     <div>

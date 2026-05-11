@@ -4,41 +4,25 @@ import questions from '../../data/questions.json';
 import { useTranslations } from '../../i18n/ui';
 import PhoneSlider from '../../components/PhoneSlider';
 import ReviewsSlider from '../../components/ReviewsSlider';
-import FeatureCarousel from '../../components/FeatureCarousel';
 import ContinueLearningCard from '../../components/ContinueLearningCard';
+import OnboardingStarter from '../../components/OnboardingStarter';
 import { getReviews } from '../../data/reviews';
+import { GERMAN_STATES } from '../../data/germanStates';
 import { getCollection } from 'astro:content';
-import { getBlogImageAlt, resolveBlogImage } from '../../utils/blog';
+import { getBlogImageAlt, getOptimizedImageUrl, resolveBlogImage } from '../../utils/blog';
+import { SUPPORTED_LANGUAGES, type SupportedLang } from '../../types/language';
+import { getLocalizedQuestionText } from '../../utils/questions';
 
 export function getStaticPaths() {
-  const supportedLangs = ['de', 'en', 'tr', 'ar', 'ua', 'ru', 'pl', 'fa', 'ps', 'ro', 'it', 'es'];
-  return supportedLangs.map(lang => ({ params: { lang }, props: { lang } }));
+  return SUPPORTED_LANGUAGES.map((lang) => ({ params: { lang }, props: { lang } }));
 }
 
-const { lang } = Astro.params;
-const t = useTranslations(lang as any);
+const { lang } = Astro.props as { lang: SupportedLang };
+const t = useTranslations(lang);
 import Header from '../../components/Header.astro';
 import { getPath } from '../../utils/navigation';
 
-const featureItems = [
-    {
-        title: t("features.learn.title"),
-        description: t("features.learn.desc"),
-        image: getPath('mockups/m5.png'),
-    },
-    {
-        title: t("features.practice.title"),
-        description: t("features.practice.desc"),
-        image: getPath('mockups/m6.png'),
-    },
-    {
-        title: t("features.exam.title"),
-        description: t("features.exam.desc"),
-        image: getPath('mockups/m4.png'),
-    },
-];
-
-const reviewsData = getReviews(lang as string);
+const reviewsData = getReviews(lang);
 const heroDescription = t("hero.subtitle").replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
 const blogPosts = await getCollection('blog');
 const recentBlogPosts = blogPosts
@@ -47,38 +31,49 @@ const recentBlogPosts = blogPosts
 	.map((post) => ({
 		...post,
 		image: resolveBlogImage(post),
+		imageCard: getOptimizedImageUrl(resolveBlogImage(post), 768),
 		imageAlt: getBlogImageAlt(post.data.title),
 	}));
-const stateLinks = [
-	{ slug: 'baden-wuerttemberg', label: 'Baden-Württemberg' },
-	{ slug: 'bayern', label: 'Bayern' },
-	{ slug: 'berlin', label: 'Berlin' },
-	{ slug: 'brandenburg', label: 'Brandenburg' },
-	{ slug: 'bremen', label: 'Bremen' },
-	{ slug: 'hamburg', label: 'Hamburg' },
-	{ slug: 'hessen', label: 'Hessen' },
-	{ slug: 'mecklenburg-vorpommern', label: 'Mecklenburg-Vorpommern' },
-	{ slug: 'niedersachsen', label: 'Niedersachsen' },
-	{ slug: 'nordrhein-westfalen', label: 'Nordrhein-Westfalen' },
-	{ slug: 'rheinland-pfalz', label: 'Rheinland-Pfalz' },
-	{ slug: 'saarland', label: 'Saarland' },
-	{ slug: 'sachsen', label: 'Sachsen' },
-	{ slug: 'sachsen-anhalt', label: 'Sachsen-Anhalt' },
-	{ slug: 'schleswig-holstein', label: 'Schleswig-Holstein' },
-	{ slug: 'thueringen', label: 'Thüringen' },
-];
+const stateLinks = GERMAN_STATES;
+const isGerman = lang === 'de';
+const seoTitle = isGerman
+	? 'Leben in Deutschland, Einbürgerung, Einbürgerungstest: 300 Fragen mit BAMF-Fokus'
+	: `${t("hero.title")} - Master the Exam`;
+const seoDescription = isGerman
+	? 'Leben in Deutschland online üben: Einbürgerung & Einbürgerungstest mit BAMF-nahen 300 Fragen, Integrationskurs-, Politikkurs- und Orientierungskurs-Themen plus Bundesland Fragen.'
+	: heroDescription;
+const seoKeywords = isGerman
+	? [
+		'leben in deutschland',
+		'einbürgerung',
+		'einbürgerungstest',
+		'bamf',
+		'300 fragen',
+		'integrationskurs',
+		'bundesland fragen',
+		'bayern fragen',
+		'berlin fragen',
+		'hamburg fragen',
+		'nordrhein-westfalen fragen',
+		'politik kurs',
+		'politikkurs',
+		'orientierung',
+		'orientierungskurs',
+	  ].join(', ')
+	: undefined;
 ---
 
 <Layout
-	title={`${t("hero.title")} - Master the Exam`}
-	description={heroDescription}
+	title={seoTitle}
+	description={seoDescription}
+	keywords={seoKeywords}
 	image="/logo.png"
 	lang={lang}
 >
 	<!-- Navigation -->
 	<Header lang={lang} />
 
-	<main>
+	<main class="app-page">
 		<!-- HERO SECTION -->
 		<div class="container mx-auto px-4 py-10 lg:py-14 text-center relative">
 			<div class="absolute inset-x-4 top-8 h-44 bg-gradient-to-r from-blue-100/45 via-transparent to-amber-100/45 blur-3xl pointer-events-none" aria-hidden="true"></div>
@@ -126,15 +121,19 @@ const stateLinks = [
 			</div>
     </div>
     
-    <!-- Feature Cards -->
-    <section id="features" class="scroll-mt-24 mb-10 md:mb-12">
-      <div class="container mx-auto px-4 text-center">
-				<div class="bg-black text-white text-xs font-bold px-4 py-2 rounded-full inline-block mb-6 uppercase tracking-widest">{t("features.badge")}</div>
-				<h2 class="text-4xl font-bold text-gray-900 mb-8 md:mb-10 max-w-2xl mx-auto">{t("features.title")}</h2>
-				
-				<FeatureCarousel client:visible items={featureItems} />
-			</div>
-		</section>
+		<OnboardingStarter
+			client:visible
+			lang={lang}
+			labels={{
+				title: t("home.continue_title"),
+				subtitle: t("home.continue_subtitle"),
+				learn: t("home.start_quiz"),
+				exam: t("home.start_exam"),
+				progress: t("home.progress_cta"),
+				continueLearn: t("home.continue_cta"),
+				dismiss: t("nav.close_menu"),
+			}}
+		/>
 
 		<!-- REVIEWS SECTION -->
 		<ReviewsSlider client:visible lang={lang} reviewsData={reviewsData} />
@@ -173,7 +172,7 @@ const stateLinks = [
 							>
 								<span class="inline-flex items-center gap-1.5">
 									<span class="text-blue-300 group-hover:text-blue-500 transition-colors">•</span>
-									{state.label}
+										{state.name}
 								</span>
 							</a>
 						))}
@@ -201,7 +200,13 @@ const stateLinks = [
 						{recentBlogPosts.map((post) => (
 							<article class="rounded-2xl border border-gray-100 bg-white p-5 shadow-sm hover:shadow-md transition-shadow h-full flex flex-col">
 								<div class="h-36 rounded-xl overflow-hidden bg-slate-100 mb-4">
-									<img src={post.image} alt={post.imageAlt} loading="lazy" decoding="async" class="h-full w-full object-cover" />
+									<img
+										src={post.imageCard}
+										alt={post.imageAlt}
+										loading="lazy"
+										decoding="async"
+										class="h-full w-full object-cover"
+									/>
 								</div>
 								<div class="text-xs text-gray-500 mb-2">{post.data.pubDate.toLocaleDateString(lang)}</div>
 								<h4 class="text-lg font-bold text-gray-900 mb-2 line-clamp-2">{post.data.title}</h4>
@@ -224,7 +229,7 @@ const stateLinks = [
                 <h3 class="text-2xl font-bold mb-8">{t("home.sample_questions")} ({questions.length})</h3>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
                     {questions.slice(0, 6).map((q) => {
-                            const qTitle = (q as any)[`q_${lang}`] || q.q_de;
+                            const qTitle = getLocalizedQuestionText(q, lang);
                             return (
                             <a href={getPath(`${lang}/frage/${q.id}`)} class="block group">
                                 <div class="bg-white p-5 rounded-xl border border-gray-100 hover:border-blue-500 hover:shadow-lg transition-all h-full flex flex-col group-hover:-translate-y-1">

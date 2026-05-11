@@ -3,6 +3,7 @@ import Layout from '../../../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
 import { useTranslations } from '../../../i18n/ui';
 import { getPath } from '../../../utils/navigation';
+import { SUPPORTED_LANGUAGES, type SupportedLang } from '../../../types/language';
 import Header from '../../../components/Header.astro';
 import { getAuthorByName } from '../../../data/blogAuthors';
 import {
@@ -18,10 +19,9 @@ import {
 } from '../../../utils/blog';
 
 export async function getStaticPaths() {
-  const supportedLangs = ['de', 'en', 'tr', 'ar', 'ua', 'ru', 'pl', 'fa', 'ps', 'ro', 'it', 'es'];
   const posts = await getCollection('blog');
 
-  return supportedLangs.flatMap((lang) =>
+  return SUPPORTED_LANGUAGES.flatMap((lang) =>
     posts.map((post) => ({
       params: { lang, slug: post.slug },
       props: { post, lang },
@@ -29,8 +29,9 @@ export async function getStaticPaths() {
   );
 }
 
-const { post, lang } = Astro.props;
-const t = useTranslations(lang as any);
+const { post } = Astro.props;
+const lang = Astro.props.lang as SupportedLang;
+const t = useTranslations(lang);
 const { Content } = await post.render();
 const allPosts = await getCollection('blog');
 const allPostsSorted = allPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
@@ -44,6 +45,7 @@ const isPrimaryBlogLocale = lang === 'de';
 const publishedIso = post.data.pubDate.toISOString();
 const modifiedIso = (post.data.updatedDate ?? post.data.pubDate).toISOString();
 const readingMinutes = getReadingMinutes(post.body);
+const wordCount = post.body.trim().split(/\s+/).filter(Boolean).length;
 const image = resolveBlogImage(post);
 const imageSrc = getOptimizedImageUrl(image, 1600);
 const imageSrcset = getOptimizedImageSrcset(image);
@@ -98,6 +100,7 @@ const blogPostSchema = {
   inLanguage: lang,
   datePublished: publishedIso,
   dateModified: modifiedIso,
+  wordCount,
   url: canonicalPostUrl,
   mainEntityOfPage: canonicalPostUrl,
   image: [image],

@@ -2,7 +2,7 @@
 title: "Was kostet die Einbürgerung 2026? Alle Gebühren im Überblick"
 description: "Von der Antragstellung bis zum Pass: Mit diesen Kosten müssen Sie für den deutschen Pass rechnen."
 pubDate: 2026-01-09
-updatedDate: 2026-01-09
+updatedDate: 2026-04-30
 author: "Redaktion"
 image: "https://images.unsplash.com/photo-1711344397160-b23d5deaa012?auto=format&fit=crop&w=1600&q=80"
 tags: ["Kosten", "Gebühren", "Finanzen"]
@@ -61,4 +61,4 @@ Ja, durch vollständige Unterlagen beim ersten Versuch und frühzeitige Terminpl
 Idealerweise vor dem ersten Behördentermin, damit Gebühren und Nachweise ohne Zeitdruck vorbereitet sind.
 
 ## Nächster Schritt
-Als Vertiefung: **[Was kostet die Einbürgerung 2026?](/de/blog/kosten-einbuergerung-2026)** und **[Kann ich den Test wiederholen?](/de/blog/test-wiederholen)**.
+Als Vertiefung: **[Einbürgerung Antrag Checkliste 2026](/de/blog/einbuergerung-antrag-checkliste-2026)** und **[Bearbeitungszeit bei der Einbürgerung](/de/blog/bearbeitungszeit-einbuergerung)**.

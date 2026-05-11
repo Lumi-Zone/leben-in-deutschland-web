@@ -1358,8 +1358,8 @@ export const ui = {
     }
 } as const;
 
-type UiLanguage = keyof typeof ui;
-type UiKey = keyof typeof ui['de'];
+export type UiLanguage = keyof typeof ui;
+export type UiKey = keyof typeof ui['de'];
 type UiTranslationMap = Partial<Record<UiKey, string>>;
 
 const uiMap = ui as Record<UiLanguage, UiTranslationMap>;

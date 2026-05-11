@@ -3,8 +3,8 @@ import Layout from '../../layouts/Layout.astro';
 import questions from '../../data/questions.json';
 import { useTranslations } from '../../i18n/ui';
 import StateQuestionExplorer from '../../components/StateQuestionExplorer';
-
-type SupportedLang = 'de' | 'en' | 'tr' | 'ar' | 'ua' | 'ru' | 'pl' | 'fa' | 'ps' | 'ro' | 'it' | 'es';
+import { GERMAN_STATES } from '../../data/germanStates';
+import { SUPPORTED_LANGUAGES, type SupportedLang } from '../../types/language';
 type QuestionItem = (typeof questions)[number];
 
 interface StateQuestionsProps {
@@ -14,35 +14,18 @@ interface StateQuestionsProps {
 }
 
 export function getStaticPaths() {
-  const supportedLangs: SupportedLang[] = ['de', 'en', 'tr', 'ar', 'ua', 'ru', 'pl', 'fa', 'ps', 'ro', 'it', 'es'];
-
-  const states = [
-    'Baden-Württemberg', 'Bayern', 'Berlin', 'Brandenburg', 'Bremen', 
-    'Hamburg', 'Hessen', 'Mecklenburg-Vorpommern', 'Niedersachsen', 
-    'Nordrhein-Westfalen', 'Rheinland-Pfalz', 'Saarland', 'Sachsen', 
-    'Sachsen-Anhalt', 'Schleswig-Holstein', 'Thüringen'
-  ];
-
   const paths: Array<{
     params: { lang: SupportedLang; state: string };
     props: StateQuestionsProps;
   }> = [];
 
-  supportedLangs.forEach((lang) => {
-    states.forEach((state) => {
-        // Slugify state name for URL
-        const slug = state.toLowerCase()
-        .replace(/ü/g, 'ue')
-        .replace(/ö/g, 'oe')
-        .replace(/ä/g, 'ae')
-        .replace(/ß/g, 'ss')
-        .replace(/\s+/g, '-');
-
-        const stateQuestions = questions.filter(q => q.area_code === 'land' && q.thema === state);
+  SUPPORTED_LANGUAGES.forEach((lang) => {
+    GERMAN_STATES.forEach((state) => {
+        const stateQuestions = questions.filter(q => q.area_code === 'land' && q.thema === state.name);
 
         paths.push({
-            params: { lang, state: slug },
-            props: { stateName: state, questions: stateQuestions, lang },
+            params: { lang, state: state.slug },
+            props: { stateName: state.name, questions: stateQuestions, lang },
         });
     });
   });
@@ -63,38 +46,41 @@ import { getPath } from '../../utils/navigation';
   lang={lang}
 >
   <Header lang={lang} />
-  <main class="container mx-auto px-4 py-12">
-    <div class="mb-8">
-      <a href={getPath(`${lang}/`)} class="text-blue-600 hover:text-blue-800 font-medium">← {t("question.back")}</a>
-    </div>
+  <main class="app-page">
+    <div class="app-page-shell">
+      <div class="mb-6">
+        <a href={getPath(`${lang}/`)} class="inline-flex items-center rounded-xl border border-blue-200 bg-blue-50 px-3.5 py-2 text-sm font-semibold text-blue-700 hover:bg-blue-100">← {t("question.back")}</a>
+      </div>
 
-    <div class="text-center mb-12">
-      <h1 class="text-4xl font-bold mb-4">{stateName}</h1>
-      <p class="text-gray-600 max-w-2xl mx-auto">
-        {t("home.sample_questions")}
-      </p>
-    </div>
+      <div class="premium-panel p-6 md:p-8 text-center mb-8">
+        <span class="chip mb-2">{t("progress.topic_land")}</span>
+        <h1 class="section-heading">{stateName}</h1>
+        <p class="section-subtitle max-w-2xl mx-auto">
+          {t("home.sample_questions")}
+        </p>
+      </div>
 
-    <StateQuestionExplorer
-      client:visible
-      lang={lang}
-      stateName={stateName}
-      questions={stateQuestions}
-      labels={{
-        searchPlaceholder: t("state.search_placeholder"),
-        searchAriaLabel: t("state.search_label"),
-        sortLabel: t("state.sort_label"),
-        sortDefault: t("state.sort_default"),
-        sortIdAsc: t("state.sort_id_asc"),
-        sortIdDesc: t("state.sort_id_desc"),
-        viewLabel: t("state.view_label"),
-        viewGrid: t("state.view_grid"),
-        viewList: t("state.view_list"),
-        clearSearch: t("state.clear"),
-        results: t("state.results"),
-        emptyTitle: t("state.empty_title"),
-        emptySubtitle: t("state.empty_subtitle"),
-      }}
-    />
+      <StateQuestionExplorer
+        client:visible
+        lang={lang}
+        stateName={stateName}
+        questions={stateQuestions}
+        labels={{
+          searchPlaceholder: t("state.search_placeholder"),
+          searchAriaLabel: t("state.search_label"),
+          sortLabel: t("state.sort_label"),
+          sortDefault: t("state.sort_default"),
+          sortIdAsc: t("state.sort_id_asc"),
+          sortIdDesc: t("state.sort_id_desc"),
+          viewLabel: t("state.view_label"),
+          viewGrid: t("state.view_grid"),
+          viewList: t("state.view_list"),
+          clearSearch: t("state.clear"),
+          results: t("state.results"),
+          emptyTitle: t("state.empty_title"),
+          emptySubtitle: t("state.empty_subtitle"),
+        }}
+      />
+    </div>
   </main>
 </Layout>

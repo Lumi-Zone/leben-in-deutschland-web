@@ -3,15 +3,7 @@ import { getPath } from '../utils/navigation';
 import { markQuestionSolved } from '../utils/learningProgress';
 import { recordQuestionAttempt } from '../utils/questionStats';
 import { recordHabitAttempt } from '../utils/learningHabits';
-
-interface ExamQuestion {
-    id: number;
-    questionDe: string;
-    questionLocalized: string;
-    optionsDe: string[];
-    optionsLocalized: string[];
-    correctIndex: number;
-}
+import type { QuestionSessionItem } from '../utils/questions';
 
 interface Labels {
     title: string;
@@ -37,7 +29,7 @@ interface Labels {
 
 interface Props {
     lang: string;
-    pool: ExamQuestion[];
+    pool: QuestionSessionItem[];
     labels: Labels;
     totalQuestions?: number;
     durationMinutes?: number;
@@ -55,7 +47,7 @@ function formatTime(totalSeconds: number): string {
     return `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
 }
 
-function pickRandomQuestions(pool: ExamQuestion[], count: number): ExamQuestion[] {
+function pickRandomQuestions(pool: QuestionSessionItem[], count: number): QuestionSessionItem[] {
     const shuffled = [...pool];
     for (let i = shuffled.length - 1; i > 0; i -= 1) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -72,7 +64,7 @@ export default function ExamSimulator({
     durationMinutes = DEFAULT_DURATION_MINUTES,
     passThreshold = DEFAULT_PASS_THRESHOLD,
 }: Props) {
-    const [examQuestions, setExamQuestions] = useState<ExamQuestion[]>(() =>
+    const [examQuestions, setExamQuestions] = useState<QuestionSessionItem[]>(() =>
         pickRandomQuestions(pool, totalQuestions)
     );
     const [answers, setAnswers] = useState<number[]>(() =>
@@ -174,7 +166,7 @@ export default function ExamSimulator({
 
     if (pool.length === 0) {
         return (
-            <div className="max-w-2xl mx-auto bg-white border border-red-100 text-red-700 rounded-2xl p-6">
+            <div className="max-w-2xl mx-auto empty-state border-red-100 text-red-700">
                 {labels.noQuestions}
             </div>
         );
@@ -182,19 +174,19 @@ export default function ExamSimulator({
 
     if (!started) {
         return (
-            <div className="max-w-3xl mx-auto bg-white rounded-3xl border border-gray-100 shadow-sm p-8 md:p-10 text-center">
+            <div className="max-w-3xl mx-auto premium-panel p-8 md:p-10 text-center">
                 <h2 className="text-3xl font-bold text-gray-900 mb-4">{labels.title}</h2>
                 <p className="text-gray-600 mb-6">{labels.subtitle}</p>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-8 text-sm">
-                    <div className="rounded-xl bg-gray-50 border border-gray-100 px-4 py-3">
+                    <div className="premium-panel-soft px-4 py-3">
                         <div className="text-gray-500">{labels.progress}</div>
                         <div className="font-semibold text-gray-900">{examQuestions.length}</div>
                     </div>
-                    <div className="rounded-xl bg-gray-50 border border-gray-100 px-4 py-3">
+                    <div className="premium-panel-soft px-4 py-3">
                         <div className="text-gray-500">{labels.timer}</div>
                         <div className="font-semibold text-gray-900">{durationMinutes} min</div>
                     </div>
-                    <div className="rounded-xl bg-gray-50 border border-gray-100 px-4 py-3">
+                    <div className="premium-panel-soft px-4 py-3">
                         <div className="text-gray-500">{labels.passRule}</div>
                         <div className="font-semibold text-gray-900">
                             {passThreshold} / {examQuestions.length}
@@ -215,7 +207,7 @@ export default function ExamSimulator({
     if (finished) {
         return (
             <div className="max-w-4xl mx-auto">
-                <div className="bg-white rounded-3xl border border-gray-100 shadow-sm p-8 md:p-10 mb-8">
+                <div className="premium-panel p-8 md:p-10 mb-8">
                     <h2 className="text-3xl font-bold text-gray-900 mb-4">{labels.resultTitle}</h2>
                     <div className="flex flex-wrap items-center gap-3 mb-6">
                         <span
@@ -242,7 +234,7 @@ export default function ExamSimulator({
                     </button>
                 </div>
 
-                <div className="bg-white rounded-3xl border border-gray-100 shadow-sm p-8">
+                <div className="premium-panel p-8">
                     <h3 className="text-xl font-bold text-gray-900 mb-5">
                         {labels.wrongAnswers} ({wrongQuestions.length})
                     </h3>
@@ -276,7 +268,7 @@ export default function ExamSimulator({
 
     return (
         <div className="max-w-4xl mx-auto">
-            <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5 md:p-6 mb-5">
+            <div className="premium-panel p-5 md:p-6 mb-5">
                 <div className="flex flex-wrap items-center justify-between gap-3 mb-3">
                     <div className="text-sm text-gray-600">
                         {labels.progress}: <strong className="text-gray-900">{currentIndex + 1}</strong> /{' '}
@@ -290,9 +282,9 @@ export default function ExamSimulator({
                         {labels.timer}: {formatTime(secondsLeft)}
                     </div>
                 </div>
-                <div className="h-2 bg-gray-100 rounded-full overflow-hidden mb-3">
+                <div className="ui-progress-track mb-3">
                     <div
-                        className="h-full bg-gradient-to-r from-blue-500 to-cyan-500 transition-all"
+                        className="ui-progress-fill transition-all"
                         style={{ width: `${progressPercent}%` }}
                     />
                 </div>
@@ -302,7 +294,7 @@ export default function ExamSimulator({
                 </p>
             </div>
 
-            <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 md:p-8">
+            <div className="premium-panel p-6 md:p-8">
                 <h2 className="text-xl font-bold text-gray-900 leading-relaxed mb-2">
                     <span className="text-blue-600 mr-2">#{currentQuestion.id}</span>
                     {currentQuestion.questionDe}

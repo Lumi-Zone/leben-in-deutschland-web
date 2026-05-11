@@ -2,13 +2,13 @@
 import Layout from '../../layouts/Layout.astro';
 import Header from '../../components/Header.astro';
 import { getPath } from '../../utils/navigation';
+import { SUPPORTED_LANGUAGES, type SupportedLang } from '../../types/language';
 
 export function getStaticPaths() {
-  const supportedLangs = ['de', 'en', 'tr', 'ar', 'ua', 'ru', 'pl', 'fa', 'ps', 'ro', 'it', 'es'];
-  return supportedLangs.map(lang => ({ params: { lang }, props: { lang } }));
+  return SUPPORTED_LANGUAGES.map((lang) => ({ params: { lang }, props: { lang } }));
 }
 
-const { lang } = Astro.props;
+const { lang } = Astro.props as { lang: SupportedLang };
 const legal = {
   providerName: 'Mehmet Karakaya',
   brand: 'Leben in Deutschland',

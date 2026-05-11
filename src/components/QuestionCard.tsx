@@ -133,7 +133,10 @@ export default function QuestionCard({
     };
 
     const isCorrect = selected === correctIndex;
-    const progressPercent = Math.min(100, Math.round((questionPosition / questionTotal) * 100));
+    const progressPercent =
+        questionTotal > 0
+            ? Math.min(100, Math.round((questionPosition / questionTotal) * 100))
+            : 0;
 
     const handleToggleFavorite = () => {
         setFavorite(toggleFavorite(id));
@@ -215,7 +218,7 @@ export default function QuestionCard({
 
     return (
         <div className="max-w-2xl mx-auto">
-            <div className="bg-white rounded-xl shadow-md overflow-hidden p-6 mb-8">
+            <div className="premium-panel p-6 mb-8">
                 <div className="mb-6">
                     <div className="flex items-center justify-between text-sm text-gray-600 mb-2">
                         <span>
@@ -223,8 +226,8 @@ export default function QuestionCard({
                         </span>
                         <span className="font-semibold text-gray-900">{progressPercent}%</span>
                     </div>
-                    <div className="h-2 rounded-full bg-gray-100 overflow-hidden">
-                        <div className="h-full bg-gradient-to-r from-blue-500 to-cyan-500" style={{ width: `${progressPercent}%` }} />
+                    <div className="ui-progress-track">
+                        <div className="ui-progress-fill" style={{ width: `${progressPercent}%` }} />
                     </div>
                 </div>
 
@@ -334,7 +337,7 @@ export default function QuestionCard({
                     </div>
                 )}
 
-                <div className="mt-6 rounded-xl border border-gray-200 bg-gray-50 px-4 py-3">
+                <div className="premium-panel-soft mt-6 px-4 py-3">
                     <p className="text-xs font-semibold uppercase tracking-wide text-gray-500 mb-2">
                         {shortcutsLabel}
                     </p>
@@ -368,7 +371,7 @@ export default function QuestionCard({
                 {prevId ? (
                     <a
                         href={getPath(`${currentLang}/frage/${prevId}`)}
-                        className="flex items-center gap-2 px-6 py-3 bg-white border border-gray-200 rounded-xl font-medium text-gray-700 hover:bg-gray-50 hover:border-gray-300 transition-all shadow-sm"
+                        className="flex items-center gap-2 px-6 py-3 premium-panel-soft font-medium text-gray-700 hover:bg-gray-50 hover:border-gray-300 transition-all"
                     >
                         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" /></svg>
                         {prevLabel}
