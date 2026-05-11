@@ -105,7 +105,9 @@ export interface BlogFaqItem {
 }
 
 export function extractFaqFromMarkdown(markdown: string): BlogFaqItem[] {
-  const faqHeaderMatch = markdown.match(/##\s+Häufige Fragen\s*\(FAQ\)([\s\S]*)/i);
+  const faqHeaderMatch = markdown.match(
+    /##\s+(?:Häufige Fragen|Sık sorulan sorular|Частые вопросы|Поширені запитання|الأسئلة الشائعة)\s*\(FAQ\)([\s\S]*)/i
+  );
   if (!faqHeaderMatch) return [];
 
   const block = faqHeaderMatch[1];
