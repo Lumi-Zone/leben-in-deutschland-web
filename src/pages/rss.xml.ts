@@ -18,7 +18,7 @@ export async function GET({ site }: { site: URL | undefined }) {
 
   const itemsXml = posts
     .map((post) => {
-      const link = new URL(getPath(`de/blog/${post.slug}`), baseUrl).href;
+      const link = new URL(getPath(`de/blog/${post.slug}/`), baseUrl).href;
       const image = resolveBlogImage(post);
       const imageUrl = image.startsWith('http://') || image.startsWith('https://')
         ? image
@@ -35,7 +35,7 @@ export async function GET({ site }: { site: URL | undefined }) {
     })
     .join('');
 
-  const channelLink = new URL(getPath('de/blog'), baseUrl).href;
+  const channelLink = new URL(getPath('de/blog/'), baseUrl).href;
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
 <channel>

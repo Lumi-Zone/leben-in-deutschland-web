@@ -38,9 +38,9 @@ const allPostsSorted = allPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data
 
 const currentTags = new Set(post.data.tags ?? []);
 const siteUrl = Astro.site || 'https://lid-einbuergerung.de';
-const canonicalPath = getPath(`de/blog/${post.slug}`);
+const canonicalPath = getPath(`de/blog/${post.slug}/`);
 const canonicalPostUrl = new URL(canonicalPath, siteUrl).href;
-const canonicalBlogIndexUrl = new URL(getPath('de/blog'), siteUrl).href;
+const canonicalBlogIndexUrl = new URL(getPath('de/blog/'), siteUrl).href;
 const isPrimaryBlogLocale = lang === 'de';
 const publishedIso = post.data.pubDate.toISOString();
 const modifiedIso = (post.data.updatedDate ?? post.data.pubDate).toISOString();
@@ -50,6 +50,9 @@ const image = resolveBlogImage(post);
 const imageSrc = getOptimizedImageUrl(image, 1600);
 const imageSrcset = getOptimizedImageSrcset(image);
 const imageAlt = getBlogImageAlt(post.data.title);
+const schemaImageUrl = image.startsWith('http://') || image.startsWith('https://')
+  ? image
+  : new URL(getPath(image), siteUrl).href;
 const keywords = post.data.tags ?? ['Einbürgerungstest', 'Leben in Deutschland'];
 const authorProfile = getAuthorByName(post.data.author);
 const faqItems = extractFaqFromMarkdown(post.body);
@@ -103,11 +106,11 @@ const blogPostSchema = {
   wordCount,
   url: canonicalPostUrl,
   mainEntityOfPage: canonicalPostUrl,
-  image: [image],
+  image: [schemaImageUrl],
   author: {
     '@type': 'Person',
     name: post.data.author,
-    url: new URL(getPath(`de/blog/author/${toSlug(post.data.author)}`), siteUrl).href,
+    url: new URL(getPath(`de/blog/author/${toSlug(post.data.author)}/`), siteUrl).href,
   },
   articleSection: post.data.tags?.[0] ?? 'Blog',
   keywords: keywords.join(', '),

@@ -1,6 +1,6 @@
 ---
-title: "Einbürgerungstest auf Türkisch erklärt: 2026 için kolay anlatım"
-description: "Einbürgerungstest nedir, kaç soru vardır, kaç doğru gerekir ve Türkçe nasıl çalışılır? 2026 için sade ve pratik rehber."
+title: "Einbürgerungstest auf Türkisch 2026: Kolay ve basit anlatım"
+description: "Einbürgerungstest Türkçe anlatım: 33 soru, 17 doğru cevap, 60 dakika ve çalışma planı sade şekilde."
 pubDate: 2026-05-11
 updatedDate: 2026-05-11
 author: "Redaktion LiD"
@@ -52,7 +52,7 @@ Genel sorular genellikle şu alanları kapsar:
 Eyalet soruları ise yaşadığınız Bundesland ile ilgilidir. Örneğin Bayern, Berlin, Hamburg veya Nordrhein-Westfalen için farklı eyalet soruları çıkar.
 
 ## Resmi soru kataloğu nasıl çalışır?
-BAMF'nin resmi soru kataloğunda toplamda **300 genel soru** ve tüm eyaletleri kapsayan **160 eyalet sorusu** bulunur.
+BAMF'ye göre hazırlık için sizin açınızdan önemli olan katalog **300 genel soru** ve **yaşadığınız eyalet için 10 eyalet sorusundan** oluşur.
 
 Pratik hazırlık yaparken sizin için en önemli bölüm şudur:
 - 300 genel soru
@@ -174,4 +174,4 @@ Evet. Gerçek sınavda yaşadığınız Bundesland ile ilgili 3 soru gelir. Bu y
 Evet, BAMF bilgilerine göre yeterli doğru sayısına ulaşamazsanız testi tekrar edebilirsiniz. Yeni randevu ve olası bekleme süreleri için sınav merkezinizle görüşmeniz gerekir.
 
 ## Sonraki adım
-Almanca soruların yapısını daha iyi anlamak için **[Die 33 Fragen erklärt](/de/blog/33-fragen-erklaert)**, eyalet bölümü için **[Die Bundesland-Fragen im Einbürgerungstest erklärt](/de/blog/bundesland-fragen-erklaert)** ve çalışma planı için **[Einbürgerungstest online üben 2026](/de/blog/einbuergerungstest-online-ueben-2026)** yazılarına geçebilirsiniz.
+Almanca soruların yapısını daha iyi anlamak için **[Einbürgerungstest 2026: 33 Fragen einfach erklärt](/de/blog/33-fragen-erklaert)**, eyalet bölümü için **[Bundesland-Fragen im Einbürgerungstest](/de/blog/bundesland-fragen-erklaert)** ve çalışma planı için **[Einbürgerungstest online üben 2026](/de/blog/einbuergerungstest-online-ueben-2026)** yazılarına geçebilirsiniz.

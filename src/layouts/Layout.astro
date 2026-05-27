@@ -2,6 +2,7 @@
 import "../styles/global.css";
 import { languages } from '../i18n/ui';
 import { getPath } from '../utils/navigation';
+import { getSeoLanguageMeta } from '../utils/seo';
 
 interface Props {
   title: string;
@@ -20,7 +21,11 @@ interface Props {
   authors?: string[];
   noindex?: boolean;
   disableAlternates?: boolean;
+  alternateLangs?: string[];
   rssHref?: string;
+  jsonLd?: Record<string, unknown> | Array<Record<string, unknown>>;
+  prevHref?: string;
+  nextHref?: string;
 }
 
 const {
@@ -40,15 +45,23 @@ const {
 	authors = [],
 	noindex = false,
 	disableAlternates = false,
+	alternateLangs,
 	rssHref,
+	jsonLd,
+	prevHref,
+	nextHref,
 } = Astro.props;
 const siteUrl = Astro.site || 'https://lid-einbuergerung.de';
 const currentPath = Astro.url.pathname;
 const canonicalURL = new URL(currentPath, siteUrl);
 const canonicalHref = canonical ? new URL(canonical, siteUrl).href : canonicalURL.href;
+const currentLanguageMeta = getSeoLanguageMeta(lang);
 
 // Generate language alternates while preserving base path and route.
 const languageCodes = Object.keys(languages);
+const seoLanguageCodes = (alternateLangs?.length ? alternateLangs : languageCodes).filter((languageCode) =>
+  languageCodes.includes(languageCode)
+);
 const baseSegments = getPath('/').split('/').filter(Boolean);
 const pathSegments = currentPath.split('/').filter(Boolean);
 const pathWithoutBase =
@@ -62,13 +75,15 @@ const routeSegments =
     : pathWithoutBase;
 
 const getLocalizedHref = (targetLang: string) =>
-  new URL(getPath([targetLang, ...routeSegments].join('/')), siteUrl).href;
+  new URL(getPath(`${[targetLang, ...routeSegments].join('/')}/`), siteUrl).href;
 
-const alternates = languageCodes.map((languageCode) => ({
-  lang: languageCode,
+const alternates = seoLanguageCodes.map((languageCode) => ({
+  lang: getSeoLanguageMeta(languageCode).hrefLang,
+  ogLocale: getSeoLanguageMeta(languageCode).ogLocale,
   href: getLocalizedHref(languageCode),
 }));
-const xDefaultHref = getLocalizedHref('de');
+const defaultAlternateLang = seoLanguageCodes.includes('de') ? 'de' : seoLanguageCodes[0] ?? 'de';
+const xDefaultHref = getLocalizedHref(defaultAlternateLang);
 const socialImagePath = image === '/logo.png' ? '/og/og-default.png' : image;
 const resolvedImagePath =
 	socialImagePath.startsWith('http://') || socialImagePath.startsWith('https://')
@@ -76,24 +91,33 @@ const resolvedImagePath =
 		: getPath(socialImagePath);
 const socialImageURL = new URL(resolvedImagePath, siteUrl).href;
 const robotsValue = noindex
-	? 'noindex, nofollow, noarchive'
+	? 'noindex, follow, noarchive'
 	: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1';
 const languageMenuItems = languageCodes.map((languageCode) => ({
   code: languageCode,
+  htmlLang: getSeoLanguageMeta(languageCode).htmlLang,
   label: languages[languageCode as keyof typeof languages],
   href: getPath([languageCode, ...routeSegments].join('/')),
 }));
 const rtlLanguageCodes = new Set(['ar', 'fa', 'ps']);
 const documentDirection = rtlLanguageCodes.has(lang) ? 'rtl' : 'ltr';
+const jsonLdItems = Array.isArray(jsonLd) ? jsonLd : jsonLd ? [jsonLd] : [];
+const prevLinkHref = prevHref ? new URL(prevHref, siteUrl).href : undefined;
+const nextLinkHref = nextHref ? new URL(nextHref, siteUrl).href : undefined;
 ---
 
 <!doctype html>
-<html lang={lang} dir={documentDirection}>
+<html lang={currentLanguageMeta.htmlLang} dir={documentDirection}>
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href={getPath("logo.svg")} />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" type="image/svg+xml" href={getPath("favicon.svg")} />
+		<link rel="alternate icon" href={getPath("favicon.ico")} sizes="32x32" />
+		<link rel="apple-touch-icon" href={getPath("logo.png")} />
 		<meta name="generator" content={Astro.generator} />
+		<meta name="application-name" content="Leben in Deutschland" />
+		<meta name="theme-color" content="#2563eb" />
+		<meta name="format-detection" content="telephone=no" />
         <meta name="apple-itunes-app" content="app-id=6723899981">
         
         <!-- Primary Meta Tags -->
@@ -104,11 +128,16 @@ const documentDirection = rtlLanguageCodes.has(lang) ? 'rtl' : 'ltr';
         {authors[0] && <meta name="author" content={authors[0]} />}
         <link rel="canonical" href={canonicalHref} />
         {rssHref && <link rel="alternate" type="application/rss+xml" title="Blog RSS" href={rssHref} />}
+        {prevLinkHref && <link rel="prev" href={prevLinkHref} />}
+        {nextLinkHref && <link rel="next" href={nextLinkHref} />}
 
         <!-- Open Graph / Facebook -->
         <meta property="og:type" content={ogType} />
         <meta property="og:site_name" content="Leben in Deutschland" />
-        <meta property="og:locale" content={lang === 'de' ? 'de_DE' : 'en_US'} />
+        <meta property="og:locale" content={currentLanguageMeta.ogLocale} />
+        {!disableAlternates && alternates
+          .filter((alt) => alt.ogLocale !== currentLanguageMeta.ogLocale)
+          .map((alt) => <meta property="og:locale:alternate" content={alt.ogLocale} />)}
         <meta property="og:url" content={canonicalHref} />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
@@ -136,6 +165,9 @@ const documentDirection = rtlLanguageCodes.has(lang) ? 'rtl' : 'ltr';
         {!disableAlternates && alternates.map(alt => (
             <link rel="alternate" hreflang={alt.lang} href={alt.href} />
         ))}
+        {jsonLdItems.map((item) => (
+            <script is:inline type="application/ld+json" set:html={JSON.stringify(item)} />
+        ))}
 	</head>
 	<body>
 		<a href="#main-content" class="skip-link">Skip to content</a>
@@ -153,7 +185,7 @@ const documentDirection = rtlLanguageCodes.has(lang) ? 'rtl' : 'ltr';
 							<li>
 								<a
 									href={item.href}
-									lang={item.code}
+									lang={item.htmlLang}
 									class={`language-item ${item.code === lang ? 'is-current' : ''}`}
 									aria-current={item.code === lang ? 'page' : undefined}
 								>

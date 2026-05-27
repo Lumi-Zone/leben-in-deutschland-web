@@ -1,6 +1,6 @@
 ---
-title: "Einbürgerungstest auf Russisch erklärt: простое объяснение на 2026 год"
-description: "Что такое Einbürgerungstest, сколько вопросов в экзамене, сколько правильных ответов нужно и как готовиться на русском языке."
+title: "Einbürgerungstest auf Russisch 2026: einfach erklärt | простое объяснение"
+description: "Einbürgerungstest auf Russisch: 33 Fragen, 17 richtige Antworten, 60 Minuten und einfache Vorbereitung erklärt."
 pubDate: 2026-05-11
 updatedDate: 2026-05-11
 author: "Redaktion LiD"
@@ -155,4 +155,4 @@ tags: ["Einbürgerungstest", "Russisch", "Vorbereitung", "BAMF"]
 Да. По информации BAMF тест можно повторить, если правильных ответов было меньше 17.
 
 ## Следующий шаг
-Продолжите подготовку с материалами **[Die 33 Fragen erklärt](/de/blog/33-fragen-erklaert)**, **[Die Bundesland-Fragen im Einbürgerungstest erklärt](/de/blog/bundesland-fragen-erklaert)** и **[Einbürgerungstest online üben 2026](/de/blog/einbuergerungstest-online-ueben-2026)**.
+Продолжите подготовку с материалами **[Einbürgerungstest 2026: 33 Fragen einfach erklärt](/de/blog/33-fragen-erklaert)**, **[Bundesland-Fragen im Einbürgerungstest](/de/blog/bundesland-fragen-erklaert)** и **[Einbürgerungstest online üben 2026](/de/blog/einbuergerungstest-online-ueben-2026)**.

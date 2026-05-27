@@ -26,12 +26,18 @@ if (!entry) {
 const { Content } = await entry.render();
 import Header from '../../components/Header.astro';
 import ScrollToTop from '../../components/ScrollToTop';
+const hasLocalizedLegal = lang === 'de' || lang === 'en';
+const canonicalLegalLang = hasLocalizedLegal ? lang : 'en';
 ---
 
 <Layout
   title={`${t("legal.terms_of_service")} | Leben in Deutschland`}
   description={`${t("legal.terms_of_service")} - Leben in Deutschland App rechtliche Hinweise.`}
   image="/logo.png"
+  canonical={getPath(`${canonicalLegalLang}/terms-of-service/`)}
+  noindex={!hasLocalizedLegal}
+  alternateLangs={['de', 'en']}
+  disableAlternates={!hasLocalizedLegal}
   lang={lang}
 >
   <Header lang={lang} />

@@ -26,9 +26,9 @@ const posts = await getCollection('blog');
 const sortedPosts = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
 const isPrimaryBlogLocale = lang === 'de';
-const canonicalPath = getPath('de/blog');
+const canonicalPath = getPath('de/blog/');
 const siteUrl = Astro.site || 'https://lid-einbuergerung.de';
-const blogIndexUrl = new URL(getPath(`${lang}/blog`), siteUrl).href;
+const blogIndexUrl = new URL(getPath(`${lang}/blog/`), siteUrl).href;
 const primaryBlogUrl = new URL(canonicalPath, siteUrl).href;
 
 const localeByLang: Record<string, string> = {
@@ -84,7 +84,7 @@ const normalizedPosts = sortedPosts.map((post) => {
     tags,
     tagsNormalized: tags.map((tag) => normalizeKeyword(tag)),
     url: getPath(`${lang}/blog/${post.slug}`),
-    absoluteUrl: new URL(getPath(`${lang}/blog/${post.slug}`), siteUrl).href,
+    absoluteUrl: new URL(getPath(`${lang}/blog/${post.slug}/`), siteUrl).href,
   };
 });
 

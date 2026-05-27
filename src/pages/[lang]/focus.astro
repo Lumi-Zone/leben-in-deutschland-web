@@ -21,6 +21,8 @@ const pool = buildQuestionSessionPool(questions, lang);
   title={`${t("focus.page_title")} - ${t("hero.title")}`}
   description={t("focus.subtitle")}
   image="/logo.png"
+  noindex={true}
+  disableAlternates={true}
   lang={lang}
 >
   <Header lang={lang} />

@@ -26,12 +26,18 @@ if (!entry) {
 const { Content } = await entry.render();
 import Header from '../../components/Header.astro';
 import ScrollToTop from '../../components/ScrollToTop';
+const hasLocalizedLegal = lang === 'de' || lang === 'en';
+const canonicalLegalLang = hasLocalizedLegal ? lang : 'en';
 ---
 
 <Layout
   title={`${t("legal.privacy_policy")} | Leben in Deutschland`}
   description={`${t("legal.privacy_policy")} - Informationen zur Datenverarbeitung bei Leben in Deutschland.`}
   image="/logo.png"
+  canonical={getPath(`${canonicalLegalLang}/datenschutz/`)}
+  noindex={!hasLocalizedLegal}
+  alternateLangs={['de', 'en']}
+  disableAlternates={!hasLocalizedLegal}
   lang={lang}
 >
   <Header lang={lang} />

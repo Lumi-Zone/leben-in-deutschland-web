@@ -5,10 +5,12 @@ import { useTranslations } from '../../i18n/ui';
 import StateQuestionExplorer from '../../components/StateQuestionExplorer';
 import { GERMAN_STATES } from '../../data/germanStates';
 import { SUPPORTED_LANGUAGES, type SupportedLang } from '../../types/language';
+import { getLocalizedQuestionText } from '../../utils/questions';
 type QuestionItem = (typeof questions)[number];
 
 interface StateQuestionsProps {
   stateName: string;
+  stateSlug: string;
   questions: QuestionItem[];
   lang: SupportedLang;
 }
@@ -25,7 +27,7 @@ export function getStaticPaths() {
 
         paths.push({
             params: { lang, state: state.slug },
-            props: { stateName: state.name, questions: stateQuestions, lang },
+            props: { stateName: state.name, stateSlug: state.slug, questions: stateQuestions, lang },
         });
     });
   });
@@ -33,16 +35,60 @@ export function getStaticPaths() {
   return paths;
 }
 
-const { stateName, questions: stateQuestions, lang } = Astro.props as StateQuestionsProps;
+const { stateName, stateSlug, questions: stateQuestions, lang } = Astro.props as StateQuestionsProps;
 const t = useTranslations(lang);
 import Header from '../../components/Header.astro';
 import { getPath } from '../../utils/navigation';
+const siteUrl = Astro.site || 'https://lid-einbuergerung.de';
+const stateUrl = new URL(getPath(`${lang}/${stateSlug}-fragen/`), siteUrl).href;
+const stateTitle = `${stateName} Fragen | Einbürgerungstest Bundesland 2026`;
+const stateDescription = `Alle offiziellen Bundesland-Fragen für ${stateName}: einfach online für den Leben in Deutschland Test und Einbürgerungstest 2026 üben.`;
+const stateKeywords = `${stateName} Fragen, Bundesland Fragen ${stateName}, Einbürgerungstest ${stateName}, Leben in Deutschland ${stateName}, BAMF Fragen`;
+const collectionSchema = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": stateTitle,
+  "description": stateDescription,
+  "url": stateUrl,
+  "inLanguage": lang,
+  "mainEntity": {
+    "@type": "ItemList",
+    "numberOfItems": stateQuestions.length,
+    "itemListElement": stateQuestions.map((question, index) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "url": new URL(getPath(`${lang}/frage/${question.id}/`), siteUrl).href,
+      "name": getLocalizedQuestionText(question, lang),
+    })),
+  },
+};
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": t("nav.home"),
+      "item": new URL(getPath(`${lang}/`), siteUrl).href,
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": `${stateName} Fragen`,
+      "item": stateUrl,
+    },
+  ],
+};
 ---
 
 <Layout
-  title={`Leben in Deutschland - ${stateName} Fragen`}
-  description={`${stateName}: Offizielle Bundesland-Fragen für den Einbürgerungstest und Leben in Deutschland.`}
+  title={stateTitle}
+  description={stateDescription}
+  keywords={stateKeywords}
+  canonical={getPath(`${lang}/${stateSlug}-fragen/`)}
   image="/logo.png"
+  jsonLd={[collectionSchema, breadcrumbSchema]}
   lang={lang}
 >
   <Header lang={lang} />
@@ -54,9 +100,9 @@ import { getPath } from '../../utils/navigation';
 
       <div class="premium-panel p-6 md:p-8 text-center mb-8">
         <span class="chip mb-2">{t("progress.topic_land")}</span>
-        <h1 class="section-heading">{stateName}</h1>
+        <h1 class="section-heading">{stateName} Fragen</h1>
         <p class="section-subtitle max-w-2xl mx-auto">
-          {t("home.sample_questions")}
+          {stateDescription}
         </p>
       </div>
 

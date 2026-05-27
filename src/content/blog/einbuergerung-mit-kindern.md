@@ -1,8 +1,8 @@
 ---
-title: "Einbürgerung mit Kindern: Planung für Familien"
-description: "Familien sollten den Einbürgerungsprozess gemeinsam planen. Diese Punkte helfen bei Fristen, Unterlagen und Terminen."
+title: "Einbürgerung mit Kindern 2026: Was Familien wissen müssen"
+description: "Wie läuft die Einbürgerung mit Kindern? Wichtige Punkte zu Unterlagen, Fristen, Kosten und Familienplanung."
 pubDate: 2026-01-29
-updatedDate: 2026-01-29
+updatedDate: 2026-05-27
 author: "Redaktion LiD"
 image: "https://images.unsplash.com/photo-1549227082-0ea18ce30397?auto=format&fit=crop&w=1600&q=80"
 tags: ["Familie", "Kinder", "Einbürgerung", "Planung"]
@@ -39,4 +39,4 @@ Frühzeitig bei der zuständigen Stelle klären und Nachreichungsstrategie festl
 Das hängt von der Behörde ab. In vielen Fällen ist eine koordinierte Terminplanung hilfreich.
 
 ## Nächster Schritt
-Ergänzend lesen: **[Einbürgerung Antrag Checkliste 2026](/de/blog/einbuergerung-antrag-checkliste-2026)** und **[Einbürgerung: Ablauf und Voraussetzungen 2026](/de/blog/einbuergerung-ablauf)**.
+Lesen Sie auch **[Einbürgerung Antrag 2026: Checkliste](/de/blog/einbuergerung-antrag-checkliste-2026)** und **[Einbürgerung 2026: Voraussetzungen und Ablauf](/de/blog/einbuergerung-ablauf)**.

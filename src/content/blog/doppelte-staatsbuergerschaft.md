@@ -1,8 +1,8 @@
 ---
-title: "Doppelte Staatsbürgerschaft: Die neuen Regeln"
-description: "Muss ich meine alte Staatsangehörigkeit aufgeben? Alles zur Mehrstaatigkeit im neuen Einbürgerungsrecht."
+title: "Doppelte Staatsbürgerschaft 2026: Was gilt bei der Einbürgerung?"
+description: "Müssen Sie Ihren alten Pass abgeben? Die Regeln zur doppelten Staatsbürgerschaft einfach erklärt."
 pubDate: 2026-02-20
-updatedDate: 2026-04-30
+updatedDate: 2026-05-27
 author: "Rechtsredaktion"
 image: "https://images.unsplash.com/photo-1654163601053-ea0362be3429?auto=format&fit=crop&w=1600&q=80"
 tags: ["Recht", "Einbürgerung", "News"]
@@ -42,4 +42,4 @@ Für deutsche Verfahrensfragen die Einbürgerungsbehörde, für ausländisches S
 Ja, manche Staaten sehen beim Erwerb einer neuen Staatsangehörigkeit automatisch den Verlust der bisherigen vor.
 
 ## Nächster Schritt
-Als Vertiefung: **[Einbürgerung: Ablauf und Voraussetzungen 2026](/de/blog/einbuergerung-ablauf)**, **[Aufenthaltstitel und Einbürgerung](/de/blog/aufenthaltstitel-und-einbuergerung)** und **[Bearbeitungszeit bei der Einbürgerung](/de/blog/bearbeitungszeit-einbuergerung)**.
+Lesen Sie auch **[Einbürgerung 2026: Voraussetzungen und Ablauf](/de/blog/einbuergerung-ablauf)**, **[Aufenthaltstitel für Einbürgerung](/de/blog/aufenthaltstitel-und-einbuergerung)** und **[Einbürgerung Bearbeitungszeit 2026](/de/blog/bearbeitungszeit-einbuergerung)**.

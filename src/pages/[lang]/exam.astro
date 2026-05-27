@@ -15,12 +15,63 @@ export function getStaticPaths() {
 const { lang } = Astro.props as { lang: SupportedLang };
 const t = useTranslations(lang);
 const examPool = buildQuestionSessionPool(questions, lang);
+const siteUrl = Astro.site || 'https://lid-einbuergerung.de';
+const examUrl = new URL(getPath(`${lang}/exam/`), siteUrl).href;
+const isGerman = lang === 'de';
+const examTitle = isGerman
+  ? 'Einbürgerungstest Prüfungssimulation 2026 | 33 Fragen online üben'
+  : `${t("exam.title")} | ${t("hero.title")}`;
+const examDescription = isGerman
+  ? 'Starten Sie eine realistische Einbürgerungstest Prüfungssimulation mit 33 zufälligen Fragen, Zeitlimit und direkter Auswertung.'
+  : t("exam.subtitle");
+const examKeywords = isGerman
+  ? 'Einbürgerungstest Prüfungssimulation, Leben in Deutschland Test Simulation, 33 Fragen, BAMF Test online, Prüfung üben'
+  : `${t("exam.title")}, ${t("hero.title")}, exam simulation`;
+const webPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": examTitle,
+  "description": examDescription,
+  "url": examUrl,
+  "inLanguage": lang,
+};
+const learningResourceSchema = {
+  "@context": "https://schema.org",
+  "@type": "LearningResource",
+  "name": examTitle,
+  "description": examDescription,
+  "url": examUrl,
+  "inLanguage": lang,
+  "learningResourceType": "Practice test",
+  "educationalLevel": "adult education",
+};
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": t("nav.home"),
+      "item": new URL(getPath(`${lang}/`), siteUrl).href,
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": t("exam.title"),
+      "item": examUrl,
+    },
+  ],
+};
 ---
 
 <Layout
-  title={`${t("exam.title")} - ${t("hero.title")}`}
-  description={t("exam.subtitle")}
+  title={examTitle}
+  description={examDescription}
+  keywords={examKeywords}
+  canonical={getPath(`${lang}/exam/`)}
   image="/logo.png"
+  jsonLd={[webPageSchema, learningResourceSchema, breadcrumbSchema]}
   lang={lang}
 >
   <Header lang={lang} />

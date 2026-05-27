@@ -72,7 +72,7 @@ const topicPosts = posts
   });
 
 const siteUrl = Astro.site || 'https://lid-einbuergerung.de';
-const canonicalPath = getPath(`de/blog/topic/${topic}`);
+const canonicalPath = getPath(`de/blog/topic/${topic}/`);
 const canonicalUrl = new URL(canonicalPath, siteUrl).href;
 const isPrimaryBlogLocale = lang === 'de';
 
@@ -90,7 +90,7 @@ const breadcrumbSchema = {
       '@type': 'ListItem',
       position: 2,
       name: t('nav.blog'),
-      item: new URL(getPath('de/blog'), siteUrl).href,
+      item: new URL(getPath('de/blog/'), siteUrl).href,
     },
     {
       '@type': 'ListItem',

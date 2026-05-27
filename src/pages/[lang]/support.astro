@@ -133,6 +133,8 @@ const faqData: Record<string, { question: string; answer: string }[]> = {
 
 // Fallback to English or German if specific language data is missing
 const data = faqData[lang] || faqData['en'] || faqData['de'];
+const localizedSupportLanguages = ['de', 'en', 'tr', 'ar'];
+const hasLocalizedSupport = localizedSupportLanguages.includes(lang);
 
 const schema = {
   "@context": "https://schema.org",
@@ -148,7 +150,8 @@ const schema = {
 };
 
 const siteUrl = Astro.site || 'https://lid-einbuergerung.de';
-const supportUrl = new URL(getPath(`${lang}/support`), siteUrl).href;
+const canonicalSupportLang = hasLocalizedSupport ? lang : 'en';
+const supportUrl = new URL(getPath(`${canonicalSupportLang}/support/`), siteUrl).href;
 const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -175,6 +178,12 @@ import Header from '../../components/Header.astro';
   title={`${t('support.title')} - Leben in Deutschland`}
   description={t('support.subtitle')}
   image="/logo.png"
+  canonical={getPath(`${canonicalSupportLang}/support/`)}
+  keywords="Leben in Deutschland Test Hilfe, Einbürgerungstest FAQ, BAMF Fragen, Test Anmeldung, Prüfung bestehen"
+  noindex={!hasLocalizedSupport}
+  alternateLangs={localizedSupportLanguages}
+  disableAlternates={!hasLocalizedSupport}
+  jsonLd={[schema, breadcrumbSchema]}
   lang={lang}
 >
 	<!-- Navigation -->
@@ -250,7 +259,5 @@ import Header from '../../components/Header.astro';
             </div>
         </div>
 
-        <script is:inline type="application/ld+json" set:html={JSON.stringify(schema)} />
-        <script is:inline type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
     </main>
 </Layout>

@@ -35,7 +35,7 @@ export const ui = {
         'support.faq_section_title': 'Häufig gestellte Fragen',
         'hero.badge': 'App Store',
         'hero.title': 'Leben in Deutschland',
-        'hero.subtitle': 'Bereiten Sie sich optimal auf den <b>BAMF Einbürgerungstest 2026</b> vor. Zugriff auf alle <b>300 offiziellen Fragen</b> + 10 Landesfragen. Ideal begleitend zum <b>Integrationskurs</b> und <b>Politikkurs</b>. Jetzt <b>Leben in Deutschland</b> Prüfung meistern!',
+        'hero.subtitle': 'Sind Sie bereit für den <b>BAMF Einbürgerungstest 2026</b>? Üben Sie alle <b>300 offiziellen Fragen</b> und die <b>10 Fragen für Ihr Bundesland</b>. Ideal für <b>Integrationskurs</b> und <b>Politikkurs</b> - so gehen Sie sicherer in die Prüfung <b>Leben in Deutschland</b>.',
         'hero.download_apple': 'Laden im',
         'hero.download_google': 'JETZT BEI',
         'features.badge': 'So funktioniert es',

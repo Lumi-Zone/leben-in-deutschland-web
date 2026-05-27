@@ -1,14 +1,14 @@
 ---
-title: "Kann ich den Leben in Deutschland Test wiederholen?"
-description: "Was passiert, wenn Sie durchfallen? Erfahren Sie alles über Kosten, Fristen und Möglichkeiten, den Einbürgerungstest zu wiederholen."
+title: "Einbürgerungstest wiederholen: Was passiert, wenn ich durchfalle?"
+description: "Wenn Sie den Einbürgerungstest nicht bestehen, können Sie ihn wiederholen. Kosten, Fristen und nächste Schritte einfach erklärt."
 pubDate: 2025-11-12
-updatedDate: 2025-11-12
+updatedDate: 2026-05-27
 author: "Leben in Deutschland Team"
 image: "https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?auto=format&fit=crop&w=1600&q=80"
 tags: ["Test", "Wiederholung", "Kosten", "Durchgefallen"]
 ---
 
-Keine Panik! Wenn Sie den Test "Leben in Deutschland" beim ersten Mal nicht bestehen, ist das kein Weltuntergang. Hier sind die wichtigsten Fakten zur Wiederholung der Prüfung.
+Wenn Sie den Test "Leben in Deutschland" oder den Einbürgerungstest nicht bestehen, ist das ärgerlich. Aber Sie können weiter planen und den Test wiederholen.
 
 ## Wie oft darf ich den Test wiederholen?
 Die gute Nachricht: Sie können den Test **so oft wiederholen, wie Sie möchten**. Es gibt keine gesetzliche Begrenzung für die Anzahl der Versuche.

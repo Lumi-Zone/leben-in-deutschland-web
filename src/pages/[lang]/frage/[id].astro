@@ -1,18 +1,25 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
 import QuestionCard from '../../../components/QuestionCard';
+import Header from '../../../components/Header.astro';
 import questions from '../../../data/questions.json';
+import { useTranslations } from '../../../i18n/ui';
 import { SUPPORTED_LANGUAGES, type SupportedLang } from '../../../types/language';
+import { getPath } from '../../../utils/navigation';
 import {
   buildQuestionTranslations,
   parseCorrectIndex,
   type QuestionTranslationContent,
 } from '../../../utils/questions';
+import { truncateText } from '../../../utils/seo';
 
 interface QuestionPageProps {
   question: {
     id: number;
     correct_index: number;
+    area: string;
+    area_code: string;
+    thema: string;
     translations: { de: QuestionTranslationContent } & Partial<Record<SupportedLang, QuestionTranslationContent>>;
     prevId: number | null;
     nextId: number | null;
@@ -44,6 +51,9 @@ export function getStaticPaths() {
           question: {
               id: q.id,
               correct_index: correctIndex,
+              area: q.area,
+              area_code: q.area_code,
+              thema: q.thema,
               translations,
               prevId,
               nextId,
@@ -63,13 +73,18 @@ const { question, lang } = Astro.props as QuestionPageProps;
 
 // Schema.org JSON-LD localizing
 const currentContent = question.translations[lang] || question.translations.de;
-import { useTranslations } from '../../../i18n/ui';
 const translate = useTranslations(lang);
 const questionLabel = `${translate("favorites.goto_question")} ${question.id}`;
+const questionText = currentContent.question.replace(/\s+/g, ' ').trim();
+const pageTitleQuestion = truncateText(questionText, 72);
+const pageTitle = `${questionLabel}: ${pageTitleQuestion} | Einbürgerungstest 2026`;
 const schema = {
   "@context": "https://schema.org/",
   "@type": "Quiz",
   "name": `Leben in Deutschland ${questionLabel} (${lang.toUpperCase()})`,
+  "url": new URL(getPath(`${lang}/frage/${question.id}/`), Astro.site || 'https://lid-einbuergerung.de').href,
+  "inLanguage": lang,
+  "about": [question.area, question.thema].filter(Boolean),
   "mainEntity": {
     "@type": "Question",
     "name": currentContent.question,
@@ -84,16 +99,18 @@ const schema = {
     }))
   }
 };
-import Header from '../../../components/Header.astro';
-import { getPath } from '../../../utils/navigation';
 
 const siteUrl = Astro.site || 'https://lid-einbuergerung.de';
-const questionUrl = new URL(getPath(`${lang}/frage/${question.id}`), siteUrl).href;
-const questionPreview =
-  currentContent.question.length > 130
-    ? `${currentContent.question.slice(0, 127)}...`
-    : currentContent.question;
-const pageDescription = `${translate("hero.title")} - ${translate("question.progress")} ${question.position}/${question.total}. ${questionPreview}`;
+const questionUrl = new URL(getPath(`${lang}/frage/${question.id}/`), siteUrl).href;
+const questionPreview = truncateText(questionText, 145);
+const pageDescription = `${translate("hero.title")} ${questionLabel}: ${questionPreview} Online üben mit Antwortauswahl und direkter Kontrolle.`;
+const pageKeywords = [
+  `${translate("hero.title")} ${questionLabel}`,
+  'Einbürgerungstest 2026',
+  'Leben in Deutschland Fragen',
+  question.area,
+  question.thema,
+].filter(Boolean).join(', ');
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",
@@ -113,21 +130,33 @@ const breadcrumbSchema = {
     }
   ]
 };
+const learningResourceSchema = {
+  "@context": "https://schema.org",
+  "@type": "LearningResource",
+  "name": pageTitle,
+  "description": pageDescription,
+  "url": questionUrl,
+  "inLanguage": lang,
+  "learningResourceType": "Quiz",
+  "educationalLevel": "adult education",
+  "about": [question.area, question.thema].filter(Boolean)
+};
 ---
 
 <Layout
-  title={`${questionLabel} - ${translate("hero.title")}`}
+  title={pageTitle}
   description={pageDescription}
+  keywords={pageKeywords}
+  canonical={getPath(`${lang}/frage/${question.id}/`)}
   image="/logo.png"
   ogType="article"
+  jsonLd={[schema, breadcrumbSchema, learningResourceSchema]}
+  prevHref={question.prevId ? getPath(`${lang}/frage/${question.prevId}/`) : undefined}
+  nextHref={question.nextId ? getPath(`${lang}/frage/${question.nextId}/`) : undefined}
   lang={lang}
 >
   <Header lang={lang} />
   <main class="app-page">
-    
-    <script is:inline type="application/ld+json" set:html={JSON.stringify(schema)} />
-    <script is:inline type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
-
     <div class="app-page-shell">
       <div class="max-w-5xl mx-auto mb-6 flex flex-wrap gap-2.5">
         <a href={getPath(`${lang}/`)} class="inline-flex items-center rounded-xl border border-blue-200 bg-blue-50 px-3.5 py-2 text-sm font-semibold text-blue-700 hover:bg-blue-100">← {translate("question.back")}</a>

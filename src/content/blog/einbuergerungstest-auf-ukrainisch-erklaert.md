@@ -1,8 +1,8 @@
 ---
-title: "Einbürgerungstest auf Ukrainisch erklärt: просте пояснення на 2026 рік"
-description: "Що таке Einbürgerungstest, скільки питань у тесті, скільки правильних відповідей потрібно та як готуватися українською."
+title: "Einbürgerungstest auf Ukrainisch 2026: einfach erklärt | просте пояснення"
+description: "Einbürgerungstest auf Ukrainisch: 33 Fragen, 17 richtige Antworten, 60 Minuten und einfache Vorbereitung erklärt."
 pubDate: 2026-05-11
-updatedDate: 2026-05-11
+updatedDate: 2026-05-27
 author: "Redaktion LiD"
 image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1600&q=80"
 tags: ["Einbürgerungstest", "Ukrainisch", "Vorbereitung", "BAMF"]
@@ -155,4 +155,4 @@ tags: ["Einbürgerungstest", "Ukrainisch", "Vorbereitung", "BAMF"]
 Так. За інформацією BAMF, якщо правильних відповідей менше 17, тест можна повторити.
 
 ## Наступний крок
-Продовжуйте підготовку з матеріалами **[Die 33 Fragen erklärt](/de/blog/33-fragen-erklaert)**, **[Die Bundesland-Fragen im Einbürgerungstest erklärt](/de/blog/bundesland-fragen-erklaert)** та **[Einbürgerungstest online üben 2026](/de/blog/einbuergerungstest-online-ueben-2026)**.
+Продовжуйте підготовку з матеріалами **[Einbürgerungstest 2026: 33 Fragen einfach erklärt](/de/blog/33-fragen-erklaert)**, **[Bundesland-Fragen im Einbürgerungstest](/de/blog/bundesland-fragen-erklaert)** та **[Einbürgerungstest online üben 2026](/de/blog/einbuergerungstest-online-ueben-2026)**.

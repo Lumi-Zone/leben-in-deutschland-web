@@ -1,8 +1,8 @@
 ---
-title: "B1 Prüfung: 8 Wochen Vorbereitungsplan für Berufstätige"
-description: "Mit einem realistischen Wochenplan erreichen Sie das B1-Niveau strukturiert neben Arbeit und Familie."
+title: "B1 Prüfung 2026: Einfacher 8-Wochen-Plan"
+description: "Ein einfacher Plan für die B1-Prüfung: So lernen Sie neben Arbeit und Familie Schritt für Schritt."
 pubDate: 2026-04-03
-updatedDate: 2026-04-03
+updatedDate: 2026-05-27
 author: "Lern-Coach Team"
 image: "https://images.unsplash.com/photo-1612536816763-78c1f4aa6f10?auto=format&fit=crop&w=1600&q=80"
 tags: ["Sprache", "B1", "Lernen", "Vorbereitung"]
@@ -39,4 +39,4 @@ Viele Berufstätige kommen mit 4 bis 6 Stunden pro Woche gut voran.
 Nein. Grammatik ist wichtig, aber Hören und Sprechen entscheiden stark über die Prüfungssicherheit.
 
 ## Nächster Schritt
-Vertiefen Sie mit **[Sprachanforderungen für die Einbürgerung](/de/blog/sprachanforderungen)** und **[Tipps für den Prüfungstag](/de/blog/tipps-fuer-den-pruefungstag)**.
+Lesen Sie auch **[Einbürgerung Sprache 2026](/de/blog/sprachanforderungen)** und **[Einbürgerungstest Prüfungstag](/de/blog/tipps-fuer-den-pruefungstag)**.

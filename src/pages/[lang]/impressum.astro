@@ -17,12 +17,17 @@ const legal = {
   email: 'cfstechmobile@gmail.com',
   editorialResponsible: 'Mehmet Karakaya',
 };
+const isGerman = lang === 'de';
 ---
 
 <Layout
   title="Impressum | Leben in Deutschland"
   description="Impressum und rechtliche Anbieterkennzeichnung der Plattform Leben in Deutschland."
   image="/logo.png"
+  canonical={getPath('de/impressum/')}
+  noindex={!isGerman}
+  alternateLangs={['de']}
+  disableAlternates={!isGerman}
   lang={lang}
 >
   <Header lang={lang} />

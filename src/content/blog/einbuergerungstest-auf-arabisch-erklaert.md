@@ -1,6 +1,6 @@
 ---
-title: "Einbürgerungstest auf Arabisch erklärt: شرح مبسط لعام 2026"
-description: "ما هو اختبار Einbürgerungstest؟ كم عدد الأسئلة؟ كم إجابة صحيحة تحتاج؟ وكيف تستعد له بالعربية مع فهم المصطلحات الألمانية."
+title: "Einbürgerungstest auf Arabisch 2026: einfach erklärt | شرح مبسط"
+description: "Einbürgerungstest auf Arabisch: 33 Fragen, 17 richtige Antworten, 60 Minuten und einfache Vorbereitung erklärt."
 pubDate: 2026-05-11
 updatedDate: 2026-05-11
 author: "Redaktion LiD"
@@ -155,4 +155,4 @@ tags: ["Einbürgerungstest", "Arabisch", "Vorbereitung", "BAMF"]
 نعم. حسب معلومات BAMF، إذا حصلت على أقل من 17 إجابة صحيحة يمكنك إعادة الاختبار.
 
 ## الخطوة التالية
-تابع التحضير مع **[Die 33 Fragen erklärt](/de/blog/33-fragen-erklaert)** و **[Die Bundesland-Fragen im Einbürgerungstest erklärt](/de/blog/bundesland-fragen-erklaert)** و **[Einbürgerungstest online üben 2026](/de/blog/einbuergerungstest-online-ueben-2026)**.
+تابع التحضير مع **[Einbürgerungstest 2026: 33 Fragen einfach erklärt](/de/blog/33-fragen-erklaert)** و **[Bundesland-Fragen im Einbürgerungstest](/de/blog/bundesland-fragen-erklaert)** و **[Einbürgerungstest online üben 2026](/de/blog/einbuergerungstest-online-ueben-2026)**.

@@ -17,9 +17,6 @@ export default function ReviewsSlider({ lang = 'de', reviewsData }: ReviewsSlide
     const scrollContainerRef = React.useRef<HTMLDivElement>(null);
     const trackId = 'reviews-slider-track';
 
-    // 5 sets for stability
-    const reviews = [...reviewsData, ...reviewsData, ...reviewsData, ...reviewsData, ...reviewsData];
-
     const titles: Record<string, { badge: string; heading: string }> = {
         de: { badge: "Was Nutzer sagen", heading: "Beliebt bei Lernenden" },
         en: { badge: "What users say", heading: "Loved by Learners" },
@@ -28,56 +25,6 @@ export default function ReviewsSlider({ lang = 'de', reviewsData }: ReviewsSlide
     };
 
     const t = titles[lang] || titles['en'];
-
-    React.useEffect(() => {
-        if (scrollContainerRef.current) {
-            const container = scrollContainerRef.current;
-            requestAnimationFrame(() => {
-                const singleSetWidth = container.scrollWidth / 5;
-                container.scrollLeft = singleSetWidth * 2;
-            });
-        }
-    }, []);
-
-    const scrollTimeout = React.useRef<NodeJS.Timeout | null>(null);
-
-    React.useEffect(() => {
-        return () => {
-            if (scrollTimeout.current) clearTimeout(scrollTimeout.current);
-        };
-    }, []);
-
-    const handleScroll = () => {
-        if (!scrollContainerRef.current) return;
-        const container = scrollContainerRef.current;
-        const scrollLeft = container.scrollLeft;
-        const scrollWidth = container.scrollWidth;
-        const oneSetWidth = scrollWidth / 5;
-
-        // Emergency Reset: Near 0 or near max
-        if (scrollLeft < 50 || scrollLeft > scrollWidth - 50) {
-            container.scrollTo({
-                left: oneSetWidth * 2 + (scrollLeft % oneSetWidth),
-                behavior: 'auto'
-            });
-            return;
-        }
-
-        if (scrollTimeout.current) clearTimeout(scrollTimeout.current);
-
-        scrollTimeout.current = setTimeout(() => {
-            const currentSet = Math.floor(scrollLeft / oneSetWidth);
-
-            // Center set is index 2 (sets 0,1, [2], 3,4)
-            if (currentSet !== 2) {
-                const offsetInSet = scrollLeft % oneSetWidth;
-                container.scrollTo({
-                    left: oneSetWidth * 2 + offsetInSet,
-                    behavior: 'auto'
-                });
-            }
-        }, 150);
-    };
 
     const scroll = (direction: 'left' | 'right') => {
         if (!scrollContainerRef.current) return;
@@ -144,16 +91,15 @@ export default function ReviewsSlider({ lang = 'de', reviewsData }: ReviewsSlide
                 <div
                     id={trackId}
                     ref={scrollContainerRef}
-                    onScroll={handleScroll}
                     onKeyDown={handleKeyDown}
                     tabIndex={0}
                     aria-label="Scrollable user reviews. Use left and right arrow keys."
                     className="flex gap-6 overflow-x-auto snap-x snap-mandatory px-4 md:px-32 pb-4 scrollbar-hide snap-always"
                     style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
                 >
-                    {reviews.map((review, index) => (
+                    {reviewsData.map((review, index) => (
                         <div
-                            key={index}
+                            key={`${review.author}-${review.date}-${index}`}
                             className="w-[300px] md:w-[350px] bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex flex-col shrink-0 hover:shadow-md transition-shadow snap-center"
                         >
                             <div className="flex justify-between items-start mb-4">

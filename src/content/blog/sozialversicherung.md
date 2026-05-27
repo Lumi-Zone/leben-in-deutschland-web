@@ -1,8 +1,8 @@
 ---
-title: "Die Sozialversicherung: Ein Netz, das auffängt"
-description: "Deutschland ist ein Sozialstaat. Erfahren Sie, wie Kranken-, Renten- und Arbeitslosenversicherung funktionieren."
+title: "Sozialversicherung in Deutschland einfach erklärt"
+description: "Krankenversicherung, Rentenversicherung, Arbeitslosenversicherung und Sozialstaat einfach erklärt."
 pubDate: 2025-11-27
-updatedDate: 2025-11-27
+updatedDate: 2026-05-27
 author: "Lern-Coach Team"
 image: "https://images.unsplash.com/photo-1635585558406-23471c000853?auto=format&fit=crop&w=1600&q=80"
 tags: ["Soziales", "Versicherung", "Leben"]
