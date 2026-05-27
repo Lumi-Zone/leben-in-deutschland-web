@@ -1,6 +1,6 @@
 ---
 title: "Privacy Policy"
-lastUpdated: "September 30, 2024"
+lastUpdated: "May 27, 2026"
 ---
 
 This Privacy Notice for us describes how and why we might access, collect, store, use, and/or share your personal information when you use our services, including when you:
@@ -48,6 +48,12 @@ If you use our application(s), we also may collect the following information if 
 
 This information is primarily needed to maintain the security and operation of our application(s), for troubleshooting, and for our internal analytics and reporting purposes.
 
+### Website Analytics
+
+We use Umami Analytics, a privacy-friendly web analytics service from Umami Software, Inc., to understand how our website is used and which content should be improved.
+
+Umami processes aggregated usage data such as page views, referrer URLs, browsers, operating systems, device types, countries, and campaign parameters. According to Umami, the tracking code does not use cookies, does not store personal content from forms, and does not identify visitors across websites.
+
 All personal information that you provide to us must be true, complete, and accurate, and you must notify us of any changes to such personal information.
 
 ## 2. HOW DO WE PROCESS YOUR INFORMATION?
@@ -67,6 +73,7 @@ We process your personal information for a variety of reasons, depending on how 
 The General Data Protection Regulation (GDPR) and UK GDPR require us to explain the valid legal bases we rely on in order to process your personal information. As such, we may rely on the following legal bases:
 
 *   **Consent.** We may process your information if you have given us permission (i.e., consent) to use your personal information for a specific purpose. You can withdraw your consent at any time.
+*   **Legitimate Interests.** We may process your information when it is necessary for our legitimate interests, such as analyzing and improving our Services, provided that your interests and fundamental rights do not override those interests.
 *   **Legal Obligations.** We may process your information where we believe it is necessary for compliance with our legal obligations.
 *   **Vital Interests.** We may process your information where we believe it is necessary to protect your vital interests or the vital interests of a third party.
 
@@ -83,6 +90,7 @@ In some exceptional cases, we may be legally permitted under applicable law to p
 We may need to share your personal information in the following situations:
 
 *   **Business Transfers.** We may share or transfer your information in connection with, or during negotiations of, any merger, sale of company assets, financing, or acquisition of all or a portion of our business to another company.
+*   **Service Providers.** We may use service providers that help us operate, secure, and analyze our Services, including Umami Analytics for aggregated website usage statistics.
 *   **Offer Wall.** Our application(s) may display a third-party hosted "offer wall." When you click on an offer wall, you will be brought to an external website belonging to other persons and will leave our application(s). A unique identifier, such as your user ID, will be shared with the offer wall provider in order to prevent fraud and properly credit your account with the relevant reward.
 
 ## 5. WHAT IS OUR STANCE ON THIRD-PARTY WEBSITES?

@@ -104,6 +104,10 @@ const documentDirection = rtlLanguageCodes.has(lang) ? 'rtl' : 'ltr';
 const jsonLdItems = Array.isArray(jsonLd) ? jsonLd : jsonLd ? [jsonLd] : [];
 const prevLinkHref = prevHref ? new URL(prevHref, siteUrl).href : undefined;
 const nextLinkHref = nextHref ? new URL(nextHref, siteUrl).href : undefined;
+const defaultUmamiWebsiteId = '44695de0-fce5-49b9-b5f4-61767b8568df';
+const umamiWebsiteId = import.meta.env.PUBLIC_UMAMI_WEBSITE_ID?.trim() || defaultUmamiWebsiteId;
+const umamiScriptUrl = import.meta.env.PUBLIC_UMAMI_SCRIPT_URL?.trim() || 'https://cloud.umami.is/script.js';
+const umamiDomains = import.meta.env.PUBLIC_UMAMI_DOMAINS?.trim() || 'lid-einbuergerung.de';
 ---
 
 <!doctype html>
@@ -168,6 +172,15 @@ const nextLinkHref = nextHref ? new URL(nextHref, siteUrl).href : undefined;
         {jsonLdItems.map((item) => (
             <script is:inline type="application/ld+json" set:html={JSON.stringify(item)} />
         ))}
+        {umamiWebsiteId && (
+            <script
+                is:inline
+                defer
+                src={umamiScriptUrl}
+                data-website-id={umamiWebsiteId}
+                data-domains={umamiDomains || undefined}
+            ></script>
+        )}
 	</head>
 	<body>
 		<a href="#main-content" class="skip-link">Skip to content</a>

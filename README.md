@@ -1,34 +1,24 @@
-# Astro Starter Kit: Basics
+# Leben in Deutschland Web
+
+Astro site for the Leben in Deutschland / Einbuergerungstest web experience.
+
+## Analytics
+
+The site is configured with Umami Analytics.
+
+Default tracking configuration:
 
 ```sh
-npm create astro@latest -- --template basics
+PUBLIC_UMAMI_WEBSITE_ID=44695de0-fce5-49b9-b5f4-61767b8568df
+PUBLIC_UMAMI_DOMAINS=lid-einbuergerung.de
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+These can be overridden in GitHub via `Settings` -> `Secrets and variables` -> `Actions` -> `Variables`.
+`PUBLIC_UMAMI_SCRIPT_URL` is also optional and defaults to `https://cloud.umami.is/script.js`.
 
-## 🚀 Project Structure
+For local testing, copy `.env.example` to `.env` and fill in `PUBLIC_UMAMI_WEBSITE_ID`.
 
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
-
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
-
-## 🧞 Commands
+## Commands
 
 All commands are run from the root of the project, from a terminal:
 
@@ -40,7 +30,3 @@ All commands are run from the root of the project, from a terminal:
 | `npm run preview`         | Preview your build locally, before deploying     |
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).

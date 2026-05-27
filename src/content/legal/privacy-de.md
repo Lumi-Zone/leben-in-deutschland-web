@@ -1,6 +1,6 @@
 ---
 title: "Datenschutzerklärung"
-lastUpdated: "30. September 2024"
+lastUpdated: "27. Mai 2026"
 ---
 
 Diese Datenschutzerklärung beschreibt, wie und warum wir Ihre persönlichen Daten erfassen, speichern, verwenden und/oder weitergeben, wenn Sie unsere Dienste nutzen, einschließlich wenn Sie:
@@ -48,6 +48,12 @@ Wenn Sie unsere Anwendung(en) nutzen, können wir auch folgende Informationen sa
 
 Diese Informationen werden hauptsächlich benötigt, um die Sicherheit und den Betrieb unserer Anwendung(en) aufrechtzuerhalten, zur Fehlerbehebung und für unsere internen Analyse- und Berichtszwecke.
 
+### Website-Analyse
+
+Wir verwenden Umami Analytics, einen datenschutzfreundlichen Webanalyse-Dienst von Umami Software, Inc., um zu verstehen, wie unsere Website genutzt wird und welche Inhalte verbessert werden sollten.
+
+Umami verarbeitet aggregierte Nutzungsdaten wie Seitenaufrufe, Referrer-URLs, Browser, Betriebssysteme, Gerätetypen, Länder und Kampagnenparameter. Nach Angaben von Umami verwendet der Tracking-Code keine Cookies, speichert keine personenbezogenen Inhalte aus Formularen und identifiziert Besucher nicht websiteübergreifend.
+
 Alle persönlichen Informationen, die Sie uns zur Verfügung stellen, müssen wahr, vollständig und genau sein, und Sie müssen uns über Änderungen solcher persönlichen Informationen informieren.
 
 <h2 id="processing">2. WIE VERARBEITEN WIR IHRE INFORMATIONEN?</h2>
@@ -67,6 +73,7 @@ Wir verarbeiten Ihre persönlichen Informationen aus verschiedenen Gründen, je 
 Die Datenschutz-Grundverordnung (DSGVO) und die UK-DSGVO verlangen von uns, die gültigen Rechtsgrundlagen zu erläutern, auf die wir uns stützen, um Ihre persönlichen Informationen zu verarbeiten. Daher können wir uns auf folgende Rechtsgrundlagen stützen:
 
 *   **Einwilligung.** Wir können Ihre Informationen verarbeiten, wenn Sie uns die Erlaubnis (d. h. Einwilligung) gegeben haben, Ihre persönlichen Informationen für einen bestimmten Zweck zu verwenden. Sie können Ihre Einwilligung jederzeit widerrufen.
+*   **Berechtigte Interessen.** Wir können Ihre Informationen verarbeiten, wenn dies zur Wahrung unserer berechtigten Interessen erforderlich ist, z. B. zur Analyse und Verbesserung unserer Dienste, sofern Ihre Interessen und Grundrechte nicht überwiegen.
 *   **Gesetzliche Verpflichtungen.** Wir können Ihre Informationen verarbeiten, wenn wir der Meinung sind, dass dies zur Erfüllung unserer gesetzlichen Verpflichtungen erforderlich ist.
 *   **Lebenswichtige Interessen.** Wir können Ihre Informationen verarbeiten, wenn wir der Meinung sind, dass dies notwendig ist, um Ihre lebenswichtigen Interessen oder die lebenswichtigen Interessen Dritter zu schützen.
 
@@ -83,6 +90,7 @@ In einigen Ausnahmefällen kann es uns nach geltendem Recht gestattet sein, Ihre
 Wir müssen Ihre persönlichen Informationen möglicherweise in folgenden Situationen teilen:
 
 *   **Geschäftsübertragungen.** Wir können Ihre Informationen im Zusammenhang mit oder während Verhandlungen über eine Fusion, den Verkauf von Unternehmensvermögen, die Finanzierung oder den Erwerb unseres gesamten oder eines Teils unseres Unternehmens an ein anderes Unternehmen weitergeben oder übertragen.
+*   **Dienstleister.** Wir können Dienstleister einsetzen, die uns beim Betrieb, der Sicherheit und der Analyse unserer Dienste unterstützen, einschließlich Umami Analytics für aggregierte Website-Nutzungsstatistiken.
 *   **Offer Wall.** Unsere Anwendung(en) können eine von Dritten gehostete "Offer Wall" anzeigen. Wenn Sie auf eine Offer Wall klicken, werden Sie zu einer externen Website weitergeleitet, die anderen Personen gehört, und verlassen unsere Anwendung(en). Eine eindeutige Kennung, wie z. B. Ihre Benutzer-ID, wird mit dem Anbieter der Offer Wall geteilt, um Betrug zu verhindern und Ihrem Konto die entsprechende Belohnung gutzuschreiben.
 
 <h2 id="third-party">5. WIE IST UNSERE HALTUNG ZU WEBSITES DRITTER?</h2>
