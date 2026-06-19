@@ -159,11 +159,11 @@ const learningResourceSchema = {
   <main class="app-page">
     <div class="app-page-shell">
       <div class="max-w-5xl mx-auto mb-6 flex flex-wrap gap-2.5">
-        <a href={getPath(`${lang}/`)} class="inline-flex items-center rounded-xl border border-blue-200 bg-blue-50 px-3.5 py-2 text-sm font-semibold text-blue-700 hover:bg-blue-100">← {translate("question.back")}</a>
-        <a href={getPath(`${lang}/exam`)} class="inline-flex items-center rounded-xl border border-indigo-200 bg-indigo-50 px-3.5 py-2 text-sm font-semibold text-indigo-700 hover:bg-indigo-100">{translate("home.start_exam")}</a>
-        <a href={getPath(`${lang}/favorites`)} class="inline-flex items-center rounded-xl border border-amber-200 bg-amber-50 px-3.5 py-2 text-sm font-semibold text-amber-700 hover:bg-amber-100">{translate("nav.favorites")}</a>
-        <a href={getPath(`${lang}/progress`)} class="inline-flex items-center rounded-xl border border-emerald-200 bg-emerald-50 px-3.5 py-2 text-sm font-semibold text-emerald-700 hover:bg-emerald-100">{translate("nav.progress")}</a>
-        <a href={getPath(`${lang}/focus`)} class="inline-flex items-center rounded-xl border border-cyan-200 bg-cyan-50 px-3.5 py-2 text-sm font-semibold text-cyan-700 hover:bg-cyan-100">{translate("progress.focus_cta")}</a>
+        <a href={getPath(`${lang}/`)} data-umami-event="question-toolbar-click" data-umami-event-destination="home" data-umami-event-lang={lang} class="inline-flex items-center rounded-xl border border-blue-200 bg-blue-50 px-3.5 py-2 text-sm font-semibold text-blue-700 hover:bg-blue-100">← {translate("question.back")}</a>
+        <a href={getPath(`${lang}/exam`)} data-umami-event="start-exam-click" data-umami-event-location="question-toolbar" data-umami-event-lang={lang} class="inline-flex items-center rounded-xl border border-indigo-200 bg-indigo-50 px-3.5 py-2 text-sm font-semibold text-indigo-700 hover:bg-indigo-100">{translate("home.start_exam")}</a>
+        <a href={getPath(`${lang}/favorites`)} data-umami-event="favorites-opened" data-umami-event-location="question-toolbar" data-umami-event-lang={lang} class="inline-flex items-center rounded-xl border border-amber-200 bg-amber-50 px-3.5 py-2 text-sm font-semibold text-amber-700 hover:bg-amber-100">{translate("nav.favorites")}</a>
+        <a href={getPath(`${lang}/progress`)} data-umami-event="progress-opened" data-umami-event-location="question-toolbar" data-umami-event-lang={lang} class="inline-flex items-center rounded-xl border border-emerald-200 bg-emerald-50 px-3.5 py-2 text-sm font-semibold text-emerald-700 hover:bg-emerald-100">{translate("nav.progress")}</a>
+        <a href={getPath(`${lang}/focus`)} data-umami-event="focus-practice-opened" data-umami-event-location="question-toolbar" data-umami-event-lang={lang} class="inline-flex items-center rounded-xl border border-cyan-200 bg-cyan-50 px-3.5 py-2 text-sm font-semibold text-cyan-700 hover:bg-cyan-100">{translate("progress.focus_cta")}</a>
       </div>
 
       <QuestionCard 

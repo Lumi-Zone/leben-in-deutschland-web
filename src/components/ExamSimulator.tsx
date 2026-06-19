@@ -3,6 +3,7 @@ import { getPath } from '../utils/navigation';
 import { markQuestionSolved } from '../utils/learningProgress';
 import { recordQuestionAttempt } from '../utils/questionStats';
 import { recordHabitAttempt } from '../utils/learningHabits';
+import { trackEvent } from '../utils/analytics';
 import type { QuestionSessionItem } from '../utils/questions';
 
 interface Labels {
@@ -75,6 +76,7 @@ export default function ExamSimulator({
     const [finished, setFinished] = useState(false);
     const [secondsLeft, setSecondsLeft] = useState(durationMinutes * 60);
     const hasSavedResults = useRef(false);
+    const hasTrackedFinish = useRef(false);
 
     const answeredCount = useMemo(() => answers.filter((value) => value >= 0).length, [answers]);
 
@@ -126,9 +128,28 @@ export default function ExamSimulator({
         hasSavedResults.current = true;
     }, [answers, examQuestions, finished, started]);
 
+    useEffect(() => {
+        if (!started || !finished || hasTrackedFinish.current) return;
+
+        trackEvent('exam-finished', {
+            lang,
+            score,
+            answered_count: answeredCount,
+            passed: isPassed,
+            total_questions: examQuestions.length,
+        });
+        hasTrackedFinish.current = true;
+    }, [answeredCount, examQuestions.length, finished, isPassed, lang, score, started]);
+
     const currentQuestion = examQuestions[currentIndex];
 
     const handleStart = () => {
+        trackEvent('exam-started', {
+            lang,
+            total_questions: examQuestions.length,
+            duration_minutes: durationMinutes,
+            pass_threshold: passThreshold,
+        });
         setStarted(true);
     };
 
@@ -154,6 +175,12 @@ export default function ExamSimulator({
     };
 
     const handleRestart = () => {
+        trackEvent('exam-restarted', {
+            lang,
+            score,
+            answered_count: answeredCount,
+            total_questions: examQuestions.length,
+        });
         const nextQuestions = pickRandomQuestions(pool, totalQuestions);
         setExamQuestions(nextQuestions);
         setAnswers(new Array(nextQuestions.length).fill(-1));
@@ -162,6 +189,7 @@ export default function ExamSimulator({
         setStarted(false);
         setFinished(false);
         hasSavedResults.current = false;
+        hasTrackedFinish.current = false;
     };
 
     if (pool.length === 0) {

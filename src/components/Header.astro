@@ -14,10 +14,10 @@ const currentPath = Astro.url.pathname;
 const appDownloadHref = 'https://apps.apple.com/app/leben-in-deutschland-2026/id6723899981';
 
 const navLinks = [
-  { href: getPath(`${lang}/frage/1`), label: t('home.start_quiz') },
-  { href: getPath(`${lang}/exam`), label: t('features.exam.title') },
-  { href: getPath(`${lang}/support`), label: t('nav.support') },
-  { href: getPath(`${lang}/blog`), label: t('nav.blog'), featured: true },
+  { href: getPath(`${lang}/frage/1`), label: t('home.start_quiz'), destination: 'questions' },
+  { href: getPath(`${lang}/exam`), label: t('features.exam.title'), destination: 'exam' },
+  { href: getPath(`${lang}/support`), label: t('nav.support'), destination: 'support' },
+  { href: getPath(`${lang}/blog`), label: t('nav.blog'), destination: 'blog', featured: true },
 ];
 
 const isActive = (href: string) => currentPath === href || currentPath.startsWith(`${href}/`);
@@ -43,6 +43,10 @@ const isActive = (href: string) => currentPath === href || currentPath.startsWit
             <a
               href={link.href}
               aria-current={isActive(link.href) ? 'page' : undefined}
+              data-umami-event="nav-link-click"
+              data-umami-event-location="desktop-header"
+              data-umami-event-destination={link.destination}
+              data-umami-event-lang={lang}
               class={`px-2.5 py-2 rounded-lg whitespace-nowrap transition-colors ${
                 link.featured
                   ? isActive(link.href)
@@ -63,6 +67,9 @@ const isActive = (href: string) => currentPath === href || currentPath.startsWit
           href={appDownloadHref}
           target="_blank"
           rel="noopener noreferrer"
+          data-umami-event="app-store-click"
+          data-umami-event-location="desktop-header"
+          data-umami-event-lang={lang}
           class="hidden sm:inline-flex items-center rounded-xl bg-blue-600 px-3.5 py-2 text-xs font-semibold text-white hover:bg-blue-700 transition-colors shadow-sm"
         >
           {t('question.practice_app')}
@@ -71,6 +78,8 @@ const isActive = (href: string) => currentPath === href || currentPath.startsWit
           type="button"
           class="xl:hidden inline-flex items-center justify-center w-11 h-11 rounded-xl border border-gray-200 text-gray-700 bg-white hover:bg-gray-50 transition-colors"
           data-mobile-menu-toggle
+          data-umami-event="mobile-menu-opened"
+          data-umami-event-lang={lang}
           aria-expanded="false"
           aria-controls="mobile-nav-drawer"
           aria-label={t('nav.open_menu')}
@@ -109,6 +118,9 @@ const isActive = (href: string) => currentPath === href || currentPath.startsWit
         href={appDownloadHref}
         target="_blank"
         rel="noopener noreferrer"
+        data-umami-event="app-store-click"
+        data-umami-event-location="mobile-drawer"
+        data-umami-event-lang={lang}
         class="block px-4 py-3 rounded-xl font-semibold text-white bg-blue-600 hover:bg-blue-700 transition-colors"
       >
         {t('question.practice_app')}
@@ -117,6 +129,10 @@ const isActive = (href: string) => currentPath === href || currentPath.startsWit
         <a
           href={link.href}
           aria-current={isActive(link.href) ? 'page' : undefined}
+          data-umami-event="nav-link-click"
+          data-umami-event-location="mobile-drawer"
+          data-umami-event-destination={link.destination}
+          data-umami-event-lang={lang}
           class={`block px-4 py-3 rounded-xl font-medium transition-colors ${
             link.featured
               ? isActive(link.href)

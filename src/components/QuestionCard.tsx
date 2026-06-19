@@ -4,6 +4,7 @@ import { markQuestionSolved } from '../utils/learningProgress';
 import { isQuestionFavorite, toggleFavorite } from '../utils/favorites';
 import { recordQuestionAttempt } from '../utils/questionStats';
 import { recordHabitAttempt } from '../utils/learningHabits';
+import { trackEvent } from '../utils/analytics';
 
 interface Props {
     id: number;
@@ -102,6 +103,12 @@ export default function QuestionCard({
         const isMobile = isAndroid || isIOS;
 
         const fallbackUrl = isAndroid ? androidStoreUrl : iosStoreUrl;
+        trackEvent('practice-app-click', {
+            lang: currentLang,
+            question_id: id,
+            platform: isAndroid ? 'android' : isIOS ? 'ios' : 'desktop',
+            destination: isAndroid ? 'play-store' : 'app-store',
+        });
 
         if (!isMobile) {
             // On Desktop, directly open the store link in a new tab
@@ -130,6 +137,13 @@ export default function QuestionCard({
         markQuestionSolved(id);
         recordQuestionAttempt(id, index === correctIndex);
         recordHabitAttempt();
+        trackEvent('question-answered', {
+            lang: currentLang,
+            question_id: id,
+            question_position: questionPosition,
+            selected_index: index,
+            correct: index === correctIndex,
+        });
     };
 
     const isCorrect = selected === correctIndex;
@@ -139,7 +153,13 @@ export default function QuestionCard({
             : 0;
 
     const handleToggleFavorite = () => {
-        setFavorite(toggleFavorite(id));
+        const nextFavorite = toggleFavorite(id);
+        setFavorite(nextFavorite);
+        trackEvent(nextFavorite ? 'favorite-added' : 'favorite-removed', {
+            lang: currentLang,
+            question_id: id,
+            location: 'question-card',
+        });
     };
 
     const navigateToQuestion = (targetId: number) => {
@@ -213,6 +233,11 @@ export default function QuestionCard({
         }
 
         setJumpError('');
+        trackEvent('question-jump', {
+            lang: currentLang,
+            question_id: id,
+            target_question_id: parsed,
+        });
         navigateToQuestion(parsed);
     };
 
@@ -371,6 +396,13 @@ export default function QuestionCard({
                 {prevId ? (
                     <a
                         href={getPath(`${currentLang}/frage/${prevId}`)}
+                        onClick={() =>
+                            trackEvent('question-prev-click', {
+                                lang: currentLang,
+                                question_id: id,
+                                target_question_id: prevId,
+                            })
+                        }
                         className="flex items-center gap-2 px-6 py-3 premium-panel-soft font-medium text-gray-700 hover:bg-gray-50 hover:border-gray-300 transition-all"
                     >
                         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" /></svg>
@@ -381,6 +413,13 @@ export default function QuestionCard({
                 {nextId ? (
                     <a
                         href={getPath(`${currentLang}/frage/${nextId}`)}
+                        onClick={() =>
+                            trackEvent('question-next-click', {
+                                lang: currentLang,
+                                question_id: id,
+                                target_question_id: nextId,
+                            })
+                        }
                         className="flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-xl font-medium hover:bg-blue-700 hover:shadow-lg hover:-translate-y-0.5 transition-all shadow-md group"
                     >
                         {nextLabel}

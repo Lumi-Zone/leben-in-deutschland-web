@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { getPath } from '../utils/navigation';
 import { readLearningProgress, type LearningProgress } from '../utils/learningProgress';
+import { trackEvent } from '../utils/analytics';
 
 interface Labels {
     title: string;
@@ -76,12 +77,25 @@ export default function ContinueLearningCard({ lang, totalQuestions, labels }: P
                         <div className="flex flex-col sm:flex-row gap-3">
                             <a
                                 href={continueHref}
+                                onClick={() =>
+                                    trackEvent('continue-learning-click', {
+                                        lang,
+                                        has_progress: Boolean(progress.lastQuestionId),
+                                        target_question_id: progress.lastQuestionId ?? 1,
+                                    })
+                                }
                                 className="inline-flex items-center justify-center px-5 py-3 rounded-xl bg-blue-600 text-white font-semibold hover:bg-blue-700 transition-colors shadow-sm"
                             >
                                 {labels.continueCta}
                             </a>
                             <a
                                 href={startHref}
+                                onClick={() =>
+                                    trackEvent('start-learning-click', {
+                                        lang,
+                                        target_question_id: 1,
+                                    })
+                                }
                                 className="inline-flex items-center justify-center px-5 py-3 rounded-xl border border-blue-200 text-blue-700 bg-white hover:bg-blue-50 font-semibold transition-colors"
                             >
                                 {labels.startCta}

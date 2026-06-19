@@ -5,6 +5,7 @@ import {
     setDailyGoal,
     type LearningHabitStore,
 } from '../utils/learningHabits';
+import { trackEvent } from '../utils/analytics';
 
 interface Labels {
     title: string;
@@ -24,6 +25,7 @@ interface Labels {
 }
 
 interface Props {
+    lang: string;
     labels: Labels;
 }
 
@@ -37,7 +39,7 @@ const defaultHabits: LearningHabitStore = {
 
 const quickGoals = [5, 10, 20];
 
-export default function StudyHabitCard({ labels }: Props) {
+export default function StudyHabitCard({ lang, labels }: Props) {
     const [habitStore, setHabitStore] = useState<LearningHabitStore>(defaultHabits);
 
     useEffect(() => {
@@ -61,6 +63,7 @@ export default function StudyHabitCard({ labels }: Props) {
     }, [labels.goalMet, labels.goalRemaining, remainingAttempts]);
 
     const setGoalAndRefresh = (goal: number) => {
+        trackEvent('daily-goal-changed', { lang, goal });
         setHabitStore(setDailyGoal(goal));
     };
 

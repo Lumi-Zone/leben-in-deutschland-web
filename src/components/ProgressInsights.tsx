@@ -7,6 +7,7 @@ import {
     readQuestionStats,
     type QuestionStatsStore,
 } from '../utils/questionStats';
+import { trackEvent } from '../utils/analytics';
 
 interface Labels {
     title: string;
@@ -209,6 +210,10 @@ export default function ProgressInsights({ lang, totalQuestions, questionMeta, l
     ]);
 
     const handleClearStats = () => {
+        trackEvent('progress-stats-cleared', {
+            lang,
+            total_attempts: stats.totalAttempts,
+        });
         clearQuestionStats();
         setStats(defaultStats);
     };
@@ -308,6 +313,14 @@ export default function ProgressInsights({ lang, totalQuestions, questionMeta, l
                             <a
                                 key={question.id}
                                 href={getPath(`${lang}/frage/${question.id}`)}
+                                onClick={() =>
+                                    trackEvent('weak-question-opened', {
+                                        lang,
+                                        question_id: question.id,
+                                        attempts: question.attempts,
+                                        wrong: question.wrong,
+                                    })
+                                }
                                 className="rounded-xl border border-gray-200 p-4 hover:border-blue-500 hover:shadow-sm transition-all"
                             >
                                 <div className="flex items-start justify-between gap-3 mb-3">

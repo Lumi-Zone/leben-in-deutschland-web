@@ -201,6 +201,9 @@ const umamiDomains = import.meta.env.PUBLIC_UMAMI_DOMAINS?.trim() || 'lid-einbue
 									lang={item.htmlLang}
 									class={`language-item ${item.code === lang ? 'is-current' : ''}`}
 									aria-current={item.code === lang ? 'page' : undefined}
+									data-umami-event="language-changed"
+									data-umami-event-from-lang={lang}
+									data-umami-event-to-lang={item.code}
 								>
 									<span class="language-item-code">{item.code.toUpperCase()}</span>
 									<span>{item.label}</span>
@@ -246,6 +249,15 @@ const umamiDomains = import.meta.env.PUBLIC_UMAMI_DOMAINS?.trim() || 'lid-einbue
 				const closeButton = document.getElementById('smart-banner-close');
 				const openButton = document.getElementById('smart-banner-open');
 				if (!banner || !closeButton || !openButton) return;
+				const track = (eventName, data) => {
+					try {
+						if (typeof window.umami?.track === 'function') {
+							window.umami.track(eventName, data);
+						}
+					} catch {
+						/* no-op */
+					}
+				};
 
 				let isClosed = false;
 				try {
@@ -263,6 +275,7 @@ const umamiDomains = import.meta.env.PUBLIC_UMAMI_DOMAINS?.trim() || 'lid-einbue
 
 				closeButton.addEventListener('click', () => {
 					banner.hidden = true;
+					track('smart-banner-dismissed', { platform: 'android' });
 					try {
 						localStorage.setItem('smart-banner-closed', 'true');
 					} catch {
@@ -271,6 +284,7 @@ const umamiDomains = import.meta.env.PUBLIC_UMAMI_DOMAINS?.trim() || 'lid-einbue
 				});
 
 				openButton.addEventListener('click', () => {
+					track('play-store-click', { location: 'smart-banner', platform: 'android' });
 					window.location.href = 'https://play.google.com/store/apps/details?id=com.einbuergerungapp';
 				});
 			})();

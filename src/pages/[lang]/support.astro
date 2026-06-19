@@ -205,7 +205,12 @@ import Header from '../../components/Header.astro';
                 </p>
                 <div class="inline-flex items-center justify-center gap-3 bg-white px-8 py-4 rounded-2xl shadow-sm border border-tertiary-100">
                     <span class="font-medium text-tertiary-900">{t('support.contact')}</span>
-                    <a href="mailto:cfstechmobile@gmail.com" class="text-primary-600 font-bold hover:text-primary-700 transition-colors">
+                    <a
+                        href="mailto:cfstechmobile@gmail.com"
+                        data-umami-event="support-email-click"
+                        data-umami-event-lang={lang}
+                        class="text-primary-600 font-bold hover:text-primary-700 transition-colors"
+                    >
                         cfstechmobile@gmail.com
                     </a>
                 </div>
@@ -245,13 +250,25 @@ import Header from '../../components/Header.astro';
                     <h2 class="text-2xl md:text-3xl font-bold mb-4">{t('hero.title')}</h2>
                     <p class="text-primary-100 mb-8 max-w-lg mx-auto text-lg" set:html={t('hero.subtitle')} />
                     <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                        <a href={getPath(`${lang}/`)} class="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-white text-primary-900 font-bold hover:bg-primary-50 transition-colors">
+                        <a
+                            href={getPath(`${lang}/`)}
+                            data-umami-event="start-quiz-click"
+                            data-umami-event-location="support-cta"
+                            data-umami-event-lang={lang}
+                            class="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-white text-primary-900 font-bold hover:bg-primary-50 transition-colors"
+                        >
                             {t('home.start_quiz')} 
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
                                 <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
                             </svg>
                         </a>
-                        <a href={getPath(`${lang}/blog`)} class="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-primary-800 text-white font-medium hover:bg-primary-700 transition-colors border border-primary-700">
+                        <a
+                            href={getPath(`${lang}/blog`)}
+                            data-umami-event="blog-opened"
+                            data-umami-event-location="support-cta"
+                            data-umami-event-lang={lang}
+                            class="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-primary-800 text-white font-medium hover:bg-primary-700 transition-colors border border-primary-700"
+                        >
                             {t('nav.blog')}
                         </a>
                     </div>

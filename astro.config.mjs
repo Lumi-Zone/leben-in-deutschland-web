@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url';
 import react from '@astrojs/react';
 import tailwindcss from '@tailwindcss/vite';
 
-import sitemap from '@astrojs/sitemap';
+import sitemap, { ChangeFreqEnum } from '@astrojs/sitemap';
 
 const supportedLanguages = ['de', 'en', 'tr', 'ar', 'ua', 'ru', 'pl', 'fa', 'ps', 'ro', 'it', 'es'];
 const sitemapLocales = {
@@ -26,7 +26,11 @@ const personalToolRoutes = new Set(['favorites', 'progress', 'focus']);
 const legalRoutesWithGermanAndEnglish = new Set(['datenschutz', 'terms-of-service', 'subscription-terms']);
 const localizedSupportLanguages = new Set(['de', 'en', 'tr', 'ar']);
 const reactJsxDevRuntimeShim = fileURLToPath(new URL('./src/shims/react-jsx-dev-runtime.js', import.meta.url));
+const { WEEKLY, MONTHLY, YEARLY } = ChangeFreqEnum;
 
+/**
+ * @param {string} pageUrl
+ */
 function getLocalizedRoute(pageUrl) {
   const { pathname } = new URL(pageUrl);
   const normalizedPath = pathname.replace(/\/+$/, '') || '/';
@@ -41,6 +45,9 @@ function getLocalizedRoute(pageUrl) {
   };
 }
 
+/**
+ * @param {string} pageUrl
+ */
 function shouldIncludeInSitemap(pageUrl) {
   const { pathname, lang, route, hasSupportedLang } = getLocalizedRoute(pageUrl);
 
@@ -55,30 +62,33 @@ function shouldIncludeInSitemap(pageUrl) {
   return true;
 }
 
+/**
+ * @param {{ url: string, [key: string]: unknown }} item
+ */
 function serializeSitemapItem(item) {
   const { pathname, route } = getLocalizedRoute(item.url);
 
   if (pathname === '/de' || pathname === '/de/') {
-    return { ...item, priority: 1, changefreq: 'weekly' };
+    return { ...item, priority: 1, changefreq: WEEKLY };
   }
 
   if (route === 'blog') {
-    return { ...item, priority: 0.8, changefreq: 'weekly' };
+    return { ...item, priority: 0.8, changefreq: WEEKLY };
   }
 
   if (route === 'frage' || pathname.endsWith('-fragen')) {
-    return { ...item, priority: 0.7, changefreq: 'monthly' };
+    return { ...item, priority: 0.7, changefreq: MONTHLY };
   }
 
   if (route === 'exam' || route === 'support') {
-    return { ...item, priority: 0.6, changefreq: 'monthly' };
+    return { ...item, priority: 0.6, changefreq: MONTHLY };
   }
 
   if (route === 'impressum' || legalRoutesWithGermanAndEnglish.has(route)) {
-    return { ...item, priority: 0.2, changefreq: 'yearly' };
+    return { ...item, priority: 0.2, changefreq: YEARLY };
   }
 
-  return { ...item, priority: 0.5, changefreq: 'monthly' };
+  return { ...item, priority: 0.5, changefreq: MONTHLY };
 }
 
 // https://astro.build/config

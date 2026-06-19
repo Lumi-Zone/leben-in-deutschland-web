@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import { getPath } from '../utils/navigation';
+import { trackEvent } from '../utils/analytics';
 
 interface Labels {
     title: string;
@@ -45,6 +46,7 @@ export default function OnboardingStarter({ lang, labels }: Props) {
         } catch {
             // no-op
         }
+        trackEvent('onboarding-dismissed', { lang });
         setVisible(false);
     };
 
@@ -98,18 +100,21 @@ export default function OnboardingStarter({ lang, labels }: Props) {
                 <div className="flex flex-wrap items-center gap-2.5">
                     <a
                         href={routes.learn}
+                        onClick={() => trackEvent('onboarding-cta-click', { lang, destination: 'learn' })}
                         className="inline-flex items-center rounded-xl bg-blue-600 px-4 py-2.5 text-sm font-semibold text-white hover:bg-blue-700"
                     >
                         {labels.continueLearn}
                     </a>
                     <a
                         href={routes.exam}
+                        onClick={() => trackEvent('onboarding-cta-click', { lang, destination: 'exam' })}
                         className="inline-flex items-center rounded-xl border border-blue-200 bg-blue-50 px-4 py-2.5 text-sm font-semibold text-blue-700 hover:bg-blue-100"
                     >
                         {labels.exam}
                     </a>
                     <a
                         href={routes.progress}
+                        onClick={() => trackEvent('onboarding-cta-click', { lang, destination: 'progress' })}
                         className="inline-flex items-center rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-2.5 text-sm font-semibold text-emerald-700 hover:bg-emerald-100"
                     >
                         {labels.progress}

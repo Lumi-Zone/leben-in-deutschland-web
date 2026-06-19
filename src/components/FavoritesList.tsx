@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { getPath } from '../utils/navigation';
 import { clearFavorites, readFavoriteIds, removeFavorite } from '../utils/favorites';
+import { trackEvent } from '../utils/analytics';
 
 interface Labels {
     title: string;
@@ -24,10 +25,19 @@ export default function FavoritesList({ lang, labels }: Props) {
     }, []);
 
     const handleRemove = (id: number) => {
+        trackEvent('favorite-removed', {
+            lang,
+            question_id: id,
+            location: 'favorites-list',
+        });
         setFavoriteIds(removeFavorite(id));
     };
 
     const handleClearAll = () => {
+        trackEvent('favorites-cleared', {
+            lang,
+            favorite_count: favoriteIds.length,
+        });
         clearFavorites();
         setFavoriteIds([]);
     };
@@ -68,6 +78,12 @@ export default function FavoritesList({ lang, labels }: Props) {
                             >
                                 <a
                                     href={getPath(`${lang}/frage/${id}`)}
+                                    onClick={() =>
+                                        trackEvent('favorite-question-opened', {
+                                            lang,
+                                            question_id: id,
+                                        })
+                                    }
                                     className="inline-flex items-center gap-2 text-blue-700 hover:text-blue-800 font-semibold"
                                 >
                                     <span className="inline-flex items-center justify-center w-7 h-7 rounded-md bg-blue-50 text-blue-700 text-xs">

@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import { getPath } from '../utils/navigation';
+import { trackEvent } from '../utils/analytics';
 
 interface StateQuestion {
     id: number;
@@ -102,6 +103,48 @@ export default function StateQuestionExplorer({ lang, stateName, questions, labe
         .replace('{shown}', String(filteredQuestions.length))
         .replace('{total}', String(questions.length));
 
+    const handleSortChange = (value: 'default' | 'id-asc' | 'id-desc') => {
+        setSortBy(value);
+        trackEvent('state-filter-changed', {
+            lang,
+            state: stateName,
+            filter: 'sort',
+            value,
+        });
+    };
+
+    const handleViewModeChange = (value: 'grid' | 'list') => {
+        setViewMode(value);
+        trackEvent('state-filter-changed', {
+            lang,
+            state: stateName,
+            filter: 'view',
+            value,
+        });
+    };
+
+    const handleClearFilters = () => {
+        trackEvent('state-filters-cleared', {
+            lang,
+            state: stateName,
+            had_query: Boolean(query.trim()),
+            sort: sortBy,
+            view: viewMode,
+        });
+        setQuery('');
+        setSortBy('default');
+        setViewMode('grid');
+    };
+
+    const trackQuestionOpen = (questionId: number) => {
+        trackEvent('state-question-opened', {
+            lang,
+            state: stateName,
+            question_id: questionId,
+            view: viewMode,
+        });
+    };
+
     return (
         <div className="max-w-6xl mx-auto">
             <div className="premium-panel p-4 md:p-5 mb-6">
@@ -137,7 +180,7 @@ export default function StateQuestionExplorer({ lang, stateName, questions, labe
                         <select
                             value={sortBy}
                             onChange={(event) =>
-                                setSortBy(event.target.value as 'default' | 'id-asc' | 'id-desc')
+                                handleSortChange(event.target.value as 'default' | 'id-asc' | 'id-desc')
                             }
                             className="rounded-xl border border-gray-200 bg-white px-3 py-3 text-sm text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-200 focus:border-blue-300"
                         >
@@ -152,7 +195,7 @@ export default function StateQuestionExplorer({ lang, stateName, questions, labe
                         <div className="inline-flex rounded-xl border border-gray-200 bg-white p-1">
                             <button
                                 type="button"
-                                onClick={() => setViewMode('grid')}
+                                onClick={() => handleViewModeChange('grid')}
                                 aria-pressed={viewMode === 'grid'}
                                 className={`px-3 py-2 text-sm rounded-lg transition-colors ${
                                     viewMode === 'grid'
@@ -164,7 +207,7 @@ export default function StateQuestionExplorer({ lang, stateName, questions, labe
                             </button>
                             <button
                                 type="button"
-                                onClick={() => setViewMode('list')}
+                                onClick={() => handleViewModeChange('list')}
                                 aria-pressed={viewMode === 'list'}
                                 className={`px-3 py-2 text-sm rounded-lg transition-colors ${
                                     viewMode === 'list'
@@ -179,11 +222,7 @@ export default function StateQuestionExplorer({ lang, stateName, questions, labe
 
                     <button
                         type="button"
-                        onClick={() => {
-                            setQuery('');
-                            setSortBy('default');
-                            setViewMode('grid');
-                        }}
+                        onClick={handleClearFilters}
                         className="rounded-xl border border-gray-200 px-4 py-3 text-sm font-medium text-gray-700 hover:bg-gray-50 transition-colors"
                     >
                         {labels.clearSearch}
@@ -210,6 +249,7 @@ export default function StateQuestionExplorer({ lang, stateName, questions, labe
                             <a
                                 key={question.id}
                                 href={getPath(`${lang}/frage/${question.id}`)}
+                                onClick={() => trackQuestionOpen(question.id)}
                                 className="block group"
                             >
                                 <div className="premium-panel-soft p-6 hover:border-blue-400 hover:shadow-md transition-all h-full flex flex-col group-hover:-translate-y-0.5">
@@ -237,6 +277,7 @@ export default function StateQuestionExplorer({ lang, stateName, questions, labe
                             <a
                                 key={question.id}
                                 href={getPath(`${lang}/frage/${question.id}`)}
+                                onClick={() => trackQuestionOpen(question.id)}
                                 className="block premium-panel-soft p-4 md:p-5 hover:border-blue-400 hover:shadow-sm transition-all"
                             >
                                 <div className="flex items-start justify-between gap-3">

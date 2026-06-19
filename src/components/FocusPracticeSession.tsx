@@ -3,6 +3,7 @@ import { getPath } from '../utils/navigation';
 import { markQuestionSolved } from '../utils/learningProgress';
 import { recordHabitAttempt } from '../utils/learningHabits';
 import { readQuestionStats, recordQuestionAttempt } from '../utils/questionStats';
+import { trackEvent } from '../utils/analytics';
 import type { QuestionSessionItem } from '../utils/questions';
 
 interface Labels {
@@ -131,6 +132,10 @@ export default function FocusPracticeSession({
             : 0;
 
     const handleStart = () => {
+        trackEvent('focus-practice-started', {
+            lang,
+            total_questions: sessionQuestions.length,
+        });
         setStarted(true);
     };
 
@@ -158,10 +163,23 @@ export default function FocusPracticeSession({
     };
 
     const handleFinish = () => {
+        trackEvent('focus-practice-finished', {
+            lang,
+            score,
+            answered_count: answeredCount,
+            wrong_count: wrongQuestions.length,
+            total_questions: sessionQuestions.length,
+        });
         setFinished(true);
     };
 
     const handleRestart = () => {
+        trackEvent('focus-practice-restarted', {
+            lang,
+            score,
+            answered_count: answeredCount,
+            total_questions: sessionQuestions.length,
+        });
         refreshSession();
     };
 
@@ -227,6 +245,12 @@ export default function FocusPracticeSession({
                                 <a
                                     key={question.id}
                                     href={getPath(`${lang}/frage/${question.id}`)}
+                                    onClick={() =>
+                                        trackEvent('focus-review-opened', {
+                                            lang,
+                                            question_id: question.id,
+                                        })
+                                    }
                                     className="block rounded-xl border border-gray-200 p-4 hover:border-blue-500 hover:shadow-sm transition-all"
                                 >
                                     <div className="text-xs text-blue-600 font-semibold mb-2">#{question.id}</div>

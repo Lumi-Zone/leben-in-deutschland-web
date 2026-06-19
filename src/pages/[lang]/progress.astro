@@ -41,6 +41,9 @@ const t = useTranslations(lang);
           </div>
           <a
             href={getPath(`${lang}/focus`)}
+            data-umami-event="focus-practice-opened"
+            data-umami-event-location="progress-hero"
+            data-umami-event-lang={lang}
             class="inline-flex items-center justify-center px-5 py-3 rounded-xl bg-cyan-600 text-white font-semibold hover:bg-cyan-700 transition-colors"
           >
             {t("progress.focus_cta")}
@@ -50,6 +53,7 @@ const t = useTranslations(lang);
 
       <StudyHabitCard
         client:visible
+        lang={lang}
         labels={{
           title: t("progress.habit_title"),
           subtitle: t("progress.habit_subtitle"),
