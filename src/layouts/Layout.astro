@@ -3,6 +3,7 @@ import "../styles/global.css";
 import { languages } from '../i18n/ui';
 import { getPath } from '../utils/navigation';
 import { getSeoLanguageMeta } from '../utils/seo';
+import { ANDROID_PACKAGE_ID, APP_STORE_URL, IOS_APP_ID, MOBILE_APP_NAME, PLAY_STORE_URL } from '../utils/appLinks';
 
 interface Props {
   title: string;
@@ -122,7 +123,15 @@ const umamiDomains = import.meta.env.PUBLIC_UMAMI_DOMAINS?.trim() || 'lid-einbue
 		<meta name="application-name" content="Leben in Deutschland" />
 		<meta name="theme-color" content="#2563eb" />
 		<meta name="format-detection" content="telephone=no" />
-        <meta name="apple-itunes-app" content="app-id=6723899981">
+        <meta name="apple-itunes-app" content={`app-id=${IOS_APP_ID}, app-argument=${canonicalHref}`} />
+        <meta name="google-play-app" content={`app-id=${ANDROID_PACKAGE_ID}`} />
+        <meta property="al:ios:app_name" content={MOBILE_APP_NAME} />
+        <meta property="al:ios:app_store_id" content={IOS_APP_ID} />
+        <meta property="al:ios:url" content={canonicalHref} />
+        <meta property="al:android:app_name" content={MOBILE_APP_NAME} />
+        <meta property="al:android:package" content={ANDROID_PACKAGE_ID} />
+        <meta property="al:android:url" content={canonicalHref} />
+        <meta property="al:web:url" content={canonicalHref} />
         
         <!-- Primary Meta Tags -->
         <title>{title}</title>
@@ -163,6 +172,12 @@ const umamiDomains = import.meta.env.PUBLIC_UMAMI_DOMAINS?.trim() || 'lid-einbue
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={socialImageURL} />
         <meta name="twitter:image:alt" content={imageAlt} />
+        <meta name="twitter:app:name:iphone" content={MOBILE_APP_NAME} />
+        <meta name="twitter:app:id:iphone" content={IOS_APP_ID} />
+        <meta name="twitter:app:url:iphone" content={APP_STORE_URL} />
+        <meta name="twitter:app:name:googleplay" content={MOBILE_APP_NAME} />
+        <meta name="twitter:app:id:googleplay" content={ANDROID_PACKAGE_ID} />
+        <meta name="twitter:app:url:googleplay" content={PLAY_STORE_URL} />
         
         <!-- Hreflang for Internationalization -->
         {!disableAlternates && <link rel="alternate" hreflang="x-default" href={xDefaultHref} />}
@@ -243,7 +258,7 @@ const umamiDomains = import.meta.env.PUBLIC_UMAMI_DOMAINS?.trim() || 'lid-einbue
 			<slot />
 		</div>
 
-		<script is:inline>
+		<script is:inline define:vars={{ playStoreUrl: PLAY_STORE_URL }}>
 			(() => {
 				const banner = document.getElementById('smart-app-banner');
 				const closeButton = document.getElementById('smart-banner-close');
@@ -285,7 +300,7 @@ const umamiDomains = import.meta.env.PUBLIC_UMAMI_DOMAINS?.trim() || 'lid-einbue
 
 				openButton.addEventListener('click', () => {
 					track('play-store-click', { location: 'smart-banner', platform: 'android' });
-					window.location.href = 'https://play.google.com/store/apps/details?id=com.einbuergerungapp';
+					window.location.href = playStoreUrl;
 				});
 			})();
 		</script>

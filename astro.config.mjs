@@ -76,6 +76,10 @@ function serializeSitemapItem(item) {
     return { ...item, priority: 0.8, changefreq: WEEKLY };
   }
 
+  if (route === 'app') {
+    return { ...item, priority: 0.85, changefreq: MONTHLY };
+  }
+
   if (route === 'frage' || pathname.endsWith('-fragen')) {
     return { ...item, priority: 0.7, changefreq: MONTHLY };
   }

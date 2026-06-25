@@ -13,6 +13,7 @@ import { getBlogImageAlt, getOptimizedImageUrl, resolveBlogImage } from '../../u
 import { SUPPORTED_LANGUAGES, type SupportedLang } from '../../types/language';
 import { getLocalizedQuestionText } from '../../utils/questions';
 import { stripHtml } from '../../utils/seo';
+import { APP_STORE_URL, MOBILE_APP_ALTERNATE_NAMES, MOBILE_APP_NAME, PLAY_STORE_URL } from '../../utils/appLinks';
 
 export function getStaticPaths() {
   return SUPPORTED_LANGUAGES.map((lang) => ({ params: { lang }, props: { lang } }));
@@ -25,6 +26,10 @@ import { getPath } from '../../utils/navigation';
 
 const siteUrl = Astro.site || 'https://lid-einbuergerung.de';
 const homeUrl = new URL(getPath(`${lang}/`), siteUrl).href;
+const primaryHomeUrl = new URL(getPath('de/'), siteUrl).href;
+const organizationId = `${primaryHomeUrl}#organization`;
+const websiteId = `${primaryHomeUrl}#website`;
+const appId = `${primaryHomeUrl}#app`;
 const reviewsData = getReviews(lang);
 const heroDescription = stripHtml(t("hero.subtitle"));
 const blogPosts = await getCollection('blog');
@@ -65,47 +70,85 @@ const seoKeywords = isGerman
 		'orientierungskurs',
 	  ].join(', ')
 	: undefined;
+const importantPages = [
+	{
+		label: isGerman ? 'Leben in Deutschland App' : t("question.practice_app"),
+		description: isGerman ? 'Die App für iOS und Android mit Lernmodus, Prüfungssimulation und Fortschritt.' : t("features.exam.desc"),
+		href: getPath(`${lang}/app`),
+	},
+	{
+		label: isGerman ? 'Einbürgerungstest 2026 online üben' : t("home.start_quiz"),
+		description: isGerman ? 'Alle 300 offiziellen BAMF-Fragen Schritt für Schritt trainieren.' : heroDescription,
+		href: getPath(`${lang}/frage/1`),
+	},
+	{
+		label: isGerman ? 'Prüfungssimulation mit 33 Fragen' : t("home.start_exam"),
+		description: isGerman ? 'Den echten Testmodus mit zufälligen Fragen und Zeitlimit üben.' : t("features.exam.desc"),
+		href: getPath(`${lang}/exam`),
+	},
+	{
+		label: isGerman ? 'Bundesland-Fragen lernen' : `${t("progress.topic_land")} Fragen`,
+		description: isGerman ? 'Die 10 Zusatzfragen für Berlin, Bayern, Hamburg und alle Bundesländer.' : heroDescription,
+		href: getPath(`${lang}/berlin-fragen`),
+	},
+	{
+		label: isGerman ? 'BAMF 300 Fragen & Erklärungen' : t("blog.title"),
+		description: isGerman ? 'Ratgeber zu Einbürgerungstest, Leben in Deutschland Test und Prüfungsvorbereitung.' : t("blog.subtitle"),
+		href: getPath(`${lang}/blog`),
+	},
+	{
+		label: isGerman ? 'Hilfe & häufige Fragen' : t("nav.support"),
+		description: isGerman ? 'Antworten zu App, Training, Anmeldung und Vorbereitung.' : t("support.subtitle"),
+		href: getPath(`${lang}/support`),
+	},
+];
 const organizationSchema = {
-	'@context': 'https://schema.org',
 	'@type': 'Organization',
+	'@id': organizationId,
 	name: 'Leben in Deutschland',
-	url: new URL(getPath('de/'), siteUrl).href,
+	url: primaryHomeUrl,
 	logo: new URL(getPath('logo.png'), siteUrl).href,
 	sameAs: ['https://x.com/300Fragen'],
 };
 const websiteSchema = {
-	'@context': 'https://schema.org',
 	'@type': 'WebSite',
+	'@id': websiteId,
 	name: 'Leben in Deutschland',
-	url: homeUrl,
+	alternateName: [
+		'Leben in Deutschland Test',
+		'Einbürgerungstest 2026',
+		'LID Einbürgerung',
+	],
+	url: primaryHomeUrl,
 	inLanguage: lang,
 	description: seoDescription,
-	publisher: {
-		'@type': 'Organization',
-		name: 'Leben in Deutschland',
-	},
+	publisher: { '@id': organizationId },
 };
 const appSchema = {
-	'@context': 'https://schema.org',
 	'@type': 'SoftwareApplication',
-	name: 'Leben in Deutschland 2026',
+	'@id': appId,
+	name: MOBILE_APP_NAME,
+	alternateName: MOBILE_APP_ALTERNATE_NAMES,
 	applicationCategory: 'EducationalApplication',
 	operatingSystem: 'iOS, Android',
 	url: homeUrl,
+	publisher: { '@id': organizationId },
 	inLanguage: lang,
+	description: seoDescription,
 	offers: {
 		'@type': 'Offer',
 		price: '0',
 		priceCurrency: 'EUR',
 	},
 	downloadUrl: [
-		'https://apps.apple.com/app/leben-in-deutschland-2026/id6723899981',
-		'https://play.google.com/store/apps/details?id=com.einbuergerungapp',
+		APP_STORE_URL,
+		PLAY_STORE_URL,
 	],
+	sameAs: [APP_STORE_URL, PLAY_STORE_URL],
 };
 const stateListSchema = {
-	'@context': 'https://schema.org',
 	'@type': 'ItemList',
+	'@id': `${homeUrl}#bundesland-fragen`,
 	name: 'Bundesland Fragen',
 	itemListElement: stateLinks.map((state, index) => ({
 		'@type': 'ListItem',
@@ -113,6 +156,34 @@ const stateListSchema = {
 		name: `${state.name} Fragen`,
 		url: new URL(getPath(`${lang}/${state.slug}-fragen/`), siteUrl).href,
 	})),
+};
+const sitelinksSchema = {
+	'@type': 'ItemList',
+	'@id': `${homeUrl}#wichtige-seiten`,
+	name: 'Wichtige Seiten',
+	itemListElement: importantPages.map((page, index) => ({
+		'@type': 'ListItem',
+		position: index + 1,
+		name: page.label,
+		description: page.description,
+		url: new URL(page.href, siteUrl).href,
+	})),
+};
+const breadcrumbSchema = {
+	'@type': 'BreadcrumbList',
+	'@id': `${homeUrl}#breadcrumb`,
+	itemListElement: [
+		{
+			'@type': 'ListItem',
+			position: 1,
+			name: 'Leben in Deutschland',
+			item: homeUrl,
+		},
+	],
+};
+const homeSchemaGraph = {
+	'@context': 'https://schema.org',
+	'@graph': [organizationSchema, websiteSchema, appSchema, stateListSchema, sitelinksSchema, breadcrumbSchema],
 };
 ---
 
@@ -122,7 +193,7 @@ const stateListSchema = {
 	keywords={seoKeywords}
 	image="/logo.png"
 	canonical={getPath(`${lang}/`)}
-	jsonLd={[organizationSchema, websiteSchema, appSchema, stateListSchema]}
+	jsonLd={homeSchemaGraph}
 	lang={lang}
 >
 	<!-- Navigation -->
@@ -147,7 +218,7 @@ const stateListSchema = {
 
 			<div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12 lg:mb-14">
 				<a
-					href="https://apps.apple.com/app/leben-in-deutschland-2026/id6723899981"
+					href={APP_STORE_URL}
 					data-umami-event="app-store-click"
 					data-umami-event-location="home-hero"
 					data-umami-event-lang={lang}
@@ -162,7 +233,7 @@ const stateListSchema = {
 					</div>
 				</a>
 				<a
-					href="https://play.google.com/store/apps/details?id=com.einbuergerungapp"
+					href={PLAY_STORE_URL}
 					data-umami-event="play-store-click"
 					data-umami-event-location="home-hero"
 					data-umami-event-lang={lang}
@@ -302,6 +373,40 @@ const stateListSchema = {
 				noProgress: t("home.continue_no_progress"),
 			}}
 		/>
+
+		<section id="wichtige-seiten" class="py-12 md:py-14 bg-slate-50/80">
+			<div class="container mx-auto px-4">
+				<div class="max-w-6xl mx-auto">
+					<div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-6">
+						<div>
+							<p class="text-xs font-bold uppercase tracking-widest text-blue-700 mb-2">
+								Leben in Deutschland 2026
+							</p>
+							<h2 class="text-2xl md:text-3xl font-bold text-gray-900">
+								{isGerman ? 'Direkt zum Einbürgerungstest üben' : t("features.title")}
+							</h2>
+						</div>
+						<p class="text-sm md:text-base text-gray-600 max-w-2xl">
+							{isGerman
+								? 'Die wichtigsten Bereiche der Vorbereitung sind hier direkt verlinkt, damit Sie schneller zur passenden Übung finden.'
+								: heroDescription}
+						</p>
+					</div>
+
+					<nav aria-label={isGerman ? 'Wichtige Seiten' : 'Important pages'} class="grid gap-3 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
+						{importantPages.map((page) => (
+							<a
+								href={page.href}
+								class="group rounded-lg border border-slate-200 bg-white p-4 shadow-sm transition-colors hover:border-blue-200 hover:bg-blue-50/60"
+							>
+								<span class="block text-sm font-bold text-gray-900 group-hover:text-blue-700">{page.label}</span>
+								<span class="mt-2 block text-xs leading-relaxed text-gray-600">{page.description}</span>
+							</a>
+						))}
+					</nav>
+				</div>
+			</div>
+		</section>
 
 		<section id="bundesland-fragen" class="py-14 md:py-16">
 			<div class="container mx-auto px-4">

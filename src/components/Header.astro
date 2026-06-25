@@ -11,7 +11,7 @@ interface Props {
 const { lang } = Astro.props as Props;
 const t = useTranslations(lang as UiLanguage);
 const currentPath = Astro.url.pathname;
-const appDownloadHref = 'https://apps.apple.com/app/leben-in-deutschland-2026/id6723899981';
+const appDownloadHref = getPath(`${lang}/app`);
 
 const navLinks = [
   { href: getPath(`${lang}/frage/1`), label: t('home.start_quiz'), destination: 'questions' },
@@ -65,9 +65,7 @@ const isActive = (href: string) => currentPath === href || currentPath.startsWit
       <div class="flex items-center gap-2.5">
         <a
           href={appDownloadHref}
-          target="_blank"
-          rel="noopener noreferrer"
-          data-umami-event="app-store-click"
+          data-umami-event="app-page-opened"
           data-umami-event-location="desktop-header"
           data-umami-event-lang={lang}
           class="hidden sm:inline-flex items-center rounded-xl bg-blue-600 px-3.5 py-2 text-xs font-semibold text-white hover:bg-blue-700 transition-colors shadow-sm"
@@ -116,9 +114,7 @@ const isActive = (href: string) => currentPath === href || currentPath.startsWit
     <div class="px-4 py-5 space-y-2">
       <a
         href={appDownloadHref}
-        target="_blank"
-        rel="noopener noreferrer"
-        data-umami-event="app-store-click"
+        data-umami-event="app-page-opened"
         data-umami-event-location="mobile-drawer"
         data-umami-event-lang={lang}
         class="block px-4 py-3 rounded-xl font-semibold text-white bg-blue-600 hover:bg-blue-700 transition-colors"
