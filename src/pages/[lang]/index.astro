@@ -53,6 +53,15 @@ const seoDescription = isGerman
 const seoKeywords = isGerman
 	? [
 		'einbürgerungstest 2026 online üben',
+		'leben in deutschland online',
+		'leben in deutschland digital',
+		'leben in deutschland online test',
+		'leben in deutschland online test üben',
+		'leben in deutschland digital test',
+		'einbürgerungstest online',
+		'einbürgerungstest digital',
+		'einbürgerungstest online test',
+		'einbürgerungstest online üben',
 		'leben in deutschland',
 		'einbürgerung',
 		'einbürgerungstest',
@@ -80,6 +89,16 @@ const importantPages = [
 		label: isGerman ? 'Einbürgerungstest 2026 online üben' : t("home.start_quiz"),
 		description: isGerman ? 'Alle 300 offiziellen BAMF-Fragen Schritt für Schritt trainieren.' : heroDescription,
 		href: getPath(`${lang}/frage/1`),
+	},
+	{
+		label: isGerman ? 'Leben in Deutschland online' : 'Online practice',
+		description: isGerman ? 'Digital lernen, Online-Test üben und direkt zur Prüfungssimulation wechseln.' : heroDescription,
+		href: getPath(`${lang}/leben-in-deutschland-online`),
+	},
+	{
+		label: isGerman ? 'Einbürgerungstest online üben' : 'Online naturalization test',
+		description: isGerman ? 'Einbürgerungstest digital trainieren: Fragen, Testmodus und App.' : t("features.exam.desc"),
+		href: getPath(`${lang}/einbuergerungstest-online`),
 	},
 	{
 		label: isGerman ? 'Prüfungssimulation mit 33 Fragen' : t("home.start_exam"),
@@ -118,6 +137,9 @@ const websiteSchema = {
 		'Leben in Deutschland Test',
 		'Einbürgerungstest 2026',
 		'LID Einbürgerung',
+		'Leben in Deutschland online',
+		'Einbürgerungstest online',
+		'Einbürgerungstest digital',
 	],
 	url: primaryHomeUrl,
 	inLanguage: lang,
@@ -393,7 +415,7 @@ const homeSchemaGraph = {
 						</p>
 					</div>
 
-					<nav aria-label={isGerman ? 'Wichtige Seiten' : 'Important pages'} class="grid gap-3 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
+					<nav aria-label={isGerman ? 'Wichtige Seiten' : 'Important pages'} class="grid gap-3 md:grid-cols-2 lg:grid-cols-4">
 						{importantPages.map((page) => (
 							<a
 								href={page.href}

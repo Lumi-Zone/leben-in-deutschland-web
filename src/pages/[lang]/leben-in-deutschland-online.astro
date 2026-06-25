@@ -1,0 +1,272 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import { SUPPORTED_LANGUAGES, type SupportedLang } from '../../types/language';
+import { getPath } from '../../utils/navigation';
+import { APP_STORE_URL, PLAY_STORE_URL } from '../../utils/appLinks';
+
+export function getStaticPaths() {
+  return SUPPORTED_LANGUAGES.map((lang) => ({ params: { lang }, props: { lang } }));
+}
+
+const { lang } = Astro.props as { lang: SupportedLang };
+const isGerman = lang === 'de';
+const siteUrl = Astro.site || 'https://lid-einbuergerung.de';
+const pageUrl = new URL(getPath(`${lang}/leben-in-deutschland-online/`), siteUrl).href;
+const homeUrl = new URL(getPath(`${lang}/`), siteUrl).href;
+const questionUrl = getPath(`${lang}/frage/1`);
+const examUrl = getPath(`${lang}/exam`);
+const appUrl = getPath(`${lang}/app`);
+
+const pageTitle = isGerman
+  ? 'Leben in Deutschland online üben | Digitaler Test 2026'
+  : 'Practice Leben in Deutschland Online | Digital Test 2026';
+const pageDescription = isGerman
+  ? 'Leben in Deutschland online und digital üben: 300 BAMF-Fragen, Bundesland-Fragen, Online-Test, Prüfungssimulation und App für iOS und Android.'
+  : 'Practice the Leben in Deutschland test online with official questions, state questions, digital exam simulation, and mobile app access.';
+const pageKeywords = isGerman
+  ? [
+      'leben in deutschland online',
+      'leben in deutschland digital',
+      'leben in deutschland online test',
+      'leben in deutschland online test üben',
+      'leben in deutschland digital test',
+      'leben in deutschland test online',
+      'leben in deutschland test digital',
+      'bamf leben in deutschland online',
+    ].join(', ')
+  : 'Leben in Deutschland online, digital test, online practice, German naturalization test';
+
+const benefits = isGerman
+  ? [
+      {
+        title: 'Online lernen',
+        text: 'Starten Sie direkt im Browser mit den offiziellen Fragen und passenden Antwortmöglichkeiten.',
+      },
+      {
+        title: 'Digitaler Testmodus',
+        text: 'Üben Sie mit zufälligen Fragen, Zeitgefühl und direkter Auswertung wie in einer Prüfungssimulation.',
+      },
+      {
+        title: 'App für unterwegs',
+        text: 'Lernen Sie zusätzlich mobil auf iOS und Android, wenn Sie lieber am Smartphone üben.',
+      },
+    ]
+  : [
+      {
+        title: 'Practice online',
+        text: 'Start directly in the browser with official questions and answer options.',
+      },
+      {
+        title: 'Digital test mode',
+        text: 'Use random questions, time pressure, and instant feedback for exam-style practice.',
+      },
+      {
+        title: 'Mobile app',
+        text: 'Continue practicing on iOS and Android when learning on your phone is easier.',
+      },
+    ];
+
+const faqItems = isGerman
+  ? [
+      {
+        question: 'Kann ich Leben in Deutschland online üben?',
+        answer: 'Ja. Sie können die offiziellen Fragen direkt online üben und danach mit einer digitalen Prüfungssimulation trainieren.',
+      },
+      {
+        question: 'Was ist ein Leben in Deutschland Online Test?',
+        answer: 'Ein Online Test stellt Ihnen die Fragen digital im Browser bereit. So können Sie Antworten prüfen, Fehler wiederholen und den Testmodus vorbereiten.',
+      },
+      {
+        question: 'Gibt es einen digitalen Leben in Deutschland Test für das Smartphone?',
+        answer: 'Ja. Neben der Web-Version können Sie die App für iOS und Android nutzen und unterwegs weiterlernen.',
+      },
+    ]
+  : [
+      {
+        question: 'Can I practice Leben in Deutschland online?',
+        answer: 'Yes. You can practice official questions online and use a digital exam simulation afterwards.',
+      },
+      {
+        question: 'What is a digital Leben in Deutschland test?',
+        answer: 'It is browser-based practice with questions, answer checking, and exam-style preparation.',
+      },
+      {
+        question: 'Is there a mobile app?',
+        answer: 'Yes. The app is available for iOS and Android.',
+      },
+    ];
+
+const pageSchema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebPage',
+      '@id': `${pageUrl}#webpage`,
+      name: pageTitle,
+      description: pageDescription,
+      url: pageUrl,
+      inLanguage: lang,
+    },
+    {
+      '@type': 'LearningResource',
+      '@id': `${pageUrl}#learning-resource`,
+      name: pageTitle,
+      description: pageDescription,
+      url: pageUrl,
+      inLanguage: lang,
+      learningResourceType: ['Practice test', 'Online course', 'Quiz'],
+      educationalLevel: 'adult education',
+      teaches: isGerman
+        ? ['Leben in Deutschland online', 'Leben in Deutschland digital', 'Leben in Deutschland Online Test']
+        : ['Leben in Deutschland online practice', 'Digital test preparation'],
+    },
+    {
+      '@type': 'FAQPage',
+      '@id': `${pageUrl}#faq`,
+      mainEntity: faqItems.map((item) => ({
+        '@type': 'Question',
+        name: item.question,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: item.answer,
+        },
+      })),
+    },
+    {
+      '@type': 'BreadcrumbList',
+      '@id': `${pageUrl}#breadcrumb`,
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: 'Leben in Deutschland',
+          item: homeUrl,
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: isGerman ? 'Leben in Deutschland online' : 'Online practice',
+          item: pageUrl,
+        },
+      ],
+    },
+  ],
+};
+---
+
+<Layout
+  title={pageTitle}
+  description={pageDescription}
+  keywords={pageKeywords}
+  canonical={getPath(`${lang}/leben-in-deutschland-online/`)}
+  image="/og/og-default.png"
+  jsonLd={pageSchema}
+  lang={lang}
+>
+  <Header lang={lang} />
+
+  <main id="main-content" class="app-page">
+    <section class="bg-white border-b border-slate-100">
+      <div class="container mx-auto px-4 py-12 md:py-16">
+        <div class="grid gap-10 lg:grid-cols-[minmax(0,1fr)_380px] lg:items-center">
+          <div>
+            <p class="text-xs font-bold uppercase tracking-widest text-blue-700 mb-3">
+              {isGerman ? 'Digital vorbereiten' : 'Digital preparation'}
+            </p>
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-950 leading-tight mb-5">
+              {isGerman ? 'Leben in Deutschland online üben' : 'Practice Leben in Deutschland online'}
+            </h1>
+            <p class="text-lg md:text-xl text-slate-600 leading-relaxed max-w-3xl mb-8">
+              {isGerman
+                ? 'Trainieren Sie den Leben in Deutschland Test online, digital und ohne Anmeldung: offizielle Fragen, Bundesland-Fragen, Online-Test und realistische Prüfungssimulation.'
+                : 'Train for the Leben in Deutschland test online with official questions, state questions, and a realistic digital exam simulation.'}
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-3">
+              <a href={questionUrl} class="inline-flex items-center justify-center rounded-lg bg-blue-600 px-5 py-3 font-bold text-white hover:bg-blue-700">
+                {isGerman ? 'Online üben starten' : 'Start online practice'}
+              </a>
+              <a href={examUrl} class="inline-flex items-center justify-center rounded-lg border border-slate-300 bg-white px-5 py-3 font-bold text-slate-900 hover:bg-slate-50">
+                {isGerman ? 'Online-Test simulieren' : 'Simulate online test'}
+              </a>
+            </div>
+          </div>
+
+          <aside class="rounded-lg border border-slate-200 bg-slate-50 p-6">
+            <h2 class="text-xl font-extrabold text-slate-950 mb-4">
+              {isGerman ? 'Schneller Einstieg' : 'Quick start'}
+            </h2>
+            <div class="space-y-3">
+              {[
+                { label: isGerman ? '300 offizielle Fragen' : '300 official questions', value: 'BAMF' },
+                { label: isGerman ? '33 Fragen im Testmodus' : '33 questions in exam mode', value: 'Online' },
+                { label: isGerman ? 'iOS & Android App' : 'iOS & Android app', value: 'App' },
+              ].map((item) => (
+                <div class="flex items-center justify-between gap-3 rounded-lg bg-white px-4 py-3 border border-slate-200">
+                  <span class="text-sm text-slate-600">{item.label}</span>
+                  <strong class="text-sm text-slate-950">{item.value}</strong>
+                </div>
+              ))}
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-12 bg-slate-50">
+      <div class="container mx-auto px-4">
+        <div class="grid gap-4 md:grid-cols-3">
+          {benefits.map((benefit) => (
+            <article class="rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
+              <h2 class="text-lg font-bold text-slate-950 mb-2">{benefit.title}</h2>
+              <p class="text-sm leading-relaxed text-slate-600">{benefit.text}</p>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="py-12 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="max-w-3xl">
+          <h2 class="text-3xl font-extrabold text-slate-950 mb-4">
+            {isGerman ? 'Leben in Deutschland Online Test üben' : 'Practice with an online test'}
+          </h2>
+          <p class="text-slate-600 leading-relaxed mb-5">
+            {isGerman
+              ? 'Wenn Sie nach "leben in deutschland online", "leben in deutschland digital" oder "leben in deutschland online test üben" suchen, finden Sie hier den direkten Einstieg: erst Fragen lernen, dann den digitalen Testmodus starten und anschließend die App für Wiederholungen nutzen.'
+              : 'This page gives you a direct path from question practice to exam simulation and mobile review.'}
+          </p>
+          <div class="flex flex-col sm:flex-row gap-3">
+            <a href={appUrl} class="inline-flex items-center justify-center rounded-lg bg-slate-950 px-5 py-3 font-bold text-white hover:bg-slate-800">
+              {isGerman ? 'App ansehen' : 'View app'}
+            </a>
+            <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-lg border border-slate-300 px-5 py-3 font-bold text-slate-900 hover:bg-slate-50">
+              App Store
+            </a>
+            <a href={PLAY_STORE_URL} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-lg border border-slate-300 px-5 py-3 font-bold text-slate-900 hover:bg-slate-50">
+              Google Play
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-12 bg-slate-50">
+      <div class="container mx-auto px-4">
+        <div class="max-w-3xl">
+          <h2 class="text-2xl font-extrabold text-slate-950 mb-5">FAQ</h2>
+          <div class="space-y-3">
+            {faqItems.map((item) => (
+              <details class="rounded-lg border border-slate-200 bg-white p-5">
+                <summary class="cursor-pointer text-base font-bold text-slate-950">{item.question}</summary>
+                <p class="mt-3 text-sm leading-relaxed text-slate-600">{item.answer}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>

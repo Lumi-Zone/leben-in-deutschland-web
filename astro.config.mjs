@@ -25,6 +25,7 @@ const sitemapLocales = {
 const personalToolRoutes = new Set(['favorites', 'progress', 'focus']);
 const legalRoutesWithGermanAndEnglish = new Set(['datenschutz', 'terms-of-service', 'subscription-terms']);
 const localizedSupportLanguages = new Set(['de', 'en', 'tr', 'ar']);
+const seoLandingRoutes = new Set(['leben-in-deutschland-online', 'einbuergerungstest-online']);
 const reactJsxDevRuntimeShim = fileURLToPath(new URL('./src/shims/react-jsx-dev-runtime.js', import.meta.url));
 const { WEEKLY, MONTHLY, YEARLY } = ChangeFreqEnum;
 
@@ -78,6 +79,10 @@ function serializeSitemapItem(item) {
 
   if (route === 'app') {
     return { ...item, priority: 0.85, changefreq: MONTHLY };
+  }
+
+  if (seoLandingRoutes.has(route)) {
+    return { ...item, priority: 0.82, changefreq: MONTHLY };
   }
 
   if (route === 'frage' || pathname.endsWith('-fragen')) {
