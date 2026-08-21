@@ -18,12 +18,32 @@ export type QuestionTranslations = {
 
 export interface QuestionSessionItem {
     id: number;
+    imagePath: string | null;
     questionDe: string;
     questionLocalized: string;
     optionsDe: string[];
     optionsLocalized: string[];
     correctIndex: number;
 }
+
+const STATE_IMAGE_PREFIXES: Record<string, string> = {
+    'Baden-Württemberg': 'bw',
+    Bayern: 'bayern',
+    Berlin: 'berlin',
+    Brandenburg: 'brandenburg',
+    Bremen: 'bremen',
+    Hamburg: 'hamburg',
+    Hessen: 'hessen',
+    'Mecklenburg-Vorpommern': 'mv',
+    Niedersachsen: 'niedersachsen',
+    'Nordrhein-Westfalen': 'nrw',
+    'Rheinland-Pfalz': 'rp',
+    Saarland: 'saarland',
+    Sachsen: 'sachsen',
+    'Sachsen-Anhalt': 'sa',
+    'Schleswig-Holstein': 'sh',
+    Thüringen: 'thuringen',
+};
 
 function readText(question: DynamicQuestionRecord, key: string): string {
     const value = question[key];
@@ -52,6 +72,22 @@ export function getLocalizedQuestionText(question: QuestionRecord, lang: Support
     const dynamicQuestion = question as DynamicQuestionRecord;
     const localized = readText(dynamicQuestion, `q_${lang}`);
     return localized || question.q_de || '';
+}
+
+export function getQuestionImagePath(question: QuestionRecord): string | null {
+    if (!question.image || question.image === '-') return null;
+
+    if (question.area_code === 'land') {
+        const statePrefix = STATE_IMAGE_PREFIXES[question.thema];
+        const stateQuestionNumber = question.id % 10;
+        if (!statePrefix || (stateQuestionNumber !== 1 && stateQuestionNumber !== 8)) {
+            return null;
+        }
+
+        return `/question-images/states/${statePrefix}${stateQuestionNumber}.png`;
+    }
+
+    return `/question-images/general/deutschland${question.id}.png`;
 }
 
 export function buildQuestionTranslations(
@@ -89,6 +125,7 @@ export function buildQuestionSessionItem(
 
     return {
         id: question.id,
+        imagePath: getQuestionImagePath(question),
         questionDe: question.q_de || '',
         questionLocalized: getLocalizedQuestionText(question, lang),
         optionsDe: readGermanOptions(dynamicQuestion),

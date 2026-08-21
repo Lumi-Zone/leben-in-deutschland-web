@@ -5,9 +5,11 @@ import { isQuestionFavorite, toggleFavorite } from '../utils/favorites';
 import { recordQuestionAttempt } from '../utils/questionStats';
 import { recordHabitAttempt } from '../utils/learningHabits';
 import { trackEvent } from '../utils/analytics';
+import QuestionImage from './QuestionImage';
 
 interface Props {
     id: number;
+    imagePath?: string | null;
     correctIndex: number;
     data: {
         de: {
@@ -48,6 +50,7 @@ interface Props {
 
 export default function QuestionCard({
     id,
+    imagePath,
     correctIndex,
     data,
     prevId,
@@ -298,6 +301,11 @@ export default function QuestionCard({
                         </h2>
                     )}
                 </div>
+
+                <QuestionImage
+                    src={imagePath}
+                    alt={transContent?.question || deContent.question}
+                />
 
                 <div className="space-y-3" role="radiogroup" aria-label={deContent.question}>
                     {deContent.options.map((deOption, idx) => {

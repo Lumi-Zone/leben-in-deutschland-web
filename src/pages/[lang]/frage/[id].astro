@@ -8,6 +8,7 @@ import { SUPPORTED_LANGUAGES, type SupportedLang } from '../../../types/language
 import { getPath } from '../../../utils/navigation';
 import {
   buildQuestionTranslations,
+  getQuestionImagePath,
   parseCorrectIndex,
   type QuestionTranslationContent,
 } from '../../../utils/questions';
@@ -16,6 +17,7 @@ import { truncateText } from '../../../utils/seo';
 interface QuestionPageProps {
   question: {
     id: number;
+    imagePath: string | null;
     correct_index: number;
     area: string;
     area_code: string;
@@ -50,6 +52,7 @@ export function getStaticPaths() {
         props: { 
           question: {
               id: q.id,
+              imagePath: getQuestionImagePath(q),
               correct_index: correctIndex,
               area: q.area,
               area_code: q.area_code,
@@ -169,6 +172,7 @@ const learningResourceSchema = {
       <QuestionCard 
         client:load 
         id={question.id} 
+        imagePath={question.imagePath}
         data={question.translations}
         correctIndex={question.correct_index}
         prevId={question.prevId}

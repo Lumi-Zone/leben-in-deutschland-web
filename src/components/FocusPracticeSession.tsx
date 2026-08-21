@@ -5,6 +5,7 @@ import { recordHabitAttempt } from '../utils/learningHabits';
 import { readQuestionStats, recordQuestionAttempt } from '../utils/questionStats';
 import { trackEvent } from '../utils/analytics';
 import type { QuestionSessionItem } from '../utils/questions';
+import QuestionImage from './QuestionImage';
 
 interface Labels {
     title: string;
@@ -298,6 +299,11 @@ export default function FocusPracticeSession({
                         {currentQuestion.questionLocalized}
                     </p>
                 )}
+
+                <QuestionImage
+                    src={currentQuestion.imagePath}
+                    alt={currentQuestion.questionLocalized || currentQuestion.questionDe}
+                />
 
                 <div className="space-y-3" role="radiogroup" aria-label={`Question ${currentQuestion.id} options`}>
                     {currentQuestion.optionsDe.map((optionDe, index) => {
