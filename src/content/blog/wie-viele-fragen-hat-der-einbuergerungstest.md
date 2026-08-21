@@ -1,5 +1,6 @@
 ---
 title: "Wie viele Fragen hat der Einbürgerungstest? 33 Fragen einfach erklärt"
+seoTitle: "Wie viele Fragen hat der Einbürgerungstest?"
 description: "Der Einbürgerungstest hat 33 Fragen. Hier erfahren Sie, wie sie sich zusammensetzen und wie Sie richtig lernen."
 pubDate: 2026-05-27
 updatedDate: 2026-05-27

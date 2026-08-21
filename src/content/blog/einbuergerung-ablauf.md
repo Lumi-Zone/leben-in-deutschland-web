@@ -1,5 +1,6 @@
 ---
 title: "Einbürgerung 2026: Voraussetzungen, Ablauf und Kosten einfach erklärt"
+seoTitle: "Einbürgerung 2026: Voraussetzungen, Ablauf, Kosten"
 description: "Was brauchen Sie für die Einbürgerung? Voraussetzungen, Antrag, Kosten und Einbürgerungstest einfach erklärt."
 pubDate: 2026-02-13
 updatedDate: 2026-05-27

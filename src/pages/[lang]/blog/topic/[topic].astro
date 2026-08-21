@@ -4,27 +4,27 @@ import Header from '../../../../components/Header.astro';
 import { getCollection } from 'astro:content';
 import { useTranslations } from '../../../../i18n/ui';
 import { getPath } from '../../../../utils/navigation';
-import { SUPPORTED_LANGUAGES, type SupportedLang } from '../../../../types/language';
+import type { SupportedLang } from '../../../../types/language';
+import { BLOG_TOPICS, BLOG_TOPIC_ALIASES, getBlogTopicBySlug, getBlogTopicsForTags } from '../../../../data/blogTopics';
 import {
   getBlogImageAlt,
   getOptimizedImageSizes,
   getOptimizedImageSrcset,
   getOptimizedImageUrl,
-  normalizeKeyword,
   resolveBlogImage,
 } from '../../../../utils/blog';
 
 export async function getStaticPaths() {
-  const posts = await getCollection('blog');
-  const topics = new Set<string>();
-
-  posts.forEach((post) => {
-    (post.data.tags ?? []).forEach((tag) => topics.add(normalizeKeyword(tag)));
-  });
-
-  return SUPPORTED_LANGUAGES.flatMap((lang) =>
-    Array.from(topics).map((topic) => ({ params: { lang, topic }, props: { lang, topic } }))
-  );
+  return [
+    ...BLOG_TOPICS.map((topic) => ({
+      params: { lang: 'de', topic: topic.slug },
+      props: { lang: 'de' as SupportedLang, topic: topic.slug },
+    })),
+    ...BLOG_TOPIC_ALIASES.map((alias) => ({
+      params: { lang: 'de', topic: alias.slug },
+      props: { lang: 'de' as SupportedLang, topic: alias.topicSlug },
+    })),
+  ];
 }
 
 const { lang, topic } = Astro.props as { lang: SupportedLang; topic: string };
@@ -48,15 +48,12 @@ const localeByLang: Record<string, string> = {
 const locale = localeByLang[lang] || 'de-DE';
 const dateFormatter = new Intl.DateTimeFormat(locale, { year: 'numeric', month: 'long', day: 'numeric' });
 
-const allTopicLabels = new Map<string, string>();
-posts.forEach((post) => {
-  (post.data.tags ?? []).forEach((tag) => allTopicLabels.set(normalizeKeyword(tag), tag));
-});
-
-const topicLabel = allTopicLabels.get(topic) ?? topic;
+const topicData = getBlogTopicBySlug(topic);
+if (!topicData) throw new Error(`Unknown blog topic: ${topic}`);
+const isLegacyTopicUrl = Astro.params.topic !== topicData.slug;
 
 const topicPosts = posts
-  .filter((post) => (post.data.tags ?? []).map((tag) => normalizeKeyword(tag)).includes(topic))
+  .filter((post) => getBlogTopicsForTags(post.data.tags).some((entry) => entry.slug === topic))
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
   .map((post) => {
     const image = resolveBlogImage(post);
@@ -95,7 +92,7 @@ const breadcrumbSchema = {
     {
       '@type': 'ListItem',
       position: 3,
-      name: topicLabel,
+      name: topicData.name,
       item: canonicalUrl,
     },
   ],
@@ -103,15 +100,20 @@ const breadcrumbSchema = {
 ---
 
 <Layout
-  title={`${topicLabel} - ${t('blog.title')}`}
-  description={`Alle Beiträge zum Thema ${topicLabel} rund um Einbürgerungstest und Leben in Deutschland.`}
+  title={`${topicData.name} | Einbürgerungstest Ratgeber`}
+  description={topicData.description}
   canonical={canonicalPath}
-  keywords={`${topicLabel}, Einbürgerungstest, Leben in Deutschland, Blog`}
-  noindex={!isPrimaryBlogLocale}
+  keywords={`${topicData.name}, Einbürgerungstest, Leben in Deutschland, Blog`}
+  noindex={!isPrimaryBlogLocale || topicPosts.length < 2 || isLegacyTopicUrl}
   disableAlternates={true}
   lang={lang}
 >
   <Header lang={lang} />
+  {isLegacyTopicUrl && (
+    <script is:inline define:vars={{ targetUrl: canonicalUrl }}>
+      window.location.replace(targetUrl);
+    </script>
+  )}
   <script is:inline type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
 
   <main class="bg-slate-50 min-h-screen py-8 md:py-10">
@@ -120,7 +122,8 @@ const breadcrumbSchema = {
         <a href={getPath(`${lang}/blog`)} class="inline-flex items-center text-sm font-medium text-blue-700 hover:underline">
           ← {t('blog.back')}
         </a>
-        <h1 class="mt-3 text-3xl md:text-5xl font-bold text-slate-900 tracking-tight">{topicLabel}</h1>
+        <h1 class="mt-3 text-3xl md:text-5xl font-bold text-slate-900 tracking-tight">{topicData.name}</h1>
+        <p class="mt-3 max-w-3xl text-slate-600">{topicData.description}</p>
         <p class="mt-3 text-slate-600">
           {topicPosts.length} Beiträge in dieser Kategorie.
         </p>

@@ -1,5 +1,6 @@
 ---
 title: "Einbürgerungstest auf Ukrainisch 2026: einfach erklärt | просте пояснення"
+seoTitle: "Einbürgerungstest auf Ukrainisch 2026 erklärt"
 description: "Einbürgerungstest auf Ukrainisch: 33 Fragen, 17 richtige Antworten, 60 Minuten und einfache Vorbereitung erklärt."
 pubDate: 2026-05-11
 updatedDate: 2026-05-27

@@ -1,5 +1,6 @@
 ---
 title: "Wahlen in Deutschland einfach erklärt: Erststimme, Zweitstimme, 5%-Hürde"
+seoTitle: "Wahlen: Erststimme, Zweitstimme und 5%-Hürde"
 description: "Wie funktionieren Wahlen in Deutschland? Erststimme, Zweitstimme, Wahlrecht und 5%-Hürde einfach erklärt."
 pubDate: 2025-10-15
 updatedDate: 2026-05-27

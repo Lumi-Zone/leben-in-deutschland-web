@@ -1,5 +1,6 @@
 ---
 title: "Parteien in Deutschland einfach erklärt: CDU, SPD, Grüne, FDP und mehr"
+seoTitle: "Parteien in Deutschland: CDU, SPD, Grüne und mehr"
 description: "Welche Parteien gibt es in Deutschland? Ein einfacher Überblick für Alltag, Politik und Einbürgerungstest."
 pubDate: 2025-12-25
 updatedDate: 2026-05-27

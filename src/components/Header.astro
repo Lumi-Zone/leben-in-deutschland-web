@@ -17,7 +17,7 @@ const navLinks = [
   { href: getPath(`${lang}/frage/1`), label: t('home.start_quiz'), destination: 'questions' },
   { href: getPath(`${lang}/exam`), label: t('features.exam.title'), destination: 'exam' },
   { href: getPath(`${lang}/support`), label: t('nav.support'), destination: 'support' },
-  { href: getPath(`${lang}/blog`), label: t('nav.blog'), destination: 'blog', featured: true },
+  { href: getPath('de/blog'), label: t('nav.blog'), destination: 'blog', featured: true },
 ];
 
 const isActive = (href: string) => currentPath === href || currentPath.startsWith(`${href}/`);

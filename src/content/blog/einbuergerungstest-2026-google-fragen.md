@@ -1,5 +1,6 @@
 ---
 title: "Einbürgerungstest 2026: 12 häufige Google-Fragen einfach beantwortet"
+seoTitle: "Einbürgerungstest 2026: 12 häufige Fragen"
 description: "Wie viele Fragen, wie viele richtige Antworten, Dauer und Kosten: Die wichtigsten Antworten zum Einbürgerungstest 2026."
 pubDate: 2026-05-27
 updatedDate: 2026-05-27

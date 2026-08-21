@@ -1,5 +1,6 @@
 ---
 title: "Wie lange dauert der Einbürgerungstest? 60 Minuten einfach erklärt"
+seoTitle: "Wie lange dauert der Einbürgerungstest?"
 description: "Der Einbürgerungstest dauert 60 Minuten. So teilen Sie die Zeit für 33 Fragen einfach und ruhig ein."
 pubDate: 2026-05-27
 updatedDate: 2026-05-27

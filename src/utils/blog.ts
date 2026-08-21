@@ -98,32 +98,3 @@ export function getOptimizedImageSrcset(image: string): string | undefined {
 export function getOptimizedImageSizes(): string {
   return '(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw';
 }
-
-export interface BlogFaqItem {
-  question: string;
-  answer: string;
-}
-
-export function extractFaqFromMarkdown(markdown: string): BlogFaqItem[] {
-  const faqHeaderMatch = markdown.match(
-    /##\s+(?:Häufige Fragen|Sık sorulan sorular|Частые вопросы|Поширені запитання|الأسئلة الشائعة)\s*\(FAQ\)([\s\S]*)/i
-  );
-  if (!faqHeaderMatch) return [];
-
-  const block = faqHeaderMatch[1];
-  const nextMainSection = block.search(/\n##\s+/);
-  const faqBlock = nextMainSection >= 0 ? block.slice(0, nextMainSection) : block;
-
-  const questionRegex = /###\s+(.+)\n([\s\S]*?)(?=\n###\s+|$)/g;
-  const items: BlogFaqItem[] = [];
-
-  let match = questionRegex.exec(faqBlock);
-  while (match) {
-    const question = match[1].trim();
-    const answer = match[2].replace(/\n+/g, ' ').replace(/\s+/g, ' ').trim();
-    if (question && answer) items.push({ question, answer });
-    match = questionRegex.exec(faqBlock);
-  }
-
-  return items;
-}

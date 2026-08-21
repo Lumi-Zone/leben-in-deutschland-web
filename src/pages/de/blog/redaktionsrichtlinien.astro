@@ -1,0 +1,61 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import Header from '../../../components/Header.astro';
+import { getPath } from '../../../utils/navigation';
+
+const canonicalPath = getPath('de/blog/redaktionsrichtlinien/');
+const siteUrl = Astro.site || 'https://lid-einbuergerung.de';
+const pageUrl = new URL(canonicalPath, siteUrl).href;
+const pageTitle = 'Redaktionsrichtlinien und Quellenstandard';
+const pageDescription = 'So recherchiert, prüft und aktualisiert die Redaktion Inhalte zum Einbürgerungstest und zur Einbürgerung in Deutschland.';
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: pageTitle,
+  description: pageDescription,
+  url: pageUrl,
+  inLanguage: 'de-DE',
+  publisher: {
+    '@type': 'Organization',
+    name: 'Leben in Deutschland',
+  },
+};
+---
+
+<Layout
+  title={pageTitle}
+  description={pageDescription}
+  canonical={canonicalPath}
+  jsonLd={schema}
+  disableAlternates={true}
+  lang="de"
+>
+  <Header lang="de" />
+
+  <main class="min-h-screen bg-slate-50 py-10 md:py-14">
+    <article class="container mx-auto max-w-4xl px-4">
+      <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm md:p-10">
+        <a href={getPath('de/blog')} class="text-sm font-semibold text-blue-700 hover:underline">← Zurück zum Blog</a>
+        <h1 class="mt-5 text-3xl font-extrabold tracking-tight text-slate-950 md:text-5xl">{pageTitle}</h1>
+        <p class="mt-5 text-lg leading-relaxed text-slate-600">{pageDescription}</p>
+
+        <div class="prose prose-lg mt-10 max-w-none prose-headings:text-slate-950 prose-p:text-slate-700 prose-li:text-slate-700 prose-a:text-blue-700">
+          <h2>Unsere Arbeitsweise</h2>
+          <p>Wir bereiten komplexe Prüfungs-, Integrations- und Einbürgerungsthemen in verständlicher Sprache auf. Angaben zu Testaufbau, Fragenkatalog und Prüfungsablauf gleichen wir vorrangig mit Veröffentlichungen des Bundesamts für Migration und Flüchtlinge ab.</p>
+
+          <h2>Quellenstandard</h2>
+          <p>Bei rechtlichen oder verfahrensbezogenen Themen bevorzugen wir Primärquellen wie Gesetze im Internet, BAMF und Veröffentlichungen anderer Bundesbehörden. Die wichtigsten offiziellen Ausgangsquellen werden am Ende jedes Beitrags sichtbar verlinkt.</p>
+
+          <h2>Aktualisierungen</h2>
+          <p>Beiträge tragen ein Veröffentlichungs- und, sofern sie inhaltlich überarbeitet wurden, ein Aktualisierungsdatum. Gesetzliche Vorgaben und behördliche Verfahren können sich dennoch kurzfristig ändern. Verbindlich sind immer die Angaben der zuständigen Behörde.</p>
+
+          <h2>Abgrenzung</h2>
+          <p>Unsere Inhalte dienen der allgemeinen Information und Prüfungsvorbereitung. Sie ersetzen keine individuelle Rechtsberatung und keine Auskunft einer Einbürgerungsbehörde.</p>
+
+          <h2>Korrekturen</h2>
+          <p>Hinweise auf sachliche Fehler oder veraltete Angaben können an <a href="mailto:cfstechmobile@gmail.com">cfstechmobile@gmail.com</a> gesendet werden. Nachvollziehbare Korrekturhinweise prüfen wir zeitnah.</p>
+        </div>
+      </div>
+    </article>
+  </main>
+</Layout>

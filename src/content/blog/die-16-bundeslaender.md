@@ -1,5 +1,6 @@
 ---
 title: "16 Bundesländer einfach erklärt: Wichtig für den Einbürgerungstest"
+seoTitle: "16 Bundesländer für den Einbürgerungstest"
 description: "Deutschland hat 16 Bundesländer. Hier lernen Sie die wichtigsten Begriffe für Einbürgerungstest und Alltag."
 pubDate: 2026-03-05
 updatedDate: 2026-05-27

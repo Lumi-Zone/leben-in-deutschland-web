@@ -4,7 +4,7 @@ import Header from '../../../../components/Header.astro';
 import { getCollection } from 'astro:content';
 import { useTranslations } from '../../../../i18n/ui';
 import { getPath } from '../../../../utils/navigation';
-import { SUPPORTED_LANGUAGES, type SupportedLang } from '../../../../types/language';
+import type { SupportedLang } from '../../../../types/language';
 import { getAllAuthors, getAuthorByName, getAuthorBySlug } from '../../../../data/blogAuthors';
 import {
   getBlogImageAlt,
@@ -21,9 +21,10 @@ export async function getStaticPaths() {
   const authorSlugs = new Set(authors.map((entry) => entry.slug));
   posts.forEach((post) => authorSlugs.add(toSlug(post.data.author)));
 
-  return SUPPORTED_LANGUAGES.flatMap((lang) =>
-    Array.from(authorSlugs).map((authorSlug) => ({ params: { lang, author: authorSlug }, props: { lang, author: authorSlug } }))
-  );
+  return Array.from(authorSlugs).map((authorSlug) => ({
+    params: { lang: 'de', author: authorSlug },
+    props: { lang: 'de' as SupportedLang, author: authorSlug },
+  }));
 }
 
 const { lang, author } = Astro.props as { lang: SupportedLang; author: string };
@@ -72,7 +73,7 @@ const canonicalUrl = new URL(canonicalPath, siteUrl).href;
 
 const authorSchema = {
   '@context': 'https://schema.org',
-  '@type': 'Person',
+  '@type': profile.entityType,
   name: profile.name,
   description: profile.bio,
   url: canonicalUrl,
@@ -102,6 +103,7 @@ const authorSchema = {
           {profile.role}
         </p>
         <p class="mt-4 text-slate-600 max-w-3xl">{profile.bio}</p>
+        <a href={getPath('de/blog/redaktionsrichtlinien')} class="mt-4 inline-flex text-sm font-semibold text-blue-700 hover:underline">Redaktionelle Richtlinien und Quellenstandard</a>
       </div>
 
       <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">

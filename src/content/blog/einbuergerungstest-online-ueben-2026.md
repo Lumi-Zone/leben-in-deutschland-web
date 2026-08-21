@@ -1,5 +1,6 @@
 ---
 title: "Einbürgerungstest online üben 2026: 14-Tage-Plan mit Originalfragen"
+seoTitle: "Einbürgerungstest online üben: 14-Tage-Plan"
 description: "Ein einfacher 14-Tage-Plan: Online üben mit Originalfragen, Bundesland-Fragen, Fehlerliste und Prüfungssimulation."
 pubDate: 2026-05-11
 updatedDate: 2026-05-27

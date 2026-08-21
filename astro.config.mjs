@@ -26,6 +26,18 @@ const personalToolRoutes = new Set(['favorites', 'progress', 'focus']);
 const legalRoutesWithGermanAndEnglish = new Set(['datenschutz', 'terms-of-service', 'subscription-terms']);
 const localizedSupportLanguages = new Set(['de', 'en', 'tr', 'ar']);
 const seoLandingRoutes = new Set(['leben-in-deutschland-online', 'einbuergerungstest-online']);
+const primaryBlogTopicRoutes = new Set([
+  'einbuergerungstest',
+  'lernen-vorbereitung',
+  'pruefung-anmeldung',
+  'einbuergerung-verfahren',
+  'recht-grundgesetz',
+  'politik-demokratie',
+  'gesellschaft-integration',
+  'sprache-b1',
+  'kosten-finanzen',
+  'bundeslaender-mehrsprachig',
+]);
 const reactJsxDevRuntimeShim = fileURLToPath(new URL('./src/shims/react-jsx-dev-runtime.js', import.meta.url));
 const { WEEKLY, MONTHLY, YEARLY } = ChangeFreqEnum;
 
@@ -56,6 +68,10 @@ function shouldIncludeInSitemap(pageUrl) {
   if (!hasSupportedLang) return true;
   if (personalToolRoutes.has(route)) return false;
   if (route === 'blog' && lang !== 'de') return false;
+  if (pathname.startsWith('/de/blog/topic/')) {
+    const topicSlug = pathname.split('/').filter(Boolean)[3] ?? '';
+    if (!primaryBlogTopicRoutes.has(topicSlug)) return false;
+  }
   if (route === 'impressum' && lang !== 'de') return false;
   if (route === 'support' && !localizedSupportLanguages.has(lang)) return false;
   if (legalRoutesWithGermanAndEnglish.has(route) && !['de', 'en'].includes(lang)) return false;

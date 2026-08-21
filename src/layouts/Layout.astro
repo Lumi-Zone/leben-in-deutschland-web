@@ -98,7 +98,9 @@ const languageMenuItems = languageCodes.map((languageCode) => ({
   code: languageCode,
   htmlLang: getSeoLanguageMeta(languageCode).htmlLang,
   label: languages[languageCode as keyof typeof languages],
-  href: getPath([languageCode, ...routeSegments].join('/')),
+  href: disableAlternates
+    ? getPath(`${languageCode}/`)
+    : getPath([languageCode, ...routeSegments].join('/')),
 }));
 const rtlLanguageCodes = new Set(['ar', 'fa', 'ps']);
 const documentDirection = rtlLanguageCodes.has(lang) ? 'rtl' : 'ltr';

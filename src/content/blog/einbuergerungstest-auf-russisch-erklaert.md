@@ -1,5 +1,6 @@
 ---
 title: "Einbürgerungstest auf Russisch 2026: einfach erklärt | простое объяснение"
+seoTitle: "Einbürgerungstest auf Russisch 2026 einfach erklärt"
 description: "Einbürgerungstest auf Russisch: 33 Fragen, 17 richtige Antworten, 60 Minuten und einfache Vorbereitung erklärt."
 pubDate: 2026-05-11
 updatedDate: 2026-05-11

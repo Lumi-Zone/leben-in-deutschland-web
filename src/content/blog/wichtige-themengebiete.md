@@ -1,5 +1,6 @@
 ---
 title: "Einbürgerungstest Themen 2026: Demokratie, Geschichte und Gesellschaft"
+seoTitle: "Einbürgerungstest Themen 2026: Was kommt dran?"
 description: "Welche Themen kommen im Einbürgerungstest vor? Demokratie, Geschichte, Gesellschaft und Bundesland-Fragen einfach erklärt."
 pubDate: 2025-10-08
 updatedDate: 2026-05-27

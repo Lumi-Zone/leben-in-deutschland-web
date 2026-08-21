@@ -1,5 +1,6 @@
 ---
 title: "Leben in Deutschland oder Einbürgerungstest: Unterschied einfach erklärt"
+seoTitle: "Leben in Deutschland vs. Einbürgerungstest"
 description: "Was ist der Unterschied zwischen Leben in Deutschland Test und Einbürgerungstest? Punkte, Zweck und Vorbereitung einfach erklärt."
 pubDate: 2025-10-29
 updatedDate: 2026-05-27

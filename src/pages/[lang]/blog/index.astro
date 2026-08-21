@@ -4,20 +4,20 @@ import { getCollection } from 'astro:content';
 import { useTranslations } from '../../../i18n/ui';
 import Header from '../../../components/Header.astro';
 import { getPath } from '../../../utils/navigation';
-import { SUPPORTED_LANGUAGES, type SupportedLang } from '../../../types/language';
+import type { SupportedLang } from '../../../types/language';
 import { getAuthorByName } from '../../../data/blogAuthors';
+import { BLOG_TOPICS, getBlogTopicsForTags } from '../../../data/blogTopics';
 import {
   getBlogImageAlt,
   getOptimizedImageSizes,
   getOptimizedImageSrcset,
   getOptimizedImageUrl,
   getReadingMinutes,
-  normalizeKeyword,
   resolveBlogImage,
 } from '../../../utils/blog';
 
 export async function getStaticPaths() {
-  return SUPPORTED_LANGUAGES.map((lang) => ({ params: { lang }, props: { lang } }));
+  return [{ params: { lang: 'de' }, props: { lang: 'de' as SupportedLang } }];
 }
 
 const { lang } = Astro.props as { lang: SupportedLang };
@@ -49,17 +49,12 @@ const locale = localeByLang[lang] || 'de-DE';
 const dateFormatter = new Intl.DateTimeFormat(locale, { year: 'numeric', month: 'long', day: 'numeric' });
 const monthFormatter = new Intl.DateTimeFormat(locale, { year: 'numeric', month: 'long' });
 
-const tagCounts = new Map<string, number>();
 const archiveCounts = new Map<string, { label: string; count: number }>();
 
 const normalizedPosts = sortedPosts.map((post) => {
   const image = resolveBlogImage(post);
   const tags = post.data.tags ?? [];
   const monthKey = post.data.pubDate.toISOString().slice(0, 7);
-
-  tags.forEach((tag) => {
-    tagCounts.set(tag, (tagCounts.get(tag) ?? 0) + 1);
-  });
 
   const archive = archiveCounts.get(monthKey);
   if (archive) {
@@ -82,25 +77,22 @@ const normalizedPosts = sortedPosts.map((post) => {
     dateLabel: dateFormatter.format(post.data.pubDate),
     monthKey,
     tags,
-    tagsNormalized: tags.map((tag) => normalizeKeyword(tag)),
+    topics: getBlogTopicsForTags(tags),
     url: getPath(`${lang}/blog/${post.slug}`),
     absoluteUrl: new URL(getPath(`${lang}/blog/${post.slug}/`), siteUrl).href,
   };
 });
 
-const topicItems = Array.from(tagCounts.entries())
-  .map(([name, count]) => ({
-    name,
-    count,
-    normalized: normalizeKeyword(name),
-  }))
-  .sort((a, b) => b.count - a.count || a.name.localeCompare(b.name, locale));
+const topicItems = BLOG_TOPICS.map((topic) => ({
+  ...topic,
+  count: normalizedPosts.filter((post) => post.topics.some((entry) => entry.slug === topic.slug)).length,
+})).filter((topic) => topic.count > 0);
 
 const archives = Array.from(archiveCounts.entries())
   .map(([key, value]) => ({ key, ...value }))
   .sort((a, b) => b.key.localeCompare(a.key));
 
-const primaryKeywords = topicItems.slice(0, 12).map((topic) => topic.name);
+const primaryKeywords = topicItems.map((topic) => topic.name);
 const seoKeywords = [
   ...primaryKeywords,
   'Einbürgerungstest',
@@ -217,7 +209,7 @@ const breadcrumbSchema = {
               <button
                 type="button"
                 class="px-3 py-1.5 rounded-full text-xs font-semibold border border-slate-200 bg-white text-slate-700 hover:border-blue-200 hover:text-blue-700 transition-colors"
-                data-topic-filter={topic.normalized}
+                data-topic-filter={topic.slug}
               >
                 {topic.name}
               </button>
@@ -238,7 +230,7 @@ const breadcrumbSchema = {
               data-blog-card
               data-title={featuredPost.data.title.toLowerCase()}
               data-description={featuredPost.data.description.toLowerCase()}
-              data-tags={featuredPost.tagsNormalized.join('|')}
+                data-tags={featuredPost.topics.map((topic) => topic.slug).join('|')}
               data-archive={featuredPost.monthKey}
             >
               <div class="grid overflow-hidden lg:grid-cols-[1.05fr_0.95fr]">
@@ -282,12 +274,12 @@ const breadcrumbSchema = {
                   <p class="text-slate-600 leading-relaxed mb-5 line-clamp-4 md:line-clamp-5">{featuredPost.data.description}</p>
 
                   <div class="mb-5 flex flex-wrap gap-2">
-                    {featuredPost.tags.slice(0, 4).map((tag) => (
+                    {featuredPost.topics.slice(0, 3).map((topic) => (
                       <a
-                        href={getPath(`${lang}/blog/topic/${normalizeKeyword(tag)}`)}
+                        href={getPath(`de/blog/topic/${topic.slug}`)}
                         class="rounded-full border border-slate-200 bg-white px-2.5 py-1 text-[11px] font-medium text-slate-700 hover:border-blue-200 hover:text-blue-700 transition-colors"
                       >
-                        {tag}
+                        {topic.name}
                       </a>
                     ))}
                   </div>
@@ -318,7 +310,7 @@ const breadcrumbSchema = {
                 data-blog-card
                 data-title={post.data.title.toLowerCase()}
                 data-description={post.data.description.toLowerCase()}
-                data-tags={post.tagsNormalized.join('|')}
+                data-tags={post.topics.map((topic) => topic.slug).join('|')}
                 data-archive={post.monthKey}
               >
                 <a href={post.url} class="block">
@@ -351,12 +343,12 @@ const breadcrumbSchema = {
                   </h3>
                   <p class="text-sm text-slate-600 leading-relaxed line-clamp-3 mb-4">{post.data.description}</p>
                   <div class="flex flex-wrap gap-2">
-                    {post.tags.slice(0, 3).map((tag) => (
+                    {post.topics.slice(0, 2).map((topic) => (
                       <a
-                        href={getPath(`${lang}/blog/topic/${normalizeKeyword(tag)}`)}
+                        href={getPath(`de/blog/topic/${topic.slug}`)}
                         class="rounded-full border border-slate-200 bg-slate-50 px-2.5 py-1 text-[11px] font-medium text-slate-700 hover:border-blue-200 hover:text-blue-700 transition-colors"
                       >
-                        {tag}
+                        {topic.name}
                       </a>
                     ))}
                   </div>
@@ -377,7 +369,7 @@ const breadcrumbSchema = {
               {topicItems.slice(0, 12).map((topic) => (
                 <li>
                   <a
-                    href={getPath(`${lang}/blog/topic/${topic.normalized}`)}
+                    href={getPath(`de/blog/topic/${topic.slug}`)}
                     class="block rounded-lg px-2 py-1.5 hover:bg-slate-50 hover:text-blue-700 transition-colors"
                   >
                     {topic.name}
@@ -401,7 +393,7 @@ const breadcrumbSchema = {
                 <button
                   type="button"
                   class="px-2.5 py-1 rounded-full text-xs font-semibold border border-slate-200 bg-white text-slate-700 hover:border-blue-200 hover:text-blue-700 transition-colors"
-                  data-keyword-filter={topic.normalized}
+                  data-keyword-filter={topic.slug}
                 >
                   {topic.name}
                 </button>
