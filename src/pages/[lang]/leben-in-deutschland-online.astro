@@ -166,7 +166,7 @@ const pageSchema = {
 >
   <Header lang={lang} />
 
-  <main id="main-content" class="app-page">
+  <main class="app-page">
     <section class="bg-white border-b border-slate-100">
       <div class="container mx-auto px-4 py-12 md:py-16">
         <div class="grid gap-10 lg:grid-cols-[minmax(0,1fr)_380px] lg:items-center">
@@ -227,25 +227,26 @@ const pageSchema = {
       </div>
     </section>
 
-    <section class="py-12 bg-white">
+    <section class="border-y border-[#e1d6ca] bg-[#f8f4ee] py-12">
       <div class="container mx-auto px-4">
-        <div class="max-w-3xl">
-          <h2 class="text-3xl font-extrabold text-slate-950 mb-4">
+        <div class="relative max-w-4xl overflow-hidden rounded-3xl border border-[#ded2c4] bg-[#fffdf9]/80 p-6 shadow-[0_22px_48px_-38px_rgba(57,43,31,0.6)] md:p-8">
+          <div class="pointer-events-none absolute -right-16 -top-20 h-48 w-48 rounded-full bg-[#e8d5e3]/55 blur-3xl" aria-hidden="true"></div>
+          <h2 class="relative mb-4 font-serif text-3xl font-semibold tracking-[-0.025em] text-[#302821]">
             {isGerman ? 'Leben in Deutschland Online Test üben' : 'Practice with an online test'}
           </h2>
-          <p class="text-slate-600 leading-relaxed mb-5">
+          <p class="relative mb-5 leading-relaxed text-[#6d6258]">
             {isGerman
               ? 'Wenn Sie nach "leben in deutschland online", "leben in deutschland digital" oder "leben in deutschland online test üben" suchen, finden Sie hier den direkten Einstieg: erst Fragen lernen, dann den digitalen Testmodus starten und anschließend die App für Wiederholungen nutzen.'
               : 'This page gives you a direct path from question practice to exam simulation and mobile review.'}
           </p>
           <div class="flex flex-col sm:flex-row gap-3">
-            <a href={appUrl} class="inline-flex items-center justify-center rounded-lg bg-slate-950 px-5 py-3 font-bold text-white hover:bg-slate-800">
+            <a href={appUrl} class="inline-flex items-center justify-center rounded-xl bg-[#3f352c] px-5 py-3 font-bold text-white transition-colors hover:bg-[#2f2822]">
               {isGerman ? 'App ansehen' : 'View app'}
             </a>
-            <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-lg border border-slate-300 px-5 py-3 font-bold text-slate-900 hover:bg-slate-50">
+            <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-xl border border-[#d5c7b6] bg-white/70 px-5 py-3 font-bold text-[#342b24] hover:bg-white">
               App Store
             </a>
-            <a href={PLAY_STORE_URL} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-lg border border-slate-300 px-5 py-3 font-bold text-slate-900 hover:bg-slate-50">
+            <a href={PLAY_STORE_URL} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-xl border border-[#d5c7b6] bg-white/70 px-5 py-3 font-bold text-[#342b24] hover:bg-white">
               Google Play
             </a>
           </div>

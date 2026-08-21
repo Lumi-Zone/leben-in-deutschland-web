@@ -8,6 +8,11 @@ interface PhoneSliderProps {
 const LABELS = {
     de: {
         region: 'App-Screenshots',
+        eyebrow: 'Die App im Überblick',
+        title: 'So fühlt sich Lernen mit Plan an.',
+        subtitle: 'Von der ersten Frage bis zur Prüfung: Entdecken Sie alle wichtigen Funktionen in einer ruhigen, klaren Lernumgebung.',
+        highlights: ['300 offizielle Fragen', '13 Sprachen', 'Prüfung & Fortschritt'],
+        swipeHint: 'Wischen zum Entdecken',
         instructions: 'App-Screenshots. Mit den Pfeiltasten, Home und Ende navigieren. Nach dem letzten Screenshot beginnt es wieder beim ersten.',
         previous: 'Vorheriger Screenshot',
         next: 'Naechster Screenshot',
@@ -18,6 +23,11 @@ const LABELS = {
     },
     en: {
         region: 'App screenshots',
+        eyebrow: 'Explore the app',
+        title: 'A calmer way to prepare with a plan.',
+        subtitle: 'From your first question to exam day, discover every essential feature in one clear learning space.',
+        highlights: ['300 official questions', '13 languages', 'Exam & progress'],
+        swipeHint: 'Swipe to explore',
         instructions: 'App screenshots. Use arrow keys, Home and End to navigate. After the last screenshot, navigation returns to the first.',
         previous: 'Previous screenshot',
         next: 'Next screenshot',
@@ -28,6 +38,11 @@ const LABELS = {
     },
     tr: {
         region: 'Uygulama ekran goruntuleri',
+        eyebrow: 'Uygulamayı keşfedin',
+        title: 'Planlı ve sakin bir öğrenme deneyimi.',
+        subtitle: 'İlk sorudan sınav gününe kadar ihtiyacınız olan tüm özellikleri sade bir öğrenme ortamında keşfedin.',
+        highlights: ['300 resmî soru', '13 dil', 'Sınav ve ilerleme'],
+        swipeHint: 'Keşfetmek için kaydırın',
         instructions: 'Uygulama ekran goruntuleri. Yon tuslari, Home ve End ile gezinin. Son ekrandan sonra ilk ekrana doner.',
         previous: 'Onceki ekran goruntusu',
         next: 'Sonraki ekran goruntusu',
@@ -38,6 +53,11 @@ const LABELS = {
     },
     ar: {
         region: 'لقطات شاشة التطبيق',
+        eyebrow: 'اكتشف التطبيق',
+        title: 'طريقة أكثر هدوءًا للتعلّم وفق خطة.',
+        subtitle: 'من السؤال الأول حتى يوم الاختبار، اكتشف كل الأدوات المهمة في مساحة تعلّم واضحة.',
+        highlights: ['300 سؤال رسمي', '13 لغة', 'الاختبار والتقدم'],
+        swipeHint: 'اسحب للاستكشاف',
         instructions: 'لقطات شاشة التطبيق. استخدم مفاتيح الأسهم وHome وEnd للتنقل. بعد اللقطة الأخيرة يعود التنقل إلى الأولى.',
         previous: 'لقطة الشاشة السابقة',
         next: 'لقطة الشاشة التالية',
@@ -48,20 +68,20 @@ const LABELS = {
     },
 };
 
-const MOCKUPS = [
-    getPath('mockups/m1.png'),
-    getPath('mockups/m2.png'),
-    getPath('mockups/m3.png'),
-    getPath('mockups/m4.png'),
-    getPath('mockups/m5.png'),
-    getPath('mockups/m6.png'),
-    getPath('mockups/m7.png'),
-    getPath('mockups/m8.png'),
-    getPath('mockups/m9.png'),
-    getPath('mockups/m10.png'),
+const SCREENSHOT_NAMES = [
+    '01-hero',
+    '02-sprachen',
+    '03-bundeslaender',
+    '04-modi',
+    '05-lernen',
+    '06-anleitung',
+    '07-themen',
+    '08-fortschritt',
+    '09-statistik',
+    '10-dunkelmodus',
 ];
 
-const INITIAL_SLIDE_INDEX = 2;
+const INITIAL_SLIDE_INDEX = 0;
 const LOOP_COPY_COUNT = 3;
 const CENTER_COPY_INDEX = 1;
 const RECENTER_DISTANCE_THRESHOLD = 4;
@@ -84,15 +104,19 @@ function getCenterVirtualIndex(index: number, total: number) {
 export default function PhoneSlider({ lang = 'de' }: PhoneSliderProps) {
     const scrollContainerRef = React.useRef<HTMLDivElement>(null);
     const animationFrameRef = React.useRef<number | null>(null);
-    const activeVirtualIndexRef = React.useRef(getCenterVirtualIndex(INITIAL_SLIDE_INDEX, MOCKUPS.length));
+    const activeVirtualIndexRef = React.useRef(getCenterVirtualIndex(INITIAL_SLIDE_INDEX, SCREENSHOT_NAMES.length));
     const [activeIndex, setActiveIndex] = React.useState(INITIAL_SLIDE_INDEX);
     const trackId = 'phone-slider-track';
     const instructionsId = 'phone-slider-instructions';
     const statusId = 'phone-slider-status';
-    const sliders = MOCKUPS;
+    const screenshotLocale = lang === 'en' ? 'en' : lang === 'tr' ? 'tr' : 'de';
+    const sliders = React.useMemo(
+        () => SCREENSHOT_NAMES.map((name) => getPath(`app-screenshots/${screenshotLocale}/${name}`)),
+        [screenshotLocale],
+    );
     const loopedSliders = React.useMemo(() => Array.from({ length: LOOP_COPY_COUNT }, () => sliders).flat(), [sliders]);
     const canLoop = sliders.length > 1;
-    const labels = LABELS[lang as keyof typeof LABELS] || LABELS.de;
+    const labels = LABELS[lang as keyof typeof LABELS] || LABELS.en;
 
     const updateScrollState = React.useCallback(() => {
         const container = scrollContainerRef.current;
@@ -235,21 +259,49 @@ export default function PhoneSlider({ lang = 'de' }: PhoneSliderProps) {
     };
 
     return (
-        <div className="relative w-full overflow-hidden rounded-[2rem] border border-gray-100/80 bg-white/95 py-5 md:py-7 shadow-[0_20px_48px_-34px_rgba(15,23,42,0.45)] group" role="region" aria-roledescription="carousel" aria-label={labels.region}>
+        <section className="group relative isolate w-full overflow-hidden rounded-[2rem] border border-[#ded5c7] bg-[#f8f4ee] py-6 shadow-[0_30px_80px_-48px_rgba(53,40,30,0.5)] md:rounded-[2.75rem] md:py-9" role="region" aria-roledescription="carousel" aria-label={labels.region}>
             <p id={instructionsId} className="sr-only">{labels.instructions}</p>
             <div id={statusId} role="status" aria-live="polite" className="sr-only">
                 {labels.status(activeIndex + 1, sliders.length)}
             </div>
 
-            <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-12 bg-gradient-to-r from-white via-white/80 to-transparent md:w-28" aria-hidden="true" />
-            <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-12 bg-gradient-to-l from-white via-white/80 to-transparent md:w-28" aria-hidden="true" />
+            <div className="pointer-events-none absolute -left-24 -top-24 -z-10 h-72 w-72 rounded-full bg-[#efdca3]/65 blur-3xl" aria-hidden="true" />
+            <div className="pointer-events-none absolute -right-20 top-20 -z-10 h-80 w-80 rounded-full bg-[#e9d6e5]/70 blur-3xl" aria-hidden="true" />
+            <div className="pointer-events-none absolute bottom-0 left-1/3 -z-10 h-64 w-96 rounded-full bg-[#dce7dc]/75 blur-3xl" aria-hidden="true" />
+
+            <header className="relative z-20 mx-auto mb-6 grid max-w-6xl gap-6 px-5 text-left sm:px-8 md:mb-8 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-end lg:px-12">
+                <div className="max-w-2xl">
+                    <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-[#d9cbb8] bg-white/70 px-3 py-1.5 text-[11px] font-bold uppercase tracking-[0.18em] text-[#705c45] shadow-sm backdrop-blur">
+                        <span className="h-1.5 w-1.5 rounded-full bg-[#c59136]" aria-hidden="true" />
+                        {labels.eyebrow}
+                    </div>
+                    <h2 className="font-serif text-3xl font-semibold leading-[1.08] tracking-[-0.025em] text-[#241f1a] sm:text-4xl md:text-5xl">
+                        {labels.title}
+                    </h2>
+                    <p className="mt-3 max-w-xl text-sm leading-relaxed text-[#6d6258] sm:text-base">
+                        {labels.subtitle}
+                    </p>
+                </div>
+
+                <ul className="grid gap-2 text-sm font-semibold text-[#4a4037] sm:grid-cols-3 lg:grid-cols-1" aria-label={labels.eyebrow}>
+                    {labels.highlights.map((highlight: string, index: number) => (
+                        <li key={highlight} className="flex items-center gap-2 rounded-full border border-[#ded4c7] bg-white/65 px-3 py-2 shadow-sm backdrop-blur">
+                            <span className={`h-2 w-2 shrink-0 rounded-full ${index === 0 ? 'bg-[#cf796e]' : index === 1 ? 'bg-[#8aa4b2]' : 'bg-[#87996f]'}`} aria-hidden="true" />
+                            {highlight}
+                        </li>
+                    ))}
+                </ul>
+            </header>
+
+            <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-8 bg-gradient-to-r from-[#f8f4ee] via-[#f8f4ee]/75 to-transparent sm:w-16 md:w-28" aria-hidden="true" />
+            <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-8 bg-gradient-to-l from-[#f8f4ee] via-[#f8f4ee]/75 to-transparent sm:w-16 md:w-28" aria-hidden="true" />
 
             <div className="hidden md:block">
                 <button
                     type="button"
                     onClick={() => scroll('left')}
                     disabled={!canLoop}
-                    className="absolute left-4 lg:left-8 top-1/2 -translate-y-1/2 z-20 w-12 h-12 bg-white/95 backdrop-blur-sm rounded-full shadow-lg flex items-center justify-center text-gray-800 hover:bg-white hover:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 transition-all border border-gray-100 disabled:opacity-40 disabled:cursor-not-allowed"
+                    className="absolute left-5 top-[62%] z-20 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-[#d8ccbc] bg-[#fffdf9]/95 text-[#332a22] shadow-lg backdrop-blur-sm transition-all hover:scale-105 hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6f5a45] disabled:cursor-not-allowed disabled:opacity-40 lg:left-9"
                     aria-label={labels.previous}
                     aria-controls={trackId}
                 >
@@ -261,7 +313,7 @@ export default function PhoneSlider({ lang = 'de' }: PhoneSliderProps) {
                     type="button"
                     onClick={() => scroll('right')}
                     disabled={!canLoop}
-                    className="absolute right-4 lg:right-8 top-1/2 -translate-y-1/2 z-20 w-12 h-12 bg-white/95 backdrop-blur-sm rounded-full shadow-lg flex items-center justify-center text-gray-800 hover:bg-white hover:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 transition-all border border-gray-100 disabled:opacity-40 disabled:cursor-not-allowed"
+                    className="absolute right-5 top-[62%] z-20 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-[#d8ccbc] bg-[#fffdf9]/95 text-[#332a22] shadow-lg backdrop-blur-sm transition-all hover:scale-105 hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6f5a45] disabled:cursor-not-allowed disabled:opacity-40 lg:right-9"
                     aria-label={labels.next}
                     aria-controls={trackId}
                 >
@@ -279,7 +331,7 @@ export default function PhoneSlider({ lang = 'de' }: PhoneSliderProps) {
                 tabIndex={0}
                 aria-describedby={`${instructionsId} ${statusId}`}
                 aria-label={labels.region}
-                className="relative z-0 flex gap-5 md:gap-8 overflow-x-auto snap-x snap-mandatory px-[calc(50%-132px)] sm:px-[calc(50%-140px)] md:px-[calc(50%-160px)] pb-5 pt-1 scrollbar-hide snap-always focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-blue-600"
+                className="relative z-0 flex gap-4 overflow-x-auto snap-x snap-mandatory px-[calc(50%-123px)] pb-6 pt-2 scrollbar-hide snap-always focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-[#6f5a45] sm:gap-6 sm:px-[calc(50%-138px)] md:gap-8 md:px-[calc(50%-155px)]"
                 style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
             >
                 {loopedSliders.map((src, index) => {
@@ -290,37 +342,49 @@ export default function PhoneSlider({ lang = 'de' }: PhoneSliderProps) {
                     const isPrioritySlide = index === initialVirtualIndex;
                     const isActive = originalIndex === activeIndex;
                     return (
-                    <div
-                        key={`${src}-${index}`}
-                        role={isCenterCopy ? 'group' : undefined}
-                        aria-hidden={isCenterCopy ? undefined : 'true'}
-                        aria-roledescription={isCenterCopy ? 'slide' : undefined}
-                        aria-label={isCenterCopy ? labels.slide(originalIndex + 1, sliders.length) : undefined}
-                        aria-current={isCenterCopy && isActive ? 'true' : undefined}
-                        className={`relative w-[264px] sm:w-[280px] md:w-[320px] h-[540px] sm:h-[560px] md:h-[640px] shrink-0 transform transition-all duration-300 flex items-center justify-center snap-center snap-always ${isActive ? 'scale-100 opacity-100' : 'scale-[0.97] opacity-75 hover:opacity-100 hover:scale-[0.99]'}`}
-                    >
-                        <img
-                            src={src}
-                            alt={isCenterCopy ? labels.slide(originalIndex + 1, sliders.length) : ''}
-                            className={`w-full h-full object-contain transition-[filter] duration-300 ${isActive ? 'drop-shadow-2xl' : 'drop-shadow-lg'}`}
-                            loading={isInitiallyVisible ? 'eager' : 'lazy'}
-                            decoding="async"
-                            fetchPriority={isPrioritySlide ? 'high' : 'auto'}
-                            width="320"
-                            height="640"
-                        />
-                    </div>
+                        <div
+                            key={`${src}-${index}`}
+                            role={isCenterCopy ? 'group' : undefined}
+                            aria-hidden={isCenterCopy ? undefined : 'true'}
+                            aria-roledescription={isCenterCopy ? 'slide' : undefined}
+                            aria-label={isCenterCopy ? labels.slide(originalIndex + 1, sliders.length) : undefined}
+                            aria-current={isCenterCopy && isActive ? 'true' : undefined}
+                            className={`relative aspect-[1290/2796] w-[246px] shrink-0 transform snap-center snap-always overflow-hidden rounded-[1.7rem] border border-white/70 bg-white shadow-[0_24px_50px_-24px_rgba(52,40,29,0.6)] transition-all duration-500 sm:w-[276px] md:w-[310px] ${isActive ? 'scale-100 opacity-100' : 'scale-[0.94] opacity-60 hover:scale-[0.97] hover:opacity-90'}`}
+                        >
+                            <picture className="block h-full w-full">
+                                <source
+                                    type="image/avif"
+                                    srcSet={`${src}-323.avif 323w, ${src}-645.avif 645w`}
+                                    sizes="(min-width: 768px) 310px, (min-width: 640px) 276px, 246px"
+                                />
+                                <source
+                                    type="image/webp"
+                                    srcSet={`${src}-323.webp 323w, ${src}-645.webp 645w`}
+                                    sizes="(min-width: 768px) 310px, (min-width: 640px) 276px, 246px"
+                                />
+                                <img
+                                    src={`${src}.png`}
+                                    alt={isCenterCopy ? labels.slide(originalIndex + 1, sliders.length) : ''}
+                                    className="h-full w-full object-cover"
+                                    loading={isInitiallyVisible ? 'eager' : 'lazy'}
+                                    decoding="async"
+                                    fetchPriority={isPrioritySlide ? 'high' : 'auto'}
+                                    width="645"
+                                    height="1398"
+                                />
+                            </picture>
+                        </div>
                     );
                 })}
             </div>
 
-            <div className="relative z-20 mt-1 flex flex-col items-center justify-center gap-4 px-4 md:flex-row md:justify-between md:px-8">
+            <div className="relative z-20 flex flex-col items-center justify-center gap-4 px-5 md:flex-row md:justify-between md:px-10 lg:px-12">
                 <div className="flex items-center gap-3">
                     <button
                         type="button"
                         onClick={() => scroll('left')}
                         disabled={!canLoop}
-                        className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-gray-200 bg-white text-gray-800 shadow-sm transition-all hover:border-blue-200 hover:bg-blue-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 disabled:cursor-not-allowed disabled:opacity-40 md:hidden"
+                        className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-[#d8ccbc] bg-[#fffdf9] text-[#332a22] shadow-sm transition-all hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6f5a45] disabled:cursor-not-allowed disabled:opacity-40 md:hidden"
                         aria-label={labels.previous}
                         aria-controls={trackId}
                     >
@@ -329,7 +393,7 @@ export default function PhoneSlider({ lang = 'de' }: PhoneSliderProps) {
                         </svg>
                     </button>
 
-                    <span className="min-w-14 rounded-full border border-gray-200 bg-gray-50 px-3 py-1.5 text-center text-xs font-bold text-gray-700" aria-hidden="true">
+                    <span className="min-w-14 rounded-full border border-[#d8ccbc] bg-white/70 px-3 py-1.5 text-center text-xs font-bold text-[#5c4c3d]" aria-hidden="true">
                         {activeIndex + 1}/{sliders.length}
                     </span>
 
@@ -337,7 +401,7 @@ export default function PhoneSlider({ lang = 'de' }: PhoneSliderProps) {
                         type="button"
                         onClick={() => scroll('right')}
                         disabled={!canLoop}
-                        className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-gray-200 bg-white text-gray-800 shadow-sm transition-all hover:border-blue-200 hover:bg-blue-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 disabled:cursor-not-allowed disabled:opacity-40 md:hidden"
+                        className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-[#d8ccbc] bg-[#fffdf9] text-[#332a22] shadow-sm transition-all hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6f5a45] disabled:cursor-not-allowed disabled:opacity-40 md:hidden"
                         aria-label={labels.next}
                         aria-controls={trackId}
                     >
@@ -347,20 +411,23 @@ export default function PhoneSlider({ lang = 'de' }: PhoneSliderProps) {
                     </button>
                 </div>
 
-                <nav className="flex max-w-full flex-wrap items-center justify-center gap-2" aria-label={labels.pagination}>
-                    {sliders.map((src, index) => (
-                        <button
-                            key={`dot-${src}`}
-                            type="button"
-                            onClick={() => scrollToIndex(index)}
-                            className={`h-2.5 rounded-full transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 ${index === activeIndex ? 'w-8 bg-blue-600' : 'w-2.5 bg-gray-300 hover:bg-gray-400'}`}
-                            aria-label={labels.goTo(index + 1, sliders.length)}
-                            aria-current={index === activeIndex ? 'true' : undefined}
-                            aria-controls={trackId}
-                        />
-                    ))}
-                </nav>
+                <div className="flex flex-col items-center gap-2 md:items-end">
+                    <span className="hidden text-[10px] font-bold uppercase tracking-[0.16em] text-[#8b7b6b] md:block">{labels.swipeHint}</span>
+                    <nav className="flex max-w-full flex-wrap items-center justify-center gap-2" aria-label={labels.pagination}>
+                        {sliders.map((src, index) => (
+                            <button
+                                key={`dot-${src}`}
+                                type="button"
+                                onClick={() => scrollToIndex(index)}
+                                className={`h-2 rounded-full transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6f5a45] ${index === activeIndex ? 'w-8 bg-[#3f352c]' : 'w-2 bg-[#cfc3b4] hover:bg-[#a99885]'}`}
+                                aria-label={labels.goTo(index + 1, sliders.length)}
+                                aria-current={index === activeIndex ? 'true' : undefined}
+                                aria-controls={trackId}
+                            />
+                        ))}
+                    </nav>
+                </div>
             </div>
-        </div>
+        </section>
     );
 }

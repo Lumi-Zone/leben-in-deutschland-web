@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import Header from '../../components/Header.astro';
 import { getReviews } from '../../data/reviews';
+import { getAppPageCopy } from '../../i18n/app';
 import { useTranslations } from '../../i18n/ui';
 import { getPath } from '../../utils/navigation';
 import { SUPPORTED_LANGUAGES, type SupportedLang } from '../../types/language';
@@ -21,19 +22,16 @@ const t = useTranslations(lang);
 const siteUrl = Astro.site || 'https://lid-einbuergerung.de';
 const appPageUrl = new URL(getPath(`${lang}/app/`), siteUrl).href;
 const homeUrl = new URL(getPath(`${lang}/`), siteUrl).href;
-const isGerman = lang === 'de';
 const reviewsData = getReviews(lang).slice(0, 2);
-const appDescription = isGerman
-  ? 'Laden Sie die Leben in Deutschland App für iOS und Android herunter: 310 Fragen, Prüfungssimulation, Lernfortschritt und mehrsprachige Erklärungen.'
-  : 'Download the Leben in Deutschland app for iOS and Android with 310 questions, exam simulation, learning progress, and multilingual explanations.';
-const appTitle = isGerman
-  ? 'Leben in Deutschland App für iOS & Android | Einbürgerungstest 2026'
-  : 'Leben in Deutschland App for iOS & Android | Naturalization Test 2026';
-const appKeywords = isGerman
-  ? 'Leben in Deutschland App, Einbürgerungstest App, Leben in Deutschland 310Fragen, BAMF App, iOS, Android, Prüfungssimulation'
-  : 'Leben in Deutschland app, naturalization test app, iOS, Android, exam simulation';
-const screenshotPaths = ['/mockups/m1.png', '/mockups/m2.png', '/mockups/m3.png'];
-const screenshots = screenshotPaths.map((path) => new URL(getPath(path), siteUrl).href);
+const copy = getAppPageCopy(lang);
+const { title: appTitle, description: appDescription, keywords: appKeywords } = copy.meta;
+const screenshotLocale = lang === 'en' ? 'en' : lang === 'tr' ? 'tr' : 'de';
+const screenshotPaths = [
+  `/app-screenshots/${screenshotLocale}/01-hero`,
+  `/app-screenshots/${screenshotLocale}/04-modi`,
+  `/app-screenshots/${screenshotLocale}/08-fortschritt`,
+];
+const screenshots = screenshotPaths.map((path) => new URL(getPath(`${path}.png`), siteUrl).href);
 const appReview = reviewsData[0];
 const reviewSchema = appReview
   ? {
@@ -116,7 +114,7 @@ const mobileAppSchema = {
         {
           '@type': 'ListItem',
           position: 2,
-          name: isGerman ? 'App' : t('question.practice_app'),
+          name: copy.pageName,
           item: appPageUrl,
         },
       ],
@@ -136,35 +134,36 @@ const mobileAppSchema = {
 >
   <Header lang={lang} />
 
-  <main class="app-page pb-24 md:pb-12">
-    <section class="bg-slate-950 text-white">
+  <main class="app-page bg-[#f8f4ee] pb-24 text-[#2b241e] md:pb-12">
+    <section class="relative isolate overflow-hidden border-b border-[#ded2c4] bg-[#f8f4ee]">
+      <div class="pointer-events-none absolute -left-24 -top-28 -z-10 h-96 w-96 rounded-full bg-[#edd797]/55 blur-3xl" aria-hidden="true"></div>
+      <div class="pointer-events-none absolute right-[-8rem] top-0 -z-10 h-[28rem] w-[28rem] rounded-full bg-[#e8d5e3]/65 blur-3xl" aria-hidden="true"></div>
+      <div class="pointer-events-none absolute bottom-[-9rem] left-1/3 -z-10 h-80 w-96 rounded-full bg-[#dbe5d6]/60 blur-3xl" aria-hidden="true"></div>
       <div class="container mx-auto px-4 py-10 md:py-14">
         <div class="grid gap-10 lg:grid-cols-[minmax(0,1fr)_430px] lg:items-center">
           <div class="max-w-3xl">
-            <a href={getPath(`${lang}/`)} class="inline-flex items-center rounded-lg border border-white/15 bg-white/10 px-3.5 py-2 text-sm font-semibold text-white hover:bg-white/15 mb-6">
+            <a href={getPath(`${lang}/`)} class="mb-6 inline-flex items-center rounded-xl border border-[#d8cbbb] bg-white/65 px-3.5 py-2 text-sm font-semibold text-[#594b3f] shadow-sm transition-colors hover:bg-white">
               ← {t('question.back')}
             </a>
 
             <div class="flex flex-wrap gap-2 mb-5">
-              <span class="inline-flex items-center rounded-full border border-blue-300/30 bg-blue-400/10 px-3 py-1 text-xs font-bold text-blue-100">
+              <span class="inline-flex items-center rounded-full border border-[#d7c8b4] bg-white/65 px-3 py-1 text-xs font-bold text-[#6f5a45]">
                 iOS & Android
               </span>
-              <span class="inline-flex items-center rounded-full border border-emerald-300/30 bg-emerald-400/10 px-3 py-1 text-xs font-bold text-emerald-100">
-                {isGerman ? 'Kostenlos starten' : 'Start free'}
+              <span class="inline-flex items-center rounded-full border border-[#cbd8c5] bg-[#edf3e9]/80 px-3 py-1 text-xs font-bold text-[#58684b]">
+                {copy.freeStart}
               </span>
-              <span class="inline-flex items-center rounded-full border border-amber-300/30 bg-amber-400/10 px-3 py-1 text-xs font-bold text-amber-100">
-                4.8 ★ App Rating
+              <span class="inline-flex items-center rounded-full border border-[#dec891] bg-[#faf0cf]/80 px-3 py-1 text-xs font-bold text-[#7d612b]">
+                4.8 ★ {copy.ratingLabel}
               </span>
             </div>
 
-            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight mb-5">
-              {isGerman ? 'Bestehen Sie den Einbürgerungstest mit der App.' : 'Prepare for the naturalization test with the app.'}
+            <h1 class="mb-5 font-serif text-4xl font-semibold leading-[1.04] tracking-[-0.035em] text-[#241f1a] md:text-6xl">
+              {copy.hero.title}
             </h1>
 
-            <p class="text-lg md:text-xl text-slate-300 leading-relaxed max-w-2xl mb-8">
-              {isGerman
-                ? 'Lernen Sie alle 310 Fragen, simulieren Sie die Prüfung und behalten Sie Ihren Fortschritt im Blick. Laden Sie die App jetzt auf Ihr Smartphone.'
-                : 'Learn all 310 questions, simulate the exam, and track your progress. Download the app on your phone now.'}
+            <p class="mb-8 max-w-2xl text-lg leading-relaxed text-[#6d6258] md:text-xl">
+              {copy.hero.text}
             </p>
 
             <div class="flex flex-col sm:flex-row gap-3 mb-6">
@@ -175,13 +174,13 @@ const mobileAppSchema = {
                 data-umami-event="app-store-click"
                 data-umami-event-location="app-page"
                 data-umami-event-lang={lang}
-                class="inline-flex min-h-16 items-center justify-center gap-3 rounded-lg bg-white px-5 py-3 text-slate-950 font-bold shadow-lg shadow-black/20 hover:bg-slate-100 transition-colors"
+                class="inline-flex min-h-16 items-center justify-center gap-3 rounded-xl border border-[#302821] bg-[#3f352c] px-5 py-3 font-bold text-white shadow-[0_14px_30px_-18px_rgba(47,38,31,0.8)] transition-all hover:-translate-y-0.5 hover:bg-[#2f2822]"
               >
                 <svg class="h-8 w-8 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                   <path d="M16.365 1.43c0 1.14-.41 1.99-1.01 2.72-.63.77-1.66 1.36-2.67 1.28-.13-1.06.3-2.06.9-2.75.62-.71 1.7-1.22 2.78-1.25zM19.46 17.03c-.41.94-.61 1.36-1.14 2.21-.74 1.19-1.78 2.67-3.07 2.68-1.15.01-1.45-.75-3.01-.74-1.56.01-1.89.75-3.03.74-1.29-.01-2.29-1.34-3.03-2.53-2.07-3.35-2.28-7.28-1.01-9.24.9-1.39 2.33-2.2 3.67-2.2 1.37 0 2.23.76 3.37.76 1.11 0 1.78-.76 3.36-.76 1.2 0 2.47.65 3.37 1.78-2.96 1.62-2.47 5.85.52 7.3z"/>
                 </svg>
                 <span class="text-left">
-                  <span class="block text-[11px] font-semibold uppercase leading-none text-slate-500">{isGerman ? 'Laden im' : 'Download on the'}</span>
+                  <span class="block text-[11px] font-semibold uppercase leading-none text-[#d8cec5]">{copy.store.apple}</span>
                   <span class="mt-1 block text-xl leading-none">App Store</span>
                 </span>
               </a>
@@ -192,47 +191,71 @@ const mobileAppSchema = {
                 data-umami-event="play-store-click"
                 data-umami-event-location="app-page"
                 data-umami-event-lang={lang}
-                class="inline-flex min-h-16 items-center justify-center gap-3 rounded-lg bg-blue-500 px-5 py-3 text-white font-bold shadow-lg shadow-blue-950/30 hover:bg-blue-400 transition-colors"
+                class="inline-flex min-h-16 items-center justify-center gap-3 rounded-xl border border-[#d4c5b3] bg-[#fffdf9]/90 px-5 py-3 font-bold text-[#342b24] shadow-[0_14px_30px_-20px_rgba(47,38,31,0.65)] transition-all hover:-translate-y-0.5 hover:bg-white"
               >
                 <svg class="h-8 w-8 shrink-0" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M3.4 2.4c-.25.18-.4.49-.4.9v17.4c0 .4.15.72.4.9l10-9.6-10-9.6z" fill="#ffffff"/>
-                  <path d="M14.1 11.3 17.2 8.4 5.3 1.7c-.55-.31-1.05-.35-1.43-.12l10.23 9.72z" fill="#ffffff" opacity=".72"/>
-                  <path d="M14.1 12.7 3.87 22.42c.38.23.88.19 1.43-.12l11.9-6.7-3.1-2.9z" fill="#ffffff" opacity=".86"/>
-                  <path d="M20.3 10.1 17.2 8.4 14.1 11.3l3.1 2.9 3.1-1.7c.93-.52.93-1.88 0-2.4z" fill="#ffffff"/>
+                  <path d="M3.4 2.4c-.25.18-.4.49-.4.9v17.4c0 .4.15.72.4.9l10-9.6-10-9.6z" fill="currentColor"/>
+                  <path d="M14.1 11.3 17.2 8.4 5.3 1.7c-.55-.31-1.05-.35-1.43-.12l10.23 9.72z" fill="currentColor" opacity=".72"/>
+                  <path d="M14.1 12.7 3.87 22.42c.38.23.88.19 1.43-.12l11.9-6.7-3.1-2.9z" fill="currentColor" opacity=".86"/>
+                  <path d="M20.3 10.1 17.2 8.4 14.1 11.3l3.1 2.9 3.1-1.7c.93-.52.93-1.88 0-2.4z" fill="currentColor"/>
                 </svg>
                 <span class="text-left">
-                  <span class="block text-[11px] font-semibold uppercase leading-none text-blue-100">{isGerman ? 'Jetzt bei' : 'Get it on'}</span>
+                  <span class="block text-[11px] font-semibold uppercase leading-none text-[#857566]">{copy.store.google}</span>
                   <span class="mt-1 block text-xl leading-none">Google Play</span>
                 </span>
               </a>
             </div>
 
-            <div class="grid grid-cols-3 gap-3 max-w-xl text-sm text-slate-300">
-              <div class="rounded-lg border border-white/10 bg-white/5 p-3">
-                <strong class="block text-xl text-white">310</strong>
-                <span>{isGerman ? 'Fragen' : 'Questions'}</span>
+            <div class="grid max-w-xl grid-cols-3 gap-3 text-sm text-[#75695e]">
+              <div class="rounded-xl border border-[#ddcbbf] bg-[#f7e5df]/70 p-3">
+                <strong class="block text-xl text-[#352c25]">310</strong>
+                <span>{copy.stats.questions}</span>
               </div>
-              <div class="rounded-lg border border-white/10 bg-white/5 p-3">
-                <strong class="block text-xl text-white">33</strong>
-                <span>{isGerman ? 'Prüfungsmodus' : 'Exam mode'}</span>
+              <div class="rounded-xl border border-[#ddd0a8] bg-[#f7edc8]/70 p-3">
+                <strong class="block text-xl text-[#352c25]">33</strong>
+                <span>{copy.stats.examMode}</span>
               </div>
-              <div class="rounded-lg border border-white/10 bg-white/5 p-3">
-                <strong class="block text-xl text-white">12</strong>
-                <span>{isGerman ? 'Sprachen' : 'Languages'}</span>
+              <div class="rounded-xl border border-[#cfdcc9] bg-[#e5edde]/75 p-3">
+                <strong class="block text-xl text-[#352c25]">13</strong>
+                <span>{copy.stats.languages}</span>
               </div>
             </div>
           </div>
 
-          <div class="relative overflow-hidden rounded-lg border border-white/10 bg-white/5 p-4 shadow-2xl shadow-black/30">
-            <div class="grid grid-cols-3 gap-3 items-end">
+          <div class="relative isolate overflow-hidden rounded-[2rem] border border-[#d9cdbb] bg-[#f6f0e7] p-4 shadow-[0_28px_60px_-34px_rgba(57,43,31,0.65)] md:p-5">
+            <div class="pointer-events-none absolute -left-12 -top-14 -z-10 h-44 w-44 rounded-full bg-[#ecd696] blur-3xl" aria-hidden="true"></div>
+            <div class="pointer-events-none absolute -right-10 bottom-4 -z-10 h-48 w-48 rounded-full bg-[#d5e2d1] blur-3xl" aria-hidden="true"></div>
+            <div class="mb-4 flex items-center justify-between gap-3 text-[#5f5144]">
+              <span class="text-[10px] font-extrabold uppercase tracking-[0.16em]">
+                {copy.preview.title}
+              </span>
+              <span class="hidden rounded-full border border-[#d8cbbb] bg-white/70 px-2.5 py-1 text-[10px] font-bold sm:inline-flex">
+                {copy.preview.count}
+              </span>
+            </div>
+            <div class="grid grid-cols-3 items-end gap-3">
               {screenshotPaths.map((screenshot, index) => (
-                <img
-                  src={getPath(screenshot)}
-                  alt={`${MOBILE_APP_NAME} Screenshot ${index + 1}`}
-                  loading={index === 0 ? 'eager' : 'lazy'}
-                  decoding="async"
-                  class={`rounded-lg border border-white/15 bg-slate-900 shadow-xl ${index === 1 ? 'mb-8' : ''}`}
-                />
+                <picture class={`block overflow-hidden rounded-xl border border-white/70 bg-white shadow-[0_18px_32px_-16px_rgba(57,43,31,0.65)] ${index === 1 ? 'mb-8' : ''}`}>
+                  <source
+                    type="image/avif"
+                    srcset={`${getPath(`${screenshot}-323.avif`)} 323w, ${getPath(`${screenshot}-645.avif`)} 645w`}
+                    sizes="(min-width: 1024px) 125px, 29vw"
+                  />
+                  <source
+                    type="image/webp"
+                    srcset={`${getPath(`${screenshot}-323.webp`)} 323w, ${getPath(`${screenshot}-645.webp`)} 645w`}
+                    sizes="(min-width: 1024px) 125px, 29vw"
+                  />
+                  <img
+                    src={getPath(`${screenshot}.png`)}
+                    alt={copy.screenshotAlts[index]}
+                    loading={index === 0 ? 'eager' : 'lazy'}
+                    decoding="async"
+                    width="645"
+                    height="1398"
+                    class="h-full w-full object-cover"
+                  />
+                </picture>
               ))}
             </div>
           </div>
@@ -240,86 +263,63 @@ const mobileAppSchema = {
       </div>
     </section>
 
-    <section class="py-10 bg-white border-b border-slate-100">
+    <section class="border-b border-[#e3d9cd] bg-[#fffdf9] py-10">
       <div class="container mx-auto px-4">
         <div class="grid gap-4 md:grid-cols-3">
-          {[
-            {
-              value: '4.8/5',
-              label: isGerman ? 'Bewertung in den Stores' : 'Store rating',
-            },
-            {
-              value: isGerman ? 'Weniger Stress' : 'Less stress',
-              label: isGerman ? 'durch echte Prüfungssimulation' : 'with realistic exam practice',
-            },
-            {
-              value: isGerman ? 'Sofort starten' : 'Start now',
-              label: isGerman ? 'ohne lange Einrichtung' : 'without a long setup',
-            },
-          ].map((item) => (
-            <div class="rounded-lg border border-slate-200 bg-slate-50 p-5 text-center">
-              <div class="text-2xl font-extrabold text-slate-950">{item.value}</div>
-              <div class="mt-1 text-sm text-slate-600">{item.label}</div>
+          {copy.highlights.map((item) => (
+            <div class="rounded-2xl border border-[#ded3c7] bg-[#faf6ef] p-5 text-center shadow-[0_14px_30px_-26px_rgba(57,43,31,0.6)]">
+              <div class="font-serif text-2xl font-semibold text-[#302821]">{item.value}</div>
+              <div class="mt-1 text-sm text-[#76695d]">{item.label}</div>
             </div>
           ))}
         </div>
       </div>
     </section>
 
-    <section class="py-12 md:py-16 bg-slate-50">
+    <section class="bg-[#f3ede5] py-12 md:py-16">
       <div class="container mx-auto px-4">
         <div class="mb-8 max-w-2xl">
-          <p class="text-xs font-bold uppercase tracking-widest text-blue-700 mb-2">
-            {isGerman ? 'Warum die App?' : 'Why the app?'}
+          <p class="mb-2 text-xs font-bold uppercase tracking-[0.16em] text-[#8a6844]">
+            {copy.why.eyebrow}
           </p>
-          <h2 class="text-3xl font-extrabold text-slate-950">
-            {isGerman ? 'Alles, was Sie zum Üben brauchen.' : 'Everything you need to practice.'}
+          <h2 class="font-serif text-3xl font-semibold tracking-[-0.025em] text-[#2b241e] md:text-4xl">
+            {copy.why.title}
           </h2>
         </div>
 
         <div class="grid gap-4 md:grid-cols-3">
-          {[
-            {
-              title: isGerman ? '310 offizielle Fragen' : '310 official questions',
-              text: isGerman ? 'Alle allgemeinen BAMF-Fragen plus Bundesland-Fragen kompakt in einer App.' : 'All general questions plus state-specific questions in one compact app.',
-            },
-            {
-              title: isGerman ? 'Prüfungssimulation' : 'Exam simulation',
-              text: isGerman ? 'Üben Sie mit 33 zufälligen Fragen, Zeitlimit und direkter Auswertung.' : 'Practice with 33 random questions, a timer, and instant results.',
-            },
-            {
-              title: isGerman ? 'Fortschritt behalten' : 'Track progress',
-              text: isGerman ? 'Sehen Sie, welche Fragen sicher sitzen und welche Sie wiederholen sollten.' : 'See which questions you know well and which ones need another pass.',
-            },
-          ].map((feature) => (
-            <article class="rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
-              <h2 class="text-lg font-bold text-slate-950 mb-2">{feature.title}</h2>
-              <p class="text-sm leading-relaxed text-slate-600">{feature.text}</p>
+          {copy.features.map((feature, index) => (
+            <article class={`relative overflow-hidden rounded-2xl border p-6 shadow-[0_18px_34px_-28px_rgba(57,43,31,0.7)] ${index === 0 ? 'border-[#e0c9c0] bg-[#f7e5df]' : index === 1 ? 'border-[#ddd0a8] bg-[#f7edc8]' : 'border-[#cddac7] bg-[#e5edde]'}`}>
+              <span class={`mb-5 flex h-10 w-10 items-center justify-center rounded-full border bg-white/70 font-serif text-lg font-semibold ${index === 0 ? 'border-[#d8b6aa] text-[#9d5d52]' : index === 1 ? 'border-[#d7c27e] text-[#8a6a28]' : 'border-[#bacbb2] text-[#617151]'}`} aria-hidden="true">{index + 1}</span>
+              <h2 class="mb-2 font-serif text-xl font-semibold text-[#302821]">{feature.title}</h2>
+              <p class="text-sm leading-relaxed text-[#6d6258]">{feature.text}</p>
             </article>
           ))}
         </div>
       </div>
     </section>
 
-    <section class="bg-blue-600 text-white">
+    <section class="relative isolate overflow-hidden bg-[#342c25] text-white">
+      <div class="pointer-events-none absolute -left-20 -top-32 -z-10 h-72 w-72 rounded-full bg-[#8c7049]/55 blur-3xl" aria-hidden="true"></div>
+      <div class="pointer-events-none absolute -right-16 bottom-[-8rem] -z-10 h-72 w-72 rounded-full bg-[#718064]/45 blur-3xl" aria-hidden="true"></div>
       <div class="container mx-auto px-4 py-10 md:py-12">
         <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
           <div>
-            <p class="text-sm font-semibold text-blue-100 mb-2">
-              {isGerman ? 'Bereit für die nächste Lerneinheit?' : 'Ready for your next practice session?'}
+            <p class="mb-2 text-sm font-semibold text-[#e0cda8]">
+              {copy.cta.eyebrow}
             </p>
-            <h2 class="text-3xl font-extrabold">
-              {isGerman ? 'Laden Sie die App und üben Sie heute die ersten Fragen.' : 'Download the app and practice your first questions today.'}
+            <h2 class="max-w-3xl font-serif text-3xl font-semibold leading-tight md:text-4xl">
+              {copy.cta.title}
             </h2>
           </div>
           <div class="flex flex-col sm:flex-row gap-3 shrink-0">
-            <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 rounded-lg bg-white px-5 py-3 font-bold text-slate-950 hover:bg-blue-50">
+            <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 rounded-xl bg-[#fffdf9] px-5 py-3 font-bold text-[#302821] transition-colors hover:bg-white">
               <svg class="h-5 w-5 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <path d="M16.365 1.43c0 1.14-.41 1.99-1.01 2.72-.63.77-1.66 1.36-2.67 1.28-.13-1.06.3-2.06.9-2.75.62-.71 1.7-1.22 2.78-1.25zM19.46 17.03c-.41.94-.61 1.36-1.14 2.21-.74 1.19-1.78 2.67-3.07 2.68-1.15.01-1.45-.75-3.01-.74-1.56.01-1.89.75-3.03.74-1.29-.01-2.29-1.34-3.03-2.53-2.07-3.35-2.28-7.28-1.01-9.24.9-1.39 2.33-2.2 3.67-2.2 1.37 0 2.23.76 3.37.76 1.11 0 1.78-.76 3.36-.76 1.2 0 2.47.65 3.37 1.78-2.96 1.62-2.47 5.85.52 7.3z"/>
               </svg>
               App Store
             </a>
-            <a href={PLAY_STORE_URL} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 rounded-lg bg-slate-950 px-5 py-3 font-bold text-white hover:bg-slate-800">
+            <a href={PLAY_STORE_URL} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 rounded-xl border border-white/25 bg-white/10 px-5 py-3 font-bold text-white transition-colors hover:bg-white/15">
               <svg class="h-5 w-5 shrink-0" viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M3.4 2.4c-.25.18-.4.49-.4.9v17.4c0 .4.15.72.4.9l10-9.6-10-9.6z" fill="#ffffff"/>
                 <path d="M20.3 10.1 17.2 8.4 14.1 11.3l3.1 2.9 3.1-1.7c.93-.52.93-1.88 0-2.4z" fill="#ffffff"/>
@@ -332,26 +332,26 @@ const mobileAppSchema = {
     </section>
 
     {reviewsData.length > 0 && (
-      <section class="py-12 md:py-16 bg-white">
+      <section class="bg-[#fffdf9] py-12 md:py-16">
         <div class="container mx-auto px-4">
           <div class="flex items-end justify-between gap-4 mb-6">
             <div>
-              <p class="text-xs font-bold uppercase tracking-widest text-blue-700 mb-2">
-                Reviews
+              <p class="mb-2 text-xs font-bold uppercase tracking-[0.16em] text-[#8a6844]">
+                {copy.reviews.eyebrow}
               </p>
-              <h2 class="text-2xl md:text-3xl font-bold text-slate-950">
-                {isGerman ? 'Was Nutzer über die App sagen' : 'What users say about the app'}
+              <h2 class="font-serif text-2xl font-semibold tracking-[-0.02em] text-[#302821] md:text-3xl">
+                {copy.reviews.title}
               </h2>
             </div>
           </div>
 
           <div class="grid gap-4 md:grid-cols-2">
             {reviewsData.map((review) => (
-              <article class="rounded-lg border border-slate-200 bg-slate-50 p-5">
-                <div class="text-yellow-500 text-sm mb-2">{'★'.repeat(review.rating)}</div>
-                <h3 class="text-base font-bold text-slate-950 mb-2">{review.title}</h3>
-                <p class="text-sm leading-relaxed text-slate-600 mb-4">{review.text}</p>
-                <p class="text-xs font-semibold text-slate-500">{review.author}</p>
+              <article class="rounded-2xl border border-[#dfd3c6] bg-[#faf6ef] p-6 shadow-[0_18px_34px_-30px_rgba(57,43,31,0.65)]">
+                <div class="mb-2 text-sm text-[#c59136]">{'★'.repeat(review.rating)}</div>
+                <h3 class="mb-2 font-serif text-lg font-semibold text-[#302821]">{review.title}</h3>
+                <p class="mb-4 text-sm leading-relaxed text-[#6d6258]">{review.text}</p>
+                <p class="text-xs font-semibold text-[#897969]">{review.author}</p>
               </article>
             ))}
           </div>
@@ -359,18 +359,18 @@ const mobileAppSchema = {
       </section>
     )}
 
-    <div class="fixed inset-x-0 bottom-0 z-50 border-t border-slate-200 bg-white/95 px-4 py-3 shadow-2xl backdrop-blur md:hidden">
+    <div class="fixed inset-x-0 bottom-0 z-50 border-t border-[#d9cdbf] bg-[#f8f4ee]/95 px-4 py-3 shadow-2xl backdrop-blur md:hidden">
       <div class="grid grid-cols-2 gap-2">
-        <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer" class="inline-flex min-h-12 items-center justify-center gap-2 rounded-lg bg-slate-950 px-3 text-sm font-bold text-white">
+        <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer" class="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-[#3f352c] px-3 text-sm font-bold text-white">
           <svg class="h-5 w-5 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
             <path d="M16.365 1.43c0 1.14-.41 1.99-1.01 2.72-.63.77-1.66 1.36-2.67 1.28-.13-1.06.3-2.06.9-2.75.62-.71 1.7-1.22 2.78-1.25zM19.46 17.03c-.41.94-.61 1.36-1.14 2.21-.74 1.19-1.78 2.67-3.07 2.68-1.15.01-1.45-.75-3.01-.74-1.56.01-1.89.75-3.03.74-1.29-.01-2.29-1.34-3.03-2.53-2.07-3.35-2.28-7.28-1.01-9.24.9-1.39 2.33-2.2 3.67-2.2 1.37 0 2.23.76 3.37.76 1.11 0 1.78-.76 3.36-.76 1.2 0 2.47.65 3.37 1.78-2.96 1.62-2.47 5.85.52 7.3z"/>
           </svg>
           App Store
         </a>
-        <a href={PLAY_STORE_URL} target="_blank" rel="noopener noreferrer" class="inline-flex min-h-12 items-center justify-center gap-2 rounded-lg bg-blue-600 px-3 text-sm font-bold text-white">
+        <a href={PLAY_STORE_URL} target="_blank" rel="noopener noreferrer" class="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl border border-[#d5c7b6] bg-[#fffdf9] px-3 text-sm font-bold text-[#342b24]">
           <svg class="h-5 w-5 shrink-0" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M3.4 2.4c-.25.18-.4.49-.4.9v17.4c0 .4.15.72.4.9l10-9.6-10-9.6z" fill="#ffffff"/>
-            <path d="M20.3 10.1 17.2 8.4 14.1 11.3l3.1 2.9 3.1-1.7c.93-.52.93-1.88 0-2.4z" fill="#ffffff"/>
+            <path d="M3.4 2.4c-.25.18-.4.49-.4.9v17.4c0 .4.15.72.4.9l10-9.6-10-9.6z" fill="currentColor"/>
+            <path d="M20.3 10.1 17.2 8.4 14.1 11.3l3.1 2.9 3.1-1.7c.93-.52.93-1.88 0-2.4z" fill="currentColor"/>
           </svg>
           Google Play
         </a>

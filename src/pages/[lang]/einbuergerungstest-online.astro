@@ -166,7 +166,7 @@ const pageSchema = {
 >
   <Header lang={lang} />
 
-  <main id="main-content" class="app-page">
+  <main class="app-page">
     <section class="bg-slate-950 text-white">
       <div class="container mx-auto px-4 py-12 md:py-16">
         <div class="max-w-4xl">
@@ -219,13 +219,13 @@ const pageSchema = {
                 : 'This page gives you a direct path to practice questions, exam simulation, and mobile review.'}
             </p>
             <div class="flex flex-col sm:flex-row gap-3">
-              <a href={appUrl} class="inline-flex items-center justify-center rounded-lg bg-slate-950 px-5 py-3 font-bold text-white hover:bg-slate-800">
+              <a href={appUrl} class="inline-flex items-center justify-center rounded-xl bg-[#3f352c] px-5 py-3 font-bold text-white transition-colors hover:bg-[#2f2822]">
                 {isGerman ? 'App herunterladen' : 'Download app'}
               </a>
-              <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-lg border border-slate-300 bg-white px-5 py-3 font-bold text-slate-900 hover:bg-slate-50">
+              <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-xl border border-[#d5c7b6] bg-[#fffdf9] px-5 py-3 font-bold text-[#342b24] hover:bg-white">
                 App Store
               </a>
-              <a href={PLAY_STORE_URL} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-lg border border-slate-300 bg-white px-5 py-3 font-bold text-slate-900 hover:bg-slate-50">
+              <a href={PLAY_STORE_URL} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-xl border border-[#d5c7b6] bg-[#fffdf9] px-5 py-3 font-bold text-[#342b24] hover:bg-white">
                 Google Play
               </a>
             </div>
