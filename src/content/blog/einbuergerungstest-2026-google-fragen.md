@@ -109,7 +109,7 @@ Der Einbürgerungstest ist ein schriftlicher Multiple-Choice-Test. Zu jeder Frag
 Musterprüfungen helfen, reichen aber oft nicht. Besser ist eine Kombination aus Fragenkatalog, Bundesland-Fragen, Fehlerliste und Prüfungssimulation.
 
 ### Wann bekomme ich mein Ergebnis?
-Das Ergebnis kommt nicht sofort wie bei einem Online-Quiz. Sie erhalten später eine Bescheinigung über Ihr persönliches Testergebnis.
+Das Ergebnis kommt nicht sofort wie bei einem Online-Quiz. Sie erhalten später eine Bescheinigung über Ihr persönliches Testergebnis. Wie Auswertung, Versand und Nachfragen funktionieren, erklärt unser Ratgeber **[Einbürgerungstest Ergebnis: Wartezeit und Bescheinigung](/de/blog/einbuergerungstest-ergebnis-wartezeit-bescheinigung)**.
 
 ## Nächster Schritt
 Lesen Sie als Vertiefung **[Einbürgerungstest online üben 2026](/de/blog/einbuergerungstest-online-ueben-2026)**, **[Einbürgerungstest 2026: 33 Fragen einfach erklärt](/de/blog/33-fragen-erklaert)** und **[Einbürgerungstest wiederholen](/de/blog/test-wiederholen)**.

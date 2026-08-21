@@ -53,4 +53,4 @@ Nein, die Vorbereitung basiert auf demselben offiziellen Fragenkatalog.
 Das hängt von Ihrem Kurs, Ihrer Prüfstelle und Ihrer Behörde ab. Fragen Sie vor der Anmeldung kurz nach.
 
 ## Nächster Schritt
-Lesen Sie auch **[Einbürgerungstest online üben 2026](/de/blog/einbuergerungstest-online-ueben-2026)** und **[Wie viele richtige Antworten brauche ich?](/de/blog/wie-viele-richtige-antworten-brauche-ich-einbuergerungstest)**.
+Lesen Sie auch **[Einbürgerungstest online üben 2026](/de/blog/einbuergerungstest-online-ueben-2026)**, **[Wie viele richtige Antworten brauche ich?](/de/blog/wie-viele-richtige-antworten-brauche-ich-einbuergerungstest)** und **[wann das Ergebnis und die Bescheinigung kommen](/de/blog/einbuergerungstest-ergebnis-wartezeit-bescheinigung)**.
