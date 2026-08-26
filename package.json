@@ -6,7 +6,12 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "social:preview": "node scripts/social/daily-x-question.mjs --preview",
+    "social:verify": "node scripts/social/daily-x-question.mjs --verify",
+    "social:daily": "node scripts/social/daily-x-question.mjs --post",
+    "social:catch-up": "node scripts/social/x-catch-up.mjs",
+    "social:test": "node --test scripts/social/daily-question.test.mjs"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.6",
@@ -21,9 +26,11 @@
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
     "tailwindcss": "^4.1.18",
+    "twitter-api-v2": "^1.29.1",
     "typescript": "^5.9.3"
   },
   "devDependencies": {
-    "@tailwindcss/typography": "^0.5.19"
+    "@tailwindcss/typography": "^0.5.19",
+    "sharp": "^0.34.5"
   }
 }

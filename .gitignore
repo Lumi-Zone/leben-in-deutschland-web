@@ -16,6 +16,11 @@ pnpm-debug.log*
 # environment variables
 .env
 .env.production
+.env.local
+.env.x.local
+
+# generated social media cards and local posting state
+.daily-x/
 
 # macOS-specific files
 .DS_Store
