@@ -155,4 +155,4 @@ tags: ["Einbürgerungstest", "Arabisch", "Vorbereitung", "BAMF"]
 نعم. حسب معلومات BAMF، إذا حصلت على أقل من 17 إجابة صحيحة يمكنك إعادة الاختبار.
 
 ## الخطوة التالية
-تابع التحضير مع **[Einbürgerungstest 2026: 33 Fragen einfach erklärt](/de/blog/33-fragen-erklaert)** و **[Bundesland-Fragen im Einbürgerungstest](/de/blog/bundesland-fragen-erklaert)** و **[Einbürgerungstest online üben 2026](/de/blog/einbuergerungstest-online-ueben-2026)**.
+تابع التحضير مع **[Einbürgerungstest 2026: 33 Fragen einfach erklärt](/de/blog/33-fragen-erklaert/)** و **[Bundesland-Fragen im Einbürgerungstest](/de/blog/bundesland-fragen-erklaert/)** و **[Einbürgerungstest online üben 2026](/de/blog/einbuergerungstest-online-ueben-2026/)**.

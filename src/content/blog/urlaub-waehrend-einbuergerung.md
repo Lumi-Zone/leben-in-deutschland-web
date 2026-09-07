@@ -40,4 +40,4 @@ Problematisch kann es bei sehr langen Aufenthalten werden. Besonders bei mehr al
 Kurze Reisen müssen oft nicht gemeldet werden. Bei längerer Abwesenheit, Umzug oder neuer Adresse sollten Sie die Behörde informieren.
 
 ## Nächster Schritt
-Lesen Sie auch **[Aufenthaltstitel für Einbürgerung](/de/blog/aufenthaltstitel-und-einbuergerung)** und **[Einbürgerung 2026: Voraussetzungen und Ablauf](/de/blog/einbuergerung-ablauf)**.
+Lesen Sie auch **[Aufenthaltstitel für Einbürgerung](/de/blog/aufenthaltstitel-und-einbuergerung/)** und **[Einbürgerung 2026: Voraussetzungen und Ablauf](/de/blog/einbuergerung-ablauf/)**.

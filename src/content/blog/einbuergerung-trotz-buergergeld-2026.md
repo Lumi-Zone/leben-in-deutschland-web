@@ -102,4 +102,4 @@ Wenn sie Ihre aktuelle Situation erklären, sollten sie nicht fehlen. Unvollstä
 Das kann sinnvoll sein, ist aber nicht immer zwingend. Prüfen Sie vorher, ob eine Ausnahme passt und ob Ihre Unterlagen stark genug sind.
 
 ## Nächster Schritt
-Lesen Sie auch **[Einbürgerung 2026: Voraussetzungen und Ablauf](/de/blog/einbuergerung-ablauf)**, **[Aufenthaltstitel für Einbürgerung](/de/blog/aufenthaltstitel-und-einbuergerung)** und **[Einbürgerung Antrag 2026: Checkliste](/de/blog/einbuergerung-antrag-checkliste-2026)**.
+Lesen Sie auch **[Einbürgerung 2026: Voraussetzungen und Ablauf](/de/blog/einbuergerung-ablauf/)**, **[Aufenthaltstitel für Einbürgerung](/de/blog/aufenthaltstitel-und-einbuergerung/)** und **[Einbürgerung Antrag 2026: Checkliste](/de/blog/einbuergerung-antrag-checkliste-2026/)**.

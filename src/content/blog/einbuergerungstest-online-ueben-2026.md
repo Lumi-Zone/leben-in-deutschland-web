@@ -128,4 +128,4 @@ Ein gutes Zeichen ist, wenn Sie mehrere Prüfungssimulationen hintereinander kla
 Nein. Wiederholen Sie nur Ihre Fehlerliste, die Bundesland-Fragen und wenige unsichere Themen. Neue Inhalte kurz vor dem Termin erhöhen oft nur den Stress.
 
 ## Nächster Schritt
-Lesen Sie auch **[Einbürgerungstest 2026: 33 Fragen einfach erklärt](/de/blog/33-fragen-erklaert)**, **[Bundesland-Fragen im Einbürgerungstest](/de/blog/bundesland-fragen-erklaert)** und **[Einbürgerungstest Prüfungstag](/de/blog/tipps-fuer-den-pruefungstag)**.
+Lesen Sie auch **[Einbürgerungstest 2026: 33 Fragen einfach erklärt](/de/blog/33-fragen-erklaert/)**, **[Bundesland-Fragen im Einbürgerungstest](/de/blog/bundesland-fragen-erklaert/)** und **[Einbürgerungstest Prüfungstag](/de/blog/tipps-fuer-den-pruefungstag/)**.

@@ -156,4 +156,4 @@ tags: ["Einbürgerungstest", "Ukrainisch", "Vorbereitung", "BAMF"]
 Так. За інформацією BAMF, якщо правильних відповідей менше 17, тест можна повторити.
 
 ## Наступний крок
-Продовжуйте підготовку з матеріалами **[Einbürgerungstest 2026: 33 Fragen einfach erklärt](/de/blog/33-fragen-erklaert)**, **[Bundesland-Fragen im Einbürgerungstest](/de/blog/bundesland-fragen-erklaert)** та **[Einbürgerungstest online üben 2026](/de/blog/einbuergerungstest-online-ueben-2026)**.
+Продовжуйте підготовку з матеріалами **[Einbürgerungstest 2026: 33 Fragen einfach erklärt](/de/blog/33-fragen-erklaert/)**, **[Bundesland-Fragen im Einbürgerungstest](/de/blog/bundesland-fragen-erklaert/)** та **[Einbürgerungstest online üben 2026](/de/blog/einbuergerungstest-online-ueben-2026/)**.

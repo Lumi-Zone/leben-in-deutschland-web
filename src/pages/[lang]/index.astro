@@ -2,7 +2,11 @@
 import Layout from '../../layouts/Layout.astro';
 import questions from '../../data/questions.json';
 import { useTranslations } from '../../i18n/ui';
+import { searchCopy, QUESTION_SOURCE_URL } from '../../i18n/seo';
+import HomePractice from '../../components/HomePractice';
+import { buildQuestionSessionItem } from '../../utils/questions';
 import PhoneSlider from '../../components/PhoneSlider';
+import AppInstallQr from '../../components/AppInstallQr.astro';
 import ReviewsSlider from '../../components/ReviewsSlider';
 import ContinueLearningCard from '../../components/ContinueLearningCard';
 import OnboardingStarter from '../../components/OnboardingStarter';
@@ -13,7 +17,7 @@ import { getBlogImageAlt, getOptimizedImageUrl, resolveBlogImage } from '../../u
 import { SUPPORTED_LANGUAGES, type SupportedLang } from '../../types/language';
 import { getLocalizedQuestionText } from '../../utils/questions';
 import { stripHtml } from '../../utils/seo';
-import { APP_STORE_URL, MOBILE_APP_ALTERNATE_NAMES, MOBILE_APP_NAME, PLAY_STORE_URL } from '../../utils/appLinks';
+import { APP_STORE_URL, MOBILE_APP_ALTERNATE_NAMES, MOBILE_APP_NAME, PLAY_STORE_URL, buildStoreUrls } from '../../utils/appLinks';
 
 export function getStaticPaths() {
   return SUPPORTED_LANGUAGES.map((lang) => ({ params: { lang }, props: { lang } }));
@@ -22,6 +26,8 @@ export function getStaticPaths() {
 const { lang } = Astro.props as { lang: SupportedLang };
 const t = useTranslations(lang);
 import Header from '../../components/Header.astro';
+import SocialLinks from '../../components/SocialLinks.astro';
+import { SOCIAL_PROFILE_URLS } from '../../utils/social';
 import { getPath } from '../../utils/navigation';
 
 const siteUrl = Astro.site || 'https://lid-einbuergerung.de';
@@ -44,9 +50,10 @@ const recentBlogPosts = blogPosts
 	}));
 const stateLinks = GERMAN_STATES;
 const isGerman = lang === 'de';
+const homeStore = buildStoreUrls({ source: 'home-app', lang });
 const seoTitle = isGerman
 	? 'Einbürgerungstest 2026 online üben | Leben in Deutschland 300 Fragen'
-	: `${t("hero.title")} 2026 - Official Questions and Exam Practice`;
+	: `${t("hero.title")} | ${searchCopy[lang].catalog}`;
 const seoDescription = isGerman
 	? 'Üben Sie den Leben in Deutschland Test 2026 kostenlos online: 300 offizielle BAMF-Fragen, Bundesland-Fragen, Prüfungssimulation und einfache Erklärungen.'
 	: heroDescription;
@@ -80,6 +87,11 @@ const seoKeywords = isGerman
 	  ].join(', ')
 	: undefined;
 const importantPages = [
+	{
+		label: searchCopy[lang].catalog,
+		description: searchCopy[lang].description,
+		href: getPath(`${lang}/fragen/`),
+	},
 	{
 		label: isGerman ? 'Leben in Deutschland App' : t("question.practice_app"),
 		description: isGerman ? 'Die App für iOS und Android mit Lernmodus, Prüfungssimulation und Fortschritt.' : t("features.exam.desc"),
@@ -127,7 +139,7 @@ const organizationSchema = {
 	name: 'Leben in Deutschland',
 	url: primaryHomeUrl,
 	logo: new URL(getPath('logo.png'), siteUrl).href,
-	sameAs: ['https://x.com/300Fragen'],
+	sameAs: SOCIAL_PROFILE_URLS,
 };
 const websiteSchema = {
 	'@type': 'WebSite',
@@ -221,335 +233,80 @@ const homeSchemaGraph = {
 	<!-- Navigation -->
 	<Header lang={lang} />
 
-	<main class="app-page">
-		<!-- HERO SECTION -->
-		<div class="container relative mx-auto px-4 py-8 text-center lg:py-12">
-			<div class="pointer-events-none absolute inset-x-4 top-8 h-56 bg-gradient-to-r from-[#efdca3]/60 via-[#ead9e6]/35 to-[#dce7dc]/55 blur-3xl" aria-hidden="true"></div>
-			<section class="relative mx-auto mb-8 max-w-5xl overflow-hidden rounded-[2.25rem] border border-[#ded3c5] bg-[#faf6ef]/90 px-5 py-9 shadow-[0_28px_70px_-48px_rgba(60,46,34,0.55)] backdrop-blur sm:px-8 md:rounded-[3rem] md:py-12">
-				<div class="pointer-events-none absolute -left-20 -top-24 h-56 w-56 rounded-full bg-[#edd897]/45 blur-3xl" aria-hidden="true"></div>
-				<div class="pointer-events-none absolute -right-20 bottom-0 h-64 w-64 rounded-full bg-[#e5d2e1]/55 blur-3xl" aria-hidden="true"></div>
-				<div class="relative inline-flex cursor-default items-center gap-3 rounded-full border border-[#d8c9b5] bg-white/75 px-5 py-2.5 shadow-sm transition-transform hover:scale-[1.02]">
-					<span class="text-xs font-bold uppercase tracking-[0.16em] text-[#6f5a45]">{t("hero.badge")}</span>
-					<div class="flex text-[#c59136] text-base">★★★★★</div>
-					<span class="text-base font-extrabold text-[#2b241e]">4.8</span>
-				</div>
-			
-			<h1 class="relative mx-auto mt-7 max-w-4xl font-serif text-5xl font-semibold leading-[1.02] tracking-[-0.035em] text-[#241f1a] lg:text-7xl">
-				{t("hero.title")}
-			</h1>
-			
-			<p class="relative mx-auto mb-8 mt-5 max-w-2xl text-lg leading-relaxed text-[#6d6258] md:text-xl" set:html={t("hero.subtitle")}>
-			</p>
+	<main class="home-page">
+        <section class="home-hero home-shell">
+            <div>
+                <p class="home-eyebrow"><i aria-hidden="true"></i>Einbürgerungstest · 2026</p>
+                <h1>{isGerman ? <>Dein nächstes<br/>Kapitel <em>beginnt<br/>hier.</em></> : lang === 'tr' ? <>Yeni bir hayat.<br/><em>İlk adım burada.</em></> : lang === 'en' ? <>Your next chapter<br/><em>starts here.</em></> : t('hero.title')}</h1>
+                <p class="home-description">{isGerman ? 'Mach Deutschland zu deinem Zuhause. Bereite dich mit allen offiziellen Fragen auf deinen Einbürgerungstest vor – in deinem Tempo, in deiner Sprache.' : lang === 'tr' ? 'Almanya’yı evin yap. Tüm resmî sorularla vatandaşlık sınavına kendi hızında, kendi dilinde hazırlan.' : lang === 'en' ? 'Make Germany your home. Prepare for your citizenship test with all official questions, at your pace and in your language.' : heroDescription}</p>
+                <div class="home-actions">
+                    <a class="home-button" href={getPath(`${lang}/frage/1`)} data-umami-event="start-quiz-click" data-umami-event-location="home-hero" data-umami-event-lang={lang}>{t('home.start_quiz')} <span aria-hidden="true">↗</span></a>
+                    <a class="home-button secondary" href={getPath(`${lang}/exam`)} data-umami-event="start-exam-click" data-umami-event-location="home-hero" data-umami-event-lang={lang}>{t('features.exam.title')} <span aria-hidden="true">→</span></a>
+                </div>
+                <div class="home-trust"><span><b aria-hidden="true">✓</b>{isGerman ? 'Kostenlos online lernen' : lang === 'tr' ? 'Ücretsiz çevrimiçi öğren' : 'Free online practice'}</span><span><b aria-hidden="true">✓</b>{isGerman ? 'Ohne Anmeldung' : lang === 'tr' ? 'Kayıt gerektirmez' : 'No account needed'}</span></div>
+            </div>
+            <HomePractice client:load lang={lang} question={buildQuestionSessionItem(questions[0], lang)} labels={{title:t('features.practice.title'),correct:t('question.correct'),wrong:t('question.wrong'),answer:t('question.correct_answer'),next:t('home.continue_cta')}} />
+        </section>
+        <div class="home-stats home-shell">
+            <div class="home-stat"><strong>300</strong><span>{isGerman ? 'Offizielle' : lang === 'tr' ? 'Resmî' : 'Official'}<br/>{isGerman ? 'BAMF-Fragen' : lang === 'tr' ? 'BAMF sorusu' : 'BAMF questions'}</span></div>
+            <div class="home-stat"><strong>16</strong><span>{t('progress.topic_land')}</span></div>
+            <div class="home-stat"><strong>{SUPPORTED_LANGUAGES.length}</strong><span>{isGerman ? 'Sprachen.' : lang === 'tr' ? 'Dil.' : 'Languages.'}<br/>{isGerman ? 'Ein Ziel.' : lang === 'tr' ? 'Tek hedef.' : 'One goal.'}</span></div>
+            <div class="home-stat"><strong>33</strong><span>{isGerman ? 'Fragen pro' : lang === 'tr' ? 'Deneme sınavı' : 'Questions per'}<br/>{isGerman ? 'Probeprüfung' : lang === 'tr' ? 'sorusu' : 'practice exam'}</span></div>
+        </div>
 
-			<div class="relative flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center">
-				<a
-					href={APP_STORE_URL}
-					data-umami-event="app-store-click"
-					data-umami-event-location="home-hero"
-					data-umami-event-lang={lang}
-					class="group flex items-center justify-center gap-3 rounded-xl border border-[#302821] bg-[#3f352c] px-6 py-3 text-white shadow-[0_12px_28px_-15px_rgba(47,38,31,0.8)] transition-all hover:-translate-y-0.5 hover:bg-[#2f2822]"
-				>
-					<svg class="w-8 h-8 group-hover:opacity-90 transition-opacity" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-						<path d="M16.365 1.43c0 1.14-.41 1.99-1.01 2.72-.63.77-1.66 1.36-2.67 1.28-.13-1.06.3-2.06.9-2.75.62-.71 1.7-1.22 2.78-1.25zM19.46 17.03c-.41.94-.61 1.36-1.14 2.21-.74 1.19-1.78 2.67-3.07 2.68-1.15.01-1.45-.75-3.01-.74-1.56.01-1.89.75-3.03.74-1.29-.01-2.29-1.34-3.03-2.53-2.07-3.35-2.28-7.28-1.01-9.24.9-1.39 2.33-2.2 3.67-2.2 1.37 0 2.23.76 3.37.76 1.11 0 1.78-.76 3.36-.76 1.2 0 2.47.65 3.37 1.78-2.96 1.62-2.47 5.85.52 7.3z"/>
-					</svg>
-					<div class="text-left">
-						<div class="text-[10px] font-medium opacity-80 uppercase leading-none mb-1">{t("hero.download_apple")}</div>
-						<div class="text-lg font-bold leading-none -mt-0.5 font-sans">App Store</div>
-					</div>
-				</a>
-				<a
-					href={PLAY_STORE_URL}
-					data-umami-event="play-store-click"
-					data-umami-event-location="home-hero"
-					data-umami-event-lang={lang}
-					class="group flex items-center justify-center gap-3 rounded-xl border border-[#d5c7b6] bg-[#fffdf9]/90 px-6 py-3 text-[#342b24] shadow-[0_12px_28px_-18px_rgba(47,38,31,0.55)] transition-all hover:-translate-y-0.5 hover:bg-white"
-				>
-					<svg class="w-7 h-7 group-hover:opacity-90 transition-opacity" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-						<path d="M3 2.5L14.5 12L3 21.5V2.5Z" fill="currentColor"/>
-						<path d="M14.5 12L18.2 8.9L21 10.5C21.7 10.9 21.7 11.9 21 12.3L18.2 13.9L14.5 12Z" fill="currentColor" fill-opacity="0.85"/>
-						<path d="M14.5 12L18.2 15.1L8.3 20.7L3 21.5L14.5 12Z" fill="currentColor" fill-opacity="0.72"/>
-						<path d="M14.5 12L8.3 3.3L3 2.5L14.5 12Z" fill="currentColor" fill-opacity="0.62"/>
-					</svg>
-					<div class="text-left">
-						<div class="text-[10px] font-medium opacity-80 uppercase leading-none mb-1">{t("hero.download_google")}</div>
-						<div class="text-lg font-bold leading-none -mt-0.5 font-sans">Google Play</div>
-					</div>
-				</a>
-			</div>
-			</section>
+        <section class="home-section home-shell" id="wichtige-seiten">
+            <div class="home-section-head">
+                <div><p class="home-eyebrow">{t('features.badge')}</p><h2>{isGerman ? <>Ein Ziel. Dein eigener Weg.</> : t('features.title')}</h2></div>
+                <p>{isGerman ? 'Ob erste Frage oder letzte Generalprobe: Finde den Lernmodus, der gerade zu dir passt.' : t('features.practice.desc')}</p>
+            </div>
+            <div class="home-modes">
+                {[
+                    {n:'01',icon:'learn',title:t('features.learn.title'),description:t('features.learn.desc'),href:getPath(`${lang}/frage/1`),label:t('home.start_quiz'),meta:isGerman ? '300 FRAGEN · SCHRITT FÜR SCHRITT' : '300 · BAMF'},
+                    {n:'02',icon:'exam',title:t('features.exam.title'),description:t('features.exam.desc'),href:getPath(`${lang}/exam`),label:t('home.start_exam'),meta:isGerman ? '33 FRAGEN · 60 MINUTEN' : '33 · 60 MIN'},
+                    {n:'03',icon:'progress',title:t('home.progress_cta'),description:t('home.continue_subtitle'),href:getPath(`${lang}/progress`),label:t('home.progress_cta'),meta:isGerman ? 'DEIN FORTSCHRITT IM BLICK' : t('home.continue_title')},
+                ].map((mode) => <a class={`home-mode ${mode.icon}`} href={mode.href}>
+                    <div class="mode-top"><span class="mode-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">{mode.icon === 'learn' ? <><path d="M12 6c-3-2-6-2-9-1v14c3-1 6-1 9 1 3-2 6-2 9-1V5c-3-1-6-1-9 1Z"/><path d="M12 6v14"/></> : mode.icon === 'exam' ? <><circle cx="12" cy="13" r="8"/><path d="M12 9v4l3 2M9 2h6M12 2v3"/></> : <><path d="M4 20h16M6 16v-4M12 16V8M18 16V4"/></>}</svg></span><span class="mode-number">{mode.n}</span></div>
+                    <p class="mode-meta">{mode.meta}</p><h3>{mode.title}</h3><p class="mode-description">{mode.description}</p><span class="mode-link">{mode.label}<span aria-hidden="true">↗</span></span>
+                </a>)}
+            </div>
+        </section>
 
-			<!-- Phone Mockup Carousel -->
-			<div class="mb-12 lg:mb-14">
-				<PhoneSlider client:visible lang={lang} />
-			</div>
-		</div>
+        <section class="home-section home-shell" id="beispiel-fragen">
+            <div class="home-section-head"><div><p class="home-eyebrow">{isGerman ? 'KLEINE SCHRITTE. ECHTER FORTSCHRITT.' : t('home.start_quiz')}</p><h2>{t('home.sample_questions')}</h2></div><a class="home-text-link" href={getPath(`${lang}/frage/1`)}>{t('home.start_quiz')} <span aria-hidden="true">→</span></a></div>
+            <div class="home-questions">
+                {questions.slice(0,6).map((q)=><a class="home-question" href={getPath(`${lang}/frage/${q.id}`)} data-umami-event="sample-question-opened" data-umami-event-lang={lang} data-umami-event-question-id={q.id}>
+                    <div class="question-meta"><span>{String(q.id).padStart(2,'0')}</span><span>{q.area}</span><span aria-hidden="true">↗</span></div><h3>{getLocalizedQuestionText(q,lang)}</h3>
+                </a>)}
+            </div>
+            <div class="home-question-links"><a class="home-text-link" href={getPath(`${lang}/fragen/`)}>{searchCopy[lang].catalog} →</a><a class="home-text-link" href={getPath(`${lang}/favorites`)}>♡ {t('home.favorites_cta')}</a><a class="home-text-link" href={getPath(`${lang}/focus`)}>{t('features.practice.title')} →</a></div>
+        </section>
 
-		<OnboardingStarter
-			client:visible
-			lang={lang}
-			labels={{
-				title: t("home.continue_title"),
-				subtitle: t("home.continue_subtitle"),
-				learn: t("home.start_quiz"),
-				exam: t("home.start_exam"),
-				progress: t("home.progress_cta"),
-				continueLearn: t("home.continue_cta"),
-				dismiss: t("nav.close_menu"),
-			}}
-		/>
+        <section class="home-section home-shell" id="bundesland-fragen">
+            <div class="home-states">
+                <div class="home-section-head"><div><p class="home-eyebrow">16 BUNDESLÄNDER</p><h2>{isGerman ? <>Dein Zuhause.<br/>Deine Fragen.</> : t('progress.topic_land')}</h2></div><p>{isGerman ? 'Berlin, Bayern oder irgendwo dazwischen? Lerne die 10 Zusatzfragen für das Bundesland, in dem du lebst.' : lang === 'tr' ? 'Yaşadığın eyaleti seç ve sınavda çıkacak 10 ek soruya hazırlan.' : lang === 'en' ? 'Choose where you live and prepare for your state’s 10 additional questions.' : t('features.learn.desc')}</p></div>
+                <div class="home-state-grid">{stateLinks.map((state)=><a href={getPath(`${lang}/${state.slug}-fragen`)} data-umami-event="state-page-opened" data-umami-event-state={state.name} data-umami-event-lang={lang}><span>{state.name}</span><span aria-hidden="true">↗</span></a>)}</div>
+            </div>
+        </section>
 
-		<!-- SAMPLE QUESTIONS SECTION -->
-		<section id="beispiel-fragen" class="py-14 md:py-16 bg-white/70">
-			<div class="container mx-auto px-4">
-				<div class="max-w-6xl mx-auto">
-					<div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-5 mb-8">
-						<div class="text-left">
-							<div class="inline-flex items-center rounded-full border border-blue-100 bg-blue-50 px-3 py-1 text-xs font-bold uppercase tracking-widest text-blue-700 mb-4">
-								BAMF 2026
-							</div>
-							<h2 class="text-2xl md:text-3xl font-bold text-gray-900">
-								{t("home.sample_questions")} ({questions.length})
-							</h2>
-							<p class="text-sm md:text-base text-gray-600 mt-2 max-w-2xl">
-								{heroDescription}
-							</p>
-						</div>
-						<div class="flex flex-col sm:flex-row gap-3">
-							<a
-								href={getPath(`${lang}/frage/1`)}
-								data-umami-event="start-quiz-click"
-								data-umami-event-location="sample-questions"
-								data-umami-event-lang={lang}
-								class="inline-flex items-center justify-center px-5 py-2.5 rounded-xl border border-blue-200 text-blue-700 bg-blue-50 hover:bg-blue-100 font-semibold transition-colors"
-							>
-								{t("home.start_quiz")} →
-							</a>
-							<a
-								href={getPath(`${lang}/exam`)}
-								data-umami-event="start-exam-click"
-								data-umami-event-location="sample-questions"
-								data-umami-event-lang={lang}
-								class="inline-flex items-center justify-center px-5 py-2.5 rounded-xl bg-blue-600 text-white hover:bg-blue-700 font-semibold transition-colors shadow-sm"
-							>
-								{t("home.start_exam")}
-							</a>
-						</div>
-					</div>
+        <div class="home-learning home-shell">
+            <ContinueLearningCard client:visible lang={lang} totalQuestions={questions.length} labels={{title:t('home.continue_title'),subtitle:t('home.continue_subtitle'),continueCta:t('home.continue_cta'),startCta:t('home.continue_start'),solvedLabel:t('home.continue_solved'),lastLabel:t('home.continue_last'),noProgress:t('home.continue_no_progress')}} />
+            <OnboardingStarter client:visible lang={lang} labels={{title:t('features.badge'),subtitle:t('features.title'),learn:t('home.start_quiz'),exam:t('home.start_exam'),progress:t('home.progress_cta'),continueLearn:t('home.continue_cta'),dismiss:t('nav.close_menu')}} />
+        </div>
 
-					<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-						{questions.slice(0, 6).map((q) => {
-							const qTitle = getLocalizedQuestionText(q, lang);
-							return (
-								<a
-									href={getPath(`${lang}/frage/${q.id}`)}
-									data-umami-event="sample-question-opened"
-									data-umami-event-lang={lang}
-									data-umami-event-question-id={q.id}
-									class="block group"
-								>
-									<div class="bg-white p-5 rounded-2xl border border-gray-100 hover:border-blue-500 hover:shadow-lg transition-all h-full flex flex-col group-hover:-translate-y-1">
-										<div class="flex items-center justify-between mb-3 gap-3">
-											<span class="text-xs font-bold text-blue-600 bg-blue-50 px-2.5 py-1 rounded-md">#{q.id}</span>
-											<span class="text-[10px] font-semibold text-gray-500 uppercase tracking-wide bg-gray-50 px-2 py-1 rounded text-right line-clamp-1">{q.area}</span>
-										</div>
-										<h3 class="text-base font-medium text-gray-900 group-hover:text-blue-600 transition-colors line-clamp-3 leading-relaxed">
-											{qTitle}
-										</h3>
-									</div>
-								</a>
-							);
-						})}
-					</div>
+        <section class="home-section home-shell home-mobile-app" id="app">
+            <PhoneSlider client:visible lang={lang} />
+            <div class="home-app-downloads"><p>{isGerman ? 'Dein Lernbegleiter. Immer dabei.' : t('question.practice_app')}</p><div class="home-actions"><a class="home-button" href={homeStore.ios} data-umami-event="app-store-click" data-umami-event-location="home-app" data-umami-event-lang={lang}>App Store <span aria-hidden="true">↗</span></a><a class="home-button secondary" href={homeStore.android} data-umami-event="play-store-click" data-umami-event-location="home-app" data-umami-event-lang={lang}>Google Play <span aria-hidden="true">↗</span></a></div><AppInstallQr lang={lang} placement="home-qr" /></div>
+        </section>
 
-					<div class="mt-8 flex flex-col sm:flex-row justify-center items-center gap-3">
-						<a
-							href={getPath(`${lang}/favorites`)}
-							data-umami-event="favorites-opened"
-							data-umami-event-location="home"
-							data-umami-event-lang={lang}
-							class="inline-flex items-center px-5 py-2.5 rounded-xl border border-amber-200 text-amber-700 bg-amber-50 hover:bg-amber-100 font-semibold transition-colors"
-						>
-							{t("home.favorites_cta")}
-						</a>
-						<a
-							href={getPath(`${lang}/progress`)}
-							data-umami-event="progress-opened"
-							data-umami-event-location="home"
-							data-umami-event-lang={lang}
-							class="inline-flex items-center px-5 py-2.5 rounded-xl border border-emerald-200 text-emerald-700 bg-emerald-50 hover:bg-emerald-100 font-semibold transition-colors"
-						>
-							{t("home.progress_cta")}
-						</a>
-					</div>
-				</div>
-			</div>
-		</section>
+        <section class="home-section home-shell home-blog">
+            <div class="home-section-head"><div><p class="home-eyebrow">{t('nav.blog')}</p><h2>{isGerman ? 'Gut vorbereitet. Gut informiert.' : t('blog.title')}</h2></div><a class="home-text-link" href={getPath('de/blog')}>{t('nav.blog')} <span aria-hidden="true">→</span></a></div>
+            <div class="home-blog-grid">{recentBlogPosts.map((post)=><article><a href={getPath(`de/blog/${post.slug}`)} data-umami-event="blog-post-opened" data-umami-event-location="home-section" data-umami-event-lang={lang} data-umami-event-slug={post.slug}><div class="home-blog-image"><img src={post.imageCard} alt={post.imageAlt} width="768" height="480" loading="lazy" decoding="async"/></div><p class="home-blog-date">{post.data.pubDate.toLocaleDateString(lang)}</p><h3>{post.data.title}</h3><p class="home-blog-description">{post.data.description}</p><span class="home-text-link">{t('blog.read_more')} <span aria-hidden="true">↗</span></span></a></article>)}</div>
+        </section>
 
-		<ContinueLearningCard
-			client:visible
-			lang={lang}
-			totalQuestions={questions.length}
-			labels={{
-				title: t("home.continue_title"),
-				subtitle: t("home.continue_subtitle"),
-				continueCta: t("home.continue_cta"),
-				startCta: t("home.continue_start"),
-				solvedLabel: t("home.continue_solved"),
-				lastLabel: t("home.continue_last"),
-				noProgress: t("home.continue_no_progress"),
-			}}
-		/>
+        <div class="home-reviews"><ReviewsSlider client:visible lang={lang} reviewsData={reviewsData}/></div>
 
-		<section id="wichtige-seiten" class="py-12 md:py-14 bg-slate-50/80">
-			<div class="container mx-auto px-4">
-				<div class="max-w-6xl mx-auto">
-					<div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-6">
-						<div>
-							<p class="text-xs font-bold uppercase tracking-widest text-blue-700 mb-2">
-								Leben in Deutschland 2026
-							</p>
-							<h2 class="text-2xl md:text-3xl font-bold text-gray-900">
-								{isGerman ? 'Direkt zum Einbürgerungstest üben' : t("features.title")}
-							</h2>
-						</div>
-						<p class="text-sm md:text-base text-gray-600 max-w-2xl">
-							{isGerman
-								? 'Die wichtigsten Bereiche der Vorbereitung sind hier direkt verlinkt, damit Sie schneller zur passenden Übung finden.'
-								: heroDescription}
-						</p>
-					</div>
+        <section class="home-resources home-shell"><h2>{isGerman ? 'Alles für deine Vorbereitung' : t('features.title')}</h2><nav aria-label={isGerman ? 'Wichtige Seiten' : 'Resources'}>{importantPages.map((page)=><a href={page.href}>{page.label}<span aria-hidden="true">↗</span></a>)}</nav><p class="mt-6">{searchCopy[lang].independence}</p><p class="mt-3"><a class="home-text-link" href={QUESTION_SOURCE_URL}>{searchCopy[lang].source} ↗</a></p><p class="mt-3"><a class="home-text-link" href={getPath('de/blog/redaktionsrichtlinien/')} lang="de">Redaktionsrichtlinien & Quellen →</a></p></section>
 
-					<nav aria-label={isGerman ? 'Wichtige Seiten' : 'Important pages'} class="grid gap-3 md:grid-cols-2 lg:grid-cols-4">
-						{importantPages.map((page) => (
-							<a
-								href={page.href}
-								class="group rounded-lg border border-slate-200 bg-white p-4 shadow-sm transition-colors hover:border-blue-200 hover:bg-blue-50/60"
-							>
-								<span class="block text-sm font-bold text-gray-900 group-hover:text-blue-700">{page.label}</span>
-								<span class="mt-2 block text-xs leading-relaxed text-gray-600">{page.description}</span>
-							</a>
-						))}
-					</nav>
-				</div>
-			</div>
-		</section>
-
-		<section id="bundesland-fragen" class="py-14 md:py-16">
-			<div class="container mx-auto px-4">
-				<div class="rounded-3xl border border-blue-100 bg-gradient-to-b from-blue-50/70 to-white p-6 md:p-8 shadow-sm">
-					<div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6">
-						<h2 class="text-2xl md:text-3xl font-bold text-gray-900">
-							{t("progress.topic_land")} · 16
-						</h2>
-						<a
-							href={getPath(`${lang}/berlin-fragen`)}
-							data-umami-event="state-section-start-click"
-							data-umami-event-lang={lang}
-							data-umami-event-state="Berlin"
-							class="inline-flex items-center w-fit px-4 py-2 rounded-xl border border-blue-200 text-blue-700 bg-blue-50 hover:bg-blue-100 transition-colors font-semibold"
-						>
-							{t("home.start_quiz")} →
-						</a>
-					</div>
-					<div class="grid grid-cols-2 md:grid-cols-4 gap-3">
-						{stateLinks.map((state) => (
-							<a
-								href={getPath(`${lang}/${state.slug}-fragen`)}
-								data-umami-event="state-page-opened"
-								data-umami-event-lang={lang}
-								data-umami-event-state={state.name}
-								class="group rounded-xl border border-white/80 bg-white/85 px-3.5 py-3 text-sm font-medium text-gray-700 hover:text-blue-700 hover:border-blue-200 hover:bg-blue-50/70 transition-all shadow-[0_8px_20px_-18px_rgba(15,23,42,0.5)]"
-							>
-								<span class="inline-flex items-center gap-1.5">
-									<span class="text-blue-300 group-hover:text-blue-500 transition-colors">•</span>
-									{state.name}
-								</span>
-							</a>
-						))}
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="pb-14 md:pb-16">
-			<div class="container mx-auto px-4">
-				<div class="flex items-center justify-between mb-6 gap-4">
-					<div>
-						<h2 class="text-2xl md:text-3xl font-bold text-gray-900">{t("blog.title")}</h2>
-						<p class="text-sm md:text-base text-gray-600 mt-1">{t("blog.subtitle")}</p>
-					</div>
-					<a
-						href={getPath('de/blog')}
-						data-umami-event="blog-opened"
-						data-umami-event-location="home-section"
-						data-umami-event-lang={lang}
-						class="inline-flex items-center rounded-xl border border-blue-200 bg-blue-50 px-4 py-2.5 text-sm font-semibold text-blue-700 hover:bg-blue-100 transition-colors"
-					>
-						{t("nav.blog")} →
-					</a>
-				</div>
-
-					<div class="grid gap-4 md:grid-cols-3">
-						{recentBlogPosts.map((post) => (
-							<article class="rounded-2xl border border-gray-100 bg-white p-5 shadow-sm hover:shadow-md transition-shadow h-full flex flex-col">
-								<div class="h-36 rounded-xl overflow-hidden bg-slate-100 mb-4">
-									<img
-										src={post.imageCard}
-										alt={post.imageAlt}
-										loading="lazy"
-										decoding="async"
-										class="h-full w-full object-cover"
-									/>
-								</div>
-								<div class="text-xs text-gray-500 mb-2">{post.data.pubDate.toLocaleDateString(lang)}</div>
-								<h4 class="text-lg font-bold text-gray-900 mb-2 line-clamp-2">{post.data.title}</h4>
-								<p class="text-sm text-gray-600 line-clamp-3 mb-4 flex-1">{post.data.description}</p>
-								<a
-									href={getPath(`de/blog/${post.slug}`)}
-									data-umami-event="blog-post-opened"
-									data-umami-event-location="home-section"
-									data-umami-event-lang={lang}
-									data-umami-event-slug={post.slug}
-									class="inline-flex items-center text-sm font-semibold text-blue-700 hover:underline"
-								>
-									{t("blog.read_more")}
-								</a>
-							</article>
-						))}
-					</div>
-				</div>
-			</section>
-
-		<!-- REVIEWS SECTION -->
-		<ReviewsSlider client:visible lang={lang} reviewsData={reviewsData} />
-
-		<!-- FOOTER -->
-		<footer class="bg-white border-t border-gray-100 py-12">
-			<div class="container mx-auto px-4 text-center">
-				<div class="flex flex-col md:flex-row justify-center items-center gap-8 text-sm text-gray-500 mb-8">
-					<a href={getPath(`${lang}/terms-of-service`)} class="hover:text-black transition-colors">{t("nav.tos")}</a>
-					<a href={getPath(`${lang}/datenschutz`)} class="hover:text-black transition-colors">{t("nav.privacy")}</a>
-					<a href={getPath(`${lang}/impressum`)} class="hover:text-black transition-colors">{t("nav.imprint")}</a>
-					<a href={getPath(`${lang}/subscription-terms`)} class="hover:text-black transition-colors">{t("nav.subscription")}</a>
-					<a href={getPath('de/blog')} class="hover:text-black transition-colors font-semibold text-blue-600">{t("nav.blog")}</a>
-					<a href={getPath(`${lang}/support`)} class="hover:text-black transition-colors">{t("nav.support")}</a>
-                    <a
-						href="https://x.com/300Fragen"
-						target="_blank"
-						rel="noopener noreferrer"
-						data-umami-event="social-link-click"
-						data-umami-event-platform="x"
-						data-umami-event-location="footer"
-						data-umami-event-lang={lang}
-						class="hover:text-black transition-colors flex items-center gap-1"
-					>
-                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-                        {t("social.follow")}
-                    </a>
-				</div>
-				<p class="text-xs text-gray-400">&copy; {new Date().getFullYear()} Leben in Deutschland. {t("footer.rights")}</p>
-			</div>
-		</footer>
-
-	</main>
+        <footer class="home-footer"><div class="home-shell"><div class="home-footer-top"><a class="home-footer-brand" href={getPath(`${lang}/`)}><img src={getPath('logo.svg')} width="36" height="36" alt=""/><span>Leben in<br/>Deutschland<span class="footer-brand-dot">.</span></span></a><p>{isGerman ? 'Dein nächstes Kapitel beginnt mit einer Frage.' : t('hero.title')}</p><a class="home-text-link" href={getPath(`${lang}/frage/1`)}>{t('home.start_quiz')} ↗</a></div><div class="home-footer-bottom"><p>© {new Date().getFullYear()} Leben in Deutschland</p><nav aria-label={t('nav.imprint')}>{[['terms-of-service',t('nav.tos')],['datenschutz',t('nav.privacy')],['impressum',t('nav.imprint')],['subscription-terms',t('nav.subscription')],['support',t('nav.support')]].map(([path,label])=><a href={getPath(`${lang}/${path}`)}>{label}</a>)}</nav><div class="home-footer-social"><span>{t('social.follow')}</span><SocialLinks location="footer" lang={lang} /></div></div></div></footer>
+    </main>
 </Layout>

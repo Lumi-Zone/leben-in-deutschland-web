@@ -1,4 +1,5 @@
 ---
+import LanguageSwitcher from './LanguageSwitcher.astro';
 import { useTranslations, type UiLanguage } from '../i18n/ui';
 
 import { getPath } from '../utils/navigation';
@@ -6,9 +7,10 @@ import type { SupportedLang } from '../types/language';
 
 interface Props {
   lang: SupportedLang;
+  disableAlternates?: boolean;
 }
 
-const { lang } = Astro.props as Props;
+const { lang, disableAlternates = false } = Astro.props as Props;
 const t = useTranslations(lang as UiLanguage);
 const currentPath = Astro.url.pathname;
 const appDownloadHref = getPath(`${lang}/app`);
@@ -20,10 +22,15 @@ const navLinks = [
   { href: getPath('de/blog'), label: t('nav.blog'), destination: 'blog', featured: true },
 ];
 
-const isActive = (href: string) => currentPath === href || currentPath.startsWith(`${href}/`);
+const isActive = (href: string) => {
+  const path = currentPath.replace(/\/+$/, '');
+  const target = href.replace(/\/+$/, '');
+  const home = getPath(`${lang}/`).replace(/\/+$/, '');
+  return path === target || (target !== home && path.startsWith(`${target}/`));
+};
 ---
 
-<header class="sticky top-0 z-40 px-3 pt-3 sm:px-4 sm:pt-4">
+<header class="site-header sticky top-0 z-40">
   <nav class="container mx-auto px-3 py-3.5 sm:px-4 sm:py-4 rounded-2xl border border-white/70 bg-white/80 shadow-sm backdrop-blur-lg flex items-center justify-between relative">
       <div class="flex items-center gap-4">
           <a
@@ -62,7 +69,7 @@ const isActive = (href: string) => currentPath === href || currentPath.startsWit
           ))}
       </div>
 
-      <div class="flex items-center gap-2.5">
+      <div class="header-actions flex items-center gap-2.5">
         <a
           href={appDownloadHref}
           data-umami-event="app-page-opened"
@@ -72,6 +79,7 @@ const isActive = (href: string) => currentPath === href || currentPath.startsWit
         >
           {t('question.practice_app')}
         </a>
+        <LanguageSwitcher lang={lang} disableAlternates={disableAlternates} />
         <button
           type="button"
           class="xl:hidden inline-flex items-center justify-center w-11 h-11 rounded-xl border border-gray-200 text-gray-700 bg-white hover:bg-gray-50 transition-colors"
@@ -88,14 +96,19 @@ const isActive = (href: string) => currentPath === href || currentPath.startsWit
         </button>
       </div>
   </nav>
+</header>
 
-  <div class="xl:hidden fixed inset-0 z-40 bg-gray-900/45 opacity-0 pointer-events-none transition-opacity duration-300" data-mobile-menu-overlay data-mobile-menu-close></div>
+  <div class="mobile-nav-overlay xl:hidden fixed inset-0 z-40 bg-gray-900/45 opacity-0 pointer-events-none transition-opacity duration-300" data-mobile-menu-overlay data-mobile-menu-close></div>
 
   <aside
     id="mobile-nav-drawer"
-    class="xl:hidden fixed top-0 right-0 z-50 h-full w-[min(22rem,92vw)] bg-white border-l border-gray-200 shadow-2xl translate-x-full transition-transform duration-300"
+    class="mobile-nav-panel xl:hidden fixed top-0 right-0 z-50 h-full w-[min(22rem,92vw)] bg-white border-l border-gray-200 shadow-2xl translate-x-full transition-transform duration-300"
     data-mobile-menu-panel
+    role="dialog"
+    aria-modal="true"
+    aria-label={t("nav.home")}
     aria-hidden="true"
+    inert
   >
     <div class="flex items-center justify-between px-5 py-4 border-b border-gray-100">
       <span class="font-semibold text-gray-900">{t('nav.home')}</span>
@@ -144,7 +157,6 @@ const isActive = (href: string) => currentPath === href || currentPath.startsWit
       ))}
     </div>
   </aside>
-</header>
 
 <script is:inline>
   (() => {
@@ -166,12 +178,14 @@ const isActive = (href: string) => currentPath === href || currentPath.startsWit
     const setOpen = (open) => {
       toggleButton.setAttribute('aria-expanded', open ? 'true' : 'false');
       drawer.setAttribute('aria-hidden', open ? 'false' : 'true');
+      drawer.inert = !open;
       drawer.classList.toggle('translate-x-full', !open);
       overlay.classList.toggle('opacity-0', !open);
       overlay.classList.toggle('pointer-events-none', !open);
       document.body.classList.toggle('overflow-hidden', open);
 
       if (open) {
+        document.querySelector('.language-menu')?.removeAttribute('open');
         previouslyFocusedElement = document.activeElement;
         const [firstFocusable] = getFocusableElements();
         if (firstFocusable) firstFocusable.focus();
@@ -184,6 +198,10 @@ const isActive = (href: string) => currentPath === href || currentPath.startsWit
     toggleButton.addEventListener('click', () => {
       const expanded = toggleButton.getAttribute('aria-expanded') === 'true';
       setOpen(!expanded);
+    });
+
+    window.matchMedia('(min-width: 1280px)').addEventListener('change', (event) => {
+      if (event.matches && toggleButton.getAttribute('aria-expanded') === 'true') setOpen(false);
     });
 
     closeTargets.forEach((target) => {
@@ -222,3 +240,30 @@ const isActive = (href: string) => currentPath === href || currentPath.startsWit
     });
   })();
 </script>
+
+<style>
+  .site-header{background:rgb(246 248 243 / .94);border-bottom:1px solid #dfe5dc;backdrop-filter:blur(16px)}
+  .site-header>nav{max-width:1180px;min-height:86px;border:0;border-radius:0;background:transparent;box-shadow:none;backdrop-filter:none;padding:18px 0}
+  .site-header>nav>div:first-child>a>div{width:38px;height:38px;box-shadow:none;border-radius:10px}
+  .site-header>nav>div:first-child>a>span{font-size:1rem;color:#182d26;background:none;max-width:170px;line-height:1.2;letter-spacing:-.03em}
+  .site-header nav a[data-umami-event="nav-link-click"]{background:transparent;border:0;color:#526359;font-size:.85rem}
+  .site-header nav a[data-umami-event="nav-link-click"]:hover,.site-header nav a[aria-current="page"][data-umami-event]{color:#137b54;background:#e9efe5}
+  .site-header nav a[data-umami-event="app-page-opened"]{background:#183329;border:0;border-radius:8px;font-size:.8rem;padding:12px 16px;box-shadow:none}
+  @media(max-width:1244px){.site-header>nav{margin-inline:32px;width:auto}}
+  .header-actions{flex-shrink:0}
+  .site-header>nav>div:first-child,.site-header>nav>div:first-child>a{min-width:0}
+  .site-header>nav>div:first-child>a>div{flex-shrink:0}
+  .mobile-nav-overlay{z-index:70}
+  .mobile-nav-panel{z-index:80;height:100dvh;width:min(22rem,calc(100vw - 24px));overflow-y:auto;overscroll-behavior:contain;padding-bottom:env(safe-area-inset-bottom)}
+  .mobile-nav-panel[aria-hidden="true"]{visibility:hidden;pointer-events:none}
+  .mobile-nav-panel>div:first-child{gap:12px;padding-top:max(1rem,env(safe-area-inset-top))}
+  .mobile-nav-panel [data-mobile-menu-close]{flex-shrink:0;min-width:44px;min-height:44px}
+  @media(max-width:1279px){.site-header>nav{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px}}
+  @media(max-width:760px){
+    .site-header>nav{margin-inline:16px;min-height:72px;padding:12px 0;gap:12px}
+    .site-header>nav>div:first-child>a>div{width:34px;height:34px}
+    .site-header>nav>div:first-child>a>span{font-size:.8125rem;max-width:126px;min-width:0;overflow-wrap:anywhere;line-height:1.25}
+    .site-header>nav>div:last-child{gap:8px}
+    .site-header [data-mobile-menu-toggle]{flex-shrink:0}
+  }
+</style>

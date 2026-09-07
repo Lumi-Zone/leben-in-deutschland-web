@@ -137,4 +137,4 @@ Nein. Die meisten Fragen in der Prüfung sind allgemeine Fragen. Bundesland-Frag
 Viele verwechseln politische Institutionen und Wahlbegriffe. Besonders Bundestag, Bundesrat, Bundesregierung, Erststimme und Zweitstimme sollten sicher sitzen.
 
 ## Nächster Schritt
-Passend dazu: **[Einbürgerungstest Themen 2026](/de/blog/wichtige-themengebiete)**, **[Bundesland-Fragen im Einbürgerungstest](/de/blog/bundesland-fragen-erklaert)** und **[Einbürgerungstest 2026: 9 häufige Fehler](/de/blog/einbuergerungstest-2026-fiese-fallen)**.
+Passend dazu: **[Einbürgerungstest Themen 2026](/de/blog/wichtige-themengebiete/)**, **[Bundesland-Fragen im Einbürgerungstest](/de/blog/bundesland-fragen-erklaert/)** und **[Einbürgerungstest 2026: 9 häufige Fehler](/de/blog/einbuergerungstest-2026-fiese-fallen/)**.

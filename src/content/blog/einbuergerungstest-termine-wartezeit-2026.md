@@ -60,4 +60,4 @@ Prüfen Sie regelmäßig alternative Prüfstellen, kurzfristig frei werdende Pl�
 Häufig ja. Ohne Testnachweis kann die Bearbeitung je nach Fall ins Stocken geraten.
 
 ## Nächster Schritt
-Weiterlesen: **[Einbürgerungstest anmelden 2026](/de/blog/anmeldung-pruefung-schritte)**, **[Einbürgerung Antrag 2026: Checkliste](/de/blog/einbuergerung-antrag-checkliste-2026)** und **[Einbürgerung Bearbeitungszeit 2026](/de/blog/bearbeitungszeit-einbuergerung)**.
+Weiterlesen: **[Einbürgerungstest anmelden 2026](/de/blog/anmeldung-pruefung-schritte/)**, **[Einbürgerung Antrag 2026: Checkliste](/de/blog/einbuergerung-antrag-checkliste-2026/)** und **[Einbürgerung Bearbeitungszeit 2026](/de/blog/bearbeitungszeit-einbuergerung/)**.

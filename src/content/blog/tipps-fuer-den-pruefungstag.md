@@ -40,4 +40,4 @@ Atmen Sie kurz durch und beginnen Sie mit den Fragen, die Sie sicher wissen. Sch
 Das hängt von der Prüfstelle ab. Nutzen Sie die Zeit lieber für eine ruhige Kontrolle.
 
 ## Nächster Schritt
-Lesen Sie auch **[Wie lange dauert der Einbürgerungstest?](/de/blog/wie-lange-dauert-der-einbuergerungstest)** und **[Wie bestehe ich den Einbürgerungstest?](/de/blog/wie-bestehe-ich-den-einbuergerungstest)**.
+Lesen Sie auch **[Wie lange dauert der Einbürgerungstest?](/de/blog/wie-lange-dauert-der-einbuergerungstest/)** und **[Wie bestehe ich den Einbürgerungstest?](/de/blog/wie-bestehe-ich-den-einbuergerungstest/)**.

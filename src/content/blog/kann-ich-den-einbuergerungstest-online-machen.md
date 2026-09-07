@@ -111,4 +111,4 @@ Für viele reicht Online-Übung zur Vorbereitung. Wichtig ist aber, dass Sie kom
 Die Anmeldung erfolgt über eine zugelassene Prüfstelle. Ihre Einbürgerungsbehörde kann Ihnen bei Prüfstellen in Ihrer Nähe helfen.
 
 ## Nächster Schritt
-Lesen Sie weiter mit **[Einbürgerungstest anmelden 2026](/de/blog/anmeldung-pruefung-schritte)** und **[Einbürgerungstest online üben 2026](/de/blog/einbuergerungstest-online-ueben-2026)**.
+Lesen Sie weiter mit **[Einbürgerungstest anmelden 2026](/de/blog/anmeldung-pruefung-schritte/)** und **[Einbürgerungstest online üben 2026](/de/blog/einbuergerungstest-online-ueben-2026/)**.

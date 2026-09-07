@@ -47,4 +47,4 @@ Ja, durch vollständige Unterlagen beim ersten Versuch und frühzeitige Terminpl
 Idealerweise vor dem ersten Behördentermin, damit Gebühren und Nachweise ohne Zeitdruck vorbereitet sind.
 
 ## Nächster Schritt
-Als Vertiefung: **[Was kostet die Einbürgerung 2026?](/de/blog/kosten-einbuergerung-2026)** und **[Kann ich den Test wiederholen?](/de/blog/test-wiederholen)**.
+Als Vertiefung: **[Was kostet die Einbürgerung 2026?](/de/blog/kosten-einbuergerung-2026/)** und **[Kann ich den Test wiederholen?](/de/blog/test-wiederholen/)**.

@@ -110,4 +110,4 @@ Nein, so sollten Sie nicht planen. Die Prüfung enthält 33 Fragen, und Sie wiss
 Im BAMF Online-Testcenter und im Gesamtfragenkatalog zum Test "Leben in Deutschland" und zum Einbürgerungstest.
 
 ## Nächster Schritt
-Lesen Sie weiter mit **[Wie viele richtige Antworten brauche ich?](/de/blog/wie-viele-richtige-antworten-brauche-ich-einbuergerungstest)** und **[Einbürgerungstest 2026: 33 Fragen einfach erklärt](/de/blog/33-fragen-erklaert)**.
+Lesen Sie weiter mit **[Wie viele richtige Antworten brauche ich?](/de/blog/wie-viele-richtige-antworten-brauche-ich-einbuergerungstest/)** und **[Einbürgerungstest 2026: 33 Fragen einfach erklärt](/de/blog/33-fragen-erklaert/)**.

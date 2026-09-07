@@ -117,4 +117,4 @@ In der Praxis können Sie schwierige Fragen zunächst offenlassen und später pr
 Ja. Komplette Simulationen mit 60 Minuten helfen, den echten Ablauf zu trainieren.
 
 ## Nächster Schritt
-Lesen Sie dazu **[Einbürgerungstest Prüfungstag](/de/blog/tipps-fuer-den-pruefungstag)** und **[Einbürgerungstest online üben 2026](/de/blog/einbuergerungstest-online-ueben-2026)**.
+Lesen Sie dazu **[Einbürgerungstest Prüfungstag](/de/blog/tipps-fuer-den-pruefungstag/)** und **[Einbürgerungstest online üben 2026](/de/blog/einbuergerungstest-online-ueben-2026/)**.

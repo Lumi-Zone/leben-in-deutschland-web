@@ -42,4 +42,4 @@ Für deutsche Verfahrensfragen die Einbürgerungsbehörde, für ausländisches S
 Ja, manche Staaten sehen beim Erwerb einer neuen Staatsangehörigkeit automatisch den Verlust der bisherigen vor.
 
 ## Nächster Schritt
-Lesen Sie auch **[Einbürgerung 2026: Voraussetzungen und Ablauf](/de/blog/einbuergerung-ablauf)**, **[Aufenthaltstitel für Einbürgerung](/de/blog/aufenthaltstitel-und-einbuergerung)** und **[Einbürgerung Bearbeitungszeit 2026](/de/blog/bearbeitungszeit-einbuergerung)**.
+Lesen Sie auch **[Einbürgerung 2026: Voraussetzungen und Ablauf](/de/blog/einbuergerung-ablauf/)**, **[Aufenthaltstitel für Einbürgerung](/de/blog/aufenthaltstitel-und-einbuergerung/)** und **[Einbürgerung Bearbeitungszeit 2026](/de/blog/bearbeitungszeit-einbuergerung/)**.

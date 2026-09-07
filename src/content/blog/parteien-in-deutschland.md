@@ -38,4 +38,4 @@ Menschen haben unterschiedliche Meinungen. Parteien vertreten verschiedene polit
 Opposition sind Parteien im Parlament, die nicht zur Regierung gehören. Sie kontrollieren und kritisieren die Regierung.
 
 ## Nächster Schritt
-Lesen Sie auch **[Wahlen in Deutschland](/de/blog/wahlen-in-deutschland)** und **[Bundeskanzler und Bundespräsident](/de/blog/kanzler-und-praesident)**.
+Lesen Sie auch **[Wahlen in Deutschland](/de/blog/wahlen-in-deutschland/)** und **[Bundeskanzler und Bundespräsident](/de/blog/kanzler-und-praesident/)**.

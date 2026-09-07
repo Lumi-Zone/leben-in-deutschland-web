@@ -48,4 +48,4 @@ Häufig fehlen Unterlagen oder Namen sind in Dokumenten unterschiedlich geschrie
 Ja. Wenn der Testnachweis schon vorliegt, ist ein wichtiger Teil erledigt.
 
 ## Nächster Schritt
-Lesen Sie auch **[Einbürgerung Antrag 2026: Checkliste](/de/blog/einbuergerung-antrag-checkliste-2026)**, **[Einbürgerung Sprache 2026](/de/blog/sprachanforderungen)** und **[Doppelte Staatsbürgerschaft 2026](/de/blog/doppelte-staatsbuergerschaft)**.
+Lesen Sie auch **[Einbürgerung Antrag 2026: Checkliste](/de/blog/einbuergerung-antrag-checkliste-2026/)**, **[Einbürgerung Sprache 2026](/de/blog/sprachanforderungen/)** und **[Doppelte Staatsbürgerschaft 2026](/de/blog/doppelte-staatsbuergerschaft/)**.

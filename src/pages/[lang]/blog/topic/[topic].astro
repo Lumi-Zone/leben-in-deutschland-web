@@ -108,7 +108,7 @@ const breadcrumbSchema = {
   disableAlternates={true}
   lang={lang}
 >
-  <Header lang={lang} />
+  <Header lang={lang} disableAlternates={true} />
   {isLegacyTopicUrl && (
     <script is:inline define:vars={{ targetUrl: canonicalUrl }}>
       window.location.replace(targetUrl);

@@ -174,4 +174,4 @@ Evet. Gerçek sınavda yaşadığınız Bundesland ile ilgili 3 soru gelir. Bu y
 Evet, BAMF bilgilerine göre yeterli doğru sayısına ulaşamazsanız testi tekrar edebilirsiniz. Yeni randevu ve olası bekleme süreleri için sınav merkezinizle görüşmeniz gerekir.
 
 ## Sonraki adım
-Almanca soruların yapısını daha iyi anlamak için **[Einbürgerungstest 2026: 33 Fragen einfach erklärt](/de/blog/33-fragen-erklaert)**, eyalet bölümü için **[Bundesland-Fragen im Einbürgerungstest](/de/blog/bundesland-fragen-erklaert)** ve çalışma planı için **[Einbürgerungstest online üben 2026](/de/blog/einbuergerungstest-online-ueben-2026)** yazılarına geçebilirsiniz.
+Almanca soruların yapısını daha iyi anlamak için **[Einbürgerungstest 2026: 33 Fragen einfach erklärt](/de/blog/33-fragen-erklaert/)**, eyalet bölümü için **[Bundesland-Fragen im Einbürgerungstest](/de/blog/bundesland-fragen-erklaert/)** ve çalışma planı için **[Einbürgerungstest online üben 2026](/de/blog/einbuergerungstest-online-ueben-2026/)** yazılarına geçebilirsiniz.

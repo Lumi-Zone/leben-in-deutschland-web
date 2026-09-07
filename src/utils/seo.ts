@@ -30,6 +30,15 @@ export function getSeoLanguageMeta(lang: string) {
   };
 }
 
+/** Route aliases (notably /ua/) must not leak into BCP 47 language metadata. */
+export function serializeJsonLd(value: Record<string, unknown>): string {
+  return JSON.stringify(value, (key, item) => {
+    if (key !== 'inLanguage') return item;
+    const normalize = (lang: unknown) => typeof lang === 'string' ? getSeoLanguageMeta(lang).htmlLang : lang;
+    return Array.isArray(item) ? item.map(normalize) : normalize(item);
+  }).replace(/</g, '\\u003c');
+}
+
 export function stripHtml(value: string): string {
   return value.replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim();
 }

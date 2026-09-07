@@ -52,4 +52,4 @@ In der echten Prüfung kommen 3 landesbezogene Fragen vor. Sie gehören zu den 3
 Nein. Für die Prüfung reicht Ihr eigenes Bundesland. Die anderen Bundesländer sind für Ihre Prüfung normalerweise nicht nötig.
 
 ## Nächster Schritt
-Lesen Sie auch **[Wie viele Fragen hat der Einbürgerungstest?](/de/blog/wie-viele-fragen-hat-der-einbuergerungstest)** und **[Einbürgerungstest Themen 2026](/de/blog/wichtige-themengebiete)**.
+Lesen Sie auch **[Wie viele Fragen hat der Einbürgerungstest?](/de/blog/wie-viele-fragen-hat-der-einbuergerungstest/)** und **[Einbürgerungstest Themen 2026](/de/blog/wichtige-themengebiete/)**.

@@ -85,7 +85,7 @@ Eine **Befreiung** betrifft die Voraussetzung im Einbürgerungsverfahren. Die St
 
 Für den skalierten Test „Leben in Deutschland“ hat das BAMF eigene [Richtlinien für barrierefreie Testbedingungen](https://www.bamf.de/SharedDocs/Anlagen/DE/Integration/Integrationskurse/Kurstraeger/Modellsaetze/richtlinien-barrierefreie-testbedingungen-dtz-lid.pdf?__blob=publicationFile&v=4) veröffentlicht. Sie nennen unter anderem Sehbehinderung, Blindheit, Gehörlosigkeit, Schwerhörigkeit, Leseschwäche und motorische Beeinträchtigungen. Je nach Bedarf können zum Beispiel größere Testunterlagen, Assistenz, Gebärdensprachdolmetschende oder mehr Bearbeitungszeit infrage kommen.
 
-Wichtig: Diese BAMF-Richtlinie bezieht sich auf den Test **„Leben in Deutschland“ (LiD)**. LiD und Einbürgerungstest sind eng verwandt, organisatorisch aber nicht in jeder Frage identisch. Lesen Sie dazu unseren Überblick **[Leben in Deutschland oder Einbürgerungstest: der Unterschied](/de/blog/unterschied-lid-test-einbuergerungstest)**.
+Wichtig: Diese BAMF-Richtlinie bezieht sich auf den Test **„Leben in Deutschland“ (LiD)**. LiD und Einbürgerungstest sind eng verwandt, organisatorisch aber nicht in jeder Frage identisch. Lesen Sie dazu unseren Überblick **[Leben in Deutschland oder Einbürgerungstest: der Unterschied](/de/blog/unterschied-lid-test-einbuergerungstest/)**.
 
 Wenn Sie eine barrierefreie LiD-Prüfung benötigen, wenden Sie sich früh an die Prüfstelle. Nach den BAMF-Richtlinien beantragt die Prüfstelle die besonderen Bedingungen beim Bundesamt; vollständige Unterlagen sollen dort zwei Monate vor dem Testtermin vorliegen. Buchen Sie deshalb nicht zuerst irgendeinen Termin, sondern klären Sie den Ablauf vorab.
 
@@ -107,7 +107,7 @@ Geben Sie der behandelnden Ärztin oder dem behandelnden Arzt die behördlichen 
 
 Reichen Sie das Attest zusammen mit Ihrem Antrag oder nach Anweisung der Behörde ein. Vermerken Sie klar, dass Sie die Prüfung einer Ausnahme von den Kenntnissen nach § 10 Absatz 1 Satz 1 Nummer 7 in Verbindung mit Absatz 6 StAG beantragen.
 
-Für die übrigen Dokumente hilft unsere **[Checkliste für den Einbürgerungsantrag](/de/blog/einbuergerung-antrag-checkliste-2026)**.
+Für die übrigen Dokumente hilft unsere **[Checkliste für den Einbürgerungsantrag](/de/blog/einbuergerung-antrag-checkliste-2026/)**.
 
 ### 5. Rückfragen beantworten und Entscheidung abwarten
 
@@ -117,7 +117,7 @@ Die Behörde kann ergänzende Informationen verlangen. Reichen Sie diese fristge
 
 § 10 Absatz 6 StAG nennt sowohl ausreichende Deutschkenntnisse als auch staatsbürgerliche Kenntnisse. Eine gesundheitliche oder altersbedingte Einschränkung kann daher auch für den Sprachnachweis relevant sein. Trotzdem prüft die Behörde beide Anforderungen konkret; eine Befreiung vom Einbürgerungstest beantwortet nicht automatisch jede Frage zum B1-Nachweis.
 
-Außerdem gibt es weitere gesetzliche Regeln und Härtefallkonstellationen für Sprache und Kenntnisse. Einen allgemeinen Überblick finden Sie unter **[Sprachanforderungen für die Einbürgerung](/de/blog/sprachanforderungen)**. Besprechen Sie mit der Behörde ausdrücklich, welche Ausnahme Sie für welchen Nachweis geltend machen.
+Außerdem gibt es weitere gesetzliche Regeln und Härtefallkonstellationen für Sprache und Kenntnisse. Einen allgemeinen Überblick finden Sie unter **[Sprachanforderungen für die Einbürgerung](/de/blog/sprachanforderungen/)**. Besprechen Sie mit der Behörde ausdrücklich, welche Ausnahme Sie für welchen Nachweis geltend machen.
 
 ## Häufige Fragen (FAQ)
 
@@ -143,7 +143,7 @@ Beim Test „Leben in Deutschland“ sind nach den BAMF-Richtlinien besondere, b
 
 ### Wird bei einer Testbefreiung der ganze Einbürgerungsantrag vereinfacht?
 
-Nein. Die Ausnahme betrifft bestimmte Kenntnisse oder Nachweise. Die übrigen Voraussetzungen der Einbürgerung werden weiterhin geprüft. Unser Beitrag **[Einbürgerung: Ablauf und Voraussetzungen](/de/blog/einbuergerung-ablauf)** zeigt den Gesamtprozess.
+Nein. Die Ausnahme betrifft bestimmte Kenntnisse oder Nachweise. Die übrigen Voraussetzungen der Einbürgerung werden weiterhin geprüft. Unser Beitrag **[Einbürgerung: Ablauf und Voraussetzungen](/de/blog/einbuergerung-ablauf/)** zeigt den Gesamtprozess.
 
 ## Nächster Schritt
 

@@ -72,4 +72,4 @@ Ja, teilweise. Vollständige Unterlagen und schnelle Antworten helfen.
 Antworten Sie klar, vollständig und mit Datum. So vermeiden Sie neue Rückfragen.
 
 ## Nächster Schritt
-Lesen Sie auch **[Aufenthaltstitel für Einbürgerung](/de/blog/aufenthaltstitel-und-einbuergerung)** und **[Einbürgerung Antrag 2026: Checkliste](/de/blog/einbuergerung-antrag-checkliste-2026)**.
+Lesen Sie auch **[Aufenthaltstitel für Einbürgerung](/de/blog/aufenthaltstitel-und-einbuergerung/)** und **[Einbürgerung Antrag 2026: Checkliste](/de/blog/einbuergerung-antrag-checkliste-2026/)**.

@@ -49,4 +49,4 @@ Der Orientierungskurs ist der Teil über Deutschland: Politik, Geschichte, Recht
 Ja. Er kann beim Sprachnachweis und beim Wissen über Deutschland helfen, wenn die nötigen Ergebnisse erreicht werden.
 
 ## Nächster Schritt
-Lesen Sie auch **[BAMF Fragenkatalog 2026](/de/blog/bamf-300-fragen-integrationskurs-orientierungskurs)** und **[Leben in Deutschland Test oder Einbürgerungstest](/de/blog/unterschied-lid-test-einbuergerungstest)**.
+Lesen Sie auch **[BAMF Fragenkatalog 2026](/de/blog/bamf-300-fragen-integrationskurs-orientierungskurs/)** und **[Leben in Deutschland Test oder Einbürgerungstest](/de/blog/unterschied-lid-test-einbuergerungstest/)**.

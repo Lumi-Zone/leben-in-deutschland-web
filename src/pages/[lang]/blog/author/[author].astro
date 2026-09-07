@@ -89,7 +89,7 @@ const authorSchema = {
   disableAlternates={true}
   lang={lang}
 >
-  <Header lang={lang} />
+  <Header lang={lang} disableAlternates={true} />
   <script is:inline type="application/ld+json" set:html={JSON.stringify(authorSchema)} />
 
   <main class="bg-slate-50 min-h-screen py-8 md:py-10">

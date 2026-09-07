@@ -39,4 +39,4 @@ Viele Berufstätige kommen mit 4 bis 6 Stunden pro Woche gut voran.
 Nein. Grammatik ist wichtig, aber Hören und Sprechen entscheiden stark über die Prüfungssicherheit.
 
 ## Nächster Schritt
-Lesen Sie auch **[Einbürgerung Sprache 2026](/de/blog/sprachanforderungen)** und **[Einbürgerungstest Prüfungstag](/de/blog/tipps-fuer-den-pruefungstag)**.
+Lesen Sie auch **[Einbürgerung Sprache 2026](/de/blog/sprachanforderungen/)** und **[Einbürgerungstest Prüfungstag](/de/blog/tipps-fuer-den-pruefungstag/)**.

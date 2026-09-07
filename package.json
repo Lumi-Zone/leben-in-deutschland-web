@@ -3,8 +3,11 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
+    "prebuild": "npm run instagram:cards",
     "dev": "astro dev",
     "build": "astro build",
+    "postbuild": "npm run seo:audit && npm run links:audit",
+    "seo:audit": "node scripts/seo-audit.mjs",
     "preview": "astro preview",
     "astro": "astro",
     "social:preview": "node scripts/social/daily-x-question.mjs --preview",
@@ -12,12 +15,15 @@
     "social:daily": "node scripts/social/daily-x-question.mjs --post",
     "social:catch-up": "node scripts/social/x-catch-up.mjs",
     "social:test": "node --test scripts/social/daily-question.test.mjs",
-    "prebuild": "npm run instagram:cards",
     "instagram:cards": "node scripts/social/generate-instagram-cards.mjs",
     "instagram:preview": "node scripts/social/daily-instagram-question.mjs --preview",
     "instagram:verify": "node scripts/social/daily-instagram-question.mjs --verify",
     "instagram:check-ready": "node scripts/social/daily-instagram-question.mjs --check-ready",
     "instagram:daily": "node scripts/social/daily-instagram-question.mjs --post",
+    "navigation:test": "node --test scripts/navigation.test.mjs",
+    "qrcode:test": "node --test scripts/qrcode.test.mjs",
+    "applinks:test": "node --test scripts/applinks.test.mjs",
+    "links:audit": "node scripts/link-audit.mjs",
     "instagram:test": "node --test scripts/social/instagram-series.test.mjs"
   },
   "dependencies": {

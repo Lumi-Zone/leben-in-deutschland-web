@@ -44,4 +44,4 @@ Die Menschenwürde steht am Anfang des Grundgesetzes. Sie bedeutet: Jeder Mensch
 Meist ist das Verständnis wichtiger. Sie sollten wissen, was Grundrechte bedeuten und warum sie geschützt werden.
 
 ## Nächster Schritt
-Lesen Sie auch **[Meinungsfreiheit in Deutschland](/de/blog/meinungsfreiheit)** und **[Rechte und Pflichten in Deutschland](/de/blog/rechte-und-pflichten)**.
+Lesen Sie auch **[Meinungsfreiheit in Deutschland](/de/blog/meinungsfreiheit/)** und **[Rechte und Pflichten in Deutschland](/de/blog/rechte-und-pflichten/)**.

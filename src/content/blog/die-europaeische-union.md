@@ -44,4 +44,4 @@ Die EU ist ein Zusammenschluss europäischer Staaten. Diese Staaten arbeiten pol
 Lernen Sie einfache Begriffe: Mitgliedstaaten, Europäisches Parlament, Euro und freie Reise innerhalb vieler EU-Länder.
 
 ## Nächster Schritt
-Lesen Sie auch **[Wahlen in Deutschland](/de/blog/wahlen-in-deutschland)** und **[Einbürgerungstest Themen 2026](/de/blog/wichtige-themengebiete)**.
+Lesen Sie auch **[Wahlen in Deutschland](/de/blog/wahlen-in-deutschland/)** und **[Einbürgerungstest Themen 2026](/de/blog/wichtige-themengebiete/)**.

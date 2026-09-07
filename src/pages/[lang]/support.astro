@@ -187,7 +187,7 @@ import Header from '../../components/Header.astro';
   lang={lang}
 >
 	<!-- Navigation -->
-    <Header lang={lang} />
+    <Header lang={lang} disableAlternates={!hasLocalizedSupport} />
 
     <main class="min-h-screen bg-tertiary-50 pb-20">
         <!-- Hero Section -->
@@ -263,7 +263,7 @@ import Header from '../../components/Header.astro';
                             </svg>
                         </a>
                         <a
-                            href={getPath(`${lang}/blog`)}
+                            href={getPath("de/blog/")}
                             data-umami-event="blog-opened"
                             data-umami-event-location="support-cta"
                             data-umami-event-lang={lang}

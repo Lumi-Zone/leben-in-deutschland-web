@@ -23,21 +23,21 @@ In der echten Prüfung bekommen Sie **33 Fragen**. Davon sind **30 allgemeine Fr
 
 Das ist wichtig: Sie lernen nicht nur Deutschland allgemein, sondern auch etwas über das Bundesland, in dem Sie mit Erstwohnsitz gemeldet sind.
 
-Mehr dazu: **[Wie viele Fragen hat der Einbürgerungstest?](/de/blog/wie-viele-fragen-hat-der-einbuergerungstest)**
+Mehr dazu: **[Wie viele Fragen hat der Einbürgerungstest?](/de/blog/wie-viele-fragen-hat-der-einbuergerungstest/)**
 
 ## 3) Wie viele richtige Antworten brauche ich?
 Für den Einbürgerungsnachweis brauchen Sie mindestens **17 richtige Antworten von 33 Fragen**. Das bedeutet: Sie müssen nicht perfekt sein.
 
 Trotzdem sollten Sie beim Üben nicht nur knapp über 17 landen. Sicherer ist es, wenn Sie in Simulationen regelmäßig deutlich mehr schaffen.
 
-Mehr dazu: **[Wie viele richtige Antworten brauche ich?](/de/blog/wie-viele-richtige-antworten-brauche-ich-einbuergerungstest)**
+Mehr dazu: **[Wie viele richtige Antworten brauche ich?](/de/blog/wie-viele-richtige-antworten-brauche-ich-einbuergerungstest/)**
 
 ## 4) Wie lange dauert der Einbürgerungstest?
 Sie haben **60 Minuten** Zeit. Für 33 Fragen ist das in der Regel gut machbar.
 
 Viele Kandidatinnen und Kandidaten werden deutlich früher fertig. Nutzen Sie die restliche Zeit trotzdem, um Ihre Antworten noch einmal ruhig zu prüfen.
 
-Mehr dazu: **[Wie lange dauert der Einbürgerungstest?](/de/blog/wie-lange-dauert-der-einbuergerungstest)**
+Mehr dazu: **[Wie lange dauert der Einbürgerungstest?](/de/blog/wie-lange-dauert-der-einbuergerungstest/)**
 
 ## 5) Wie sehen die Fragen aus?
 Es sind Multiple-Choice-Fragen. Zu jeder Frage gibt es vier Antwortmöglichkeiten. Eine Antwort ist richtig.
@@ -54,14 +54,14 @@ Die Vorbereitung können Sie online machen. Die Prüfung selbst findet bei einer
 
 Das BAMF stellt ein **[Online-Testcenter für den Einbürgerungstest](https://www.bamf.de/DE/Themen/Integration/ZugewanderteTeilnehmende/OnlineTestcenter/online-testcenter-node.html)** bereit. Dort können Sie interaktiv üben und Musterfragebögen ausprobieren.
 
-Mehr dazu: **[Kann ich den Einbürgerungstest online machen?](/de/blog/kann-ich-den-einbuergerungstest-online-machen)**
+Mehr dazu: **[Kann ich den Einbürgerungstest online machen?](/de/blog/kann-ich-den-einbuergerungstest-online-machen/)**
 
 ## 8) Was kostet der Einbürgerungstest?
 Nach Angaben des BAMF kostet die Teilnahme am Einbürgerungstest **25 Euro**.
 
 Prüfen Sie trotzdem die Hinweise Ihrer Prüfstelle. Dort erfahren Sie auch, wie Sie bezahlen müssen und welche Unterlagen Sie zur Anmeldung brauchen.
 
-Mehr dazu: **[Was kostet der Einbürgerungstest?](/de/blog/was-kostet-der-einbuergerungstest)**
+Mehr dazu: **[Was kostet der Einbürgerungstest?](/de/blog/was-kostet-der-einbuergerungstest/)**
 
 ## 9) Was muss ich am Prüfungstag mitbringen?
 Bringen Sie ein gültiges Ausweisdokument mit Lichtbild mit. Ohne Identitätsnachweis kann die Prüfstelle Ihre Teilnahme in der Regel nicht korrekt zuordnen.
@@ -109,7 +109,7 @@ Der Einbürgerungstest ist ein schriftlicher Multiple-Choice-Test. Zu jeder Frag
 Musterprüfungen helfen, reichen aber oft nicht. Besser ist eine Kombination aus Fragenkatalog, Bundesland-Fragen, Fehlerliste und Prüfungssimulation.
 
 ### Wann bekomme ich mein Ergebnis?
-Das Ergebnis kommt nicht sofort wie bei einem Online-Quiz. Sie erhalten später eine Bescheinigung über Ihr persönliches Testergebnis. Wie Auswertung, Versand und Nachfragen funktionieren, erklärt unser Ratgeber **[Einbürgerungstest Ergebnis: Wartezeit und Bescheinigung](/de/blog/einbuergerungstest-ergebnis-wartezeit-bescheinigung)**.
+Das Ergebnis kommt nicht sofort wie bei einem Online-Quiz. Sie erhalten später eine Bescheinigung über Ihr persönliches Testergebnis. Wie Auswertung, Versand und Nachfragen funktionieren, erklärt unser Ratgeber **[Einbürgerungstest Ergebnis: Wartezeit und Bescheinigung](/de/blog/einbuergerungstest-ergebnis-wartezeit-bescheinigung/)**.
 
 ## Nächster Schritt
-Lesen Sie als Vertiefung **[Einbürgerungstest online üben 2026](/de/blog/einbuergerungstest-online-ueben-2026)**, **[Einbürgerungstest 2026: 33 Fragen einfach erklärt](/de/blog/33-fragen-erklaert)** und **[Einbürgerungstest wiederholen](/de/blog/test-wiederholen)**.
+Lesen Sie als Vertiefung **[Einbürgerungstest online üben 2026](/de/blog/einbuergerungstest-online-ueben-2026/)**, **[Einbürgerungstest 2026: 33 Fragen einfach erklärt](/de/blog/33-fragen-erklaert/)** und **[Einbürgerungstest wiederholen](/de/blog/test-wiederholen/)**.

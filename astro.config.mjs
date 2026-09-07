@@ -67,6 +67,7 @@ function shouldIncludeInSitemap(pageUrl) {
   if (pathname === '/') return false;
   if (!hasSupportedLang) return true;
   if (personalToolRoutes.has(route)) return false;
+  if (seoLandingRoutes.has(route) && !['de', 'en'].includes(lang)) return false;
   if (route === 'blog' && lang !== 'de') return false;
   if (pathname.startsWith('/de/blog/topic/')) {
     const topicSlug = pathname.split('/').filter(Boolean)[3] ?? '';
@@ -120,6 +121,7 @@ function serializeSitemapItem(item) {
 export default defineConfig({
   site: 'https://lid-einbuergerung.de',
   base: '/',
+  trailingSlash: 'always',
   integrations: [
     react(),
     sitemap({

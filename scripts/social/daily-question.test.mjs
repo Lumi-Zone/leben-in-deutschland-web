@@ -6,6 +6,7 @@ import { fileURLToPath } from 'node:url';
 import {
   buildAltText,
   buildAnswerText,
+  buildInstagramCaption,
   buildPostText,
   berlinMinutes,
   createEmptyState,
@@ -108,6 +109,15 @@ test('post and next-day answer text stay suitable for X', () => {
   assert.match(postText, /Tagesfrage #1/);
   assert.equal(buildAnswerText(questions[0]), 'Auflösung zu Frage #1: B – Antwort zwei ✅');
   assert.match(buildAltText(questions[0]), /A: Antwort eins B: Antwort zwei/);
+});
+
+test('Instagram caption includes engagement prompt, delayed answer, and focused hashtags', () => {
+  const caption = buildInstagramCaption(questions[0]);
+  assert.match(caption, /Tagesfrage #1/);
+  assert.match(caption, /A, B, C oder D/);
+  assert.match(caption, /Auflösung folgt morgen/);
+  assert.match(caption, /#Einbürgerungstest/);
+  assert.ok(caption.length <= 2200);
 });
 
 test('catch-up schedule is parsed and only runs after the due time', () => {

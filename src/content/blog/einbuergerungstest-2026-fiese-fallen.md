@@ -115,4 +115,4 @@ Notieren Sie den Fehlergrund: Begriff verwechselt, Frage zu schnell gelesen oder
 Für viele reicht das zur Vorbereitung. Wichtig ist aber, dass Sie auch komplette Tests ohne Ablenkung simulieren und nicht nur einzelne Fragen nebenbei klicken.
 
 ## Nächster Schritt
-Lesen Sie auch **[Einbürgerungstest online üben 2026](/de/blog/einbuergerungstest-online-ueben-2026)**, **[Einbürgerungstest 2026: 33 Fragen einfach erklärt](/de/blog/33-fragen-erklaert)** und **[Bundesland-Fragen im Einbürgerungstest](/de/blog/bundesland-fragen-erklaert)**.
+Lesen Sie auch **[Einbürgerungstest online üben 2026](/de/blog/einbuergerungstest-online-ueben-2026/)**, **[Einbürgerungstest 2026: 33 Fragen einfach erklärt](/de/blog/33-fragen-erklaert/)** und **[Bundesland-Fragen im Einbürgerungstest](/de/blog/bundesland-fragen-erklaert/)**.

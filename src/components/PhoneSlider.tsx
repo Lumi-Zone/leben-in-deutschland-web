@@ -259,33 +259,33 @@ export default function PhoneSlider({ lang = 'de' }: PhoneSliderProps) {
     };
 
     return (
-        <section className="group relative isolate w-full overflow-hidden rounded-[2rem] border border-[#ded5c7] bg-[#f8f4ee] py-6 shadow-[0_30px_80px_-48px_rgba(53,40,30,0.5)] md:rounded-[2.75rem] md:py-9" role="region" aria-roledescription="carousel" aria-label={labels.region}>
+        <section className="app-showcase group relative isolate w-full overflow-hidden rounded-[1.25rem] border border-[#d9e2d1] bg-[#edf2e7] py-6 shadow-[0_30px_80px_-48px_rgba(53,40,30,0.5)] md:rounded-[1.25rem] md:py-9" role="region" aria-roledescription="carousel" aria-label={labels.region}>
             <p id={instructionsId} className="sr-only">{labels.instructions}</p>
             <div id={statusId} role="status" aria-live="polite" className="sr-only">
                 {labels.status(activeIndex + 1, sliders.length)}
             </div>
 
-            <div className="pointer-events-none absolute -left-24 -top-24 -z-10 h-72 w-72 rounded-full bg-[#efdca3]/65 blur-3xl" aria-hidden="true" />
-            <div className="pointer-events-none absolute -right-20 top-20 -z-10 h-80 w-80 rounded-full bg-[#e9d6e5]/70 blur-3xl" aria-hidden="true" />
-            <div className="pointer-events-none absolute bottom-0 left-1/3 -z-10 h-64 w-96 rounded-full bg-[#dce7dc]/75 blur-3xl" aria-hidden="true" />
+            <div className="pointer-events-none absolute -left-24 -top-24 -z-10 h-72 w-72 rounded-full bg-[#d2e3b4]/65 blur-3xl" aria-hidden="true" />
+            <div className="pointer-events-none absolute -right-20 top-20 -z-10 h-80 w-80 rounded-full bg-[#dbe7d2]/70 blur-3xl" aria-hidden="true" />
+            <div className="pointer-events-none absolute bottom-0 left-1/3 -z-10 h-64 w-96 rounded-full bg-[#d0dfbd]/75 blur-3xl" aria-hidden="true" />
 
             <header className="relative z-20 mx-auto mb-6 grid max-w-6xl gap-6 px-5 text-left sm:px-8 md:mb-8 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-end lg:px-12">
                 <div className="max-w-2xl">
-                    <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-[#d9cbb8] bg-white/70 px-3 py-1.5 text-[11px] font-bold uppercase tracking-[0.18em] text-[#705c45] shadow-sm backdrop-blur">
-                        <span className="h-1.5 w-1.5 rounded-full bg-[#c59136]" aria-hidden="true" />
+                    <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-[#d3dfc6] bg-white/70 px-3 py-1.5 text-xs font-bold uppercase tracking-[0.18em] text-[#526948] shadow-sm backdrop-blur">
+                        <span className="h-1.5 w-1.5 rounded-full bg-[#648c42]" aria-hidden="true" />
                         {labels.eyebrow}
                     </div>
-                    <h2 className="font-serif text-3xl font-semibold leading-[1.08] tracking-[-0.025em] text-[#241f1a] sm:text-4xl md:text-5xl">
+                    <h2 className="font-sans text-3xl font-semibold leading-[1.08] tracking-[-0.025em] text-[#1a3025] sm:text-4xl md:text-5xl">
                         {labels.title}
                     </h2>
-                    <p className="mt-3 max-w-xl text-sm leading-relaxed text-[#6d6258] sm:text-base">
+                    <p className="mt-3 max-w-xl text-sm leading-relaxed text-[#64735c] sm:text-base">
                         {labels.subtitle}
                     </p>
                 </div>
 
-                <ul className="grid gap-2 text-sm font-semibold text-[#4a4037] sm:grid-cols-3 lg:grid-cols-1" aria-label={labels.eyebrow}>
+                <ul className="grid gap-2 text-sm font-semibold text-[#465d3d] sm:grid-cols-3 lg:grid-cols-1" aria-label={labels.eyebrow}>
                     {labels.highlights.map((highlight: string, index: number) => (
-                        <li key={highlight} className="flex items-center gap-2 rounded-full border border-[#ded4c7] bg-white/65 px-3 py-2 shadow-sm backdrop-blur">
+                        <li key={highlight} className="flex items-center gap-2 rounded-full border border-[#d5dfcb] bg-white/65 px-3 py-2 shadow-sm backdrop-blur">
                             <span className={`h-2 w-2 shrink-0 rounded-full ${index === 0 ? 'bg-[#cf796e]' : index === 1 ? 'bg-[#8aa4b2]' : 'bg-[#87996f]'}`} aria-hidden="true" />
                             {highlight}
                         </li>
@@ -293,15 +293,15 @@ export default function PhoneSlider({ lang = 'de' }: PhoneSliderProps) {
                 </ul>
             </header>
 
-            <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-8 bg-gradient-to-r from-[#f8f4ee] via-[#f8f4ee]/75 to-transparent sm:w-16 md:w-28" aria-hidden="true" />
-            <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-8 bg-gradient-to-l from-[#f8f4ee] via-[#f8f4ee]/75 to-transparent sm:w-16 md:w-28" aria-hidden="true" />
+            <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-8 bg-gradient-to-r from-[#edf2e7] via-[#edf2e7]/75 to-transparent sm:w-16 md:w-28" aria-hidden="true" />
+            <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-8 bg-gradient-to-l from-[#edf2e7] via-[#edf2e7]/75 to-transparent sm:w-16 md:w-28" aria-hidden="true" />
 
             <div className="hidden md:block">
                 <button
                     type="button"
                     onClick={() => scroll('left')}
                     disabled={!canLoop}
-                    className="absolute left-5 top-[62%] z-20 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-[#d8ccbc] bg-[#fffdf9]/95 text-[#332a22] shadow-lg backdrop-blur-sm transition-all hover:scale-105 hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6f5a45] disabled:cursor-not-allowed disabled:opacity-40 lg:left-9"
+                    className="absolute left-5 top-[62%] z-20 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-[#cbd9be] bg-[#f9fcf5]/95 text-[#2a4327] shadow-lg backdrop-blur-sm transition-all hover:scale-105 hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#547c3d] disabled:cursor-not-allowed disabled:opacity-40 lg:left-9"
                     aria-label={labels.previous}
                     aria-controls={trackId}
                 >
@@ -313,7 +313,7 @@ export default function PhoneSlider({ lang = 'de' }: PhoneSliderProps) {
                     type="button"
                     onClick={() => scroll('right')}
                     disabled={!canLoop}
-                    className="absolute right-5 top-[62%] z-20 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-[#d8ccbc] bg-[#fffdf9]/95 text-[#332a22] shadow-lg backdrop-blur-sm transition-all hover:scale-105 hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6f5a45] disabled:cursor-not-allowed disabled:opacity-40 lg:right-9"
+                    className="absolute right-5 top-[62%] z-20 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-[#cbd9be] bg-[#f9fcf5]/95 text-[#2a4327] shadow-lg backdrop-blur-sm transition-all hover:scale-105 hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#547c3d] disabled:cursor-not-allowed disabled:opacity-40 lg:right-9"
                     aria-label={labels.next}
                     aria-controls={trackId}
                 >
@@ -331,7 +331,7 @@ export default function PhoneSlider({ lang = 'de' }: PhoneSliderProps) {
                 tabIndex={0}
                 aria-describedby={`${instructionsId} ${statusId}`}
                 aria-label={labels.region}
-                className="relative z-0 flex gap-4 overflow-x-auto snap-x snap-mandatory px-[calc(50%-123px)] pb-6 pt-2 scrollbar-hide snap-always focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-[#6f5a45] sm:gap-6 sm:px-[calc(50%-138px)] md:gap-8 md:px-[calc(50%-155px)]"
+                className="relative z-0 flex gap-4 overflow-x-auto snap-x snap-mandatory px-[calc(50%-123px)] pb-6 pt-2 scrollbar-hide snap-always focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-[#547c3d] sm:gap-6 sm:px-[calc(50%-138px)] md:gap-8 md:px-[calc(50%-155px)]"
                 style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
             >
                 {loopedSliders.map((src, index) => {
@@ -384,7 +384,7 @@ export default function PhoneSlider({ lang = 'de' }: PhoneSliderProps) {
                         type="button"
                         onClick={() => scroll('left')}
                         disabled={!canLoop}
-                        className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-[#d8ccbc] bg-[#fffdf9] text-[#332a22] shadow-sm transition-all hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6f5a45] disabled:cursor-not-allowed disabled:opacity-40 md:hidden"
+                        className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-[#cbd9be] bg-[#f9fcf5] text-[#2a4327] shadow-sm transition-all hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#547c3d] disabled:cursor-not-allowed disabled:opacity-40 md:hidden"
                         aria-label={labels.previous}
                         aria-controls={trackId}
                     >
@@ -393,7 +393,7 @@ export default function PhoneSlider({ lang = 'de' }: PhoneSliderProps) {
                         </svg>
                     </button>
 
-                    <span className="min-w-14 rounded-full border border-[#d8ccbc] bg-white/70 px-3 py-1.5 text-center text-xs font-bold text-[#5c4c3d]" aria-hidden="true">
+                    <span className="min-w-14 rounded-full border border-[#cbd9be] bg-white/70 px-3 py-1.5 text-center text-xs font-bold text-[#49663b]" aria-hidden="true">
                         {activeIndex + 1}/{sliders.length}
                     </span>
 
@@ -401,7 +401,7 @@ export default function PhoneSlider({ lang = 'de' }: PhoneSliderProps) {
                         type="button"
                         onClick={() => scroll('right')}
                         disabled={!canLoop}
-                        className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-[#d8ccbc] bg-[#fffdf9] text-[#332a22] shadow-sm transition-all hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6f5a45] disabled:cursor-not-allowed disabled:opacity-40 md:hidden"
+                        className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-[#cbd9be] bg-[#f9fcf5] text-[#2a4327] shadow-sm transition-all hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#547c3d] disabled:cursor-not-allowed disabled:opacity-40 md:hidden"
                         aria-label={labels.next}
                         aria-controls={trackId}
                     >
@@ -412,14 +412,14 @@ export default function PhoneSlider({ lang = 'de' }: PhoneSliderProps) {
                 </div>
 
                 <div className="flex flex-col items-center gap-2 md:items-end">
-                    <span className="hidden text-[10px] font-bold uppercase tracking-[0.16em] text-[#8b7b6b] md:block">{labels.swipeHint}</span>
+                    <span className="hidden text-xs font-bold uppercase tracking-[0.16em] text-[#6c805b] md:block">{labels.swipeHint}</span>
                     <nav className="flex max-w-full flex-wrap items-center justify-center gap-2" aria-label={labels.pagination}>
                         {sliders.map((src, index) => (
                             <button
                                 key={`dot-${src}`}
                                 type="button"
                                 onClick={() => scrollToIndex(index)}
-                                className={`h-2 rounded-full transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6f5a45] ${index === activeIndex ? 'w-8 bg-[#3f352c]' : 'w-2 bg-[#cfc3b4] hover:bg-[#a99885]'}`}
+                                className={`h-2 rounded-full transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#547c3d] ${index === activeIndex ? 'w-8 bg-[#416131]' : 'w-2 bg-[#bfd0ae] hover:bg-[#97b180]'}`}
                                 aria-label={labels.goTo(index + 1, sliders.length)}
                                 aria-current={index === activeIndex ? 'true' : undefined}
                                 aria-controls={trackId}

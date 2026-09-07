@@ -61,4 +61,4 @@ Für die Einbürgerung brauchen Sie in der Regel mindestens 17 richtige Antworte
 Ja. Die 3 Bundesland-Fragen gehören zu den 33 Fragen und zählen zum Ergebnis.
 
 ## Nächster Schritt
-Lesen Sie auch **[Wie viele Fragen hat der Einbürgerungstest?](/de/blog/wie-viele-fragen-hat-der-einbuergerungstest)** und **[Wie viele richtige Antworten brauche ich?](/de/blog/wie-viele-richtige-antworten-brauche-ich-einbuergerungstest)**.
+Lesen Sie auch **[Wie viele Fragen hat der Einbürgerungstest?](/de/blog/wie-viele-fragen-hat-der-einbuergerungstest/)** und **[Wie viele richtige Antworten brauche ich?](/de/blog/wie-viele-richtige-antworten-brauche-ich-einbuergerungstest/)**.

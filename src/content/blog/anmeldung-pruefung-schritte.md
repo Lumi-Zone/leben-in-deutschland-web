@@ -56,4 +56,4 @@ Meistens brauchen Sie einen Ausweis oder Pass und die Prüfungsgebühr. Fragen S
 Das hängt vom Prüfzentrum ab. In vielen Städten sollten Sie mehrere Wochen oder Monate vorher suchen.
 
 ## Nächster Schritt
-Lesen Sie auch **[Einbürgerungstest Termine 2026](/de/blog/einbuergerungstest-termine-wartezeit-2026)**, **[Was kostet der Einbürgerungstest?](/de/blog/was-kostet-der-einbuergerungstest)** und **[Einbürgerungstest online üben](/de/blog/einbuergerungstest-online-ueben-2026)**.
+Lesen Sie auch **[Einbürgerungstest Termine 2026](/de/blog/einbuergerungstest-termine-wartezeit-2026/)**, **[Was kostet der Einbürgerungstest?](/de/blog/was-kostet-der-einbuergerungstest/)** und **[Einbürgerungstest online üben](/de/blog/einbuergerungstest-online-ueben-2026/)**.

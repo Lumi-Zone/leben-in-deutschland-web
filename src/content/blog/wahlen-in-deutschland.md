@@ -47,4 +47,4 @@ Mit der Zweitstimme wählen Sie eine Partei. Sie ist besonders wichtig für die 
 Niemand soll kontrollieren können, was Sie gewählt haben. Das schützt die Freiheit der Wahl.
 
 ## Nächster Schritt
-Lesen Sie auch **[Parteien in Deutschland](/de/blog/parteien-in-deutschland)** und **[Bundeskanzler und Bundespräsident](/de/blog/kanzler-und-praesident)**.
+Lesen Sie auch **[Parteien in Deutschland](/de/blog/parteien-in-deutschland/)** und **[Bundeskanzler und Bundespräsident](/de/blog/kanzler-und-praesident/)**.

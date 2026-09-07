@@ -3,8 +3,15 @@
         "apps": [],
         "details": [
             {
-                "appID": "TEAMID.com.lumizone.lebenindeutschland",
-                "paths": [ "/frage/*", "/de/*", "/en/*", "/tr/*" ]
+                "appID": "YY6V54NDZK.org.reactjs.native.example.Einbuergerung",
+                "paths": [
+                    "NOT /*/blog/*",
+                    "/*/frage/*",
+                    "/*/fragen/*",
+                    "/*/exam/*",
+                    "/*/app/*",
+                    "/*/*-fragen/*"
+                ]
             }
         ]
     }

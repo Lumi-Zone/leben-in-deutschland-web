@@ -41,4 +41,4 @@ Nein. Der Bundespräsident ist das Staatsoberhaupt. Regierungschef ist der Bunde
 Beide Ämter sind sehr wichtig. Aber sie haben verschiedene Aufgaben: Regierung führen und Staat vertreten.
 
 ## Nächster Schritt
-Lesen Sie auch **[Wahlen in Deutschland](/de/blog/wahlen-in-deutschland)** und **[Parteien in Deutschland](/de/blog/parteien-in-deutschland)**.
+Lesen Sie auch **[Wahlen in Deutschland](/de/blog/wahlen-in-deutschland/)** und **[Parteien in Deutschland](/de/blog/parteien-in-deutschland/)**.

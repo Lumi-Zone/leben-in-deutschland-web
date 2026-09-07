@@ -3,7 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import Header from '../../components/Header.astro';
 import { SUPPORTED_LANGUAGES, type SupportedLang } from '../../types/language';
 import { getPath } from '../../utils/navigation';
-import { APP_STORE_URL, PLAY_STORE_URL } from '../../utils/appLinks';
+import { buildStoreUrls } from '../../utils/appLinks';
 
 export function getStaticPaths() {
   return SUPPORTED_LANGUAGES.map((lang) => ({ params: { lang }, props: { lang } }));
@@ -11,8 +11,12 @@ export function getStaticPaths() {
 
 const { lang } = Astro.props as { lang: SupportedLang };
 const isGerman = lang === 'de';
+const storeLinks = buildStoreUrls({ source: 'seo-landing', lang, variant: 'et-online' });
+// These landing pages currently have German and English body copy only.
+const contentLang = isGerman ? 'de' : 'en';
+const isTranslated = lang === contentLang;
 const siteUrl = Astro.site || 'https://lid-einbuergerung.de';
-const pageUrl = new URL(getPath(`${lang}/einbuergerungstest-online/`), siteUrl).href;
+const pageUrl = new URL(getPath(`${contentLang}/einbuergerungstest-online/`), siteUrl).href;
 const homeUrl = new URL(getPath(`${lang}/`), siteUrl).href;
 const questionUrl = getPath(`${lang}/frage/1`);
 const examUrl = getPath(`${lang}/exam`);
@@ -106,7 +110,7 @@ const pageSchema = {
       name: pageTitle,
       description: pageDescription,
       url: pageUrl,
-      inLanguage: lang,
+      inLanguage: contentLang,
     },
     {
       '@type': 'LearningResource',
@@ -114,7 +118,7 @@ const pageSchema = {
       name: pageTitle,
       description: pageDescription,
       url: pageUrl,
-      inLanguage: lang,
+      inLanguage: contentLang,
       learningResourceType: ['Practice test', 'Quiz', 'Exam simulation'],
       educationalLevel: 'adult education',
       teaches: isGerman
@@ -159,10 +163,13 @@ const pageSchema = {
   title={pageTitle}
   description={pageDescription}
   keywords={pageKeywords}
-  canonical={getPath(`${lang}/einbuergerungstest-online/`)}
+  canonical={getPath(`${contentLang}/einbuergerungstest-online/`)}
   image="/og/og-default.png"
   jsonLd={pageSchema}
-  lang={lang}
+  lang={contentLang}
+  noindex={!isTranslated}
+  alternateLangs={['de', 'en']}
+  disableAlternates={!isTranslated}
 >
   <Header lang={lang} />
 
@@ -222,10 +229,10 @@ const pageSchema = {
               <a href={appUrl} class="inline-flex items-center justify-center rounded-xl bg-[#3f352c] px-5 py-3 font-bold text-white transition-colors hover:bg-[#2f2822]">
                 {isGerman ? 'App herunterladen' : 'Download app'}
               </a>
-              <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-xl border border-[#d5c7b6] bg-[#fffdf9] px-5 py-3 font-bold text-[#342b24] hover:bg-white">
+              <a href={storeLinks.ios} target="_blank" rel="noopener noreferrer" data-umami-event="app-store-click" data-umami-event-location="seo-landing" data-umami-event-lang={lang} class="inline-flex items-center justify-center rounded-xl border border-[#d5c7b6] bg-[#fffdf9] px-5 py-3 font-bold text-[#342b24] hover:bg-white">
                 App Store
               </a>
-              <a href={PLAY_STORE_URL} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-xl border border-[#d5c7b6] bg-[#fffdf9] px-5 py-3 font-bold text-[#342b24] hover:bg-white">
+              <a href={storeLinks.android} target="_blank" rel="noopener noreferrer" data-umami-event="play-store-click" data-umami-event-location="seo-landing" data-umami-event-lang={lang} class="inline-flex items-center justify-center rounded-xl border border-[#d5c7b6] bg-[#fffdf9] px-5 py-3 font-bold text-[#342b24] hover:bg-white">
                 Google Play
               </a>
             </div>

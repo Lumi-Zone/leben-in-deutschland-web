@@ -57,7 +57,7 @@ Darum ist die Anschrift auf Ihren Prüfungsunterlagen besonders wichtig. Prüfen
 
 Für LiD-Prüfungen gilt ein anderer Ausgabeweg: Die Bescheinigungen werden für die Prüfungsgruppe an die Prüfstelle geschickt und dort ausgegeben. Fragen Sie Ihren Kursträger oder Ihre Prüfstelle, wann und wie Sie das Dokument abholen können.
 
-Sie sind nicht sicher, welchen Test Sie gemacht haben? Lesen Sie den **[Unterschied zwischen Leben in Deutschland und Einbürgerungstest](/de/blog/unterschied-lid-test-einbuergerungstest)** oder sehen Sie in Ihrer Anmeldung nach.
+Sie sind nicht sicher, welchen Test Sie gemacht haben? Lesen Sie den **[Unterschied zwischen Leben in Deutschland und Einbürgerungstest](/de/blog/unterschied-lid-test-einbuergerungstest/)** oder sehen Sie in Ihrer Anmeldung nach.
 
 ## Kann ich mein Ergebnis online abfragen?
 
@@ -74,7 +74,7 @@ Die Ergebnismitteilung enthält Ihre erreichte Gesamtpunktzahl und ein Prädikat
 
 Mit mindestens 17 Punkten können Sie die Kenntnisse der Rechts- und Gesellschaftsordnung sowie der Lebensverhältnisse in Deutschland grundsätzlich gegenüber der Einbürgerungsbehörde nachweisen. Ob in Ihrem persönlichen Fall weitere Nachweise erforderlich sind, entscheidet die zuständige Behörde.
 
-Mehr zur Punkteverteilung: **[Wie viele richtige Antworten brauche ich im Einbürgerungstest?](/de/blog/wie-viele-richtige-antworten-brauche-ich-einbuergerungstest)**
+Mehr zur Punkteverteilung: **[Wie viele richtige Antworten brauche ich im Einbürgerungstest?](/de/blog/wie-viele-richtige-antworten-brauche-ich-einbuergerungstest/)**
 
 ## Ergebnis noch nicht da: So gehen Sie vor
 
@@ -124,13 +124,13 @@ Welche Form die Behörde verlangt, kann vom jeweiligen Verfahren abhängen. Manc
 
 Bewahren Sie die Bescheinigung dauerhaft auf und erstellen Sie zusätzlich einen gut lesbaren Scan. Geben Sie ein Original nur ab, wenn die Behörde es ausdrücklich verlangt, und dokumentieren Sie die Übergabe.
 
-Wenn Ihr Antrag bereits vorbereitet ist, hilft Ihnen auch unsere **[Checkliste für den Einbürgerungsantrag 2026](/de/blog/einbuergerung-antrag-checkliste-2026)**.
+Wenn Ihr Antrag bereits vorbereitet ist, hilft Ihnen auch unsere **[Checkliste für den Einbürgerungsantrag 2026](/de/blog/einbuergerung-antrag-checkliste-2026/)**.
 
 ## Was passiert, wenn ich nicht bestanden habe?
 
 Weniger als 17 Punkte bedeuten nicht, dass Ihr Einbürgerungsweg beendet ist. Sie können sich erneut bei einer zugelassenen Prüfstelle anmelden. Analysieren Sie vorher, welche Themen Ihnen schwergefallen sind, und üben Sie auch die Fragen Ihres Bundeslandes.
 
-Alle nächsten Schritte finden Sie im Ratgeber **[Einbürgerungstest wiederholen: Was passiert, wenn ich durchfalle?](/de/blog/test-wiederholen)**.
+Alle nächsten Schritte finden Sie im Ratgeber **[Einbürgerungstest wiederholen: Was passiert, wenn ich durchfalle?](/de/blog/test-wiederholen/)**.
 
 ## Häufige Fragen (FAQ)
 
@@ -160,4 +160,4 @@ Auf der BAMF-Bescheinigung ist grundsätzlich keine reguläre Ablauffrist wie be
 
 ## Nächster Schritt
 
-Warten Sie noch auf Ihren Termin? Lesen Sie **[Einbürgerungstest Termine 2026: Anmeldung und Wartezeit](/de/blog/einbuergerungstest-termine-wartezeit-2026)**. Liegt das Ergebnis schon vor, können Sie mit der **[Einbürgerung Schritt für Schritt](/de/blog/einbuergerung-ablauf)** weitermachen.
+Warten Sie noch auf Ihren Termin? Lesen Sie **[Einbürgerungstest Termine 2026: Anmeldung und Wartezeit](/de/blog/einbuergerungstest-termine-wartezeit-2026/)**. Liegt das Ergebnis schon vor, können Sie mit der **[Einbürgerung Schritt für Schritt](/de/blog/einbuergerung-ablauf/)** weitermachen.

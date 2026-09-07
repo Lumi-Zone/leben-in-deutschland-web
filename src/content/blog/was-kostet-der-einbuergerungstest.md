@@ -122,4 +122,4 @@ Planen Sie den Test als eigenen Kostenpunkt. Der Einbürgerungsantrag hat eigene
 Ja. Die Gebühr ist der Betrag, aber Zahlungsweg und Fristen können je nach Prüfstelle organisiert sein.
 
 ## Nächster Schritt
-Lesen Sie ergänzend **[Einbürgerung Kosten 2026](/de/blog/kosten-einbuergerung-2026)** und **[Einbürgerungstest anmelden 2026](/de/blog/anmeldung-pruefung-schritte)**.
+Lesen Sie ergänzend **[Einbürgerung Kosten 2026](/de/blog/kosten-einbuergerung-2026/)** und **[Einbürgerungstest anmelden 2026](/de/blog/anmeldung-pruefung-schritte/)**.

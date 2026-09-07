@@ -50,4 +50,4 @@ Nein. Der Test zeigt Wissen über Deutschland. Für Deutschkenntnisse brauchen S
 Ja, in bestimmten Fällen sind Ausnahmen möglich, zum Beispiel wegen Krankheit, Behinderung, Alter oder besonderer Regelungen. Fragen Sie Ihre Behörde.
 
 ## Nächster Schritt
-Lesen Sie auch **[B1 Prüfung 2026: 8-Wochen-Plan](/de/blog/b1-pruefung-vorbereitung-plan)** und **[Integrationskurs 2026](/de/blog/integrationskurs-inhalt)**.
+Lesen Sie auch **[B1 Prüfung 2026: 8-Wochen-Plan](/de/blog/b1-pruefung-vorbereitung-plan/)** und **[Integrationskurs 2026](/de/blog/integrationskurs-inhalt/)**.

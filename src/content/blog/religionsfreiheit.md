@@ -38,4 +38,4 @@ Ja. Der Staat muss neutral bleiben und darf niemanden wegen Religion bevorzugen 
 Ja. Zum Beispiel dürfen keine Gesetze verletzt und keine anderen Menschen gefährdet werden.
 
 ## Nächster Schritt
-Lesen Sie auch **[Grundgesetz einfach erklärt](/de/blog/das-grundgesetz)** und **[Meinungsfreiheit in Deutschland](/de/blog/meinungsfreiheit)**.
+Lesen Sie auch **[Grundgesetz einfach erklärt](/de/blog/das-grundgesetz/)** und **[Meinungsfreiheit in Deutschland](/de/blog/meinungsfreiheit/)**.

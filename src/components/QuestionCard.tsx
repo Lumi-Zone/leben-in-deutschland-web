@@ -5,6 +5,7 @@ import { isQuestionFavorite, toggleFavorite } from '../utils/favorites';
 import { recordQuestionAttempt } from '../utils/questionStats';
 import { recordHabitAttempt } from '../utils/learningHabits';
 import { trackEvent } from '../utils/analytics';
+import { buildStoreUrl } from '../utils/appLinks';
 import QuestionImage from './QuestionImage';
 
 interface Props {
@@ -92,20 +93,24 @@ export default function QuestionCard({
         setJumpError('');
     }, [id]);
 
-    // Deep Linking Handler
+    // Opens the question in the app when it is installed, otherwise sends the
+    // visitor to the store with the placement attached so the install can be
+    // attributed back to this question page.
     const handlePracticeInApp = () => {
         const appScheme = `lebenindeutschland://question/${id}`;
-        // Fallback URLs - User should replace these with real store links
-        const iosStoreUrl = "https://apps.apple.com/app/leben-in-deutschland-2026/id6723899981";
-        const androidStoreUrl = "https://play.google.com/store/apps/details?id=com.einbuergerungapp";
 
-        // Simple OS detection
         const userAgent = navigator.userAgent || '';
         const isAndroid = /android/i.test(userAgent);
         const isIOS = /iPad|iPhone|iPod/.test(userAgent);
         const isMobile = isAndroid || isIOS;
 
-        const fallbackUrl = isAndroid ? androidStoreUrl : iosStoreUrl;
+        const storeUrl = buildStoreUrl({
+            platform: isAndroid ? 'android' : 'ios',
+            source: 'question-page',
+            lang: currentLang,
+            itemId: id,
+        });
+
         trackEvent('practice-app-click', {
             lang: currentLang,
             question_id: id,
@@ -114,18 +119,29 @@ export default function QuestionCard({
         });
 
         if (!isMobile) {
-            // On Desktop, directly open the store link in a new tab
-            window.open(fallbackUrl, '_blank');
+            window.open(storeUrl, '_blank', 'noopener');
             return;
         }
 
-        // On Mobile, attempt to open app via deep link
+        // If the scheme is handled, the page is backgrounded before the timer
+        // fires. Without this guard the visitor is bounced to the store on
+        // returning from the app, which reads as a broken link.
+        let cancelled = false;
+        const cancel = () => {
+            if (document.visibilityState === 'hidden') cancelled = true;
+        };
+        document.addEventListener('visibilitychange', cancel);
+        window.addEventListener('pagehide', () => {
+            cancelled = true;
+        });
+
         window.location.href = appScheme;
 
-        // Fallback if app doesn't open within timeout
-        setTimeout(() => {
-            window.location.href = fallbackUrl;
-        }, 1500);
+        window.setTimeout(() => {
+            document.removeEventListener('visibilitychange', cancel);
+            if (cancelled || document.visibilityState === 'hidden') return;
+            window.location.href = storeUrl;
+        }, 1200);
     };
 
     // Always get German content

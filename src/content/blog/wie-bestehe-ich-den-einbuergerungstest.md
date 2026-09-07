@@ -50,4 +50,4 @@ Sie sollten die 300 allgemeinen Fragen und die 10 Fragen Ihres Bundeslands kenne
 Wenn Sie mehrere Tests mit 33 Fragen deutlich über der Bestehensgrenze schaffen und Ihre Fehler erklären können.
 
 ## Nächster Schritt
-Lesen Sie auch **[Einbürgerungstest online üben 2026](/de/blog/einbuergerungstest-online-ueben-2026)** und **[Einbürgerungstest: Schwierige Fragen einfach verstehen](/de/blog/schwierige-fragen)**.
+Lesen Sie auch **[Einbürgerungstest online üben 2026](/de/blog/einbuergerungstest-online-ueben-2026/)** und **[Einbürgerungstest: Schwierige Fragen einfach verstehen](/de/blog/schwierige-fragen/)**.

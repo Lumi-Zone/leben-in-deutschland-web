@@ -69,4 +69,4 @@ Ja, wenn sie Ihren Verlauf zeigen. Sortieren Sie sie nach Datum.
 Klären Sie solche Zeiträume früh. Eine kurze schriftliche Erklärung kann helfen.
 
 ## Nächster Schritt
-Lesen Sie auch **[Einbürgerung Bearbeitungszeit 2026](/de/blog/bearbeitungszeit-einbuergerung)** und **[Einbürgerung Antrag 2026: Checkliste](/de/blog/einbuergerung-antrag-checkliste-2026)**.
+Lesen Sie auch **[Einbürgerung Bearbeitungszeit 2026](/de/blog/bearbeitungszeit-einbuergerung/)** und **[Einbürgerung Antrag 2026: Checkliste](/de/blog/einbuergerung-antrag-checkliste-2026/)**.

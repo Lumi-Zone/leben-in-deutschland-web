@@ -27,14 +27,26 @@ export function getAppRelativePath(pathname: string): string {
 }
 
 /**
- * Prepends BASE_URL to a relative path.
- * e.g. /de/support -> /my-app/de/support
+ * Prepends BASE_URL and normalizes localized page URLs for trailingSlash: 'always'.
+ * Asset paths (including extensionless image prefixes), queries and fragments stay intact.
+ * e.g. /de/support -> /my-app/de/support/
  * e.g. logos/logo.png -> /my-app/logos/logo.png
  */
 export function getPath(path: string): string {
-    const p = path.startsWith('/') ? path.slice(1) : path;
-    const base = BASE_URL.endsWith('/') ? BASE_URL : `${BASE_URL}/`;
-    return `${base}${p}`;
+    if (/^(?:[a-z][a-z\d+.-]*:|\/\/)/i.test(path)) return path;
+
+    const suffixIndex = path.search(/[?#]/);
+    const pathname = suffixIndex === -1 ? path : path.slice(0, suffixIndex);
+    const suffix = suffixIndex === -1 ? '' : path.slice(suffixIndex);
+    const relativePath = pathname.replace(/^\/+/, '');
+    const firstSegment = relativePath.split('/')[0];
+    const isLocalizedPage = SUPPORTED_LANGUAGES.some((lang) => lang === firstSegment)
+        && !/\.[^/]+$/.test(relativePath);
+    const normalizedPath = isLocalizedPage
+        ? `${relativePath.replace(/\/+$/, '')}/`
+        : relativePath;
+
+    return `${BASE_URL}${normalizedPath}${suffix}`;
 }
 
 /**
@@ -54,3 +66,4 @@ export function getLanguageSwitchUrl(currentPath: string, targetLang: string, su
 
     return getPath(segments.join('/'));
 }
+import { SUPPORTED_LANGUAGES } from '../types/language';

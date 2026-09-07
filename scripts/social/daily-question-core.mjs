@@ -155,6 +155,20 @@ export function buildPostText(question, siteUrl = DEFAULT_SITE_URL) {
   ].join('\n');
 }
 
+export function buildInstagramCaption(question, siteUrl = DEFAULT_SITE_URL) {
+  const url = `${siteUrl.replace(/\/$/, '')}/de/frage/${question.id}`;
+  return [
+    `Tagesfrage #${question.id} 🇩🇪`,
+    '',
+    'Welche Antwort ist richtig? Schreib A, B, C oder D in die Kommentare.',
+    'Die Auflösung folgt morgen in den Kommentaren. ✅',
+    '',
+    `Mehr üben: ${url}`,
+    '',
+    '#Einbürgerungstest #LebenInDeutschland #Deutschland #Einbürgerung #DeutschLernen #Integrationskurs #Tagesfrage #300Fragen',
+  ].join('\n');
+}
+
 export function buildAnswerText(question) {
   const answer = getCorrectAnswer(question);
   return `Auflösung zu Frage #${question.id}: ${answer.label} – ${answer.text} ✅`;
@@ -202,7 +216,13 @@ function calculateOptionLayout(options, top, bottom) {
   };
 }
 
-export async function renderQuestionCard({ question, logoPath, outputPath, questionImagePath = null }) {
+export async function renderQuestionCard({
+  question,
+  logoPath,
+  outputPath = null,
+  questionImagePath = null,
+  format = 'png',
+}) {
   const logo = await fs.readFile(logoPath);
   const logoData = `data:image/png;base64,${logo.toString('base64')}`;
   const questionImage = questionImagePath ? await fs.readFile(questionImagePath) : null;
@@ -295,8 +315,15 @@ export async function renderQuestionCard({ question, logoPath, outputPath, quest
     <text x="1018" y="${canvasHeight - 52}" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#ffffff">lid-einbuergerung.de</text>
   </svg>`;
 
+  const pipeline = sharp(Buffer.from(svg));
+  const encoded = format === 'jpeg'
+    ? pipeline.jpeg({ quality: 90, mozjpeg: true })
+    : pipeline.png({ compressionLevel: 9 });
+
+  if (!outputPath) return encoded.toBuffer();
+
   await fs.mkdir(path.dirname(outputPath), { recursive: true });
-  await sharp(Buffer.from(svg)).png({ compressionLevel: 9 }).toFile(outputPath);
+  await encoded.toFile(outputPath);
   return outputPath;
 }
 

@@ -156,7 +156,7 @@ const breadcrumbSchema = {
   rssHref={getPath('rss.xml')}
   lang={lang}
 >
-  <Header lang={lang} />
+  <Header lang={lang} disableAlternates={true} />
   <script is:inline type="application/ld+json" set:html={JSON.stringify(blogListSchema)} />
   <script is:inline type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
 

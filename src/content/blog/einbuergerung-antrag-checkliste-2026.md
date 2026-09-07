@@ -39,4 +39,4 @@ Reichen Sie nur Unterlagen ein, die zur Anforderung passen. Zu viele unnötige D
 Vollständige Unterlagen und eine klare Reihenfolge in Ihrer Mappe.
 
 ## Nächster Schritt
-Lesen Sie auch **[Einbürgerung 2026: Voraussetzungen und Ablauf](/de/blog/einbuergerung-ablauf)** und **[Einbürgerung Kosten 2026](/de/blog/kosten-einbuergerung-2026)**.
+Lesen Sie auch **[Einbürgerung 2026: Voraussetzungen und Ablauf](/de/blog/einbuergerung-ablauf/)** und **[Einbürgerung Kosten 2026](/de/blog/kosten-einbuergerung-2026/)**.

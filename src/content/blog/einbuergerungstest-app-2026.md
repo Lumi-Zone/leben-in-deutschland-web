@@ -54,7 +54,7 @@ Eine gute Simulation zeigt Ihnen:
 - Welche Themen machen noch Probleme?
 - Bleibe ich ruhig, wenn mehrere Fragen hintereinander schwer sind?
 
-Starten Sie dafür direkt mit der **[Prüfungssimulation](/de/exam)**.
+Starten Sie dafür direkt mit der **[Prüfungssimulation](/de/exam/)**.
 
 ### 4. Fehler gezielt wiederholen
 
@@ -74,7 +74,7 @@ Ein einfacher Ablauf:
 4. Üben Sie die 10 Bundesland-Fragen.
 5. Machen Sie mehrere Prüfungssimulationen.
 
-Wenn Sie lieber im Browser beginnen möchten, starten Sie hier mit **[Frage 1](/de/frage/1)**. Wenn Sie unterwegs weiterlernen möchten, nutzen Sie die App über die Download-Buttons auf der **[Startseite](/de/)**.
+Wenn Sie lieber im Browser beginnen möchten, starten Sie hier mit **[Frage 1](/de/frage/1/)**. Wenn Sie unterwegs weiterlernen möchten, nutzen Sie die App über die Download-Buttons auf der **[Startseite](/de/)**.
 
 ## Warum die App besonders für Integrationskurs und Orientierungskurs passt
 
@@ -127,7 +127,7 @@ Die Bundesland-Fragen sind kurz, aber wichtig. Lernen Sie sie nicht erst am letz
 - Wichtig sind 300 allgemeine Fragen, 10 Bundesland-Fragen und Prüfungssimulation.
 - Die Leben in Deutschland App passt gut zum Integrationskurs und Orientierungskurs.
 - Lernen Sie nicht nur zufällig, sondern mit Fehlerliste und echten Tests.
-- Starten Sie online mit **[Frage 1](/de/frage/1)** oder laden Sie die App über die **[Startseite](/de/)**.
+- Starten Sie online mit **[Frage 1](/de/frage/1/)** oder laden Sie die App über die **[Startseite](/de/)**.
 
 ## Häufige Fragen (FAQ)
 
@@ -153,4 +153,4 @@ Am besten so früh wie möglich. Auch 10 Minuten pro Tag helfen, wenn Sie regelm
 
 ## Nächster Schritt
 
-Starten Sie jetzt mit **[Einbürgerungstest online üben 2026](/de/blog/einbuergerungstest-online-ueben-2026)**, machen Sie eine **[Prüfungssimulation](/de/exam)** oder beginnen Sie direkt mit **[Frage 1](/de/frage/1)**.
+Starten Sie jetzt mit **[Einbürgerungstest online üben 2026](/de/blog/einbuergerungstest-online-ueben-2026/)**, machen Sie eine **[Prüfungssimulation](/de/exam/)** oder beginnen Sie direkt mit **[Frage 1](/de/frage/1/)**.

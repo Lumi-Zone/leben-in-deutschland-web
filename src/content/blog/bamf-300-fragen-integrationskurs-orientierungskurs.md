@@ -49,4 +49,4 @@ Nicht genau. Der Orientierungskurs ist der offizielle Kursteil. "Politikkurs" sa
 Wichtig sind: Leben in Deutschland, Einbürgerungstest, BAMF Fragenkatalog, 300 Fragen und Bundesland-Fragen.
 
 ## Nächster Schritt
-Lesen Sie auch **[Einbürgerungstest online üben 2026](/de/blog/einbuergerungstest-online-ueben-2026)**, **[Bundesland-Fragen im Einbürgerungstest](/de/blog/bundesland-fragen-erklaert)** und **[Leben in Deutschland oder Einbürgerungstest](/de/blog/unterschied-lid-test-einbuergerungstest)**.
+Lesen Sie auch **[Einbürgerungstest online üben 2026](/de/blog/einbuergerungstest-online-ueben-2026/)**, **[Bundesland-Fragen im Einbürgerungstest](/de/blog/bundesland-fragen-erklaert/)** und **[Leben in Deutschland oder Einbürgerungstest](/de/blog/unterschied-lid-test-einbuergerungstest/)**.

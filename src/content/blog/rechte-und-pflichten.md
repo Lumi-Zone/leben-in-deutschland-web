@@ -42,4 +42,4 @@ Alle Menschen müssen die Gesetze beachten. Je nach Situation gibt es auch Pflic
 Nein. Wählen ist ein Recht, keine Pflicht. Niemand muss wählen, aber jede Stimme kann politisch wichtig sein.
 
 ## Nächster Schritt
-Lesen Sie auch **[Grundgesetz einfach erklärt](/de/blog/das-grundgesetz)** und **[Wahlen in Deutschland](/de/blog/wahlen-in-deutschland)**.
+Lesen Sie auch **[Grundgesetz einfach erklärt](/de/blog/das-grundgesetz/)** und **[Wahlen in Deutschland](/de/blog/wahlen-in-deutschland/)**.

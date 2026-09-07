@@ -51,4 +51,4 @@ Nein, aber Sie sollten die Grundbegriffe verstehen und regelmäßig mit Original
 Beispiele machen Begriffe leichter. So merken Sie sich besser, was Demokratie, Grundrechte oder Sozialstaat bedeuten.
 
 ## Nächster Schritt
-Lesen Sie auch **[Was kommt im Einbürgerungstest 2026 dran?](/de/blog/einbuergerungstest-was-kommt-dran-2026)** und **[Einbürgerungstest online üben](/de/blog/einbuergerungstest-online-ueben-2026)**.
+Lesen Sie auch **[Was kommt im Einbürgerungstest 2026 dran?](/de/blog/einbuergerungstest-was-kommt-dran-2026/)** und **[Einbürgerungstest online üben](/de/blog/einbuergerungstest-online-ueben-2026/)**.

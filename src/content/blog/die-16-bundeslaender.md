@@ -45,4 +45,4 @@ Arbeiten Sie mit Wochenzielen, markieren Sie Schwachstellen und wiederholen Sie 
 Kleine, erreichbare Lernziele und sichtbarer Fortschritt sorgen für Kontinuität und weniger Stress.
 
 ## Nächster Schritt
-Lesen Sie auch **[Einbürgerungstest Themen 2026](/de/blog/wichtige-themengebiete)** und **[Einbürgerungstest Prüfungstag](/de/blog/tipps-fuer-den-pruefungstag)**.
+Lesen Sie auch **[Einbürgerungstest Themen 2026](/de/blog/wichtige-themengebiete/)** und **[Einbürgerungstest Prüfungstag](/de/blog/tipps-fuer-den-pruefungstag/)**.

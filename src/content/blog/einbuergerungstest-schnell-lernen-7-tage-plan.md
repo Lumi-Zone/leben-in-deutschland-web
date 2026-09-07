@@ -32,7 +32,7 @@ Starten Sie nicht mit Panik. Starten Sie mit einem Überblick.
 
 Machen Sie heute drei Dinge:
 
-1. Beginnen Sie mit **[Frage 1](/de/frage/1)**.
+1. Beginnen Sie mit **[Frage 1](/de/frage/1/)**.
 2. Wählen Sie Ihr Bundesland aus.
 3. Notieren Sie schwierige Themen.
 
@@ -69,7 +69,7 @@ Lernen Sie nicht nur Jahreszahlen auswendig. Merken Sie sich einfache Zusammenh�
 - Was bedeutet Verantwortung in Deutschland?
 - Welche Ereignisse sind für die deutsche Geschichte wichtig?
 
-Wenn Sie unsicher sind, lesen Sie auch **[Das Grundgesetz einfach erklärt](/de/blog/das-grundgesetz)** und **[Wahlen in Deutschland](/de/blog/wahlen-in-deutschland)**.
+Wenn Sie unsicher sind, lesen Sie auch **[Das Grundgesetz einfach erklärt](/de/blog/das-grundgesetz/)** und **[Wahlen in Deutschland](/de/blog/wahlen-in-deutschland/)**.
 
 ## Tag 4: Bundesland-Fragen
 
@@ -111,7 +111,7 @@ Wichtig:
 - mit ruhiger Konzentration
 - danach Fehler prüfen
 
-Starten Sie hier: **[Einbürgerungstest Prüfungssimulation](/de/exam)**.
+Starten Sie hier: **[Einbürgerungstest Prüfungssimulation](/de/exam/)**.
 
 Wenn Sie weniger als 17 richtig haben, ist das kein Grund aufzugeben. Wiederholen Sie danach nur die Fehler. Wenn Sie knapp über 17 sind, lernen Sie weiter. Sicherer ist es, wenn Sie deutlich über 17 liegen.
 
@@ -160,7 +160,7 @@ Genau dafür ist diese Website und die **Leben in Deutschland App** gemacht. Sie
 - Lernen Sie zuerst allgemeine Fragen, dann Bundesland-Fragen, dann Simulation.
 - Wiederholen Sie falsche Antworten gezielt.
 - Machen Sie mindestens eine komplette Prüfungssimulation.
-- Starten Sie direkt mit **[Frage 1](/de/frage/1)** oder üben Sie mobil mit der App über die **[Startseite](/de/)**.
+- Starten Sie direkt mit **[Frage 1](/de/frage/1/)** oder üben Sie mobil mit der App über die **[Startseite](/de/)**.
 
 ## Häufige Fragen (FAQ)
 
@@ -186,4 +186,4 @@ Ja, besonders für kurze Wiederholungen. Eine App macht es leichter, täglich zu
 
 ## Nächster Schritt
 
-Beginnen Sie jetzt mit **[Einbürgerungstest online üben 2026](/de/blog/einbuergerungstest-online-ueben-2026)**, öffnen Sie die **[Prüfungssimulation](/de/exam)** oder lesen Sie **[Einbürgerungstest 2026: 33 Fragen einfach erklärt](/de/blog/33-fragen-erklaert)**.
+Beginnen Sie jetzt mit **[Einbürgerungstest online üben 2026](/de/blog/einbuergerungstest-online-ueben-2026/)**, öffnen Sie die **[Prüfungssimulation](/de/exam/)** oder lesen Sie **[Einbürgerungstest 2026: 33 Fragen einfach erklärt](/de/blog/33-fragen-erklaert/)**.

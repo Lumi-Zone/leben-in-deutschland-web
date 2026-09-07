@@ -42,4 +42,4 @@ Nein. Beleidigungen, Drohungen oder Volksverhetzung können strafbar sein.
 Sie zeigt, dass Deutschland eine Demokratie ist. Menschen dürfen verschiedene Meinungen haben und öffentlich diskutieren.
 
 ## Nächster Schritt
-Lesen Sie auch **[Grundgesetz einfach erklärt](/de/blog/das-grundgesetz)** und **[Rechte und Pflichten in Deutschland](/de/blog/rechte-und-pflichten)**.
+Lesen Sie auch **[Grundgesetz einfach erklärt](/de/blog/das-grundgesetz/)** und **[Rechte und Pflichten in Deutschland](/de/blog/rechte-und-pflichten/)**.

@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
 
+# ChatGPT Search discovery. Training crawler policy remains unchanged.
+User-agent: OAI-SearchBot
+Allow: /
+
 Sitemap: https://lid-einbuergerung.de/sitemap-index.xml

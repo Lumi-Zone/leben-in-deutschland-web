@@ -18,9 +18,12 @@ pnpm-debug.log*
 .env.production
 .env.local
 .env.x.local
+.env.instagram.local
 
 # generated social media cards and local posting state
 .daily-x/
+.daily-instagram/
+public/instagram/questions/
 
 # macOS-specific files
 .DS_Store
@@ -28,7 +31,4 @@ pnpm-debug.log*
 # jetbrains setting folder
 .idea/
 
-# Instagram credentials, generated media and account-specific publication state
-.env.instagram.local
-.daily-instagram/
 public/instagram/series-v1/

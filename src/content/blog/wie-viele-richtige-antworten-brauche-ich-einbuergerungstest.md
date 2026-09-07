@@ -115,4 +115,4 @@ Theoretisch kann man einzelne Fragen erraten. Als Strategie ist das unsicher. Be
 Üben Sie nicht nur neue Fragen. Wiederholen Sie Ihre Fehlerliste, trainieren Sie Bundesland-Fragen und machen Sie komplette Simulationen.
 
 ## Nächster Schritt
-Lesen Sie ergänzend **[Einbürgerungstest wiederholen](/de/blog/test-wiederholen)** und **[Einbürgerungstest 2026: 9 häufige Fehler](/de/blog/einbuergerungstest-2026-fiese-fallen)**.
+Lesen Sie ergänzend **[Einbürgerungstest wiederholen](/de/blog/test-wiederholen/)** und **[Einbürgerungstest 2026: 9 häufige Fehler](/de/blog/einbuergerungstest-2026-fiese-fallen/)**.

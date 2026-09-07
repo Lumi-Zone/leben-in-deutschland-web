@@ -61,4 +61,4 @@ Ja, durch vollständige Unterlagen beim ersten Versuch und frühzeitige Terminpl
 Idealerweise vor dem ersten Behördentermin, damit Gebühren und Nachweise ohne Zeitdruck vorbereitet sind.
 
 ## Nächster Schritt
-Lesen Sie auch **[Einbürgerung Antrag 2026: Checkliste](/de/blog/einbuergerung-antrag-checkliste-2026)** und **[Einbürgerung Bearbeitungszeit 2026](/de/blog/bearbeitungszeit-einbuergerung)**.
+Lesen Sie auch **[Einbürgerung Antrag 2026: Checkliste](/de/blog/einbuergerung-antrag-checkliste-2026/)** und **[Einbürgerung Bearbeitungszeit 2026](/de/blog/bearbeitungszeit-einbuergerung/)**.

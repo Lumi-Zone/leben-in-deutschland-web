@@ -1,0 +1,158 @@
+---
+import { languages } from '../i18n/ui';
+import { getPath, getLanguageSwitchUrl } from '../utils/navigation';
+import { getSeoLanguageMeta } from '../utils/seo';
+interface Props { lang: string; disableAlternates?: boolean; }
+const { lang, disableAlternates = false } = Astro.props;
+const languageCodes = Object.keys(languages);
+const languageMenuItems = languageCodes.map((code) => ({
+  code,
+  htmlLang: getSeoLanguageMeta(code).htmlLang,
+  label: languages[code as keyof typeof languages],
+  href: disableAlternates ? getPath(`${code}/`) : getLanguageSwitchUrl(Astro.url.pathname, code, languageCodes),
+}));
+---
+		<div class="language-switcher">
+			<details class="language-menu">
+				<summary class="language-summary" aria-label="Select language">
+					<span class="language-code">{String(lang).toUpperCase()}</span>
+					<svg class="language-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+					</svg>
+				</summary>
+				<nav class="language-panel" aria-label="Language options">
+					<ul class="language-list">
+						{languageMenuItems.map((item) => (
+							<li>
+								<a
+									href={item.href}
+									lang={item.htmlLang}
+									class={`language-item ${item.code === lang ? 'is-current' : ''}`}
+									aria-current={item.code === lang ? 'page' : undefined}
+									data-umami-event="language-changed"
+									data-umami-event-from-lang={lang}
+									data-umami-event-to-lang={item.code}
+								>
+									<span class="language-item-code">{item.code.toUpperCase()}</span>
+									<span>{item.label}</span>
+								</a>
+							</li>
+						))}
+					</ul>
+				</nav>
+			</details>
+		</div>
+<script>
+  document.querySelectorAll<HTMLDetailsElement>('.language-menu').forEach((menu) => {
+    document.addEventListener('click', (event) => {
+      if (event.target instanceof Node && !menu.contains(event.target)) menu.open = false;
+    });
+    menu.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && menu.open) {
+        menu.open = false;
+        menu.querySelector('summary')?.focus();
+        event.stopPropagation();
+      }
+    });
+  });
+</script>
+<style>
+	.language-menu {
+		position: relative;
+	}
+
+	.language-switcher {
+		position: relative;
+		flex: 0 0 auto;
+	}
+
+	.language-summary {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.5rem;
+		padding: 0.5rem 0.625rem;
+		min-height: 44px;
+		min-width: 64px;
+		justify-content: center;
+		border-radius: 0.75rem;
+		border: 1px solid #e5e7eb;
+		background: #ffffff;
+		box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+		font-weight: 700;
+		font-size: 0.875rem;
+		color: #374151;
+		cursor: pointer;
+		list-style: none;
+	}
+
+	.language-summary::-webkit-details-marker {
+		display: none;
+	}
+
+	.language-chevron {
+		width: 1rem;
+		height: 1rem;
+		color: #9ca3af;
+		transition: transform 150ms ease;
+	}
+
+	.language-menu[open] .language-chevron {
+		transform: rotate(180deg);
+	}
+
+	.language-panel {
+		position: absolute;
+		top: calc(100% + 0.5rem);
+		inset-inline-end: 0;
+		width: min(13rem, calc(100vw - 88px));
+		z-index: 1;
+		max-height: min(70dvh, 32rem);
+		overscroll-behavior: contain;
+		overflow-y: auto;
+		border-radius: 0.9rem;
+		border: 1px solid #e5e7eb;
+		background: #ffffff;
+		box-shadow: 0 10px 26px rgba(0, 0, 0, 0.12);
+		padding: 0.35rem;
+	}
+
+	.language-list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.language-item {
+		display: flex;
+		align-items: center;
+		gap: 0.6rem;
+		padding: 0.55rem 0.65rem;
+		border-radius: 0.6rem;
+		font-size: 0.9rem;
+		text-decoration: none;
+		color: #374151;
+	}
+
+	.language-item:hover {
+		background: #f9fafb;
+	}
+
+	.language-item.is-current {
+		background: #eff6ff;
+		color: #1d4ed8;
+	}
+
+	.language-item-code {
+		font-size: 0.72rem;
+		font-weight: 700;
+		letter-spacing: 0.04em;
+		color: #9ca3af;
+		min-width: 2rem;
+	}
+
+	.language-item.is-current .language-item-code {
+		color: #1d4ed8;
+	}
+
+  @media(max-width:760px){.language-summary{gap:6px;font-size:.8125rem}}
+</style>

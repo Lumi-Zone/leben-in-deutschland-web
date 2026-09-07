@@ -39,4 +39,4 @@ Frühzeitig bei der zuständigen Stelle klären und Nachreichungsstrategie festl
 Das hängt von der Behörde ab. In vielen Fällen ist eine koordinierte Terminplanung hilfreich.
 
 ## Nächster Schritt
-Lesen Sie auch **[Einbürgerung Antrag 2026: Checkliste](/de/blog/einbuergerung-antrag-checkliste-2026)** und **[Einbürgerung 2026: Voraussetzungen und Ablauf](/de/blog/einbuergerung-ablauf)**.
+Lesen Sie auch **[Einbürgerung Antrag 2026: Checkliste](/de/blog/einbuergerung-antrag-checkliste-2026/)** und **[Einbürgerung 2026: Voraussetzungen und Ablauf](/de/blog/einbuergerung-ablauf/)**.

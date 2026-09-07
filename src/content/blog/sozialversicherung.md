@@ -42,4 +42,4 @@ Starten Sie mit Grundrechten, Pflichten und demokratischen Prinzipien. Danach si
 Nutzen Sie kurze Wiederholungszyklen mit konkreten Beispielen aus Alltag, Arbeit und öffentlichem Leben.
 
 ## Nächster Schritt
-Als Vertiefung: **[Rechte und Pflichten als Bürger](/de/blog/rechte-und-pflichten)** und **[Das Grundgesetz](/de/blog/das-grundgesetz)**.
+Als Vertiefung: **[Rechte und Pflichten als Bürger](/de/blog/rechte-und-pflichten/)** und **[Das Grundgesetz](/de/blog/das-grundgesetz/)**.

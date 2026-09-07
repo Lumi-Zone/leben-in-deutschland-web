@@ -97,4 +97,4 @@ Wichtig ist das Ergebnis insgesamt. Für die Einbürgerung brauchen Sie in der R
 Kurz vor dem Test sollten Sie vor allem Ihre Fehlerfragen wiederholen und komplette Tests mit Zeit üben.
 
 ## Nächster Schritt
-Lesen Sie auch **[Einbürgerungstest 2026: 33 Fragen einfach erklärt](/de/blog/33-fragen-erklaert)** und **[Einbürgerungstest Prüfungstag](/de/blog/tipps-fuer-den-pruefungstag)**.
+Lesen Sie auch **[Einbürgerungstest 2026: 33 Fragen einfach erklärt](/de/blog/33-fragen-erklaert/)** und **[Einbürgerungstest Prüfungstag](/de/blog/tipps-fuer-den-pruefungstag/)**.

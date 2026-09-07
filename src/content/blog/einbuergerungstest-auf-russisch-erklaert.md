@@ -156,4 +156,4 @@ tags: ["Einbürgerungstest", "Russisch", "Vorbereitung", "BAMF"]
 Да. По информации BAMF тест можно повторить, если правильных ответов было меньше 17.
 
 ## Следующий шаг
-Продолжите подготовку с материалами **[Einbürgerungstest 2026: 33 Fragen einfach erklärt](/de/blog/33-fragen-erklaert)**, **[Bundesland-Fragen im Einbürgerungstest](/de/blog/bundesland-fragen-erklaert)** и **[Einbürgerungstest online üben 2026](/de/blog/einbuergerungstest-online-ueben-2026)**.
+Продолжите подготовку с материалами **[Einbürgerungstest 2026: 33 Fragen einfach erklärt](/de/blog/33-fragen-erklaert/)**, **[Bundesland-Fragen im Einbürgerungstest](/de/blog/bundesland-fragen-erklaert/)** и **[Einbürgerungstest online üben 2026](/de/blog/einbuergerungstest-online-ueben-2026/)**.
