@@ -20,7 +20,16 @@ jobs:
     steps:
       - name: Checkout your repository using git
         uses: actions/checkout@v4
-      
+
+      - name: Install video encoder
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+
+      - name: Restore generated Instagram growth assets
+        uses: actions/cache@v4
+        with:
+          path: public/instagram/growth-v1
+          key: instagram-growth-v1-${{ hashFiles('scripts/social/instagram-growth-core.mjs', 'scripts/social/generate-instagram-growth.mjs', 'src/data/questions.json') }}
+
       - name: Install, build, and upload your site
         uses: withastro/action@v3
         env:

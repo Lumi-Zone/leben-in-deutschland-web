@@ -20,11 +20,16 @@
     "instagram:verify": "node scripts/social/daily-instagram-question.mjs --verify",
     "instagram:check-ready": "node scripts/social/daily-instagram-question.mjs --check-ready",
     "instagram:daily": "node scripts/social/daily-instagram-question.mjs --post",
+    "instagram:growth:assets": "node scripts/social/generate-instagram-growth.mjs",
+    "instagram:growth:preview": "node scripts/social/generate-instagram-growth.mjs --question 1",
+    "instagram:story": "node scripts/social/instagram-growth-publisher.mjs --story",
+    "instagram:reel": "node scripts/social/instagram-growth-publisher.mjs --reel",
+    "instagram:weekly-carousel": "node scripts/social/instagram-growth-publisher.mjs --carousel",
     "navigation:test": "node --test scripts/navigation.test.mjs",
     "qrcode:test": "node --test scripts/qrcode.test.mjs",
     "applinks:test": "node --test scripts/applinks.test.mjs",
     "links:audit": "node scripts/link-audit.mjs",
-    "instagram:test": "node --test scripts/social/instagram-series.test.mjs"
+    "instagram:test": "node --test scripts/social/instagram-series.test.mjs scripts/social/instagram-growth.test.mjs"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.6",

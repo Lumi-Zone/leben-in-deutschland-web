@@ -40,3 +40,28 @@ Bei einem Fehler den gesicherten Zustand und das Instagram-Profil prüfen. Einen
 Die bestehende Codex-Automation `her-g-n-instagram-da-soru-payla` läuft täglich um 08:00, 16:00 und 18:00 in der lokalen Zeitzone Europe/Berlin. Der frühere Zufallszeit-Planer ist pausiert. Der Mac muss eingeschaltet, wach und Codex geöffnet sein; dies ist keine Cloud-Automation. Der Job führt nur `npm run instagram:daily` einmal aus, verändert keinen Quellcode und meldet erfolgreiche Posts oder echte Fehler.
 
 Token-Laufzeit und automatische Token-Erneuerung sind entsprechend dem Benutzerwunsch separat zurückgestellt.
+
+## Ergänzende Wachstumsstrategie
+
+Die bestehende Serie mit drei Feed-Beiträgen bleibt unverändert. Nach einer siebentägigen Baseline startet eine zweite, unabhängig gespeicherte Ebene:
+
+| Europe/Berlin | Format | Zweck |
+| --- | --- | --- |
+| täglich 09:00 | Story zur Tagesfrage | zum bereits veröffentlichten Frage-Beitrag zurückführen |
+| täglich 17:00 | Story zur Auflösung | Lösung kompakt wiederholen |
+| Mo/Mi/Fr 20:30 | Reel | Reichweite außerhalb der bestehenden Followerschaft |
+| Sonntag 20:30 | Carousel mit 8 Karten | fünf Fragen der Woche wiederholen und speichern |
+
+Reels verwenden abwechselnd Deutsch/Türkisch, Deutsch/Arabisch und einen deutschen Lerntipp. Sie werden mit `share_to_feed=false` ausschließlich als Reel veröffentlicht, damit der bereits dichte Haupt-Feed nicht zusätzlich gefüllt wird. Die Videos enthalten eine stille AAC-Spur und funktionieren vollständig über eingeblendeten Text; lizenzierte Instagram-Musik oder interaktive Story-Sticker werden nicht automatisiert.
+
+Die ergänzenden Medien werden reproduzierbar unter `public/instagram/growth-v1/` erzeugt. Der Website-Build prüft einen Quell-Fingerprint und kann unveränderte, im GitHub-Actions-Cache liegende Dateien wiederverwenden. FFmpeg wird im Deploy-Workflow installiert. Wie bei der Feed-Serie prüft der Publisher vor jeder Veröffentlichung öffentlichen MIME-Typ, Manifest und SHA-256-Hash.
+
+### Befehle
+
+- `npm run instagram:growth:preview`: Story-, Carousel- und Reel-Beispiele für Frage 1 erzeugen.
+- `npm run instagram:growth:assets`: alle freigegebenen Zusatzmedien erzeugen.
+- `npm run instagram:story`: ausschließlich den aktuellen 09:00- oder 17:00-Story-Slot verarbeiten.
+- `npm run instagram:reel`: ausschließlich den aktuellen Mo/Mi/Fr-Reel-Slot verarbeiten.
+- `npm run instagram:weekly-carousel`: ausschließlich den aktuellen Sonntags-Carousel-Slot verarbeiten.
+
+Der Zusatzstatus liegt unter `.daily-instagram/17841408563989755/growth-state-v1.json`. Ein unklarer API-Ausgang blockiert weitere Zusatzveröffentlichungen, bis das Konto und der gespeicherte Zustand manuell abgeglichen wurden. Fehlende Feed-Beiträge führen immer zum Überspringen: Zusatzinhalte ersetzen oder reparieren die tägliche Serie nicht.
