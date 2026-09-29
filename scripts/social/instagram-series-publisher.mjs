@@ -64,14 +64,22 @@ async function graphRequest(endpoint, { method = 'GET', body } = {}) {
       method, headers: { Authorization: `Bearer ${process.env.INSTAGRAM_ACCESS_TOKEN}`, ...(body ? { 'Content-Type': 'application/x-www-form-urlencoded' } : {}) },
       body: body ? new URLSearchParams(body) : undefined, signal: AbortSignal.timeout(30000),
     });
-  } catch { throw new Error('Instagram network request failed. No automatic retry.'); }
+  } catch (error) {
+    const code = error?.cause?.code;
+    const detail = code === 'ENOTFOUND'
+      ? ' DNS lookup failed; restore DNS/network access for the automation host.'
+      : code === 'ETIMEDOUT'
+        ? ' Connection timed out; check network access from the automation host.'
+        : '';
+    throw new Error(`Instagram network request failed.${detail} No automatic retry.`);
+  }
   const data = await response.json().catch(() => ({}));
   if (!response.ok || data.error) throw new Error(`Instagram API failed (HTTP ${response.status}, code ${data.error?.code || 'unknown'}).`);
   return data;
 }
 
 async function authenticatedAccount() {
-  const account = await graphRequest(`${ACCOUNT_ID}?fields=id,username`);
+  const account = await graphRequest(`${ACCOUNT_ID}?fields=id,username,account_type`);
   if (account.username?.toLowerCase() !== ACCOUNT) throw new Error('Instagram username mismatch; publication blocked.');
   return account;
 }
@@ -115,12 +123,12 @@ export async function main(argv = process.argv.slice(2)) {
   await loadEnvFile(path.join(root, '.env.instagram.local'));
   const mode = argv.includes('--post') ? 'post' : argv.includes('--check-ready') ? 'check' : argv.includes('--verify') ? 'verify' : 'preview';
   if (mode === 'verify' || mode === 'check') {
-    await authenticatedAccount();
+    const account = await authenticatedAccount();
     if (mode === 'check') {
       await graphRequest(`${ACCOUNT_ID}/content_publishing_limit`);
       for (const slot of SLOTS) await checkPublicImage(`frage-1-${slot.id}.jpg`);
     }
-    console.log(`Instagram ${mode === 'check' ? 'account and three public cards' : 'connection'} verified: @${ACCOUNT}. No publication performed.`);
+    console.log(`Instagram ${mode === 'check' ? 'account and three public cards' : 'connection'} verified: @${ACCOUNT}, account type ${account.account_type || 'unavailable'}. No publication performed.`);
     return;
   }
   const questions = JSON.parse(await fs.readFile(path.join(root, 'src/data/questions.json'), 'utf8'));

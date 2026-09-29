@@ -14,6 +14,8 @@ Die drei Beiträge sind einzelne 1080 × 1350 JPEG-Feed-Beiträge im bestätigte
 
 Die vertrauliche Datei `.env.instagram.local` enthält `INSTAGRAM_USER_ID`, `INSTAGRAM_ACCOUNT_USERNAME`, `INSTAGRAM_ACCESS_TOKEN`, `INSTAGRAM_START_DATE` sowie `INSTAGRAM_ENABLE_POSTING`. Vorlage: `.env.instagram.example`. Niemals Geheimnisse veröffentlichen oder in Ausgaben protokollieren.
 
+Der Automations-Host benötigt ausgehenden HTTPS-Zugriff und einen funktionierenden DNS-Resolver für `graph.instagram.com` sowie die veröffentlichte Website. Bei `DNS lookup failed` zuerst die Netzwerk-/DNS-Konfiguration des Hosts wiederherstellen; die Veröffentlichung darf danach nur im nächsten vorgesehenen Slot erneut laufen.
+
 `INSTAGRAM_ENABLE_POSTING=true` aktiviert nur planmäßige Veröffentlichungen ab dem Startdatum. `INSTAGRAM_ENABLE_ANSWER_COMMENTS` wird von diesem Ablauf nicht verwendet: die Antwort kommt um 16:00 als eigener Beitrag.
 
 ## Befehle
@@ -61,7 +63,14 @@ Die ergänzenden Medien werden reproduzierbar unter `public/instagram/growth-v1/
 - `npm run instagram:growth:preview`: Story-, Carousel- und Reel-Beispiele für Frage 1 erzeugen.
 - `npm run instagram:growth:assets`: alle freigegebenen Zusatzmedien erzeugen.
 - `npm run instagram:story`: ausschließlich den aktuellen 09:00- oder 17:00-Story-Slot verarbeiten.
+- `npm run instagram:story -- --verify`: Story-Verbindung und Business-Kontotyp prüfen, ohne Veröffentlichung oder Statusänderung.
 - `npm run instagram:reel`: ausschließlich den aktuellen Mo/Mi/Fr-Reel-Slot verarbeiten.
 - `npm run instagram:weekly-carousel`: ausschließlich den aktuellen Sonntags-Carousel-Slot verarbeiten.
 
 Der Zusatzstatus liegt unter `.daily-instagram/17841408563989755/growth-state-v1.json`. Ein unklarer API-Ausgang blockiert weitere Zusatzveröffentlichungen, bis das Konto und der gespeicherte Zustand manuell abgeglichen wurden. Fehlende Feed-Beiträge führen immer zum Überspringen: Zusatzinhalte ersetzen oder reparieren die tägliche Serie nicht.
+
+Story-Veröffentlichungen verwenden ausschließlich `media_type=STORIES` und `image_url`; nicht unterstützte Feed-Felder wie `alt_text` werden nicht an den Story-Container gesendet. Das Konto muss für Story-Veröffentlichungen als Business-Konto geführt werden. API-Fehler protokollieren Status, Code, Subcode, Typ, eine gekürzte Meta-Fehlermeldung und Trace-ID, jedoch niemals Zugriffstoken oder Request-Header.
+
+Die Story-Karten zeigen die Frage und alle vier Antwortmöglichkeiten ohne zusätzliche Handlungsaufforderungen. Die morgendliche Variante behandelt alle Optionen gleich; die Auflösung verwendet dasselbe Layout und hebt ausschließlich die richtige Antwort hervor.
+
+Reels verwenden denselben kontrastreichen Kartenstil in vier klaren Szenen: lokalisierter 15-Sekunden-Einstieg, Frage mit vier Optionen, türkische/arabische Übersetzung beziehungsweise deutscher Lerntipp und Auflösung mit hervorgehobener richtiger Antwort. Kurze Überblendungen verbinden die Szenen; die Videos bleiben ohne lizenzpflichtige Musik vollständig verständlich.

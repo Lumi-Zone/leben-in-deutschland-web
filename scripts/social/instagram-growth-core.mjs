@@ -160,13 +160,75 @@ function fittedLines(value, width, maxHeight, maxSize = 60, minSize = 28) {
 function paragraph(value, x, y, width, height, maxSize = 60, color = '#11283E', weight = 500, align = 'start') {
   const fitted = fittedLines(value, width, height, maxSize);
   const textX = align === 'end' ? x + width : x;
-  const extra = align === 'end' ? 'text-anchor="start" direction="rtl" unicode-bidi="plaintext"' : '';
+  const extra = align === 'end' ? 'text-anchor="end"' : '';
   return textLines(fitted.wrapped, textX, y + fitted.size, fitted.size, color, weight, fitted.size * 1.25, extra);
 }
 
 function baseSvg({ width, height, eyebrow, step, body }) {
   const footerY = height - 105;
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}"><rect width="${width}" height="${height}" fill="#F6F3EC"/><rect width="${width}" height="220" fill="#11283E"/><rect x="64" y="54" width="8" height="106" fill="#F7D44B"/>${textLines(['LEBEN IN', 'DEUTSCHLAND'], 98, 101, 38, '#F6F3EC', 700, 46)}${text(width - 64, 104, eyebrow, 22, '#F7D44B', 700, 'text-anchor="end"')}${step ? text(width - 64, 148, step, 26, '#F6F3EC', 500, 'text-anchor="end"') : ''}${body}<line x1="64" x2="${width - 64}" y1="${footerY - 42}" y2="${footerY - 42}" stroke="#CBCFCB"/>${text(64, footerY, `@${ACCOUNT}`, 29, '#11283E', 700)}${text(64, footerY + 44, 'lid-einbuergerung.de', 25, '#516571')}</svg>`;
+}
+
+function storyOptionCard({ label, value, y, correct = false, reveal = false }) {
+  const height = 208;
+  const fitted = fittedLines(value, 760, 148, 38, 22);
+  const gap = fitted.size * 1.18;
+  const textHeight = fitted.size + (fitted.wrapped.length - 1) * gap;
+  const firstBaseline = y + (height - textHeight) / 2 + fitted.size * 0.82;
+  const fill = correct ? '#F7D44B' : '#F9F7F1';
+  const border = correct ? '#F7D44B' : '#DDE5E8';
+  const circle = correct ? '#11283E' : '#173A55';
+  const opacity = reveal && !correct ? 0.72 : 1;
+  return `<g opacity="${opacity}" filter="url(#story-shadow)"><rect x="64" y="${y}" width="952" height="${height}" rx="30" fill="${fill}" stroke="${border}" stroke-width="2"/><circle cx="132" cy="${y + height / 2}" r="43" fill="${circle}"/>${text(132, y + height / 2 + 14, label, 38, '#FFFFFF', 700, 'text-anchor="middle"')}${textLines(fitted.wrapped, 205, firstBaseline, fitted.size, '#11283E', correct ? 700 : 600, gap)}</g>`;
+}
+
+export function storySvg({ question, answer, reveal }) {
+  const labels = ['A', 'B', 'C', 'D'];
+  const options = labels.map((label, index) => ({ label, value: String(question[`a${index + 1}_de`] || '') }));
+  const optionBody = options.map((option, index) => storyOptionCard({
+    ...option,
+    y: 710 + index * 230,
+    correct: reveal && option.label === answer.label,
+    reveal,
+  })).join('');
+  const pill = reveal ? `LÖSUNG ${answer.label}` : `FRAGE ${question.id}`;
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920"><defs><linearGradient id="story-bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0D263A"/><stop offset="0.58" stop-color="#153A55"/><stop offset="1" stop-color="#0F2B42"/></linearGradient><filter id="story-shadow" x="-10%" y="-20%" width="120%" height="150%"><feDropShadow dx="0" dy="12" stdDeviation="15" flood-color="#061521" flood-opacity="0.24"/></filter></defs><rect width="1080" height="1920" fill="url(#story-bg)"/><circle cx="1030" cy="250" r="330" fill="#F7D44B" opacity="0.07"/><circle cx="-110" cy="1660" r="360" fill="#D6493E" opacity="0.08"/><rect x="64" y="72" width="8" height="78" rx="4" fill="#F7D44B"/>${textLines(['LEBEN IN', 'DEUTSCHLAND'], 94, 103, 31, '#F6F3EC', 700, 38)}<rect x="798" y="78" width="218" height="62" rx="31" fill="${reveal ? '#D6493E' : '#F7D44B'}"/>${text(907, 119, pill, 25, reveal ? '#FFFFFF' : '#11283E', 700, 'text-anchor="middle"')}<rect x="64" y="225" width="74" height="8" rx="4" fill="#D6493E"/>${paragraph(question.q_de, 64, 258, 900, 390, 60, '#F6F3EC', 700)}${optionBody}${text(64, 1815, `@${ACCOUNT}`, 27, '#F6F3EC', 700)}<rect x="910" y="1794" width="34" height="10" rx="5" fill="#F6F3EC"/><rect x="946" y="1794" width="34" height="10" rx="5" fill="#D6493E"/><rect x="982" y="1794" width="34" height="10" rx="5" fill="#F7D44B"/></svg>`;
+}
+
+function reelProgress(active) {
+  return [0, 1, 2, 3].map(index => `<rect x="${760 + index * 66}" y="1797" width="52" height="10" rx="5" fill="${index === active ? '#F7D44B' : '#F6F3EC'}" opacity="${index === active ? 1 : 0.34}"/>`).join('');
+}
+
+function reelShell({ badge, body, active, accent = '#F7D44B', badgeText = '#11283E' }) {
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920"><defs><linearGradient id="reel-bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0D263A"/><stop offset="0.58" stop-color="#153A55"/><stop offset="1" stop-color="#0F2B42"/></linearGradient><filter id="reel-shadow" x="-10%" y="-20%" width="120%" height="150%"><feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#061521" flood-opacity="0.28"/></filter></defs><rect width="1080" height="1920" fill="url(#reel-bg)"/><circle cx="990" cy="260" r="350" fill="#F7D44B" opacity="0.07"/><circle cx="-120" cy="1650" r="390" fill="#D6493E" opacity="0.08"/><rect x="64" y="72" width="8" height="78" rx="4" fill="#F7D44B"/>${textLines(['LEBEN IN', 'DEUTSCHLAND'], 94, 103, 31, '#F6F3EC', 700, 38)}<rect x="760" y="78" width="256" height="62" rx="31" fill="${accent}"/>${text(888, 119, badge, 24, badgeText, 700, 'text-anchor="middle"')}${body}${text(64, 1815, `@${ACCOUNT}`, 27, '#F6F3EC', 700)}${reelProgress(active)}</svg>`;
+}
+
+export function reelFrameSvg({ type, question, answer, language }) {
+  if (type === 'reel-question') return storySvg({ question, answer, reveal: false });
+  if (type === 'reel-answer') return storySvg({ question, answer, reveal: true });
+  if (type === 'reel-hook') {
+    const hook = language === 'tr'
+      ? 'Bu soruyu 15 saniyede çözebilir misin?'
+      : language === 'ar'
+        ? 'هل يمكنك حل هذا السؤال خلال 15 ثانية؟'
+        : 'Schaffst du diese Frage in 15 Sekunden?';
+    const languageLabel = language === 'tr' ? 'DEUTSCH + TÜRKÇE' : language === 'ar' ? 'DEUTSCH + العربية' : 'DEUTSCH';
+    const align = language === 'ar' ? 'end' : 'start';
+    const body = `<rect x="64" y="256" width="108" height="10" rx="5" fill="#D6493E"/>${paragraph(hook, 64, 320, 900, 520, 82, '#F6F3EC', 700, align)}<g filter="url(#reel-shadow)"><circle cx="540" cy="1195" r="245" fill="#F7D44B"/><circle cx="540" cy="1195" r="205" fill="#11283E"/>${text(540, 1190, '15', 176, '#F7D44B', 700, 'text-anchor="middle"')}${text(540, 1280, 'SEKUNDEN', 35, '#F6F3EC', 700, 'text-anchor="middle"')}</g>`;
+    return reelShell({ badge: languageLabel, body, active: 0 });
+  }
+  if (type === 'reel-translation') {
+    const value = language === 'tr'
+      ? question.q_tr
+      : language === 'ar'
+        ? question.q_ar
+        : 'Achte auf Schlüsselwörter wie „nicht“, „kein“ und „dürfen“.';
+    const badge = language === 'tr' ? 'TÜRKÇE' : language === 'ar' ? 'العربية' : 'LERNTIPP';
+    const align = language === 'ar' ? 'end' : 'start';
+    const body = `<rect x="64" y="256" width="108" height="10" rx="5" fill="#D6493E"/><g filter="url(#reel-shadow)"><rect x="64" y="330" width="952" height="1030" rx="46" fill="#F9F7F1"/><rect x="64" y="330" width="20" height="1030" rx="10" fill="#F7D44B"/>${paragraph(value, 120, 450, 840, 700, 66, '#11283E', 700, align)}</g>`;
+    return reelShell({ badge, body, active: 2, accent: language === 'ar' ? '#D6493E' : '#F7D44B', badgeText: language === 'ar' ? '#FFFFFF' : '#11283E' });
+  }
+  throw new Error(`Unknown Reel frame type: ${type}`);
 }
 
 export async function renderGrowthCard({ type, question, outputPath, language = null }) {
@@ -179,21 +241,9 @@ export async function renderGrowthCard({ type, question, outputPath, language = 
   let step = question ? `FRAGE ${question.id}` : '';
 
   if (type === 'story-question') {
-    eyebrow = 'HEUTIGE FRAGE';
-    body += text(64, 355, 'Schon mitgemacht?', 66, '#11283E', 700);
-    body += paragraph(question.q_de, 64, 425, 952, 410, 54);
-    body += `<rect x="64" y="1010" width="952" height="250" rx="32" fill="#11283E"/>`;
-    body += text(540, 1105, 'A, B, C oder D?', 52, '#F7D44B', 700, 'text-anchor="middle"');
-    body += text(540, 1175, 'Antworte im heutigen Feed-Beitrag.', 32, '#F6F3EC', 500, 'text-anchor="middle"');
-    body += text(64, 1425, '→ Zum Profil', 48, '#D6493E', 700);
+    body = null;
   } else if (type === 'story-answer') {
-    eyebrow = 'AUFLÖSUNG';
-    body += text(64, 365, `Richtig ist ${answer.label}.`, 78, '#11283E', 700);
-    body += `<rect x="64" y="485" width="952" height="360" rx="32" fill="#F7D44B"/>`;
-    body += paragraph(answer.text, 110, 535, 860, 250, 60, '#11283E', 700);
-    body += text(64, 985, 'Warum?', 34, '#516571', 700);
-    body += paragraph(question.q_de, 64, 1025, 952, 300, 44);
-    body += paragraph('Speichern. Wiederholen. Sicherer werden.', 64, 1410, 952, 120, 38, '#D6493E', 700);
+    body = null;
   } else if (type === 'carousel-cover') {
     eyebrow = 'WOCHENRÜCKBLICK'; step = 'START';
     body += textLines(['5 wichtige', 'Prüfungsfragen'], 64, 440, 82, '#11283E', 700, 98);
@@ -217,33 +267,19 @@ export async function renderGrowthCard({ type, question, outputPath, language = 
     body += `<rect x="64" y="720" width="700" height="120" rx="60" fill="#D6493E"/>`;
     body += text(414, 798, 'JETZT ÜBEN', 39, '#F6F3EC', 700, 'text-anchor="middle"');
     body += text(64, 990, 'App-Link im Profil', 38, '#516571');
-  } else if (type === 'reel-hook') {
-    eyebrow = '15 SEKUNDEN';
-    const hook = language === 'tr' ? 'Bu Almanca soru ne soruyor?' : language === 'ar' ? 'ماذا يعني هذا السؤال الألماني؟' : 'Schaffst du diese Prüfungsfrage?';
-    body += paragraph(hook, 64, 500, 952, 520, 78, '#11283E', 700, language === 'ar' ? 'end' : 'start');
-    body += text(64, 1250, language === 'tr' ? 'Deutsch + Türkçe' : language === 'ar' ? 'Deutsch + العربية' : 'Deutsch', 40, '#D6493E', 700);
-  } else if (type === 'reel-question') {
-    eyebrow = 'PRÜFUNGSFRAGE';
-    body += paragraph(question.q_de, 64, 420, 952, 600, 60, '#11283E', 650);
-    body += `<rect x="64" y="1190" width="952" height="150" rx="28" fill="#11283E"/>`;
-    body += text(540, 1284, 'A, B, C oder D?', 48, '#F7D44B', 700, 'text-anchor="middle"');
-  } else if (type === 'reel-translation') {
-    eyebrow = language === 'tr' ? 'TÜRKÇE AÇIKLAMA' : language === 'ar' ? 'شرح بالعربية' : 'KURZER LERNTIPP';
-    const value = language === 'tr' ? question.q_tr : language === 'ar' ? question.q_ar : 'Achte zuerst auf Wörter wie „nicht“, „kein“ und „dürfen“.';
-    body += paragraph(value, 64, 450, 952, 690, 64, '#11283E', 650, language === 'ar' ? 'end' : 'start');
-    body += text(64, 1280, 'Erst verstehen. Dann antworten.', 38, '#D6493E', 700);
-  } else if (type === 'reel-answer') {
-    eyebrow = 'AUFLÖSUNG';
-    body += text(64, 410, `Antwort ${answer.label}`, 82, '#11283E', 700);
-    body += `<rect x="64" y="535" width="952" height="400" rx="34" fill="#F7D44B"/>`;
-    body += paragraph(answer.text, 110, 600, 860, 260, 60, '#11283E', 700);
-    body += text(64, 1135, 'Mehr Fragen in der App', 48, '#D6493E', 700);
-    body += text(64, 1210, 'Link im Profil', 38, '#516571');
+  } else if (type.startsWith('reel-')) {
+    body = null;
   } else {
     throw new Error(`Unknown growth card type: ${type}`);
   }
 
-  const svg = baseSvg({ width, height, eyebrow, step, body });
+  const svg = type.startsWith('reel-')
+    ? reelFrameSvg({ type, question, answer, language })
+    : type === 'story-question'
+      ? storySvg({ question, answer, reveal: false })
+      : type === 'story-answer'
+        ? storySvg({ question, answer, reveal: true })
+        : baseSvg({ width, height, eyebrow, step, body });
   await fs.mkdir(path.dirname(outputPath), { recursive: true });
   await sharp(Buffer.from(svg)).jpeg({ quality: 90, mozjpeg: true }).toFile(outputPath);
   return outputPath;

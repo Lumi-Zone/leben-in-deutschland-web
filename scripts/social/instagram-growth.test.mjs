@@ -8,10 +8,12 @@ import {
   defaultGrowthStartDate,
   emptyGrowthState,
   planGrowthPost,
+  reelFrameSvg,
   reelContent,
+  storySvg,
   storyContent,
 } from './instagram-growth-core.mjs';
-import { publishGrowthPlanned } from './instagram-growth-publisher.mjs';
+import { assertGrowthAccount, formatGraphApiError, publishGrowthPlanned } from './instagram-growth-publisher.mjs';
 
 const questions = getEligibleQuestions(JSON.parse(await fs.readFile(new URL('../../src/data/questions.json', import.meta.url), 'utf8')));
 const questionById = id => questions.find(question => question.id === id);
@@ -65,6 +67,36 @@ test('growth content has stable public asset names and valid captions', () => {
   assert.ok(carousel.caption.length <= 2200);
 });
 
+test('Story artwork contains the question and all four answer choices with minimal supporting copy', () => {
+  const question = questionById(3);
+  const answer = { label: 'A' };
+  const questionArtwork = storySvg({ question, answer, reveal: false });
+  const answerArtwork = storySvg({ question, answer, reveal: true });
+  for (const value of [question.q_de, question.a1_de, question.a2_de, question.a3_de, question.a4_de]) {
+    assert.ok(questionArtwork.includes(value.split(/\s+/).slice(0, 2).join(' ')));
+  }
+  assert.doesNotMatch(questionArtwork, /Schon mitgemacht|Zum Profil|Feed-Beitrag/);
+  assert.match(answerArtwork, /LÖSUNG A/);
+  assert.match(answerArtwork, /fill="#F7D44B" stroke="#F7D44B"/);
+});
+
+test('Reel artwork uses a localized hook, four choices and a highlighted answer', () => {
+  const turkishQuestion = questionById(1);
+  const arabicQuestion = questionById(2);
+  const answer = { label: 'D' };
+  const hook = reelFrameSvg({ type: 'reel-hook', question: turkishQuestion, answer, language: 'tr' });
+  const translation = reelFrameSvg({ type: 'reel-translation', question: arabicQuestion, answer, language: 'ar' });
+  const question = reelFrameSvg({ type: 'reel-question', question: turkishQuestion, answer, language: 'tr' });
+  const reveal = reelFrameSvg({ type: 'reel-answer', question: turkishQuestion, answer, language: 'tr' });
+  assert.match(hook, /Bu soruyu 15/);
+  assert.match(hook, /saniyede çözebilir/);
+  assert.match(hook, />15<|>15<\/text>/);
+  assert.ok(translation.includes(arabicQuestion.q_ar.split(/\s+/).slice(0, 2).join(' ')));
+  for (const label of ['A', 'B', 'C', 'D']) assert.match(question, new RegExp(`>${label}<`));
+  assert.match(reveal, /LÖSUNG D/);
+  assert.doesNotMatch(reveal, /Mehr Fragen|Link im Profil/);
+});
+
 function publicationFixture(kind, failure = null) {
   const state = emptyGrowthState();
   const plan = { kind, key: `${ACCOUNT_ID}/2026-09-20/${kind}`, date: '2026-09-20', questionId: 1, questionIds: [1, 2, 3, 4, 5] };
@@ -102,6 +134,36 @@ test('Reels publish outside the main Feed and save success before permalink look
   assert.equal(create.body.share_to_feed, 'false');
   assert.equal(fixture.state.inFlight, null);
   assert.equal(fixture.state.posts.length, 1);
+});
+
+test('Stories send only the supported container parameters', async () => {
+  const fixture = publicationFixture('story');
+  await publishGrowthPlanned(fixture);
+  const create = fixture.calls.find(([endpoint]) => endpoint.endsWith('/media'))[1];
+  assert.deepEqual(create.body, {
+    media_type: 'STORIES',
+    image_url: 'https://example.com/media.jpg',
+  });
+});
+
+test('Graph API errors retain safe diagnostic fields', () => {
+  const formatted = formatGraphApiError(400, {
+    code: 100,
+    error_subcode: 2207003,
+    type: 'OAuthException',
+    message: 'Invalid parameter\nvalue; access_token=secret-token',
+    fbtrace_id: 'trace-id',
+  });
+  assert.equal(formatted, 'Instagram API failed (HTTP 400, code 100, subcode 2207003, type OAuthException, message Invalid parameter value; access_token=[redacted], trace trace-id).');
+});
+
+test('Story publishing requires the approved Business account', () => {
+  assert.equal(assertGrowthAccount({ username: 'einbuergerungstest2026', account_type: 'BUSINESS' }, { requireBusiness: true }).account_type, 'BUSINESS');
+  assert.throws(
+    () => assertGrowthAccount({ username: 'einbuergerungstest2026', account_type: 'MEDIA_CREATOR' }, { requireBusiness: true }),
+    /require a Business account/,
+  );
+  assert.equal(assertGrowthAccount({ username: 'einbuergerungstest2026', account_type: 'MEDIA_CREATOR' }).account_type, 'MEDIA_CREATOR');
 });
 
 test('carousel creates eight children, one parent and publishes only the parent', async () => {

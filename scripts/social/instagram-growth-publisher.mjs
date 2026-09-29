@@ -20,6 +20,26 @@ const seriesStatePath = path.join(stateDirectory, 'state-v2.json');
 const growthStatePath = path.join(stateDirectory, 'growth-state-v1.json');
 const lockPath = path.join(stateDirectory, 'growth-post.lock');
 
+function safeGraphErrorValue(value) {
+  let safe = String(value || '').replace(/[\r\n]+/g, ' ').trim();
+  if (process.env.INSTAGRAM_ACCESS_TOKEN) safe = safe.split(process.env.INSTAGRAM_ACCESS_TOKEN).join('[redacted]');
+  safe = safe.replace(/(access[_ -]?token(?:=|:)\s*)[^\s,;]+/gi, '$1[redacted]');
+  return safe.slice(0, 500);
+}
+
+export function formatGraphApiError(status, error = {}) {
+  const details = [
+    `HTTP ${status}`,
+    `code ${error.code || 'unknown'}`,
+    error.error_subcode ? `subcode ${error.error_subcode}` : null,
+    error.type ? `type ${safeGraphErrorValue(error.type)}` : null,
+    error.message ? `message ${safeGraphErrorValue(error.message)}` : null,
+    error.is_transient === true ? 'transient true' : null,
+    error.fbtrace_id ? `trace ${safeGraphErrorValue(error.fbtrace_id)}` : null,
+  ].filter(Boolean);
+  return `Instagram API failed (${details.join(', ')}).`;
+}
+
 function requireCredentials() {
   if (!process.env.INSTAGRAM_ACCESS_TOKEN) throw new Error('INSTAGRAM_ACCESS_TOKEN is missing.');
   if (process.env.INSTAGRAM_USER_ID !== ACCOUNT_ID || process.env.INSTAGRAM_ACCOUNT_USERNAME?.toLowerCase() !== ACCOUNT) {
@@ -39,15 +59,31 @@ async function graphRequest(endpoint, { method = 'GET', body } = {}) {
       body: body ? new URLSearchParams(body) : undefined,
       signal: AbortSignal.timeout(30000),
     });
-  } catch { throw new Error('Instagram network request failed. No automatic retry.'); }
+  } catch (error) {
+    const code = error?.cause?.code;
+    const detail = code === 'ENOTFOUND'
+      ? ' DNS lookup failed; restore DNS/network access for the automation host.'
+      : code === 'ETIMEDOUT'
+        ? ' Connection timed out; check network access from the automation host.'
+        : '';
+    throw new Error(`Instagram network request failed.${detail} No automatic retry.`);
+  }
   const data = await response.json().catch(() => ({}));
-  if (!response.ok || data.error) throw new Error(`Instagram API failed (HTTP ${response.status}, code ${data.error?.code || 'unknown'}).`);
+  if (!response.ok || data.error) throw new Error(formatGraphApiError(response.status, data.error));
   return data;
 }
 
-async function authenticatedAccount(request = graphRequest) {
-  const account = await request(`${ACCOUNT_ID}?fields=id,username`);
+export function assertGrowthAccount(account, { requireBusiness = false } = {}) {
   if (account.username?.toLowerCase() !== ACCOUNT) throw new Error('Instagram username mismatch; publication blocked.');
+  if (requireBusiness && account.account_type !== 'BUSINESS') {
+    throw new Error(`Instagram Stories require a Business account; current account type is ${safeGraphErrorValue(account.account_type) || 'unavailable'}.`);
+  }
+  return account;
+}
+
+async function authenticatedAccount(request = graphRequest, { requireBusiness = false } = {}) {
+  const account = await request(`${ACCOUNT_ID}?fields=id,username,account_type`);
+  return assertGrowthAccount(account, { requireBusiness });
 }
 
 function mediaBase() {
@@ -101,7 +137,7 @@ export async function publishGrowthPlanned({ plan, state, save, request, assets,
 
   let publishContainerId;
   if (plan.kind === 'story') {
-    const container = await request(`${ACCOUNT_ID}/media`, { method: 'POST', body: { media_type: 'STORIES', image_url: assets[0], alt_text: content.altText } });
+    const container = await request(`${ACCOUNT_ID}/media`, { method: 'POST', body: { media_type: 'STORIES', image_url: assets[0] } });
     if (!container.id) throw new Error('Missing Story container ID; publication remains blocked.');
     state.inFlight.containerIds.push(container.id);
     state.inFlight.stage = 'processing';
@@ -171,6 +207,11 @@ export async function main(argv = process.argv.slice(2)) {
   await loadEnvFile(path.join(root, '.env.instagram.local'));
   const kind = argv.includes('--story') ? 'story' : argv.includes('--reel') ? 'reel' : argv.includes('--carousel') ? 'carousel' : null;
   if (!kind) throw new Error('Choose --story, --reel, or --carousel.');
+  if (argv.includes('--verify')) {
+    const account = await authenticatedAccount(graphRequest, { requireBusiness: kind === 'story' });
+    console.log(`Instagram growth connection verified: @${ACCOUNT}, account type ${account.account_type}. No publication performed.`);
+    return;
+  }
   if (process.env.INSTAGRAM_ENABLE_POSTING !== 'true') throw new Error('Instagram publication is disabled.');
   const feedStartDate = process.env.INSTAGRAM_START_DATE;
   const growthStartDate = process.env.INSTAGRAM_GROWTH_START_DATE || defaultGrowthStartDate(feedStartDate);
@@ -180,7 +221,7 @@ export async function main(argv = process.argv.slice(2)) {
     const state = await readJson(growthStatePath, emptyGrowthState);
     const plan = planGrowthPost({ kind, seriesState, growthState: state, growthStartDate });
     if (plan.skip) { console.log(plan.skip); return; }
-    await authenticatedAccount();
+    await authenticatedAccount(graphRequest, { requireBusiness: kind === 'story' });
     const manifest = await publicManifest();
     let content;
     if (kind === 'story') {

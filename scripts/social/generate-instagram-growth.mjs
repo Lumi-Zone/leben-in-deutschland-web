@@ -26,32 +26,40 @@ async function run(command, args) {
   });
 }
 
-async function encodeReel(question, target) {
+export async function encodeReel(question, target) {
   const content = reelContent(question);
   const temp = path.join(root, '.daily-instagram/build/growth', String(question.id));
   await fs.mkdir(temp, { recursive: true });
   const frames = [
-    ['reel-hook', 2.5],
-    ['reel-question', 4.5],
+    ['reel-hook', 2.7],
+    ['reel-question', 4.6],
     ['reel-translation', 4],
-    ['reel-answer', 4],
+    ['reel-answer', 4.75],
   ];
-  const list = [];
-  for (const [type, duration] of frames) {
+  for (const [type] of frames) {
     const frame = path.join(temp, `${type}.jpg`);
     await renderGrowthCard({ type, question, outputPath: frame, language: content.language });
-    list.push(`file '${frame.replaceAll("'", "'\\''")}'\nduration ${duration}`);
   }
-  list.push(`file '${path.join(temp, 'reel-answer.jpg').replaceAll("'", "'\\''")}'`);
-  const concatFile = path.join(temp, 'frames.txt');
-  await fs.writeFile(concatFile, `${list.join('\n')}\n`);
   await fs.mkdir(path.dirname(target), { recursive: true });
+  const inputs = frames.flatMap(([type, duration]) => [
+    '-framerate', '24', '-loop', '1', '-t', String(duration), '-i', path.join(temp, `${type}.jpg`),
+  ]);
+  const filter = [
+    '[0:v]scale=720:1280:flags=lanczos,format=yuv420p,setpts=PTS-STARTPTS[v0]',
+    '[1:v]scale=720:1280:flags=lanczos,format=yuv420p,setpts=PTS-STARTPTS[v1]',
+    '[2:v]scale=720:1280:flags=lanczos,format=yuv420p,setpts=PTS-STARTPTS[v2]',
+    '[3:v]scale=720:1280:flags=lanczos,format=yuv420p,setpts=PTS-STARTPTS[v3]',
+    '[v0][v1]xfade=transition=fade:duration=0.35:offset=2.35[x1]',
+    '[x1][v2]xfade=transition=fade:duration=0.35:offset=6.60[x2]',
+    '[x2][v3]xfade=transition=fade:duration=0.35:offset=10.25[video]',
+  ].join(';');
   await run(process.env.FFMPEG_PATH || 'ffmpeg', [
     '-hide_banner', '-loglevel', 'error', '-y',
-    '-f', 'concat', '-safe', '0', '-i', concatFile,
+    ...inputs,
     '-f', 'lavfi', '-i', 'anullsrc=channel_layout=stereo:sample_rate=48000',
-    '-t', '15', '-shortest', '-vf', 'scale=720:1280:flags=lanczos,format=yuv420p',
-    '-r', '24', '-c:v', 'libx264', '-preset', 'ultrafast', '-tune', 'stillimage', '-crf', '30',
+    '-filter_complex', filter,
+    '-map', '[video]', '-map', '4:a', '-t', '15', '-shortest',
+    '-r', '24', '-c:v', 'libx264', '-preset', 'ultrafast', '-crf', '27',
     '-c:a', 'aac', '-b:a', '96k', '-movflags', '+faststart', target,
   ]);
   await fs.rm(temp, { recursive: true, force: true });
