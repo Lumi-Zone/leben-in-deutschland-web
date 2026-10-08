@@ -9,6 +9,8 @@
 //   node scripts/video/render-video.mjs                 all parts + full video
 //   node scripts/video/render-video.mjs --preview 5,21  only PNG frames for these questions
 //   node scripts/video/render-video.mjs --from 1 --to 10 --parts 1 --no-full
+//   node scripts/video/render-video.mjs --states        one video per Bundesland (10 questions each)
+//   node scripts/video/render-video.mjs --states bayern,berlin [--preview 1,8]
 import fs from 'node:fs/promises';
 import { createWriteStream, existsSync } from 'node:fs';
 import path from 'node:path';
@@ -43,10 +45,11 @@ const FFMPEG = process.env.FFMPEG_PATH || 'ffmpeg';
 const CHROME = process.env.CHROME_PATH || '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
 
 function parseArgs(argv) {
-  const args = { from: 1, to: 300, parts: 6, jobs: Math.max(2, Math.min(6, os.cpus().length - 2)), full: true, sound: true, preview: null };
+  const args = { from: 1, to: 300, parts: 6, jobs: Math.max(2, Math.min(6, os.cpus().length - 2)), full: true, sound: true, preview: null, states: null };
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i];
-    if (a === '--from') args.from = Number(argv[++i]);
+    if (a === '--states') args.states = argv[i + 1] && !argv[i + 1].startsWith('--') ? argv[++i].split(',') : true;
+    else if (a === '--from') args.from = Number(argv[++i]);
     else if (a === '--to') args.to = Number(argv[++i]);
     else if (a === '--parts') args.parts = Number(argv[++i]);
     else if (a === '--jobs') args.jobs = Number(argv[++i]);
@@ -152,13 +155,18 @@ async function launchChrome() {
 
 // ---------- ffmpeg ----------
 
-function run(command, args) {
+function run(command, args, timeoutMs = 0) {
   return new Promise((resolve, reject) => {
     const proc = spawn(command, args, { stdio: ['ignore', 'ignore', 'pipe'] });
     let stderr = '';
+    const timer = timeoutMs ? setTimeout(() => { stderr += '\nTimed out.'; proc.kill('SIGKILL'); }, timeoutMs) : null;
     proc.stderr.on('data', chunk => { stderr += chunk; });
     proc.on('error', reject);
-    proc.on('exit', code => (code === 0 ? resolve() : reject(new Error(`${command} failed (${code}):\n${stderr.slice(-2000)}`))));
+    proc.on('exit', code => {
+      clearTimeout(timer);
+      if (code === 0) resolve();
+      else reject(new Error(`${command} failed (${code}):\n${stderr.slice(-2000)}`));
+    });
   });
 }
 
@@ -176,7 +184,21 @@ async function pool(items, limit, worker) {
   if (items.length) process.stdout.write('\n');
 }
 
-const still = (file, seconds) => ['-loop', '1', '-framerate', String(FPS), '-t', seconds.toFixed(3), '-i', file];
+// Each PNG is decoded once and held by the filter graph. Looping the inputs
+// with `-loop 1` made ffmpeg 8 deadlock on roughly one clip in eight.
+const still = file => ['-framerate', String(FPS), '-i', file];
+const hold = seconds => `tpad=stop_mode=clone:stop_duration=${seconds.toFixed(3)}`;
+
+// A stuck encoder would stall the whole render, so give each clip a deadline.
+async function encode(args) {
+  for (let attempt = 1; ; attempt++) {
+    try {
+      return await run(FFMPEG, ['-v', 'error', '-y', ...args], 180000);
+    } catch (error) {
+      if (attempt === 3) throw error;
+    }
+  }
+}
 const ENCODE = [
   '-r', String(FPS), '-c:v', 'libx264', '-preset', 'medium', '-crf', '17', '-pix_fmt', 'yuv420p', '-g', String(FPS * 2), '-bf', '0',
   '-colorspace', 'bt709', '-color_primaries', 'bt709', '-color_trc', 'bt709', '-color_range', 'tv', '-an', '-movflags', '+faststart',
@@ -188,22 +210,22 @@ async function encodeQuestion(q, file) {
   const { thinkFrames, totalFrames } = questionTiming(q);
   const think = thinkFrames / FPS;
   const total = totalFrames / FPS;
-  const frame = state => path.join(FRAMES, `q${pad3(q.id)}-${state}.png`);
+  const frame = state => path.join(FRAMES, `${q.key}-${state}.png`);
   const progress = `clip((t-${FADE_IN})/${(think - FADE_IN).toFixed(3)},0,1)`;
   const graph = [
-    '[0:v]format=gbrp,split=2[b0][b1]',
-    '[1:v]format=gbrp[q0]',
+    `[0:v]format=gbrp,${hold(total)},split=2[b0][b1]`,
+    `[1:v]format=gbrp,${hold(total)}[q0]`,
+    // bar.png and mask.png stay single frames; overlay repeats them.
     `[q0][3:v]overlay=x='${TRACK.x}-${TRACK.width}*${progress}':y=${TRACK.y}:format=gbrp[q1]`,
     '[q1][4:v]overlay=0:0:format=gbrp[q2]',
-    '[2:v]format=gbrp[a0]',
+    `[2:v]format=gbrp,${hold(total)}[a0]`,
     `[b0][q2]xfade=transition=fade:duration=${FADE_IN}:offset=0[s1]`,
     `[s1][a0]xfade=transition=fade:duration=${FADE_REVEAL}:offset=${think.toFixed(3)}[s2]`,
     `[s2][b1]xfade=transition=fade:duration=${FADE_OUT}:offset=${(total - FADE_OUT).toFixed(3)},${TO_YUV}[v]`,
   ].join(';');
-  await run(FFMPEG, [
-    '-v', 'error', '-y',
-    ...still(frame('blank'), total), ...still(frame('q'), total), ...still(frame('a'), total),
-    ...still(path.join(FRAMES, 'bar.png'), total), ...still(path.join(FRAMES, 'mask.png'), total),
+  await encode([
+    ...still(frame('blank')), ...still(frame('q')), ...still(frame('a')),
+    ...still(path.join(FRAMES, 'bar.png')), ...still(path.join(FRAMES, 'mask.png')),
     '-filter_complex', graph, '-map', '[v]', '-t', total.toFixed(3), ...ENCODE, file,
   ]);
 }
@@ -214,9 +236,9 @@ async function encodeCard(cardFrame, blankFrame, file, { cardFirst }) {
   const fade = 0.5;
   const [first, second] = cardFirst ? [cardFrame, blankFrame] : [blankFrame, cardFrame];
   const offset = cardFirst ? CARD_HOLD - fade : 0;
-  await run(FFMPEG, [
-    '-v', 'error', '-y', ...still(first, CARD_HOLD), ...still(second, CARD_HOLD),
-    '-filter_complex', `[0:v]format=gbrp[x];[1:v]format=gbrp[y];[x][y]xfade=transition=fade:duration=${fade}:offset=${offset},${TO_YUV}[v]`,
+  await encode([
+    ...still(first), ...still(second),
+    '-filter_complex', `[0:v]format=gbrp,${hold(CARD_HOLD)}[x];[1:v]format=gbrp,${hold(CARD_HOLD)}[y];[x][y]xfade=transition=fade:duration=${fade}:offset=${offset},${TO_YUV}[v]`,
     '-map', '[v]', '-t', String(CARD_HOLD), ...ENCODE, file,
   ]);
 }
@@ -342,16 +364,67 @@ function youtubeText(part, chapters, partCount) {
   ].join('\n');
 }
 
+const APP_LINKS = [
+  `Kostenlos online üben: https://${SITE}`,
+  'App (iOS): https://apps.apple.com/app/leben-in-deutschland-2026-lid/id6723899981',
+  'App (Android): https://play.google.com/store/apps/details?id=com.einbuergerungapp',
+];
+
+// One video per Bundesland: its ten questions, numbered 1–10 as in the catalogue.
+function stateVideo(s) {
+  const subtitle = `Leben in Deutschland · ${s.state}`;
+  const questions = s.questions.map(q => ({
+    ...q, key: `${s.slug}-q${String(q.id).padStart(2, '0')}`,
+    shot: { total: s.questions.length, subtitle, label: `${s.state} · Aufgabe ${q.id}` },
+  }));
+  const sample = questions[6];
+  return {
+    name: `bundesland-${s.slug}`, questions,
+    intro: {
+      scene: 'intro', subtitle, part: s.state, eyebrow: 'Einbürgerungstest · Fragen zum Bundesland',
+      titleHtml: `${s.state}<br><em>10 Fragen mit Antworten</em>`,
+      lead: 'Die 10 offiziellen Fragen für dieses Bundesland. Im Test kommen 3 davon vor.',
+      steps: STEPS, foot: SOURCE_NOTE,
+    },
+    outro: {
+      scene: 'outro', subtitle, part: s.state, eyebrow: 'Geschafft',
+      titleHtml: `${s.state}<br><em>geschafft!</em>`,
+      lead: 'Üben Sie jetzt auch die 300 allgemeinen Fragen – im Test kommen 30 davon vor.',
+      steps: FACTS, foot: 'Kostenlos online und in der App üben',
+    },
+    thumb: {
+      scene: 'thumb', eyebrow: 'Einbürgerungstest 2026', big: '10', sub: 'zu Ihrem Bundesland', p1: s.state, p2: '',
+      card: { question: sample.question, options: sample.options, correct: sample.correct },
+    },
+    chapter: q => `Frage ${q.id}`,
+    youtube: chapters => [
+      'TITEL', `Einbürgerungstest 2026 ${s.state}: Alle 10 Fragen zum Bundesland mit Antworten | Leben in Deutschland`, '',
+      'BESCHREIBUNG',
+      `Alle 10 Fragen für das Bundesland ${s.state} aus dem Einbürgerungstest und dem Test „Leben in Deutschland“ – mit den richtigen Antworten.`,
+      '',
+      'So lernen Sie mit dem Video: Frage lesen, selbst antworten, dann erscheint die richtige Antwort in Grün. Wenn Sie mehr Zeit brauchen, pausieren Sie einfach.',
+      '',
+      `Die Fragen und Antworten folgen dem offiziellen Gesamtfragenkatalog des Bundesamts für Migration und Flüchtlinge (BAMF), Stand ${CATALOG_STAND}.`,
+      'Im Test bekommen Sie 33 Fragen: 30 allgemeine und 3 zu Ihrem Bundesland. Sie haben 60 Minuten Zeit und brauchen 17 richtige Antworten.',
+      '',
+      ...APP_LINKS, '',
+      'KAPITEL', ...chapters.map(c => `${clock(c.at)} ${c.title}`), '',
+      `#einbürgerungstest #lebenindeutschland #${s.slug.replace(/-/g, '')}`, '',
+    ].join('\n'),
+  };
+}
+
 // ---------- main ----------
 
 async function main() {
   const args = parseArgs(process.argv.slice(2));
-  const all = JSON.parse(await fs.readFile(path.join(HERE, 'questions.de.json'), 'utf8'));
-  const total = all.length;
+  const all = JSON.parse(await fs.readFile(path.join(HERE, 'questions.de.json'), 'utf8'))
+    .map((q, _, list) => ({ ...q, key: `q${pad3(q.id)}`, shot: { total: list.length } }));
+  const states = JSON.parse(await fs.readFile(path.join(HERE, 'questions.states.de.json'), 'utf8'));
 
   // Frames and clips are only reused while template, data and this script are unchanged.
   const stamp = createHash('sha256');
-  for (const name of ['template.html', 'questions.de.json', 'render-video.mjs']) stamp.update(await fs.readFile(path.join(HERE, name)));
+  for (const name of ['template.html', 'questions.de.json', 'questions.states.de.json', 'render-video.mjs']) stamp.update(await fs.readFile(path.join(HERE, name)));
   const stampFile = path.join(WORK, 'stamp');
   const digest = stamp.digest('hex');
   if (!existsSync(stampFile) || (await fs.readFile(stampFile, 'utf8')) !== digest) await fs.rm(WORK, { recursive: true, force: true });
@@ -361,88 +434,106 @@ async function main() {
 
   const chrome = await launchChrome();
   try {
+    let questions;
+    let videos;
+    if (args.states) {
+      const wanted = args.states === true ? states : states.filter(s => args.states.includes(s.slug));
+      if (!wanted.length) throw new Error(`Unknown Bundesland. Known: ${states.map(s => s.slug).join(', ')}`);
+      videos = wanted.map(stateVideo);
+      questions = videos.flatMap(video => video.questions);
+    } else {
+      questions = all.filter(q => q.id >= args.from && q.id <= args.to);
+      const size = Math.ceil(questions.length / args.parts);
+      const parts = Array.from({ length: args.parts }, (_, i) => {
+        const slice = questions.slice(i * size, (i + 1) * size);
+        return { number: i + 1, label: args.parts > 1 ? `Teil ${i + 1} von ${args.parts}` : '', first: slice[0].id, last: slice.at(-1).id, questions: slice, name: `teil-${i + 1}` };
+      });
+      const whole = { number: 0, label: '', first: questions[0].id, last: questions.at(-1).id, questions, name: 'komplett' };
+      const sample = all[5];
+      videos = (args.full && args.parts > 1 ? [...parts, whole] : parts).map(video => ({
+        ...video,
+        intro: introSpec(video),
+        outro: outroSpec(video, video.number ? parts[video.number] : null),
+        thumb: {
+          scene: 'thumb', eyebrow: 'Einbürgerungstest 2026', big: '300', sub: 'mit allen richtigen Antworten',
+          p1: video.label ? `Teil ${video.number}` : 'Alle Fragen', p2: `Fragen ${video.first}–${video.last}`,
+          card: { question: sample.question, options: sample.options, correct: sample.correct },
+        },
+        chapter: (q, i, list) => (i % 10 === 0 ? `Fragen ${q.id}–${list[Math.min(i + 9, list.length - 1)].id}` : null),
+        youtube: chapters => youtubeText(video, chapters, parts.length),
+      }));
+    }
+    const shotFor = (q, state) => ({ scene: 'question', state, q, ...q.shot });
+    const thumbClip = { clip: { width: 1280, height: 720 } };
+
     if (args.preview) {
       const dir = path.join(OUT, 'preview');
       await fs.mkdir(dir, { recursive: true });
-      for (const id of args.preview) {
-        const q = all[id - 1];
+      for (const q of questions.filter(item => args.preview.includes(item.id))) {
         for (const state of ['q', 'a']) {
-          const info = await chrome.shot({ scene: 'question', state, q, total }, path.join(dir, `q${pad3(id)}-${state}.png`));
-          if (state === 'q') console.log(`Frage ${id}: scale ${info.k}${info.overflow ? ' OVERFLOW' : ''}`);
+          const info = await chrome.shot(shotFor(q, state), path.join(dir, `${q.key}-${state}.png`));
+          if (state === 'q') console.log(`${q.key}: scale ${info.k}${info.overflow ? ' OVERFLOW' : ''}`);
         }
       }
-      const sample = { number: 1, label: 'Teil 1 von 6', first: 1, last: 50 };
-      await chrome.shot(introSpec(sample), path.join(dir, 'intro.png'));
-      await chrome.shot(outroSpec(sample, { number: 2, first: 51, last: 100 }), path.join(dir, 'outro.png'));
-      await chrome.shot({ scene: 'thumb', eyebrow: 'Einbürgerungstest 2026', p1: 'Teil 1', p2: 'Fragen 1–50' }, path.join(dir, 'thumb.png'), { clip: { width: 1280, height: 720 } });
+      await chrome.shot(videos[0].intro, path.join(dir, `${videos[0].name}-intro.png`));
+      await chrome.shot(videos[0].outro, path.join(dir, `${videos[0].name}-outro.png`));
+      await chrome.shot(videos[0].thumb, path.join(dir, `${videos[0].name}-thumbnail.png`), thumbClip);
       console.log(`Preview frames in ${dir}`);
       return;
     }
-
-    const questions = all.filter(q => q.id >= args.from && q.id <= args.to);
-    const size = Math.ceil(questions.length / args.parts);
-    const parts = Array.from({ length: args.parts }, (_, i) => {
-      const slice = questions.slice(i * size, (i + 1) * size);
-      return { number: i + 1, label: args.parts > 1 ? `Teil ${i + 1} von ${args.parts}` : '', first: slice[0].id, last: slice.at(-1).id, questions: slice, name: `teil-${i + 1}` };
-    });
-    const whole = { number: 0, label: '', first: questions[0].id, last: questions.at(-1).id, questions, name: 'komplett' };
-    const videos = args.full && args.parts > 1 ? [...parts, whole] : parts;
 
     console.log('Rendering frames…');
     await chrome.shot({ scene: 'bar' }, path.join(FRAMES, 'bar.png'), { alpha: true, clip: { width: TRACK.width, height: TRACK.height } });
     await chrome.shot({ scene: 'mask' }, path.join(FRAMES, 'mask.png'), { alpha: true });
     const tight = [];
     const scales = [];
-    for (const q of questions) {
+    for (const [index, q] of questions.entries()) {
       for (const state of ['blank', 'q', 'a']) {
-        const file = path.join(FRAMES, `q${pad3(q.id)}-${state}.png`);
+        const file = path.join(FRAMES, `${q.key}-${state}.png`);
         if (existsSync(file)) continue;
-        const info = await chrome.shot({ scene: 'question', state, q, total }, file);
-        if (state === 'q') scales.push({ id: q.id, k: info.k });
-        if (state === 'q' && info.overflow) tight.push(q.id);
+        const info = await chrome.shot(shotFor(q, state), file);
+        if (state === 'q') scales.push({ key: q.key, k: info.k });
+        if (state === 'q' && info.overflow) tight.push(q.key);
       }
-      if (q.id % 25 === 0) process.stdout.write(`\r  ${q.id}/${total}`);
+      if ((index + 1) % 25 === 0) process.stdout.write(`\r  ${index + 1}/${questions.length}`);
     }
     process.stdout.write('\n');
-    if (tight.length) throw new Error(`Text does not fit the card for questions: ${tight.join(', ')}`);
+    if (tight.length) throw new Error(`Text does not fit the card for: ${tight.join(', ')}`);
     const smallest = scales.sort((a, b) => a.k - b.k).slice(0, 8).filter(s => s.k < 1);
-    if (smallest.length) console.log(`  Smallest type scale: ${smallest.map(s => `Frage ${s.id} ×${s.k}`).join(', ')}`);
+    if (smallest.length) console.log(`  Smallest type scale: ${smallest.map(s => `${s.key} ×${s.k}`).join(', ')}`);
     for (const video of videos) {
-      const next = video.number ? parts[video.number] : null;
-      await chrome.shot(introSpec(video), path.join(FRAMES, `${video.name}-intro.png`));
-      await chrome.shot(outroSpec(video, next), path.join(FRAMES, `${video.name}-outro.png`));
-      await chrome.shot({
-        scene: 'thumb', eyebrow: 'Einbürgerungstest 2026',
-        p1: video.label ? `Teil ${video.number}` : 'Alle Fragen', p2: `Fragen ${video.first}–${video.last}`,
-      }, path.join(OUT, `${video.name}-thumbnail.png`), { clip: { width: 1280, height: 720 } });
+      await chrome.shot(video.intro, path.join(FRAMES, `${video.name}-intro.png`));
+      await chrome.shot(video.outro, path.join(FRAMES, `${video.name}-outro.png`));
+      await chrome.shot(video.thumb, path.join(OUT, `${video.name}-thumbnail.png`), thumbClip);
     }
     chrome.close();
 
     console.log(`Encoding question clips (${args.jobs} at a time)…`);
-    const clip = q => path.join(SEGMENTS, `q${pad3(q.id)}.mp4`);
+    const clip = q => path.join(SEGMENTS, `${q.key}.mp4`);
     await pool(questions.filter(q => !existsSync(clip(q))), args.jobs, q => encodeQuestion(q, clip(q)));
 
     for (const video of videos) {
       console.log(`Assembling ${video.name}…`);
-      const blank = id => path.join(FRAMES, `q${pad3(id)}-blank.png`);
+      const blank = q => path.join(FRAMES, `${q.key}-blank.png`);
       const intro = path.join(SEGMENTS, `${video.name}-intro.mp4`);
       const outro = path.join(SEGMENTS, `${video.name}-outro.mp4`);
-      await encodeCard(path.join(FRAMES, `${video.name}-intro.png`), blank(video.first), intro, { cardFirst: true });
-      await encodeCard(path.join(FRAMES, `${video.name}-outro.png`), blank(video.last), outro, { cardFirst: false });
+      await encodeCard(path.join(FRAMES, `${video.name}-intro.png`), blank(video.questions[0]), intro, { cardFirst: true });
+      await encodeCard(path.join(FRAMES, `${video.name}-outro.png`), blank(video.questions.at(-1)), outro, { cardFirst: false });
 
       const cardFrames = CARD_HOLD * FPS;
       const timeline = [{ file: intro, frames: cardFrames }];
       const chapters = [{ at: 0, title: 'So funktioniert das Video' }];
       let cursor = cardFrames;
       video.questions.forEach((q, i) => {
-        if (i % 10 === 0) chapters.push({ at: cursor / FPS, title: `Fragen ${q.id}–${video.questions[Math.min(i + 9, video.questions.length - 1)].id}` });
+        const title = video.chapter(q, i, video.questions);
+        if (title) chapters.push({ at: cursor / FPS, title });
         const { thinkFrames, totalFrames } = questionTiming(q);
         timeline.push({ file: clip(q), frames: totalFrames, chimeFrame: thinkFrames });
         cursor += totalFrames;
       });
       timeline.push({ file: outro, frames: cardFrames });
       const output = await assemble(video.name, timeline, args.sound);
-      await fs.writeFile(path.join(OUT, `${video.name}-youtube.txt`), youtubeText(video, chapters, parts.length));
+      await fs.writeFile(path.join(OUT, `${video.name}-youtube.txt`), video.youtube(chapters));
       console.log(`  ${path.relative(ROOT, output)}  ${clock((cursor + cardFrames) / FPS)}`);
     }
   } finally {

@@ -156,7 +156,7 @@
 <body data-scene="question" data-state="q">
 
 <section class="scene" id="question">
-  <div class="brand"><img data-logo alt=""><div><b>Einbürgerungstest</b><span>Leben in Deutschland · Alle 300 Fragen</span></div></div>
+  <div class="brand"><img data-logo alt=""><div><b>Einbürgerungstest</b><span data-subtitle></span></div></div>
   <div class="counter"><span class="label">Frage</span><span class="num" id="q-num"></span><span class="of" id="q-of"></span></div>
   <div class="progress"><i id="q-progress"></i></div>
   <div class="card"><div class="content" id="q-content"></div></div>
@@ -174,7 +174,7 @@
 </section>
 
 <section class="scene" id="card-scene">
-  <div class="brand"><img data-logo alt=""><div><b>Einbürgerungstest</b><span>Leben in Deutschland · Alle 300 Fragen</span></div></div>
+  <div class="brand"><img data-logo alt=""><div><b>Einbürgerungstest</b><span data-subtitle></span></div></div>
   <div class="part" id="c-part"></div>
   <div class="panel">
     <div class="eyebrow" id="c-eyebrow"></div>
@@ -188,14 +188,11 @@
 <section class="scene" id="thumb">
   <div class="glow"></div><div class="flag"></div>
   <div class="t-eyebrow" id="t-eyebrow"></div>
-  <div class="t-big">300</div>
+  <div class="t-big" id="t-big"></div>
   <div class="t-title">Fragen</div>
-  <div class="t-sub">mit allen richtigen Antworten</div>
+  <div class="t-sub" id="t-sub"></div>
   <div class="t-part"><span class="p1" id="t-p1"></span><span class="p2" id="t-p2"></span></div>
-  <div class="t-card">
-    <p>Wie heißt die deutsche Verfassung?</p>
-    <div>Volksgesetz</div><div>Bundesgesetz</div><div>Deutsches Gesetz</div><div class="ok">Grundgesetz ✓</div>
-  </div>
+  <div class="t-card" id="t-card"></div>
 </section>
 
 <section class="scene" id="bar"><div class="fill"></div></section>
@@ -227,7 +224,7 @@
     content.className = 'content';
     const head = el('div', 'head');
     // Keep a trailing "…" on the same line as the word before it.
-    head.append(el('div', 'aufgabe', 'Aufgabe ' + q.id), el('h1', 'qtext', q.question.replace(/ …/g, ' …')));
+    head.append(el('div', 'aufgabe', spec.label || 'Aufgabe ' + q.id), el('h1', 'qtext', q.question.replace(/ …/g, ' …')));
     const opts = el('ol', 'opts');
     q.options.forEach((text, i) => {
       const li = el('li', i === q.correct ? 'correct' : '');
@@ -260,7 +257,7 @@
       if (img.naturalWidth / img.naturalHeight > 2.4) {
         // A row of four numbered pictures: picture on top, the four options underneath.
         content.classList.add('wide');
-        img.style.width = '1100px';
+        img.style.width = Math.min(1100, Math.round(img.naturalWidth * 1.9)) + 'px';
         content.append(head, fig, opts);
         k = fit();
       } else {
@@ -303,11 +300,17 @@
     document.body.dataset.scene = spec.scene;
     document.body.dataset.state = spec.state || '';
     document.querySelectorAll('img[data-logo]').forEach(i => { i.src = spec.assetBase + 'logo.png'; });
+    document.querySelectorAll('[data-subtitle]').forEach(n => { n.textContent = spec.subtitle || 'Leben in Deutschland · Alle 300 Fragen'; });
     let info = {};
     if (spec.scene === 'question') info = await renderQuestion(spec);
     if (spec.scene === 'intro' || spec.scene === 'outro') renderCard(spec);
     if (spec.scene === 'thumb') {
       document.getElementById('t-eyebrow').textContent = spec.eyebrow;
+      document.getElementById('t-big').textContent = spec.big;
+      document.getElementById('t-sub').textContent = spec.sub;
+      const card = document.getElementById('t-card');
+      card.replaceChildren(el('p', '', spec.card.question));
+      spec.card.options.forEach((text, i) => card.append(el('div', i === spec.card.correct ? 'ok' : '', i === spec.card.correct ? text + ' ✓' : text)));
       document.getElementById('t-p1').textContent = spec.p1;
       document.getElementById('t-p2').textContent = spec.p2 || '';
       document.getElementById('t-p2').style.display = spec.p2 ? '' : 'none';
