@@ -2,14 +2,16 @@
 import { languages } from '../i18n/ui';
 import { getPath, getLanguageSwitchUrl } from '../utils/navigation';
 import { getSeoLanguageMeta } from '../utils/seo';
-interface Props { lang: string; disableAlternates?: boolean; }
-const { lang, disableAlternates = false } = Astro.props;
+interface Props { lang: string; disableAlternates?: boolean; alternateLangs?: string[]; }
+const { lang, disableAlternates = false, alternateLangs } = Astro.props;
 const languageCodes = Object.keys(languages);
 const languageMenuItems = languageCodes.map((code) => ({
   code,
   htmlLang: getSeoLanguageMeta(code).htmlLang,
   label: languages[code as keyof typeof languages],
-  href: disableAlternates ? getPath(`${code}/`) : getLanguageSwitchUrl(Astro.url.pathname, code, languageCodes),
+  href: disableAlternates || (alternateLangs && !alternateLangs.includes(code))
+    ? getPath(`${code}/`)
+    : getLanguageSwitchUrl(Astro.url.pathname, code, languageCodes),
 }));
 ---
 		<div class="language-switcher">

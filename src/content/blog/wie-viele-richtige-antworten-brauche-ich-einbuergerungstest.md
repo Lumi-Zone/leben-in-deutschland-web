@@ -3,6 +3,12 @@ title: "Wie viele richtige Antworten brauche ich? Einbürgerungstest 2026"
 description: "Für den Einbürgerungstest brauchen Sie mindestens 17 richtige Antworten. Das bedeutet die Grenze praktisch."
 pubDate: 2026-05-27
 updatedDate: 2026-05-27
+reviewedAt: 2026-10-08
+lang: de
+translationKey: "wie-viele-richtige-antworten-brauche-ich-einbuergerungstest"
+sources:
+  - name: "BAMF: Einbürgerungstest"
+    url: "https://www.bamf.de/DE/Themen/Integration/ZugewanderteTeilnehmende/Einbuergerung/einbuergerung-node.html"
 author: "Lern-Coach Team"
 image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1600&q=80"
 tags: ["Einbürgerungstest", "Bestehen", "17 richtige Antworten", "Prüfung", "Vorbereitung"]

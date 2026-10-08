@@ -18,6 +18,7 @@ import { SUPPORTED_LANGUAGES, type SupportedLang } from '../../types/language';
 import { getLocalizedQuestionText } from '../../utils/questions';
 import { stripHtml } from '../../utils/seo';
 import { APP_STORE_URL, MOBILE_APP_ALTERNATE_NAMES, MOBILE_APP_NAME, PLAY_STORE_URL, buildStoreUrls } from '../../utils/appLinks';
+import { MOBILE_APP_ENTITY_ID, ORGANIZATION_ENTITY_ID, WEBSITE_ENTITY_ID } from '../../utils/siteIdentity';
 
 export function getStaticPaths() {
   return SUPPORTED_LANGUAGES.map((lang) => ({ params: { lang }, props: { lang } }));
@@ -33,13 +34,14 @@ import { getPath } from '../../utils/navigation';
 const siteUrl = Astro.site || 'https://lid-einbuergerung.de';
 const homeUrl = new URL(getPath(`${lang}/`), siteUrl).href;
 const primaryHomeUrl = new URL(getPath('de/'), siteUrl).href;
-const organizationId = `${primaryHomeUrl}#organization`;
-const websiteId = `${primaryHomeUrl}#website`;
-const appId = `${primaryHomeUrl}#app`;
+const organizationId = ORGANIZATION_ENTITY_ID;
+const websiteId = WEBSITE_ENTITY_ID;
+const appId = MOBILE_APP_ENTITY_ID;
 const reviewsData = getReviews(lang);
 const heroDescription = stripHtml(t("hero.subtitle"));
 const blogPosts = await getCollection('blog');
 const recentBlogPosts = blogPosts
+  .filter((post) => post.data.lang === 'de')
 	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
 	.slice(0, 3)
 	.map((post) => ({
@@ -159,13 +161,13 @@ const websiteSchema = {
 	publisher: { '@id': organizationId },
 };
 const appSchema = {
-	'@type': 'SoftwareApplication',
+	'@type': ['SoftwareApplication', 'MobileApplication'],
 	'@id': appId,
 	name: MOBILE_APP_NAME,
 	alternateName: MOBILE_APP_ALTERNATE_NAMES,
 	applicationCategory: 'EducationalApplication',
 	operatingSystem: 'iOS, Android',
-	url: homeUrl,
+	url: new URL(getPath('de/app/'), siteUrl).href,
 	publisher: { '@id': organizationId },
 	inLanguage: lang,
 	description: seoDescription,
@@ -300,7 +302,7 @@ const homeSchemaGraph = {
 
         <section class="home-section home-shell home-blog">
             <div class="home-section-head"><div><p class="home-eyebrow">{t('nav.blog')}</p><h2>{isGerman ? 'Gut vorbereitet. Gut informiert.' : t('blog.title')}</h2></div><a class="home-text-link" href={getPath('de/blog')}>{t('nav.blog')} <span aria-hidden="true">→</span></a></div>
-            <div class="home-blog-grid">{recentBlogPosts.map((post)=><article><a href={getPath(`de/blog/${post.slug}`)} data-umami-event="blog-post-opened" data-umami-event-location="home-section" data-umami-event-lang={lang} data-umami-event-slug={post.slug}><div class="home-blog-image"><img src={post.imageCard} alt={post.imageAlt} width="768" height="480" loading="lazy" decoding="async"/></div><p class="home-blog-date">{post.data.pubDate.toLocaleDateString(lang)}</p><h3>{post.data.title}</h3><p class="home-blog-description">{post.data.description}</p><span class="home-text-link">{t('blog.read_more')} <span aria-hidden="true">↗</span></span></a></article>)}</div>
+            <div class="home-blog-grid">{recentBlogPosts.map((post)=><article><a href={getPath(`de/blog/${post.data.translationKey ?? post.slug}`)} data-umami-event="blog-post-opened" data-umami-event-location="home-section" data-umami-event-lang={lang} data-umami-event-slug={post.data.translationKey ?? post.slug}><div class="home-blog-image"><img src={post.imageCard} alt={post.imageAlt} width="768" height="480" loading="lazy" decoding="async"/></div><p class="home-blog-date">{post.data.pubDate.toLocaleDateString(lang)}</p><h3>{post.data.title}</h3><p class="home-blog-description">{post.data.description}</p><span class="home-text-link">{t('blog.read_more')} <span aria-hidden="true">↗</span></span></a></article>)}</div>
         </section>
 
         <div class="home-reviews"><ReviewsSlider client:visible lang={lang} reviewsData={reviewsData}/></div>

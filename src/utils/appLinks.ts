@@ -1,13 +1,11 @@
-export const IOS_APP_ID = '6723899981';
-export const ANDROID_PACKAGE_ID = 'com.einbuergerungapp';
+import { APP_IDENTITY } from './siteIdentity';
 
-export const MOBILE_APP_NAME = 'Leben in Deutschland 310Fragen';
-export const MOBILE_APP_ALTERNATE_NAMES = [
-  'Leben in Deutschland 2026',
-  'Einbuergerungstest App',
-  'Einbürgerungstest App',
-  'Leben in Deutschland Test App',
-];
+export const IOS_APP_ID = APP_IDENTITY.ios.appId;
+export const IOS_BUNDLE_ID = APP_IDENTITY.ios.bundleId;
+export const ANDROID_PACKAGE_ID = APP_IDENTITY.android.packageId;
+
+export const MOBILE_APP_NAME = APP_IDENTITY.canonicalName;
+export const MOBILE_APP_ALTERNATE_NAMES = [...APP_IDENTITY.alternateNames];
 
 /**
  * Canonical, parameter-free store URLs. Use these for structured data, meta tags
@@ -17,8 +15,8 @@ export const MOBILE_APP_ALTERNATE_NAMES = [
  * The Apple URL deliberately omits a storefront prefix such as `/de/` so visitors
  * land in their own country's store; the site serves twelve languages.
  */
-export const APP_STORE_URL = `https://apps.apple.com/app/leben-in-deutschland-2026-lid/id${IOS_APP_ID}`;
-export const PLAY_STORE_URL = `https://play.google.com/store/apps/details?id=${ANDROID_PACKAGE_ID}`;
+export const APP_STORE_URL = APP_IDENTITY.ios.url;
+export const PLAY_STORE_URL = APP_IDENTITY.android.url;
 
 export type StorePlatform = 'ios' | 'android';
 

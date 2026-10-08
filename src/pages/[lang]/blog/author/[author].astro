@@ -51,7 +51,7 @@ const locale = localeByLang[lang] || 'de-DE';
 const dateFormatter = new Intl.DateTimeFormat(locale, { year: 'numeric', month: 'long', day: 'numeric' });
 
 const authorPosts = posts
-  .filter((post) => toSlug(post.data.author) === profile.slug)
+  .filter((post) => post.data.lang === 'de' && toSlug(post.data.author) === profile.slug)
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
   .map((post) => {
     const image = resolveBlogImage(post);
@@ -61,7 +61,7 @@ const authorPosts = posts
       imageAlt: getBlogImageAlt(post.data.title),
       srcset: getOptimizedImageSrcset(image),
       imageSrc: getOptimizedImageUrl(image, 1366),
-      url: getPath(`${lang}/blog/${post.slug}`),
+      url: getPath(`de/blog/${post.data.translationKey ?? post.slug}`),
       dateLabel: dateFormatter.format(post.data.pubDate),
     };
   });

@@ -33,3 +33,6 @@ public/instagram/questions/
 
 public/instagram/series-v1/
 public/instagram/growth-v1/
+
+# generated YouTube videos (scripts/video/render-video.mjs)
+video-output/

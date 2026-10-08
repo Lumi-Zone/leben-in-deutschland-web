@@ -3,6 +3,12 @@ title: "Einbürgerungstest App 2026: Mit 300 Fragen sicher üben"
 description: "Welche Einbürgerungstest App hilft wirklich? So üben Sie 300 offizielle Fragen, Bundesland-Fragen und Prüfungssimulation."
 pubDate: 2026-06-19
 updatedDate: 2026-06-19
+reviewedAt: 2026-10-08
+lang: de
+translationKey: "einbuergerungstest-app-2026"
+sources:
+  - name: "BAMF: Online-Testcenter und Fragenkatalog"
+    url: "https://oet.bamf.de/ords/oetut/f?p=514:1:0"
 author: "Leben in Deutschland Team"
 image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80"
 tags: ["Einbürgerungstest App", "Einbürgerungstest", "Leben in Deutschland", "Online üben", "BAMF"]

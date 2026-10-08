@@ -1,0 +1,85 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import { APP_STORE_URL, PLAY_STORE_URL } from '../../utils/appLinks';
+import { getPath } from '../../utils/navigation';
+import { BAMF_QUESTION_CATALOG, BAMF_TEST_SOURCE, type PriorityContentLang } from '../../data/seoLandingContent';
+
+const priorityLanguages: PriorityContentLang[] = ['de', 'en', 'tr'];
+export function getStaticPaths() { return ['de', 'en', 'tr'].map((lang) => ({ params: { lang }, props: { lang } })); }
+const { lang } = Astro.props as { lang: PriorityContentLang };
+const copy = {
+  de: {
+    title: 'Kostenlose LiD-Lernhilfe für Kurse und Beratungsstellen',
+    description: 'Sachinformationen und direkte Links zur kostenlosen Leben-in-Deutschland- und Einbürgerungstest-Vorbereitung für VHS, Kurse und Beratung.',
+    eyebrow: 'Für Bildung und Beratung', heading: 'Eine kostenlose Lernhilfe zum Weitergeben',
+    intro: 'Diese Seite fasst die wichtigsten Angaben zusammen, damit Kursleitungen und Beratungsstellen das Angebot prüfen und transparent weiterempfehlen können.',
+    useTitle: 'Was Lernende kostenlos nutzen können',
+    uses: ['300 allgemeine BAMF-Fragen und 10 Fragen des gewählten Bundeslandes', '33-Fragen-Prüfungssimulation im Browser', 'Deutsch und unterstützende Übersetzungen in insgesamt 12 Web-Sprachen', 'Nutzung ohne Konto oder Registrierung', 'iOS- und Android-App mit Favoriten und Lernfortschritt'],
+    factsTitle: 'Sachliche Einordnung',
+    facts: 'Das Angebot ist unabhängig und keine BAMF-Website oder Prüfstelle. Die Übersetzungen sind Lernhilfen; die echte Prüfung findet auf Deutsch bei einer zugelassenen Stelle statt.',
+    shareTitle: 'Direkt weitergeben', website: 'Kostenlos im Browser üben', app: 'App für iOS und Android', policy: 'Redaktions- und Quellenstandard',
+  },
+  en: {
+    title: 'Free LiD study resource for courses and advice centres',
+    description: 'Verified facts and direct links to free Leben in Deutschland and naturalization test preparation for courses and migration advice services.',
+    eyebrow: 'For education and advice', heading: 'A free study resource you can share',
+    intro: 'This page summarises the essential facts so course teachers and advice services can review the resource and recommend it transparently.',
+    useTitle: 'What learners can use for free',
+    uses: ['300 general BAMF questions and the 10 questions for the selected federal state', 'A 33-question browser-based exam simulation', 'German plus study translations across 12 web languages', 'No account or registration required', 'iOS and Android app with favourites and progress tracking'],
+    factsTitle: 'Important context',
+    facts: 'This is an independent resource, not a BAMF website or test centre. Translations support learning; the recognised exam is taken in German at an approved centre.',
+    shareTitle: 'Share direct links', website: 'Practise free in the browser', app: 'App for iOS and Android', policy: 'Editorial and sourcing standard',
+  },
+  tr: {
+    title: 'Kurslar ve danışma merkezleri için ücretsiz LiD çalışma kaynağı',
+    description: 'Kurslar ve göç danışmanlığı için ücretsiz Leben in Deutschland ve vatandaşlık testi hazırlığına ilişkin doğrulanabilir bilgiler ve bağlantılar.',
+    eyebrow: 'Eğitim ve danışmanlık için', heading: 'Paylaşabileceğiniz ücretsiz çalışma kaynağı',
+    intro: 'Bu sayfa, kurs eğitmenleri ve danışma merkezlerinin kaynağı inceleyip şeffaf biçimde önerebilmesi için temel bilgileri bir araya getirir.',
+    useTitle: 'Öğrencilerin ücretsiz kullanabileceği özellikler',
+    uses: ['300 genel BAMF sorusu ve seçilen eyaletin 10 sorusu', 'Tarayıcıda 33 soruluk deneme sınavı', 'Almanca ve toplam 12 web dilinde yardımcı çeviriler', 'Hesap açmadan ve kayıt olmadan kullanım', 'Favoriler ve ilerleme takibi sunan iOS ve Android uygulaması'],
+    factsTitle: 'Önemli açıklama',
+    facts: 'Bu bağımsız bir çalışma kaynağıdır; BAMF sitesi veya sınav merkezi değildir. Çeviriler öğrenmeye yardımcıdır; tanınan gerçek sınav Almanca olarak yetkili bir merkezde yapılır.',
+    shareTitle: 'Doğrudan bağlantıları paylaşın', website: 'Tarayıcıda ücretsiz çalış', app: 'iOS ve Android uygulaması', policy: 'Editoryal ve kaynak standardı',
+  },
+}[lang];
+const canonicalPath = getPath(`${lang}/fuer-kurse-und-beratung/`);
+const pageUrl = new URL(canonicalPath, Astro.site || 'https://lid-einbuergerung.de').href;
+const schema = { '@context': 'https://schema.org', '@type': 'AboutPage', name: copy.title, description: copy.description, url: pageUrl, inLanguage: lang, citation: [BAMF_TEST_SOURCE, BAMF_QUESTION_CATALOG] };
+---
+<Layout title={copy.title} description={copy.description} canonical={canonicalPath} jsonLd={schema} lang={lang} alternateLangs={priorityLanguages}>
+  <Header lang={lang} alternateLangs={priorityLanguages} />
+  <main class="min-h-screen bg-slate-50 py-10 md:py-14">
+    <article class="container mx-auto max-w-5xl px-4">
+      <header class="rounded-3xl bg-slate-950 p-7 text-white md:p-12">
+        <p class="text-xs font-bold uppercase tracking-widest text-blue-200">{copy.eyebrow}</p>
+        <h1 class="mt-4 max-w-4xl text-4xl font-extrabold tracking-tight md:text-6xl">{copy.heading}</h1>
+        <p class="mt-5 max-w-3xl text-lg leading-relaxed text-slate-200">{copy.intro}</p>
+      </header>
+      <div class="mt-8 grid gap-6 lg:grid-cols-2">
+        <section class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h2 class="text-2xl font-extrabold text-slate-950">{copy.useTitle}</h2>
+          <ul class="mt-5 space-y-3 text-slate-700">{copy.uses.map((item) => <li class="flex gap-3"><span aria-hidden="true" class="text-emerald-600">✓</span><span>{item}</span></li>)}</ul>
+        </section>
+        <section class="rounded-2xl border border-amber-200 bg-amber-50 p-6">
+          <h2 class="text-2xl font-extrabold text-slate-950">{copy.factsTitle}</h2>
+          <p class="mt-4 leading-relaxed text-slate-700">{copy.facts}</p>
+          <div class="mt-5 space-y-2 text-sm font-semibold text-blue-800">
+            <p><a href={BAMF_TEST_SOURCE} target="_blank" rel="noopener noreferrer">BAMF: Einbürgerungstest ↗</a></p>
+            <p><a href={BAMF_QUESTION_CATALOG} target="_blank" rel="noopener noreferrer">BAMF: Fragenkatalog ↗</a></p>
+          </div>
+        </section>
+      </div>
+      <section class="mt-8 rounded-2xl border border-blue-200 bg-blue-50 p-6 md:p-8">
+        <h2 class="text-2xl font-extrabold text-slate-950">{copy.shareTitle}</h2>
+        <div class="mt-5 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+          <a class="rounded-xl bg-blue-700 px-5 py-3 text-center font-bold text-white" href={getPath(`${lang}/leben-in-deutschland-online/`)}>{copy.website}</a>
+          <a class="rounded-xl border border-slate-300 bg-white px-5 py-3 text-center font-bold text-slate-950" href={getPath(`${lang}/app/`)}>{copy.app}</a>
+          <a class="rounded-xl border border-slate-300 bg-white px-5 py-3 text-center font-bold text-slate-950" href={getPath(`${lang}/redaktionsrichtlinien/`)}>{copy.policy}</a>
+        </div>
+        <p class="mt-5 break-all text-xs text-slate-500">{pageUrl}</p>
+        <p class="mt-2 text-xs text-slate-500"><a href={APP_STORE_URL}>App Store</a> · <a href={PLAY_STORE_URL}>Google Play</a></p>
+      </section>
+    </article>
+  </main>
+</Layout>

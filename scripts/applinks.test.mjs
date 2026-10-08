@@ -4,9 +4,13 @@ import { readFile, readdir } from 'node:fs/promises';
 
 import { SUPPORTED_LANGUAGES } from '../src/types/language.ts';
 import { GERMAN_STATES } from '../src/data/germanStates.ts';
+import { APP_IDENTITY, MOBILE_APP_ENTITY_ID } from '../src/utils/siteIdentity.ts';
 
 const aasa = JSON.parse(
   await readFile(new URL('../public/.well-known/apple-app-site-association', import.meta.url), 'utf8')
+);
+const assetlinks = JSON.parse(
+  await readFile(new URL('../public/.well-known/assetlinks.json', import.meta.url), 'utf8')
 );
 
 const details = aasa.applinks.details;
@@ -39,6 +43,28 @@ function opensApp(url) {
 test('the app identifier is fully qualified', () => {
   assert.match(appID, /^[A-Z0-9]{10}\.[A-Za-z0-9.-]+$/, `appID looks unresolved: ${appID}`);
   assert.ok(!appID.includes('TEAMID'), 'the Team ID placeholder is still in place');
+  assert.ok(appID.endsWith(`.${APP_IDENTITY.ios.bundleId}`), 'AASA bundle id must match the App Store app');
+});
+
+test('Android Digital Asset Links match the Google Play package', () => {
+  assert.equal(assetlinks.length, 1, 'expected a single Android app entry');
+  assert.equal(
+    assetlinks[0]?.target?.package_name,
+    APP_IDENTITY.android.packageId,
+    'assetlinks package must match the Google Play URL package'
+  );
+  assert.ok(
+    assetlinks[0]?.target?.sha256_cert_fingerprints?.every((fingerprint) =>
+      /^(?:[A-F0-9]{2}:){31}[A-F0-9]{2}$/.test(fingerprint)
+    ),
+    'assetlinks must contain full SHA-256 certificate fingerprints'
+  );
+  assert.ok(APP_IDENTITY.android.url.includes(`id=${APP_IDENTITY.android.packageId}`));
+});
+
+test('the public app identity has one canonical entity id', () => {
+  assert.equal(MOBILE_APP_ENTITY_ID, 'https://lid-einbuergerung.de/de/app/#mobile-app');
+  assert.equal(APP_IDENTITY.canonicalName, APP_IDENTITY.ios.storeName);
 });
 
 test('study surfaces open in the app in every supported language', () => {

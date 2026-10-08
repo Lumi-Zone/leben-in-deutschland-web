@@ -26,7 +26,7 @@ async function walk(directory) {
       const alternates = links.filter((tag) => attr(tag, 'hreflang')).map((tag) => ({ lang: attr(tag, 'hreflang'), href: attr(tag, 'href') }));
       const body = html.slice(html.indexOf('<body'));
       const anchors = tags(body, 'a').map((tag) => attr(tag, 'href'));
-      pages.set(url, { canonical, noindex, alternates, anchors });
+      pages.set(url, { canonical, noindex, alternates, anchors, html, body });
       assertPage(canonicalTags.length === 1, `${url}: expected one canonical`);
       assertPage(/<title>[^<]+<\/title>/.test(html), `${url}: missing title`);
       assertPage(meta.some((tag) => attr(tag, 'name') === 'description' && attr(tag, 'content').trim()), `${url}: missing description`);
@@ -78,6 +78,47 @@ for (const [url, page] of pages) {
 }
 for (const lang of ['de', 'en', 'tr', 'ar', 'ua', 'ru', 'pl', 'fa', 'ps', 'ro', 'it', 'es']) {
   assertPage(pages.get(`${origin}/${lang}/`)?.anchors.includes(`/${lang}/fragen/`), `${lang}: home must link to question catalogue`);
+}
+
+const priorityLanguages = ['de', 'en', 'tr'];
+const answerLandings = ['leben-in-deutschland-online', 'einbuergerungstest-online'];
+for (const lang of priorityLanguages) {
+  for (const route of answerLandings) {
+    const url = `${origin}/${lang}/${route}/`;
+    const page = pages.get(url);
+    assertPage(page && !page.noindex, `${url}: translated answer page must be indexable`);
+    assertPage(page?.body.includes('bamf.de') && page?.body.includes('oet.bamf.de'), `${url}: official sources must be rendered beside the answer`);
+  }
+
+  for (let id = 1; id <= 30; id += 1) {
+    const url = `${origin}/${lang}/frage/${id}/`;
+    assertPage(pages.get(url)?.body.includes('data-question-explanation'), `${url}: missing server-rendered reviewed explanation`);
+  }
+
+  for (const slug of [
+    'unterschied-lid-test-einbuergerungstest',
+    'wie-viele-richtige-antworten-brauche-ich-einbuergerungstest',
+    'wie-viele-fragen-hat-der-einbuergerungstest',
+    'anmeldung-pruefung-schritte',
+    'kann-ich-den-einbuergerungstest-online-machen',
+    'einbuergerungstest-app-2026',
+  ]) {
+    const url = `${origin}/${lang}/blog/${slug}/`;
+    const page = pages.get(url);
+    assertPage(page && !page.noindex, `${url}: translated guide must be indexable`);
+    assertPage(page?.body.includes('official-sources-title'), `${url}: translated guide must render sources and review status`);
+  }
+}
+
+const canonicalAppId = `${origin}/de/app/#mobile-app`;
+const canonicalOrganizationId = `${origin}/de/#organization`;
+for (const lang of priorityLanguages) {
+  const homeHtml = pages.get(`${origin}/${lang}/`)?.html ?? '';
+  const appHtml = pages.get(`${origin}/${lang}/app/`)?.html ?? '';
+  assertPage(homeHtml.includes(canonicalAppId) && appHtml.includes(canonicalAppId), `${lang}: canonical mobile app @id mismatch`);
+  assertPage(homeHtml.includes(canonicalOrganizationId) && appHtml.includes(canonicalOrganizationId), `${lang}: canonical organization @id mismatch`);
+  assertPage(appHtml.includes('Leben in Deutschland 2026 LiD'), `${lang}: canonical app name missing`);
+  assertPage(!appHtml.includes('4.8 ★') && !appHtml.includes('"@type":"Review"'), `${lang}: unverifiable aggregate rating or Review JSON-LD found`);
 }
 const robots = await readFile(path.join(root, 'robots.txt'), 'utf8');
 assertPage(/User-agent: OAI-SearchBot\s+Allow: \//.test(robots), 'ChatGPT Search crawler must be allowed');

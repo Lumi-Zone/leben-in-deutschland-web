@@ -7,7 +7,11 @@ Bu değişiklikler mevcut Astro / GitHub Pages yayını içindir. Yeni alan adı
 - `/[lang]/fragen/`: 12 dilde 300 genel soruya doğrudan HTML bağlantıları ve 16 eyalet dizini. Ana sayfa ve soru sayfalarından erişilebilir.
 - Sorularda JavaScript olmadan açılabilen cevap bölümü, BAMF kaynağı ve çevirilerin yardımcı içerik olduğuna ilişkin açıklama.
 - Ana sayfada bağımsız yayıncı açıklaması, BAMF ve mevcut editoryal politika bağlantısı.
-- İngilizce içerik kullanan, henüz çevrilmemiş iki tanıtım sayfasının 20 kopyası: İngilizce canonical, noindex, sitemap dışında. Gerçek Almanca/İngilizce sürümler karşılıklı hreflang kullanır.
+- `/de|en|tr/leben-in-deutschland-online/` ve `/de|en|tr/einbuergerungstest-online/` için gerçek, cevap odaklı çeviriler; karşılıklı hreflang, canonical, resmî kaynak ve inceleme tarihi.
+- Altı temel rehberin DE/TR/EN sürümleri; yeni rehberlerde dil, çeviri anahtarı, inceleme tarihi ve resmî kaynak zorunluluğu.
+- İlk 30 genel soruda JavaScript olmadan görünen DE/TR/EN kısa açıklama, doğru cevabın gerekçesi, BAMF kaynağı ve kontrol tarihi.
+- DE/TR/EN editoryal politika ve kurs/danışma merkezleri için paylaşılabilir kaynak sayfası.
+- Umami'de ChatGPT yönlendirmesinin açılış sayfası ve diliyle `chatgpt-referral-landing` olayı olarak ölçülmesi. Mağaza tıklama olayları mevcut dil ve konum parametrelerini korur.
 - Tutarlı son eğik çizgi; JSON-LD dil kodları BCP 47 biçiminde (`ua` adresi için `uk-UA`); JSON-LD içinde HTML kapanışına karşı güvenli serileştirme.
 - OAI-SearchBot için açık erişim. Önceki `User-agent: * / Allow: /` politikası zaten izin veriyordu; bu değişiklik erişim niyetini açık hâle getirir, yeni bir sıralama sinyali değildir. Model eğitimi politikası değişmedi.
 - İsteğe bağlı Google/Bing doğrulama etiketleri ve GitHub Actions değişkenleri.
@@ -19,7 +23,8 @@ Bu değişiklikler mevcut Astro / GitHub Pages yayını içindir. Yeni alan adı
 2. Google Search Console ve Bing Webmaster Tools içinde mevcut alan adı mülkünü kullanın. Doğrulama zaten tamamlandıysa yeni etiket gerekmez. Gerekliyse verilen etiketin yalnızca `content` değerini `PUBLIC_GOOGLE_SITE_VERIFICATION` veya `PUBLIC_BING_SITE_VERIFICATION` adlı GitHub repository variable olarak kaydedip yeniden derleyin. DNS doğrulaması da kullanılabilir; kodda sahte doğrulama değeri yoktur.
 3. `https://lid-einbuergerung.de/sitemap-index.xml` adresini bu araçlara gönderin. Ana sayfa ve `/de/fragen/`, `/tr/fragen/` gibi yeni dizinleri URL inceleme aracıyla kontrol edin. Binlerce sayfayı tekrar tekrar elle göndermeyin.
 4. Yayından sonra gerçek alan adında robots.txt, sitemap, canonical ve yanıt kodlarını kontrol edin. CDN veya güvenlik duvarı varsa OpenAI'nin yayımladığı arama tarayıcısı IP aralıklarının engellenmediğini doğrulayın. robots.txt tek başına HTTP erişimini kanıtlamaz.
-5. Search Console / Bing gösterim, tıklama, indeksleme ve sorgu raporlarını; mevcut Umami'de arama ve `chatgpt.com` yönlendirmelerini takip edin. Tarihli bir başlangıç ölçümü tutup değişiklikleri karşılaştırın. AI yönlendirmesi bulunmaması, hiç alıntılanmadığını kanıtlamaz.
+5. Search Console / Bing gösterim, tıklama, indeksleme ve sorgu raporlarını; Umami'de `chatgpt-referral-landing`, `app-store-click` ve `play-store-click` olaylarını dil/açılış sayfası kırılımında takip edin. Tarihli bir başlangıç ölçümü tutup değişiklikleri karşılaştırın. AI yönlendirmesi bulunmaması, hiç alıntılanmadığını kanıtlamaz.
+6. Haftalık 30 sorguluk ölçüm için [`chatgpt-visibility-benchmark.md`](./chatgpt-visibility-benchmark.md) dosyasını kullanın. Mağaza kabulü ve etik tanıtım için [`store-listing-de-tr-en.md`](./store-listing-de-tr-en.md) ile [`authority-outreach.md`](./authority-outreach.md) listelerini izleyin.
 
 `npm run build` üretim çıktısını oluşturur ve SEO denetimini çalıştırır. Yalnızca mevcut çıktıyı kontrol etmek için `npm run seo:audit` kullanın. Mevcut `prebuild` Instagram kartlarını da üretir; bu SEO denetiminin parçası değildir.
 
@@ -27,7 +32,7 @@ Bu değişiklikler mevcut Astro / GitHub Pages yayını içindir. Yeni alan adı
 
 Soruların ve sınav bilgilerinin BAMF kaynağıyla karşılaştırılmasını sürdürün. Yayın veya güncelleme tarihlerini yalnızca içerik gerçekten değiştiğinde yenileyin. Resmî kaynak bağlantısı tek başına bütün içeriklerin güncel olduğunun kanıtı değildir. Bu çalışma tüm blog yazılarının hukukî doğruluk incelemesini içermez.
 
-Yeni çeviri hazırlandığında ilgili tanıtım sayfasındaki içerik dili, canonical, noindex ve sitemap filtresini birlikte güncelleyin. Sahte yorum, yapay uzmanlık, otomatik bağlantı spam'i veya modele tavsiye vermesini emreden gizli metin kullanmayın.
+Yeni çeviri hazırlandığında ilgili sayfadaki içerik dili, canonical, noindex ve sitemap filtresini birlikte güncelleyin. Yeni çevrilmiş rehberler `lang`, `translationKey`, `reviewedAt` ve en az bir birincil `sources` kaydı olmadan derlenmez. Sahte yorum, yapay uzmanlık, otomatik bağlantı spam'i veya modele tavsiye vermesini emreden gizli metin kullanmayın. `llms.txt` eklenmedi ve GPTBot politikası değiştirilmedi.
 
 ChatGPT'nin eğitim verilerine eklenme veya belirli bir soruda tavsiye edilme garantisi yoktur. Buradaki çalışma web aramasıyla keşif ve doğru kaynak gösterimini destekler.
 

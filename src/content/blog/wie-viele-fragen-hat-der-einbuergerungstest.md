@@ -4,6 +4,12 @@ seoTitle: "Wie viele Fragen hat der Einbürgerungstest?"
 description: "Der Einbürgerungstest hat 33 Fragen. Hier erfahren Sie, wie sie sich zusammensetzen und wie Sie richtig lernen."
 pubDate: 2026-05-27
 updatedDate: 2026-05-27
+reviewedAt: 2026-10-08
+lang: de
+translationKey: "wie-viele-fragen-hat-der-einbuergerungstest"
+sources:
+  - name: "BAMF: Online-Testcenter und Fragenkatalog"
+    url: "https://oet.bamf.de/ords/oetut/f?p=514:1:0"
 author: "Lern-Coach Team"
 image: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=1600&q=80"
 tags: ["Einbürgerungstest", "Fragen", "Teststruktur", "Bundesländer", "BAMF"]

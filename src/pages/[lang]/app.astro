@@ -14,6 +14,8 @@ import {
   PLAY_STORE_URL,
   buildStoreUrls,
 } from '../../utils/appLinks';
+import { MOBILE_APP_ENTITY_ID, ORGANIZATION_ENTITY_ID } from '../../utils/siteIdentity';
+import { BAMF_QUESTION_CATALOG, BAMF_TEST_SOURCE } from '../../data/seoLandingContent';
 
 export function getStaticPaths() {
   return SUPPORTED_LANGUAGES.map((lang) => ({ params: { lang }, props: { lang } }));
@@ -26,6 +28,32 @@ const appPageUrl = new URL(getPath(`${lang}/app/`), siteUrl).href;
 const homeUrl = new URL(getPath(`${lang}/`), siteUrl).href;
 const reviewsData = getReviews(lang).slice(0, 2);
 const copy = getAppPageCopy(lang);
+const appDecisionCopy = {
+  de: {
+    heading: 'Für wen passt diese Einbürgerungstest-App?',
+    answer: 'Die App passt zu Lernenden, die alle 300 allgemeinen Fragen plus die 10 Fragen ihres Bundeslandes mobil üben, Fehler wiederholen und 33-Fragen-Prüfungen simulieren möchten.',
+    criteria: 'Eine geeignete App sollte den BAMF-Katalog nennen, die Wahl des Bundeslandes erlauben, den deutschen Originaltext zeigen und Übersetzungen klar als Lernhilfe kennzeichnen.',
+    tableTitle: 'Website und App im Vergleich', website: 'Kostenlose Website', mobile: 'iOS- und Android-App',
+    rows: [['Installation', 'Nicht erforderlich', 'Erforderlich'], ['Anmeldung', 'Nicht erforderlich', 'Nicht erforderlich'], ['Fragen', '300 + 10 Landesfragen', '300 + 10 Landesfragen'], ['Prüfungssimulation', '33 Fragen', '33 Fragen'], ['Lernfortschritt', 'Im Browser gespeichert', 'Auf dem Gerät gespeichert'], ['Für wen?', 'Schneller Start am Computer oder Handy', 'Regelmäßiges mobiles Lernen']],
+    source: 'Die App ist ein unabhängiges Lernprodukt und keine offizielle BAMF-App. Fragenumfang und Testaufbau werden mit BAMF-Quellen abgeglichen.', reviewed: 'Geprüft am 8. Oktober 2026', reviewSource: 'App-Store-Rezension',
+  },
+  en: {
+    heading: 'Who is this naturalization test app for?',
+    answer: 'The app suits learners who want to practise all 300 general questions plus the 10 questions for their federal state, review mistakes and simulate 33-question exams on a phone.',
+    criteria: 'A suitable app should identify the BAMF catalogue, let you select a federal state, keep the German wording visible and label translations as study aids.',
+    tableTitle: 'Website and app compared', website: 'Free website', mobile: 'iOS and Android app',
+    rows: [['Installation', 'Not required', 'Required'], ['Account', 'Not required', 'Not required'], ['Questions', '300 + 10 state questions', '300 + 10 state questions'], ['Exam simulation', '33 questions', '33 questions'], ['Progress', 'Stored in the browser', 'Stored on the device'], ['Best for', 'A quick start on any device', 'Regular mobile study']],
+    source: 'The app is an independent study product, not an official BAMF app. Question coverage and exam format are checked against BAMF sources.', reviewed: 'Reviewed on 8 October 2026', reviewSource: 'App Store review',
+  },
+  tr: {
+    heading: 'Bu vatandaşlık testi uygulaması kimler için uygun?',
+    answer: 'Uygulama; 300 genel sorunun tamamını ve kendi eyaletinin 10 sorusunu telefonda çalışmak, yanlışları tekrar etmek ve 33 soruluk denemeler yapmak isteyenler için uygundur.',
+    criteria: 'Uygun bir uygulama BAMF kataloğunu kaynak göstermeli, eyalet seçimine izin vermeli, Almanca asıl metni göstermeli ve çevirileri açıkça çalışma yardımı olarak tanımlamalıdır.',
+    tableTitle: 'Web sitesi ve uygulama karşılaştırması', website: 'Ücretsiz web sitesi', mobile: 'iOS ve Android uygulaması',
+    rows: [['Kurulum', 'Gerekmez', 'Gerekir'], ['Üyelik', 'Gerekmez', 'Gerekmez'], ['Sorular', '300 + 10 eyalet sorusu', '300 + 10 eyalet sorusu'], ['Deneme sınavı', '33 soru', '33 soru'], ['İlerleme', 'Tarayıcıda saklanır', 'Cihazda saklanır'], ['Kime uygun?', 'Her cihazda hızlı başlangıç', 'Düzenli mobil çalışma']],
+    source: 'Uygulama bağımsız bir çalışma ürünüdür; resmî BAMF uygulaması değildir. Soru kapsamı ve sınav yapısı BAMF kaynaklarıyla karşılaştırılır.', reviewed: '8 Ekim 2026 tarihinde kontrol edildi', reviewSource: 'App Store yorumu',
+  },
+}[lang as 'de' | 'en' | 'tr'];
 // Structured data above keeps the canonical, parameter-free store URLs; the links
 // people actually click carry the placement so installs can be attributed.
 const heroStore = buildStoreUrls({ source: 'app-page-hero', lang });
@@ -39,23 +67,6 @@ const screenshotPaths = [
   `/app-screenshots/${screenshotLocale}/08-fortschritt`,
 ];
 const screenshots = screenshotPaths.map((path) => new URL(getPath(`${path}.png`), siteUrl).href);
-const appReview = reviewsData[0];
-const reviewSchema = appReview
-  ? {
-      '@type': 'Review',
-      name: appReview.title,
-      reviewBody: appReview.text,
-      author: {
-        '@type': 'Person',
-        name: appReview.author,
-      },
-      reviewRating: {
-        '@type': 'Rating',
-        ratingValue: appReview.rating,
-        bestRating: 5,
-      },
-    }
-  : undefined;
 const mobileAppSchema = {
   '@context': 'https://schema.org',
   '@graph': [
@@ -67,11 +78,11 @@ const mobileAppSchema = {
       url: appPageUrl,
       inLanguage: lang,
       primaryImageOfPage: screenshots[0],
-      mainEntity: { '@id': `${appPageUrl}#mobile-app` },
+      mainEntity: { '@id': MOBILE_APP_ENTITY_ID },
     },
     {
       '@type': ['SoftwareApplication', 'MobileApplication'],
-      '@id': `${appPageUrl}#mobile-app`,
+      '@id': MOBILE_APP_ENTITY_ID,
       name: MOBILE_APP_NAME,
       alternateName: MOBILE_APP_ALTERNATE_NAMES,
       description: appDescription,
@@ -80,10 +91,12 @@ const mobileAppSchema = {
       operatingSystem: 'iOS, Android',
       isAccessibleForFree: true,
       url: appPageUrl,
+      publisher: { '@id': ORGANIZATION_ENTITY_ID },
       installUrl: [APP_STORE_URL, PLAY_STORE_URL],
       downloadUrl: [APP_STORE_URL, PLAY_STORE_URL],
       sameAs: [APP_STORE_URL, PLAY_STORE_URL],
       screenshot: screenshots,
+      citation: [BAMF_TEST_SOURCE, BAMF_QUESTION_CATALOG],
       offers: [
         {
           '@type': 'Offer',
@@ -106,7 +119,6 @@ const mobileAppSchema = {
           },
         },
       ],
-      ...(reviewSchema ? { review: reviewSchema } : {}),
     },
     {
       '@type': 'BreadcrumbList',
@@ -153,15 +165,14 @@ const mobileAppSchema = {
               ← {t('question.back')}
             </a>
 
+            <p class="mb-3 text-sm font-bold uppercase tracking-[0.12em] text-[#6f5a45]">{MOBILE_APP_NAME}</p>
+
             <div class="flex flex-wrap gap-2 mb-5">
               <span class="inline-flex items-center rounded-full border border-[#d7c8b4] bg-white/65 px-3 py-1 text-xs font-bold text-[#6f5a45]">
                 iOS & Android
               </span>
               <span class="inline-flex items-center rounded-full border border-[#cbd8c5] bg-[#edf3e9]/80 px-3 py-1 text-xs font-bold text-[#58684b]">
                 {copy.freeStart}
-              </span>
-              <span class="inline-flex items-center rounded-full border border-[#dec891] bg-[#faf0cf]/80 px-3 py-1 text-xs font-bold text-[#7d612b]">
-                4.8 ★ {copy.ratingLabel}
               </span>
             </div>
 
@@ -272,6 +283,35 @@ const mobileAppSchema = {
       </div>
     </section>
 
+    {appDecisionCopy && (
+      <section class="border-b border-[#e3d9cd] bg-white py-12 md:py-16">
+        <div class="container mx-auto max-w-6xl px-4">
+          <div class="grid gap-8 lg:grid-cols-[minmax(0,1fr)_360px]">
+            <article>
+              <h2 class="font-serif text-3xl font-semibold tracking-[-0.025em] text-[#2b241e] md:text-4xl">{appDecisionCopy.heading}</h2>
+              <p class="mt-5 text-lg leading-relaxed text-[#5f554c]">{appDecisionCopy.answer}</p>
+              <p class="mt-4 leading-relaxed text-[#6d6258]">{appDecisionCopy.criteria}</p>
+              <h3 class="mt-8 text-xl font-bold text-[#302821]">{appDecisionCopy.tableTitle}</h3>
+              <div class="mt-4 overflow-x-auto rounded-2xl border border-[#ded3c7]">
+                <table class="w-full min-w-[620px] border-collapse text-left text-sm">
+                  <thead class="bg-[#f3ede5]"><tr><th class="p-4"></th><th class="p-4">{appDecisionCopy.website}</th><th class="p-4">{appDecisionCopy.mobile}</th></tr></thead>
+                  <tbody>{appDecisionCopy.rows.map((row) => <tr class="border-t border-[#e3d9cd]"><th class="p-4 font-semibold text-[#302821]">{row[0]}</th><td class="p-4 text-[#6d6258]">{row[1]}</td><td class="p-4 text-[#6d6258]">{row[2]}</td></tr>)}</tbody>
+                </table>
+              </div>
+            </article>
+            <aside class="h-fit rounded-2xl border border-emerald-200 bg-emerald-50 p-6">
+              <p class="text-sm leading-relaxed text-slate-700">{appDecisionCopy.source}</p>
+              <ul class="mt-5 space-y-3 text-sm font-semibold text-blue-800">
+                <li><a href={BAMF_TEST_SOURCE} target="_blank" rel="noopener noreferrer">BAMF: Einbürgerungstest ↗</a></li>
+                <li><a href={BAMF_QUESTION_CATALOG} target="_blank" rel="noopener noreferrer">BAMF: Fragenkatalog ↗</a></li>
+              </ul>
+              <p class="mt-5 text-xs text-slate-500">{appDecisionCopy.reviewed}</p>
+            </aside>
+          </div>
+        </div>
+      </section>
+    )}
+
     <section class="border-b border-[#e3d9cd] bg-[#fffdf9] py-10">
       <div class="container mx-auto px-4">
         <div class="grid gap-4 md:grid-cols-3">
@@ -361,6 +401,7 @@ const mobileAppSchema = {
                 <h3 class="mb-2 font-serif text-lg font-semibold text-[#302821]">{review.title}</h3>
                 <p class="mb-4 text-sm leading-relaxed text-[#6d6258]">{review.text}</p>
                 <p class="text-xs font-semibold text-[#897969]">{review.author}</p>
+                {appDecisionCopy && <p class="mt-1 text-[11px] text-[#9b8e81]"><a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer" class="hover:underline">{appDecisionCopy.reviewSource}</a> · {review.date}</p>}
               </article>
             ))}
           </div>

@@ -1,0 +1,114 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from './Header.astro';
+import { buildStoreUrls } from '../utils/appLinks';
+import { getPath } from '../utils/navigation';
+import {
+  BAMF_QUESTION_CATALOG,
+  BAMF_TEST_SOURCE,
+  getSeoLandingContent,
+  type SeoLandingVariant,
+} from '../data/seoLandingContent';
+import type { SupportedLang } from '../types/language';
+
+interface Props { lang: SupportedLang; variant: SeoLandingVariant }
+const { lang, variant } = Astro.props;
+const { contentLang, copy } = getSeoLandingContent(variant, lang);
+const isIndexable = ['de', 'en', 'tr'].includes(lang);
+const canonicalLang = isIndexable ? lang : contentLang;
+const siteUrl = Astro.site || 'https://lid-einbuergerung.de';
+const canonicalPath = getPath(`${canonicalLang}/${variant}/`);
+const pageUrl = new URL(canonicalPath, siteUrl).href;
+const homeUrl = new URL(getPath(`${canonicalLang}/`), siteUrl).href;
+const storeLinks = buildStoreUrls({ source: 'seo-landing', lang, variant });
+const guideLabels = {
+  de: ['LiD und Einbürgerungstest im Vergleich', '15 oder 17 richtige Antworten?', '33, 310 und 460 Fragen erklärt'],
+  en: ['LiD and naturalization test compared', 'Do you need 15 or 17 correct?', '33, 310 and 460 questions explained'],
+  tr: ['LiD ve vatandaşlık testi farkı', '15 mi 17 mi doğru gerekli?', '33, 310 ve 460 soru açıklaması'],
+};
+const guideSlugs = [
+  'unterschied-lid-test-einbuergerungstest',
+  'wie-viele-richtige-antworten-brauche-ich-einbuergerungstest',
+  'wie-viele-fragen-hat-der-einbuergerungstest',
+];
+const schema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    { '@type': 'WebPage', '@id': `${pageUrl}#webpage`, name: copy.title, description: copy.description, url: pageUrl, inLanguage: contentLang, citation: [BAMF_TEST_SOURCE, BAMF_QUESTION_CATALOG] },
+    { '@type': 'LearningResource', '@id': `${pageUrl}#learning-resource`, name: copy.heading, description: copy.directAnswer, url: pageUrl, inLanguage: contentLang, learningResourceType: ['Practice test', 'Quiz', 'Exam preparation'], educationalLevel: 'adult education', isAccessibleForFree: true, citation: [BAMF_TEST_SOURCE, BAMF_QUESTION_CATALOG] },
+    { '@type': 'FAQPage', '@id': `${pageUrl}#faq`, mainEntity: copy.faq.map((item) => ({ '@type': 'Question', name: item.question, acceptedAnswer: { '@type': 'Answer', text: item.answer } })) },
+    { '@type': 'BreadcrumbList', '@id': `${pageUrl}#breadcrumb`, itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Leben in Deutschland', item: homeUrl },
+      { '@type': 'ListItem', position: 2, name: copy.heading, item: pageUrl },
+    ] },
+  ],
+};
+---
+
+<Layout title={copy.title} description={copy.description} keywords={copy.keywords} canonical={canonicalPath}
+  jsonLd={schema} lang={contentLang} noindex={!isIndexable} alternateLangs={['de', 'en', 'tr']}
+  disableAlternates={!isIndexable}>
+  <Header lang={lang} disableAlternates={!isIndexable} />
+  <main class="app-page bg-slate-50">
+    <section class="border-b border-slate-200 bg-slate-950 text-white">
+      <div class="container mx-auto max-w-5xl px-4 py-12 md:py-16">
+        <p class="mb-3 text-xs font-bold uppercase tracking-widest text-blue-200">{copy.eyebrow}</p>
+        <h1 class="max-w-4xl text-4xl font-extrabold tracking-tight md:text-6xl">{copy.heading}</h1>
+        <p class="mt-6 max-w-3xl text-lg leading-relaxed text-slate-200 md:text-xl">{copy.directAnswer}</p>
+        <p class="mt-4 max-w-3xl rounded-xl border border-amber-300/30 bg-amber-100/10 p-4 text-sm leading-relaxed text-amber-50">{copy.officialExamNote}</p>
+        <div class="mt-7 flex flex-col gap-3 sm:flex-row">
+          <a class="rounded-xl bg-blue-500 px-5 py-3 text-center font-bold hover:bg-blue-400" href={getPath(`${lang}/frage/1/`)}>{copy.practiceCta}</a>
+          <a class="rounded-xl bg-white px-5 py-3 text-center font-bold text-slate-950 hover:bg-slate-100" href={getPath(`${lang}/exam/`)}>{copy.examCta}</a>
+          <a class="rounded-xl border border-white/30 px-5 py-3 text-center font-bold hover:bg-white/10" href={getPath(`${lang}/app/`)}>{copy.appCta}</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="container mx-auto max-w-6xl px-4 py-12">
+      <h2 class="text-3xl font-extrabold text-slate-950">{copy.factsTitle}</h2>
+      <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+        {copy.facts.map((fact) => <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+          <strong class="text-3xl text-blue-700">{fact.value}</strong><h3 class="mt-2 font-bold text-slate-950">{fact.label}</h3><p class="mt-2 text-sm leading-relaxed text-slate-600">{fact.text}</p>
+        </article>)}
+      </div>
+    </section>
+
+    <section class="border-y border-slate-200 bg-white">
+      <div class="container mx-auto grid max-w-6xl gap-8 px-4 py-12 lg:grid-cols-[minmax(0,1fr)_340px]">
+        <article>
+          <h2 class="text-3xl font-extrabold text-slate-950">{copy.distinctionTitle}</h2>
+          {copy.distinctionParagraphs.map((paragraph) => <p class="mt-4 leading-relaxed text-slate-700">{paragraph}</p>)}
+          <div class="mt-6 flex flex-col gap-2">
+            {guideSlugs.map((slug, index) => <a class="text-sm font-semibold text-blue-700 hover:underline" href={getPath(`${canonicalLang}/blog/${slug}/`)}>{guideLabels[contentLang][index]} →</a>)}
+          </div>
+        </article>
+        <aside class="rounded-2xl border border-emerald-200 bg-emerald-50 p-6">
+          <h2 class="text-xl font-bold text-slate-950">{copy.sourceTitle}</h2>
+          <p class="mt-3 text-sm leading-relaxed text-slate-700">{copy.sourceText}</p>
+          <ul class="mt-4 space-y-3 text-sm font-semibold text-blue-800">
+            <li><a class="hover:underline" href={BAMF_TEST_SOURCE} target="_blank" rel="noopener noreferrer">BAMF: Einbürgerungstest ↗</a></li>
+            <li><a class="hover:underline" href={BAMF_QUESTION_CATALOG} target="_blank" rel="noopener noreferrer">BAMF: Online-Testcenter ↗</a></li>
+          </ul>
+          <p class="mt-5 text-xs text-slate-500">{copy.updatedLabel}</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="container mx-auto grid max-w-6xl gap-8 px-4 py-12 lg:grid-cols-[minmax(0,1fr)_360px]">
+      <article>
+        <h2 class="text-3xl font-extrabold text-slate-950">{copy.appTitle}</h2>
+        <p class="mt-4 max-w-3xl leading-relaxed text-slate-700">{copy.appText}</p>
+        <div class="mt-6 flex flex-col gap-3 sm:flex-row">
+          <a href={storeLinks.ios} target="_blank" rel="noopener noreferrer" data-umami-event="app-store-click" data-umami-event-location="seo-answer" data-umami-event-lang={lang} class="rounded-xl bg-slate-950 px-5 py-3 text-center font-bold text-white">App Store</a>
+          <a href={storeLinks.android} target="_blank" rel="noopener noreferrer" data-umami-event="play-store-click" data-umami-event-location="seo-answer" data-umami-event-lang={lang} class="rounded-xl border border-slate-300 bg-white px-5 py-3 text-center font-bold text-slate-950">Google Play</a>
+          <a href={getPath(`${canonicalLang}/fuer-kurse-und-beratung/`)} class="rounded-xl border border-blue-200 bg-blue-50 px-5 py-3 text-center font-bold text-blue-800">{copy.resourceLabel}</a>
+        </div>
+      </article>
+      <aside>
+        <h2 class="text-2xl font-extrabold text-slate-950">FAQ</h2>
+        <div class="mt-4 space-y-3">{copy.faq.map((item) => <details class="rounded-xl border border-slate-200 bg-white p-4"><summary class="cursor-pointer font-bold text-slate-950">{item.question}</summary><p class="mt-3 text-sm leading-relaxed text-slate-700">{item.answer}</p></details>)}</div>
+      </aside>
+    </section>
+  </main>
+</Layout>
+

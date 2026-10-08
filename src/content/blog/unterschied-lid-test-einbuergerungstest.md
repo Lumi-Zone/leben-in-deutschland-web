@@ -4,15 +4,21 @@ seoTitle: "Leben in Deutschland vs. Einbürgerungstest"
 description: "Was ist der Unterschied zwischen Leben in Deutschland Test und Einbürgerungstest? Punkte, Zweck und Vorbereitung einfach erklärt."
 pubDate: 2025-10-29
 updatedDate: 2026-05-27
+reviewedAt: 2026-10-08
+lang: de
+translationKey: "unterschied-lid-test-einbuergerungstest"
+sources:
+  - name: "BAMF: Einbürgerungstest und Test Leben in Deutschland"
+    url: "https://www.bamf.de/DE/Themen/Integration/ZugewanderteTeilnehmende/Einbuergerung/einbuergerung-node.html"
 author: "Redaktion"
 image: "https://images.unsplash.com/photo-1635442962671-584193cdf451?auto=format&fit=crop&w=1600&q=80"
 tags: ["Wissen", "Test", "Zertifikat"]
 ---
 
-Viele Bewerber sind verwirrt: Muss ich den **Einbürgerungstest** machen oder den Test **"Leben in Deutschland" (LiD)**? Sind das zwei verschiedene Prüfungen? Hier ist die Aufklärung.
+**Der Einbürgerungstest und der Test „Leben in Deutschland“ (LiD) verwenden denselben BAMF-Fragenkatalog und denselben Prüfungsaufbau.** Unterschiedlich sind vor allem Anlass und Ergebnisnachweis.
 
 ## Grundsätzlich: Fast das Gleiche
-Inhaltlich sind beide Tests identisch. Beide bestehen aus dem gleichen Fragenkatalog des BAMF (Bundesamt für Migration und Flüchtlinge) mit insgesamt 310 Fragen (300 allgemeine + 10 landesspezifische).
+Inhaltlich sind beide Tests gleich aufgebaut. Der Gesamtkatalog umfasst 300 allgemeine und 160 Landesfragen für alle 16 Bundesländer, also 460 Fragen. Für eine einzelne Person sind 310 relevant: 300 allgemeine und 10 Fragen des eigenen Bundeslandes. Die Prüfung selbst enthält 30 allgemeine und 3 Landesfragen. Diese Struktur beschreibt auch das **[BAMF](https://www.bamf.de/DE/Themen/Integration/ZugewanderteTeilnehmende/Einbuergerung/einbuergerung-node.html)**.
 
 ## Der kleine Unterschied
 Der Unterschied liegt im **Kontext** und im **Zertifikat**:
@@ -25,8 +31,8 @@ Der Unterschied liegt im **Kontext** und im **Zertifikat**:
 ### 2. Der Test "Leben in Deutschland" (LiD)
 *   **Zielgruppe**: Teilnehmer eines **Orientierungskurses** (Teil des Integrationskurses).
 *   **Ergebnis**:
-    *   **15 von 33 Punkten**: Nachweis für allgemeine Kenntnisse (ausreichend für Niederlassungserlaubnis).
-    *   **17 von 33 Punkten**: Ausreichend für die Einbürgerung.
+    *   **15 von 33 Punkten**: Der LiD-Test gilt als bestanden.
+    *   **17 von 33 Punkten**: Das Ergebnis kann als Nachweis staatsbürgerlicher Kenntnisse für die Einbürgerung dienen.
 *   **Besonderheit**: Der LiD ist die Abschlussprüfung des Orientierungskurses.
 
 ## Welchen soll ich machen?

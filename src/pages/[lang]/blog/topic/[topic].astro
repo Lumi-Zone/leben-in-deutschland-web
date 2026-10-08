@@ -53,7 +53,7 @@ if (!topicData) throw new Error(`Unknown blog topic: ${topic}`);
 const isLegacyTopicUrl = Astro.params.topic !== topicData.slug;
 
 const topicPosts = posts
-  .filter((post) => getBlogTopicsForTags(post.data.tags).some((entry) => entry.slug === topic))
+  .filter((post) => post.data.lang === 'de' && getBlogTopicsForTags(post.data.tags).some((entry) => entry.slug === topic))
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
   .map((post) => {
     const image = resolveBlogImage(post);
@@ -63,7 +63,7 @@ const topicPosts = posts
       imageAlt: getBlogImageAlt(post.data.title),
       srcset: getOptimizedImageSrcset(image),
       imageSrc: getOptimizedImageUrl(image, 1366),
-      url: getPath(`${lang}/blog/${post.slug}`),
+      url: getPath(`de/blog/${post.data.translationKey ?? post.slug}`),
       dateLabel: dateFormatter.format(post.data.pubDate),
     };
   });

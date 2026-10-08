@@ -29,7 +29,8 @@
     "qrcode:test": "node --test scripts/qrcode.test.mjs",
     "applinks:test": "node --test scripts/applinks.test.mjs",
     "links:audit": "node scripts/link-audit.mjs",
-    "instagram:test": "node --test scripts/social/instagram-series.test.mjs scripts/social/instagram-growth.test.mjs"
+    "instagram:test": "node --test scripts/social/instagram-series.test.mjs scripts/social/instagram-growth.test.mjs",
+    "video:render": "node scripts/video/render-video.mjs"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.6",

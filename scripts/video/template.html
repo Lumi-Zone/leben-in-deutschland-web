@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>LiD video frame</title>
+<style>
+  /* Tokens mirror src/styles/global.css so the video matches the website. */
+  :root {
+    --bg: #f6f8f3;
+    --card: #ffffff;
+    --surface-muted: #edf2eb;
+    --border: #dbe3d8;
+    --text: #182d26;
+    --muted: #607069;
+    --green: #297144;
+    --green-700: #245d3b;
+    --green-900: #1b3d2a;
+    --green-50: #edf4e9;
+    --green-100: #ddebd4;
+    --green-200: #c4dcb5;
+    --lime: #bce675;
+    --track: #e1e9dc;
+    --k: 1;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1920px; height: 1080px; overflow: hidden; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Avenir Next", "Segoe UI", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: geometricPrecision;
+  }
+  .scene { position: absolute; inset: 0; display: none; }
+  body[data-scene="question"] #question,
+  body[data-scene="intro"] #card-scene,
+  body[data-scene="outro"] #card-scene,
+  body[data-scene="thumb"] #thumb,
+  body[data-scene="bar"] #bar,
+  body[data-scene="mask"] #mask { display: block; }
+  body[data-scene="bar"], body[data-scene="mask"] { background: transparent; }
+
+  /* ---------- shared header ---------- */
+  .brand { position: absolute; left: 96px; top: 40px; height: 72px; display: flex; align-items: center; gap: 20px; }
+  .brand img { width: 68px; height: 68px; border-radius: 18px; background: #fff; border: 1px solid var(--border); object-fit: cover; }
+  .brand b { display: block; font-size: 30px; font-weight: 800; letter-spacing: -0.01em; line-height: 1.15; }
+  .brand span { display: block; font-size: 21px; font-weight: 500; color: var(--muted); line-height: 1.25; }
+
+  /* ---------- question scene ---------- */
+  .counter { position: absolute; right: 96px; top: 40px; height: 72px; display: flex; align-items: baseline; gap: 14px; padding-top: 6px; }
+  .counter .label { font-size: 22px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+  .counter .num { font-size: 58px; font-weight: 800; letter-spacing: -0.02em; color: var(--green); font-variant-numeric: tabular-nums; }
+  .counter .of { font-size: 28px; font-weight: 600; color: var(--muted); font-variant-numeric: tabular-nums; }
+  .progress { position: absolute; left: 96px; top: 128px; width: 1728px; height: 8px; border-radius: 4px; background: var(--track); overflow: hidden; }
+  .progress i { display: block; height: 100%; border-radius: 4px; background: linear-gradient(90deg, #4d8b51, var(--green)); }
+
+  .card {
+    position: absolute; left: 96px; top: 156px; width: 1728px; height: 748px;
+    border-radius: 28px; border: 1px solid var(--border); background: var(--card);
+    box-shadow: 0 30px 50px -40px rgb(15 23 42 / 0.38), inset 0 1px 0 rgb(255 255 255 / 0.9);
+    padding: 44px 60px; display: flex; flex-direction: column; justify-content: center;
+  }
+  .content { display: grid; grid-template-columns: minmax(0, 1fr); column-gap: 56px; }
+  .content.side { grid-template-columns: minmax(0, 1fr) auto; }
+  .content.side .head { grid-column: 1; grid-row: 1; align-self: end; }
+  .content.side .opts { grid-column: 1; grid-row: 2; align-self: start; }
+  .content.side figure.pic { grid-column: 2; grid-row: 1 / span 2; align-self: center; }
+  .content.side.stack .head { grid-column: 1 / -1; }
+  .content.side.stack .opts { align-self: center; }
+  .content.side.stack figure.pic { grid-row: 2; margin-top: calc(34px * var(--k)); }
+  .aufgabe {
+    display: inline-flex; align-items: center; border-radius: 999px; border: 1px solid #d4e3c8; background: #edf3e7;
+    color: #32583a; font-size: calc(22px * var(--k)); font-weight: 700; letter-spacing: 0.04em; padding: 7px 18px; margin-bottom: calc(20px * var(--k));
+  }
+  .qtext { font-size: calc(50px * var(--k)); line-height: 1.24; font-weight: 700; letter-spacing: -0.012em; text-wrap: pretty; }
+  .opts { list-style: none; margin-top: calc(34px * var(--k)); display: grid; gap: calc(16px * var(--k)); }
+  .opts li {
+    position: relative; display: flex; align-items: center; gap: calc(24px * var(--k));
+    border: 2px solid var(--border); border-radius: 20px; background: #fff;
+    padding: calc(16px * var(--k)) calc(88px * var(--k)) calc(16px * var(--k)) calc(22px * var(--k));
+    font-size: calc(37px * var(--k)); line-height: 1.26; font-weight: 500;
+  }
+  .opts .badge {
+    flex: none; width: calc(58px * var(--k)); height: calc(58px * var(--k)); border-radius: 14px; background: var(--surface-muted);
+    color: #40584c; font-size: calc(30px * var(--k)); font-weight: 800; display: flex; align-items: center; justify-content: center;
+  }
+  .opts .check { position: absolute; right: calc(24px * var(--k)); top: 50%; width: calc(46px * var(--k)); height: calc(46px * var(--k)); margin-top: calc(-23px * var(--k)); display: none; }
+
+  figure.pic { text-align: center; }
+  figure.pic img { display: block; margin: 0 auto; border-radius: 14px; border: 1px solid var(--border); background: #fff; padding: 10px; }
+  figure.pic figcaption { margin-top: 10px; font-size: 18px; color: var(--muted); font-weight: 500; }
+  .content.wide figure.pic { margin-top: calc(26px * var(--k)); }
+  .content.wide .opts { grid-template-columns: repeat(4, 1fr); width: 1180px; margin-left: auto; margin-right: auto; margin-top: 26px; }
+  .content.wide .opts li { padding-right: calc(22px * var(--k)); }
+  .content.wide .opts .check { right: 18px; }
+
+  /* answer state: only colours change, never the layout */
+  body[data-state="a"] .opts li { opacity: 0.5; }
+  body[data-state="a"] .opts li.correct { opacity: 1; border-color: var(--green); background: #e3f1dc; box-shadow: 0 0 0 2px var(--green); }
+  body[data-state="a"] .opts li.correct .badge { background: var(--green); color: #fff; }
+  body[data-state="a"] .opts li.correct .check { display: block; }
+  body[data-state="blank"] .content { visibility: hidden; }
+
+  .status { position: absolute; left: 96px; top: 924px; width: 1728px; height: 44px; display: flex; align-items: center; justify-content: space-between; }
+  .status .left { display: flex; align-items: center; gap: 14px; font-size: 26px; font-weight: 600; color: var(--muted); }
+  .status .left svg { width: 34px; height: 34px; }
+  .status .site { font-size: 24px; font-weight: 700; color: var(--green-700); letter-spacing: 0.01em; }
+  .status .s-a { display: none; color: var(--green-700); font-weight: 700; }
+  .status .s-a b { font-weight: 800; }
+  body[data-state="a"] .status .s-q { display: none; }
+  body[data-state="a"] .status .s-a { display: flex; align-items: center; gap: 14px; }
+  body[data-state="blank"] .status .s-q, body[data-state="blank"] .status .s-a { visibility: hidden; }
+  .timer-track { position: absolute; left: 96px; top: 986px; width: 1728px; height: 12px; border-radius: 6px; background: var(--track); }
+
+  /* ---------- timer bar + mask (composited by ffmpeg) ---------- */
+  #bar .fill { position: absolute; left: 0; top: 0; width: 1728px; height: 12px; border-radius: 6px; background: linear-gradient(90deg, #4d8b51, var(--green)); }
+  #mask .band { position: absolute; left: 0; top: 982px; width: 1920px; height: 20px; }
+  #mask svg { display: block; }
+
+  /* ---------- intro / outro ---------- */
+  #card-scene .panel {
+    position: absolute; left: 96px; top: 156px; width: 1728px; height: 828px; border-radius: 28px; border: 1px solid var(--border);
+    background: var(--card); box-shadow: 0 30px 50px -40px rgb(15 23 42 / 0.38); padding: 64px 76px; display: flex; flex-direction: column;
+  }
+  #card-scene .part { position: absolute; right: 96px; top: 54px; font-size: 26px; font-weight: 700; color: var(--green-700); background: var(--green-50); border: 1px solid var(--green-200); border-radius: 999px; padding: 9px 24px; }
+  #card-scene .eyebrow { font-size: 26px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--green); }
+  #card-scene h1 { font-size: 92px; line-height: 1.04; font-weight: 800; letter-spacing: -0.03em; margin-top: 14px; }
+  #card-scene h1 em { font-style: normal; color: var(--green); }
+  #card-scene .lead { font-size: 36px; line-height: 1.35; font-weight: 500; color: var(--muted); margin-top: 20px; max-width: 1400px; }
+  #card-scene .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: auto; }
+  #card-scene .step { border-radius: 22px; border: 1px solid #dae4d4; background: #f2f5ee; padding: 28px 30px; }
+  #card-scene .step .n { width: 52px; height: 52px; border-radius: 14px; background: var(--green); color: #fff; font-size: 28px; font-weight: 800; display: flex; align-items: center; justify-content: center; }
+  #card-scene .step b { display: block; font-size: 30px; font-weight: 800; margin-top: 18px; letter-spacing: -0.01em; }
+  #card-scene .step span { display: block; font-size: 25px; line-height: 1.35; color: var(--muted); margin-top: 8px; font-weight: 500; }
+  #card-scene .foot { margin-top: 26px; font-size: 22px; color: var(--muted); font-weight: 500; display: flex; justify-content: space-between; }
+  #card-scene .foot b { color: var(--green-700); font-weight: 700; }
+
+  /* ---------- thumbnail (1280x720) ---------- */
+  #thumb { width: 1280px; height: 720px; background: var(--green-900); color: #fff; overflow: hidden; }
+  #thumb .glow { position: absolute; right: -180px; top: -220px; width: 760px; height: 760px; border-radius: 50%; background: #2f7a4b; opacity: 0.55; }
+  #thumb .flag { position: absolute; left: 0; top: 0; width: 22px; height: 720px; background: linear-gradient(#111 0 33.33%, #dd0000 33.33% 66.66%, #ffce00 66.66% 100%); }
+  #thumb .t-eyebrow { position: absolute; left: 84px; top: 70px; font-size: 40px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--lime); }
+  #thumb .t-big { position: absolute; left: 76px; top: 120px; font-size: 250px; line-height: 1; font-weight: 800; letter-spacing: -0.05em; }
+  #thumb .t-title { position: absolute; left: 84px; top: 372px; font-size: 96px; line-height: 1; font-weight: 800; letter-spacing: -0.03em; }
+  #thumb .t-sub { position: absolute; left: 84px; top: 486px; font-size: 50px; font-weight: 600; color: #d9ecd0; }
+  #thumb .t-part { position: absolute; left: 84px; bottom: 60px; display: flex; gap: 18px; align-items: center; }
+  #thumb .t-part span { font-size: 44px; font-weight: 800; border-radius: 16px; padding: 12px 28px; }
+  #thumb .t-part .p1 { background: var(--lime); color: #142824; }
+  #thumb .t-part .p2 { background: rgb(255 255 255 / 0.12); border: 2px solid rgb(255 255 255 / 0.35); }
+  #thumb .t-card { position: absolute; right: 70px; top: 196px; width: 400px; border-radius: 26px; background: #fff; color: var(--text); padding: 30px; transform: rotate(3deg); box-shadow: 0 40px 60px -30px rgb(0 0 0 / 0.6); }
+  #thumb .t-card p { font-size: 27px; line-height: 1.25; font-weight: 700; }
+  #thumb .t-card div { margin-top: 14px; border: 2px solid var(--border); border-radius: 14px; padding: 11px 16px; font-size: 23px; font-weight: 600; color: #7a8a82; }
+  #thumb .t-card div.ok { border-color: var(--green); background: #e3f1dc; color: var(--text); box-shadow: 0 0 0 2px var(--green); }
+</style>
+</head>
+<body data-scene="question" data-state="q">
+
+<section class="scene" id="question">
+  <div class="brand"><img data-logo alt=""><div><b>Einbürgerungstest</b><span>Leben in Deutschland · Alle 300 Fragen</span></div></div>
+  <div class="counter"><span class="label">Frage</span><span class="num" id="q-num"></span><span class="of" id="q-of"></span></div>
+  <div class="progress"><i id="q-progress"></i></div>
+  <div class="card"><div class="content" id="q-content"></div></div>
+  <div class="status">
+    <div class="left">
+      <span class="s-q">Überlegen Sie – die Antwort erscheint, wenn der Balken abgelaufen ist.</span>
+      <span class="s-a">
+        <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#297144"/><path d="M6.8 12.4l3.4 3.4 7-7.4" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>Richtige Antwort: <b id="q-letter"></b></span>
+      </span>
+    </div>
+    <div class="site">lid-einbuergerung.de</div>
+  </div>
+  <div class="timer-track"></div>
+</section>
+
+<section class="scene" id="card-scene">
+  <div class="brand"><img data-logo alt=""><div><b>Einbürgerungstest</b><span>Leben in Deutschland · Alle 300 Fragen</span></div></div>
+  <div class="part" id="c-part"></div>
+  <div class="panel">
+    <div class="eyebrow" id="c-eyebrow"></div>
+    <h1 id="c-title"></h1>
+    <p class="lead" id="c-lead"></p>
+    <div class="steps" id="c-steps"></div>
+    <div class="foot"><span id="c-foot"></span><b>lid-einbuergerung.de</b></div>
+  </div>
+</section>
+
+<section class="scene" id="thumb">
+  <div class="glow"></div><div class="flag"></div>
+  <div class="t-eyebrow" id="t-eyebrow"></div>
+  <div class="t-big">300</div>
+  <div class="t-title">Fragen</div>
+  <div class="t-sub">mit allen richtigen Antworten</div>
+  <div class="t-part"><span class="p1" id="t-p1"></span><span class="p2" id="t-p2"></span></div>
+  <div class="t-card">
+    <p>Wie heißt die deutsche Verfassung?</p>
+    <div>Volksgesetz</div><div>Bundesgesetz</div><div>Deutsches Gesetz</div><div class="ok">Grundgesetz ✓</div>
+  </div>
+</section>
+
+<section class="scene" id="bar"><div class="fill"></div></section>
+
+<section class="scene" id="mask">
+  <!-- Page-coloured band with a hole shaped like the timer track; hides the part of the bar that has slid out of the track. -->
+  <div class="band">
+    <svg width="1920" height="20" viewBox="0 0 1920 20">
+      <path fill="#f6f8f3" fill-rule="evenodd" d="M0 0H1920V20H0Z M102 4H1818A6 6 0 0 1 1818 16H102A6 6 0 0 1 102 4Z"/>
+    </svg>
+  </div>
+</section>
+
+<script>
+  const LETTERS = ['A', 'B', 'C', 'D'];
+  const CHECK = '<svg class="check" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#297144"/><path d="M6.8 12.4l3.4 3.4 7-7.4" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+  const el = (tag, cls, text) => { const n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; };
+  const nextFrame = () => new Promise(r => requestAnimationFrame(() => requestAnimationFrame(r)));
+
+  async function renderQuestion(spec) {
+    const { q, total, assetBase } = spec;
+    document.getElementById('q-num').textContent = q.id;
+    document.getElementById('q-of').textContent = '/ ' + total;
+    document.getElementById('q-progress').style.width = (q.id / total * 100) + '%';
+    document.getElementById('q-letter').textContent = LETTERS[q.correct];
+
+    const content = document.getElementById('q-content');
+    content.replaceChildren();
+    content.className = 'content';
+    const head = el('div', 'head');
+    // Keep a trailing "…" on the same line as the word before it.
+    head.append(el('div', 'aufgabe', 'Aufgabe ' + q.id), el('h1', 'qtext', q.question.replace(/ …/g, ' …')));
+    const opts = el('ol', 'opts');
+    q.options.forEach((text, i) => {
+      const li = el('li', i === q.correct ? 'correct' : '');
+      li.append(el('span', 'badge', LETTERS[i]), el('span', 'txt', text));
+      li.insertAdjacentHTML('beforeend', CHECK);
+      opts.append(li);
+    });
+
+    // Shrink type until the block fits the card; the layout is measured once
+    // and is identical in the question, answer and blank states.
+    const avail = content.parentElement.clientHeight - 88;
+    const fit = () => {
+      let k = 1;
+      document.documentElement.style.setProperty('--k', k);
+      while (content.offsetHeight > avail && k > 0.56) {
+        k = Math.round((k - 0.02) * 100) / 100;
+        document.documentElement.style.setProperty('--k', k);
+      }
+      return k;
+    };
+
+    let k;
+    if (q.image) {
+      const img = new Image();
+      img.src = assetBase + q.image;
+      await img.decode();
+      const fig = el('figure', 'pic');
+      fig.append(img);
+      if (q.credit) fig.append(el('figcaption', '', q.credit));
+      if (img.naturalWidth / img.naturalHeight > 2.4) {
+        // A row of four numbered pictures: picture on top, the four options underneath.
+        content.classList.add('wide');
+        img.style.width = '1100px';
+        content.append(head, fig, opts);
+        k = fit();
+      } else {
+        // Picture beside the options. A long question runs across the full
+        // width above both; the picture gives way before the text does.
+        content.classList.add('side');
+        if (q.question.length > 110) content.classList.add('stack');
+        content.append(head, opts, fig);
+        const base = Math.min(680 / img.naturalWidth, 560 / img.naturalHeight, 1.45);
+        for (const factor of [1, 0.9, 0.8, 0.7, 0.62]) {
+          img.style.width = Math.round(img.naturalWidth * base * factor) + 'px';
+          k = fit();
+          if (k >= 0.9) break;
+        }
+      }
+    } else {
+      content.append(head, opts);
+      k = fit();
+    }
+    return { k, overflow: content.offsetHeight > avail };
+  }
+
+  function renderCard(spec) {
+    document.getElementById('c-part').textContent = spec.part || '';
+    document.getElementById('c-part').style.display = spec.part ? '' : 'none';
+    document.getElementById('c-eyebrow').textContent = spec.eyebrow;
+    document.getElementById('c-title').innerHTML = spec.titleHtml;
+    document.getElementById('c-lead').textContent = spec.lead;
+    document.getElementById('c-foot').textContent = spec.foot;
+    const steps = document.getElementById('c-steps');
+    steps.replaceChildren();
+    spec.steps.forEach((s, i) => {
+      const box = el('div', 'step');
+      box.append(el('div', 'n', s.n ?? String(i + 1)), el('b', '', s.title), el('span', '', s.text));
+      steps.append(box);
+    });
+  }
+
+  window.renderScene = async (spec) => {
+    document.body.dataset.scene = spec.scene;
+    document.body.dataset.state = spec.state || '';
+    document.querySelectorAll('img[data-logo]').forEach(i => { i.src = spec.assetBase + 'logo.png'; });
+    let info = {};
+    if (spec.scene === 'question') info = await renderQuestion(spec);
+    if (spec.scene === 'intro' || spec.scene === 'outro') renderCard(spec);
+    if (spec.scene === 'thumb') {
+      document.getElementById('t-eyebrow').textContent = spec.eyebrow;
+      document.getElementById('t-p1').textContent = spec.p1;
+      document.getElementById('t-p2').textContent = spec.p2 || '';
+      document.getElementById('t-p2').style.display = spec.p2 ? '' : 'none';
+    }
+    await Promise.all([...document.images].filter(i => i.src && !i.complete).map(i => i.decode().catch(() => {})));
+    await document.fonts.ready;
+    await nextFrame();
+    return info;
+  };
+  window.__ready = true;
+</script>
+</body>
+</html>

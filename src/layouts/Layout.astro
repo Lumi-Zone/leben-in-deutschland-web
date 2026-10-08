@@ -122,7 +122,7 @@ const bannerDismissLabel = bannerTranslate('banner.dismiss');
 		<link rel="alternate icon" href={getPath("favicon.ico")} sizes="32x32" />
 		<link rel="apple-touch-icon" href={getPath("logo.png")} />
 		<meta name="generator" content={Astro.generator} />
-		<meta name="application-name" content="Leben in Deutschland" />
+		<meta name="application-name" content={MOBILE_APP_NAME} />
 		<meta name="theme-color" content="#182d26" />
 		<meta name="format-detection" content="telephone=no" />
         <meta name="apple-itunes-app" content={`app-id=${IOS_APP_ID}, app-argument=${canonicalHref}`} />
@@ -217,7 +217,7 @@ const bannerDismissLabel = bannerTranslate('banner.dismiss');
 			</div>
 
 			<div class="smart-banner-content">
-				<h3>Leben in Deutschland 2026</h3>
+				<h3>{MOBILE_APP_NAME}</h3>
 				<p>Lumi-Zone</p>
 			</div>
 
@@ -317,6 +317,39 @@ const bannerDismissLabel = bannerTranslate('banner.dismiss');
 						context,
 					});
 				});
+			})();
+		</script>
+		<script is:inline>
+			(() => {
+				const host = document.referrer ? new URL(document.referrer).hostname.toLowerCase() : '';
+				const isChatGptReferral = host === 'chatgpt.com'
+					|| host.endsWith('.chatgpt.com')
+					|| host === 'chat.openai.com';
+				if (!isChatGptReferral) return;
+
+				const storageKey = `ai-referral:${window.location.pathname}`;
+				try {
+					if (sessionStorage.getItem(storageKey)) return;
+					sessionStorage.setItem(storageKey, '1');
+				} catch {
+					/* Analytics still works when storage is unavailable. */
+				}
+
+				const payload = {
+					source: host,
+					lang: document.documentElement.lang,
+					landing: window.location.pathname,
+				};
+				let attempts = 0;
+				const report = () => {
+					if (typeof window.umami?.track === 'function') {
+						window.umami.track('chatgpt-referral-landing', payload);
+						return;
+					}
+					attempts += 1;
+					if (attempts < 20) window.setTimeout(report, 250);
+				};
+				report();
 			})();
 		</script>
 		<script is:inline>

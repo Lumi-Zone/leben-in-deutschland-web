@@ -1,0 +1,65 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import { getPath } from '../../utils/navigation';
+import { BAMF_QUESTION_CATALOG, BAMF_TEST_SOURCE, type PriorityContentLang } from '../../data/seoLandingContent';
+
+const priorityLanguages: PriorityContentLang[] = ['de', 'en', 'tr'];
+export function getStaticPaths() { return ['de', 'en', 'tr'].map((lang) => ({ params: { lang }, props: { lang } })); }
+const { lang } = Astro.props as { lang: PriorityContentLang };
+const copy = {
+  de: {
+    title: 'Redaktionsrichtlinien, Quellen und Korrekturen', description: 'So prüft und aktualisiert das Leben-in-Deutschland-Team Inhalte, Übersetzungen und Fragen zur Testvorbereitung.', back: 'Zurück zum Blog',
+    sections: [
+      ['Verantwortung', 'Die Beiträge werden unter den bestehenden Team-Autorennamen veröffentlicht. Für Quellenprüfung, Aktualisierung und Korrekturen ist die Redaktion gemeinsam verantwortlich. Wir erfinden keine persönlichen Qualifikationen oder amtliche Zugehörigkeiten.'],
+      ['Quellenstandard', 'Testaufbau und Fragenkatalog werden vorrangig mit BAMF-Veröffentlichungen abgeglichen. Für rechtliche Angaben verwenden wir Bundesgesetze und zuständige Behörden; politische und historische Erklärungen stützen sich bevorzugt auf Bundesbehörden und die Bundeszentrale für politische Bildung.'],
+      ['Übersetzungen', 'Die Prüfung findet auf Deutsch statt. Übersetzungen helfen beim Verstehen, sind aber nicht der amtliche Wortlaut. Bei Abweichungen hat die deutsche Frage aus dem offiziellen Katalog Vorrang.'],
+      ['Aktualisierung', 'Jeder vertiefende Beitrag trägt ein Prüfdatum und seine wichtigsten Quellen. Ein neues Datum wird nur gesetzt, wenn der Inhalt tatsächlich kontrolliert oder geändert wurde.'],
+      ['Unabhängigkeit', 'Leben in Deutschland ist ein unabhängiges Lernangebot und weder BAMF-Website noch Behörde oder zugelassene Prüfstelle. Inhalte ersetzen keine individuelle Rechtsberatung.'],
+      ['Korrekturen', 'Sachliche Fehler, veraltete Angaben oder Übersetzungsprobleme können an cfstechmobile@gmail.com gemeldet werden. Nach Prüfung korrigieren wir Inhalt, Prüfdatum und gegebenenfalls die betroffenen Übersetzungen.'],
+    ],
+  },
+  en: {
+    title: 'Editorial, sourcing and corrections policy', description: 'How the Leben in Deutschland team checks and updates test preparation content, translations and questions.', back: 'Back to the guides',
+    sections: [
+      ['Responsibility', 'Articles are published under the existing team bylines. The editorial team shares responsibility for source checks, updates and corrections. We do not invent personal qualifications or official affiliations.'],
+      ['Source standard', 'Test format and catalogue claims are checked primarily against BAMF publications. Legal claims use federal legislation and competent authorities; political and historical explanations prefer federal authorities and the Federal Agency for Civic Education.'],
+      ['Translations', 'The exam is taken in German. Translations support understanding but are not the official wording. If wording differs, the German question in the official catalogue takes priority.'],
+      ['Updates', 'Every in-depth guide shows a review date and its main sources. Dates change only when the content has actually been checked or revised.'],
+      ['Independence', 'Leben in Deutschland is an independent study resource, not a BAMF website, public authority or approved test centre. Content is not individual legal advice.'],
+      ['Corrections', 'Report factual errors, outdated information or translation issues to cfstechmobile@gmail.com. After review we correct the content, review date and affected translations.'],
+    ],
+  },
+  tr: {
+    title: 'Editoryal çalışma, kaynak ve düzeltme politikası', description: 'Leben in Deutschland ekibinin sınav hazırlık içeriklerini, çevirileri ve soruları nasıl kontrol edip güncellediği.', back: 'Rehberlere dön',
+    sections: [
+      ['Sorumluluk', 'Yazılar mevcut ekip yazar adlarıyla yayımlanır. Kaynak kontrolü, güncelleme ve düzeltmelerden editoryal ekip birlikte sorumludur. Kişisel uzmanlık veya resmî kurum bağlantısı uydurulmaz.'],
+      ['Kaynak standardı', 'Sınav yapısı ve soru kataloğu öncelikle BAMF yayınlarıyla karşılaştırılır. Hukuki bilgilerde federal yasalar ve yetkili makamlar; siyasi ve tarihî açıklamalarda federal kurumlar ile Federal Siyasi Eğitim Merkezi tercih edilir.'],
+      ['Çeviriler', 'Gerçek sınav Almanca yapılır. Çeviriler anlamaya yardımcıdır ancak resmî soru metni değildir. Bir farklılık olduğunda resmî katalogdaki Almanca metin esas alınır.'],
+      ['Güncelleme', 'Her ayrıntılı rehberde inceleme tarihi ve temel kaynaklar gösterilir. Tarih yalnızca içerik gerçekten kontrol edildiğinde veya değiştirildiğinde yenilenir.'],
+      ['Bağımsızlık', 'Leben in Deutschland bağımsız bir çalışma kaynağıdır; BAMF sitesi, resmî kurum veya yetkili sınav merkezi değildir. İçerikler kişisel hukuki danışmanlık yerine geçmez.'],
+      ['Düzeltmeler', 'Maddi hataları, eski bilgileri veya çeviri sorunlarını cfstechmobile@gmail.com adresine bildirebilirsiniz. İnceleme sonrasında içerik, kontrol tarihi ve ilgili çeviriler düzeltilir.'],
+    ],
+  },
+}[lang];
+const canonicalPath = getPath(`${lang}/redaktionsrichtlinien/`);
+const pageUrl = new URL(canonicalPath, Astro.site || 'https://lid-einbuergerung.de').href;
+const schema = { '@context': 'https://schema.org', '@type': 'WebPage', name: copy.title, description: copy.description, url: pageUrl, inLanguage: lang, citation: [BAMF_TEST_SOURCE, BAMF_QUESTION_CATALOG], publisher: { '@type': 'Organization', name: 'Leben in Deutschland' } };
+---
+<Layout title={copy.title} description={copy.description} canonical={canonicalPath} jsonLd={schema} lang={lang} alternateLangs={priorityLanguages}>
+  <Header lang={lang} alternateLangs={priorityLanguages} />
+  <main class="min-h-screen bg-slate-50 py-10 md:py-14">
+    <article class="container mx-auto max-w-4xl px-4">
+      <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm md:p-10">
+        <a href={getPath(`${lang}/blog/`)} class="text-sm font-semibold text-blue-700 hover:underline">← {copy.back}</a>
+        <h1 class="mt-5 text-3xl font-extrabold tracking-tight text-slate-950 md:text-5xl">{copy.title}</h1>
+        <p class="mt-5 text-lg leading-relaxed text-slate-600">{copy.description}</p>
+        <div class="prose prose-lg mt-10 max-w-none prose-headings:text-slate-950 prose-p:text-slate-700">
+          {copy.sections.map(([heading, text]) => <section><h2>{heading}</h2><p>{text}</p></section>)}
+          <h2>Primary sources</h2>
+          <ul><li><a href={BAMF_TEST_SOURCE}>BAMF: Einbürgerungstest</a></li><li><a href={BAMF_QUESTION_CATALOG}>BAMF: Online-Testcenter</a></li></ul>
+        </div>
+      </div>
+    </article>
+  </main>
+</Layout>

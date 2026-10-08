@@ -12,13 +12,13 @@ const escapeXml = (value: string) =>
 
 export async function GET({ site }: { site: URL | undefined }) {
   const baseUrl = site ?? new URL('https://lid-einbuergerung.de');
-  const posts = (await getCollection('blog')).sort(
+  const posts = (await getCollection('blog')).filter((post) => post.data.lang === 'de').sort(
     (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
   );
 
   const itemsXml = posts
     .map((post) => {
-      const link = new URL(getPath(`de/blog/${post.slug}/`), baseUrl).href;
+      const link = new URL(getPath(`de/blog/${post.data.translationKey ?? post.slug}/`), baseUrl).href;
       const image = resolveBlogImage(post);
       const imageUrl = image.startsWith('http://') || image.startsWith('https://')
         ? image

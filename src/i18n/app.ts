@@ -34,14 +34,14 @@ const appPageCopy: Record<SupportedLang, AppPageCopy> = {
     freeStart: 'Kostenlos starten',
     ratingLabel: 'App-Bewertung',
     hero: {
-      title: 'Bestehen Sie den Einbürgerungstest mit der App.',
+      title: 'Bereiten Sie sich mit der App auf den Einbürgerungstest vor.',
       text: 'Lernen Sie alle 310 Fragen, simulieren Sie die Prüfung und behalten Sie Ihren Fortschritt im Blick. Laden Sie die App jetzt auf Ihr Smartphone.',
     },
     store: { apple: 'Laden im', google: 'Jetzt bei' },
     stats: { questions: 'Fragen', examMode: 'Prüfungsmodus', languages: 'Sprachen' },
     preview: { title: 'Ein Blick in die App', count: '10 Einblicke' },
     highlights: [
-      { value: '4.8/5', label: 'Bewertung in den Stores' },
+      { value: 'iOS & Android', label: 'Verifizierte Store-Seiten' },
       { value: 'Weniger Stress', label: 'durch echte Prüfungssimulation' },
       { value: 'Sofort starten', label: 'ohne lange Einrichtung' },
     ],
@@ -76,7 +76,7 @@ const appPageCopy: Record<SupportedLang, AppPageCopy> = {
     stats: { questions: 'Questions', examMode: 'Exam mode', languages: 'Languages' },
     preview: { title: 'Inside the app', count: '10 screens' },
     highlights: [
-      { value: '4.8/5', label: 'Store rating' },
+      { value: 'iOS & Android', label: 'Verified store listings' },
       { value: 'Less stress', label: 'with realistic exam practice' },
       { value: 'Start now', label: 'without a long setup' },
     ],
@@ -111,7 +111,7 @@ const appPageCopy: Record<SupportedLang, AppPageCopy> = {
     stats: { questions: 'Soru', examMode: 'Sınav modu', languages: 'Dil' },
     preview: { title: 'Uygulamaya göz atın', count: '10 ekran' },
     highlights: [
-      { value: '4.8/5', label: 'Mağaza puanı' },
+      { value: 'iOS & Android', label: 'Doğrulanmış mağaza sayfaları' },
       { value: 'Daha az stres', label: 'gerçekçi sınav simülasyonuyla' },
       { value: 'Hemen başlayın', label: 'uzun kurulum gerektirmeden' },
     ],
@@ -146,7 +146,7 @@ const appPageCopy: Record<SupportedLang, AppPageCopy> = {
     stats: { questions: 'أسئلة', examMode: 'وضع الاختبار', languages: 'لغات' },
     preview: { title: 'نظرة داخل التطبيق', count: '10 شاشات' },
     highlights: [
-      { value: '4.8/5', label: 'التقييم في المتاجر' },
+      { value: 'iOS & Android', label: 'صفحات متجر موثقة' },
       { value: 'توتر أقل', label: 'بفضل محاكاة واقعية للاختبار' },
       { value: 'ابدأ الآن', label: 'من دون إعداد طويل' },
     ],
@@ -181,7 +181,7 @@ const appPageCopy: Record<SupportedLang, AppPageCopy> = {
     stats: { questions: 'Запитань', examMode: 'Режим іспиту', languages: 'Мов' },
     preview: { title: 'Усередині застосунку', count: '10 екранів' },
     highlights: [
-      { value: '4.8/5', label: 'Оцінка в магазинах' },
+      { value: 'iOS & Android', label: 'Перевірені сторінки магазинів' },
       { value: 'Менше стресу', label: 'з реалістичною симуляцією іспиту' },
       { value: 'Почніть зараз', label: 'без тривалого налаштування' },
     ],
@@ -216,7 +216,7 @@ const appPageCopy: Record<SupportedLang, AppPageCopy> = {
     stats: { questions: 'Вопросов', examMode: 'Режим экзамена', languages: 'Языков' },
     preview: { title: 'Внутри приложения', count: '10 экранов' },
     highlights: [
-      { value: '4.8/5', label: 'Рейтинг в магазинах' },
+      { value: 'iOS & Android', label: 'Проверенные страницы магазинов' },
       { value: 'Меньше стресса', label: 'благодаря реалистичной симуляции' },
       { value: 'Начните сейчас', label: 'без долгой настройки' },
     ],
@@ -251,7 +251,7 @@ const appPageCopy: Record<SupportedLang, AppPageCopy> = {
     stats: { questions: 'Pytań', examMode: 'Tryb egzaminu', languages: 'Języków' },
     preview: { title: 'Wewnątrz aplikacji', count: '10 ekranów' },
     highlights: [
-      { value: '4.8/5', label: 'Ocena w sklepach' },
+      { value: 'iOS & Android', label: 'Zweryfikowane strony sklepów' },
       { value: 'Mniej stresu', label: 'dzięki realistycznej symulacji' },
       { value: 'Zacznij teraz', label: 'bez długiej konfiguracji' },
     ],
@@ -286,7 +286,7 @@ const appPageCopy: Record<SupportedLang, AppPageCopy> = {
     stats: { questions: 'سؤال', examMode: 'حالت آزمون', languages: 'زبان' },
     preview: { title: 'نگاهی به اپلیکیشن', count: '10 صفحه' },
     highlights: [
-      { value: '4.8/5', label: 'امتیاز در فروشگاه‌ها' },
+      { value: 'iOS & Android', label: 'صفحه‌های تأییدشده فروشگاه' },
       { value: 'استرس کمتر', label: 'با شبیه‌سازی واقعی آزمون' },
       { value: 'همین حالا شروع کنید', label: 'بدون راه‌اندازی طولانی' },
     ],
@@ -321,7 +321,7 @@ const appPageCopy: Record<SupportedLang, AppPageCopy> = {
     stats: { questions: 'پوښتنې', examMode: 'د ازموینې حالت', languages: 'ژبې' },
     preview: { title: 'د اپ دننه', count: '10 سکرینونه' },
     highlights: [
-      { value: '4.8/5', label: 'په پلورنځیو کې درجه' },
+      { value: 'iOS & Android', label: 'تایید شوې پلورنځي پاڼې' },
       { value: 'لږ فشار', label: 'د واقعي ازموینې تمرین سره' },
       { value: 'همدا اوس پیل کړئ', label: 'له اوږدې امستنې پرته' },
     ],
@@ -356,7 +356,7 @@ const appPageCopy: Record<SupportedLang, AppPageCopy> = {
     stats: { questions: 'Întrebări', examMode: 'Mod examen', languages: 'Limbi' },
     preview: { title: 'În interiorul aplicației', count: '10 ecrane' },
     highlights: [
-      { value: '4.8/5', label: 'Evaluare în magazine' },
+      { value: 'iOS & Android', label: 'Pagini verificate în magazine' },
       { value: 'Mai puțin stres', label: 'cu o simulare realistă' },
       { value: 'Începe acum', label: 'fără configurare îndelungată' },
     ],
@@ -391,7 +391,7 @@ const appPageCopy: Record<SupportedLang, AppPageCopy> = {
     stats: { questions: 'Domande', examMode: 'Modalità esame', languages: 'Lingue' },
     preview: { title: 'Dentro l’app', count: '10 schermate' },
     highlights: [
-      { value: '4.8/5', label: 'Valutazione negli store' },
+      { value: 'iOS & Android', label: 'Pagine store verificate' },
       { value: 'Meno stress', label: 'con una simulazione realistica' },
       { value: 'Inizia subito', label: 'senza lunghe configurazioni' },
     ],
@@ -426,7 +426,7 @@ const appPageCopy: Record<SupportedLang, AppPageCopy> = {
     stats: { questions: 'Preguntas', examMode: 'Modo examen', languages: 'Idiomas' },
     preview: { title: 'Dentro de la app', count: '10 pantallas' },
     highlights: [
-      { value: '4.8/5', label: 'Valoración en las tiendas' },
+      { value: 'iOS & Android', label: 'Fichas verificadas en tiendas' },
       { value: 'Menos estrés', label: 'con una simulación realista' },
       { value: 'Empieza ahora', label: 'sin una configuración larga' },
     ],

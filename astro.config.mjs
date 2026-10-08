@@ -67,8 +67,8 @@ function shouldIncludeInSitemap(pageUrl) {
   if (pathname === '/') return false;
   if (!hasSupportedLang) return true;
   if (personalToolRoutes.has(route)) return false;
-  if (seoLandingRoutes.has(route) && !['de', 'en'].includes(lang)) return false;
-  if (route === 'blog' && lang !== 'de') return false;
+  if (seoLandingRoutes.has(route) && !['de', 'en', 'tr'].includes(lang)) return false;
+  if (route === 'blog' && !['de', 'en', 'tr'].includes(lang)) return false;
   if (pathname.startsWith('/de/blog/topic/')) {
     const topicSlug = pathname.split('/').filter(Boolean)[3] ?? '';
     if (!primaryBlogTopicRoutes.has(topicSlug)) return false;

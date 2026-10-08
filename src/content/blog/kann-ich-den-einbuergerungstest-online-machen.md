@@ -3,6 +3,12 @@ title: "Kann ich den Einbürgerungstest online machen? Antwort für 2026"
 description: "Online üben ja, die echte Prüfung aber bei einer Prüfstelle: Das müssen Sie zum Einbürgerungstest 2026 wissen."
 pubDate: 2026-05-27
 updatedDate: 2026-05-27
+reviewedAt: 2026-10-08
+lang: de
+translationKey: "kann-ich-den-einbuergerungstest-online-machen"
+sources:
+  - name: "BAMF: Einbürgerungstest"
+    url: "https://www.bamf.de/DE/Themen/Integration/ZugewanderteTeilnehmende/Einbuergerung/einbuergerung-node.html"
 author: "Leben in Deutschland Team"
 image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80"
 tags: ["Einbürgerungstest", "Online üben", "Prüfstelle", "BAMF", "Vorbereitung"]
