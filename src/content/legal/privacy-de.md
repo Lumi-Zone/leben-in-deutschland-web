@@ -1,6 +1,6 @@
 ---
 title: "Datenschutzerklärung"
-lastUpdated: "27. Mai 2026"
+lastUpdated: "12. Oktober 2026"
 ---
 
 Diese Datenschutzerklärung beschreibt, wie und warum wir Ihre persönlichen Daten erfassen, speichern, verwenden und/oder weitergeben, wenn Sie unsere Dienste nutzen, einschließlich wenn Sie:
@@ -18,7 +18,7 @@ Diese Zusammenfassung enthält die wichtigsten Punkte aus unserer Datenschutzerk
 
 **Verarbeiten wir sensible persönliche Daten?** Nein, wir verarbeiten keine sensiblen persönlichen Daten.
 
-**Sammeln wir Informationen von Dritten?** Wir sammeln keine Informationen von Dritten.
+**Sammeln wir Informationen von Dritten?** Wir sammeln keine Informationen von Dritten, mit Ausnahme der in Abschnitt 1 beschriebenen Attributionsdaten von Apple zu Werbeanzeigen.
 
 **Wie verarbeiten wir Ihre Informationen?** Wir verarbeiten Ihre Informationen, um unsere Dienste bereitzustellen, zu verbessern und zu verwalten, mit Ihnen zu kommunizieren, zur Sicherheit und Betrugsprävention und um Gesetze einzuhalten. Wir verarbeiten Ihre Informationen nur, wenn wir einen gültigen Rechtsgrund dafür haben.
 
@@ -38,7 +38,7 @@ Wir sammeln persönliche Informationen, die Sie uns freiwillig zur Verfügung st
 
 **Sensible Informationen.** Wir verarbeiten keine sensiblen Informationen.
 
-**Zahlungsdaten.** Wir können Daten sammeln, die zur Bearbeitung Ihrer Zahlung erforderlich sind, wenn Sie Einkäufe tätigen, wie z. B. Ihre Zahlungsinstrumentennummer und den Sicherheitscode, der mit Ihrem Zahlungsinstrument verknüpft ist.
+**Zahlungsdaten.** Zahlungen werden vom Apple App Store verarbeitet. Wir erhalten keine Daten Ihrer Zahlungskarte. Welche Kaufinformationen wir verarbeiten, ist unten unter „Käufe und Abonnements“ beschrieben.
 
 ### Anwendungsdaten
 
@@ -47,6 +47,26 @@ Wenn Sie unsere Anwendung(en) nutzen, können wir auch folgende Informationen sa
 *   **Push-Benachrichtigungen.** Wir können anfordern, Ihnen Push-Benachrichtigungen bezüglich Ihres Kontos oder bestimmter Funktionen der Anwendung(en) zu senden. Wenn Sie diese Art der Kommunikation nicht erhalten möchten, können Sie sie in den Einstellungen Ihres Geräts deaktivieren.
 
 Diese Informationen werden hauptsächlich benötigt, um die Sicherheit und den Betrieb unserer Anwendung(en) aufrechtzuerhalten, zur Fehlerbehebung und für unsere internen Analyse- und Berichtszwecke.
+
+### App-Analyse, Fehlerdiagnose und Experimente
+
+Wir verwenden Mixpanel, um zu verstehen, wie unsere Anwendung genutzt wird, und um sie zu verbessern. Die Anwendung sendet pseudonyme Nutzungsereignisse (z. B. aufgerufene Bildschirme, Onboarding-Schritte, Lernsitzungen, Fragen-IDs, richtige und falsche Antworten, Prüfungsergebnisse und Funktionsnutzung) zusammen mit einer zufällig erzeugten Kennung für die Installation, der Geräteplattform, App-Version, Sprache, dem ausgewählten Bundesland, dem Abonnementstatus und der Sitzungsdauer. Mixpanel kann aus Netzwerkinformationen eine ungefähre Region ableiten. Diese Daten werden an den europäischen Endpunkt von Mixpanel gesendet. Ein Benutzerkonto ist nicht erforderlich; Ihr Name oder Ihre E-Mail-Adresse werden nicht an Mixpanel übermittelt. Sie können die Nutzungsanalyse jederzeit in den Einstellungen der Anwendung deaktivieren.
+
+Wenn Sie die Anwendung installieren, nachdem Sie auf eine Apple-Ads-Anzeige getippt haben, erhält die Anwendung Attributionsdaten von Apple, z. B. Kampagnen- und Keyword-Kennungen, und speichert sie zusammen mit den Analysedaten.
+
+Wir verwenden Sentry, um Absturzberichte und Diagnosedaten (z. B. Gerätemodell, Betriebssystem, App-Version und Fehlerdetails) zu erhalten und Fehler beheben zu können, sowie GrowthBook, um Feature-Flags und Produktexperimente bereitzustellen.
+
+### Käufe und Abonnements
+
+Wir verwenden Adapty, um den Abonnementstatus zu verwalten. Adapty verarbeitet das gekaufte Produkt, Preis, Währung, Kauf- und Verlängerungsstatus sowie eine Kennung für die Installation.
+
+### Werbung in der Anwendung
+
+Die kostenlose Version der Anwendung zeigt Werbung über Google Mobile Ads (AdMob) an. Google kann Geräteinformationen, die Werbe-ID und Daten zur Interaktion mit Anzeigen verarbeiten, um Anzeigen auszuliefern und zu messen. Soweit erforderlich, werden Sie in einem Einwilligungsdialog nach Ihrer Auswahl gefragt. Die Werbe-ID (IDFA) wird nur dann für personalisierte Werbung verwendet, wenn Sie das Tracking in der iOS-Abfrage erlauben; andernfalls wird nicht personalisierte Werbung angefordert.
+
+### Werbemessung (Meta)
+
+Wir bewerben die Anwendung auf Facebook und Instagram und verwenden das Meta SDK, um zu messen, ob diese Anzeigen zu Installationen und zu Aktionen wie dem Abschluss des Onboardings, dem Start eines Probezeitraums oder dem Kauf eines Abonnements führen. Meta erhält dafür eine vom SDK für die Installation erzeugte Kennung, Geräte- und App-Informationen (z. B. Gerätemodell, Betriebssystem, App-Version, Sprache und Zeitzone), Ihre IP-Adresse sowie die genannten Ereignisse. Die Werbe-ID (IDFA) wird nur übermittelt, wenn Sie das Tracking in der iOS-Abfrage erlauben. Abonnementereignisse werden von Adapty an Meta weitergeleitet. Wenn Sie die Nutzungsanalyse in den Einstellungen der Anwendung deaktivieren, sendet die Anwendung auch keine Nutzungsereignisse mehr an Meta.
 
 ### Website-Analyse
 
@@ -90,7 +110,13 @@ In einigen Ausnahmefällen kann es uns nach geltendem Recht gestattet sein, Ihre
 Wir müssen Ihre persönlichen Informationen möglicherweise in folgenden Situationen teilen:
 
 *   **Geschäftsübertragungen.** Wir können Ihre Informationen im Zusammenhang mit oder während Verhandlungen über eine Fusion, den Verkauf von Unternehmensvermögen, die Finanzierung oder den Erwerb unseres gesamten oder eines Teils unseres Unternehmens an ein anderes Unternehmen weitergeben oder übertragen.
-*   **Dienstleister.** Wir können Dienstleister einsetzen, die uns beim Betrieb, der Sicherheit und der Analyse unserer Dienste unterstützen, einschließlich Umami Analytics für aggregierte Website-Nutzungsstatistiken.
+*   **Dienstleister.** Wir können Dienstleister einsetzen, die uns beim Betrieb, der Sicherheit und der Analyse unserer Dienste unterstützen, einschließlich Umami Analytics für aggregierte Website-Nutzungsstatistiken. In der mobilen Anwendung verwenden wir:
+    *   Mixpanel für pseudonyme Produktanalyse ([Datenschutzrichtlinie](https://mixpanel.com/legal/privacy-policy/))
+    *   Sentry für Absturzberichte und Fehlerdiagnose ([Datenschutzrichtlinie](https://sentry.io/privacy/))
+    *   GrowthBook für Feature-Flags und Produktexperimente ([Datenschutzrichtlinie](https://www.growthbook.io/legal/privacy))
+    *   Adapty für die Verwaltung von Abonnements ([Datenschutzrichtlinie](https://adapty.io/privacy))
+    *   Google Mobile Ads für die Anzeige von Werbung ([Datenschutzrichtlinie](https://policies.google.com/privacy))
+    *   Meta Platforms (Facebook SDK) für die Messung unserer Anzeigen auf Facebook und Instagram ([Datenschutzrichtlinie](https://www.facebook.com/privacy/policy/))
 *   **Offer Wall.** Unsere Anwendung(en) können eine von Dritten gehostete "Offer Wall" anzeigen. Wenn Sie auf eine Offer Wall klicken, werden Sie zu einer externen Website weitergeleitet, die anderen Personen gehört, und verlassen unsere Anwendung(en). Eine eindeutige Kennung, wie z. B. Ihre Benutzer-ID, wird mit dem Anbieter der Offer Wall geteilt, um Betrug zu verhindern und Ihrem Konto die entsprechende Belohnung gutzuschreiben.
 
 <h2 id="third-party">5. WIE IST UNSERE HALTUNG ZU WEBSITES DRITTER?</h2>
@@ -103,7 +129,7 @@ Die Dienste können auf Websites Dritter verlinken. Wir können die Sicherheit u
 
 **Kurz gesagt:** Wir können Ihre Informationen in anderen Ländern als Ihrem eigenen übertragen, speichern und verarbeiten.
 
-Wenn Sie im Europäischen Wirtschaftsraum (EWR), im Vereinigten Königreich (UK) oder in der Schweiz ansässig sind, verfügen diese Länder möglicherweise nicht über Datenschutzgesetze oder andere ähnliche Gesetze, die so umfassend sind wie die in Ihrem Land. Wir werden jedoch alle erforderlichen Maßnahmen ergreifen, um Ihre persönlichen Informationen gemäß dieser Datenschutzerklärung und geltendem Recht zu schützen.
+Wenn Sie im Europäischen Wirtschaftsraum (EWR), im Vereinigten Königreich (UK) oder in der Schweiz ansässig sind, verfügen diese Länder möglicherweise nicht über Datenschutzgesetze oder andere ähnliche Gesetze, die so umfassend sind wie die in Ihrem Land. Einige der in Abschnitt 4 genannten Dienstleister, z. B. Google, Meta, Adapty und GrowthBook, können Daten in den USA oder in anderen Ländern außerhalb des EWR verarbeiten. Wir werden jedoch alle erforderlichen Maßnahmen ergreifen, um Ihre persönlichen Informationen gemäß dieser Datenschutzerklärung und geltendem Recht zu schützen.
 
 <h2 id="retention">7. WIE LANGE BEWAHREN WIR IHRE INFORMATIONEN AUF?</h2>
 
@@ -120,6 +146,8 @@ Dazu können das Recht auf Zugang, Berichtigung, Löschung, Einschränkung der V
 Wenn Sie sich im EWR oder im UK befinden und glauben, dass wir Ihre persönlichen Informationen unrechtmäßig verarbeiten, haben Sie auch das Recht, sich bei Ihrer nationalen Datenschutzbehörde zu beschweren.
 
 **Widerruf Ihrer Einwilligung:** Sie haben das Recht, Ihre Einwilligung jederzeit zu widerrufen.
+
+**Ihre Wahlmöglichkeiten in der Anwendung:** Sie können die Nutzungsanalyse in den Einstellungen der Anwendung deaktivieren; damit sendet die Anwendung auch keine Nutzungsereignisse mehr an Meta. Das Tracking für die Anwendung können Sie jederzeit in den iOS-Einstellungen unter Datenschutz & Sicherheit > Tracking erlauben oder ablehnen.
 
 <h2 id="dnt">9. STEUERUNG FÜR DO-NOT-TRACK-FUNKTIONEN</h2>
 
