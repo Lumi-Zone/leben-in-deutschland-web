@@ -51,5 +51,8 @@ In der echten Prüfung kommen 3 landesbezogene Fragen vor. Sie gehören zu den 3
 ### Muss ich alle Bundesländer lernen?
 Nein. Für die Prüfung reicht Ihr eigenes Bundesland. Die anderen Bundesländer sind für Ihre Prüfung normalerweise nicht nötig.
 
+## Einbürgerungstest in Ihrer Stadt
+Konkrete Hinweise zu Prüfstellen, Anmeldung und zuständiger Behörde finden Sie für [Berlin](/de/blog/einbuergerungstest-berlin/), [Hamburg](/de/blog/einbuergerungstest-hamburg/), [München](/de/blog/einbuergerungstest-muenchen/) und [Frankfurt am Main](/de/blog/einbuergerungstest-frankfurt/).
+
 ## Nächster Schritt
 Lesen Sie auch **[Wie viele Fragen hat der Einbürgerungstest?](/de/blog/wie-viele-fragen-hat-der-einbuergerungstest/)** und **[Einbürgerungstest Themen 2026](/de/blog/wichtige-themengebiete/)**.
