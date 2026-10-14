@@ -600,5 +600,320 @@
     "otherOptions": "In a planned economy or a centrally directed economy, the state decides what is produced and what it costs – as in the GDR. A “free central economy” does not exist; free and centrally directed do not go together.",
     "memoryTip": "Market + social balance = social market economy.",
     "legalBasis": []
+  },
+  "51": {
+    "summary": "Arbitrary arrests by a private police force are not part of a state governed by the rule of law.",
+    "whyCorrect": "Only state authorities may arrest people, on a legal basis; a court must decide on any deprivation of liberty.",
+    "background": "In a democratic state governed by the rule of law, only the state has the right to use force and arrest people – and only when a law allows it. Article 104 of the Basic Law sets out exactly how this must happen: a judge decides on any longer deprivation of liberty, and anyone arrested must be brought before a court by the end of the following day at the latest. Private security services may not “arrest” anyone.",
+    "otherOptions": "Criticising the government and demonstrating peacefully are fundamental rights (freedom of expression and assembly). Arresting someone who has committed a crime is also in line with the rule of law – what matters is that there is a reason and the procedure follows the law.",
+    "memoryTip": "Look for “without reason” and “private police”: neither fits the rule of law.",
+    "legalBasis": [
+      {
+        "label": "Art. 104 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_104.html"
+      }
+    ]
+  },
+  "52": {
+    "summary": "Popular sovereignty means: all state authority is derived from the people.",
+    "whyCorrect": "This is stated in Article 20 of the Basic Law; the people are the source of all state power.",
+    "background": "Popular sovereignty means that the people are the “sovereign”, i.e. they hold the highest power in the state. Article 20(2) of the Basic Law says: “All state authority is derived from the people. It shall be exercised by the people through elections and other votes and through specific legislative, executive and judicial bodies.” So the people do not govern directly every day, but elect representatives who act on their behalf.",
+    "otherOptions": "The Bundestag exercises state authority, but it received this authority from the people – through elections. The Federal Constitutional Court checks that the Basic Law is respected, but it is not the source of state authority. There has been no Prussian king since 1918, and Prussia was dissolved in 1947.",
+    "memoryTip": "Sovereign = the boss. In a democracy, the boss is the people.",
+    "legalBasis": [
+      {
+        "label": "Art. 20 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_20.html"
+      }
+    ]
+  },
+  "53": {
+    "summary": "The rule of law means: the state must obey the laws.",
+    "whyCorrect": "The government, authorities and police are also bound by law and justice and can be reviewed by the courts.",
+    "background": "Under the rule of law, the law stands above everyone – including the state. Article 20(3) of the Basic Law binds the legislature to the constitution and the government, administration and courts to law and justice. If an authority acts against the law, those affected can go to independent courts. This is how the rule of law protects citizens from arbitrary action.",
+    "otherOptions": "“The state is right” is exactly the wrong way round: the state is not automatically right, it has to follow the law. The German word “Recht” (law) in “Rechtsstaat” has nothing to do with right-wing parties. Citizens deciding on laws directly describes direct democracy – at federal level, however, parliament passes the laws.",
+    "memoryTip": "Rechtsstaat does not mean “the state is right”, but “the state follows the law”.",
+    "legalBasis": [
+      {
+        "label": "Art. 20 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_20.html"
+      }
+    ]
+  },
+  "54": {
+    "summary": "“Directive” is not a power of the state.",
+    "whyCorrect": "The three powers of the state are the legislature, the executive and the judiciary.",
+    "background": "The Basic Law divides state power into three branches (separation of powers): the legislature makes the laws – the Bundestag and Bundesrat as well as the state parliaments. The executive carries out the laws – the government, ministries, authorities and police. The judiciary administers justice – the courts. The branches check each other so that nobody gains too much power.",
+    "otherOptions": "Legislature, judiciary and executive are the three real powers. “Directive” sounds similar but is an invented answer. You may know the word from EU law, where certain legal acts are called directives – but that is not a power of the state.",
+    "memoryTip": "Legislature = makes laws, executive = carries them out, judiciary = judges.",
+    "legalBasis": [
+      {
+        "label": "Art. 20 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_20.html"
+      }
+    ]
+  },
+  "55": {
+    "summary": "The picture shows the seat of the Bundestag in Berlin, the Reichstag building.",
+    "whyCorrect": "You can recognise it by its glass dome and the inscription “Dem deutschen Volke” (To the German people).",
+    "background": "The Bundestag meets in the Reichstag building in Berlin. The building was completed in 1894, burned in 1933 and was badly damaged in the Second World War. After reunification it was rebuilt and given the walk-in glass dome designed by the architect Norman Foster. The Bundestag has worked here since 1999. Above the entrance it says “Dem deutschen Volke” – a reminder that parliament serves the people.",
+    "otherOptions": "The Federal Constitutional Court is in Karlsruhe, in a low, modern building. The Bundesrat meets in the former Prussian House of Lords in Berlin, and the Federal Chancellery is a modern concrete and glass building opposite the Reichstag.",
+    "memoryTip": "Glass dome = Reichstag = Bundestag.",
+    "legalBasis": []
+  },
+  "56": {
+    "summary": "The public order office (Ordnungsamt) is part of the municipal administration.",
+    "whyCorrect": "It is responsible for public safety and order in the town or municipality.",
+    "background": "The Ordnungsamt is an authority of the town or municipality. It deals with public order locally: for example, it checks parking, follows up noise complaints, handles business registrations or markets and enforces rules such as dog regulations. Many cities have a municipal enforcement service for this. The Ordnungsamt works closely with the police.",
+    "otherOptions": "A parish office (Pfarramt) belongs to a church congregation, not to the state. The tax office (Finanzamt) is an authority of the federal state and collects taxes. The Federal Foreign Office (Auswärtiges Amt) is the federal foreign ministry in Berlin.",
+    "memoryTip": "Local order = the municipality’s Ordnungsamt.",
+    "legalBasis": [
+      {
+        "label": "Art. 28 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_28.html"
+      }
+    ]
+  },
+  "57": {
+    "summary": "Usually a member of the largest parliamentary group becomes President of the Bundestag.",
+    "whyCorrect": "This is a parliamentary tradition: the largest group nominates the President.",
+    "background": "The President of the Bundestag chairs the sessions of parliament, represents the Bundestag and exercises authority over the building. The President is elected by the members at the start of each legislative term. By long tradition, the largest parliamentary group nominates someone from its own ranks. Julia Klöckner (CDU) has been President of the Bundestag since 2025.",
+    "otherOptions": "The first session is opened by the “Father of the House” (Alterspräsident) – today the member with the longest service in the Bundestag. But they only chair the session until the President is elected. State Minister-Presidents are not members of the Bundestag, and former chancellors traditionally do not become President of the Bundestag.",
+    "memoryTip": "Largest group → usually provides both the Chancellor and the President of the Bundestag.",
+    "legalBasis": [
+      {
+        "label": "Art. 40 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_40.html"
+      }
+    ]
+  },
+  "58": {
+    "summary": "Federal ministers are appointed by the Federal President.",
+    "whyCorrect": "The President acts on the proposal of the Federal Chancellor (Article 64 of the Basic Law).",
+    "background": "The federal government consists of the Federal Chancellor and the federal ministers. The Chancellor decides who becomes a minister, usually in agreement with the coalition partners. The ministers are then formally appointed by the Federal President, who hands them their certificate of appointment. They then take their oath of office in the Bundestag.",
+    "otherOptions": "The President of the Federal Constitutional Court heads the court and has nothing to do with forming the government. The President of the Bundesrat chairs the Bundesrat, the President of the Bundestag chairs the sessions of the Bundestag – neither appoints ministers.",
+    "memoryTip": "The Chancellor proposes – the President appoints.",
+    "legalBasis": [
+      {
+        "label": "Art. 64 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_64.html"
+      }
+    ]
+  },
+  "59": {
+    "summary": "The first Jewish community on the territory of today’s Germany is about 1,700 years old.",
+    "whyCorrect": "A decree by the Roman emperor Constantine from the year 321 mentions Jews in Cologne.",
+    "background": "In 321, the Roman emperor Constantine issued a law allowing Jews in Cologne to be appointed to the city council. This is the oldest written evidence of Jewish life north of the Alps. That is why in 2021 the festival year “1700 Years of Jewish Life in Germany” was celebrated throughout the country. Jewish life has thus been part of the history of this country for almost two millennia – despite persecution in the Middle Ages and the genocide under National Socialism.",
+    "otherOptions": "300, 700 and 1,150 years are too short. In the Middle Ages, for example, there were already important Jewish communities in Speyer, Worms and Mainz – but the first traces are much older and date back to Roman times.",
+    "memoryTip": "321 AD, Cologne, Emperor Constantine → about 1,700 years.",
+    "legalBasis": []
+  },
+  "60": {
+    "summary": "The Bundestag and the Bundesrat belong to the legislature.",
+    "whyCorrect": "They are the federal law-making bodies.",
+    "background": "Legislature means the law-making power. At federal level, the Bundestag passes the laws. The Bundesrat, in which the governments of the 16 states are represented, takes part in this: some laws require its consent, for others it can raise an objection. This way the states have a say in federal legislation.",
+    "otherOptions": "The executive carries out laws (government and administration), the judiciary administers justice (courts). “Directive” is not one of the three powers.",
+    "memoryTip": "Bundestag and Bundesrat make laws → legislature (Latin “lex” = law).",
+    "legalBasis": [
+      {
+        "label": "Art. 50 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_50.html"
+      },
+      {
+        "label": "Art. 77 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_77.html"
+      }
+    ]
+  },
+  "61": {
+    "summary": "Popular sovereignty means: state authority is derived from the people.",
+    "whyCorrect": "The people are the source of state power and exercise it mainly through elections (Article 20 of the Basic Law).",
+    "background": "This question asks the same as question 52, just with different answers. Popular sovereignty means: the sovereign is not a king, not a party and not a court, but the people. In elections, they decide who sits in parliament and thus who governs. In some federal states and municipalities, the people can also vote directly in referendums.",
+    "otherOptions": "A king ruling over the people is the opposite of popular sovereignty. The Federal Constitutional Court does not stand above the constitution, it is bound by it. Interest groups such as trade unions or employers’ associations may represent their interests, but they have no state authority.",
+    "memoryTip": "People + sovereign = the people decide.",
+    "legalBasis": [
+      {
+        "label": "Art. 20 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_20.html"
+      }
+    ]
+  },
+  "62": {
+    "summary": "The election of a federal state’s parliament is called a state election (Landtagswahl).",
+    "whyCorrect": "In most states the state parliament is called the Landtag.",
+    "background": "Each federal state has its own parliament. In 13 states it is called Landtag, in Berlin Abgeordnetenhaus and in Hamburg and Bremen Bürgerschaft. State elections usually take place every five years, in Bremen every four years. The elected Landtag passes state laws, for example on schools and the police, and elects the Minister-President.",
+    "otherOptions": "In a local election (Kommunalwahl) you elect the council of a town, municipality or district. In the European election you elect the European Parliament, in the federal election the Bundestag.",
+    "memoryTip": "Land (state) → Landtag → Landtagswahl.",
+    "legalBasis": []
+  },
+  "63": {
+    "summary": "The courts are not part of the executive but of the judiciary.",
+    "whyCorrect": "The police, tax office and ministries carry out laws and are therefore part of the executive.",
+    "background": "Executive means the power that carries out the laws. It includes the federal and state governments with their ministries and all authorities that apply laws in everyday life – for example the police, the tax office, the job centre or the citizens’ office. The courts, on the other hand, form a separate power, the judiciary. Judges are independent and subject only to the law (Article 97 of the Basic Law).",
+    "otherOptions": "The police, the tax office and ministries are typical examples of the executive: they apply laws. Courts, by contrast, decide disputes and can also review decisions made by the executive.",
+    "memoryTip": "The executive carries out, the judiciary judges – courts judge.",
+    "legalBasis": [
+      {
+        "label": "Art. 20 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_20.html"
+      },
+      {
+        "label": "Art. 97 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_97.html"
+      }
+    ]
+  },
+  "64": {
+    "summary": "Today Germany is divided into the federation, the states and the municipalities.",
+    "whyCorrect": "These are the three levels of the state: the country as a whole, the 16 federal states and the towns, municipalities and districts.",
+    "background": "Germany has a three-level structure. The federation is responsible for matters that concern the whole country, such as foreign policy, defence and currency. The 16 states deal with, for example, schools, the police and universities. The municipalities – towns, municipalities and districts – handle local matters such as nurseries, waste collection or citizens’ offices. The Basic Law guarantees municipalities the right to self-government (Article 28).",
+    "otherOptions": "There were four occupation zones after the Second World War, from 1945 to 1949. There was an eastern and a western state (GDR and Federal Republic) from 1949 to 1990. Cantons exist in Switzerland, not in Germany.",
+    "memoryTip": "Three levels: federation – states – municipalities.",
+    "legalBasis": [
+      {
+        "label": "Art. 20 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_20.html"
+      },
+      {
+        "label": "Art. 28 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_28.html"
+      }
+    ]
+  },
+  "65": {
+    "summary": "Forming the federal cabinet is not a task of the Bundestag.",
+    "whyCorrect": "The Chancellor selects the ministers; they are appointed by the Federal President.",
+    "background": "The Bundestag has three main tasks: it passes laws and can introduce bills itself, it scrutinises the federal government, and it elects the Federal Chancellor (Article 63). The cabinet – the federal government made up of the Chancellor and ministers – is put together by the Chancellor. The Federal President appoints the ministers on the Chancellor’s proposal.",
+    "otherOptions": "Drafting laws, scrutinising the government and electing the Chancellor are tasks of the Bundestag. Scrutiny happens, for example, through question time, parliamentary questions and committees of inquiry.",
+    "memoryTip": "The Bundestag elects the Chancellor – the Chancellor forms the cabinet.",
+    "legalBasis": [
+      {
+        "label": "Art. 63 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_63.html"
+      },
+      {
+        "label": "Art. 64 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_64.html"
+      }
+    ]
+  },
+  "66": {
+    "summary": "The largest Jewish communities in Germany are in Berlin and Munich.",
+    "whyCorrect": "Each of these cities has several thousand members of Jewish communities.",
+    "background": "Today around 90,000 people in Germany are members of a Jewish community; many came from the former Soviet Union after 1990. The largest communities are the Jewish Community of Berlin and the Israelite Religious Community of Munich and Upper Bavaria. Munich has had the large Ohel Jakob Synagogue in the city centre since 2006, and Berlin has the New Synagogue with its golden dome.",
+    "otherOptions": "Hamburg, Essen, Nuremberg and Stuttgart also have Jewish communities, but smaller ones. Worms and Speyer are a trap: together with Mainz they were the most important Jewish centres in the Middle Ages (the “ShUM cities”, now a UNESCO World Heritage Site), but today they have only small communities.",
+    "memoryTip": "Germany’s largest cities, Berlin and Munich, also have the largest communities.",
+    "legalBasis": []
+  },
+  "67": {
+    "summary": "School policy is mainly a task of the federal states.",
+    "whyCorrect": "Education is part of the states’ cultural sovereignty; defence and foreign policy are federal matters.",
+    "background": "Under the Basic Law, the states are responsible for everything that is not expressly assigned to the federation (Articles 30 and 70). This includes in particular schools, universities, the police and culture. That is why each state has its own school laws, curricula and holiday dates. The states coordinate in the Standing Conference of Ministers of Education so that qualifications are recognised throughout Germany.",
+    "otherOptions": "Defence and foreign policy are exclusively federal tasks (Article 73) – there is only one Bundeswehr and one Federal Foreign Office. Economic policy is mainly made by the federation and the EU; the states have only smaller responsibilities there.",
+    "memoryTip": "Schools = a matter for the states.",
+    "legalBasis": [
+      {
+        "label": "Art. 30 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_30.html"
+      },
+      {
+        "label": "Art. 70 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_70.html"
+      }
+    ]
+  },
+  "68": {
+    "summary": "The state supervises the school system because the Basic Law makes this its task.",
+    "whyCorrect": "Article 7 states: “The entire school system shall be under the supervision of the state.”",
+    "background": "According to Article 7(1) of the Basic Law, the entire school system is under the supervision of the state – in practice, the federal states. The state decides what is taught, trains teachers and ensures that qualifications are comparable. This supervision also applies to private schools: they are allowed (Article 7(4)), but need state approval and must offer equivalent education. Germany also has compulsory schooling.",
+    "otherOptions": "Germany does not have only state schools; there are also private schools, such as church schools or Waldorf schools. Not all pupils must obtain a qualification – there is compulsory schooling, but no obligation to graduate. The fact that states have different schools is a result of state responsibility, not the reason for supervision.",
+    "memoryTip": "Why? Because it is in the Basic Law – Article 7.",
+    "legalBasis": [
+      {
+        "label": "Art. 7 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_7.html"
+      }
+    ]
+  },
+  "69": {
+    "summary": "The lowest political level in Germany is the municipalities.",
+    "whyCorrect": "The administrative structure has three levels: the federation, the states and the municipalities.",
+    "background": "Municipalities (Gemeinden) are the smallest political units with their own self-government (Article 28 of the Basic Law). They handle local matters: nurseries, local roads, cemeteries, citizens’ offices or waste collection. In local elections, residents elect the municipal or city council and in most states also elect the mayor directly.",
+    "otherOptions": "City councils (Stadträte) are the elected bodies of a city – an organ of the municipality, not the level itself. District administrators (Landräte) head a rural district, and district offices (Bezirksämter) are the administrations of the districts in Berlin and Hamburg. None of these is the name of the lowest level.",
+    "memoryTip": "Federation – state – municipality: the municipality is at the bottom and closest to the people.",
+    "legalBasis": [
+      {
+        "label": "Art. 28 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_28.html"
+      }
+    ]
+  },
+  "70": {
+    "summary": "The Federal President proposes the Chancellor to the Bundestag for election.",
+    "whyCorrect": "This is set out in Article 63 of the Basic Law; the Bundestag then holds the vote.",
+    "background": "The photo shows Federal President Gustav Heinemann handing Helmut Schmidt his certificate of appointment as Federal Chancellor in 1974. After a federal election, the Federal President – usually after talks with the parties – proposes a person to the Bundestag for election as Chancellor. Once elected, the President appoints them. Other tasks of the Federal President: signing laws, appointing and dismissing ministers, representing Germany under international law and receiving state guests.",
+    "otherOptions": "The Federal Chancellor and the ministers run the government, not the Federal President. Scrutinising the governing party is mainly the job of parliament and the opposition. The Chancellor selects the ministers; the President only formally appoints them.",
+    "memoryTip": "The President proposes and appoints – the Chancellor governs.",
+    "legalBasis": [
+      {
+        "label": "Art. 63 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_63.html"
+      }
+    ]
+  },
+  "71": {
+    "summary": "The Federal Chancellor spends most of their time in Berlin.",
+    "whyCorrect": "That is where the Federal Chancellery and the Bundestag are located.",
+    "background": "Since parliament and government moved from Bonn, the Federal Chancellor has worked in Berlin. The Federal Chancellery is in the government district directly opposite the Reichstag building, where the Bundestag meets. Cabinet meetings take place there and the Chancellor has their office there. The Bundestag moved to Berlin in 1999, and the Chancellery moved into its new building in 2001.",
+    "otherOptions": "Bonn was the capital until 1990 and the seat of parliament and government until 1999. Today Bonn is a “Federal City” and still has some ministries, but neither the Chancellery nor the Bundestag. Meseberg Palace is the federal government’s guest house, and Bellevue Palace is the official residence of the Federal President – the Chancellor is only there for special occasions.",
+    "memoryTip": "Capital Berlin: Bundestag, Chancellery, Federal President – all there.",
+    "legalBasis": []
+  },
+  "72": {
+    "summary": "The current Federal Chancellor is Friedrich Merz.",
+    "whyCorrect": "Friedrich Merz (CDU) was elected Federal Chancellor by the Bundestag in May 2025.",
+    "background": "Friedrich Merz has been Federal Chancellor since 6 May 2025. He leads a coalition of the CDU/CSU and the SPD, formed after the federal election in February 2025. The Federal Chancellor determines the general guidelines of policy and is responsible for them (Article 65 of the Basic Law). The Chancellor is elected by the Bundestag, not directly by the people.",
+    "otherOptions": "Gerhard Schröder (SPD) was Federal Chancellor from 1998 to 2005, Angela Merkel (CDU) from 2005 to 2021 – the first woman in this office. Olaf Scholz (SPD) governed between Merkel and Merz. Ursula von der Leyen was a federal minister and has been President of the European Commission since 2019.",
+    "memoryTip": "As of 2025: Chancellor Merz. If this changes, the official question catalogue applies in the test.",
+    "legalBasis": [
+      {
+        "label": "Art. 65 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_65.html"
+      }
+    ]
+  },
+  "73": {
+    "summary": "The two largest parliamentary groups in the Bundestag are currently the CDU/CSU and the AfD.",
+    "whyCorrect": "After the 2025 federal election, the CDU/CSU has the most members and the AfD the second most.",
+    "background": "A parliamentary group (Fraktion) is the association of a party’s members in the Bundestag (or of two allied parties such as the CDU and CSU). In the federal election in February 2025, the Union of CDU and CSU became the strongest force and the AfD the second strongest. They are followed by the SPD, Alliance 90/The Greens and The Left. The CDU/CSU and SPD govern, which makes the AfD the largest opposition group.",
+    "otherOptions": "The Left and the Greens are the smallest groups in the current Bundestag. The SPD is the third-largest force and the Union’s coalition partner. The combination “The Left and CDU/CSU” is also wrong.",
+    "memoryTip": "As of the 2025 federal election: 1st CDU/CSU, 2nd AfD. This may change after the next election.",
+    "legalBasis": []
+  },
+  "74": {
+    "summary": "The parliament for the whole of Germany is called the Bundestag.",
+    "whyCorrect": "The German Bundestag is the elected representative body at federal level.",
+    "background": "The Bundestag is usually elected every four years by eligible German citizens and has had 630 members since the 2025 election. It passes federal laws, elects the Federal Chancellor, adopts the federal budget and scrutinises the government. It meets in the Reichstag building in Berlin.",
+    "otherOptions": "The Federal Convention only meets to elect the Federal President. The Volkskammer (People’s Chamber) was the parliament of the GDR. The Federal Court of Justice in Karlsruhe is not a parliament but Germany’s highest court for civil and criminal cases.",
+    "memoryTip": "Bund (federation) + Tag (assembly) = Bundestag.",
+    "legalBasis": [
+      {
+        "label": "Art. 38 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_38.html"
+      }
+    ]
+  },
+  "75": {
+    "summary": "Germany’s current head of state is Frank-Walter Steinmeier.",
+    "whyCorrect": "Frank-Walter Steinmeier has been Federal President since 2017 and was re-elected in 2022.",
+    "background": "In Germany, the head of state is the Federal President. Frank-Walter Steinmeier (SPD) was elected by the Federal Convention in 2017 and confirmed for a second term in 2022. He previously served, among other things, as foreign minister. The Federal President’s role is mainly representative: he represents Germany abroad, signs laws and appoints the Chancellor and the ministers. A term lasts five years; only one re-election is possible.",
+    "otherOptions": "Joachim Gauck was Federal President from 2012 to 2017, i.e. Steinmeier’s predecessor. Bärbel Bas was President of the Bundestag from 2021 to 2025 and has been Federal Minister of Labour and Social Affairs since 2025. Bodo Ramelow was Minister-President of Thuringia.",
+    "memoryTip": "As of 2025: Federal President Steinmeier. The official question catalogue applies in the test.",
+    "legalBasis": [
+      {
+        "label": "Art. 54 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_54.html"
+      }
+    ]
   }
 }

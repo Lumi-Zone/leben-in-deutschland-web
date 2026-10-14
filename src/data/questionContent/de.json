@@ -600,5 +600,320 @@
     "otherOptions": "In einer Planwirtschaft oder gelenkten Zentralwirtschaft bestimmt der Staat, was produziert wird und was es kostet – so war es in der DDR. Eine „freie Zentralwirtschaft“ gibt es nicht; frei und zentral gelenkt passen nicht zusammen.",
     "memoryTip": "Markt + sozialer Ausgleich = soziale Marktwirtschaft.",
     "legalBasis": []
+  },
+  "51": {
+    "summary": "Willkürliche Verhaftungen durch eine Privatpolizei gehören nicht zu einem Rechtsstaat.",
+    "whyCorrect": "Festnehmen dürfen nur staatliche Stellen auf gesetzlicher Grundlage; über eine Freiheitsentziehung muss ein Gericht entscheiden.",
+    "background": "In einem demokratischen Rechtsstaat hat nur der Staat das Recht, Gewalt anzuwenden und Menschen festzunehmen – und auch er nur, wenn ein Gesetz es erlaubt. Artikel 104 des Grundgesetzes regelt genau, wie das ablaufen muss: Über jede längere Freiheitsentziehung entscheidet ein Richter oder eine Richterin, und wer festgenommen wird, muss spätestens am Ende des nächsten Tages einem Gericht vorgeführt werden. Private Sicherheitsdienste dürfen niemanden „verhaften“.",
+    "otherOptions": "Kritik an der Regierung und friedliche Demonstrationen sind Grundrechte (Meinungs- und Versammlungsfreiheit). Dass jemand nach einem Verbrechen verhaftet wird, ist ebenfalls rechtsstaatlich – entscheidend ist, dass es einen Grund gibt und das Verfahren dem Gesetz folgt.",
+    "memoryTip": "Achte auf „ohne Grund“ und „Privatpolizei“: Beides passt nicht zum Rechtsstaat.",
+    "legalBasis": [
+      {
+        "label": "Art. 104 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_104.html"
+      }
+    ]
+  },
+  "52": {
+    "summary": "Volkssouveränität heißt: Alle Staatsgewalt geht vom Volke aus.",
+    "whyCorrect": "So steht es in Artikel 20 des Grundgesetzes; das Volk ist die Quelle aller staatlichen Macht.",
+    "background": "Volkssouveränität bedeutet, dass das Volk der „Souverän“ ist, also die höchste Macht im Staat hat. Artikel 20 Absatz 2 des Grundgesetzes sagt: „Alle Staatsgewalt geht vom Volke aus. Sie wird vom Volke in Wahlen und Abstimmungen und durch besondere Organe der Gesetzgebung, der vollziehenden Gewalt und der Rechtsprechung ausgeübt.“ Das Volk regiert also nicht selbst jeden Tag, sondern wählt Vertreterinnen und Vertreter, die in seinem Namen handeln.",
+    "otherOptions": "Der Bundestag übt Staatsgewalt aus, aber er hat sie vom Volk bekommen – durch Wahlen. Das Bundesverfassungsgericht kontrolliert, ob das Grundgesetz eingehalten wird, ist aber nicht die Quelle der Staatsgewalt. Einen preußischen König gibt es seit 1918 nicht mehr, und Preußen wurde 1947 aufgelöst.",
+    "memoryTip": "Souverän = der Chef. In der Demokratie ist der Chef das Volk.",
+    "legalBasis": [
+      {
+        "label": "Art. 20 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_20.html"
+      }
+    ]
+  },
+  "53": {
+    "summary": "Rechtsstaat heißt: Der Staat muss die Gesetze einhalten.",
+    "whyCorrect": "Auch Regierung, Behörden und Polizei sind an Recht und Gesetz gebunden und können vor Gericht überprüft werden.",
+    "background": "Im Rechtsstaat steht das Recht über allen – auch über dem Staat. Artikel 20 Absatz 3 des Grundgesetzes bindet die Gesetzgebung an die Verfassung und Regierung, Verwaltung und Gerichte an Recht und Gesetz. Wenn eine Behörde gegen das Gesetz handelt, können Betroffene vor unabhängigen Gerichten klagen. So schützt der Rechtsstaat die Bürgerinnen und Bürger vor Willkür.",
+    "otherOptions": "„Der Staat hat Recht“ ist genau falsch herum: Der Staat hat nicht automatisch Recht, sondern muss sich an das Recht halten. Das Wort „rechts“ in „Rechtsstaat“ hat nichts mit rechten Parteien zu tun. Dass die Bürger direkt über Gesetze entscheiden, beschreibt direkte Demokratie – im Bund beschließt aber das Parlament die Gesetze.",
+    "memoryTip": "Rechtsstaat ≠ „Staat hat Recht“. Rechtsstaat = Staat hält sich ans Recht.",
+    "legalBasis": [
+      {
+        "label": "Art. 20 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_20.html"
+      }
+    ]
+  },
+  "54": {
+    "summary": "„Direktive“ ist keine staatliche Gewalt.",
+    "whyCorrect": "Die drei staatlichen Gewalten heißen Legislative, Exekutive und Judikative.",
+    "background": "Das Grundgesetz teilt die Staatsgewalt in drei Teile (Gewaltenteilung): Die Legislative macht die Gesetze – das sind Bundestag und Bundesrat sowie die Landtage. Die Exekutive führt die Gesetze aus – das sind Regierung, Ministerien, Behörden und Polizei. Die Judikative spricht Recht – das sind die Gerichte. Die Gewalten kontrollieren sich gegenseitig, damit niemand zu viel Macht bekommt.",
+    "otherOptions": "Legislative, Judikative und Exekutive sind die drei echten Gewalten. „Direktive“ klingt ähnlich, ist aber eine erfundene Antwort. Das Wort kennt man höchstens aus dem EU-Recht, wo eine Richtlinie auf Englisch „directive“ heißt – eine Staatsgewalt ist das nicht.",
+    "memoryTip": "Legislative = Gesetze machen, Exekutive = ausführen, Judikative = urteilen.",
+    "legalBasis": [
+      {
+        "label": "Art. 20 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_20.html"
+      }
+    ]
+  },
+  "55": {
+    "summary": "Das Bild zeigt den Sitz des Bundestages in Berlin, das Reichstagsgebäude.",
+    "whyCorrect": "Man erkennt es an der gläsernen Kuppel und der Inschrift „Dem deutschen Volke“.",
+    "background": "Der Bundestag tagt im Reichstagsgebäude in Berlin. Das Gebäude wurde 1894 fertiggestellt, brannte 1933 und wurde im Zweiten Weltkrieg schwer beschädigt. Nach der Wiedervereinigung wurde es umgebaut und bekam die begehbare Glaskuppel des Architekten Norman Foster. Seit 1999 arbeitet der Bundestag hier. Über dem Eingang steht „Dem deutschen Volke“ – ein Hinweis darauf, dass das Parlament dem Volk dient.",
+    "otherOptions": "Das Bundesverfassungsgericht sitzt in Karlsruhe in einem flachen, modernen Gebäude. Der Bundesrat tagt im ehemaligen Preußischen Herrenhaus in Berlin, das Bundeskanzleramt ist ein moderner Bau aus Beton und Glas gegenüber dem Reichstag.",
+    "memoryTip": "Glaskuppel = Reichstag = Bundestag.",
+    "legalBasis": []
+  },
+  "56": {
+    "summary": "Das Ordnungsamt gehört zur Gemeindeverwaltung.",
+    "whyCorrect": "Es sorgt in der Stadt oder Gemeinde für öffentliche Sicherheit und Ordnung.",
+    "background": "Das Ordnungsamt ist eine Behörde der Stadt oder Gemeinde. Es kümmert sich um die öffentliche Ordnung vor Ort: Es kontrolliert zum Beispiel das Parken, geht Lärmbeschwerden nach, ist für Gewerbeanmeldungen oder Märkte zuständig und überwacht Regeln wie das Hundegesetz. In vielen Städten gibt es dafür einen kommunalen Ordnungsdienst. Mit der Polizei arbeitet das Ordnungsamt eng zusammen.",
+    "otherOptions": "Das Pfarramt gehört zu einer Kirchengemeinde, nicht zum Staat. Das Finanzamt ist eine Behörde des Bundeslandes und zieht Steuern ein. Das Auswärtige Amt ist das Außenministerium des Bundes in Berlin.",
+    "memoryTip": "Ordnung vor Ort = Ordnungsamt der Gemeinde.",
+    "legalBasis": [
+      {
+        "label": "Art. 28 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_28.html"
+      }
+    ]
+  },
+  "57": {
+    "summary": "Meistens wird ein Abgeordneter oder eine Abgeordnete der stärksten Fraktion Bundestagspräsident.",
+    "whyCorrect": "Das ist eine parlamentarische Tradition: Die größte Fraktion schlägt den Präsidenten oder die Präsidentin vor.",
+    "background": "Der Bundestagspräsident oder die Bundestagspräsidentin leitet die Sitzungen des Parlaments, vertritt den Bundestag nach außen und hat das Hausrecht im Gebäude. Gewählt wird er oder sie von den Abgeordneten zu Beginn jeder Wahlperiode. Nach einer langen Tradition schlägt die stärkste Fraktion eine Person aus ihren Reihen vor. Seit 2025 ist Julia Klöckner (CDU) Bundestagspräsidentin.",
+    "otherOptions": "Die erste Sitzung eröffnet der Alterspräsident – das ist heute der Abgeordnete mit der längsten Zugehörigkeit zum Bundestag. Er leitet aber nur, bis der Präsident gewählt ist. Ministerpräsidenten der Länder sind keine Bundestagsabgeordneten, und ehemalige Kanzler werden traditionell nicht Bundestagspräsident.",
+    "memoryTip": "Stärkste Fraktion → stellt meist den Kanzler und den Bundestagspräsidenten.",
+    "legalBasis": [
+      {
+        "label": "Art. 40 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_40.html"
+      }
+    ]
+  },
+  "58": {
+    "summary": "Die Bundesministerinnen und Bundesminister ernennt der Bundespräsident oder die Bundespräsidentin.",
+    "whyCorrect": "Er oder sie handelt auf Vorschlag des Bundeskanzlers oder der Bundeskanzlerin (Artikel 64 Grundgesetz).",
+    "background": "Die Bundesregierung besteht aus dem Bundeskanzler oder der Bundeskanzlerin und den Bundesministerinnen und -ministern. Wer Minister wird, entscheidet der Kanzler oder die Kanzlerin, meist nach Absprache mit den Koalitionspartnern. Formal ernannt werden die Ministerinnen und Minister dann vom Bundespräsidenten, der ihnen die Ernennungsurkunde überreicht. Danach legen sie im Bundestag ihren Amtseid ab.",
+    "otherOptions": "Die Präsidentin oder der Präsident des Bundesverfassungsgerichts leitet das Gericht und hat mit der Regierungsbildung nichts zu tun. Der Bundesratspräsident leitet den Bundesrat, der Bundestagspräsident die Sitzungen des Bundestages – Minister ernennen beide nicht.",
+    "memoryTip": "Kanzler schlägt vor – Präsident ernennt.",
+    "legalBasis": [
+      {
+        "label": "Art. 64 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_64.html"
+      }
+    ]
+  },
+  "59": {
+    "summary": "Die erste jüdische Gemeinde auf dem Gebiet des heutigen Deutschlands ist rund 1700 Jahre alt.",
+    "whyCorrect": "Ein Erlass des römischen Kaisers Konstantin aus dem Jahr 321 erwähnt Juden in Köln.",
+    "background": "Im Jahr 321 erließ der römische Kaiser Konstantin ein Gesetz, das Juden in Köln erlaubte, in den Stadtrat berufen zu werden. Das ist der älteste schriftliche Beleg für jüdisches Leben nördlich der Alpen. 2021 wurde deshalb in ganz Deutschland das Festjahr „1700 Jahre jüdisches Leben in Deutschland“ gefeiert. Jüdisches Leben gehört also seit fast zwei Jahrtausenden zur Geschichte dieses Landes – trotz Verfolgung im Mittelalter und dem Völkermord im Nationalsozialismus.",
+    "otherOptions": "300, 700 und 1150 Jahre sind zu kurz. Im Mittelalter gab es zum Beispiel schon bedeutende jüdische Gemeinden in Speyer, Worms und Mainz – die ersten Spuren sind aber noch viel älter und stammen aus der Römerzeit.",
+    "memoryTip": "321 nach Christus, Köln, Kaiser Konstantin → rund 1700 Jahre.",
+    "legalBasis": []
+  },
+  "60": {
+    "summary": "Bundestag und Bundesrat gehören zur Legislative.",
+    "whyCorrect": "Sie sind die gesetzgebenden Organe des Bundes.",
+    "background": "Legislative heißt gesetzgebende Gewalt. Auf Bundesebene beschließt der Bundestag die Gesetze. Der Bundesrat, in dem die Regierungen der 16 Länder vertreten sind, wirkt dabei mit: Bei manchen Gesetzen muss er zustimmen, bei anderen kann er Einspruch einlegen. So können die Länder bei der Gesetzgebung des Bundes mitentscheiden.",
+    "otherOptions": "Die Exekutive führt Gesetze aus (Regierung und Verwaltung), die Judikative spricht Recht (Gerichte). „Direktive“ ist keine der drei Gewalten.",
+    "memoryTip": "Bundestag und Bundesrat machen Gesetze → Legislative (lateinisch „lex“ = Gesetz).",
+    "legalBasis": [
+      {
+        "label": "Art. 50 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_50.html"
+      },
+      {
+        "label": "Art. 77 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_77.html"
+      }
+    ]
+  },
+  "61": {
+    "summary": "Volkssouveränität bedeutet: Die Staatsgewalt geht vom Volke aus.",
+    "whyCorrect": "Das Volk ist die Quelle der staatlichen Macht und übt sie vor allem durch Wahlen aus (Artikel 20 Grundgesetz).",
+    "background": "Diese Frage fragt dasselbe wie Frage 52, nur mit anderen Antworten. Volkssouveränität heißt: Nicht ein König, nicht eine Partei und nicht ein Gericht ist der Souverän, sondern das Volk. In Wahlen bestimmt es, wer im Parlament sitzt und damit, wer regiert. In einigen Bundesländern und Gemeinden kann das Volk außerdem durch Volksentscheide oder Bürgerentscheide direkt abstimmen.",
+    "otherOptions": "Ein König, der über das Volk herrscht, ist das Gegenteil von Volkssouveränität. Das Bundesverfassungsgericht steht nicht über der Verfassung, sondern ist an sie gebunden. Interessenverbände wie Gewerkschaften oder Arbeitgeberverbände dürfen ihre Interessen vertreten, haben aber keine Staatsgewalt.",
+    "memoryTip": "Volk + Souverän = das Volk bestimmt.",
+    "legalBasis": [
+      {
+        "label": "Art. 20 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_20.html"
+      }
+    ]
+  },
+  "62": {
+    "summary": "Die Wahl zum Parlament eines Bundeslandes heißt Landtagswahl.",
+    "whyCorrect": "Das Landesparlament heißt in den meisten Ländern Landtag.",
+    "background": "Jedes Bundesland hat ein eigenes Parlament. In 13 Ländern heißt es Landtag, in Berlin Abgeordnetenhaus und in Hamburg und Bremen Bürgerschaft. Die Landtagswahl findet meist alle fünf Jahre statt, in Bremen alle vier Jahre. Der gewählte Landtag beschließt die Landesgesetze, zum Beispiel zu Schulen und Polizei, und wählt den Ministerpräsidenten oder die Ministerpräsidentin.",
+    "otherOptions": "Bei der Kommunalwahl wählt man die Vertretung der Stadt, Gemeinde oder des Landkreises. Bei der Europawahl wählt man das Europäische Parlament, bei der Bundestagswahl den Bundestag.",
+    "memoryTip": "Land → Landtag → Landtagswahl.",
+    "legalBasis": []
+  },
+  "63": {
+    "summary": "Die Gerichte gehören nicht zur Exekutive, sondern zur Judikative.",
+    "whyCorrect": "Polizei, Finanzamt und Ministerien führen Gesetze aus und sind deshalb Teil der Exekutive.",
+    "background": "Exekutive heißt ausführende Gewalt. Dazu gehören die Regierungen von Bund und Ländern mit ihren Ministerien und alle Behörden, die Gesetze im Alltag umsetzen – zum Beispiel die Polizei, das Finanzamt, das Jobcenter oder das Bürgeramt. Die Gerichte dagegen bilden eine eigene Gewalt, die Judikative. Richterinnen und Richter sind unabhängig und nur dem Gesetz unterworfen (Artikel 97 Grundgesetz).",
+    "otherOptions": "Polizei, Finanzamt und Ministerien sind typische Beispiele für die Exekutive: Sie wenden Gesetze an. Gerichte entscheiden dagegen Streitfälle und können auch Entscheidungen der Exekutive überprüfen.",
+    "memoryTip": "Exekutive führt aus, Judikative urteilt – Gerichte urteilen.",
+    "legalBasis": [
+      {
+        "label": "Art. 20 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_20.html"
+      },
+      {
+        "label": "Art. 97 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_97.html"
+      }
+    ]
+  },
+  "64": {
+    "summary": "Deutschland ist heute in Bund, Länder und Kommunen gegliedert.",
+    "whyCorrect": "Das sind die drei Ebenen des Staates: der Gesamtstaat, die 16 Bundesländer und die Städte, Gemeinden und Landkreise.",
+    "background": "Deutschland hat einen Aufbau in drei Ebenen. Der Bund ist für Aufgaben zuständig, die das ganze Land betreffen, etwa Außenpolitik, Verteidigung und Währung. Die 16 Länder kümmern sich zum Beispiel um Schulen, Polizei und Hochschulen. Die Kommunen – Städte, Gemeinden und Landkreise – regeln die Angelegenheiten vor Ort, etwa Kindergärten, Müllabfuhr oder Bürgerämter. Das Grundgesetz garantiert den Gemeinden das Recht auf Selbstverwaltung (Artikel 28).",
+    "otherOptions": "Vier Besatzungszonen gab es nach dem Zweiten Weltkrieg von 1945 bis 1949. Einen Ost- und einen Weststaat (DDR und Bundesrepublik) gab es von 1949 bis 1990. Kantone gibt es in der Schweiz, nicht in Deutschland.",
+    "memoryTip": "Drei Ebenen: Bund – Länder – Kommunen.",
+    "legalBasis": [
+      {
+        "label": "Art. 20 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_20.html"
+      },
+      {
+        "label": "Art. 28 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_28.html"
+      }
+    ]
+  },
+  "65": {
+    "summary": "Das Bundeskabinett zu bilden ist keine Aufgabe des Bundestages.",
+    "whyCorrect": "Die Ministerinnen und Minister wählt der Bundeskanzler aus; ernannt werden sie vom Bundespräsidenten.",
+    "background": "Der Bundestag hat drei große Aufgaben: Er beschließt Gesetze und kann selbst Gesetzentwürfe einbringen, er kontrolliert die Bundesregierung, und er wählt den Bundeskanzler oder die Bundeskanzlerin (Artikel 63). Das Kabinett – also die Bundesregierung aus Kanzler und Ministern – stellt dagegen der Kanzler oder die Kanzlerin zusammen. Der Bundespräsident ernennt die Ministerinnen und Minister auf Vorschlag des Kanzlers.",
+    "otherOptions": "Gesetze entwerfen, die Regierung kontrollieren und den Kanzler wählen sind Aufgaben des Bundestages. Die Kontrolle geschieht zum Beispiel durch Fragestunden, Anfragen und Untersuchungsausschüsse.",
+    "memoryTip": "Bundestag wählt den Kanzler – der Kanzler bildet das Kabinett.",
+    "legalBasis": [
+      {
+        "label": "Art. 63 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_63.html"
+      },
+      {
+        "label": "Art. 64 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_64.html"
+      }
+    ]
+  },
+  "66": {
+    "summary": "Die größten jüdischen Gemeinden Deutschlands gibt es in Berlin und München.",
+    "whyCorrect": "In beiden Städten leben jeweils mehrere tausend Mitglieder jüdischer Gemeinden.",
+    "background": "Heute leben in Deutschland rund 90.000 Menschen, die Mitglied einer jüdischen Gemeinde sind; viele kamen nach 1990 aus der ehemaligen Sowjetunion. Die größten Gemeinden sind die Jüdische Gemeinde zu Berlin und die Israelitische Kultusgemeinde München und Oberbayern. In München steht seit 2006 die große Ohel-Jakob-Synagoge im Stadtzentrum, in Berlin die Neue Synagoge mit ihrer goldenen Kuppel.",
+    "otherOptions": "Hamburg, Essen, Nürnberg und Stuttgart haben ebenfalls jüdische Gemeinden, aber kleinere. Worms und Speyer sind eine Falle: Zusammen mit Mainz waren sie im Mittelalter die wichtigsten jüdischen Zentren (die „SchUM-Städte“, heute UNESCO-Welterbe), haben heute aber nur kleine Gemeinden.",
+    "memoryTip": "Die größten Städte Deutschlands, Berlin und München, haben auch die größten Gemeinden.",
+    "legalBasis": []
+  },
+  "67": {
+    "summary": "Schulpolitik ist vor allem eine Aufgabe der Bundesländer.",
+    "whyCorrect": "Bildung gehört zur Kulturhoheit der Länder; Verteidigung und Außenpolitik sind Sache des Bundes.",
+    "background": "Nach dem Grundgesetz sind die Länder für alles zuständig, was nicht ausdrücklich dem Bund zugewiesen ist (Artikel 30 und 70). Dazu gehören vor allem Schulen, Hochschulen, Polizei und Kultur. Deshalb hat jedes Bundesland eigene Schulgesetze, Lehrpläne und Ferientermine. In der Kultusministerkonferenz stimmen sich die Länder ab, damit Abschlüsse in ganz Deutschland anerkannt werden.",
+    "otherOptions": "Verteidigungs- und Außenpolitik sind ausschließlich Aufgaben des Bundes (Artikel 73) – es gibt nur eine Bundeswehr und ein Auswärtiges Amt. Wirtschaftspolitik wird vor allem vom Bund und von der EU gemacht; die Länder haben dort nur kleinere Zuständigkeiten.",
+    "memoryTip": "Schule = Ländersache.",
+    "legalBasis": [
+      {
+        "label": "Art. 30 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_30.html"
+      },
+      {
+        "label": "Art. 70 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_70.html"
+      }
+    ]
+  },
+  "68": {
+    "summary": "Der Staat kontrolliert das Schulwesen, weil das Grundgesetz es ihm als Aufgabe gibt.",
+    "whyCorrect": "Artikel 7 sagt: „Das gesamte Schulwesen steht unter der Aufsicht des Staates.“",
+    "background": "Nach Artikel 7 Absatz 1 des Grundgesetzes steht das gesamte Schulwesen unter der Aufsicht des Staates – konkret der Bundesländer. Der Staat legt fest, was gelernt wird, bildet Lehrkräfte aus und sorgt für vergleichbare Abschlüsse. Diese Aufsicht gilt auch für Privatschulen: Sie sind erlaubt (Artikel 7 Absatz 4), brauchen aber eine staatliche Genehmigung und müssen gleichwertige Bildung bieten. In Deutschland gilt außerdem Schulpflicht.",
+    "otherOptions": "Es gibt in Deutschland nicht nur staatliche Schulen, sondern auch Privatschulen, etwa kirchliche Schulen oder Waldorfschulen. Nicht alle Schülerinnen und Schüler müssen einen Abschluss haben – es gibt Schulpflicht, aber keine Abschlusspflicht. Dass es verschiedene Schulen in den Ländern gibt, ist eine Folge der Länderzuständigkeit, nicht der Grund für die Aufsicht.",
+    "memoryTip": "Warum? Weil es im Grundgesetz steht – Artikel 7.",
+    "legalBasis": [
+      {
+        "label": "Art. 7 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_7.html"
+      }
+    ]
+  },
+  "69": {
+    "summary": "Die unterste politische Stufe in Deutschland sind die Gemeinden.",
+    "whyCorrect": "Der Verwaltungsaufbau hat drei Stufen: Bund, Länder und Gemeinden (Kommunen).",
+    "background": "Gemeinden sind die kleinste politische Einheit mit eigener Selbstverwaltung (Artikel 28 Grundgesetz). Sie regeln die Angelegenheiten vor Ort: Kindergärten, Straßen in der Gemeinde, Friedhöfe, Bürgerämter oder die Müllabfuhr. Die Einwohnerinnen und Einwohner wählen bei der Kommunalwahl den Gemeinderat oder Stadtrat und in den meisten Ländern auch den Bürgermeister oder die Bürgermeisterin direkt.",
+    "otherOptions": "Stadträte sind die gewählten Vertretungen einer Stadt – also ein Organ der Gemeinde, nicht die Stufe selbst. Landräte leiten einen Landkreis, Bezirksämter sind Verwaltungen der Bezirke in Berlin und Hamburg. Keines davon ist die Bezeichnung für die unterste Stufe.",
+    "memoryTip": "Bund – Land – Gemeinde: Die Gemeinde ist ganz unten und ganz nah an den Menschen.",
+    "legalBasis": [
+      {
+        "label": "Art. 28 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_28.html"
+      }
+    ]
+  },
+  "70": {
+    "summary": "Der Bundespräsident schlägt dem Bundestag den Kanzler oder die Kanzlerin zur Wahl vor.",
+    "whyCorrect": "Das regelt Artikel 63 des Grundgesetzes; gewählt wird dann vom Bundestag.",
+    "background": "Das Foto zeigt, wie Bundespräsident Gustav Heinemann 1974 Helmut Schmidt die Ernennungsurkunde zum Bundeskanzler überreicht. Nach einer Bundestagswahl schlägt der Bundespräsident – meist nach Gesprächen mit den Parteien – dem Bundestag eine Person zur Wahl als Kanzler vor. Ist sie gewählt, ernennt er sie. Weitere Aufgaben des Bundespräsidenten: Er unterschreibt Gesetze, ernennt und entlässt Minister, vertritt Deutschland völkerrechtlich und empfängt Staatsgäste.",
+    "otherOptions": "Die Regierungsgeschäfte führt der Bundeskanzler mit seinen Ministern, nicht der Bundespräsident. Die Regierungspartei kontrolliert vor allem das Parlament mit der Opposition. Die Minister wählt der Kanzler aus; der Präsident ernennt sie nur formal.",
+    "memoryTip": "Der Präsident schlägt vor und ernennt – regieren tut der Kanzler.",
+    "legalBasis": [
+      {
+        "label": "Art. 63 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_63.html"
+      }
+    ]
+  },
+  "71": {
+    "summary": "Der Bundeskanzler hält sich am häufigsten in Berlin auf.",
+    "whyCorrect": "Dort befinden sich das Bundeskanzleramt und der Bundestag.",
+    "background": "Seit dem Umzug von Parlament und Regierung aus Bonn arbeitet der Bundeskanzler oder die Bundeskanzlerin in Berlin. Das Bundeskanzleramt liegt im Regierungsviertel direkt gegenüber dem Reichstagsgebäude, in dem der Bundestag tagt. Hier finden die Kabinettssitzungen statt, und hier hat der Kanzler oder die Kanzlerin das Büro. Der Bundestag zog 1999 nach Berlin, das Kanzleramt bezog seinen Neubau 2001.",
+    "otherOptions": "Bonn war bis 1990 Hauptstadt und bis 1999 Sitz von Parlament und Regierung. Heute ist Bonn „Bundesstadt“ und hat noch einige Ministerien, aber weder Kanzleramt noch Bundestag. Schloss Meseberg ist das Gästehaus der Bundesregierung, Schloss Bellevue der Amtssitz des Bundespräsidenten – dort ist der Kanzler nur zu besonderen Anlässen.",
+    "memoryTip": "Hauptstadt Berlin: Bundestag, Kanzleramt, Bundespräsident – alle dort.",
+    "legalBasis": []
+  },
+  "72": {
+    "summary": "Der jetzige Bundeskanzler heißt Friedrich Merz.",
+    "whyCorrect": "Friedrich Merz (CDU) wurde im Mai 2025 vom Bundestag zum Bundeskanzler gewählt.",
+    "background": "Friedrich Merz ist seit dem 6. Mai 2025 Bundeskanzler. Er führt eine Koalition aus CDU/CSU und SPD, die nach der Bundestagswahl im Februar 2025 gebildet wurde. Der Bundeskanzler bestimmt die Richtlinien der Politik und trägt dafür die Verantwortung (Artikel 65 Grundgesetz). Gewählt wird er vom Bundestag, nicht direkt vom Volk.",
+    "otherOptions": "Gerhard Schröder (SPD) war von 1998 bis 2005 Bundeskanzler, Angela Merkel (CDU) von 2005 bis 2021 – als erste Frau in diesem Amt. Zwischen Merkel und Merz regierte Olaf Scholz (SPD). Ursula von der Leyen war Bundesministerin und ist seit 2019 Präsidentin der Europäischen Kommission.",
+    "memoryTip": "Stand 2025: Kanzler Merz. Falls sich das ändert, gilt im Test der amtliche Fragenkatalog.",
+    "legalBasis": [
+      {
+        "label": "Art. 65 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_65.html"
+      }
+    ]
+  },
+  "73": {
+    "summary": "Die beiden größten Fraktionen im Bundestag sind zurzeit CDU/CSU und AfD.",
+    "whyCorrect": "Nach der Bundestagswahl 2025 stellt die CDU/CSU die meisten Abgeordneten, die AfD die zweitmeisten.",
+    "background": "Eine Fraktion ist der Zusammenschluss der Abgeordneten einer Partei (oder zweier verbundener Parteien wie CDU und CSU) im Bundestag. Bei der Bundestagswahl im Februar 2025 wurde die Union aus CDU und CSU stärkste Kraft, die AfD zweitstärkste. Danach folgen SPD, Bündnis 90/Die Grünen und Die Linke. Regiert wird von CDU/CSU und SPD; die AfD ist damit die größte Oppositionsfraktion.",
+    "otherOptions": "Die Linke und die Grünen sind die kleinsten Fraktionen im aktuellen Bundestag. Die SPD ist drittstärkste Kraft und Regierungspartner der Union. Die Kombination „Die Linke und CDU/CSU“ stimmt ebenfalls nicht.",
+    "memoryTip": "Stand: Bundestagswahl 2025 – Platz 1 CDU/CSU, Platz 2 AfD. Nach der nächsten Wahl kann sich das ändern.",
+    "legalBasis": []
+  },
+  "74": {
+    "summary": "Das Parlament für ganz Deutschland heißt Bundestag.",
+    "whyCorrect": "Der Deutsche Bundestag ist die gewählte Volksvertretung des Bundes.",
+    "background": "Der Bundestag wird in der Regel alle vier Jahre von den wahlberechtigten Deutschen gewählt und hat seit der Wahl 2025 630 Abgeordnete. Er beschließt die Bundesgesetze, wählt den Bundeskanzler oder die Bundeskanzlerin, beschließt den Bundeshaushalt und kontrolliert die Regierung. Er tagt im Reichstagsgebäude in Berlin.",
+    "otherOptions": "Die Bundesversammlung tritt nur zusammen, um den Bundespräsidenten zu wählen. Die Volkskammer war das Parlament der DDR. Der Bundesgerichtshof in Karlsruhe ist kein Parlament, sondern das höchste deutsche Gericht für Zivil- und Strafsachen.",
+    "memoryTip": "Bund + Tag (Versammlung) = Bundestag.",
+    "legalBasis": [
+      {
+        "label": "Art. 38 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_38.html"
+      }
+    ]
+  },
+  "75": {
+    "summary": "Das heutige deutsche Staatsoberhaupt ist Frank-Walter Steinmeier.",
+    "whyCorrect": "Frank-Walter Steinmeier ist seit 2017 Bundespräsident und wurde 2022 wiedergewählt.",
+    "background": "Staatsoberhaupt ist in Deutschland der Bundespräsident. Frank-Walter Steinmeier (SPD) wurde 2017 von der Bundesversammlung gewählt und 2022 für eine zweite Amtszeit bestätigt. Vorher war er unter anderem Außenminister. Der Bundespräsident hat vor allem repräsentative Aufgaben: Er vertritt Deutschland nach außen, unterschreibt Gesetze und ernennt den Kanzler und die Minister. Eine Amtszeit dauert fünf Jahre; mehr als eine Wiederwahl ist nicht möglich.",
+    "otherOptions": "Joachim Gauck war von 2012 bis 2017 Bundespräsident, also Steinmeiers Vorgänger. Bärbel Bas war von 2021 bis 2025 Bundestagspräsidentin und ist seit 2025 Bundesministerin für Arbeit und Soziales. Bodo Ramelow war Ministerpräsident von Thüringen.",
+    "memoryTip": "Stand 2025: Bundespräsident Steinmeier. Im Test gilt der amtliche Fragenkatalog.",
+    "legalBasis": [
+      {
+        "label": "Art. 54 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_54.html"
+      }
+    ]
   }
 }

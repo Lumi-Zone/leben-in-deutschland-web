@@ -600,5 +600,320 @@
     "otherOptions": "Planlı ekonomide veya merkezden yönlendirilen ekonomide neyin üretileceğine ve fiyatına devlet karar verir – DDR’de olduğu gibi. “Serbest merkezî ekonomi” diye bir şey yoktur; serbest ve merkezden yönlendirilen bir arada olmaz.",
     "memoryTip": "Piyasa + sosyal denge = sosyal piyasa ekonomisi.",
     "legalBasis": []
+  },
+  "51": {
+    "summary": "Özel bir polisin keyfî tutuklamaları hukuk devletine ait değildir.",
+    "whyCorrect": "İnsanları yalnızca devlet kurumları, yasal bir dayanakla gözaltına alabilir; özgürlüğün kısıtlanmasına bir mahkeme karar vermelidir.",
+    "background": "Demokratik bir hukuk devletinde güç kullanma ve insanları gözaltına alma hakkı yalnızca devlete aittir – o da ancak bir yasa izin veriyorsa. Anayasa’nın 104. maddesi bunun nasıl olacağını ayrıntılı düzenler: Uzun süreli her özgürlük kısıtlamasına bir hâkim karar verir ve gözaltına alınan kişi en geç ertesi günün sonuna kadar mahkemeye çıkarılmalıdır. Özel güvenlik şirketleri kimseyi “tutuklayamaz”.",
+    "otherOptions": "Hükümeti eleştirmek ve barışçıl gösteri yapmak temel haklardır (ifade ve toplanma özgürlüğü). Suç işleyen birinin tutuklanması da hukuk devletine uygundur – önemli olan bir gerekçenin olması ve sürecin yasaya uygun işlemesidir.",
+    "memoryTip": "“Sebepsiz” ve “özel polis” ifadelerine dikkat: İkisi de hukuk devletine uymaz.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 104",
+        "url": "https://www.gesetze-im-internet.de/gg/art_104.html"
+      }
+    ]
+  },
+  "52": {
+    "summary": "Halk egemenliği şu demektir: Bütün devlet gücü halktan gelir.",
+    "whyCorrect": "Anayasa’nın 20. maddesinde böyle yazar; halk bütün devlet gücünün kaynağıdır.",
+    "background": "Halk egemenliği, halkın “egemen” olduğu, yani devletteki en yüksek güce sahip olduğu anlamına gelir. Anayasa’nın 20. maddesinin 2. fıkrası şöyle der: “Bütün devlet gücü halktan gelir. Halk bu gücü seçimler ve oylamalar ile yasama, yürütme ve yargının özel organları aracılığıyla kullanır.” Yani halk her gün kendisi yönetmez; onun adına hareket eden temsilcileri seçer.",
+    "otherOptions": "Federal Meclis devlet gücünü kullanır, ama bu gücü halktan – seçimlerle – almıştır. Federal Anayasa Mahkemesi Anayasa’ya uyulup uyulmadığını denetler, ama devlet gücünün kaynağı değildir. 1918’den beri Prusya kralı yoktur ve Prusya 1947’de dağıtılmıştır.",
+    "memoryTip": "Egemen = patron. Demokraside patron halktır.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 20",
+        "url": "https://www.gesetze-im-internet.de/gg/art_20.html"
+      }
+    ]
+  },
+  "53": {
+    "summary": "Hukuk devleti şu demektir: Devlet yasalara uymak zorundadır.",
+    "whyCorrect": "Hükümet, resmî kurumlar ve polis de hukuka ve yasaya bağlıdır ve mahkemelerce denetlenebilir.",
+    "background": "Hukuk devletinde hukuk herkesin – devletin de – üstündedir. Anayasa’nın 20. maddesinin 3. fıkrası yasamayı anayasaya, hükümeti, idareyi ve mahkemeleri hukuka ve yasaya bağlar. Bir kurum yasaya aykırı davranırsa, etkilenen kişiler bağımsız mahkemelere başvurabilir. Hukuk devleti vatandaşları böylece keyfîliğe karşı korur.",
+    "otherOptions": "“Devlet haklıdır” tam tersidir: Devlet kendiliğinden haklı değildir, hukuka uymak zorundadır. “Rechtsstaat” kelimesindeki “Recht” (hukuk) sağcı partilerle ilgili değildir. Vatandaşların yasalara doğrudan karar vermesi doğrudan demokrasiyi anlatır – ama federal düzeyde yasaları parlamento kabul eder.",
+    "memoryTip": "Rechtsstaat “devlet haklıdır” değil, “devlet hukuka uyar” demektir.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 20",
+        "url": "https://www.gesetze-im-internet.de/gg/art_20.html"
+      }
+    ]
+  },
+  "54": {
+    "summary": "“Direktive” bir devlet gücü değildir.",
+    "whyCorrect": "Devletin üç gücü yasama (Legislative), yürütme (Exekutive) ve yargıdır (Judikative).",
+    "background": "Anayasa devlet gücünü üçe ayırır (kuvvetler ayrılığı): Yasama yasaları yapar – Federal Meclis, Federal Konsey ve eyalet meclisleri. Yürütme yasaları uygular – hükümet, bakanlıklar, resmî kurumlar ve polis. Yargı hüküm verir – mahkemeler. Kimse çok fazla güç kazanmasın diye bu güçler birbirini denetler.",
+    "otherOptions": "Legislative, Judikative ve Exekutive gerçek üç güçtür. “Direktive” kulağa benzer gelir ama uydurma bir cevaptır. Bu kelimeyi en fazla AB hukukundan, bazı düzenlemelere “direktif” denmesinden bilirsin – ama bu bir devlet gücü değildir.",
+    "memoryTip": "Legislative = yasa yapar, Exekutive = uygular, Judikative = yargılar.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 20",
+        "url": "https://www.gesetze-im-internet.de/gg/art_20.html"
+      }
+    ]
+  },
+  "55": {
+    "summary": "Görsel, Federal Meclis’in Berlin’deki binasını, Reichstag binasını gösterir.",
+    "whyCorrect": "Cam kubbesinden ve “Dem deutschen Volke” (Alman halkına) yazısından tanınır.",
+    "background": "Federal Meclis Berlin’deki Reichstag binasında toplanır. Bina 1894’te tamamlandı, 1933’te yandı ve İkinci Dünya Savaşı’nda ağır hasar gördü. Yeniden birleşmeden sonra yeniden düzenlendi ve mimar Norman Foster’ın içinde yürünebilen cam kubbesini aldı. Federal Meclis 1999’dan beri burada çalışır. Girişin üstünde “Dem deutschen Volke” yazar – parlamentonun halka hizmet ettiğinin bir hatırlatıcısı.",
+    "otherOptions": "Federal Anayasa Mahkemesi Karlsruhe’de, alçak ve modern bir binadadır. Federal Konsey Berlin’deki eski Prusya Lordlar Kamarası binasında toplanır; Federal Başbakanlık ise Reichstag’ın karşısında beton ve camdan modern bir yapıdır.",
+    "memoryTip": "Cam kubbe = Reichstag = Federal Meclis.",
+    "legalBasis": []
+  },
+  "56": {
+    "summary": "Ordnungsamt (zabıta/asayiş dairesi) belediye yönetimine aittir.",
+    "whyCorrect": "Şehirde veya belediyede kamu güvenliğini ve düzenini sağlar.",
+    "background": "Ordnungsamt, şehrin veya belediyenin bir dairesidir. Yerel düzenle ilgilenir: Örneğin park etmeyi denetler, gürültü şikâyetlerini takip eder, işyeri kayıtlarından veya pazarlardan sorumludur ve köpek düzenlemeleri gibi kuralları denetler. Birçok şehirde bunun için belediyeye bağlı bir asayiş birimi vardır. Ordnungsamt polisle yakın çalışır.",
+    "otherOptions": "Pfarramt bir kilise cemaatine aittir, devlete değil. Finanzamt (vergi dairesi) eyaletin bir kurumudur ve vergi toplar. Auswärtiges Amt, Berlin’deki federal dışişleri bakanlığıdır.",
+    "memoryTip": "Yerel düzen = belediyenin Ordnungsamt’ı.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 28",
+        "url": "https://www.gesetze-im-internet.de/gg/art_28.html"
+      }
+    ]
+  },
+  "57": {
+    "summary": "Federal Meclis Başkanı genellikle en güçlü meclis grubundan bir milletvekili olur.",
+    "whyCorrect": "Bu bir parlamento geleneğidir: En büyük grup başkan adayını önerir.",
+    "background": "Federal Meclis Başkanı parlamentonun oturumlarını yönetir, Federal Meclis’i dışarıda temsil eder ve binada yetki sahibidir. Her yasama döneminin başında milletvekilleri tarafından seçilir. Eski bir geleneğe göre en güçlü meclis grubu kendi içinden birini önerir. 2025’ten beri Federal Meclis Başkanı Julia Klöckner’dir (CDU).",
+    "otherOptions": "İlk oturumu “yaş başkanı” (Alterspräsident) açar – bugün bu, Federal Meclis’te en uzun süre görev yapmış milletvekilidir. Ama o yalnızca başkan seçilene kadar oturumu yönetir. Eyalet başbakanları Federal Meclis üyesi değildir ve eski şansölyeler geleneksel olarak Meclis Başkanı olmaz.",
+    "memoryTip": "En güçlü grup → genellikle hem şansölyeyi hem de Meclis Başkanını çıkarır.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 40",
+        "url": "https://www.gesetze-im-internet.de/gg/art_40.html"
+      }
+    ]
+  },
+  "58": {
+    "summary": "Federal bakanları Cumhurbaşkanı atar.",
+    "whyCorrect": "Cumhurbaşkanı bunu Federal Şansölye’nin önerisi üzerine yapar (Anayasa madde 64).",
+    "background": "Federal hükümet Federal Şansölye ve federal bakanlardan oluşur. Kimin bakan olacağına, genellikle koalisyon ortaklarıyla anlaşarak, Şansölye karar verir. Bakanlar daha sonra resmî olarak Cumhurbaşkanı tarafından atanır; Cumhurbaşkanı onlara atama belgelerini verir. Ardından bakanlar Federal Meclis’te yemin eder.",
+    "otherOptions": "Federal Anayasa Mahkemesi Başkanı mahkemeyi yönetir ve hükümetin kurulmasıyla ilgisi yoktur. Federal Konsey Başkanı Federal Konsey’i, Federal Meclis Başkanı ise Meclis oturumlarını yönetir – ikisi de bakan atamaz.",
+    "memoryTip": "Şansölye önerir – Cumhurbaşkanı atar.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 64",
+        "url": "https://www.gesetze-im-internet.de/gg/art_64.html"
+      }
+    ]
+  },
+  "59": {
+    "summary": "Bugünkü Almanya topraklarındaki ilk Yahudi cemaati yaklaşık 1700 yıllıktır.",
+    "whyCorrect": "Roma İmparatoru Konstantin’in 321 yılına ait bir fermanı Köln’deki Yahudilerden söz eder.",
+    "background": "321 yılında Roma İmparatoru Konstantin, Köln’deki Yahudilerin şehir meclisine atanabilmesine izin veren bir yasa çıkardı. Bu, Alplerin kuzeyindeki Yahudi yaşamının en eski yazılı kanıtıdır. Bu yüzden 2021’de bütün Almanya’da “Almanya’da 1700 Yıllık Yahudi Yaşamı” yılı kutlandı. Yahudi yaşamı – Orta Çağ’daki zulme ve Nasyonal Sosyalizm dönemindeki soykırıma rağmen – neredeyse iki bin yıldır bu ülkenin tarihinin bir parçasıdır.",
+    "otherOptions": "300, 700 ve 1150 yıl çok kısadır. Örneğin Orta Çağ’da Speyer, Worms ve Mainz’da önemli Yahudi cemaatleri zaten vardı – ama ilk izler çok daha eskidir ve Roma dönemine dayanır.",
+    "memoryTip": "MS 321, Köln, İmparator Konstantin → yaklaşık 1700 yıl.",
+    "legalBasis": []
+  },
+  "60": {
+    "summary": "Federal Meclis ve Federal Konsey yasamaya (Legislative) aittir.",
+    "whyCorrect": "İkisi federal düzeyde yasa yapan organlardır.",
+    "background": "Legislative yasama gücü demektir. Federal düzeyde yasaları Federal Meclis kabul eder. 16 eyaletin hükümetlerinin temsil edildiği Federal Konsey de buna katılır: Bazı yasalar için onun onayı gerekir, bazılarına itiraz edebilir. Böylece eyaletler federal yasamada söz sahibi olur.",
+    "otherOptions": "Yürütme (Exekutive) yasaları uygular (hükümet ve idare), yargı (Judikative) hüküm verir (mahkemeler). “Direktive” üç güçten biri değildir.",
+    "memoryTip": "Federal Meclis ve Federal Konsey yasa yapar → Legislative (Latince “lex” = yasa).",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 50",
+        "url": "https://www.gesetze-im-internet.de/gg/art_50.html"
+      },
+      {
+        "label": "Anayasa (GG) md. 77",
+        "url": "https://www.gesetze-im-internet.de/gg/art_77.html"
+      }
+    ]
+  },
+  "61": {
+    "summary": "Halk egemenliği şu demektir: Devlet gücü halktan gelir.",
+    "whyCorrect": "Halk devlet gücünün kaynağıdır ve bu gücü özellikle seçimlerle kullanır (Anayasa madde 20).",
+    "background": "Bu soru 52. soruyla aynı şeyi sorar, sadece cevaplar farklıdır. Halk egemenliği şu demektir: Egemen bir kral, bir parti veya bir mahkeme değil, halktır. Halk seçimlerde parlamentoda kimin oturacağını, dolayısıyla kimin yöneteceğini belirler. Bazı eyaletlerde ve belediyelerde halk ayrıca halk oylamalarıyla doğrudan karar verebilir.",
+    "otherOptions": "Halkı yöneten bir kral halk egemenliğinin tam tersidir. Federal Anayasa Mahkemesi anayasanın üstünde değildir, ona bağlıdır. Sendikalar veya işveren dernekleri gibi çıkar grupları çıkarlarını savunabilir, ama devlet gücüne sahip değildir.",
+    "memoryTip": "Halk + egemen = halk karar verir.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 20",
+        "url": "https://www.gesetze-im-internet.de/gg/art_20.html"
+      }
+    ]
+  },
+  "62": {
+    "summary": "Bir eyaletin parlamentosunun seçimine eyalet seçimi (Landtagswahl) denir.",
+    "whyCorrect": "Eyalet parlamentosuna çoğu eyalette Landtag denir.",
+    "background": "Her eyaletin kendi parlamentosu vardır. 13 eyalette buna Landtag, Berlin’de Abgeordnetenhaus, Hamburg ve Bremen’de Bürgerschaft denir. Eyalet seçimleri genellikle beş yılda bir, Bremen’de dört yılda bir yapılır. Seçilen Landtag, örneğin okullar ve polisle ilgili eyalet yasalarını kabul eder ve eyalet başbakanını seçer.",
+    "otherOptions": "Yerel seçimde (Kommunalwahl) şehrin, belediyenin veya ilçenin meclisi seçilir. Avrupa seçiminde Avrupa Parlamentosu, federal seçimde Federal Meclis seçilir.",
+    "memoryTip": "Land (eyalet) → Landtag → Landtagswahl.",
+    "legalBasis": []
+  },
+  "63": {
+    "summary": "Mahkemeler yürütmeye değil, yargıya (Judikative) aittir.",
+    "whyCorrect": "Polis, vergi dairesi ve bakanlıklar yasaları uygular, bu yüzden yürütmenin parçasıdır.",
+    "background": "Yürütme (Exekutive), yasaları uygulayan güç demektir. Buna federal ve eyalet hükümetleri, bakanlıkları ve yasaları günlük hayatta uygulayan bütün kurumlar dahildir – örneğin polis, vergi dairesi, Jobcenter veya nüfus dairesi (Bürgeramt). Mahkemeler ise ayrı bir güç, yargıyı oluşturur. Hâkimler bağımsızdır ve yalnızca yasaya tabidir (Anayasa madde 97).",
+    "otherOptions": "Polis, vergi dairesi ve bakanlıklar yürütmenin tipik örnekleridir: Yasaları uygularlar. Mahkemeler ise anlaşmazlıkları çözer ve yürütmenin kararlarını da denetleyebilir.",
+    "memoryTip": "Yürütme uygular, yargı hüküm verir – mahkemeler hüküm verir.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 20",
+        "url": "https://www.gesetze-im-internet.de/gg/art_20.html"
+      },
+      {
+        "label": "Anayasa (GG) md. 97",
+        "url": "https://www.gesetze-im-internet.de/gg/art_97.html"
+      }
+    ]
+  },
+  "64": {
+    "summary": "Almanya bugün federal yönetim, eyaletler ve belediyeler olarak örgütlenmiştir.",
+    "whyCorrect": "Bunlar devletin üç düzeyidir: bütün ülke, 16 eyalet ve şehirler, belediyeler ile ilçeler.",
+    "background": "Almanya’nın üç düzeyli bir yapısı vardır. Federal yönetim (Bund) dış politika, savunma ve para birimi gibi bütün ülkeyi ilgilendiren konulardan sorumludur. 16 eyalet örneğin okullar, polis ve üniversitelerle ilgilenir. Belediyeler (Kommunen) – şehirler, beldeler ve ilçeler – kreşler, çöp toplama veya nüfus daireleri gibi yerel işleri düzenler. Anayasa belediyelere öz yönetim hakkını güvence altına alır (madde 28).",
+    "otherOptions": "İkinci Dünya Savaşı’ndan sonra 1945–1949 arasında dört işgal bölgesi vardı. 1949–1990 arasında bir doğu ve bir batı devleti (DDR ve Federal Cumhuriyet) vardı. Kantonlar İsviçre’de vardır, Almanya’da değil.",
+    "memoryTip": "Üç düzey: federal yönetim – eyaletler – belediyeler.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 20",
+        "url": "https://www.gesetze-im-internet.de/gg/art_20.html"
+      },
+      {
+        "label": "Anayasa (GG) md. 28",
+        "url": "https://www.gesetze-im-internet.de/gg/art_28.html"
+      }
+    ]
+  },
+  "65": {
+    "summary": "Federal kabineyi kurmak Federal Meclis’in görevi değildir.",
+    "whyCorrect": "Bakanları Şansölye seçer; Cumhurbaşkanı atar.",
+    "background": "Federal Meclis’in üç büyük görevi vardır: Yasaları kabul eder ve kendisi yasa tasarısı sunabilir, federal hükümeti denetler ve Federal Şansölye’yi seçer (madde 63). Kabineyi – yani Şansölye ve bakanlardan oluşan federal hükümeti – ise Şansölye oluşturur. Cumhurbaşkanı bakanları Şansölye’nin önerisi üzerine atar.",
+    "otherOptions": "Yasa tasarısı hazırlamak, hükümeti denetlemek ve Şansölye’yi seçmek Federal Meclis’in görevleridir. Denetim örneğin soru saatleri, soru önergeleri ve araştırma komisyonlarıyla yapılır.",
+    "memoryTip": "Federal Meclis Şansölye’yi seçer – Şansölye kabineyi kurar.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 63",
+        "url": "https://www.gesetze-im-internet.de/gg/art_63.html"
+      },
+      {
+        "label": "Anayasa (GG) md. 64",
+        "url": "https://www.gesetze-im-internet.de/gg/art_64.html"
+      }
+    ]
+  },
+  "66": {
+    "summary": "Almanya’daki en büyük Yahudi cemaatleri Berlin ve Münih’tedir.",
+    "whyCorrect": "Bu iki şehrin her birinde Yahudi cemaatlerinin binlerce üyesi yaşar.",
+    "background": "Bugün Almanya’da yaklaşık 90.000 kişi bir Yahudi cemaatinin üyesidir; birçoğu 1990’dan sonra eski Sovyetler Birliği’nden geldi. En büyük cemaatler Berlin Yahudi Cemaati ile Münih ve Yukarı Bavyera İsrail Din Cemaati’dir. Münih’te 2006’dan beri şehir merkezinde büyük Ohel Jakob Sinagogu, Berlin’de ise altın kubbeli Yeni Sinagog bulunur.",
+    "otherOptions": "Hamburg, Essen, Nürnberg ve Stuttgart’ta da Yahudi cemaatleri vardır, ama daha küçüktür. Worms ve Speyer bir tuzaktır: Mainz ile birlikte Orta Çağ’ın en önemli Yahudi merkezleriydi (bugün UNESCO Dünya Mirası olan “SchUM şehirleri”), ama bugün sadece küçük cemaatleri vardır.",
+    "memoryTip": "Almanya’nın en büyük şehirleri Berlin ve Münih, en büyük cemaatlere de sahiptir.",
+    "legalBasis": []
+  },
+  "67": {
+    "summary": "Okul politikası esas olarak eyaletlerin görevidir.",
+    "whyCorrect": "Eğitim, eyaletlerin kültür egemenliğine aittir; savunma ve dış politika federal yönetimin işidir.",
+    "background": "Anayasa’ya göre açıkça federal yönetime verilmemiş her şeyden eyaletler sorumludur (madde 30 ve 70). Buna özellikle okullar, üniversiteler, polis ve kültür dahildir. Bu yüzden her eyaletin kendi okul yasaları, müfredatları ve tatil tarihleri vardır. Diplomaların bütün Almanya’da tanınması için eyaletler Kültür Bakanları Konferansı’nda uzlaşır.",
+    "otherOptions": "Savunma ve dış politika yalnızca federal yönetimin görevidir (madde 73) – tek bir Bundeswehr ve tek bir Dışişleri Bakanlığı vardır. Ekonomi politikası esas olarak federal yönetim ve AB tarafından yapılır; eyaletlerin orada sadece küçük yetkileri vardır.",
+    "memoryTip": "Okul = eyaletlerin işi.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 30",
+        "url": "https://www.gesetze-im-internet.de/gg/art_30.html"
+      },
+      {
+        "label": "Anayasa (GG) md. 70",
+        "url": "https://www.gesetze-im-internet.de/gg/art_70.html"
+      }
+    ]
+  },
+  "68": {
+    "summary": "Devlet okul sistemini denetler, çünkü Anayasa bunu ona görev olarak verir.",
+    "whyCorrect": "7. madde şöyle der: “Bütün okul sistemi devletin denetimi altındadır.”",
+    "background": "Anayasa’nın 7. maddesinin 1. fıkrasına göre bütün okul sistemi devletin – uygulamada eyaletlerin – denetimi altındadır. Devlet neyin öğretileceğini belirler, öğretmen yetiştirir ve diplomaların karşılaştırılabilir olmasını sağlar. Bu denetim özel okullar için de geçerlidir: Özel okullara izin verilir (madde 7, fıkra 4), ama devlet onayı gerekir ve eşdeğer eğitim sunmaları zorunludur. Almanya’da ayrıca okul zorunluluğu vardır.",
+    "otherOptions": "Almanya’da sadece devlet okulları yoktur; kilise okulları veya Waldorf okulları gibi özel okullar da vardır. Bütün öğrencilerin diploma alması zorunlu değildir – okula gitme zorunluluğu vardır, ama diploma zorunluluğu yoktur. Eyaletlerde farklı okulların olması eyalet yetkisinin bir sonucudur, denetimin nedeni değil.",
+    "memoryTip": "Neden? Çünkü Anayasa’da yazar – 7. madde.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 7",
+        "url": "https://www.gesetze-im-internet.de/gg/art_7.html"
+      }
+    ]
+  },
+  "69": {
+    "summary": "Almanya’daki en alt siyasi düzey belediyelerdir (Gemeinden).",
+    "whyCorrect": "Yönetim yapısının üç düzeyi vardır: federal yönetim, eyaletler ve belediyeler.",
+    "background": "Belediyeler (Gemeinden), kendi öz yönetimi olan en küçük siyasi birimlerdir (Anayasa madde 28). Yerel işleri düzenlerler: kreşler, belediye yolları, mezarlıklar, nüfus daireleri veya çöp toplama. Yerel seçimlerde sakinler belediye meclisini veya şehir meclisini, çoğu eyalette belediye başkanını da doğrudan seçer.",
+    "otherOptions": "Stadträte (şehir meclisleri) bir şehrin seçilmiş organlarıdır – belediyenin bir organı, düzeyin kendisi değil. Landräte bir ilçeyi (Landkreis) yönetir, Bezirksämter ise Berlin ve Hamburg’daki semtlerin idareleridir. Hiçbiri en alt düzeyin adı değildir.",
+    "memoryTip": "Federal – eyalet – belediye: Belediye en alttadır ve insanlara en yakındır.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 28",
+        "url": "https://www.gesetze-im-internet.de/gg/art_28.html"
+      }
+    ]
+  },
+  "70": {
+    "summary": "Cumhurbaşkanı, Şansölye adayını seçim için Federal Meclis’e önerir.",
+    "whyCorrect": "Bunu Anayasa’nın 63. maddesi düzenler; seçimi ardından Federal Meclis yapar.",
+    "background": "Fotoğraf, Cumhurbaşkanı Gustav Heinemann’ın 1974’te Helmut Schmidt’e Federal Şansölye atama belgesini verişini gösterir. Federal seçimden sonra Cumhurbaşkanı – genellikle partilerle görüştükten sonra – Federal Meclis’e Şansölye olarak seçilmek üzere bir kişi önerir. Bu kişi seçilirse Cumhurbaşkanı onu atar. Cumhurbaşkanının diğer görevleri: yasaları imzalamak, bakanları atamak ve görevden almak, Almanya’yı uluslararası hukukta temsil etmek ve devlet konuklarını kabul etmek.",
+    "otherOptions": "Hükümeti Cumhurbaşkanı değil, Federal Şansölye ve bakanlar yürütür. İktidar partisini denetlemek esas olarak parlamentonun ve muhalefetin işidir. Bakanları Şansölye seçer; Cumhurbaşkanı onları yalnızca resmî olarak atar.",
+    "memoryTip": "Cumhurbaşkanı önerir ve atar – yöneten Şansölye’dir.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 63",
+        "url": "https://www.gesetze-im-internet.de/gg/art_63.html"
+      }
+    ]
+  },
+  "71": {
+    "summary": "Federal Şansölye en çok Berlin’de bulunur.",
+    "whyCorrect": "Federal Başbakanlık ve Federal Meclis oradadır.",
+    "background": "Parlamento ve hükümet Bonn’dan taşındığından beri Federal Şansölye Berlin’de çalışır. Federal Başbakanlık, hükümet semtinde, Federal Meclis’in toplandığı Reichstag binasının tam karşısındadır. Kabine toplantıları burada yapılır ve Şansölye’nin ofisi buradadır. Federal Meclis 1999’da Berlin’e taşındı, Başbakanlık yeni binasına 2001’de geçti.",
+    "otherOptions": "Bonn 1990’a kadar başkent, 1999’a kadar parlamentonun ve hükümetin merkeziydi. Bugün Bonn bir “federal şehir”dir ve hâlâ bazı bakanlıklara ev sahipliği yapar, ama ne Başbakanlık ne de Federal Meclis oradadır. Meseberg Sarayı federal hükümetin konukevidir, Bellevue Sarayı ise Cumhurbaşkanının makamıdır – Şansölye oraya sadece özel durumlarda gider.",
+    "memoryTip": "Başkent Berlin: Federal Meclis, Başbakanlık, Cumhurbaşkanı – hepsi orada.",
+    "legalBasis": []
+  },
+  "72": {
+    "summary": "Şu anki Federal Şansölye Friedrich Merz’dir.",
+    "whyCorrect": "Friedrich Merz (CDU), Mayıs 2025’te Federal Meclis tarafından Federal Şansölye seçildi.",
+    "background": "Friedrich Merz 6 Mayıs 2025’ten beri Federal Şansölye’dir. Şubat 2025 federal seçiminden sonra kurulan CDU/CSU ve SPD koalisyonunu yönetir. Federal Şansölye politikanın ana hatlarını belirler ve bunlardan sorumludur (Anayasa madde 65). Şansölye’yi halk doğrudan değil, Federal Meclis seçer.",
+    "otherOptions": "Gerhard Schröder (SPD) 1998–2005, Angela Merkel (CDU) 2005–2021 arasında – bu makamdaki ilk kadın olarak – Federal Şansölye’ydi. Merkel ile Merz arasında Olaf Scholz (SPD) yönetti. Ursula von der Leyen federal bakandı ve 2019’dan beri Avrupa Komisyonu Başkanı’dır.",
+    "memoryTip": "2025 itibarıyla: Şansölye Merz. Bu değişirse sınavda resmî soru kataloğu geçerlidir.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 65",
+        "url": "https://www.gesetze-im-internet.de/gg/art_65.html"
+      }
+    ]
+  },
+  "73": {
+    "summary": "Federal Meclis’teki en büyük iki grup şu anda CDU/CSU ve AfD’dir.",
+    "whyCorrect": "2025 federal seçiminden sonra en çok milletvekili CDU/CSU’da, ikinci en çok AfD’dedir.",
+    "background": "Meclis grubu (Fraktion), bir partinin (veya CDU ve CSU gibi birbirine bağlı iki partinin) Federal Meclis’teki milletvekillerinin birliğidir. Şubat 2025 federal seçiminde CDU ve CSU’dan oluşan Birlik en güçlü, AfD ikinci en güçlü parti oldu. Onları SPD, Birlik 90/Yeşiller ve Sol Parti izler. CDU/CSU ve SPD hükümettedir; bu da AfD’yi en büyük muhalefet grubu yapar.",
+    "otherOptions": "Sol Parti ve Yeşiller şu anki Federal Meclis’in en küçük gruplarıdır. SPD üçüncü güçtür ve Birlik’in koalisyon ortağıdır. “Sol Parti ve CDU/CSU” kombinasyonu da yanlıştır.",
+    "memoryTip": "2025 federal seçimi itibarıyla: 1. CDU/CSU, 2. AfD. Bir sonraki seçimden sonra bu değişebilir.",
+    "legalBasis": []
+  },
+  "74": {
+    "summary": "Bütün Almanya’nın parlamentosunun adı Bundestag’dır (Federal Meclis).",
+    "whyCorrect": "Alman Federal Meclisi, federal düzeyde seçilmiş halk temsilciliğidir.",
+    "background": "Federal Meclis genellikle dört yılda bir seçme hakkı olan Alman vatandaşları tarafından seçilir ve 2025 seçiminden beri 630 milletvekili vardır. Federal yasaları kabul eder, Federal Şansölye’yi seçer, federal bütçeyi onaylar ve hükümeti denetler. Berlin’deki Reichstag binasında toplanır.",
+    "otherOptions": "Federal Kurul (Bundesversammlung) yalnızca Cumhurbaşkanını seçmek için toplanır. Volkskammer (Halk Meclisi) DDR’in parlamentosuydu. Karlsruhe’deki Federal Yüksek Mahkeme (Bundesgerichtshof) bir parlamento değil, hukuk ve ceza davaları için Almanya’nın en yüksek mahkemesidir.",
+    "memoryTip": "Bund (federal) + Tag (toplantı) = Bundestag.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 38",
+        "url": "https://www.gesetze-im-internet.de/gg/art_38.html"
+      }
+    ]
+  },
+  "75": {
+    "summary": "Almanya’nın bugünkü devlet başkanı Frank-Walter Steinmeier’dir.",
+    "whyCorrect": "Frank-Walter Steinmeier 2017’den beri Cumhurbaşkanıdır ve 2022’de yeniden seçildi.",
+    "background": "Almanya’da devlet başkanı Cumhurbaşkanıdır (Bundespräsident). Frank-Walter Steinmeier (SPD) 2017’de Federal Kurul tarafından seçildi ve 2022’de ikinci dönem için yeniden seçildi. Daha önce diğer görevlerinin yanında dışişleri bakanıydı. Cumhurbaşkanının görevleri esas olarak temsilîdir: Almanya’yı dışarıda temsil eder, yasaları imzalar, Şansölye’yi ve bakanları atar. Görev süresi beş yıldır; yalnızca bir kez yeniden seçilebilir.",
+    "otherOptions": "Joachim Gauck 2012–2017 arasında Cumhurbaşkanıydı, yani Steinmeier’in selefidir. Bärbel Bas 2021–2025 arasında Federal Meclis Başkanıydı ve 2025’ten beri Federal Çalışma ve Sosyal İşler Bakanı’dır. Bodo Ramelow Türingen eyalet başbakanıydı.",
+    "memoryTip": "2025 itibarıyla: Cumhurbaşkanı Steinmeier. Sınavda resmî soru kataloğu geçerlidir.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 54",
+        "url": "https://www.gesetze-im-internet.de/gg/art_54.html"
+      }
+    ]
   }
 }
