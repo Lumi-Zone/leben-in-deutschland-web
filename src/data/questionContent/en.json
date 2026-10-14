@@ -2231,5 +2231,225 @@
     "otherOptions": "Hesse, Schleswig-Holstein and Saarland were always in western Germany and belonged to the Federal Republic. Remember the five “new states”: Brandenburg, Mecklenburg-Western Pomerania, Saxony, Saxony-Anhalt and Thuringia.",
     "memoryTip": "Five new states: Brandenburg, Mecklenburg-Western Pomerania, Saxony, Saxony-Anhalt, Thuringia.",
     "legalBasis": []
+  },
+  "201": {
+    "summary": "Only list 2 contains nothing but former GDR states: Mecklenburg-Western Pomerania, Brandenburg, Saxony, Saxony-Anhalt, Thuringia.",
+    "whyCorrect": "These are exactly the five “new states” that joined the Federal Republic in 1990.",
+    "background": "When it was founded, the GDR had five states, but it abolished them in 1952 and divided its territory into districts. Shortly before reunification, the states were re-established in 1990. On 3 October 1990, Mecklenburg-Western Pomerania, Brandenburg, Saxony, Saxony-Anhalt and Thuringia joined the Federal Republic; East Berlin was united with West Berlin to form the state of Berlin.",
+    "otherOptions": "The other lists contain western German states: Lower Saxony, North Rhine-Westphalia, Hesse, Schleswig-Holstein, Bavaria, Baden-Württemberg and Rhineland-Palatinate always belonged to the Federal Republic. Note that a single “wrong” state in a list is enough to make it incorrect.",
+    "memoryTip": "East list: MV, Brandenburg, Saxony, Saxony-Anhalt, Thuringia – nothing else.",
+    "legalBasis": []
+  },
+  "202": {
+    "summary": "In the Cold War, the GDR belonged to the Warsaw Pact.",
+    "whyCorrect": "The Warsaw Pact was the military alliance of the Soviet Union and its allies in Eastern Europe.",
+    "background": "After the Second World War, two blocs faced each other: the West with the USA and NATO, and the East with the Soviet Union. This period is called the “Cold War” because the great powers did not fight each other directly but were heavily armed. The GDR was a founding member of the Warsaw Pact in 1955; the Federal Republic joined NATO in the same year. The border between the blocs thus ran right through Germany. The Warsaw Pact was dissolved in 1991.",
+    "otherOptions": "The Federal Republic belonged to the Western powers and NATO. Non-aligned states such as Yugoslavia or India did not want to belong to either bloc.",
+    "memoryTip": "East = GDR = Warsaw Pact; West = Federal Republic = NATO.",
+    "legalBasis": []
+  },
+  "203": {
+    "summary": "The GDR’s economic system was called a planned economy.",
+    "whyCorrect": "The state decided in plans what was produced, how much and at what price.",
+    "background": "In the GDR, most enterprises belonged to the state, for example as “publicly owned enterprises” (VEB). The State Planning Commission drew up five-year plans for the whole economy. Prices were fixed rather than formed on the market. This often led to shortages: many goods were scarce, and people had to wait many years for a car such as the Trabant. After reunification the enterprises were privatised, and many had to close.",
+    "otherOptions": "Market economy, capitalism and “supply and demand” describe economic systems in which the market sets prices – this existed in the Federal Republic, not in the GDR.",
+    "memoryTip": "GDR = planned economy; Federal Republic = social market economy.",
+    "legalBasis": []
+  },
+  "204": {
+    "summary": "Today’s five eastern federal states joined the Federal Republic of Germany.",
+    "whyCorrect": "The freely elected People’s Chamber of the GDR decided to accede to the area of application of the Basic Law as of 3 October 1990.",
+    "background": "After the first free elections in March 1990, the Federal Republic and the GDR negotiated unification. In July 1990 the Deutsche Mark was introduced in the GDR, and in August both states signed the Unification Treaty. On 23 August 1990, the People’s Chamber decided on accession under what was then Article 23 of the Basic Law. In foreign policy, the Two Plus Four Treaty with the four victorious powers cleared the way. On 3 October 1990 Germany was reunified.",
+    "otherOptions": "There was no occupation – neither by the Federal Republic nor by the GDR. Unity came about through a free, democratic decision by the people of the GDR. The western states did not join the GDR; it was the other way round.",
+    "memoryTip": "Unity in 1990 = the new states joined the Federal Republic.",
+    "legalBasis": []
+  },
+  "205": {
+    "summary": "With accession, the new federal states also belong to the European Union.",
+    "whyCorrect": "Because the Federal Republic was already a member, the territory of the former GDR automatically became part of the European Community in 1990, which later became the EU.",
+    "background": "The Federal Republic had been a member of the European Communities since the 1950s. With reunification on 3 October 1990, European law also applied in the new states – without the EU treaties having to be changed. People in eastern Germany thus became EU citizens. The European Communities became the European Union in 1993.",
+    "otherOptions": "The Warsaw Pact was the Eastern military alliance; it dissolved in 1991, and united Germany never belonged to it. OPEC is an organisation of oil-exporting countries. The European Defence Community was a 1950s plan that never came about.",
+    "memoryTip": "New states → Federal Republic → automatically EU.",
+    "legalBasis": [
+      {
+        "label": "Art. 23 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_23.html"
+      }
+    ]
+  },
+  "206": {
+    "summary": "The “Stolpersteine” (stumbling stones) commemorate the victims of National Socialism.",
+    "whyCorrect": "Small brass plaques in the pavement give the names and fates of people who lived there and were persecuted or murdered.",
+    "background": "The Stolpersteine are a project by the artist Gunter Demnig, who began it in 1992. Each stone is about ten by ten centimetres and is placed in front of the victim’s last freely chosen home. It says, for example, “Here lived …”, the year of birth, the deportation and the place of death. The stones commemorate Jews, Sinti and Roma, political prisoners, homosexuals, people with disabilities and other victims. There are now well over 100,000 Stolpersteine in many European countries – the largest decentralised memorial in the world.",
+    "otherOptions": "Famous politicians are commemorated by monuments or street names, road accident victims sometimes by roadside crosses. Jewish musicians are also honoured – but the Stolpersteine commemorate the victims of Nazi persecution.",
+    "memoryTip": "Stumbling in your mind: a person persecuted by the Nazis lived here.",
+    "legalBasis": []
+  },
+  "207": {
+    "summary": "The GDR was a member of the Warsaw Pact.",
+    "whyCorrect": "From 1955 to 1991, the Warsaw Pact was the military alliance of the Soviet Union and the socialist states of Eastern Europe.",
+    "background": "The Warsaw Pact was founded in 1955 as a counterpart to NATO. Besides the Soviet Union and the GDR, its members included Poland, Czechoslovakia, Hungary, Romania and Bulgaria. In 1968, Pact troops crushed the “Prague Spring” in Czechoslovakia. The GDR provided its own troops with the National People’s Army. With the end of the Cold War, the alliance dissolved in 1991; many former members are now in NATO.",
+    "otherOptions": "The Federal Republic was in NATO. The Confederation of the Rhine was an association of German states under Napoleon from 1806. A “European Alliance” as a military alliance does not exist.",
+    "memoryTip": "Questions 202 and 207: GDR = Warsaw Pact.",
+    "legalBasis": []
+  },
+  "208": {
+    "summary": "The “Stasi” was the secret service of the GDR.",
+    "whyCorrect": "Stasi is short for the Ministry for State Security.",
+    "background": "The Stasi monitored millions of people: it tapped phones, opened letters, bugged flats and used informers. Anyone considered an opponent could lose their job, end up in prison or be put under psychological pressure. The former Stasi prison in Berlin-Hohenschönhausen is now a memorial. Today, those affected can read in the Stasi files who spied on them. This question is closely related to question 199.",
+    "otherOptions": "The secret police in the “Third Reich” was called the Gestapo, not the Stasi. The Stasi was not itself a memorial – today there are memorials commemorating its victims. Nor was it a sports club.",
+    "memoryTip": "Gestapo = Nazi secret police; Stasi = GDR secret service.",
+    "legalBasis": []
+  },
+  "209": {
+    "summary": "The coat of arms of the GDR is image 4.",
+    "whyCorrect": "It shows a hammer and compass inside a wreath of grain wrapped in a black, red and gold ribbon.",
+    "background": "The GDR’s state emblem was meant to represent the alliance of workers (hammer), intelligentsia (compass) and farmers (wreath of grain). From 1959 it also appeared in the centre of the GDR flag. It disappeared with reunification in 1990. The same images appear in question 21 – where the question asks for the coat of arms of the Federal Republic.",
+    "otherOptions": "Image 1 is the coat of arms of the Federal Republic of Germany with the federal eagle. Image 2 is the Chi-Rho, a Christian symbol. Image 3 is the Iron Cross, the emblem of the Bundeswehr.",
+    "memoryTip": "Hammer and compass = GDR (image 4); eagle = Federal Republic (image 1).",
+    "legalBasis": []
+  },
+  "210": {
+    "summary": "On 17 June 1953 there were nationwide strikes and a popular uprising in the GDR.",
+    "whyCorrect": "Hundreds of thousands of people protested against the SED government; Soviet tanks crushed the uprising.",
+    "background": "The trigger was higher work quotas: workers were expected to produce more without being paid more. Within a day, a strike by construction workers in East Berlin became an uprising in more than 700 places across the GDR. People demanded free elections and German unity. The Soviet Union declared a state of emergency and deployed tanks. Dozens of people were killed. This question is closely related to question 186.",
+    "otherOptions": "The GDR only joined the Warsaw Pact in 1955. The SED had already been founded in 1946. Fidel Castro only visited the GDR in 1972.",
+    "memoryTip": "17 June 1953 = popular uprising in the GDR.",
+    "legalBasis": []
+  },
+  "211": {
+    "summary": "Willy Brandt stands for the “Eastern Treaties” (Ostverträge).",
+    "whyCorrect": "As Federal Chancellor in the early 1970s, Brandt concluded treaties with the Soviet Union, Poland, the GDR and Czechoslovakia.",
+    "background": "Willy Brandt (SPD) was Federal Chancellor from 1969 to 1974. With his “New Ostpolitik”, he wanted to improve relations with the Eastern Bloc states – following the motto “change through rapprochement”. With the Moscow and Warsaw Treaties of 1970, the Federal Republic recognised the existing borders in Europe, including the Oder–Neisse border with Poland. The Basic Treaty with the GDR followed in 1972. Brandt received the Nobel Peace Prize in 1971 for this policy.",
+    "otherOptions": "Helmut Kohl was the “Chancellor of Unity” (1982–1998). Mikhail Gorbachev was the Soviet leader who introduced reforms. Ludwig Erhard is regarded as the father of the economic miracle.",
+    "memoryTip": "Brandt = Ostpolitik, the genuflection, Nobel Peace Prize.",
+    "legalBasis": []
+  },
+  "212": {
+    "summary": "Germany’s full name is the Federal Republic of Germany (Bundesrepublik Deutschland).",
+    "whyCorrect": "This is how it appears in the Basic Law; the international country code is DE.",
+    "background": "The name already says a lot about the state: “Bund” (federal) stands for the federal state of 16 states, “Republik” for an elected head of state instead of a king. Article 20 of the Basic Law begins: “The Federal Republic of Germany is a democratic and social federal state.” The name has applied since the founding in 1949 and remained the same after reunification in 1990.",
+    "otherOptions": "“Federal State of Germany”, “Federal States of Germany” and “Federal District of Germany” are not official names. “Federal state” does describe the form of the state, but it is not the name.",
+    "memoryTip": "Federal + Republic = Federal Republic of Germany.",
+    "legalBasis": [
+      {
+        "label": "Art. 20 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_20.html"
+      }
+    ]
+  },
+  "213": {
+    "summary": "Germany has around 84 million inhabitants.",
+    "whyCorrect": "This makes Germany the most populous country in the European Union.",
+    "background": "According to the Federal Statistical Office, just under 84 million people live in Germany. The most populous federal state is North Rhine-Westphalia with around 18 million inhabitants, and the largest city is Berlin with almost four million. Germany is a country of immigration: around a quarter of the population has an immigration history, meaning they themselves or both parents immigrated to Germany since 1950.",
+    "otherOptions": "70 and 78 million are too few, 90 million too many. Before reunification, the Federal Republic had around 63 million and the GDR around 16 million inhabitants.",
+    "memoryTip": "Germany: about 84 million – the most in the EU.",
+    "legalBasis": []
+  },
+  "214": {
+    "summary": "The German flag is black, red and gold.",
+    "whyCorrect": "Article 22 of the Basic Law states: “The federal flag shall be black, red and gold.”",
+    "background": "The colours black, red and gold stand for the 19th-century movement for freedom and unity. They go back to the uniforms of the Lützow Free Corps in the wars of liberation against Napoleon and became the symbol of a democratic, united Germany at the Hambach Festival in 1832 and in the revolution of 1848. The Weimar Republic also used these colours. The National Socialists abolished them – the Federal Republic deliberately reintroduced them in 1949.",
+    "otherOptions": "Black, white and red were the colours of the German Empire; the National Socialists also used them. Black, yellow and red is the flag of Belgium. Black, red and green is not a German flag.",
+    "memoryTip": "Black-red-gold = democracy and unity (1848, Weimar, Federal Republic).",
+    "legalBasis": [
+      {
+        "label": "Art. 22 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_22.html"
+      }
+    ]
+  },
+  "215": {
+    "summary": "Helmut Kohl is known as the “Chancellor of German Unity”.",
+    "whyCorrect": "Helmut Kohl (CDU) was Federal Chancellor in 1989/90 and played a decisive role in driving reunification forward.",
+    "background": "Helmut Kohl was Federal Chancellor from 1982 to 1998 – 16 years, longer than any other chancellor. After the fall of the Wall, he presented a ten-point programme for German unity in November 1989. He negotiated with the USA, the Soviet Union under Mikhail Gorbachev, Britain and France until the Two Plus Four Treaty made unity possible in 1990. Together with French President François Mitterrand, he also advanced European integration and the introduction of the euro.",
+    "otherOptions": "Gerhard Schröder (1998–2005) was Kohl’s successor. Konrad Adenauer was the first Chancellor (1949–1963), and Helmut Schmidt was Chancellor from 1974 to 1982.",
+    "memoryTip": "Unity 1990 → Chancellor Kohl.",
+    "legalBasis": []
+  },
+  "216": {
+    "summary": "The federal eagle can be seen in the plenary chamber of the Bundestag.",
+    "whyCorrect": "A large eagle sculpture hangs on the front wall behind the speaker’s lectern and the seats of the Presidium.",
+    "background": "The eagle in the plenary chamber is based on a design by the sculptor Ludwig Gies, originally created for the Bundestag in Bonn. For the move to Berlin, it was redesigned in a larger form in the Reichstag building. Because of its round shape, people affectionately call it the “fat hen”. The federal eagle is the state symbol of the Federal Republic and stands for the democracy represented in the Bundestag.",
+    "otherOptions": "The flag of the city of Berlin with the bear does not hang in the plenary chamber. The imperial eagle (Reichsadler) was the symbol of the German Empire and the Weimar Republic. The Imperial Crown is the crown of the medieval Holy Roman Empire and is kept in Vienna today.",
+    "memoryTip": "Plenary chamber = federal eagle (“fat hen”).",
+    "legalBasis": []
+  },
+  "217": {
+    "summary": "The GDR existed from 1949 to 1990.",
+    "whyCorrect": "It was founded on 7 October 1949 and joined the Federal Republic on 3 October 1990.",
+    "background": "The German Democratic Republic existed for almost 41 years. It emerged in the Soviet occupation zone and was ruled by the SED. In 1961 it built the Wall, and in 1989 peaceful protests brought about the turning point (“Wende”). With reunification on 3 October 1990, the GDR ceased to exist.",
+    "otherOptions": "1919 to 1927 falls within the Weimar Republic, and 1933 to 1945 was the Nazi dictatorship. 1945 to 1961 is wrong, because there was no GDR yet in 1945, and in 1961 the Wall was built – the GDR existed for almost 30 more years after that.",
+    "memoryTip": "GDR: 1949–1990.",
+    "legalBasis": []
+  },
+  "218": {
+    "summary": "With reunification in 1990, five federal states joined the Federal Republic.",
+    "whyCorrect": "These were Brandenburg, Mecklenburg-Western Pomerania, Saxony, Saxony-Anhalt and Thuringia.",
+    "background": "Before 1990, the Federal Republic had ten states, plus West Berlin with a special status. With unification the five new states joined, and East and West Berlin were united to form the state of Berlin. Since then there have been 16 federal states. Berlin is therefore not counted as a “new” state but as a state that was put back together.",
+    "otherOptions": "Four, six or seven are wrong. Anyone who counts six includes Berlin – but half of Berlin (West Berlin) was already closely tied to the Federal Republic before.",
+    "memoryTip": "Five new states: 10 + 5 + Berlin = 16.",
+    "legalBasis": []
+  },
+  "219": {
+    "summary": "The Federal Republic of Germany has had its current borders since 1990.",
+    "whyCorrect": "With reunification and the Two Plus Four Treaty, the borders of united Germany were finally settled.",
+    "background": "In the Two Plus Four Treaty of September 1990, the Federal Republic, the GDR and the four victorious powers agreed that united Germany would consist of the territory of the two German states and all of Berlin. In November 1990, the German–Polish Border Treaty finally confirmed the Oder–Neisse border. Germany thus renounced all territorial claims. Since then, Germany has had nine neighbouring countries.",
+    "otherOptions": "In 1933 Germany still included territories in the east that now belong to Poland and Russia. In 1949 the Federal Republic was founded, but without the GDR – and without Saarland, which only joined in 1957. In 1971 the Four Power Agreement on Berlin was concluded; it did not change any borders.",
+    "memoryTip": "Today’s borders = since unity in 1990.",
+    "legalBasis": []
+  },
+  "220": {
+    "summary": "27 January commemorates the victims of National Socialism – it is the anniversary of the liberation of the Auschwitz extermination camp.",
+    "whyCorrect": "On 27 January 1945, Soviet soldiers liberated the survivors of the Auschwitz-Birkenau camp.",
+    "background": "Auschwitz-Birkenau in occupied Poland was the largest Nazi extermination camp. More than one million people were murdered there, most of them Jews. In 1996, Federal President Roman Herzog declared 27 January a day of remembrance for the victims of National Socialism. Since 2005 it has also been the United Nations’ International Holocaust Remembrance Day. Every year on this day the Bundestag holds a commemoration.",
+    "otherOptions": "The end of the Second World War in Europe was on 8 May 1945, the promulgation of the Basic Law on 23 May 1949 and reunification on 3 October 1990.",
+    "memoryTip": "27 January = Auschwitz liberated = Holocaust Remembrance Day.",
+    "legalBasis": []
+  },
+  "221": {
+    "summary": "Schengen means: Germans can travel to many European countries without passport checks.",
+    "whyCorrect": "Between Schengen states there are generally no regular checks at internal borders.",
+    "background": "The Schengen Agreement was signed in 1985 in the Luxembourg village of Schengen. Today 29 states belong to the Schengen Area, most EU countries as well as Norway, Iceland, Switzerland and Liechtenstein. When travelling between these countries, you normally do not have to stop at the border. You should still always carry an ID document, because states may temporarily reintroduce border checks – Germany currently does so at several borders.",
+    "otherOptions": "Not everyone can enter Germany without checks: there are checks at the Schengen Area’s external borders, and many people need a visa. Travelling to every country in the world without passport checks is not possible. And the euro is not legal tender in every country – that has nothing to do with Schengen.",
+    "memoryTip": "Schengen = open borders in Europe.",
+    "legalBasis": []
+  },
+  "222": {
+    "summary": "Switzerland is a neighbouring country of Germany.",
+    "whyCorrect": "Germany borders Switzerland in the south, including at Lake Constance and the High Rhine.",
+    "background": "Germany has nine neighbouring countries – more than any other country in Europe: Denmark to the north, Poland and the Czech Republic to the east, Austria and Switzerland to the south and France, Luxembourg, Belgium and the Netherlands to the west. In Switzerland, German is one of the official languages and is spoken by the majority of the population. Switzerland is not an EU member but belongs to the Schengen Area.",
+    "otherOptions": "Hungary lies beyond Austria and does not border Germany. Portugal and Spain are on the Iberian Peninsula in south-western Europe – France lies in between.",
+    "memoryTip": "Nine neighbours: DK, PL, CZ, AT, CH, FR, LU, BE, NL.",
+    "legalBasis": []
+  },
+  "223": {
+    "summary": "Poland is a neighbouring country of Germany.",
+    "whyCorrect": "The German–Polish border runs in the east along the rivers Oder and Neisse.",
+    "background": "The border with Poland is about 470 kilometres long. After the Second World War it was set along the Oder and Neisse; the Federal Republic recognised it in the Treaty of Warsaw in 1970, and united Germany finally in 1990. Today both countries are members of the EU and NATO, and the border is open. Many people commute daily between towns such as Frankfurt (Oder) and Słubice or Görlitz and Zgorzelec.",
+    "otherOptions": "Romania, Bulgaria and Greece are in south-eastern Europe and do not border Germany. Like Germany, however, they are members of the European Union.",
+    "memoryTip": "East: Poland and the Czech Republic are neighbours.",
+    "legalBasis": []
+  },
+  "224": {
+    "summary": "EU is short for European Union.",
+    "whyCorrect": "The EU is an association of 27 European states.",
+    "background": "The European Union was formed in 1993 from the European Communities, which Germany co-founded in the 1950s. The EU states share a single market in which goods, services, capital and people can move freely. Important institutions are the European Parliament, which citizens elect directly, the European Commission in Brussels and the Court of Justice of the European Union in Luxembourg. 21 of the 27 countries use the euro as their currency; Bulgaria joined most recently in 2026.",
+    "otherOptions": "“European Enterprises”, “Unified Union” and “Euro Union” are invented terms. The euro is the currency of many EU countries, but not the name of the Union.",
+    "memoryTip": "EU = European Union, 27 states.",
+    "legalBasis": [
+      {
+        "label": "Art. 23 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_23.html"
+      }
+    ]
+  },
+  "225": {
+    "summary": "Austria has a large German-speaking population.",
+    "whyCorrect": "In Austria, German is the official language and the mother tongue of the vast majority.",
+    "background": "German is an official language not only in Germany but also in Austria, Liechtenstein and – alongside other languages – in Switzerland, Luxembourg and Belgium. In Italy it is a regional official language in South Tyrol. In total, around 100 million people in Europe speak German as their mother tongue, making it the most widely spoken mother tongue in the EU. Austrian German has some words of its own, such as “Jänner” for January or “Paradeiser” for tomato.",
+    "otherOptions": "The Czech Republic has only a small German minority. Some Germans do live in Norway and Spain, for example retirees on Mallorca, but there is no large German-speaking population there.",
+    "memoryTip": "German as an official language: Germany, Austria, Switzerland, Liechtenstein, Luxembourg, Belgium.",
+    "legalBasis": []
   }
 }

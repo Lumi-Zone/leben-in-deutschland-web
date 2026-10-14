@@ -2231,5 +2231,225 @@
     "otherOptions": "Hessen, Schleswig-Holstein und das Saarland lagen immer in Westdeutschland und gehörten zur Bundesrepublik. Merke dir die fünf „neuen Länder“: Brandenburg, Mecklenburg-Vorpommern, Sachsen, Sachsen-Anhalt und Thüringen.",
     "memoryTip": "Fünf neue Länder: Brandenburg, Mecklenburg-Vorpommern, Sachsen, Sachsen-Anhalt, Thüringen.",
     "legalBasis": []
+  },
+  "201": {
+    "summary": "Nur Liste 2 enthält ausschließlich ehemalige DDR-Länder: Mecklenburg-Vorpommern, Brandenburg, Sachsen, Sachsen-Anhalt, Thüringen.",
+    "whyCorrect": "Das sind genau die fünf „neuen Länder“, die 1990 der Bundesrepublik beigetreten sind.",
+    "background": "Die DDR hatte bei ihrer Gründung fünf Länder, schaffte sie aber 1952 ab und teilte ihr Gebiet in Bezirke auf. Kurz vor der Wiedervereinigung wurden die Länder 1990 wieder gegründet. Am 3. Oktober 1990 traten Mecklenburg-Vorpommern, Brandenburg, Sachsen, Sachsen-Anhalt und Thüringen der Bundesrepublik bei; Ost-Berlin wurde mit West-Berlin zum Land Berlin vereint.",
+    "otherOptions": "Die anderen Listen enthalten westdeutsche Länder: Niedersachsen, Nordrhein-Westfalen, Hessen, Schleswig-Holstein, Bayern, Baden-Württemberg und Rheinland-Pfalz gehörten immer zur Bundesrepublik. Achte darauf, dass in einer Liste schon ein „falsches“ Land genügt, damit sie nicht stimmt.",
+    "memoryTip": "Ost-Liste: MV, Brandenburg, Sachsen, Sachsen-Anhalt, Thüringen – keine weiteren.",
+    "legalBasis": []
+  },
+  "202": {
+    "summary": "Im Kalten Krieg gehörte die DDR zum Warschauer Pakt.",
+    "whyCorrect": "Der Warschauer Pakt war das Militärbündnis der Sowjetunion und ihrer Verbündeten in Osteuropa.",
+    "background": "Nach dem Zweiten Weltkrieg standen sich zwei Blöcke gegenüber: der Westen mit den USA und der NATO und der Osten mit der Sowjetunion. Man nennt diese Zeit „Kalter Krieg“, weil sich die Großmächte nicht direkt bekämpften, aber hochgerüstet waren. Die DDR war 1955 Gründungsmitglied des Warschauer Pakts, die Bundesrepublik trat im selben Jahr der NATO bei. Mitten durch Deutschland verlief damit die Grenze zwischen den Blöcken. Der Warschauer Pakt löste sich 1991 auf.",
+    "otherOptions": "Zu den Westmächten und zur NATO gehörte die Bundesrepublik. Blockfreie Staaten wie Jugoslawien oder Indien wollten zu keinem der beiden Blöcke gehören.",
+    "memoryTip": "Ost = DDR = Warschauer Pakt; West = Bundesrepublik = NATO.",
+    "legalBasis": []
+  },
+  "203": {
+    "summary": "Das Wirtschaftssystem der DDR hieß Planwirtschaft.",
+    "whyCorrect": "Der Staat legte in Plänen fest, was produziert wurde, wie viel und zu welchem Preis.",
+    "background": "In der DDR gehörten die meisten Betriebe dem Staat, zum Beispiel als „Volkseigene Betriebe“ (VEB). Die Staatliche Plankommission machte Fünfjahrespläne für die ganze Wirtschaft. Preise wurden festgesetzt, nicht auf dem Markt gebildet. Das führte oft zu Mangel: Viele Waren waren knapp, und auf ein Auto wie den Trabant musste man viele Jahre warten. Nach der Wiedervereinigung wurden die Betriebe privatisiert, viele mussten schließen.",
+    "otherOptions": "Marktwirtschaft, Kapitalismus und „Angebot und Nachfrage“ beschreiben Wirtschaftsformen, in denen der Markt die Preise bestimmt – das gab es in der Bundesrepublik, nicht in der DDR.",
+    "memoryTip": "DDR = Planwirtschaft; Bundesrepublik = soziale Marktwirtschaft.",
+    "legalBasis": []
+  },
+  "204": {
+    "summary": "Die heutigen fünf östlichen Bundesländer sind der Bundesrepublik Deutschland beigetreten.",
+    "whyCorrect": "Die frei gewählte Volkskammer der DDR beschloss den Beitritt zum Geltungsbereich des Grundgesetzes zum 3. Oktober 1990.",
+    "background": "Nach den ersten freien Wahlen im März 1990 verhandelten die Bundesrepublik und die DDR über die Einheit. Im Juli 1990 wurde die D-Mark in der DDR eingeführt, im August unterzeichneten beide Staaten den Einigungsvertrag. Am 23. August 1990 beschloss die Volkskammer den Beitritt nach dem damaligen Artikel 23 des Grundgesetzes. Außenpolitisch machte der Zwei-plus-Vier-Vertrag mit den vier Siegermächten den Weg frei. Am 3. Oktober 1990 war Deutschland wiedervereinigt.",
+    "otherOptions": "Es gab keine Besetzung – weder durch die Bundesrepublik noch durch die DDR. Die Einheit kam durch eine freie, demokratische Entscheidung der Menschen in der DDR zustande. Die westlichen Länder sind nicht der DDR beigetreten, sondern umgekehrt.",
+    "memoryTip": "Einheit 1990 = Beitritt der neuen Länder zur Bundesrepublik.",
+    "legalBasis": []
+  },
+  "205": {
+    "summary": "Mit dem Beitritt gehören die neuen Bundesländer auch zur Europäischen Union.",
+    "whyCorrect": "Weil die Bundesrepublik schon Mitglied war, wurde das Gebiet der früheren DDR 1990 automatisch Teil der Europäischen Gemeinschaft, aus der die EU wurde.",
+    "background": "Die Bundesrepublik war seit den 1950er-Jahren Mitglied der europäischen Gemeinschaften. Mit der Wiedervereinigung am 3. Oktober 1990 galt das europäische Recht auch in den neuen Ländern – ohne dass die EU-Verträge geändert werden mussten. Die Menschen in Ostdeutschland wurden damit EU-Bürger. Aus den europäischen Gemeinschaften entstand 1993 die Europäische Union.",
+    "otherOptions": "Der Warschauer Pakt war das östliche Militärbündnis; er löste sich 1991 auf, und das vereinte Deutschland gehörte ihm nie an. Die OPEC ist eine Organisation erdölexportierender Länder. Die Europäische Verteidigungsgemeinschaft war ein Plan aus den 1950er-Jahren, der nie zustande kam.",
+    "memoryTip": "Neue Länder → Bundesrepublik → automatisch EU.",
+    "legalBasis": [
+      {
+        "label": "Art. 23 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_23.html"
+      }
+    ]
+  },
+  "206": {
+    "summary": "Die „Stolpersteine“ erinnern an die Opfer des Nationalsozialismus.",
+    "whyCorrect": "Kleine Messingtafeln im Gehweg nennen Namen und Schicksal von Menschen, die dort gelebt haben und verfolgt oder ermordet wurden.",
+    "background": "Die Stolpersteine sind ein Projekt des Künstlers Gunter Demnig, der 1992 damit begann. Jeder Stein ist etwa zehn mal zehn Zentimeter groß und liegt vor dem letzten frei gewählten Wohnort eines Opfers. Darauf stehen zum Beispiel: „Hier wohnte …“, das Geburtsjahr, die Deportation und der Todesort. Erinnert wird an Jüdinnen und Juden, Sinti und Roma, politisch Verfolgte, Homosexuelle, Menschen mit Behinderungen und andere Opfer. Inzwischen gibt es weit über 100.000 Stolpersteine in vielen Ländern Europas – das größte dezentrale Mahnmal der Welt.",
+    "otherOptions": "An berühmte Politiker erinnern Denkmäler oder Straßennamen, an Verkehrstote manchmal Kreuze am Straßenrand. Jüdische Musiker werden auch geehrt – aber die Stolpersteine erinnern an die Opfer der NS-Verfolgung.",
+    "memoryTip": "Stolpern im Kopf: Hier lebte ein Mensch, den die Nazis verfolgten.",
+    "legalBasis": []
+  },
+  "207": {
+    "summary": "Die DDR war Mitglied im Warschauer Pakt.",
+    "whyCorrect": "Der Warschauer Pakt war von 1955 bis 1991 das Militärbündnis der Sowjetunion und der sozialistischen Staaten Osteuropas.",
+    "background": "Der Warschauer Pakt wurde 1955 als Gegenstück zur NATO gegründet. Zu ihm gehörten neben der Sowjetunion und der DDR unter anderem Polen, die Tschechoslowakei, Ungarn, Rumänien und Bulgarien. Die Truppen des Pakts schlugen 1968 den „Prager Frühling“ in der Tschechoslowakei nieder. Die DDR stellte mit der Nationalen Volksarmee eigene Truppen. Mit dem Ende des Kalten Krieges löste sich das Bündnis 1991 auf; viele frühere Mitglieder sind heute in der NATO.",
+    "otherOptions": "In der NATO war die Bundesrepublik. Der Rheinbund war ein Zusammenschluss deutscher Staaten unter Napoleon ab 1806. Ein „Europabündnis“ als Militärbündnis gibt es nicht.",
+    "memoryTip": "Fragen 202 und 207: DDR = Warschauer Pakt.",
+    "legalBasis": []
+  },
+  "208": {
+    "summary": "Die „Stasi“ war der Geheimdienst der DDR.",
+    "whyCorrect": "Stasi ist die Abkürzung für das Ministerium für Staatssicherheit.",
+    "background": "Die Stasi überwachte Millionen Menschen: Sie hörte Telefone ab, öffnete Briefe, verwanzte Wohnungen und setzte Spitzel ein. Wer als Gegner galt, konnte seinen Arbeitsplatz verlieren, im Gefängnis landen oder psychisch unter Druck gesetzt werden. Das frühere Stasi-Gefängnis Berlin-Hohenschönhausen ist heute eine Gedenkstätte. In den Stasi-Akten können Betroffene heute nachlesen, wer sie bespitzelt hat. Diese Frage ist eng verwandt mit Frage 199.",
+    "otherOptions": "Die Geheimpolizei im „Dritten Reich“ hieß Gestapo, nicht Stasi. Eine Gedenkstätte war die Stasi nicht selbst – heute gibt es Gedenkstätten, die an ihre Opfer erinnern. Ein Sportverein war sie ebenfalls nicht.",
+    "memoryTip": "Gestapo = NS-Geheimpolizei; Stasi = DDR-Geheimdienst.",
+    "legalBasis": []
+  },
+  "209": {
+    "summary": "Das Wappen der DDR ist Bild 4.",
+    "whyCorrect": "Es zeigt Hammer und Zirkel in einem Ährenkranz, der mit einem schwarz-rot-goldenen Band umwunden ist.",
+    "background": "Das Staatswappen der DDR sollte das Bündnis der Arbeiter (Hammer), der Intelligenz (Zirkel) und der Bauern (Ährenkranz) darstellen. Es stand ab 1959 auch in der Mitte der DDR-Flagge. Mit der Wiedervereinigung 1990 verschwand es. Dieselben Bilder kommen auch in Frage 21 vor – dort wird nach dem Wappen der Bundesrepublik gefragt.",
+    "otherOptions": "Bild 1 ist das Wappen der Bundesrepublik Deutschland mit dem Bundesadler. Bild 2 ist das Christusmonogramm, ein christliches Symbol. Bild 3 ist das Eiserne Kreuz, das Erkennungszeichen der Bundeswehr.",
+    "memoryTip": "Hammer und Zirkel = DDR (Bild 4); Adler = Bundesrepublik (Bild 1).",
+    "legalBasis": []
+  },
+  "210": {
+    "summary": "Am 17. Juni 1953 gab es in der DDR landesweite Streiks und einen Volksaufstand.",
+    "whyCorrect": "Hunderttausende Menschen protestierten gegen die SED-Regierung; sowjetische Panzer schlugen den Aufstand nieder.",
+    "background": "Auslöser waren höhere Arbeitsnormen: Arbeiter sollten mehr leisten, ohne mehr Lohn zu bekommen. Aus einem Streik von Bauarbeitern in Ost-Berlin wurde innerhalb eines Tages ein Aufstand in über 700 Orten der DDR. Die Menschen forderten freie Wahlen und die Einheit Deutschlands. Die Sowjetunion verhängte den Ausnahmezustand und setzte Panzer ein. Dutzende Menschen wurden getötet. Diese Frage ist eng verwandt mit Frage 186.",
+    "otherOptions": "Dem Warschauer Pakt trat die DDR erst 1955 bei. Die SED wurde bereits 1946 gegründet. Fidel Castro besuchte die DDR erst 1972.",
+    "memoryTip": "17. Juni 1953 = Volksaufstand in der DDR.",
+    "legalBasis": []
+  },
+  "211": {
+    "summary": "Für die „Ostverträge“ steht Willy Brandt.",
+    "whyCorrect": "Als Bundeskanzler schloss Brandt Anfang der 1970er-Jahre Verträge mit der Sowjetunion, Polen, der DDR und der Tschechoslowakei.",
+    "background": "Willy Brandt (SPD) war von 1969 bis 1974 Bundeskanzler. Mit seiner „Neuen Ostpolitik“ wollte er die Beziehungen zu den Staaten des Ostblocks verbessern – nach dem Motto „Wandel durch Annäherung“. Mit dem Moskauer und dem Warschauer Vertrag von 1970 erkannte die Bundesrepublik die bestehenden Grenzen in Europa an, auch die Oder-Neiße-Grenze zu Polen. 1972 folgte der Grundlagenvertrag mit der DDR. Für diese Politik erhielt Brandt 1971 den Friedensnobelpreis.",
+    "otherOptions": "Helmut Kohl war der „Kanzler der Einheit“ (1982–1998). Michail Gorbatschow war der Staatschef der Sowjetunion, der Reformen einleitete. Ludwig Erhard gilt als Vater des Wirtschaftswunders.",
+    "memoryTip": "Brandt = Ostpolitik, Kniefall, Friedensnobelpreis.",
+    "legalBasis": []
+  },
+  "212": {
+    "summary": "Der volle Name Deutschlands ist Bundesrepublik Deutschland.",
+    "whyCorrect": "So steht es im Grundgesetz; die Abkürzung lautet BRD oder im internationalen Kürzel DE.",
+    "background": "Der Name sagt schon viel über den Staat aus: „Bund“ steht für den Bundesstaat aus 16 Ländern, „Republik“ für ein gewähltes Staatsoberhaupt statt eines Königs. Artikel 20 des Grundgesetzes beginnt mit den Worten: „Die Bundesrepublik Deutschland ist ein demokratischer und sozialer Bundesstaat.“ Der Name gilt seit der Gründung 1949 und blieb auch nach der Wiedervereinigung 1990 gleich.",
+    "otherOptions": "„Bundesstaat Deutschland“, „Bundesländer Deutschland“ und „Bundesbezirk Deutschland“ sind keine offiziellen Namen. Bundesstaat beschreibt zwar die Staatsform, ist aber nicht der Name.",
+    "memoryTip": "Bund + Republik = Bundesrepublik Deutschland.",
+    "legalBasis": [
+      {
+        "label": "Art. 20 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_20.html"
+      }
+    ]
+  },
+  "213": {
+    "summary": "Deutschland hat rund 84 Millionen Einwohner.",
+    "whyCorrect": "Damit ist Deutschland das bevölkerungsreichste Land der Europäischen Union.",
+    "background": "Laut Statistischem Bundesamt leben in Deutschland knapp 84 Millionen Menschen. Das bevölkerungsreichste Bundesland ist Nordrhein-Westfalen mit rund 18 Millionen Einwohnern, die größte Stadt Berlin mit fast vier Millionen. Deutschland ist ein Einwanderungsland: Rund ein Viertel der Menschen hat eine Einwanderungsgeschichte, das heißt, sie selbst oder beide Eltern sind seit 1950 nach Deutschland eingewandert.",
+    "otherOptions": "70 und 78 Millionen sind zu wenig, 90 Millionen sind zu viel. Vor der Wiedervereinigung hatte die Bundesrepublik rund 63 Millionen und die DDR rund 16 Millionen Einwohner.",
+    "memoryTip": "Deutschland: rund 84 Millionen – das meiste in der EU.",
+    "legalBasis": []
+  },
+  "214": {
+    "summary": "Die deutsche Flagge ist schwarz-rot-gold.",
+    "whyCorrect": "Artikel 22 des Grundgesetzes sagt: „Die Bundesflagge ist schwarz-rot-gold.“",
+    "background": "Die Farben Schwarz, Rot und Gold stehen für die Freiheits- und Einheitsbewegung des 19. Jahrhunderts. Sie gehen auf die Uniformen des Lützowschen Freikorps in den Befreiungskriegen gegen Napoleon zurück und wurden 1832 beim Hambacher Fest und in der Revolution 1848 zum Symbol für ein demokratisches, geeintes Deutschland. Auch die Weimarer Republik nutzte diese Farben. Die Nationalsozialisten schafften sie ab – die Bundesrepublik führte sie 1949 bewusst wieder ein.",
+    "otherOptions": "Schwarz-weiß-rot waren die Farben des Kaiserreichs; auch die Nationalsozialisten verwendeten sie. Schwarz-gelb-rot ist die Flagge Belgiens. Schwarz-rot-grün ist keine deutsche Flagge.",
+    "memoryTip": "Schwarz-Rot-Gold = Demokratie und Einheit (1848, Weimar, Bundesrepublik).",
+    "legalBasis": [
+      {
+        "label": "Art. 22 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_22.html"
+      }
+    ]
+  },
+  "215": {
+    "summary": "Als „Kanzler der Deutschen Einheit“ wird Helmut Kohl bezeichnet.",
+    "whyCorrect": "Helmut Kohl (CDU) war 1989/90 Bundeskanzler und trieb die Wiedervereinigung entscheidend voran.",
+    "background": "Helmut Kohl war von 1982 bis 1998 Bundeskanzler – 16 Jahre, so lange wie kein anderer Kanzler. Nach dem Fall der Mauer legte er im November 1989 ein Zehn-Punkte-Programm für die deutsche Einheit vor. Er verhandelte mit den USA, der Sowjetunion unter Michail Gorbatschow, Großbritannien und Frankreich, bis der Zwei-plus-Vier-Vertrag 1990 die Einheit ermöglichte. Gemeinsam mit dem französischen Präsidenten François Mitterrand trieb er auch die europäische Einigung und die Einführung des Euro voran.",
+    "otherOptions": "Gerhard Schröder (1998–2005) war Kohls Nachfolger. Konrad Adenauer war der erste Kanzler (1949–1963), Helmut Schmidt Kanzler von 1974 bis 1982.",
+    "memoryTip": "Einheit 1990 → Kanzler Kohl.",
+    "legalBasis": []
+  },
+  "216": {
+    "summary": "Im Plenarsaal des Bundestages ist der Bundesadler zu sehen.",
+    "whyCorrect": "Eine große Adler-Skulptur hängt an der Stirnwand hinter dem Rednerpult und den Plätzen des Präsidiums.",
+    "background": "Der Adler im Plenarsaal geht auf einen Entwurf des Bildhauers Ludwig Gies zurück, der für den Bundestag in Bonn geschaffen wurde. Für den Umzug nach Berlin wurde er im Reichstagsgebäude in größerer Form neu gestaltet. Wegen seiner runden Form wird er im Volksmund liebevoll „fette Henne“ genannt. Der Bundesadler ist das Staatssymbol der Bundesrepublik und steht für die Demokratie, die im Bundestag vertreten wird.",
+    "otherOptions": "Die Fahne der Stadt Berlin mit dem Bären hängt nicht im Plenarsaal. Der Reichsadler war das Symbol des Kaiserreichs und der Weimarer Republik. Die Reichskrone ist die Krone des mittelalterlichen Heiligen Römischen Reiches und befindet sich heute in Wien.",
+    "memoryTip": "Plenarsaal = Bundesadler („fette Henne“).",
+    "legalBasis": []
+  },
+  "217": {
+    "summary": "Die DDR gab es von 1949 bis 1990.",
+    "whyCorrect": "Sie wurde am 7. Oktober 1949 gegründet und trat am 3. Oktober 1990 der Bundesrepublik bei.",
+    "background": "Die Deutsche Demokratische Republik bestand fast 41 Jahre. Sie entstand in der sowjetischen Besatzungszone und wurde von der SED regiert. 1961 baute sie die Mauer, 1989 brachten friedliche Proteste die Wende. Mit der Wiedervereinigung am 3. Oktober 1990 hörte die DDR auf zu existieren.",
+    "otherOptions": "1919 bis 1927 fällt in die Zeit der Weimarer Republik, 1933 bis 1945 war die NS-Diktatur. 1945 bis 1961 ist falsch, denn 1945 gab es noch keine DDR, und 1961 wurde die Mauer gebaut – die DDR bestand danach noch fast 30 Jahre.",
+    "memoryTip": "DDR: 1949–1990.",
+    "legalBasis": []
+  },
+  "218": {
+    "summary": "Bei der Wiedervereinigung 1990 kamen fünf Bundesländer zur Bundesrepublik hinzu.",
+    "whyCorrect": "Das waren Brandenburg, Mecklenburg-Vorpommern, Sachsen, Sachsen-Anhalt und Thüringen.",
+    "background": "Vor 1990 hatte die Bundesrepublik zehn Länder; dazu kam West-Berlin mit einem besonderen Status. Mit der Einheit kamen die fünf neuen Länder hinzu, und Ost- und West-Berlin wurden zum Land Berlin vereint. Seitdem gibt es 16 Bundesländer. Berlin wird deshalb nicht als „neues“ Land gezählt, sondern als ein Land, das wieder zusammengefügt wurde.",
+    "otherOptions": "Vier, sechs oder sieben sind falsch. Wer sechs zählt, nimmt Berlin mit – aber Berlin war vorher zur Hälfte (West-Berlin) schon eng mit der Bundesrepublik verbunden.",
+    "memoryTip": "Fünf neue Länder: 10 + 5 + Berlin = 16.",
+    "legalBasis": []
+  },
+  "219": {
+    "summary": "Die Bundesrepublik Deutschland hat ihre heutigen Grenzen seit 1990.",
+    "whyCorrect": "Mit der Wiedervereinigung und dem Zwei-plus-Vier-Vertrag wurden die Grenzen des vereinten Deutschlands endgültig festgelegt.",
+    "background": "Im Zwei-plus-Vier-Vertrag vom September 1990 einigten sich die Bundesrepublik, die DDR und die vier Siegermächte darauf, dass das vereinte Deutschland aus dem Gebiet der beiden deutschen Staaten und ganz Berlin besteht. Im November 1990 bestätigte der deutsch-polnische Grenzvertrag die Oder-Neiße-Grenze endgültig. Deutschland verzichtete damit auf alle Gebietsansprüche. Seitdem hat Deutschland neun Nachbarländer.",
+    "otherOptions": "1933 umfasste Deutschland noch Gebiete im Osten, die heute zu Polen und Russland gehören. 1949 entstand die Bundesrepublik, aber ohne die DDR – und ohne das Saarland, das erst 1957 dazukam. 1971 wurde das Viermächteabkommen über Berlin geschlossen, die Grenzen änderten sich dadurch nicht.",
+    "memoryTip": "Heutige Grenzen = seit der Einheit 1990.",
+    "legalBasis": []
+  },
+  "220": {
+    "summary": "Der 27. Januar erinnert an die Opfer des Nationalsozialismus – es ist der Tag der Befreiung des Vernichtungslagers Auschwitz.",
+    "whyCorrect": "Am 27. Januar 1945 befreiten sowjetische Soldaten die Überlebenden des Lagers Auschwitz-Birkenau.",
+    "background": "Auschwitz-Birkenau im besetzten Polen war das größte Vernichtungslager der Nationalsozialisten. Dort wurden über eine Million Menschen ermordet, die meisten von ihnen Jüdinnen und Juden. Bundespräsident Roman Herzog erklärte den 27. Januar 1996 zum Gedenktag für die Opfer des Nationalsozialismus. Seit 2005 ist er auch der Internationale Holocaust-Gedenktag der Vereinten Nationen. Der Bundestag hält an diesem Tag jedes Jahr eine Gedenkstunde ab.",
+    "otherOptions": "Das Ende des Zweiten Weltkrieges in Europa war am 8. Mai 1945, die Verkündung des Grundgesetzes am 23. Mai 1949 und die Wiedervereinigung am 3. Oktober 1990.",
+    "memoryTip": "27. Januar = Auschwitz befreit = Holocaust-Gedenktag.",
+    "legalBasis": []
+  },
+  "221": {
+    "summary": "Schengen bedeutet: Deutsche können in viele Länder Europas ohne Passkontrolle reisen.",
+    "whyCorrect": "Zwischen den Schengen-Staaten gibt es grundsätzlich keine regelmäßigen Kontrollen an den Binnengrenzen.",
+    "background": "Das Schengener Abkommen wurde 1985 im luxemburgischen Ort Schengen unterzeichnet. Heute gehören 29 Staaten zum Schengen-Raum, die meisten EU-Länder sowie Norwegen, Island, die Schweiz und Liechtenstein. Wer zwischen diesen Ländern reist, muss normalerweise nicht an der Grenze anhalten. Einen Ausweis sollte man trotzdem immer dabeihaben, denn Staaten dürfen vorübergehend wieder Grenzkontrollen einführen – Deutschland tut das derzeit an mehreren Grenzen.",
+    "otherOptions": "Nicht alle Menschen können ohne Kontrolle nach Deutschland einreisen: An den Außengrenzen des Schengen-Raums wird kontrolliert, und viele brauchen ein Visum. Ohne Passkontrolle in jedes Land der Welt zu reisen ist nicht möglich. Und der Euro ist nicht in jedem Land Zahlungsmittel – das hat mit Schengen nichts zu tun.",
+    "memoryTip": "Schengen = offene Grenzen in Europa.",
+    "legalBasis": []
+  },
+  "222": {
+    "summary": "Die Schweiz ist ein Nachbarland von Deutschland.",
+    "whyCorrect": "Deutschland grenzt im Süden an die Schweiz, unter anderem am Bodensee und am Hochrhein.",
+    "background": "Deutschland hat neun Nachbarländer – mehr als jedes andere Land in Europa: Dänemark im Norden, Polen und Tschechien im Osten, Österreich und die Schweiz im Süden sowie Frankreich, Luxemburg, Belgien und die Niederlande im Westen. In der Schweiz ist Deutsch eine der Amtssprachen und wird von der Mehrheit der Bevölkerung gesprochen. Die Schweiz ist kein EU-Mitglied, gehört aber zum Schengen-Raum.",
+    "otherOptions": "Ungarn liegt hinter Österreich und grenzt nicht an Deutschland. Portugal und Spanien liegen auf der Iberischen Halbinsel im Südwesten Europas – Frankreich liegt dazwischen.",
+    "memoryTip": "Neun Nachbarn: DK, PL, CZ, AT, CH, FR, LU, BE, NL.",
+    "legalBasis": []
+  },
+  "223": {
+    "summary": "Polen ist ein Nachbarland von Deutschland.",
+    "whyCorrect": "Die deutsch-polnische Grenze verläuft im Osten entlang der Flüsse Oder und Neiße.",
+    "background": "Die Grenze zu Polen ist rund 470 Kilometer lang. Nach dem Zweiten Weltkrieg wurde sie an Oder und Neiße festgelegt; die Bundesrepublik erkannte sie 1970 im Warschauer Vertrag an, das vereinte Deutschland 1990 endgültig. Heute sind beide Länder Mitglieder der EU und der NATO, und die Grenze ist offen. Viele Menschen pendeln täglich zwischen Städten wie Frankfurt (Oder) und Słubice oder Görlitz und Zgorzelec.",
+    "otherOptions": "Rumänien, Bulgarien und Griechenland liegen in Südosteuropa und grenzen nicht an Deutschland. Sie sind aber wie Deutschland Mitglieder der Europäischen Union.",
+    "memoryTip": "Osten: Polen und Tschechien sind Nachbarn.",
+    "legalBasis": []
+  },
+  "224": {
+    "summary": "EU ist die Abkürzung für Europäische Union.",
+    "whyCorrect": "Die EU ist ein Zusammenschluss von 27 europäischen Staaten.",
+    "background": "Die Europäische Union entstand 1993 aus den europäischen Gemeinschaften, die Deutschland in den 1950er-Jahren mitgegründet hat. Die EU-Staaten haben einen gemeinsamen Binnenmarkt, in dem Waren, Dienstleistungen, Kapital und Menschen sich frei bewegen können. Wichtige Institutionen sind das Europäische Parlament, das die Bürgerinnen und Bürger direkt wählen, die Europäische Kommission in Brüssel und der Europäische Gerichtshof in Luxemburg. 21 der 27 Länder haben den Euro als Währung, zuletzt kam 2026 Bulgarien dazu.",
+    "otherOptions": "„Europäische Unternehmen“, „Einheitliche Union“ und „Euro Union“ sind erfundene Begriffe. Der Euro ist die Währung vieler EU-Länder, aber nicht der Name der Union.",
+    "memoryTip": "EU = Europäische Union, 27 Staaten.",
+    "legalBasis": [
+      {
+        "label": "Art. 23 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_23.html"
+      }
+    ]
+  },
+  "225": {
+    "summary": "Eine große deutschsprachige Bevölkerung gibt es in Österreich.",
+    "whyCorrect": "In Österreich ist Deutsch die Amtssprache und die Muttersprache der großen Mehrheit.",
+    "background": "Deutsch ist nicht nur in Deutschland Amtssprache, sondern auch in Österreich, Liechtenstein und – neben anderen Sprachen – in der Schweiz, in Luxemburg und in Belgien. In Italien ist es in Südtirol regional Amtssprache. Insgesamt sprechen in Europa rund 100 Millionen Menschen Deutsch als Muttersprache; damit ist es die meistgesprochene Muttersprache in der EU. Österreichisches Deutsch hat einige eigene Wörter, etwa „Jänner“ für Januar oder „Paradeiser“ für Tomate.",
+    "otherOptions": "In Tschechien gibt es nur eine kleine deutsche Minderheit. In Norwegen und Spanien leben zwar manche Deutsche, zum Beispiel Rentner auf Mallorca, eine große deutschsprachige Bevölkerung gibt es dort aber nicht.",
+    "memoryTip": "Deutsch als Amtssprache: Deutschland, Österreich, Schweiz, Liechtenstein, Luxemburg, Belgien.",
+    "legalBasis": []
   }
 }
