@@ -239,12 +239,12 @@ const learningResourceSchema = {
               <p class="mt-2 text-slate-700">{deepDive.otherOptions}</p>
               <h3 class="mt-5 text-lg font-semibold text-slate-900">{deepDiveCopy.memoryTip}</h3>
               <p class="mt-2 text-slate-700">{deepDive.memoryTip}</p>
-              <p class="mt-5 text-sm text-slate-600">
+              {deepDive.legalBasis.length > 0 && <p class="mt-5 text-sm text-slate-600">
                 {deepDiveCopy.legalBasis}:{' '}
                 {deepDive.legalBasis.map((basis, index) => (
                   <>{index > 0 && ', '}<a class="text-link" href={basis.url} rel="noopener noreferrer">{basis.label} ↗</a></>
                 ))}
-              </p>
+              </p>}
             </>
           )}
           <div class="mt-5 flex flex-wrap gap-x-5 gap-y-2 text-sm text-slate-600">

@@ -9,7 +9,7 @@ export interface QuestionExplanation extends ExplanationText {
   isFallback: boolean;
 }
 
-const texts: Record<number, Record<ExplanationLanguage, ExplanationText>> = {
+const texts: Record<number, Partial<Record<ExplanationLanguage, ExplanationText>>> = {
   1: {
     de: { summary: 'Kritik an der Regierung ist grundsätzlich erlaubt.', whyCorrect: 'Die Meinungsfreiheit schützt das Recht, politische Ansichten offen zu äußern. Gesetzliche Grenzen, etwa zum Schutz anderer Personen, bleiben bestehen.' },
     en: { summary: 'People are generally allowed to criticise the government.', whyCorrect: 'Freedom of expression protects the open communication of political opinions, subject to legal limits that protect other people.' },
@@ -160,6 +160,66 @@ const texts: Record<number, Record<ExplanationLanguage, ExplanationText>> = {
     en: { summary: 'Press censorship is not a feature of democracy.', whyCorrect: 'Regular elections, free expression and multiple parties enable democratic control, while censorship prevents open public debate.' },
     tr: { summary: 'Basın sansürü demokrasinin bir özelliği değildir.', whyCorrect: 'Düzenli seçimler, ifade özgürlüğü ve farklı partiler demokratik denetimi sağlar; sansür özgür kamusal tartışmayı engeller.' },
   },
+  31: {
+    de: { summary: 'Mehrere Parteien, die gemeinsam regieren, bilden eine Koalition.', whyCorrect: 'Hat keine Partei allein die Mehrheit im Parlament, schließen sich Parteien zu einer Koalition zusammen und bilden zusammen die Regierung.' },
+  },
+  32: {
+    de: { summary: 'Die Presse ist keine staatliche Gewalt.', whyCorrect: 'Die drei staatlichen Gewalten sind Gesetzgebung, vollziehende Gewalt (Regierung) und Rechtsprechung; die Presse ist unabhängig vom Staat.' },
+  },
+  33: {
+    de: { summary: 'Staat und Religionsgemeinschaften sind in Deutschland getrennt.', whyCorrect: 'Es gibt keine Staatskirche; der Staat ist religiös neutral und bevorzugt keine Religion.' },
+  },
+  34: {
+    de: { summary: 'Deutschland ist keine Monarchie.', whyCorrect: 'Deutschland ist eine Republik mit gewähltem Staatsoberhaupt; Demokratie, Rechtsstaat und Sozialstaat sind Grundprinzipien des Grundgesetzes.' },
+  },
+  35: {
+    de: { summary: 'Die Sozialversicherung wird vor allem durch Sozialabgaben finanziert.', whyCorrect: 'Arbeitnehmer und Arbeitgeber zahlen Beiträge zur Kranken-, Pflege-, Renten- und Arbeitslosenversicherung; Kirchensteuer, Spenden und Vereinsbeiträge gehören nicht dazu.' },
+  },
+  36: {
+    de: { summary: 'Die Krankenversicherung schafft soziale Sicherheit.', whyCorrect: 'Sie ist Teil der Sozialversicherung und schützt Menschen bei Krankheit; Auto-, Gebäude- und Haftpflichtversicherung sind private Sachversicherungen.' },
+  },
+  37: {
+    de: { summary: 'In den meisten Bundesländern heißt der Regierungschef Ministerpräsident.', whyCorrect: 'Das gilt für die 13 Flächenländer; in den Stadtstaaten Berlin, Hamburg und Bremen heißt das Amt Bürgermeister.' },
+  },
+  38: {
+    de: { summary: 'Deutschland ist ein demokratischer und sozialer Bundesstaat.', whyCorrect: 'So steht es in Artikel 20 des Grundgesetzes: Der Bund und 16 Länder bilden gemeinsam den Staat.' },
+  },
+  39: {
+    de: { summary: 'Jedes Bundesland hat eine eigene Regierung.', whyCorrect: 'Außenpolitik, Armee und Währung sind Sache des Bundes oder der EU; jedes Land hat aber eine eigene Landesregierung und ein Landesparlament.' },
+  },
+  40: {
+    de: { summary: 'Die Nationalhymne beginnt mit „Einigkeit und Recht und Freiheit“.', whyCorrect: 'Die Nationalhymne ist die dritte Strophe des „Liedes der Deutschen“ von Hoffmann von Fallersleben.' },
+  },
+  41: {
+    de: { summary: 'Mehrere Parteien vertreten die unterschiedlichen Meinungen der Bürgerinnen und Bürger.', whyCorrect: 'Erst durch mehrere Parteien haben Wählerinnen und Wähler eine echte Auswahl zwischen verschiedenen politischen Positionen.' },
+  },
+  42: {
+    de: { summary: 'Neue Gesetze beschließt das Parlament.', whyCorrect: 'Auf Bundesebene beschließt der Bundestag die Gesetze, oft zusammen mit dem Bundesrat; Regierung, Gerichte und Polizei beschließen keine Gesetze.' },
+  },
+  43: {
+    de: { summary: 'Eine Partei kann verboten werden, wenn sie gegen die Verfassung kämpft.', whyCorrect: 'Nur das Bundesverfassungsgericht kann eine Partei verbieten, die die freiheitliche demokratische Grundordnung beseitigen will.' },
+  },
+  44: {
+    de: { summary: 'Den Bundespräsidenten oder die Bundespräsidentin wählt man nicht direkt.', whyCorrect: 'Das Staatsoberhaupt wird von der Bundesversammlung gewählt; Abgeordnete von EU-Parlament, Landtag und Bundestag wählen die Bürger direkt.' },
+  },
+  45: {
+    de: { summary: 'Die Pflegeversicherung gehört zur Sozialversicherung.', whyCorrect: 'Sie ist neben Kranken-, Renten-, Arbeitslosen- und Unfallversicherung einer der fünf Zweige der Sozialversicherung.' },
+  },
+  46: {
+    de: { summary: 'Der Staat baut zum Beispiel Straßen und Schulen.', whyCorrect: 'Öffentliche Infrastruktur ist eine staatliche Aufgabe; Lebensmittel, Kleidung und Fahrzeuge stellen private Unternehmen her.' },
+  },
+  47: {
+    de: { summary: 'Der Staat bezahlt keine Urlaubsreisen.', whyCorrect: 'Kindergeld, die Förderung von Museen und die Unterstützung von Sportlerinnen und Sportlern sind staatliche Aufgaben, private Urlaubsreisen nicht.' },
+  },
+  48: {
+    de: { summary: 'Die Bürgerversammlung ist kein Verfassungsorgan.', whyCorrect: 'Verfassungsorgane sind unter anderem Bundestag, Bundesrat, Bundespräsident, Bundesregierung und Bundesverfassungsgericht.' },
+  },
+  49: {
+    de: { summary: 'Die Bundesländer bestimmen die Schulpolitik.', whyCorrect: 'Bildung ist in Deutschland Ländersache; deshalb haben die Länder eigene Schulgesetze und Lehrpläne.' },
+  },
+  50: {
+    de: { summary: 'Die Wirtschaftsform in Deutschland heißt soziale Marktwirtschaft.', whyCorrect: 'Sie verbindet einen freien Markt mit sozialem Ausgleich durch den Staat; Planwirtschaft gab es in der DDR.' },
+  },
 };
 
 const sourceName: Record<ExplanationLanguage, string> = {
@@ -178,8 +238,10 @@ export function getQuestionExplanation(id: number, lang: string): QuestionExplan
   const entry = texts[id];
   if (!entry) return undefined;
   const selectedLang: ExplanationLanguage = lang === 'en' || lang === 'tr' ? lang : 'de';
+  const text = entry[selectedLang];
+  if (!text) return undefined;
   return {
-    ...entry[selectedLang],
+    ...text,
     sourceName: sourceName[selectedLang],
     sourceUrl: BAMF_QUESTION_CATALOG,
     reviewedAt: '2026-10-08',
