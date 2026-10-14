@@ -66,10 +66,20 @@ async function fetchLiveManifest() {
   return response.json();
 }
 
+// Right after a deploy the key file may not be reachable yet (HTTP 403), so retry with a delay.
+async function postWithRetry(request, attempts = 4, delayMs = 30_000) {
+  for (let attempt = 1; ; attempt += 1) {
+    const response = await fetch(ENDPOINT, request);
+    if (response.status === 200 || response.status === 202 || attempt === attempts) return response;
+    console.warn(`IndexNow: HTTP ${response.status}, retrying in ${(delayMs * attempt) / 1000}s (attempt ${attempt}/${attempts}).`);
+    await new Promise((resolve) => setTimeout(resolve, delayMs * attempt));
+  }
+}
+
 async function submit(urls) {
   for (let start = 0; start < urls.length; start += MAX_URLS_PER_REQUEST) {
     const urlList = urls.slice(start, start + MAX_URLS_PER_REQUEST);
-    const response = await fetch(ENDPOINT, {
+    const response = await postWithRetry({
       method: 'POST',
       headers: { 'content-type': 'application/json; charset=utf-8' },
       body: JSON.stringify({
