@@ -2031,5 +2031,205 @@
     "otherOptions": "Drei, fünf oder sechs Zonen sind falsch – es gab genau vier Besatzungsmächte und damit vier Zonen. Frankreich bekam seine Zone erst nachträglich aus Teilen der amerikanischen und britischen Zone.",
     "memoryTip": "Vier Siegermächte = vier Zonen.",
     "legalBasis": []
+  },
+  "176": {
+    "summary": "Die Zonen waren so verteilt: 1 = Großbritannien, 2 = Sowjetunion, 3 = USA, 4 = Frankreich.",
+    "whyCorrect": "Die Briten besetzten den Nordwesten, die Sowjets den Osten, die Amerikaner den Süden und die Franzosen den Südwesten.",
+    "background": "Auf der Karte ist Zone 1 im Nordwesten die britische Zone, unter anderem mit dem heutigen Nordrhein-Westfalen, Niedersachsen, Schleswig-Holstein und Hamburg. Zone 2 im Osten ist die sowjetische Zone, aus der später die DDR wurde. Zone 3 im Süden ist die amerikanische Zone mit Bayern und Hessen; dazu gehörte auch Bremen, damit die USA einen eigenen Hafen hatten. Zone 4 im Südwesten ist die französische Zone, etwa mit dem heutigen Rheinland-Pfalz.",
+    "otherOptions": "Die anderen Antworten vertauschen die Mächte. Hilfreich ist die Geografie: Die Sowjetunion lag im Osten, also besetzte sie den Osten; Frankreich grenzt im Südwesten an Deutschland; Großbritannien liegt über die Nordsee im Nordwesten.",
+    "memoryTip": "Geografie hilft: Briten im Norden, Sowjets im Osten, Amerikaner im Süden, Franzosen im Südwesten.",
+    "legalBasis": []
+  },
+  "177": {
+    "summary": "Berlin wurde nach dem Zweiten Weltkrieg in vier Sektoren aufgeteilt.",
+    "whyCorrect": "Die Hauptstadt wurde wie ganz Deutschland zwischen den vier Siegermächten geteilt.",
+    "background": "Obwohl Berlin mitten in der sowjetischen Zone lag, bekam jede Siegermacht einen Sektor der Stadt. Der sowjetische Sektor im Osten wurde zu Ost-Berlin, der Hauptstadt der DDR. Die amerikanischen, britischen und französischen Sektoren bildeten West-Berlin, das eng mit der Bundesrepublik verbunden war. Ab 1961 trennte die Mauer die beiden Teile. Ein bekanntes Symbol dieser Zeit ist der „Checkpoint Charlie“, ein Grenzübergang zwischen dem amerikanischen und dem sowjetischen Sektor.",
+    "otherOptions": "München lag in der amerikanischen Zone, Dresden und Frankfurt (Oder) in der sowjetischen Zone. Diese Städte wurden nicht in Sektoren geteilt.",
+    "memoryTip": "Vier Mächte, vier Sektoren – nur in Berlin.",
+    "legalBasis": []
+  },
+  "178": {
+    "summary": "Die Luftbrücke war nötig, weil die Sowjetunion den gesamten Verkehr auf dem Landweg nach West-Berlin unterbrach.",
+    "whyCorrect": "Mit der Berlin-Blockade wollte die Sowjetunion die Westmächte aus Berlin drängen.",
+    "background": "Im Juni 1948 führten die Westmächte in ihren Zonen die D-Mark ein. Die Sowjetunion antwortete mit einer Blockade: Straßen, Schienen und Wasserwege nach West-Berlin wurden gesperrt. Daraufhin versorgten vor allem amerikanische und britische Flugzeuge die rund zwei Millionen West-Berliner fast ein Jahr lang aus der Luft – mit Lebensmitteln, Kohle und Medikamenten. Die Berliner nannten die Flugzeuge „Rosinenbomber“. Im Mai 1949 hob die Sowjetunion die Blockade auf.",
+    "otherOptions": "Die Luftbrücke war weder billiger noch schneller als der Landweg – sie war viel teurer und aufwendiger. Sie war nötig, weil es keinen anderen Weg gab, nicht wegen Angst vor Überfällen.",
+    "memoryTip": "Blockade am Boden → Brücke in der Luft.",
+    "legalBasis": []
+  },
+  "179": {
+    "summary": "Der Zweite Weltkrieg endete in Europa offiziell durch die bedingungslose Kapitulation Deutschlands.",
+    "whyCorrect": "Die Kapitulation der Wehrmacht trat am 8. Mai 1945 in Kraft.",
+    "background": "Die deutsche Wehrmacht unterschrieb die bedingungslose Kapitulation am 7. Mai 1945 in Reims und noch einmal in der Nacht zum 9. Mai in Berlin-Karlshorst. „Bedingungslos“ bedeutete: Deutschland konnte keine Bedingungen stellen, die Siegermächte übernahmen die oberste Regierungsgewalt. Damit endeten die Kämpfe in Europa. Heute erinnert unter anderem das Museum Berlin-Karlshorst an diesen Moment.",
+    "otherOptions": "Hitler nahm sich schon am 30. April 1945 das Leben, aber der Krieg ging danach noch über eine Woche weiter. Einen geordneten Rückzug aus den besetzten Gebieten gab es nicht. Eine Revolution beendete den Ersten Weltkrieg 1918 (Novemberrevolution), nicht den Zweiten.",
+    "memoryTip": "Bedingungslose Kapitulation, 8. Mai 1945.",
+    "legalBasis": []
+  },
+  "180": {
+    "summary": "Der erste Bundeskanzler der Bundesrepublik war Konrad Adenauer.",
+    "whyCorrect": "Das ist dieselbe Frage wie Frage 165: Adenauer (CDU) regierte von 1949 bis 1963.",
+    "background": "Konrad Adenauer prägte die Anfangsjahre der Bundesrepublik so stark, dass man von der „Ära Adenauer“ spricht. 1955 reiste er nach Moskau und erreichte die Freilassung der letzten rund 10.000 deutschen Kriegsgefangenen. Mit dem französischen Präsidenten Charles de Gaulle schloss er 1963 den Élysée-Vertrag, die Grundlage der deutsch-französischen Freundschaft.",
+    "otherOptions": "Ludwig Erhard war unter Adenauer Wirtschaftsminister und wurde 1963 sein Nachfolger als zweiter Bundeskanzler. Willy Brandt (1969–1974) und Gerhard Schröder (1998–2005) waren spätere Kanzler der SPD.",
+    "memoryTip": "Erster Kanzler: Adenauer; zweiter: Erhard.",
+    "legalBasis": []
+  },
+  "181": {
+    "summary": "Mit seinem Kniefall bat Willy Brandt Polen und die polnischen Juden um Vergebung.",
+    "whyCorrect": "Der Kniefall vor dem Denkmal für die Helden des Warschauer Ghettos war eine Geste der Demut und der Bitte um Versöhnung.",
+    "background": "Am 7. Dezember 1970 war Bundeskanzler Willy Brandt in Warschau, um den Warschauer Vertrag zu unterzeichnen, mit dem die Bundesrepublik die Grenze zu Polen anerkannte. Am Denkmal für den Aufstand im Warschauer Ghetto von 1943 legte er einen Kranz nieder – und kniete dann unerwartet nieder. Ohne Worte drückte er damit die Scham über die deutschen Verbrechen aus. Das Foto ging um die Welt. 1971 erhielt Brandt für seine Politik der Versöhnung mit dem Osten den Friedensnobelpreis.",
+    "otherOptions": "Brandt unterwarf sich nicht den Alliierten und zeigte keine Demut vor dem Warschauer Pakt, dem Militärbündnis des Ostens. Er besuchte zwar auch das Grab des Unbekannten Soldaten, aber der berühmte Kniefall war am Ghetto-Denkmal.",
+    "memoryTip": "Warschau 1970: Kniefall = Bitte um Vergebung.",
+    "legalBasis": []
+  },
+  "182": {
+    "summary": "Das jüdische Gebetshaus heißt Synagoge.",
+    "whyCorrect": "In der Synagoge versammelt sich die jüdische Gemeinde zum Gebet, zum Lesen der Tora und zum Lernen.",
+    "background": "Das Wort Synagoge kommt aus dem Griechischen und bedeutet „Versammlung“. Der wichtigste Gottesdienst findet am Schabbat statt, der am Freitagabend beginnt. Im Mittelpunkt steht die Tora, die auf Schriftrollen im Toraschrein aufbewahrt wird. Geleitet wird die Gemeinde oft von einem Rabbiner oder einer Rabbinerin. Viele Synagogen in Deutschland stehen heute unter Polizeischutz, weil es immer wieder antisemitische Angriffe gibt.",
+    "otherOptions": "Eine Kirche ist das Gotteshaus der Christen, eine Basilika ist eine besondere Bauform oder ein Ehrentitel für bestimmte Kirchen. Eine Moschee ist das Gebetshaus der Musliminnen und Muslime.",
+    "memoryTip": "Kirche – Christen, Moschee – Muslime, Synagoge – Juden.",
+    "legalBasis": []
+  },
+  "183": {
+    "summary": "Das „Wirtschaftswunder“ in der Bundesrepublik war in den 50er-Jahren.",
+    "whyCorrect": "Nach der Währungsreform 1948 wuchs die westdeutsche Wirtschaft in den 1950er-Jahren außergewöhnlich schnell.",
+    "background": "Nach dem Krieg lagen viele Städte in Trümmern. Mit der Einführung der D-Mark 1948, der Hilfe des amerikanischen Marshallplans und der sozialen Marktwirtschaft unter Wirtschaftsminister Ludwig Erhard begann ein rasanter Aufschwung. Die Produktion stieg, die Arbeitslosigkeit sank fast auf null, und viele Familien konnten sich erstmals Kühlschrank, Fernseher oder Auto leisten. Weil Arbeitskräfte fehlten, schloss die Bundesrepublik ab 1955 Anwerbeabkommen mit anderen Ländern, 1961 auch mit der Türkei.",
+    "otherOptions": "In den 40er-Jahren herrschten Krieg und Nachkriegsnot. In den 70er-Jahren brachte die Ölkrise von 1973 wirtschaftliche Probleme, und in den 80er-Jahren war die Arbeitslosigkeit vergleichsweise hoch.",
+    "memoryTip": "Wirtschaftswunder = 1950er, D-Mark, Ludwig Erhard.",
+    "legalBasis": []
+  },
+  "184": {
+    "summary": "Der Staat Israel wurde auf Grundlage einer Resolution der Vereinten Nationen gegründet.",
+    "whyCorrect": "Die UN-Generalversammlung beschloss im November 1947 einen Teilungsplan für Palästina.",
+    "background": "Am 29. November 1947 stimmte die Generalversammlung der Vereinten Nationen mit der Resolution 181 dafür, das damalige britische Mandatsgebiet Palästina in einen jüdischen und einen arabischen Staat zu teilen. Am 14. Mai 1948 rief David Ben-Gurion den Staat Israel aus. Für viele Überlebende des Holocaust wurde Israel eine neue Heimat. Die Bundesrepublik und Israel nahmen 1965 diplomatische Beziehungen auf.",
+    "otherOptions": "Der Zionistenkongress 1897 in Basel unter Theodor Herzl formulierte das Ziel einer jüdischen Heimstätte, war aber keine rechtliche Grundlage für die Staatsgründung. Eine Bundesregierung gab es 1947 noch gar nicht. Die Sowjetunion erkannte Israel zwar früh an, machte aber keinen Vorschlag zur Gründung.",
+    "memoryTip": "Israel 1948 – Grundlage: UN-Resolution von 1947.",
+    "legalBasis": []
+  },
+  "185": {
+    "summary": "Der „Eiserne Vorhang“ stand für die Abschottung des Warschauer Pakts gegen den Westen.",
+    "whyCorrect": "Er bezeichnete die bewachte Grenze, die Europa im Kalten Krieg in Ost und West teilte.",
+    "background": "Den Begriff machte der britische Politiker Winston Churchill 1946 bekannt. Er beschrieb damit, wie die Sowjetunion und die von ihr beherrschten Staaten Osteuropas sich vom Westen abschotteten. Der Eiserne Vorhang verlief von der Ostsee bis zum Schwarzen Meer – mitten durch Deutschland, wo die innerdeutsche Grenze mit Zäunen, Minen und Wachtürmen gesichert war. Er fiel 1989, als Ungarn die Grenze öffnete und in der DDR die Mauer fiel.",
+    "otherOptions": "Zwischen Nord- und Süddeutschland gab es nie eine solche Grenze. Mit NS-Deutschland gegen die Alliierten hat der Begriff nichts zu tun, und Europa war nicht gegen die USA abgeschottet – Westeuropa und die USA waren im Kalten Krieg Verbündete.",
+    "memoryTip": "Eiserner Vorhang = Grenze zwischen Ost und West im Kalten Krieg.",
+    "legalBasis": []
+  },
+  "186": {
+    "summary": "Der Aufstand in der DDR war am 17. Juni 1953.",
+    "whyCorrect": "In der Bundesrepublik war der 17. Juni bis 1990 als „Tag der deutschen Einheit“ ein Feiertag.",
+    "background": "Am 16. und 17. Juni 1953 protestierten zuerst Bauarbeiter in Ost-Berlin gegen höhere Arbeitsnormen. Daraus wurde schnell ein Aufstand in der ganzen DDR, bei dem Hunderttausende freie Wahlen und den Rücktritt der Regierung forderten. Sowjetische Panzer schlugen den Aufstand nieder; Dutzende Menschen wurden getötet, Tausende verhaftet. Seit der Wiedervereinigung ist der 3. Oktober der Tag der Deutschen Einheit; an den 17. Juni erinnert in Berlin die „Straße des 17. Juni“.",
+    "otherOptions": "Der 1. Mai ist der Tag der Arbeit. Am 20. Juli 1944 fand das Attentat auf Hitler statt. Der 9. November ist der Tag des Mauerfalls 1989 und der Pogrome 1938.",
+    "memoryTip": "17. Juni 1953 – Volksaufstand in der DDR.",
+    "legalBasis": []
+  },
+  "187": {
+    "summary": "Die schwarz-rot-goldene Flagge mit Hammer, Zirkel und Ährenkranz war die Flagge der DDR.",
+    "whyCorrect": "Seit 1959 trug die DDR-Flagge das Staatswappen der DDR in der Mitte.",
+    "background": "Bundesrepublik und DDR verwendeten beide die Farben Schwarz, Rot und Gold, die auf die demokratische Bewegung des 19. Jahrhunderts zurückgehen. Um sich zu unterscheiden, setzte die DDR 1959 ihr Wappen in die Mitte: Der Hammer stand für die Arbeiter, der Zirkel für die Intelligenz und der Ährenkranz für die Bauern. Mit der Wiedervereinigung 1990 verschwand diese Flagge.",
+    "otherOptions": "Preußen hatte eine schwarz-weiße Flagge. Die Flagge der Bundesrepublik ist schwarz-rot-gold ohne Symbol. Das „Dritte Reich“ verwendete die Hakenkreuzflagge.",
+    "memoryTip": "Hammer + Zirkel + Ähren = Arbeiter, Intelligenz, Bauern = DDR.",
+    "legalBasis": []
+  },
+  "188": {
+    "summary": "Die Mauer in Berlin wurde 1961 gebaut.",
+    "whyCorrect": "Am 13. August 1961 begann die DDR, die Grenze zu West-Berlin abzuriegeln.",
+    "background": "Nur zwei Monate vorher hatte DDR-Staatschef Walter Ulbricht auf einer Pressekonferenz gesagt: „Niemand hat die Absicht, eine Mauer zu errichten.“ In der Nacht zum 13. August 1961 sperrten Soldaten und Polizisten die Grenze zuerst mit Stacheldraht, dann wurde die Mauer gebaut. Familien und Freunde wurden über Nacht getrennt. Die Mauer stand 28 Jahre lang, bis zum 9. November 1989.",
+    "otherOptions": "1953 gab es den Volksaufstand in der DDR. 1956 und 1959 sind keine besonderen Jahreszahlen für die Mauer.",
+    "memoryTip": "Mauerbau 13. August 1961 – Mauerfall 9. November 1989.",
+    "legalBasis": []
+  },
+  "189": {
+    "summary": "Die DDR baute die Mauer in Berlin 1961.",
+    "whyCorrect": "Das ist dieselbe Frage wie Frage 188, nur mit anderen Jahreszahlen.",
+    "background": "Der Grund für den Mauerbau war die Massenflucht: Zwischen 1949 und 1961 hatten rund drei Millionen Menschen die DDR verlassen, vor allem junge und gut ausgebildete. Der DDR drohten die Arbeitskräfte auszugehen. Nach dem Mauerbau war Flucht lebensgefährlich: An der Grenze gab es einen Schießbefehl. Trotzdem versuchten es viele – durch Tunnel, mit Ballons oder über die Ostsee.",
+    "otherOptions": "1919 wurde die Weimarer Verfassung beschlossen, 1933 kamen die Nationalsozialisten an die Macht, und 1990 wurde Deutschland wiedervereinigt – die Mauer war da schon gefallen.",
+    "memoryTip": "Fragen 188 und 189: Antwort 1961.",
+    "legalBasis": []
+  },
+  "190": {
+    "summary": "DDR steht für Deutsche Demokratische Republik.",
+    "whyCorrect": "So hieß der ostdeutsche Staat von 1949 bis 1990.",
+    "background": "Obwohl „demokratisch“ im Namen stand, war die DDR keine Demokratie. Die Sozialistische Einheitspartei Deutschlands (SED) beherrschte alle Bereiche des Staates. Bei Wahlen gab es nur eine Einheitsliste, die Presse war zensiert, und die Staatssicherheit überwachte die Bevölkerung. Wer das System kritisierte, riskierte Gefängnis. Erst die Friedliche Revolution 1989 brachte freie Wahlen.",
+    "otherOptions": "„Dritter Deutscher Rundfunk“, „Die Deutsche Republik“ und „Dritte Deutsche Republik“ sind erfundene Namen.",
+    "memoryTip": "D-D-R: Deutsche – Demokratische – Republik (aber keine Demokratie).",
+    "legalBasis": []
+  },
+  "191": {
+    "summary": "Die Mauer in Berlin wurde 1989 für alle geöffnet.",
+    "whyCorrect": "Am Abend des 9. November 1989 öffneten sich die Grenzübergänge, und Tausende Ost-Berliner strömten in den Westen.",
+    "background": "Nach Massenprotesten und einer Fluchtwelle über Ungarn wollte die DDR-Führung die Reiseregeln lockern. Bei einer Pressekonferenz am 9. November 1989 sagte SED-Politiker Günter Schabowski auf die Frage, ab wann das gelte: „Das tritt nach meiner Kenntnis … sofort, unverzüglich.“ Noch am selben Abend drängten Tausende Menschen an die Grenzübergänge, bis die Grenzer sie öffneten. Die Bilder von jubelnden Menschen auf der Mauer gingen um die Welt.",
+    "otherOptions": "1987 forderte US-Präsident Ronald Reagan in Berlin: „Tear down this wall!“ – aber die Mauer stand noch. 1992 und 1995 waren schon nach der Wiedervereinigung 1990.",
+    "memoryTip": "9. November 1989 – Mauerfall.",
+    "legalBasis": []
+  },
+  "192": {
+    "summary": "Brandenburg gehörte früher zum Gebiet der DDR.",
+    "whyCorrect": "Brandenburg ist eines der fünf ostdeutschen Bundesländer, die 1990 der Bundesrepublik beigetreten sind.",
+    "background": "Zum Gebiet der DDR gehörten die heutigen Länder Brandenburg, Mecklenburg-Vorpommern, Sachsen, Sachsen-Anhalt und Thüringen sowie Ost-Berlin. In der DDR gab es allerdings keine Länder: Sie wurden 1952 abgeschafft und durch 15 Bezirke ersetzt. Erst 1990 wurden die Länder neu gegründet und traten am 3. Oktober der Bundesrepublik bei. Die Hauptstadt von Brandenburg ist Potsdam. Brandenburg umschließt Berlin; in Potsdam liegt das Schloss Sanssouci.",
+    "otherOptions": "Bayern, das Saarland und Hessen lagen immer in Westdeutschland und gehörten zur Bundesrepublik. Merke dir die fünf „neuen Länder“: Brandenburg, Mecklenburg-Vorpommern, Sachsen, Sachsen-Anhalt und Thüringen.",
+    "memoryTip": "Fünf neue Länder: Brandenburg, Mecklenburg-Vorpommern, Sachsen, Sachsen-Anhalt, Thüringen.",
+    "legalBasis": []
+  },
+  "193": {
+    "summary": "Von 1961 bis 1989 war Berlin durch eine Mauer geteilt.",
+    "whyCorrect": "Die Mauer trennte Ost-Berlin, die Hauptstadt der DDR, von West-Berlin.",
+    "background": "28 Jahre lang lief die Mauer quer durch die Stadt und rund um West-Berlin. Sie trennte Straßen, Plätze und sogar Friedhöfe. West-Berliner konnten nur mit besonderen Genehmigungen in den Osten reisen, Ost-Berliner durften meist gar nicht in den Westen. Heute erinnern die Gedenkstätte Berliner Mauer in der Bernauer Straße, die East Side Gallery und eine Doppelreihe Pflastersteine im Boden an den Verlauf der Mauer.",
+    "otherOptions": "Berlin hatte immer Bürgermeister – im Westen den Regierenden Bürgermeister, im Osten einen Oberbürgermeister. West-Berlin war kein eigener Staat, sondern eng mit der Bundesrepublik verbunden. Und West-Berlin war nicht nur mit dem Flugzeug erreichbar: Es gab Transitstraßen und Zugverbindungen durch die DDR.",
+    "memoryTip": "1961–1989: Berlin geteilt durch die Mauer.",
+    "legalBasis": []
+  },
+  "194": {
+    "summary": "Am 3. Oktober feiert man in Deutschland den Tag der Deutschen Einheit.",
+    "whyCorrect": "An diesem Tag im Jahr 1990 trat die DDR der Bundesrepublik bei – Deutschland war wiedervereinigt.",
+    "background": "Der Tag der Deutschen Einheit ist der Nationalfeiertag Deutschlands und in allen Bundesländern ein gesetzlicher Feiertag. Er erinnert an die Wiedervereinigung am 3. Oktober 1990, die durch die Friedliche Revolution in der DDR und den Zwei-plus-Vier-Vertrag mit den vier Siegermächten möglich wurde. Die zentrale Feier findet jedes Jahr in einem anderen Bundesland statt, meist in dem, das gerade den Vorsitz im Bundesrat hat.",
+    "otherOptions": "Einen „Tag der Nation“, „Tag der Bundesländer“ oder „Tag der Städte“ gibt es als Feiertag nicht.",
+    "memoryTip": "3. Oktober 1990 – Deutsche Einheit.",
+    "legalBasis": []
+  },
+  "195": {
+    "summary": "Sachsen-Anhalt gehörte früher zum Gebiet der DDR.",
+    "whyCorrect": "Sachsen-Anhalt ist eines der fünf ostdeutschen Bundesländer, die 1990 der Bundesrepublik beigetreten sind.",
+    "background": "Zum Gebiet der DDR gehörten die heutigen Länder Brandenburg, Mecklenburg-Vorpommern, Sachsen, Sachsen-Anhalt und Thüringen sowie Ost-Berlin. In der DDR gab es allerdings keine Länder: Sie wurden 1952 abgeschafft und durch 15 Bezirke ersetzt. Erst 1990 wurden die Länder neu gegründet und traten am 3. Oktober der Bundesrepublik bei. Die Hauptstadt von Sachsen-Anhalt ist Magdeburg. In Wittenberg in Sachsen-Anhalt veröffentlichte Martin Luther 1517 seine Thesen – der Beginn der Reformation.",
+    "otherOptions": "Hessen, Nordrhein-Westfalen und das Saarland lagen immer in Westdeutschland und gehörten zur Bundesrepublik. Merke dir die fünf „neuen Länder“: Brandenburg, Mecklenburg-Vorpommern, Sachsen, Sachsen-Anhalt und Thüringen.",
+    "memoryTip": "Fünf neue Länder: Brandenburg, Mecklenburg-Vorpommern, Sachsen, Sachsen-Anhalt, Thüringen.",
+    "legalBasis": []
+  },
+  "196": {
+    "summary": "„Die Wende“ heißt die Zeit im Herbst 1989, weil sich die DDR von einer Diktatur zur Demokratie veränderte.",
+    "whyCorrect": "Durch friedliche Proteste verlor die SED ihre Macht; 1990 gab es die ersten freien Wahlen in der DDR.",
+    "background": "Im Herbst 1989 demonstrierten Hunderttausende in der DDR für Freiheit, Reisefreiheit und Demokratie, gleichzeitig flohen viele über Ungarn und die Tschechoslowakei in den Westen. Im Oktober musste Staatschef Erich Honecker zurücktreten, im November fiel die Mauer. Am 18. März 1990 fanden die ersten freien Wahlen zur Volkskammer statt. Weil alles ohne Gewalt geschah, spricht man heute oft von der „Friedlichen Revolution“.",
+    "otherOptions": "Die DDR war vorher keine liberale Marktwirtschaft, sondern sozialistisch mit Planwirtschaft. Eine Monarchie war sie nie, und ein religiöser Staat auch nicht – im Gegenteil, Religion wurde in der DDR eher zurückgedrängt.",
+    "memoryTip": "Wende 1989: Diktatur → Demokratie, friedlich.",
+    "legalBasis": []
+  },
+  "197": {
+    "summary": "Thüringen gehörte früher zum Gebiet der DDR.",
+    "whyCorrect": "Thüringen ist eines der fünf ostdeutschen Bundesländer, die 1990 der Bundesrepublik beigetreten sind.",
+    "background": "Zum Gebiet der DDR gehörten die heutigen Länder Brandenburg, Mecklenburg-Vorpommern, Sachsen, Sachsen-Anhalt und Thüringen sowie Ost-Berlin. In der DDR gab es allerdings keine Länder: Sie wurden 1952 abgeschafft und durch 15 Bezirke ersetzt. Erst 1990 wurden die Länder neu gegründet und traten am 3. Oktober der Bundesrepublik bei. Die Hauptstadt von Thüringen ist Erfurt. In Weimar lebten Goethe und Schiller, und 1919 tagte dort die Nationalversammlung, die die Weimarer Verfassung beschloss.",
+    "otherOptions": "Hessen, Bayern und Bremen lagen immer in Westdeutschland und gehörten zur Bundesrepublik. Merke dir die fünf „neuen Länder“: Brandenburg, Mecklenburg-Vorpommern, Sachsen, Sachsen-Anhalt und Thüringen.",
+    "memoryTip": "Fünf neue Länder: Brandenburg, Mecklenburg-Vorpommern, Sachsen, Sachsen-Anhalt, Thüringen.",
+    "legalBasis": []
+  },
+  "198": {
+    "summary": "Sachsen gehörte früher zum Gebiet der DDR.",
+    "whyCorrect": "Sachsen ist eines der fünf ostdeutschen Bundesländer, die 1990 der Bundesrepublik beigetreten sind.",
+    "background": "Zum Gebiet der DDR gehörten die heutigen Länder Brandenburg, Mecklenburg-Vorpommern, Sachsen, Sachsen-Anhalt und Thüringen sowie Ost-Berlin. In der DDR gab es allerdings keine Länder: Sie wurden 1952 abgeschafft und durch 15 Bezirke ersetzt. Erst 1990 wurden die Länder neu gegründet und traten am 3. Oktober der Bundesrepublik bei. Die Hauptstadt von Sachsen ist Dresden. In Leipzig begannen 1989 die Montagsdemonstrationen, die zum Fall der Mauer beitrugen.",
+    "otherOptions": "Bayern, Niedersachsen und Baden-Württemberg lagen immer in Westdeutschland und gehörten zur Bundesrepublik. Merke dir die fünf „neuen Länder“: Brandenburg, Mecklenburg-Vorpommern, Sachsen, Sachsen-Anhalt und Thüringen.",
+    "memoryTip": "Fünf neue Länder: Brandenburg, Mecklenburg-Vorpommern, Sachsen, Sachsen-Anhalt, Thüringen.",
+    "legalBasis": []
+  },
+  "199": {
+    "summary": "Mit „Stasi“ meinte man in der DDR das Ministerium für Staatssicherheit.",
+    "whyCorrect": "Die Stasi war Geheimpolizei und Geheimdienst der DDR und überwachte die eigene Bevölkerung.",
+    "background": "Die Stasi nannte sich selbst „Schild und Schwert der Partei“. Sie sollte die Macht der SED sichern, indem sie Kritiker beobachtete, einschüchterte und verhaften ließ. 1989 hatte sie rund 90.000 hauptamtliche Mitarbeiter und viele inoffizielle Mitarbeiter (IM), die Freunde, Kollegen und sogar Familienmitglieder ausspionierten. Nach der Friedlichen Revolution wurden die Stasi-Akten geöffnet; heute kann jeder beim Bundesarchiv nachfragen, ob über ihn eine Akte existiert.",
+    "otherOptions": "Das Parlament der DDR hieß Volkskammer, die regierende Partei SED. Das Ministerium für Volksbildung war für Schulen zuständig – mit Überwachung hatte es nicht direkt zu tun.",
+    "memoryTip": "Stasi = Staatssicherheit = Geheimpolizei der DDR.",
+    "legalBasis": []
+  },
+  "200": {
+    "summary": "Mecklenburg-Vorpommern gehörte früher zum Gebiet der DDR.",
+    "whyCorrect": "Mecklenburg-Vorpommern ist eines der fünf ostdeutschen Bundesländer, die 1990 der Bundesrepublik beigetreten sind.",
+    "background": "Zum Gebiet der DDR gehörten die heutigen Länder Brandenburg, Mecklenburg-Vorpommern, Sachsen, Sachsen-Anhalt und Thüringen sowie Ost-Berlin. In der DDR gab es allerdings keine Länder: Sie wurden 1952 abgeschafft und durch 15 Bezirke ersetzt. Erst 1990 wurden die Länder neu gegründet und traten am 3. Oktober der Bundesrepublik bei. Die Hauptstadt von Mecklenburg-Vorpommern ist Schwerin. Das Land liegt an der Ostsee; zu ihm gehört Rügen, die größte Insel Deutschlands.",
+    "otherOptions": "Hessen, Schleswig-Holstein und das Saarland lagen immer in Westdeutschland und gehörten zur Bundesrepublik. Merke dir die fünf „neuen Länder“: Brandenburg, Mecklenburg-Vorpommern, Sachsen, Sachsen-Anhalt und Thüringen.",
+    "memoryTip": "Fünf neue Länder: Brandenburg, Mecklenburg-Vorpommern, Sachsen, Sachsen-Anhalt, Thüringen.",
+    "legalBasis": []
   }
 }

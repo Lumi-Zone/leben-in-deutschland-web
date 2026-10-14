@@ -2031,5 +2031,205 @@
     "otherOptions": "Üç, beş veya altı bölge yanlıştır – tam olarak dört işgal gücü, dolayısıyla dört bölge vardı. Fransa bölgesini sonradan, Amerikan ve İngiliz bölgelerinin parçalarından aldı.",
     "memoryTip": "Dört galip güç = dört bölge.",
     "legalBasis": []
+  },
+  "176": {
+    "summary": "Bölgeler şöyle dağıtılmıştı: 1 = Büyük Britanya, 2 = Sovyetler Birliği, 3 = ABD, 4 = Fransa.",
+    "whyCorrect": "İngilizler kuzeybatıyı, Sovyetler doğuyu, Amerikalılar güneyi ve Fransızlar güneybatıyı işgal etti.",
+    "background": "Haritada kuzeybatıdaki 1. bölge, bugünkü Kuzey Ren-Vestfalya, Aşağı Saksonya, Schleswig-Holstein ve Hamburg’u içeren İngiliz bölgesidir. Doğudaki 2. bölge, daha sonra DDR olan Sovyet bölgesidir. Güneydeki 3. bölge Bavyera ve Hessen’i içeren Amerikan bölgesidir; ABD’nin kendi limanı olsun diye Bremen de buna dahildi. Güneybatıdaki 4. bölge, örneğin bugünkü Renanya-Pfalz’ı içeren Fransız bölgesidir.",
+    "otherOptions": "Diğer cevaplar güçlerin yerini karıştırır. Coğrafya yardımcı olur: Sovyetler Birliği doğudaydı, bu yüzden doğuyu işgal etti; Fransa güneybatıda Almanya’ya komşudur; Büyük Britanya ise Kuzey Denizi’nin karşısında, kuzeybatıdadır.",
+    "memoryTip": "Coğrafya yardım eder: İngilizler kuzeyde, Sovyetler doğuda, Amerikalılar güneyde, Fransızlar güneybatıda.",
+    "legalBasis": []
+  },
+  "177": {
+    "summary": "İkinci Dünya Savaşı’ndan sonra dört sektöre ayrılan şehir Berlin’dir.",
+    "whyCorrect": "Başkent de, bütün Almanya gibi, dört galip güç arasında bölündü.",
+    "background": "Berlin Sovyet bölgesinin ortasında olmasına rağmen, her galip güç şehirden bir sektör aldı. Doğudaki Sovyet sektörü DDR’nin başkenti Doğu Berlin oldu. Amerikan, İngiliz ve Fransız sektörleri, Federal Cumhuriyet’e sıkı sıkıya bağlı olan Batı Berlin’i oluşturdu. 1961’den itibaren iki kısmı Duvar ayırdı. Bu dönemin bilinen bir sembolü, Amerikan ve Sovyet sektörleri arasındaki bir sınır kapısı olan “Checkpoint Charlie”dir.",
+    "otherOptions": "Münih Amerikan bölgesinde, Dresden ve Frankfurt (Oder) Sovyet bölgesindeydi. Bu şehirler sektörlere ayrılmadı.",
+    "memoryTip": "Dört güç, dört sektör – sadece Berlin’de.",
+    "legalBasis": []
+  },
+  "178": {
+    "summary": "Hava köprüsü gerekliydi, çünkü Sovyetler Birliği Batı Berlin’e giden bütün kara trafiğini kesti.",
+    "whyCorrect": "Sovyetler Birliği Berlin Ablukası ile Batılı güçleri Berlin’den çıkarmak istedi.",
+    "background": "Haziran 1948’de Batılı güçler kendi bölgelerinde Alman Markı’nı (D-Mark) tedavüle soktu. Sovyetler Birliği buna ablukayla karşılık verdi: Batı Berlin’e giden karayolları, demiryolları ve su yolları kapatıldı. Bunun üzerine özellikle Amerikan ve İngiliz uçakları yaklaşık iki milyon Batı Berlinliyi neredeyse bir yıl boyunca havadan – gıda, kömür ve ilaçla – besledi. Berlinliler bu uçaklara “kuru üzüm bombardıman uçakları” (Rosinenbomber) dedi. Mayıs 1949’da Sovyetler Birliği ablukayı kaldırdı.",
+    "otherOptions": "Hava köprüsü kara yolundan ne daha ucuz ne de daha hızlıydı – çok daha pahalı ve zahmetliydi. Saldırı korkusundan değil, başka yol olmadığı için gerekliydi.",
+    "memoryTip": "Karada abluka → havada köprü.",
+    "legalBasis": []
+  },
+  "179": {
+    "summary": "İkinci Dünya Savaşı Avrupa’da resmî olarak Almanya’nın koşulsuz teslimiyetiyle sona erdi.",
+    "whyCorrect": "Alman silahlı kuvvetlerinin teslimiyeti 8 Mayıs 1945’te yürürlüğe girdi.",
+    "background": "Alman Wehrmacht’ı koşulsuz teslimiyeti 7 Mayıs 1945’te Reims’te ve 8’i 9 Mayıs’a bağlayan gece bir kez daha Berlin-Karlshorst’ta imzaladı. “Koşulsuz”, Almanya’nın hiçbir koşul öne süremeyeceği ve galip güçlerin en yüksek yönetim yetkisini devraldığı anlamına geliyordu. Böylece Avrupa’daki çatışmalar sona erdi. Bugün diğerlerinin yanında Berlin-Karlshorst Müzesi bu anı hatırlatır.",
+    "otherOptions": "Hitler 30 Nisan 1945’te intihar etti, ama savaş bundan sonra bir haftadan fazla sürdü. İşgal edilen bölgelerden düzenli bir geri çekilme olmadı. Bir devrim (Kasım Devrimi) 1918’de İkinci değil, Birinci Dünya Savaşı’nı bitirdi.",
+    "memoryTip": "Koşulsuz teslimiyet, 8 Mayıs 1945.",
+    "legalBasis": []
+  },
+  "180": {
+    "summary": "Federal Cumhuriyet’in ilk Şansölyesi Konrad Adenauer’dir.",
+    "whyCorrect": "Bu, 165. soruyla aynı sorudur: Adenauer (CDU) 1949–1963 arasında yönetti.",
+    "background": "Konrad Adenauer Federal Cumhuriyet’in ilk yıllarını o kadar güçlü biçimde şekillendirdi ki “Adenauer dönemi” denir. 1955’te Moskova’ya gitti ve son yaklaşık 10.000 Alman savaş esirinin serbest bırakılmasını sağladı. 1963’te Fransa Cumhurbaşkanı Charles de Gaulle ile Alman-Fransız dostluğunun temeli olan Élysée Antlaşması’nı imzaladı.",
+    "otherOptions": "Ludwig Erhard, Adenauer döneminde ekonomi bakanıydı ve 1963’te ikinci Federal Şansölye olarak onun yerine geçti. Willy Brandt (1969–1974) ve Gerhard Schröder (1998–2005) daha sonraki SPD’li şansölyelerdi.",
+    "memoryTip": "İlk Şansölye: Adenauer; ikinci: Erhard.",
+    "legalBasis": []
+  },
+  "181": {
+    "summary": "Willy Brandt diz çökerek Polonya’dan ve Polonyalı Yahudilerden af diledi.",
+    "whyCorrect": "Varşova Gettosu kahramanları anıtının önünde diz çökmesi bir alçakgönüllülük ve uzlaşma dileği jestiydi.",
+    "background": "7 Aralık 1970’te Federal Şansölye Willy Brandt, Federal Cumhuriyet’in Polonya sınırını tanıdığı Varşova Antlaşması’nı imzalamak için Varşova’daydı. 1943 Varşova Gettosu Ayaklanması anıtına çelenk koydu – ve sonra beklenmedik biçimde diz çöktü. Hiç konuşmadan Alman suçlarından duyulan utancı ifade etti. Fotoğraf bütün dünyayı dolaştı. Brandt 1971’de Doğu ile uzlaşma politikası nedeniyle Nobel Barış Ödülü’nü aldı.",
+    "otherOptions": "Brandt ne Müttefiklere boyun eğdi ne de doğu askerî ittifakı Varşova Paktı karşısında alçakgönüllülük gösterdi. Meçhul Asker Anıtı’nı da ziyaret etti, ama ünlü diz çökme Getto anıtındaydı.",
+    "memoryTip": "Varşova 1970: diz çökme = af dileme.",
+    "legalBasis": []
+  },
+  "182": {
+    "summary": "Yahudi ibadethanesine sinagog denir.",
+    "whyCorrect": "Yahudi cemaati sinagogda dua etmek, Tevrat okumak ve öğrenmek için toplanır.",
+    "background": "Sinagog kelimesi Yunancadan gelir ve “toplantı” anlamına gelir. En önemli ibadet cuma akşamı başlayan Şabat’ta yapılır. Merkezinde Tevrat dolabında rulolar hâlinde saklanan Tevrat vardır. Cemaati çoğu zaman bir haham yönetir. Almanya’daki birçok sinagog, tekrar tekrar yaşanan antisemitik saldırılar nedeniyle bugün polis koruması altındadır.",
+    "otherOptions": "Kilise Hristiyanların ibadethanesidir; bazilika belirli bir mimari tarz veya bazı kiliselere verilen onur unvanıdır. Cami Müslümanların ibadethanesidir.",
+    "memoryTip": "Kilise – Hristiyanlar, cami – Müslümanlar, sinagog – Yahudiler.",
+    "legalBasis": []
+  },
+  "183": {
+    "summary": "Federal Cumhuriyet’teki “ekonomik mucize” 1950’lerde yaşandı.",
+    "whyCorrect": "1948 para reformundan sonra Batı Alman ekonomisi 1950’lerde olağanüstü hızlı büyüdü.",
+    "background": "Savaştan sonra birçok şehir harabeydi. 1948’de D-Mark’ın tedavüle girmesi, Amerikan Marshall Planı’nın yardımı ve Ekonomi Bakanı Ludwig Erhard yönetiminde sosyal piyasa ekonomisiyle hızlı bir yükseliş başladı. Üretim arttı, işsizlik neredeyse sıfıra indi ve birçok aile ilk kez buzdolabı, televizyon veya araba alabildi. İşgücü eksik olduğu için Federal Cumhuriyet 1955’ten itibaren başka ülkelerle işçi alım anlaşmaları yaptı; 1961’de Türkiye ile de.",
+    "otherOptions": "1940’larda savaş ve savaş sonrası yoksulluk hâkimdi. 1970’lerde 1973 petrol krizi ekonomik sorunlar getirdi, 1980’lerde ise işsizlik nispeten yüksekti.",
+    "memoryTip": "Ekonomik mucize = 1950’ler, D-Mark, Ludwig Erhard.",
+    "legalBasis": []
+  },
+  "184": {
+    "summary": "İsrail Devleti bir Birleşmiş Milletler kararı temelinde kuruldu.",
+    "whyCorrect": "BM Genel Kurulu Kasım 1947’de Filistin için bir bölünme planı kabul etti.",
+    "background": "29 Kasım 1947’de Birleşmiş Milletler Genel Kurulu 181 sayılı kararla, o zamanki İngiliz manda bölgesi Filistin’in bir Yahudi ve bir Arap devletine bölünmesi yönünde oy kullandı. 14 Mayıs 1948’de David Ben-Gurion İsrail Devleti’ni ilan etti. Holokost’tan kurtulan birçok kişi için İsrail yeni bir yurt oldu. Federal Cumhuriyet ve İsrail 1965’te diplomatik ilişki kurdu.",
+    "otherOptions": "1897’de Basel’de Theodor Herzl önderliğindeki Siyonist Kongresi bir Yahudi yurdu hedefini ortaya koydu, ama devletin kuruluşu için hukuki bir dayanak değildi. 1947’de henüz bir federal hükümet yoktu. Sovyetler Birliği İsrail’i erkenden tanıdı, ama kuruluşu önermedi.",
+    "memoryTip": "İsrail 1948 – dayanak: 1947 BM kararı.",
+    "legalBasis": []
+  },
+  "185": {
+    "summary": "“Demir Perde”, Varşova Paktı’nın kendini Batı’ya karşı kapatmasını ifade ediyordu.",
+    "whyCorrect": "Soğuk Savaş’ta Avrupa’yı Doğu ve Batı olarak ikiye bölen korunaklı sınırı anlatıyordu.",
+    "background": "Terimi İngiliz politikacı Winston Churchill 1946’da yaygınlaştırdı. Bununla Sovyetler Birliği’nin ve onun kontrolündeki Doğu Avrupa devletlerinin kendilerini Batı’ya nasıl kapattığını anlattı. Demir Perde Baltık Denizi’nden Karadeniz’e kadar uzanıyordu – tam Almanya’nın ortasından geçiyordu; orada iki Almanya arasındaki sınır çitler, mayınlar ve gözetleme kuleleriyle korunuyordu. 1989’da Macaristan sınırını açtığında ve DDR’de Duvar yıkıldığında Demir Perde de düştü.",
+    "otherOptions": "Kuzey ve Güney Almanya arasında hiçbir zaman böyle bir sınır olmadı. Terimin Müttefiklere karşı Nazi Almanyası ile ilgisi yoktur ve Avrupa ABD’ye karşı kapalı değildi – Batı Avrupa ve ABD Soğuk Savaş’ta müttefikti.",
+    "memoryTip": "Demir Perde = Soğuk Savaş’ta Doğu ile Batı arasındaki sınır.",
+    "legalBasis": []
+  },
+  "186": {
+    "summary": "DDR’deki ayaklanma 17 Haziran 1953’te oldu.",
+    "whyCorrect": "Federal Cumhuriyet’te 17 Haziran 1990’a kadar “Alman Birliği Günü” olarak resmî tatildi.",
+    "background": "16 ve 17 Haziran 1953’te önce Doğu Berlin’deki inşaat işçileri artırılan çalışma normlarını protesto etti. Bu kısa sürede bütün DDR’de yüz binlerce kişinin serbest seçim ve hükümetin istifasını talep ettiği bir ayaklanmaya dönüştü. Sovyet tankları ayaklanmayı bastırdı; onlarca kişi öldürüldü, binlercesi tutuklandı. Yeniden birleşmeden beri Alman Birliği Günü 3 Ekim’dir; Berlin’de “17 Haziran Caddesi” (Straße des 17. Juni) bu günü hatırlatır.",
+    "otherOptions": "1 Mayıs Emek Günü’dür. Hitler’e suikast girişimi 20 Temmuz 1944’te oldu. 9 Kasım, 1989’da Duvar’ın yıkıldığı ve 1938’de pogromların yaşandığı gündür.",
+    "memoryTip": "17 Haziran 1953 – DDR’de halk ayaklanması.",
+    "legalBasis": []
+  },
+  "187": {
+    "summary": "Çekiç, pergel ve başak çelengi olan siyah-kırmızı-altın bayrak DDR’in bayrağıydı.",
+    "whyCorrect": "DDR bayrağının ortasında 1959’dan itibaren DDR’in devlet arması vardı.",
+    "background": "Federal Cumhuriyet ve DDR, kökleri 19. yüzyılın demokratik hareketine dayanan siyah, kırmızı ve altın renklerini birlikte kullanıyordu. DDR kendini ayırt etmek için 1959’da armasını bayrağın ortasına koydu: Çekiç işçileri, pergel aydınları, başak çelengi de köylüleri temsil ediyordu. Bu bayrak 1990’daki yeniden birleşmeyle ortadan kalktı.",
+    "otherOptions": "Prusya’nın bayrağı siyah-beyazdı. Federal Cumhuriyet’in bayrağı sembolsüz siyah-kırmızı-altındır. “Üçüncü Reich” gamalı haçlı bayrağı kullandı.",
+    "memoryTip": "Çekiç + pergel + başak = işçiler, aydınlar, köylüler = DDR.",
+    "legalBasis": []
+  },
+  "188": {
+    "summary": "Berlin Duvarı 1961’de inşa edildi.",
+    "whyCorrect": "13 Ağustos 1961’de DDR Batı Berlin sınırını kapatmaya başladı.",
+    "background": "Bundan sadece iki ay önce DDR lideri Walter Ulbricht bir basın toplantısında “Kimsenin duvar örmek gibi bir niyeti yok” demişti. 12’yi 13 Ağustos 1961’e bağlayan gece askerler ve polisler sınırı önce dikenli telle kapattı, ardından Duvar inşa edildi. Aileler ve arkadaşlar bir gecede birbirinden ayrıldı. Duvar 9 Kasım 1989’a kadar, 28 yıl ayakta kaldı.",
+    "otherOptions": "1953 DDR’deki halk ayaklanmasının yılıdır. 1956 ve 1959 Duvar için önemli yıllar değildir.",
+    "memoryTip": "Duvarın inşası 13 Ağustos 1961 – yıkılışı 9 Kasım 1989.",
+    "legalBasis": []
+  },
+  "189": {
+    "summary": "DDR Berlin Duvarı’nı 1961’de inşa etti.",
+    "whyCorrect": "Bu, 188. soruyla aynı sorudur, sadece yıllar farklıdır.",
+    "background": "Duvarın inşa edilmesinin nedeni kitlesel kaçıştı: 1949–1961 arasında başta gençler ve iyi eğitimliler olmak üzere yaklaşık üç milyon kişi DDR’den ayrılmıştı. DDR işgücünü kaybetme tehlikesiyle karşı karşıyaydı. Duvar inşa edildikten sonra kaçmak hayati tehlike taşıyordu: Sınırda ateş etme emri vardı. Yine de birçok kişi denedi – tünellerle, balonlarla veya Baltık Denizi üzerinden.",
+    "otherOptions": "1919’da Weimar Anayasası kabul edildi, 1933’te Nasyonal Sosyalistler iktidara geldi, 1990’da Almanya yeniden birleşti – Duvar o zaman zaten yıkılmıştı.",
+    "memoryTip": "188. ve 189. sorular: cevap 1961.",
+    "legalBasis": []
+  },
+  "190": {
+    "summary": "DDR, Deutsche Demokratische Republik (Alman Demokratik Cumhuriyeti) demektir.",
+    "whyCorrect": "1949–1990 arasındaki Doğu Alman devletinin adı buydu.",
+    "background": "Adında “demokratik” olmasına rağmen DDR bir demokrasi değildi. Almanya Sosyalist Birlik Partisi (SED) devletin bütün alanlarına hâkimdi. Seçimlerde tek bir liste vardı, basın sansürlüydü ve Devlet Güvenlik Servisi halkı izliyordu. Sistemi eleştiren hapse girmeyi göze alıyordu. Serbest seçimleri ancak 1989 Barışçıl Devrimi getirdi.",
+    "otherOptions": "“Üçüncü Alman Radyosu”, “Alman Cumhuriyeti” ve “Üçüncü Alman Cumhuriyeti” uydurma isimlerdir.",
+    "memoryTip": "D-D-R: Deutsche (Alman) – Demokratische (Demokratik) – Republik (Cumhuriyet) – ama demokrasi değil.",
+    "legalBasis": []
+  },
+  "191": {
+    "summary": "Berlin Duvarı 1989’da herkese açıldı.",
+    "whyCorrect": "9 Kasım 1989 akşamı sınır kapıları açıldı ve binlerce Doğu Berlinli Batı’ya aktı.",
+    "background": "Kitlesel protestolar ve Macaristan üzerinden kaçış dalgasından sonra DDR yönetimi seyahat kurallarını gevşetmek istedi. 9 Kasım 1989’daki bir basın toplantısında SED politikacısı Günter Schabowski, bunun ne zaman geçerli olacağı sorulduğunda “Bildiğim kadarıyla… hemen, gecikmeden” dedi. Aynı akşam binlerce kişi, sınır muhafızları kapıları açana kadar sınır geçişlerine yığıldı. Duvar’ın üzerinde sevinen insanların görüntüleri bütün dünyayı dolaştı.",
+    "otherOptions": "1987’de ABD Başkanı Ronald Reagan Berlin’de “Bu duvarı yıkın!” çağrısı yaptı – ama Duvar hâlâ ayaktaydı. 1992 ve 1995, 1990’daki yeniden birleşmeden sonraydı.",
+    "memoryTip": "9 Kasım 1989 – Duvar’ın yıkılışı.",
+    "legalBasis": []
+  },
+  "192": {
+    "summary": "Brandenburg eskiden DDR topraklarına aitti.",
+    "whyCorrect": "Brandenburg, 1990’da Federal Cumhuriyet’e katılan beş doğu Alman eyaletinden biridir.",
+    "background": "DDR topraklarına bugünkü Brandenburg, Mecklenburg-Ön Pomeranya, Saksonya, Saksonya-Anhalt ve Türingen eyaletleri ile Doğu Berlin dahildi. Ancak DDR’de eyalet yoktu: Eyaletler 1952’de kaldırıldı ve yerlerine 15 idari bölge (Bezirk) kuruldu. Eyaletler ancak 1990’da yeniden kuruldu ve 3 Ekim’de Federal Cumhuriyet’e katıldı. Brandenburg eyaletinin başkenti: Potsdam. Brandenburg Berlin’i çevreler; Sanssouci Sarayı Potsdam’dadır.",
+    "otherOptions": "Bavyera, Saarland ve Hessen her zaman Batı Almanya’daydı ve Federal Cumhuriyet’e aitti. Beş “yeni eyaleti” hatırla: Brandenburg, Mecklenburg-Ön Pomeranya, Saksonya, Saksonya-Anhalt ve Türingen.",
+    "memoryTip": "Beş yeni eyalet: Brandenburg, Mecklenburg-Ön Pomeranya, Saksonya, Saksonya-Anhalt, Türingen.",
+    "legalBasis": []
+  },
+  "193": {
+    "summary": "1961–1989 arasında Berlin bir duvarla bölünmüştü.",
+    "whyCorrect": "Duvar, DDR’nin başkenti Doğu Berlin’i Batı Berlin’den ayırıyordu.",
+    "background": "Duvar 28 yıl boyunca şehrin ortasından ve Batı Berlin’in çevresinden geçti. Sokakları, meydanları, hatta mezarlıkları ikiye böldü. Batı Berlinliler Doğu’ya sadece özel izinle gidebiliyordu, Doğu Berlinlilerin ise çoğu zaman Batı’ya gitmesine hiç izin verilmiyordu. Bugün Bernauer Caddesi’ndeki Berlin Duvarı Anıtı, East Side Gallery ve yerdeki çift sıra parke taşı Duvar’ın geçtiği yeri gösterir.",
+    "otherOptions": "Berlin’in her zaman belediye başkanları vardı – Batı’da Yönetici Belediye Başkanı, Doğu’da bir belediye başkanı. Batı Berlin ayrı bir devlet değildi, Federal Cumhuriyet’e sıkı sıkıya bağlıydı. Batı Berlin’e sadece uçakla gidilmiyordu: DDR üzerinden geçen transit yollar ve tren bağlantıları vardı.",
+    "memoryTip": "1961–1989: Berlin Duvar’la bölünmüş.",
+    "legalBasis": []
+  },
+  "194": {
+    "summary": "Almanya’da 3 Ekim’de Alman Birliği Günü (Tag der Deutschen Einheit) kutlanır.",
+    "whyCorrect": "1990’da bu gün DDR Federal Cumhuriyet’e katıldı – Almanya yeniden birleşti.",
+    "background": "Alman Birliği Günü Almanya’nın milli bayramıdır ve bütün eyaletlerde resmî tatildir. DDR’deki Barışçıl Devrim ve dört galip güçle yapılan İki Artı Dört Antlaşması sayesinde mümkün olan 3 Ekim 1990’daki yeniden birleşmeyi anar. Ana tören her yıl başka bir eyalette, genellikle o sırada Federal Konsey başkanlığını yürüten eyalette yapılır.",
+    "otherOptions": "Resmî tatil olarak “Ulus Günü”, “Eyaletler Günü” veya “Şehirler Günü” yoktur.",
+    "memoryTip": "3 Ekim 1990 – Alman birliği.",
+    "legalBasis": []
+  },
+  "195": {
+    "summary": "Saksonya-Anhalt eskiden DDR topraklarına aitti.",
+    "whyCorrect": "Saksonya-Anhalt, 1990’da Federal Cumhuriyet’e katılan beş doğu Alman eyaletinden biridir.",
+    "background": "DDR topraklarına bugünkü Brandenburg, Mecklenburg-Ön Pomeranya, Saksonya, Saksonya-Anhalt ve Türingen eyaletleri ile Doğu Berlin dahildi. Ancak DDR’de eyalet yoktu: Eyaletler 1952’de kaldırıldı ve yerlerine 15 idari bölge (Bezirk) kuruldu. Eyaletler ancak 1990’da yeniden kuruldu ve 3 Ekim’de Federal Cumhuriyet’e katıldı. Saksonya-Anhalt eyaletinin başkenti: Magdeburg. Martin Luther 1517’de tezlerini Saksonya-Anhalt’taki Wittenberg’de yayımladı – bu, Reformasyon’un başlangıcıydı.",
+    "otherOptions": "Hessen, Kuzey Ren-Vestfalya ve Saarland her zaman Batı Almanya’daydı ve Federal Cumhuriyet’e aitti. Beş “yeni eyaleti” hatırla: Brandenburg, Mecklenburg-Ön Pomeranya, Saksonya, Saksonya-Anhalt ve Türingen.",
+    "memoryTip": "Beş yeni eyalet: Brandenburg, Mecklenburg-Ön Pomeranya, Saksonya, Saksonya-Anhalt, Türingen.",
+    "legalBasis": []
+  },
+  "196": {
+    "summary": "1989 sonbaharındaki döneme “Die Wende” (dönüm noktası) denir, çünkü DDR diktatörlükten demokrasiye geçti.",
+    "whyCorrect": "Barışçıl protestolarla SED gücünü kaybetti; 1990’da DDR’de ilk serbest seçimler yapıldı.",
+    "background": "1989 sonbaharında DDR’de yüz binlerce kişi özgürlük, seyahat özgürlüğü ve demokrasi için gösteri yaptı; aynı zamanda birçok kişi Macaristan ve Çekoslovakya üzerinden Batı’ya kaçtı. Ekim’de devlet başkanı Erich Honecker istifa etmek zorunda kaldı, Kasım’da Duvar yıkıldı. 18 Mart 1990’da Halk Meclisi için ilk serbest seçimler yapıldı. Her şey şiddet olmadan gerçekleştiği için bugün sık sık “Barışçıl Devrim” denir.",
+    "otherOptions": "DDR daha önce liberal bir piyasa ekonomisi değil, planlı ekonomiye sahip sosyalist bir devletti. Hiçbir zaman monarşi olmadı, din devleti de değildi – tam tersine, DDR’de din geri plana itildi.",
+    "memoryTip": "Wende 1989: diktatörlük → demokrasi, barışçıl.",
+    "legalBasis": []
+  },
+  "197": {
+    "summary": "Türingen eskiden DDR topraklarına aitti.",
+    "whyCorrect": "Türingen, 1990’da Federal Cumhuriyet’e katılan beş doğu Alman eyaletinden biridir.",
+    "background": "DDR topraklarına bugünkü Brandenburg, Mecklenburg-Ön Pomeranya, Saksonya, Saksonya-Anhalt ve Türingen eyaletleri ile Doğu Berlin dahildi. Ancak DDR’de eyalet yoktu: Eyaletler 1952’de kaldırıldı ve yerlerine 15 idari bölge (Bezirk) kuruldu. Eyaletler ancak 1990’da yeniden kuruldu ve 3 Ekim’de Federal Cumhuriyet’e katıldı. Türingen eyaletinin başkenti: Erfurt. Goethe ve Schiller Weimar’da yaşadı; 1919’da Weimar Anayasası’nı kabul eden Ulusal Meclis de orada toplandı.",
+    "otherOptions": "Hessen, Bavyera ve Bremen her zaman Batı Almanya’daydı ve Federal Cumhuriyet’e aitti. Beş “yeni eyaleti” hatırla: Brandenburg, Mecklenburg-Ön Pomeranya, Saksonya, Saksonya-Anhalt ve Türingen.",
+    "memoryTip": "Beş yeni eyalet: Brandenburg, Mecklenburg-Ön Pomeranya, Saksonya, Saksonya-Anhalt, Türingen.",
+    "legalBasis": []
+  },
+  "198": {
+    "summary": "Saksonya eskiden DDR topraklarına aitti.",
+    "whyCorrect": "Saksonya, 1990’da Federal Cumhuriyet’e katılan beş doğu Alman eyaletinden biridir.",
+    "background": "DDR topraklarına bugünkü Brandenburg, Mecklenburg-Ön Pomeranya, Saksonya, Saksonya-Anhalt ve Türingen eyaletleri ile Doğu Berlin dahildi. Ancak DDR’de eyalet yoktu: Eyaletler 1952’de kaldırıldı ve yerlerine 15 idari bölge (Bezirk) kuruldu. Eyaletler ancak 1990’da yeniden kuruldu ve 3 Ekim’de Federal Cumhuriyet’e katıldı. Saksonya eyaletinin başkenti: Dresden. Duvar’ın yıkılmasına katkıda bulunan Pazartesi gösterileri 1989’da Leipzig’de başladı.",
+    "otherOptions": "Bavyera, Aşağı Saksonya ve Baden-Württemberg her zaman Batı Almanya’daydı ve Federal Cumhuriyet’e aitti. Beş “yeni eyaleti” hatırla: Brandenburg, Mecklenburg-Ön Pomeranya, Saksonya, Saksonya-Anhalt ve Türingen.",
+    "memoryTip": "Beş yeni eyalet: Brandenburg, Mecklenburg-Ön Pomeranya, Saksonya, Saksonya-Anhalt, Türingen.",
+    "legalBasis": []
+  },
+  "199": {
+    "summary": "DDR’de “Stasi” ile Devlet Güvenlik Bakanlığı (Ministerium für Staatssicherheit) kastediliyordu.",
+    "whyCorrect": "Stasi, DDR’nin gizli polisi ve istihbarat servisiydi ve kendi halkını izliyordu.",
+    "background": "Stasi kendini “partinin kalkanı ve kılıcı” olarak tanımlıyordu. Görevi, eleştirenleri izleyerek, korkutarak ve tutuklatarak SED’in iktidarını güvenceye almaktı. 1989’da yaklaşık 90.000 tam zamanlı çalışanı ve arkadaşlarını, iş arkadaşlarını, hatta aile üyelerini gözetleyen birçok gayriresmî çalışanı (IM) vardı. Barışçıl Devrim’den sonra Stasi dosyaları açıldı; bugün herkes Federal Arşiv’e kendisi hakkında bir dosya olup olmadığını sorabilir.",
+    "otherOptions": "DDR’nin parlamentosunun adı Volkskammer (Halk Meclisi), iktidar partisinin adı SED’di. Halk Eğitimi Bakanlığı okullardan sorumluydu – gözetimle doğrudan ilgisi yoktu.",
+    "memoryTip": "Stasi = devlet güvenliği = DDR’nin gizli polisi.",
+    "legalBasis": []
+  },
+  "200": {
+    "summary": "Mecklenburg-Ön Pomeranya eskiden DDR topraklarına aitti.",
+    "whyCorrect": "Mecklenburg-Ön Pomeranya, 1990’da Federal Cumhuriyet’e katılan beş doğu Alman eyaletinden biridir.",
+    "background": "DDR topraklarına bugünkü Brandenburg, Mecklenburg-Ön Pomeranya, Saksonya, Saksonya-Anhalt ve Türingen eyaletleri ile Doğu Berlin dahildi. Ancak DDR’de eyalet yoktu: Eyaletler 1952’de kaldırıldı ve yerlerine 15 idari bölge (Bezirk) kuruldu. Eyaletler ancak 1990’da yeniden kuruldu ve 3 Ekim’de Federal Cumhuriyet’e katıldı. Mecklenburg-Ön Pomeranya eyaletinin başkenti: Schwerin. Eyalet Baltık Denizi kıyısındadır; Almanya’nın en büyük adası Rügen de bu eyalete aittir.",
+    "otherOptions": "Hessen, Schleswig-Holstein ve Saarland her zaman Batı Almanya’daydı ve Federal Cumhuriyet’e aitti. Beş “yeni eyaleti” hatırla: Brandenburg, Mecklenburg-Ön Pomeranya, Saksonya, Saksonya-Anhalt ve Türingen.",
+    "memoryTip": "Beş yeni eyalet: Brandenburg, Mecklenburg-Ön Pomeranya, Saksonya, Saksonya-Anhalt, Türingen.",
+    "legalBasis": []
   }
 }
