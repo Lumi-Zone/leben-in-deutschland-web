@@ -54,7 +54,7 @@ const isLegacyTopicUrl = Astro.params.topic !== topicData.slug;
 
 const topicPosts = posts
   .filter((post) => post.data.lang === 'de' && getBlogTopicsForTags(post.data.tags).some((entry) => entry.slug === topic))
-  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf() || a.id.localeCompare(b.id))
   .map((post) => {
     const image = resolveBlogImage(post);
     return {

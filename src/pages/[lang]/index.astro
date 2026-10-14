@@ -42,7 +42,7 @@ const heroDescription = stripHtml(t("hero.subtitle"));
 const blogPosts = await getCollection('blog');
 const recentBlogPosts = blogPosts
   .filter((post) => post.data.lang === 'de')
-	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf() || a.id.localeCompare(b.id))
 	.slice(0, 3)
 	.map((post) => ({
 		...post,

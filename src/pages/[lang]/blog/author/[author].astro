@@ -52,7 +52,7 @@ const dateFormatter = new Intl.DateTimeFormat(locale, { year: 'numeric', month: 
 
 const authorPosts = posts
   .filter((post) => post.data.lang === 'de' && toSlug(post.data.author) === profile.slug)
-  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf() || a.id.localeCompare(b.id))
   .map((post) => {
     const image = resolveBlogImage(post);
     return {

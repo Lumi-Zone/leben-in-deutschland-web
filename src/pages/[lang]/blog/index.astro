@@ -23,7 +23,7 @@ export async function getStaticPaths() {
 const { lang } = Astro.props as { lang: SupportedLang };
 const t = useTranslations(lang);
 const posts = (await getCollection('blog')).filter((post) => post.data.lang === lang);
-const sortedPosts = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+const sortedPosts = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf() || a.id.localeCompare(b.id));
 
 const canonicalPath = getPath(`${lang}/blog/`);
 const siteUrl = Astro.site || 'https://lid-einbuergerung.de';
