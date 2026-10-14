@@ -3008,5 +3008,290 @@
         "url": "https://www.gesetze-im-internet.de/famfg/__114.html"
       }
     ]
+  },
+  "276": {
+    "summary": "Bir resmî dairede kötü muamele görürsen daire amirine şikâyet edebilirsin.",
+    "whyCorrect": "Bu tür şikâyete Dienstaufsichtsbeschwerde (idari denetim şikâyeti) denir; ücretsizdir ve bir süreye bağlı değildir.",
+    "background": "Memurlar ve kamu çalışanları da vatandaşlara saygılı ve doğru davranmak zorundadır. Kaba, küçümseyici veya haksız muamele gören kişi daire yönetimine yazılı olarak şikâyette bulunabilir. Dairenin bir kararına, örneğin reddedilen bir başvuruya karşı ayrıca itiraz edilebilir veya dava açılabilir. Herkesin ayrıca istek ve şikâyetleriyle parlamentoya başvurma hakkı vardır (dilekçe hakkı, madde 17). Danışma merkezleri ve ayrımcılıkla mücadele büroları da yardım eder.",
+    "otherOptions": "Kötü muameleye katlanmak zorunda değilsin ve bir şey yapabilirsin. Birini tehdit etmek ise yasaktır ve suç bile olabilir.",
+    "memoryTip": "Kötü muamele mi gördün? Sakin kal ve yönetime şikâyet et.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 17",
+        "url": "https://www.gesetze-im-internet.de/gg/art_17.html"
+      }
+    ]
+  },
+  "277": {
+    "summary": "Kişi işi sadece anne olduğu için alamıyorsa bu ayrımcılıktır.",
+    "whyCorrect": "Genel Eşit Muamele Kanunu, iş hayatında bu tür özellikler nedeniyle ayrımcılığı yasaklar.",
+    "background": "İşverenler başvuranları cinsiyetleri nedeniyle dezavantajlı duruma düşüremez – bir kadının anne olması veya hamile kalabilecek olması da buna dahildir. İş görüşmesinde hamilelik veya aile planlaması soruları kural olarak yasaktır; bir kadın bu sorulara olumsuz bir sonuçtan korkmadan yanlış cevap bile verebilir. Ayrımcılığa uğrayan kişi, örneğin tazminat için, iki ay içinde talepte bulunabilir. Federal Ayrımcılıkla Mücadele Dairesi danışmanlık sunar.",
+    "otherOptions": "İngilizce bilmemek, çok yüksek maaş beklentisi veya meslek deneyiminin olmaması işle ilgili nesnel nedenlerdir. Bunlar ayrımcılık değildir.",
+    "memoryTip": "Nesnel neden (nitelik) = serbest. Anne olmak = ayrımcılık.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 3",
+        "url": "https://www.gesetze-im-internet.de/gg/art_3.html"
+      },
+      {
+        "label": "Genel Eşit Muamele Kanunu (AGG) § 1",
+        "url": "https://www.gesetze-im-internet.de/agg/__1.html"
+      }
+    ]
+  },
+  "278": {
+    "summary": "Kişi işi sadece tekerlekli sandalye kullandığı için alamıyorsa bu ayrımcılıktır.",
+    "whyCorrect": "Genel Eşit Muamele Kanunu, iş hayatında bu tür özellikler nedeniyle ayrımcılığı yasaklar.",
+    "background": "Muhasebeci olarak çalışmak için birinin tekerlekli sandalye kullanıp kullanmadığı önemli değildir. Anayasa açıkça şöyle der: “Kimse engeli nedeniyle dezavantajlı duruma düşürülemez” (madde 3). Ağır engelliler iş hayatında ayrıca korunur. En az 20 iş yeri olan işletmeler bunların yüzde beşini ağır engellilerle doldurmak veya bir denkleştirme ödentisi ödemek zorundadır. Engelsiz bir iş yeri için örneğin Inklusionsamt’tan maddi destek alınabilir.",
+    "otherOptions": "Deneyim eksikliği, çok yüksek maaş beklentisi veya İngilizce bilmemek birini işe almamak için nesnel nedenler olabilir. Bu engelli olan ve olmayan herkes için aynı şekilde geçerlidir.",
+    "memoryTip": "Engellilik birini reddetmek için bir neden değildir.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 3",
+        "url": "https://www.gesetze-im-internet.de/gg/art_3.html"
+      },
+      {
+        "label": "Genel Eşit Muamele Kanunu (AGG) § 1",
+        "url": "https://www.gesetze-im-internet.de/agg/__1.html"
+      }
+    ]
+  },
+  "279": {
+    "summary": "Apartman yönetmeliği (Hausordnung) bütün sakinlerin uyması gereken kuralları belirtir.",
+    "whyCorrect": "Kiralık bir binada birlikte yaşamı düzenlemeyi amaçlar ve çoğu zaman kira sözleşmesinin parçasıdır.",
+    "background": "Apartman yönetmeliğinde örneğin sessizlik saatlerinin ne zaman geçerli olduğu (mesela 22’den 6’ya kadar), merdiven boşluğunu kimin ne zaman temizleyeceği, çöplerin nasıl ayrılacağı, balkonda mangal yapılıp yapılamayacağı ve bisikletlerin veya bebek arabalarının nereye konabileceği yazar. Yönetmeliğe tekrar tekrar uymayan kişi ev sahibinden bir uyarı (Abmahnung) alabilir. Yönetmelik çoğu zaman merdiven boşluğunda asılıdır. Yeni bir eve taşınınca hemen okumakta fayda vardır.",
+    "otherOptions": "Otobüs ve tren kurallarını ulaşım şirketleri belirler. Bütün kiracıların listesi yönetmelikte değil, en fazla zillerde ve posta kutularında yazar. Ordnungsamt’ın adresi şehirden öğrenilir.",
+    "memoryTip": "Apartman yönetmeliği = binada birlikte yaşamanın kuralları.",
+    "legalBasis": []
+  },
+  "280": {
+    "summary": "Yanlış bir vergi kararına karşı itiraz (Einspruch) etmek gerekir.",
+    "whyCorrect": "İtiraz, kararın tebliğinden itibaren bir ay içinde vergi dairesine ulaşmalıdır.",
+    "background": "Vergi kararı (Steuerbescheid), örneğin gelir vergisi beyannamesinden sonra vergi dairesinin vergi hakkında verdiği karardır. Yanlış olduğunu düşünürsen yazılı olarak veya ELSTER üzerinden elektronik olarak itiraz eder ve gerekçesini yazarsın. Bu ücretsizdir. Vergi dairesi o zaman durumu yeniden inceler. Kararında ısrar ederse vergi mahkemesinde dava açabilirsin. Süreyi kaçıran kişi kararı genellikle kabul etmek zorundadır – karar kesinleşir.",
+    "otherOptions": "Hiçbir şey yapmamak, kararı atmak veya yeni bir karar beklemek işe yaramaz: Bir ay sonra yanlış karar geçerli olur ve ödemen gerekir.",
+    "memoryTip": "Yanlış vergi kararı → bir ay içinde itiraz.",
+    "legalBasis": [
+      {
+        "label": "Vergi Usul Kanunu (AO) § 355",
+        "url": "https://www.gesetze-im-internet.de/ao_1977/__355.html"
+      }
+    ]
+  },
+  "281": {
+    "summary": "Arkadaşlar ten renkleri nedeniyle yüzme havuzuna alınmazsa eşit muamele hakkı ihlal edilir.",
+    "whyCorrect": "Kimse kökeni veya ten rengi nedeniyle dezavantajlı duruma düşürülemez (Anayasa madde 3, Genel Eşit Muamele Kanunu).",
+    "background": "Halka açık bir yüzme havuzu herkese açıktır. İnsanları ten renkleri nedeniyle geri çevirmek ırkçı ayrımcılıktır. Bu, Anayasa’ya ve Genel Eşit Muamele Kanunu’na göre yasaktır – hizmetlerini herkese sunan diskotek, spor salonu veya restoran gibi özel işletmelerde de. Etkilenenler maddi ve manevi tazminat isteyebilir. Federal Ayrımcılıkla Mücadele Dairesi’nden ve yerel danışma merkezlerinden yardım alınabilir.",
+    "otherOptions": "İfade özgürlüğü, toplanma özgürlüğü ve serbest dolaşım temel haklardır, ama bu durumla ilgileri yoktur. Burada mesele insanlara eşit davranılmamasıdır.",
+    "memoryTip": "Ten rengi nedeniyle geri çevrilmek = eşit muamele ihlali.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 3",
+        "url": "https://www.gesetze-im-internet.de/gg/art_3.html"
+      },
+      {
+        "label": "Genel Eşit Muamele Kanunu (AGG) § 19",
+        "url": "https://www.gesetze-im-internet.de/agg/__19.html"
+      }
+    ]
+  },
+  "282": {
+    "summary": "Alman vatandaşları istenirse sandık görevliliği fahrî görevini üstlenmek zorundadır.",
+    "whyCorrect": "Sandık kurulunda görev yapmak bir vatandaşlık yükümlülüğüdür; ancak önemli nedenlerle reddedilebilir.",
+    "background": "Seçimlerin işlemesi için her seçimde yüz binlerce sandık görevlisi gerekir. Çoğu gönüllü olur, ama belediyeler seçme hakkı olanları bu göreve zorunlu olarak da çağırabilir (Federal Seçim Kanunu § 11). Örneğin hastalık, çocuk veya yakın bakımı nedeniyle ya da 65 yaşından büyükse reddedilebilir. Önemli bir neden olmadan gelmeyen kişiye para cezası verilebilir. Mahkemede halktan hâkimlik (Schöffe) için de benzer bir yükümlülük vardır.",
+    "otherOptions": "Kulüp antrenörü, kütüphane görevlisi veya öğretmen gönüllü olarak olunabilir; devlet kimseyi buna zorlamaz. Öğretmenler ayrıca fahrî bir görev değil, bir meslek icra eder.",
+    "memoryTip": "Zorunlu fahrî görev: sandık görevlisi (ve halktan hâkim).",
+    "legalBasis": [
+      {
+        "label": "Federal Seçim Kanunu § 11",
+        "url": "https://www.gesetze-im-internet.de/bwahlg/__11.html"
+      }
+    ]
+  },
+  "283": {
+    "summary": "Bir resmî daireden yanlış bir fatura gelirse daireye itiraz (Widerspruch) edilir.",
+    "whyCorrect": "İtiraz genellikle kararın alınmasından itibaren bir ay içinde yapılmalıdır.",
+    "background": "Resmî dairelerin faturaları veya harç kararları, örneğin çöp ücretleri ya da park cezası için, idari işlemlerdir. Kararın sonunda nasıl ve ne zamana kadar itiraz edilebileceğini açıklayan bir “kanun yolu bilgisi” (Rechtsbehelfsbelehrung) bulunur. Genellikle yazılı olarak itiraz edilir ve faturanın neden yanlış olduğu açıklanır. Daire o zaman durumu yeniden incelemek zorundadır. İtirazı kabul etmezse idare mahkemesinde dava açılabilir. Vergi kararlarında bu yola Einspruch denir (bkz. 280. soru).",
+    "otherOptions": "Faturayı öylece bırakan veya geri gönderen kişi ihtar ücretleri ve icra riskiyle karşılaşır, çünkü süre dolduğunda karar geçerli olur. Vergi dairesi başka dairelerin faturalarından sorumlu değildir.",
+    "memoryTip": "Yanlış karar → bir ay içinde itiraz.",
+    "legalBasis": [
+      {
+        "label": "İdari Yargılama Kanunu (VwGO) § 70",
+        "url": "https://www.gesetze-im-internet.de/vwgo/__70.html"
+      }
+    ]
+  },
+  "284": {
+    "summary": "İş hayatındaki gereksinimler hızla değiştiği için yetişkinler meslek eğitiminden sonra da öğrenmeye devam etmelidir.",
+    "whyCorrect": "Buna “yaşam boyu öğrenme” denir: Sürekli eğitim, iş hayatında geride kalmamaya yardım eder.",
+    "background": "Dijitalleşme, yeni teknoloji ve yapay zekâ birçok mesleği değiştiriyor. Bu yüzden Almanya’da birçok sürekli eğitim imkânı vardır: halk eğitim merkezindeki kurslar, işverenin sunduğu eğitimler, “Aufstiegs-BAföG” desteğiyle ustalık veya teknisyenlik için ileri meslek eğitimi ya da iş yanında üniversite. Çoğu eyalette çalışanların eğitim izni hakkı vardır, çoğu zaman yılda beş gün. İş ajansı belirli koşullarda sürekli eğitim konusunda danışmanlık yapar ve destek verir.",
+    "otherOptions": "Ne öğrenildiği önemsiz değildir ve okul tek başına bütün bir çalışma hayatı için yetmez. Daha erken çalışmayı bırakmak bir çözüm değildir – tam tersine, emeklilik yaşı yükseliyor.",
+    "memoryTip": "Öğrenme okuldan sonra bitmez.",
+    "legalBasis": []
+  },
+  "285": {
+    "summary": "Bayan Frost maaşından katma değer vergisi (Umsatzsteuer) ödemek zorunda değildir.",
+    "whyCorrect": "Katma değer vergisi mal ve hizmetlerin fiyatlarına dahildir ve şirketler tarafından vergi dairesine aktarılır.",
+    "background": "İşveren brüt maaştan gelir vergisini (gerekirse dayanışma vergisi ve kilise vergisiyle birlikte) ve emeklilik, sağlık, bakım ve işsizlik sigortası primlerini keser. Geriye net maaş kalır. Katma değer vergisi ise maaştan değil, alışveriş yaparken dolaylı olarak ödenir: Genellikle yüzde 19, gıda ve bazı diğer mallar için yüzde 7’dir. Şirketler onu tahsil edip vergi dairesine aktarır.",
+    "otherOptions": "Kadrolu çalışanlarda gelir vergisi ile işsizlik, emeklilik ve sağlık sigortası primleri doğrudan maaştan kesilir.",
+    "memoryTip": "Maaştan: gelir vergisi + sosyal sigorta. Alışverişte: katma değer vergisi.",
+    "legalBasis": []
+  },
+  "286": {
+    "summary": "İşverenle sorunlarda işyeri konseyi (Betriebsrat) yardım eder.",
+    "whyCorrect": "Betriebsrat, bir işletmedeki çalışanların seçilmiş temsilciliğidir.",
+    "background": "En az beş sürekli çalışanı olan işletmelerde çalışanlar, genellikle dört yılda bir, bir işyeri konseyi seçebilir. İşyeri konseyi çalışanların çıkarlarını işverene karşı temsil eder ve örneğin çalışma saatleri, izin planlaması ve fazla mesai konularında birlikte karar verme hakkına sahiptir. İşveren her işten çıkarmadan önce işyeri konseyini dinlemek zorundadır. İşyeri konseyi üyeleri bağımsız çalışabilmeleri için işten çıkarmaya karşı özel olarak korunur.",
+    "otherOptions": "Betriebsprüfer, bir şirketin defterlerini denetleyen vergi dairesi veya emeklilik sigortası çalışanıdır. Betriebsgruppe örneğin sendika üyelerinden oluşan bir gruptur. Betriebsmanagement şirketin yönetimi, yani işveren tarafıdır.",
+    "memoryTip": "Betriebsrat = işletmede çalışanların sesi.",
+    "legalBasis": [
+      {
+        "label": "İşletme Anayasası Kanunu § 1",
+        "url": "https://www.gesetze-im-internet.de/betrvg/__1.html"
+      }
+    ]
+  },
+  "287": {
+    "summary": "İş ilişkisini bitirmek isteyen kişi fesih bildirim süresine (Kündigungsfrist) dikkat etmelidir.",
+    "whyCorrect": "Fesih yazılı olarak yapılmalıdır ve ancak bildirim süresi dolduktan sonra geçerli olur.",
+    "background": "Medeni Kanun’a göre çalışanlar için yasal bildirim süresi, ayın 15’ine veya sonuna kadar dört haftadır; deneme süresinde iki haftadır. İş sözleşmesinde veya toplu sözleşmede farklı süreler olabilir. Önemli: Fesih kâğıt üzerinde, el yazısıyla imzalanmış olarak verilmelidir – bir e-posta veya WhatsApp mesajı yetmez. Süre bitene kadar çalışmaya devam etmek veya kalan izni kullanmak gerekir.",
+    "otherOptions": "Maaş ödemeleri, çalışma süresi ve sigorta zorunluluğu iş ilişkisi süresince geçerlidir, ama fesih sırasında dikkat edilmesi gereken şey bunlar değildir.",
+    "memoryTip": "İstifa: yazılı + süreye uy.",
+    "legalBasis": [
+      {
+        "label": "Medeni Kanun (BGB) § 622",
+        "url": "https://www.gesetze-im-internet.de/bgb/__622.html"
+      },
+      {
+        "label": "Medeni Kanun (BGB) § 623",
+        "url": "https://www.gesetze-im-internet.de/bgb/__623.html"
+      }
+    ]
+  },
+  "288": {
+    "summary": "Almanya’nın İsrail’e karşı özel sorumluluğu, Nasyonal Sosyalistlerin Yahudilere karşı işlediği suçlardan kaynaklanır.",
+    "whyCorrect": "Holokost nedeniyle Almanya, Yahudilere ve İsrail Devleti’ne karşı özel bir tarihsel sorumluluk taşır.",
+    "background": "Nasyonal Sosyalistler yaklaşık altı milyon Avrupalı Yahudiyi öldürdü. Savaştan sonra Federal Cumhuriyet 1952’de İsrail ile tazminat ödemeleri konusunda Lüksemburg Anlaşması’nı imzaladı; 1965’te iki devlet diplomatik ilişki kurdu. Şansölye Angela Merkel 2008’de İsrail parlamentosunda İsrail’in güvenliğinin Alman devlet aklının (Staatsräson) bir parçası olduğunu açıkladı. Bu sorumluluğa Almanya’da antisemitizmle mücadele de dahildir.",
+    "otherOptions": "AB üyeliği, Anayasa veya Hristiyan geleneği neden değildir. Anayasa İsrail’den söz etmez; sorumluluk tarihten kaynaklanır.",
+    "memoryTip": "İsrail’e karşı sorumluluk ← Holokost.",
+    "legalBasis": []
+  },
+  "289": {
+    "summary": "Kişi işi sadece koyu tenli olduğu için alamıyorsa bu ayrımcılıktır.",
+    "whyCorrect": "Genel Eşit Muamele Kanunu, iş hayatında bu tür özellikler nedeniyle ayrımcılığı yasaklar.",
+    "background": "Bir başvuranı ten rengi nedeniyle reddetmek ırkçı ayrımcılıktır. Genel Eşit Muamele Kanunu etnik köken, cinsiyet, din, engellilik, yaş veya cinsel kimlik nedeniyle ayrımcılığı yasaklar. İş ilanı bile tarafsız yazılmalıdır. Ayrımcılığa uğrayan kişi iki ay içinde tazminat isteyebilir; Federal Ayrımcılıkla Mücadele Dairesi destek sunar. E-postalar veya tanıklar gibi delilleri saklamak önemlidir.",
+    "otherOptions": "Misafirlerle çalışmak için yetersiz Almanca, çok yüksek maaş beklentisi veya deneyim eksikliği nesnel nedenlerdir. İşle ilgilidir ve ayrımcılık değildir.",
+    "memoryTip": "Ten rengi asla meşru bir neden değildir.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 3",
+        "url": "https://www.gesetze-im-internet.de/gg/art_3.html"
+      },
+      {
+        "label": "Genel Eşit Muamele Kanunu (AGG) § 1",
+        "url": "https://www.gesetze-im-internet.de/agg/__1.html"
+      }
+    ]
+  },
+  "290": {
+    "summary": "Bozuk bir televizyon için şikâyette bulunup iade/değişim (reklamieren) istenebilir.",
+    "whyCorrect": "Satın alırken kusursuz mal hakkı yasayla güvence altındadır (yasal ayıp sorumluluğu).",
+    "background": "Yeni bir ürün bozuksa satıcı onu onarmak veya yenisiyle değiştirmek zorundadır. Buna ifa düzeltmesi (Nacherfüllung) denir. Yasal ayıp sorumluluğu satın alma tarihinden itibaren iki yıl sürer. İlk yıl içinde kusurun satın alma anında zaten var olduğu varsayılır. Onarım işe yaramazsa fiyat indirimi istenebilir veya sözleşmeden dönülüp para geri alınabilir. En iyisi fişle mağazaya gitmektir. İnternet alışverişlerinde ayrıca 14 günlük cayma hakkı vardır.",
+    "otherOptions": "Polise şikâyet gerekmez – bu bir suç değildir. Cihazı mağazada sormadan değiştirmek yasaktır. Garanti üreticinin gönüllü bir taahhüdüdür; onu uzatmak televizyonu onarmaz.",
+    "memoryTip": "Bozuk aldıysan → şikâyet et (iki yıl yasal ayıp sorumluluğu).",
+    "legalBasis": [
+      {
+        "label": "Medeni Kanun (BGB) § 437",
+        "url": "https://www.gesetze-im-internet.de/bgb/__437.html"
+      }
+    ]
+  },
+  "291": {
+    "summary": "Vergi beyannamesinde bir kiliseye üye olup olmadığını belirtmen gerekir, çünkü gelir ve ücret vergisine bağlı bir kilise vergisi vardır.",
+    "whyCorrect": "Belirli dinî toplulukların üyeleri, vergi dairesinin ücret veya gelir vergisiyle birlikte tahsil ettiği kilise vergisini öder.",
+    "background": "Kilise vergisi Bavyera ve Baden-Württemberg’de ücret veya gelir vergisinin yüzde 8’i, diğer eyaletlerde yüzde 9’udur. Katolik ve Protestan kiliseleri ile bazı diğer dinî topluluklar tarafından alınır; devlet bunu onlar adına tahsil eder ve karşılığında bir ücret alır. Kiliseler bununla örneğin cemaatleri, anaokullarını ve sosyal kurumları finanse eder. Artık ödemek istemeyen kişi Standesamt’ta veya sulh mahkemesinde kiliseden çıkabilir.",
+    "otherOptions": "Bu bilgi istatistik için değil, kilise vergisini hesaplamak içindir. Bir kiliseye üye olmayan kişi daha fazla değil, daha az vergi öder – yani kilise vergisi ödemez. Vergi beyannamesinden kilise değil, vergi dairesi sorumludur.",
+    "memoryTip": "Kilise üyesi = kilise vergisi (ücret vergisinin %8–9’u).",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 140",
+        "url": "https://www.gesetze-im-internet.de/gg/art_140.html"
+      }
+    ]
+  },
+  "292": {
+    "summary": "Dinî hoşgörü şu demektir: Herkes istediğine inanabilir.",
+    "whyCorrect": "Anayasa’nın 4. maddesindeki inanç özgürlüğü her dini ve hiçbir dine bağlı olmama hakkını korur.",
+    "background": "Almanya’da Hristiyanlar, Müslümanlar, Yahudiler, Budistler, Hindular, başka dinlerin mensupları ve hiçbir dine bağlı olmayan birçok insan birlikte yaşar. Dinî hoşgörü, kendin paylaşmasan bile başkalarının inancına saygı göstermek demektir. Devlet bu konuda tarafsızdır ve hiçbir dini kayırmaz. Sınır, bir din adına yasaların çiğnendiği veya başkalarına şiddet uygulandığı yerdir.",
+    "otherOptions": "Cami inşa edilebilir – bu din özgürlüğünün parçasıdır ve Almanya’da birçok cami vardır. Herkes Tanrı’ya inanmaz; bu da serbesttir. Devlet de kimseye neye inanacağını söylemez.",
+    "memoryTip": "Hoşgörü = herkes istediğine inanır – ve başkalarına saygı gösterir.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 4",
+        "url": "https://www.gesetze-im-internet.de/gg/art_4.html"
+      }
+    ]
+  },
+  "293": {
+    "summary": "Yumurta boyamak Almanya’da bir Paskalya geleneğidir.",
+    "whyCorrect": "Renkli Paskalya yumurtaları yeni hayatın sembolüdür; Paskalya’da boyanır, hediye edilir ve çocuklar için saklanır.",
+    "background": "Paskalya en önemli Hristiyan bayramıdır: Hristiyanlar İsa’nın dirilişini kutlar. Kutsal Cuma ve Paskalya Pazartesisi resmî tatildir. Birçok aile Paskalya’dan önce yumurta boyar ve dalları bunlarla süsler. Paskalya Pazarı ebeveynler çoğu zaman bahçede veya evde yumurta ve şekerleme saklar, çocuklar da onları arar – anlatıya göre onları Paskalya Tavşanı getirmiştir. Bazı bölgelerde ayrıca Paskalya ateşleri yakılır.",
+    "otherOptions": "Balkabakları Cadılar Bayramı’nda kapının önüne konur, çam ağacı Noel’de süslenir, havai fişekler ise yılbaşı gecesi atılır.",
+    "memoryTip": "Paskalya = yumurtalar ve Paskalya Tavşanı.",
+    "legalBasis": []
+  },
+  "294": {
+    "summary": "Pfingsten (Pentekost) bir Hristiyan bayramıdır.",
+    "whyCorrect": "Pentekost Paskalya’dan 50 gün sonra kutlanır; Pentekost Pazartesisi resmî tatildir.",
+    "background": "Hristiyanlar Pentekost’ta, İncil’e göre Kutsal Ruh’un havarilerin üzerine indiğini hatırlar. Bu yüzden bayram “Kilise’nin doğum günü” olarak da görülür. Adı Yunancada “ellinci (gün)” anlamına gelen kelimeden gelir. Pentekost Pazarı ve Pazartesisi genellikle Mayıs veya Haziran’a denk gelir. Bazı eyaletlerde bu dönemde okul tatili, yani Pfingstferien de vardır.",
+    "otherOptions": "Pentekost, 27 Ocak gibi bir devlet anma günü, uluslararası bir yas günü veya sadece Bavyera’ya özgü bir gelenek değildir – Bavyera’nın özellikle uzun Pentekost tatili olsa da bütün Almanya’da kutlanır.",
+    "memoryTip": "Paskalya + 50 gün = Pentekost.",
+    "legalBasis": []
+  },
+  "295": {
+    "summary": "Avrupa ve Alman kültürünü en çok Hristiyanlık şekillendirdi.",
+    "whyCorrect": "Hristiyanlık bin yılı aşkın süredir Avrupa’da bayramları, sanatı, mimariyi, değerleri ve günlük hayatı etkiler.",
+    "background": "Hristiyanlığın birçok izi bugün hâlâ görülür: neredeyse her yerde kiliseler ve katedraller, Noel, Paskalya ve Pentekost gibi bayramlar, tatil günü olarak pazar ve İsa’nın doğumuna göre takvim. Müzik, resim ve edebiyat da Hristiyan konularından güçlü biçimde etkilendi. Bunun yanında Yahudilik, antik felsefe ve Aydınlanma da Avrupa kültürünü şekillendirdi. Bugün Almanya’daki insanların yarısına yakını iki büyük Hristiyan kilisesinden birine üyedir; burada yaklaşık beş milyon Müslüman yaşar.",
+    "otherOptions": "Hinduizm ve Budizm Asya kökenlidir ve Almanya’da nispeten az mensubu vardır. İslam bugün Almanya’nın en büyük ikinci dinidir, ama Avrupa kültürünü Hristiyanlık kadar temelden şekillendirmemiştir.",
+    "memoryTip": "Kiliseler, Noel, pazar = Hristiyan etkisi.",
+    "legalBasis": []
+  },
+  "296": {
+    "summary": "Noel’den önceki son dört haftaya Advent dönemi (Adventszeit) denir.",
+    "whyCorrect": "Advent, Noel’den önceki dördüncü pazar başlar; “Advent” “geliş” anlamına gelir.",
+    "background": "Advent döneminde Hristiyanlar İsa’nın doğum bayramı olan Noel’e hazırlanır. Tipik olan dört mumlu Advent çelengidir: Her Advent pazarında bir mum daha yakılır. Çocuklar 24 Aralık’a kadar her gün Advent takviminde bir kapı açar. Birçok şehirde sıcak şarap (Glühwein), zencefilli kurabiye ve şekerli badem satılan Noel pazarları vardır; ailelerde de çoğu zaman kurabiye pişirilir.",
+    "otherOptions": "Buß- und Bettag Kasım’da bir çarşambaya denk gelen Protestan bir bayramdır ve sadece Saksonya’da tatildir. Hasat Şükran Bayramı (Erntedankfest) Ekim başında, Azizler Günü (Allerheiligen) 1 Kasım’da kutlanır.",
+    "memoryTip": "Advent = Noel’e kadar dört pazar, dört mum.",
+    "legalBasis": []
+  },
+  "297": {
+    "summary": "Almanya’daki göçmenlerin çoğu Türkiye’den geldi.",
+    "whyCorrect": "Türk kökenliler, Almanya’da göç geçmişine sahip en büyük gruptur.",
+    "background": "1961 işçi alım anlaşmasından sonra birçok kişi Türkiye’den “misafir işçi” (Gastarbeiter) olarak Almanya’ya geldi. Sonra aileleri de geldi ve birçoğu kalıcı olarak kaldı. Bugün Almanya’da birçoğu üçüncü veya dördüncü kuşaktan ve Alman pasaportlu olan yaklaşık üç milyon Türk kökenli insan yaşar. Diğer büyük gruplar Polonya, Rusya, Kazakistan, Romanya, İtalya, Suriye ve – 2022’den beri – Ukrayna’dan gelir.",
+    "otherOptions": "İtalya ve Polonya’dan da birçok kişi göç etti, ama Türkiye’den daha az. Fas ile 1963’ten itibaren bir işçi alım anlaşması vardı, ama göç edenlerin sayısı çok daha küçüktür.",
+    "memoryTip": "En büyük grup: Türk kökenliler.",
+    "legalBasis": []
+  },
+  "298": {
+    "summary": "DDR’de yaşayan göçmenler özellikle Vietnam, Polonya ve Mozambik’ten geliyordu.",
+    "whyCorrect": "DDR, diğer sosyalist devletlerden “sözleşmeli işçiler” getirdi.",
+    "background": "Federal Cumhuriyet gibi DDR de işgücüne ihtiyaç duyuyordu. Sosyalist “kardeş devletlerle”, özellikle Vietnam, Mozambik, Polonya, Küba ve Angola ile anlaşmalar yaptı. En büyük grup Vietnam’dan geldi: 1989’da DDR’de yaklaşık 60.000 Vietnamlı sözleşmeli işçi yaşıyordu. Genellikle ayrı yurtlarda yaşıyor, halkla az temas kuruyor ve kural olarak ailelerini getiremiyorlardı. Yeniden birleşmeden sonra birçok Vietnamlı Almanya’da kaldı.",
+    "otherOptions": "Fransa, Meksika veya Somali sözleşmeli işçilerin geldiği ülkeler arasında değildi. Macaristan, Şili, Zimbabve, Kuzey Kore, Romanya veya Mısır’dan benzer büyüklükte işçi alımı olmadı.",
+    "memoryTip": "DDR sözleşmeli işçileri: Vietnam (en büyük grup), Mozambik, Polonya.",
+    "legalBasis": []
+  },
+  "299": {
+    "summary": "1950’ler ve 1960’larda işe alınan yabancı işçilere “misafir işçi” (Gastarbeiter) denirdi.",
+    "whyCorrect": "Bu ad, o zamanlar onların sadece bir süre kalacaklarının varsayıldığını gösterir.",
+    "background": "Ekonomik mucize döneminde Federal Cumhuriyet’te, özellikle sanayide, madencilikte ve inşaatta işgücü eksikti. Bu yüzden 1955’ten itibaren İtalya, İspanya, Yunanistan, Türkiye, Fas, Portekiz, Tunus ve Yugoslavya ile işçi alım anlaşmaları yaptı. 1964’te Köln’de bir milyonuncu misafir işçi olan Portekizli Armando Rodrigues de Sá bir mopetle karşılandı. 1973’te Federal Cumhuriyet işçi alımını durdurdu. Birçok misafir işçi kaldı, ailelerini getirdi ve bugün de Almanya’yı şekillendirmeye devam ediyor.",
+    "otherOptions": "Kaçak işçiler (Schwarzarbeiter) vergi ve sosyal sigorta primi ödemeden yasa dışı çalışır. Geçici işçiler (Zeitarbeiter) bir şirket tarafından başka şirketlere kiralanır. Vardiyalı işçiler (Schichtarbeiter) örneğin geceleri değişen vardiyalarda çalışır – bu kökenleri hakkında bir şey söylemez.",
+    "memoryTip": "İşçi alımı 1955–1973 = misafir işçiler.",
+    "legalBasis": []
+  },
+  "300": {
+    "summary": "İlk misafir işçiler İtalya’dan geldi.",
+    "whyCorrect": "Federal Cumhuriyet ilk işçi alım anlaşmasını 1955’te İtalya ile yaptı.",
+    "background": "20 Aralık 1955’te Federal Cumhuriyet ve İtalya işçi alımı konusunda ilk anlaşmayı imzaladı. Birçok İtalyan önce tarımda, sonra örneğin otomobil üretiminde, sanayide çalıştı. Ardından İspanya ve Yunanistan (1960), Türkiye (1961), Fas (1963), Portekiz (1964), Tunus (1965) ve Yugoslavya (1968) ile anlaşmalar yapıldı. Göç sayesinde İtalyan mutfağı – pizza, makarna, espresso – bütün Almanya’da sevildi.",
+    "otherOptions": "İspanya, Portekiz ve Türkiye birkaç yıl sonra geldi: İspanya 1960’ta, Türkiye 1961’de, Portekiz 1964’te.",
+    "memoryTip": "1955’te önce İtalya – sonra İspanya, Yunanistan, Türkiye …",
+    "legalBasis": []
   }
 }

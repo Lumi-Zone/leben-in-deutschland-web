@@ -3008,5 +3008,290 @@
         "url": "https://www.gesetze-im-internet.de/famfg/__114.html"
       }
     ]
+  },
+  "276": {
+    "summary": "Wenn man in einer Behörde schlecht behandelt wird, kann man sich beim Behördenleiter beschweren.",
+    "whyCorrect": "Eine solche Beschwerde nennt man Dienstaufsichtsbeschwerde; sie ist kostenlos und an keine Frist gebunden.",
+    "background": "Auch Beamte und Angestellte im öffentlichen Dienst müssen Bürgerinnen und Bürger respektvoll und korrekt behandeln. Wer unfreundlich, herablassend oder unfair behandelt wird, kann sich schriftlich bei der Leitung der Behörde beschweren. Gegen eine Entscheidung der Behörde, etwa einen abgelehnten Antrag, kann man außerdem Widerspruch einlegen oder klagen. Jeder hat zudem das Recht, sich mit Bitten und Beschwerden an das Parlament zu wenden (Petitionsrecht, Artikel 17). Hilfe bieten auch Beratungsstellen und Antidiskriminierungsstellen.",
+    "otherOptions": "Man muss sich schlechte Behandlung nicht gefallen lassen und kann etwas tun. Einer Person zu drohen ist dagegen nicht erlaubt und kann sogar strafbar sein.",
+    "memoryTip": "Schlecht behandelt? Ruhig bleiben und sich bei der Leitung beschweren.",
+    "legalBasis": [
+      {
+        "label": "Art. 17 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_17.html"
+      }
+    ]
+  },
+  "277": {
+    "summary": "Diskriminierung ist es, wenn die Person die Stelle nur deshalb nicht bekommt, weil sie Mutter ist.",
+    "whyCorrect": "Das Allgemeine Gleichbehandlungsgesetz verbietet Benachteiligungen im Arbeitsleben wegen solcher Merkmale.",
+    "background": "Arbeitgeber dürfen Bewerberinnen und Bewerber nicht wegen ihres Geschlechts benachteiligen – dazu gehört auch, dass eine Frau Mutter ist oder schwanger sein könnte. Fragen nach Schwangerschaft oder Familienplanung sind im Vorstellungsgespräch grundsätzlich unzulässig; eine Frau darf darauf sogar falsch antworten, ohne Nachteile zu befürchten. Wer diskriminiert wird, kann innerhalb von zwei Monaten Ansprüche geltend machen, etwa Schadenersatz. Beratung bietet die Antidiskriminierungsstelle des Bundes.",
+    "otherOptions": "Fehlende Englischkenntnisse, zu hohe Gehaltsvorstellungen oder fehlende Berufserfahrung sind sachliche Gründe, die mit der Stelle zu tun haben. Sie sind keine Diskriminierung.",
+    "memoryTip": "Sachlicher Grund (Qualifikation) = erlaubt. Mutter sein = Diskriminierung.",
+    "legalBasis": [
+      {
+        "label": "Art. 3 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_3.html"
+      },
+      {
+        "label": "§ 1 AGG",
+        "url": "https://www.gesetze-im-internet.de/agg/__1.html"
+      }
+    ]
+  },
+  "278": {
+    "summary": "Diskriminierung ist es, wenn die Person die Stelle nur deshalb nicht bekommt, weil er im Rollstuhl sitzt.",
+    "whyCorrect": "Das Allgemeine Gleichbehandlungsgesetz verbietet Benachteiligungen im Arbeitsleben wegen solcher Merkmale.",
+    "background": "Für die Arbeit als Buchhalter spielt es keine Rolle, ob jemand im Rollstuhl sitzt. Das Grundgesetz sagt ausdrücklich: „Niemand darf wegen seiner Behinderung benachteiligt werden“ (Artikel 3). Schwerbehinderte Menschen sind im Arbeitsleben zusätzlich geschützt. Betriebe mit mindestens 20 Arbeitsplätzen müssen fünf Prozent davon mit schwerbehinderten Menschen besetzen oder eine Ausgleichsabgabe zahlen. Für einen barrierefreien Arbeitsplatz gibt es finanzielle Unterstützung, zum Beispiel vom Inklusionsamt.",
+    "otherOptions": "Fehlende Erfahrung, zu hohe Gehaltsvorstellungen oder fehlende Englischkenntnisse können sachliche Gründe sein, jemanden nicht einzustellen. Das gilt für Menschen mit und ohne Behinderung gleichermaßen.",
+    "memoryTip": "Behinderung ist kein Grund, jemanden abzulehnen.",
+    "legalBasis": [
+      {
+        "label": "Art. 3 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_3.html"
+      },
+      {
+        "label": "§ 1 AGG",
+        "url": "https://www.gesetze-im-internet.de/agg/__1.html"
+      }
+    ]
+  },
+  "279": {
+    "summary": "Die Hausordnung nennt Regeln, an die sich alle Bewohnerinnen und Bewohner halten müssen.",
+    "whyCorrect": "Sie soll das Zusammenleben in einem Mietshaus regeln und ist oft Teil des Mietvertrags.",
+    "background": "In der Hausordnung steht zum Beispiel, wann Ruhezeiten gelten (etwa von 22 bis 6 Uhr), wer wann das Treppenhaus putzt, wie der Müll getrennt wird, ob man auf dem Balkon grillen darf und wo Fahrräder oder Kinderwagen abgestellt werden dürfen. Wer die Hausordnung wiederholt nicht beachtet, kann eine Abmahnung vom Vermieter bekommen. Oft hängt die Hausordnung im Treppenhaus aus. Bei neuen Wohnungen lohnt es sich, sie gleich zu lesen.",
+    "otherOptions": "Regeln für Bus und Bahn legen die Verkehrsbetriebe fest. Eine Liste aller Mieter steht nicht in der Hausordnung, höchstens an Klingel und Briefkasten. Die Adresse des Ordnungsamts findet man bei der Stadt.",
+    "memoryTip": "Hausordnung = Spielregeln für das Zusammenleben im Haus.",
+    "legalBasis": []
+  },
+  "280": {
+    "summary": "Gegen einen falschen Steuerbescheid muss man Einspruch einlegen.",
+    "whyCorrect": "Der Einspruch muss innerhalb eines Monats nach Bekanntgabe des Bescheids beim Finanzamt eingehen.",
+    "background": "Der Steuerbescheid ist die Entscheidung des Finanzamts über die Steuer, zum Beispiel nach der Einkommensteuererklärung. Hält man ihn für falsch, legt man schriftlich oder elektronisch über ELSTER Einspruch ein und begründet ihn. Das ist kostenlos. Das Finanzamt prüft den Fall dann noch einmal. Bleibt es bei seiner Entscheidung, kann man vor dem Finanzgericht klagen. Wer die Frist verpasst, muss den Bescheid in der Regel akzeptieren – er wird „bestandskräftig“.",
+    "otherOptions": "Nichts zu tun, den Bescheid wegzuwerfen oder auf einen neuen Bescheid zu warten, hilft nicht: Nach einem Monat wird der falsche Bescheid wirksam, und man muss zahlen.",
+    "memoryTip": "Steuerbescheid falsch → innerhalb eines Monats Einspruch.",
+    "legalBasis": [
+      {
+        "label": "§ 355 Abgabenordnung",
+        "url": "https://www.gesetze-im-internet.de/ao_1977/__355.html"
+      }
+    ]
+  },
+  "281": {
+    "summary": "Wenn die Freunde wegen ihrer Hautfarbe nicht ins Schwimmbad dürfen, wird das Recht auf Gleichbehandlung verletzt.",
+    "whyCorrect": "Niemand darf wegen seiner Herkunft oder Hautfarbe benachteiligt werden (Artikel 3 Grundgesetz, Allgemeines Gleichbehandlungsgesetz).",
+    "background": "Ein öffentliches Schwimmbad steht allen offen. Wer Menschen wegen ihrer Hautfarbe abweist, diskriminiert sie rassistisch. Das ist nach dem Grundgesetz und dem Allgemeinen Gleichbehandlungsgesetz verboten – auch bei privaten Anbietern wie Diskotheken, Fitnessstudios oder Restaurants, die ihre Leistungen der Allgemeinheit anbieten. Betroffene können Schadenersatz und eine Entschädigung verlangen. Hilfe gibt es bei der Antidiskriminierungsstelle des Bundes und bei örtlichen Beratungsstellen.",
+    "otherOptions": "Meinungsfreiheit, Versammlungsfreiheit und Freizügigkeit sind zwar Grundrechte, haben mit dieser Situation aber nichts zu tun. Hier geht es darum, dass Menschen ungleich behandelt werden.",
+    "memoryTip": "Abgewiesen wegen Hautfarbe = Verletzung der Gleichbehandlung.",
+    "legalBasis": [
+      {
+        "label": "Art. 3 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_3.html"
+      },
+      {
+        "label": "§ 19 AGG",
+        "url": "https://www.gesetze-im-internet.de/agg/__19.html"
+      }
+    ]
+  },
+  "282": {
+    "summary": "Das Ehrenamt als Wahlhelferin oder Wahlhelfer müssen deutsche Staatsbürger übernehmen, wenn sie dazu aufgefordert werden.",
+    "whyCorrect": "Die Tätigkeit im Wahlvorstand ist eine staatsbürgerliche Pflicht; ablehnen darf man nur aus wichtigen Gründen.",
+    "background": "Damit Wahlen funktionieren, braucht es bei jeder Wahl Hunderttausende Wahlhelfer. Die meisten melden sich freiwillig, aber die Gemeinden dürfen Wahlberechtigte auch dazu verpflichten (§ 11 Bundeswahlgesetz). Ablehnen kann man zum Beispiel wegen Krankheit, wegen der Betreuung von Kindern oder Angehörigen oder wenn man über 65 ist. Wer ohne wichtigen Grund nicht erscheint, kann ein Bußgeld bekommen. Eine ähnliche Pflicht gibt es für das Amt des Schöffen am Gericht.",
+    "otherOptions": "Vereinstrainer, Bibliotheksaufsicht oder Lehrkraft kann man freiwillig werden; dazu verpflichtet der Staat niemanden. Lehrerinnen und Lehrer üben außerdem einen Beruf aus und kein Ehrenamt.",
+    "memoryTip": "Pflicht-Ehrenamt: Wahlhelfer (und Schöffe).",
+    "legalBasis": [
+      {
+        "label": "§ 11 Bundeswahlgesetz",
+        "url": "https://www.gesetze-im-internet.de/bwahlg/__11.html"
+      }
+    ]
+  },
+  "283": {
+    "summary": "Gegen eine falsche Rechnung einer Behörde legt man Widerspruch bei der Behörde ein.",
+    "whyCorrect": "Der Widerspruch muss in der Regel innerhalb eines Monats nach Erhalt des Bescheids eingelegt werden.",
+    "background": "Rechnungen oder Gebührenbescheide von Behörden, etwa für Müllgebühren oder einen Parkverstoß, sind Verwaltungsakte. Am Ende des Bescheids steht eine „Rechtsbehelfsbelehrung“: Sie erklärt, wie und bis wann man sich wehren kann. Meist legt man schriftlich Widerspruch ein und erklärt, warum die Rechnung falsch ist. Die Behörde muss den Fall dann erneut prüfen. Hilft sie dem Widerspruch nicht ab, kann man vor dem Verwaltungsgericht klagen. Bei Steuerbescheiden heißt der Rechtsbehelf Einspruch (siehe Frage 280).",
+    "otherOptions": "Wer die Rechnung einfach liegen lässt oder zurückschickt, riskiert Mahngebühren und Zwangsvollstreckung, weil der Bescheid nach Ablauf der Frist gilt. Das Finanzamt ist für fremde Rechnungen anderer Behörden nicht zuständig.",
+    "memoryTip": "Falscher Bescheid → Widerspruch innerhalb eines Monats.",
+    "legalBasis": [
+      {
+        "label": "§ 70 VwGO",
+        "url": "https://www.gesetze-im-internet.de/vwgo/__70.html"
+      }
+    ]
+  },
+  "284": {
+    "summary": "Weil sich Anforderungen im Beruf schnell ändern, müssen Erwachsene auch nach der Ausbildung immer weiter lernen.",
+    "whyCorrect": "Man spricht von „lebenslangem Lernen“: Weiterbildung hilft, im Beruf mitzuhalten.",
+    "background": "Digitalisierung, neue Technik und künstliche Intelligenz verändern viele Berufe. Deshalb gibt es in Deutschland viele Möglichkeiten zur Weiterbildung: Kurse bei der Volkshochschule, Fortbildungen beim Arbeitgeber, Aufstiegsfortbildungen zum Meister oder Techniker mit „Aufstiegs-BAföG“ oder ein Studium neben dem Beruf. In den meisten Bundesländern haben Beschäftigte einen Anspruch auf Bildungsurlaub, oft fünf Tage im Jahr. Die Agentur für Arbeit berät und fördert Weiterbildungen unter bestimmten Bedingungen.",
+    "otherOptions": "Es ist nicht egal, was man lernt, und die Schule allein reicht nicht für ein ganzes Berufsleben. Früher aufzuhören zu arbeiten ist keine Lösung – im Gegenteil, das Rentenalter steigt eher.",
+    "memoryTip": "Lernen hört nach der Schule nicht auf.",
+    "legalBasis": []
+  },
+  "285": {
+    "summary": "Umsatzsteuer muss Frau Frost nicht von ihrem Gehalt bezahlen.",
+    "whyCorrect": "Die Umsatzsteuer (Mehrwertsteuer) steckt in den Preisen von Waren und Dienstleistungen und wird von Unternehmen ans Finanzamt abgeführt.",
+    "background": "Von einem Bruttogehalt zieht der Arbeitgeber die Lohnsteuer (eventuell mit Solidaritätszuschlag und Kirchensteuer) sowie die Beiträge zur Renten-, Kranken-, Pflege- und Arbeitslosenversicherung ab. Übrig bleibt das Nettogehalt. Die Umsatzsteuer zahlt man dagegen nicht vom Gehalt, sondern indirekt beim Einkaufen: Sie beträgt meist 19 Prozent, für Lebensmittel und einige andere Waren 7 Prozent. Unternehmen ziehen sie ein und geben sie ans Finanzamt weiter.",
+    "otherOptions": "Lohnsteuer und die Beiträge zur Arbeitslosen-, Renten- und Krankenversicherung werden bei fest Angestellten direkt vom Gehalt abgezogen.",
+    "memoryTip": "Vom Gehalt: Lohnsteuer + Sozialversicherung. Beim Einkaufen: Umsatzsteuer.",
+    "legalBasis": []
+  },
+  "286": {
+    "summary": "Bei Problemen mit dem Arbeitgeber hilft der Betriebsrat.",
+    "whyCorrect": "Der Betriebsrat ist die gewählte Vertretung der Beschäftigten in einem Betrieb.",
+    "background": "In Betrieben mit mindestens fünf ständigen Beschäftigten können die Arbeitnehmerinnen und Arbeitnehmer einen Betriebsrat wählen, in der Regel alle vier Jahre. Der Betriebsrat vertritt ihre Interessen gegenüber dem Arbeitgeber und hat Mitbestimmungsrechte, zum Beispiel bei Arbeitszeiten, Urlaubsplanung und Überstunden. Vor jeder Kündigung muss der Arbeitgeber den Betriebsrat anhören. Mitglieder des Betriebsrats haben einen besonderen Kündigungsschutz, damit sie sich unabhängig einsetzen können.",
+    "otherOptions": "Ein Betriebsprüfer ist ein Mitarbeiter des Finanzamts oder der Rentenversicherung, der die Bücher einer Firma prüft. Eine Betriebsgruppe ist zum Beispiel eine Gruppe von Gewerkschaftsmitgliedern. Das Betriebsmanagement ist die Leitung der Firma, also die Arbeitgeberseite.",
+    "memoryTip": "Betriebsrat = Stimme der Beschäftigten im Betrieb.",
+    "legalBasis": [
+      {
+        "label": "§ 1 Betriebsverfassungsgesetz",
+        "url": "https://www.gesetze-im-internet.de/betrvg/__1.html"
+      }
+    ]
+  },
+  "287": {
+    "summary": "Wer sein Arbeitsverhältnis beenden möchte, muss die Kündigungsfrist beachten.",
+    "whyCorrect": "Die Kündigung muss schriftlich erfolgen und wird erst nach Ablauf der Kündigungsfrist wirksam.",
+    "background": "Für Arbeitnehmer gilt nach dem Bürgerlichen Gesetzbuch eine gesetzliche Kündigungsfrist von vier Wochen zum 15. oder zum Ende eines Kalendermonats; in der Probezeit sind es zwei Wochen. Im Arbeitsvertrag oder Tarifvertrag können andere Fristen stehen. Wichtig: Die Kündigung muss auf Papier mit eigenhändiger Unterschrift übergeben werden – eine E-Mail oder WhatsApp-Nachricht reicht nicht. Bis zum Ende der Frist muss man weiter arbeiten oder Resturlaub nehmen.",
+    "otherOptions": "Die Gehaltszahlungen, die Arbeitszeit und die Versicherungspflicht gelten während des Arbeitsverhältnisses, sind aber nicht das, was man beim Kündigen beachten muss.",
+    "memoryTip": "Kündigen: schriftlich + Frist einhalten.",
+    "legalBasis": [
+      {
+        "label": "§ 622 BGB",
+        "url": "https://www.gesetze-im-internet.de/bgb/__622.html"
+      },
+      {
+        "label": "§ 623 BGB",
+        "url": "https://www.gesetze-im-internet.de/bgb/__623.html"
+      }
+    ]
+  },
+  "288": {
+    "summary": "Deutschlands besondere Verantwortung für Israel begründet sich aus den nationalsozialistischen Verbrechen gegen Juden.",
+    "whyCorrect": "Wegen des Holocaust trägt Deutschland eine besondere historische Verantwortung gegenüber Jüdinnen und Juden und dem Staat Israel.",
+    "background": "Die Nationalsozialisten ermordeten rund sechs Millionen europäische Jüdinnen und Juden. Nach dem Krieg schloss die Bundesrepublik 1952 mit Israel das Luxemburger Abkommen über Entschädigungszahlungen; 1965 nahmen beide Staaten diplomatische Beziehungen auf. Bundeskanzlerin Angela Merkel erklärte 2008 vor dem israelischen Parlament, die Sicherheit Israels sei Teil der deutschen Staatsräson. Zu dieser Verantwortung gehört auch der Kampf gegen Antisemitismus in Deutschland.",
+    "otherOptions": "Die Mitgliedschaft in der EU, das Grundgesetz oder die christliche Tradition sind nicht der Grund. Das Grundgesetz erwähnt Israel nicht; die Verantwortung ergibt sich aus der Geschichte.",
+    "memoryTip": "Verantwortung für Israel ← Holocaust.",
+    "legalBasis": []
+  },
+  "289": {
+    "summary": "Diskriminierung ist es, wenn die Person die Stelle nur deshalb nicht bekommt, weil er eine dunkle Haut hat.",
+    "whyCorrect": "Das Allgemeine Gleichbehandlungsgesetz verbietet Benachteiligungen im Arbeitsleben wegen solcher Merkmale.",
+    "background": "Wer einen Bewerber wegen seiner Hautfarbe ablehnt, diskriminiert ihn rassistisch. Das Allgemeine Gleichbehandlungsgesetz verbietet Benachteiligungen wegen der ethnischen Herkunft, des Geschlechts, der Religion, einer Behinderung, des Alters oder der sexuellen Identität. Schon die Stellenanzeige muss neutral formuliert sein. Wer diskriminiert wird, kann innerhalb von zwei Monaten eine Entschädigung verlangen; Unterstützung bietet die Antidiskriminierungsstelle des Bundes. Wichtig ist, Beweise wie E-Mails oder Zeugen festzuhalten.",
+    "otherOptions": "Zu geringe Deutschkenntnisse für die Arbeit mit Gästen, zu hohe Gehaltsvorstellungen oder fehlende Berufserfahrung sind sachliche Gründe. Sie haben mit der Stelle zu tun und sind keine Diskriminierung.",
+    "memoryTip": "Hautfarbe ist nie ein erlaubter Grund.",
+    "legalBasis": [
+      {
+        "label": "Art. 3 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_3.html"
+      },
+      {
+        "label": "§ 1 AGG",
+        "url": "https://www.gesetze-im-internet.de/agg/__1.html"
+      }
+    ]
+  },
+  "290": {
+    "summary": "Einen kaputten Fernseher kann man reklamieren.",
+    "whyCorrect": "Beim Kauf hat man ein gesetzliches Recht auf eine mangelfreie Ware (Gewährleistung).",
+    "background": "Wenn eine neue Ware kaputt ist, muss der Verkäufer sie reparieren oder durch eine neue ersetzen. Das nennt man Nacherfüllung. Die gesetzliche Gewährleistung gilt zwei Jahre ab dem Kauf. Im ersten Jahr wird vermutet, dass der Fehler schon beim Kauf da war. Klappt die Reparatur nicht, kann man den Kaufpreis mindern oder vom Kaufvertrag zurücktreten und sein Geld zurückbekommen. Am besten geht man mit dem Kassenbon zum Geschäft. Bei Online-Käufen hat man außerdem 14 Tage Widerrufsrecht.",
+    "otherOptions": "Eine Anzeige bei der Polizei ist nicht nötig – das ist keine Straftat. Das Gerät einfach ungefragt im Laden auszutauschen ist nicht erlaubt. Eine Garantie ist ein freiwilliges Versprechen des Herstellers; sie zu verlängern repariert den Fernseher nicht.",
+    "memoryTip": "Kaputt gekauft → reklamieren (zwei Jahre Gewährleistung).",
+    "legalBasis": [
+      {
+        "label": "§ 437 BGB",
+        "url": "https://www.gesetze-im-internet.de/bgb/__437.html"
+      }
+    ]
+  },
+  "291": {
+    "summary": "In der Steuererklärung muss man angeben, ob man einer Kirche angehört, weil es eine Kirchensteuer gibt, die an die Einkommen- und Lohnsteuer geknüpft ist.",
+    "whyCorrect": "Mitglieder bestimmter Religionsgemeinschaften zahlen Kirchensteuer, die das Finanzamt zusammen mit der Lohn- oder Einkommensteuer einzieht.",
+    "background": "Die Kirchensteuer beträgt in Bayern und Baden-Württemberg 8 Prozent, in den anderen Ländern 9 Prozent der Lohn- oder Einkommensteuer. Sie wird von der katholischen und den evangelischen Kirchen und einigen weiteren Religionsgemeinschaften erhoben; der Staat zieht sie für sie ein und erhält dafür eine Gebühr. Die Kirchen finanzieren damit zum Beispiel Gemeinden, Kindergärten und soziale Einrichtungen. Wer nicht mehr zahlen möchte, kann beim Standesamt oder Amtsgericht aus der Kirche austreten.",
+    "otherOptions": "Die Angabe dient nicht der Statistik, sondern der Berechnung der Kirchensteuer. Wer keiner Kirche angehört, zahlt nicht mehr, sondern weniger Steuern – nämlich keine Kirchensteuer. Und für die Steuererklärung ist das Finanzamt zuständig, nicht die Kirche.",
+    "memoryTip": "Kirchenmitglied = Kirchensteuer (8–9 % der Lohnsteuer).",
+    "legalBasis": [
+      {
+        "label": "Art. 140 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_140.html"
+      }
+    ]
+  },
+  "292": {
+    "summary": "Religiöse Toleranz bedeutet: Jeder kann glauben, was er möchte.",
+    "whyCorrect": "Die Glaubensfreiheit nach Artikel 4 Grundgesetz schützt jede Religion und auch das Recht, keine Religion zu haben.",
+    "background": "In Deutschland leben Christen, Muslime, Juden, Buddhisten, Hindus, Angehörige anderer Religionen und viele Menschen ohne Religion zusammen. Religiöse Toleranz heißt, den Glauben anderer zu respektieren, auch wenn man ihn selbst nicht teilt. Der Staat ist dabei neutral und bevorzugt keine Religion. Die Grenze liegt dort, wo im Namen einer Religion gegen Gesetze verstoßen oder anderen Gewalt angetan wird.",
+    "otherOptions": "Moscheen dürfen gebaut werden – das gehört zur Religionsfreiheit, und es gibt in Deutschland viele Moscheen. Nicht alle Menschen glauben an Gott; auch das ist erlaubt. Und der Staat schreibt niemandem vor, woran er glauben soll.",
+    "memoryTip": "Toleranz = jeder glaubt, was er will – und respektiert die anderen.",
+    "legalBasis": [
+      {
+        "label": "Art. 4 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_4.html"
+      }
+    ]
+  },
+  "293": {
+    "summary": "Ein Brauch zu Ostern ist es, Eier zu bemalen.",
+    "whyCorrect": "Bunte Ostereier sind ein Symbol für neues Leben und werden zu Ostern bemalt, verschenkt und für Kinder versteckt.",
+    "background": "Ostern ist das wichtigste christliche Fest: Christen feiern die Auferstehung Jesu. Karfreitag und Ostermontag sind gesetzliche Feiertage. Viele Familien bemalen vor Ostern Eier und schmücken Zweige damit. Am Ostersonntag verstecken Eltern oft Eier und Süßigkeiten im Garten oder in der Wohnung, und die Kinder suchen sie – der Erzählung nach hat sie der Osterhase gebracht. In manchen Regionen gibt es außerdem Osterfeuer.",
+    "otherOptions": "Kürbisse vor die Tür stellt man zu Halloween, einen Tannenbaum schmückt man zu Weihnachten, und Raketen schießt man in der Silvesternacht zum Jahreswechsel in die Luft.",
+    "memoryTip": "Ostern = Eier und Osterhase.",
+    "legalBasis": []
+  },
+  "294": {
+    "summary": "Pfingsten ist ein christlicher Feiertag.",
+    "whyCorrect": "Pfingsten wird 50 Tage nach Ostern gefeiert; der Pfingstmontag ist ein gesetzlicher Feiertag.",
+    "background": "An Pfingsten erinnern Christen daran, dass nach der Bibel der Heilige Geist auf die Apostel herabkam. Das Fest gilt deshalb auch als „Geburtstag der Kirche“. Der Name kommt vom griechischen Wort für „der fünfzigste (Tag)“. Pfingstsonntag und Pfingstmontag liegen meist im Mai oder Juni. In einigen Bundesländern gibt es um diese Zeit auch Schulferien, die Pfingstferien.",
+    "otherOptions": "Pfingsten ist kein staatlicher Gedenktag wie der 27. Januar, kein internationaler Trauertag und kein rein bayerischer Brauch – es wird in ganz Deutschland gefeiert, auch wenn Bayern besonders lange Pfingstferien hat.",
+    "memoryTip": "Ostern + 50 Tage = Pfingsten.",
+    "legalBasis": []
+  },
+  "295": {
+    "summary": "Die europäische und deutsche Kultur wurde vor allem vom Christentum geprägt.",
+    "whyCorrect": "Seit über tausend Jahren beeinflusst das Christentum Feiertage, Kunst, Architektur, Werte und Alltag in Europa.",
+    "background": "Viele Spuren des Christentums sind bis heute sichtbar: Kirchen und Dome in fast jedem Ort, Feiertage wie Weihnachten, Ostern und Pfingsten, der freie Sonntag und die Zeitrechnung nach Christi Geburt. Auch Musik, Malerei und Literatur wurden stark von christlichen Themen beeinflusst. Daneben haben das Judentum, die antike Philosophie und die Aufklärung die europäische Kultur geprägt. Heute gehört knapp die Hälfte der Menschen in Deutschland einer der beiden großen christlichen Kirchen an; rund fünf Millionen Musliminnen und Muslime leben hier.",
+    "otherOptions": "Hinduismus und Buddhismus stammen aus Asien und haben in Deutschland vergleichsweise wenige Anhänger. Der Islam ist heute die zweitgrößte Religion in Deutschland, hat die europäische Kultur aber nicht so grundlegend geprägt wie das Christentum.",
+    "memoryTip": "Kirchen, Weihnachten, Sonntag = christliche Prägung.",
+    "legalBasis": []
+  },
+  "296": {
+    "summary": "Die letzten vier Wochen vor Weihnachten nennt man Adventszeit.",
+    "whyCorrect": "Der Advent beginnt am vierten Sonntag vor Weihnachten; „Advent“ bedeutet „Ankunft“.",
+    "background": "In der Adventszeit bereiten sich Christen auf Weihnachten, das Fest der Geburt Jesu, vor. Typisch ist der Adventskranz mit vier Kerzen: An jedem Adventssonntag wird eine Kerze mehr angezündet. Kinder öffnen jeden Tag ein Türchen im Adventskalender, bis zum 24. Dezember. In vielen Städten gibt es Weihnachtsmärkte mit Glühwein, Lebkuchen und gebrannten Mandeln, und in den Familien wird oft Plätzchen gebacken.",
+    "otherOptions": "Der Buß- und Bettag ist ein evangelischer Feiertag an einem Mittwoch im November, nur in Sachsen arbeitsfrei. Das Erntedankfest feiert man Anfang Oktober, Allerheiligen am 1. November.",
+    "memoryTip": "Advent = vier Sonntage, vier Kerzen bis Weihnachten.",
+    "legalBasis": []
+  },
+  "297": {
+    "summary": "Die meisten Migrantinnen und Migranten in Deutschland kamen aus der Türkei.",
+    "whyCorrect": "Menschen mit türkischen Wurzeln bilden die größte Gruppe mit Einwanderungsgeschichte in Deutschland.",
+    "background": "Nach dem Anwerbeabkommen von 1961 kamen viele Menschen aus der Türkei als „Gastarbeiter“ nach Deutschland. Später zogen Familien nach, und viele blieben dauerhaft. Heute leben fast drei Millionen Menschen mit türkischen Wurzeln in Deutschland, viele von ihnen in der dritten oder vierten Generation und mit deutschem Pass. Weitere große Gruppen kommen aus Polen, Russland, Kasachstan, Rumänien, Italien, Syrien und – seit 2022 – aus der Ukraine.",
+    "otherOptions": "Aus Italien und Polen sind ebenfalls viele Menschen eingewandert, aber weniger als aus der Türkei. Mit Marokko gab es seit 1963 ein Anwerbeabkommen, die Zahl der Eingewanderten ist jedoch deutlich kleiner.",
+    "memoryTip": "Größte Gruppe: Menschen mit türkischen Wurzeln.",
+    "legalBasis": []
+  },
+  "298": {
+    "summary": "In der DDR lebten vor allem Migranten aus Vietnam, Polen und Mosambik.",
+    "whyCorrect": "Die DDR holte sogenannte Vertragsarbeiter aus anderen sozialistischen Staaten ins Land.",
+    "background": "Ähnlich wie die Bundesrepublik brauchte auch die DDR Arbeitskräfte. Sie schloss Verträge mit sozialistischen „Bruderstaaten“, vor allem mit Vietnam, Mosambik, Polen, Kuba und Angola. Die größte Gruppe kam aus Vietnam: 1989 lebten rund 60.000 vietnamesische Vertragsarbeiter in der DDR. Sie lebten meist in eigenen Wohnheimen, hatten wenig Kontakt zur Bevölkerung und durften ihre Familien in der Regel nicht nachholen. Nach der Wiedervereinigung blieben viele Vietnamesen in Deutschland.",
+    "otherOptions": "Frankreich, Mexiko oder Somalia gehörten nicht zu den Herkunftsländern der Vertragsarbeiter. Mit Ungarn, Chile, Simbabwe, Nordkorea, Rumänien oder Ägypten gab es keine vergleichbar großen Anwerbungen.",
+    "memoryTip": "DDR-Vertragsarbeiter: Vietnam (größte Gruppe), Mosambik, Polen.",
+    "legalBasis": []
+  },
+  "299": {
+    "summary": "Die in den 50er- und 60er-Jahren angeworbenen ausländischen Arbeitskräfte nannte man Gastarbeiter.",
+    "whyCorrect": "Der Name zeigt, dass man damals davon ausging, sie würden nur für eine Zeit bleiben.",
+    "background": "Im Wirtschaftswunder fehlten der Bundesrepublik Arbeitskräfte, besonders in Industrie, Bergbau und Bau. Deshalb schloss sie ab 1955 Anwerbeabkommen mit Italien, Spanien, Griechenland, der Türkei, Marokko, Portugal, Tunesien und Jugoslawien. 1964 wurde in Köln der millionste Gastarbeiter, der Portugiese Armando Rodrigues de Sá, mit einem Moped begrüßt. 1973 stoppte die Bundesrepublik die Anwerbung. Viele Gastarbeiter blieben, holten ihre Familien nach und prägen Deutschland bis heute mit.",
+    "otherOptions": "Schwarzarbeiter arbeiten illegal, ohne Steuern und Sozialabgaben zu zahlen. Zeitarbeiter werden von einer Firma an andere Firmen verliehen. Schichtarbeiter arbeiten in wechselnden Schichten, zum Beispiel nachts – das sagt nichts über ihre Herkunft.",
+    "memoryTip": "Anwerbung 1955–1973 = Gastarbeiter.",
+    "legalBasis": []
+  },
+  "300": {
+    "summary": "Die ersten Gastarbeiterinnen und Gastarbeiter kamen aus Italien.",
+    "whyCorrect": "Mit Italien schloss die Bundesrepublik 1955 das erste Anwerbeabkommen.",
+    "background": "Am 20. Dezember 1955 unterzeichneten die Bundesrepublik und Italien das erste Abkommen zur Anwerbung von Arbeitskräften. Viele Italiener arbeiteten zunächst in der Landwirtschaft und später in der Industrie, etwa im Automobilbau. Es folgten Abkommen mit Spanien und Griechenland (1960), der Türkei (1961), Marokko (1963), Portugal (1964), Tunesien (1965) und Jugoslawien (1968). Die italienische Küche – Pizza, Pasta, Espresso – wurde durch die Zuwanderung in ganz Deutschland beliebt.",
+    "otherOptions": "Spanien, Portugal und die Türkei folgten erst einige Jahre später: Spanien 1960, die Türkei 1961 und Portugal 1964.",
+    "memoryTip": "1955 Italien zuerst – dann Spanien, Griechenland, Türkei …",
+    "legalBasis": []
   }
 }

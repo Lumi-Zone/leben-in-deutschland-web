@@ -3008,5 +3008,290 @@
         "url": "https://www.gesetze-im-internet.de/famfg/__114.html"
       }
     ]
+  },
+  "276": {
+    "summary": "If you are treated badly at a public authority, you can complain to the head of the authority.",
+    "whyCorrect": "This kind of complaint is called a supervisory complaint (Dienstaufsichtsbeschwerde); it is free of charge and has no deadline.",
+    "background": "Civil servants and public employees must also treat citizens respectfully and correctly. Anyone treated rudely, condescendingly or unfairly can complain in writing to the management of the authority. Against a decision by the authority, such as a rejected application, you can also file an objection or go to court. Everyone also has the right to address requests and complaints to parliament (right of petition, Article 17). Advice centres and anti-discrimination offices can also help.",
+    "otherOptions": "You do not have to put up with bad treatment and can do something about it. Threatening a person, however, is not allowed and can even be a criminal offence.",
+    "memoryTip": "Treated badly? Stay calm and complain to the management.",
+    "legalBasis": [
+      {
+        "label": "Art. 17 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_17.html"
+      }
+    ]
+  },
+  "277": {
+    "summary": "It is discrimination if the person does not get the job only because she is a mother.",
+    "whyCorrect": "The General Equal Treatment Act prohibits discrimination at work on the basis of such characteristics.",
+    "background": "Employers may not disadvantage applicants because of their sex – and this includes a woman being a mother or possibly becoming pregnant. Questions about pregnancy or family planning are generally not allowed in job interviews; a woman may even answer them untruthfully without fear of consequences. Anyone who is discriminated against can assert claims within two months, for example for compensation. The Federal Anti-Discrimination Agency offers advice.",
+    "otherOptions": "Missing English skills, salary expectations that are too high or lack of work experience are objective reasons related to the job. They are not discrimination.",
+    "memoryTip": "Objective reason (qualifications) = allowed. Being a mother = discrimination.",
+    "legalBasis": [
+      {
+        "label": "Art. 3 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_3.html"
+      },
+      {
+        "label": "Sec. 1 General Equal Treatment Act (AGG)",
+        "url": "https://www.gesetze-im-internet.de/agg/__1.html"
+      }
+    ]
+  },
+  "278": {
+    "summary": "It is discrimination if the person does not get the job only because he uses a wheelchair.",
+    "whyCorrect": "The General Equal Treatment Act prohibits discrimination at work on the basis of such characteristics.",
+    "background": "A wheelchair makes no difference to working as an accountant. The Basic Law states explicitly: “No person shall be disfavoured because of disability” (Article 3). People with severe disabilities have additional protection at work. Companies with at least 20 jobs must fill five percent of them with severely disabled people or pay a compensatory levy. Financial support is available for making a workplace accessible, for example from the integration office.",
+    "otherOptions": "Lack of experience, salary expectations that are too high or missing English skills can be objective reasons not to hire someone. This applies equally to people with and without disabilities.",
+    "memoryTip": "A disability is no reason to reject someone.",
+    "legalBasis": [
+      {
+        "label": "Art. 3 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_3.html"
+      },
+      {
+        "label": "Sec. 1 General Equal Treatment Act (AGG)",
+        "url": "https://www.gesetze-im-internet.de/agg/__1.html"
+      }
+    ]
+  },
+  "279": {
+    "summary": "The house rules set out rules that all residents must follow.",
+    "whyCorrect": "They are meant to regulate living together in a rented building and are often part of the tenancy agreement.",
+    "background": "The house rules state, for example, when quiet hours apply (for instance from 10 pm to 6 am), who cleans the stairwell and when, how rubbish is separated, whether you may barbecue on the balcony and where bicycles or prams may be left. Anyone who repeatedly ignores the house rules can receive a formal warning from the landlord. The house rules are often posted in the stairwell. When you move into a new flat, it is worth reading them straight away.",
+    "otherOptions": "Rules for buses and trains are set by the transport companies. A list of all tenants is not in the house rules – at most on the doorbells and letterboxes. You can find the address of the public order office from the town.",
+    "memoryTip": "House rules = the ground rules for living together in the building.",
+    "legalBasis": []
+  },
+  "280": {
+    "summary": "To challenge an incorrect tax assessment, you must file an objection (Einspruch).",
+    "whyCorrect": "The objection must reach the tax office within one month of the assessment being issued.",
+    "background": "The tax assessment is the tax office’s decision on your tax, for example after your income tax return. If you think it is wrong, you file an objection in writing or electronically via ELSTER and give your reasons. This is free of charge. The tax office then reviews the case again. If it sticks to its decision, you can take the matter to the fiscal court. Anyone who misses the deadline generally has to accept the assessment – it becomes final.",
+    "otherOptions": "Doing nothing, throwing the assessment away or waiting for a new one does not help: after one month, the incorrect assessment becomes binding and you have to pay.",
+    "memoryTip": "Wrong tax assessment → objection within one month.",
+    "legalBasis": [
+      {
+        "label": "Sec. 355 Fiscal Code (AO)",
+        "url": "https://www.gesetze-im-internet.de/ao_1977/__355.html"
+      }
+    ]
+  },
+  "281": {
+    "summary": "If the friends are refused entry to the swimming pool because of their skin colour, their right to equal treatment is violated.",
+    "whyCorrect": "Nobody may be disadvantaged because of their origin or skin colour (Article 3 of the Basic Law, General Equal Treatment Act).",
+    "background": "A public swimming pool is open to everyone. Turning people away because of their skin colour is racist discrimination. This is forbidden under the Basic Law and the General Equal Treatment Act – also for private providers such as nightclubs, gyms or restaurants that offer their services to the general public. Those affected can claim damages and compensation. Help is available from the Federal Anti-Discrimination Agency and local advice centres.",
+    "otherOptions": "Freedom of expression, freedom of assembly and freedom of movement are fundamental rights, but they have nothing to do with this situation. This is about people being treated unequally.",
+    "memoryTip": "Turned away because of skin colour = violation of equal treatment.",
+    "legalBasis": [
+      {
+        "label": "Art. 3 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_3.html"
+      },
+      {
+        "label": "Sec. 19 General Equal Treatment Act (AGG)",
+        "url": "https://www.gesetze-im-internet.de/agg/__19.html"
+      }
+    ]
+  },
+  "282": {
+    "summary": "German citizens must take on the voluntary role of election worker if asked to do so.",
+    "whyCorrect": "Serving on the electoral board is a civic duty; you may only refuse for important reasons.",
+    "background": "For elections to work, hundreds of thousands of election workers are needed each time. Most volunteer, but municipalities may also require eligible voters to serve (Section 11 of the Federal Elections Act). You can refuse, for example, due to illness, caring for children or relatives, or if you are over 65. Anyone who fails to appear without good reason can be fined. A similar duty exists for serving as a lay judge in court.",
+    "otherOptions": "You can become a club coach, library supervisor or teacher voluntarily; the state does not oblige anyone to do so. Teachers also practise a profession, not a voluntary role.",
+    "memoryTip": "Compulsory volunteer role: election worker (and lay judge).",
+    "legalBasis": [
+      {
+        "label": "Sec. 11 Federal Elections Act",
+        "url": "https://www.gesetze-im-internet.de/bwahlg/__11.html"
+      }
+    ]
+  },
+  "283": {
+    "summary": "If you receive an incorrect bill from an authority, you file an objection (Widerspruch) with the authority.",
+    "whyCorrect": "The objection must usually be filed within one month of receiving the notice.",
+    "background": "Bills or fee notices from authorities, for example for waste collection fees or a parking offence, are administrative acts. At the end of the notice there is information on legal remedies explaining how and by when you can challenge it. You usually file a written objection and explain why the bill is wrong. The authority must then review the case again. If it does not uphold the objection, you can go to the administrative court. For tax assessments, the remedy is called “Einspruch” (see question 280).",
+    "otherOptions": "Anyone who simply ignores the bill or sends it back risks reminder fees and enforcement, because the notice becomes binding once the deadline has passed. The tax office is not responsible for other authorities’ bills.",
+    "memoryTip": "Wrong notice → objection within one month.",
+    "legalBasis": [
+      {
+        "label": "Sec. 70 Code of Administrative Court Procedure (VwGO)",
+        "url": "https://www.gesetze-im-internet.de/vwgo/__70.html"
+      }
+    ]
+  },
+  "284": {
+    "summary": "Because job requirements change quickly, adults must keep learning even after their training.",
+    "whyCorrect": "This is called “lifelong learning”: further training helps you keep up at work.",
+    "background": "Digitalisation, new technology and artificial intelligence are changing many jobs. That is why Germany offers many opportunities for further training: courses at the adult education centre, training from the employer, advanced vocational training to become a master craftsman or technician with “Aufstiegs-BAföG” funding, or part-time study alongside work. In most federal states, employees are entitled to educational leave, often five days a year. The employment agency advises on and funds further training under certain conditions.",
+    "otherOptions": "It does matter what you learn, and school alone is not enough for a whole working life. Stopping work earlier is not a solution – on the contrary, the retirement age is rising.",
+    "memoryTip": "Learning does not stop after school.",
+    "legalBasis": []
+  },
+  "285": {
+    "summary": "Ms Frost does not have to pay VAT (Umsatzsteuer) from her salary.",
+    "whyCorrect": "VAT is included in the prices of goods and services and is passed on to the tax office by businesses.",
+    "background": "From a gross salary, the employer deducts income tax (possibly with the solidarity surcharge and church tax) and contributions to pension, health, long-term care and unemployment insurance. What remains is the net salary. VAT, by contrast, is not paid from your salary but indirectly when shopping: it is usually 19 percent, and 7 percent for food and some other goods. Businesses collect it and pass it on to the tax office.",
+    "otherOptions": "For permanent employees, income tax and contributions to unemployment, pension and health insurance are deducted directly from their salary.",
+    "memoryTip": "From your salary: income tax + social insurance. When shopping: VAT.",
+    "legalBasis": []
+  },
+  "286": {
+    "summary": "The works council (Betriebsrat) helps employees with problems with their employer.",
+    "whyCorrect": "The works council is the elected representative body of the employees in a company.",
+    "background": "In companies with at least five permanent employees, the employees can elect a works council, usually every four years. The works council represents their interests towards the employer and has co-determination rights, for example on working hours, holiday planning and overtime. Before every dismissal, the employer must consult the works council. Members of the works council have special protection against dismissal so that they can act independently.",
+    "otherOptions": "A company auditor (Betriebsprüfer) is an employee of the tax office or pension insurance who checks a company’s books. A company group (Betriebsgruppe) is, for example, a group of trade union members. Company management is the leadership of the company, i.e. the employer side.",
+    "memoryTip": "Works council = the employees’ voice in the company.",
+    "legalBasis": [
+      {
+        "label": "Sec. 1 Works Constitution Act",
+        "url": "https://www.gesetze-im-internet.de/betrvg/__1.html"
+      }
+    ]
+  },
+  "287": {
+    "summary": "If you want to end your employment, you must observe the notice period.",
+    "whyCorrect": "Notice must be given in writing and only takes effect once the notice period has expired.",
+    "background": "Under the Civil Code, the statutory notice period for employees is four weeks to the 15th or to the end of a calendar month; during the probationary period it is two weeks. The employment contract or collective agreement may set different periods. Important: the notice must be handed over on paper with a handwritten signature – an email or WhatsApp message is not enough. Until the end of the notice period you must keep working or take any remaining holiday.",
+    "otherOptions": "Salary payments, working hours and compulsory insurance apply during the employment relationship, but they are not what you need to observe when giving notice.",
+    "memoryTip": "Resigning: in writing + observe the notice period.",
+    "legalBasis": [
+      {
+        "label": "Sec. 622 Civil Code (BGB)",
+        "url": "https://www.gesetze-im-internet.de/bgb/__622.html"
+      },
+      {
+        "label": "Sec. 623 Civil Code (BGB)",
+        "url": "https://www.gesetze-im-internet.de/bgb/__623.html"
+      }
+    ]
+  },
+  "288": {
+    "summary": "Germany’s special responsibility towards Israel stems from the National Socialist crimes against Jews.",
+    "whyCorrect": "Because of the Holocaust, Germany bears a special historical responsibility towards Jews and the State of Israel.",
+    "background": "The National Socialists murdered around six million European Jews. After the war, the Federal Republic concluded the Luxembourg Agreement with Israel on compensation payments in 1952; in 1965 the two states established diplomatic relations. In 2008, Chancellor Angela Merkel declared before the Israeli parliament that Israel’s security is part of Germany’s reason of state. This responsibility also includes fighting antisemitism in Germany.",
+    "otherOptions": "EU membership, the Basic Law or Christian tradition are not the reason. The Basic Law does not mention Israel; the responsibility comes from history.",
+    "memoryTip": "Responsibility for Israel ← the Holocaust.",
+    "legalBasis": []
+  },
+  "289": {
+    "summary": "It is discrimination if the person does not get the job only because he has dark skin.",
+    "whyCorrect": "The General Equal Treatment Act prohibits discrimination at work on the basis of such characteristics.",
+    "background": "Rejecting an applicant because of his skin colour is racist discrimination. The General Equal Treatment Act prohibits discrimination on the grounds of ethnic origin, sex, religion, disability, age or sexual identity. Even the job advertisement must be worded neutrally. Anyone who is discriminated against can claim compensation within two months; the Federal Anti-Discrimination Agency offers support. It is important to keep evidence such as emails or witnesses.",
+    "otherOptions": "Insufficient German for working with guests, salary expectations that are too high or lack of experience are objective reasons. They relate to the job and are not discrimination.",
+    "memoryTip": "Skin colour is never a permitted reason.",
+    "legalBasis": [
+      {
+        "label": "Art. 3 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_3.html"
+      },
+      {
+        "label": "Sec. 1 General Equal Treatment Act (AGG)",
+        "url": "https://www.gesetze-im-internet.de/agg/__1.html"
+      }
+    ]
+  },
+  "290": {
+    "summary": "You can return a broken television under a complaint (reklamieren).",
+    "whyCorrect": "When you buy something, you have a legal right to goods free of defects (statutory warranty).",
+    "background": "If a new product is broken, the seller must repair it or replace it with a new one. This is called subsequent performance. The statutory warranty lasts two years from purchase. In the first year it is presumed that the defect already existed at the time of purchase. If the repair does not work, you can reduce the purchase price or withdraw from the contract and get your money back. It is best to go to the shop with the receipt. For online purchases you also have a 14-day right of withdrawal.",
+    "otherOptions": "Reporting it to the police is not necessary – it is not a crime. Simply swapping the device in the shop without asking is not allowed. A guarantee is a voluntary promise by the manufacturer; extending it does not repair the TV.",
+    "memoryTip": "Bought broken → complain (two-year statutory warranty).",
+    "legalBasis": [
+      {
+        "label": "Sec. 437 Civil Code (BGB)",
+        "url": "https://www.gesetze-im-internet.de/bgb/__437.html"
+      }
+    ]
+  },
+  "291": {
+    "summary": "In your tax return you must state whether you belong to a church because there is a church tax linked to income and wage tax.",
+    "whyCorrect": "Members of certain religious communities pay church tax, which the tax office collects together with wage or income tax.",
+    "background": "Church tax amounts to 8 percent of wage or income tax in Bavaria and Baden-Württemberg and 9 percent in the other states. It is levied by the Catholic and Protestant churches and some other religious communities; the state collects it on their behalf and receives a fee for doing so. The churches use it to fund, for example, parishes, nurseries and social institutions. Anyone who no longer wants to pay can leave the church at the registry office or local court.",
+    "otherOptions": "The information is not for statistics but for calculating church tax. Anyone who does not belong to a church does not pay more tax but less – namely no church tax. And the tax office is responsible for tax returns, not the church.",
+    "memoryTip": "Church member = church tax (8–9% of wage tax).",
+    "legalBasis": [
+      {
+        "label": "Art. 140 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_140.html"
+      }
+    ]
+  },
+  "292": {
+    "summary": "Religious tolerance means: everyone can believe what they want.",
+    "whyCorrect": "Freedom of faith under Article 4 of the Basic Law protects every religion and also the right to have no religion.",
+    "background": "Christians, Muslims, Jews, Buddhists, Hindus, members of other religions and many people without a religion live together in Germany. Religious tolerance means respecting other people’s faith, even if you do not share it yourself. The state remains neutral and does not favour any religion. The limit is reached where laws are broken or violence is done to others in the name of a religion.",
+    "otherOptions": "Mosques may be built – that is part of freedom of religion, and there are many mosques in Germany. Not everyone believes in God; that is allowed too. And the state does not tell anyone what to believe.",
+    "memoryTip": "Tolerance = everyone believes what they want – and respects others.",
+    "legalBasis": [
+      {
+        "label": "Art. 4 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_4.html"
+      }
+    ]
+  },
+  "293": {
+    "summary": "Painting eggs is an Easter custom in Germany.",
+    "whyCorrect": "Colourful Easter eggs are a symbol of new life and are painted, given as gifts and hidden for children at Easter.",
+    "background": "Easter is the most important Christian festival: Christians celebrate the resurrection of Jesus. Good Friday and Easter Monday are public holidays. Before Easter, many families paint eggs and decorate branches with them. On Easter Sunday, parents often hide eggs and sweets in the garden or flat, and the children look for them – according to the story, the Easter Bunny brought them. In some regions there are also Easter bonfires.",
+    "otherOptions": "Pumpkins are placed outside the door at Halloween, a fir tree is decorated at Christmas, and fireworks are set off on New Year’s Eve.",
+    "memoryTip": "Easter = eggs and the Easter Bunny.",
+    "legalBasis": []
+  },
+  "294": {
+    "summary": "Pentecost (Pfingsten) is a Christian holiday.",
+    "whyCorrect": "Pentecost is celebrated 50 days after Easter; Whit Monday is a public holiday.",
+    "background": "At Pentecost, Christians remember that, according to the Bible, the Holy Spirit descended on the apostles. The festival is therefore also seen as the “birthday of the Church”. The name comes from the Greek word for “the fiftieth (day)”. Whit Sunday and Whit Monday usually fall in May or June. In some federal states there are also school holidays around this time, the Whitsun holidays.",
+    "otherOptions": "Pentecost is not a state day of remembrance like 27 January, not an international day of mourning and not a purely Bavarian custom – it is celebrated throughout Germany, even though Bavaria has particularly long Whitsun holidays.",
+    "memoryTip": "Easter + 50 days = Pentecost.",
+    "legalBasis": []
+  },
+  "295": {
+    "summary": "European and German culture has been shaped above all by Christianity.",
+    "whyCorrect": "For more than a thousand years, Christianity has influenced holidays, art, architecture, values and everyday life in Europe.",
+    "background": "Many traces of Christianity are still visible today: churches and cathedrals in almost every town, holidays such as Christmas, Easter and Pentecost, Sunday as a day off and the calendar counted from the birth of Christ. Music, painting and literature were also strongly influenced by Christian themes. Alongside this, Judaism, ancient philosophy and the Enlightenment shaped European culture. Today just under half of the people in Germany belong to one of the two major Christian churches; around five million Muslims live here.",
+    "otherOptions": "Hinduism and Buddhism come from Asia and have comparatively few followers in Germany. Islam is now the second-largest religion in Germany, but has not shaped European culture as fundamentally as Christianity.",
+    "memoryTip": "Churches, Christmas, Sunday = Christian influence.",
+    "legalBasis": []
+  },
+  "296": {
+    "summary": "The last four weeks before Christmas are called Advent.",
+    "whyCorrect": "Advent begins on the fourth Sunday before Christmas; “Advent” means “arrival”.",
+    "background": "During Advent, Christians prepare for Christmas, the feast of the birth of Jesus. Typical is the Advent wreath with four candles: on each Sunday of Advent, one more candle is lit. Children open a little door in the Advent calendar every day until 24 December. Many towns have Christmas markets with mulled wine, gingerbread and roasted almonds, and families often bake biscuits.",
+    "otherOptions": "The Day of Repentance and Prayer is a Protestant holiday on a Wednesday in November and a day off only in Saxony. Harvest Festival is celebrated in early October, All Saints’ Day on 1 November.",
+    "memoryTip": "Advent = four Sundays, four candles until Christmas.",
+    "legalBasis": []
+  },
+  "297": {
+    "summary": "Most migrants in Germany came from Turkey.",
+    "whyCorrect": "People with Turkish roots form the largest group with an immigration history in Germany.",
+    "background": "After the recruitment agreement of 1961, many people came to Germany from Turkey as “guest workers”. Later their families followed, and many stayed permanently. Today almost three million people with Turkish roots live in Germany, many of them in the third or fourth generation and with a German passport. Other large groups come from Poland, Russia, Kazakhstan, Romania, Italy, Syria and – since 2022 – Ukraine.",
+    "otherOptions": "Many people also immigrated from Italy and Poland, but fewer than from Turkey. There was a recruitment agreement with Morocco from 1963, but the number of immigrants is much smaller.",
+    "memoryTip": "Largest group: people with Turkish roots.",
+    "legalBasis": []
+  },
+  "298": {
+    "summary": "Migrants in the GDR came mainly from Vietnam, Poland and Mozambique.",
+    "whyCorrect": "The GDR brought so-called contract workers into the country from other socialist states.",
+    "background": "Like the Federal Republic, the GDR needed workers. It concluded agreements with socialist “brother states”, above all with Vietnam, Mozambique, Poland, Cuba and Angola. The largest group came from Vietnam: in 1989 around 60,000 Vietnamese contract workers lived in the GDR. They usually lived in separate hostels, had little contact with the population and were generally not allowed to bring their families. After reunification, many Vietnamese stayed in Germany.",
+    "otherOptions": "France, Mexico and Somalia were not among the contract workers’ countries of origin. There was no comparably large recruitment from Hungary, Chile, Zimbabwe, North Korea, Romania or Egypt.",
+    "memoryTip": "GDR contract workers: Vietnam (largest group), Mozambique, Poland.",
+    "legalBasis": []
+  },
+  "299": {
+    "summary": "The foreign workers recruited in the 1950s and 1960s were called “guest workers” (Gastarbeiter).",
+    "whyCorrect": "The name shows that people assumed at the time they would only stay for a while.",
+    "background": "During the economic miracle, the Federal Republic lacked workers, especially in industry, mining and construction. That is why from 1955 it concluded recruitment agreements with Italy, Spain, Greece, Turkey, Morocco, Portugal, Tunisia and Yugoslavia. In 1964 the one-millionth guest worker, the Portuguese Armando Rodrigues de Sá, was welcomed in Cologne with a moped. In 1973 the Federal Republic stopped recruitment. Many guest workers stayed, brought their families and still help shape Germany today.",
+    "otherOptions": "Undeclared workers (Schwarzarbeiter) work illegally without paying taxes and social contributions. Temporary agency workers are hired out by one company to others. Shift workers work in changing shifts, for example at night – this says nothing about their origin.",
+    "memoryTip": "Recruitment 1955–1973 = guest workers.",
+    "legalBasis": []
+  },
+  "300": {
+    "summary": "The first guest workers came from Italy.",
+    "whyCorrect": "The Federal Republic concluded its first recruitment agreement with Italy in 1955.",
+    "background": "On 20 December 1955, the Federal Republic and Italy signed the first agreement on recruiting workers. Many Italians initially worked in agriculture and later in industry, for example in car manufacturing. Agreements followed with Spain and Greece (1960), Turkey (1961), Morocco (1963), Portugal (1964), Tunisia (1965) and Yugoslavia (1968). Thanks to immigration, Italian food – pizza, pasta, espresso – became popular throughout Germany.",
+    "otherOptions": "Spain, Portugal and Turkey only followed a few years later: Spain in 1960, Turkey in 1961 and Portugal in 1964.",
+    "memoryTip": "1955 Italy first – then Spain, Greece, Turkey …",
+    "legalBasis": []
   }
 }
