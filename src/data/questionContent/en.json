@@ -1224,5 +1224,294 @@
     "otherOptions": "Statutory pension insurance, unemployment insurance and long-term care insurance are all part of statutory social insurance.",
     "memoryTip": "“Statutory” = compulsory and organised by the state; life insurance = private and voluntary.",
     "legalBasis": []
+  },
+  "101": {
+    "summary": "Trade unions are interest groups of employees.",
+    "whyCorrect": "They represent the interests of workers, for example regarding wages and working hours.",
+    "background": "Article 9(3) of the Basic Law guarantees the right to form associations to safeguard and improve working and economic conditions – freedom of association. Trade unions negotiate collective agreements with employers’ associations on wages, holidays and working hours. If negotiations fail, they can call a strike. Well-known unions are IG Metall and ver.di; many are united in the German Trade Union Confederation (DGB).",
+    "otherOptions": "Employers have their own interest groups, the employers’ associations – they are the unions’ negotiating partners. There are youth organisations for young people and social and senior citizens’ associations for pensioners, but these are not trade unions.",
+    "memoryTip": "Trade union = for employees; employers’ association = for employers.",
+    "legalBasis": [
+      {
+        "label": "Art. 9 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_9.html"
+      }
+    ]
+  },
+  "102": {
+    "summary": "Outstanding achievements can be honoured with the Federal Cross of Merit (Bundesverdienstkreuz).",
+    "whyCorrect": "The Federal Cross of Merit is the Order of Merit of the Federal Republic of Germany and is awarded by the Federal President.",
+    "background": "The Order of Merit of the Federal Republic of Germany, usually called the Federal Cross of Merit, was established in 1951 by Federal President Theodor Heuss. It is the federation’s only general award for services to the common good – in politics, business, culture, science, sport or in social and voluntary work. Anyone can nominate a person; it is awarded by the Federal President.",
+    "otherOptions": "The federal eagle is the heraldic animal, not an award. The “Patriotic Order of Merit” and the honorary title “Hero of the German Democratic Republic” were awards of the GDR, which no longer exist since 1990.",
+    "memoryTip": "Merit (Verdienst) → Federal Cross of Merit (Bundesverdienstkreuz).",
+    "legalBasis": []
+  },
+  "103": {
+    "summary": "A “traffic light coalition” is a government of the SPD, FDP and Alliance 90/The Greens.",
+    "whyCorrect": "The name comes from the party colours red (SPD), yellow (FDP) and green (Greens) – like a traffic light.",
+    "background": "In Germany, coalitions are often named after the parties’ colours: black stands for the CDU/CSU, red for the SPD, yellow for the FDP and green for the Greens. From 2021 to 2024, a traffic light coalition under Federal Chancellor Olaf Scholz governed at federal level; it collapsed in November 2024. Other well-known names are “grand coalition” (CDU/CSU and SPD) and “Jamaica” (black, yellow, green – the colours of the Jamaican flag).",
+    "otherOptions": "The CDU and CSU form a joint parliamentary group in the Bundestag, the “Union” – that is not a coalition in the usual sense. The CDU/CSU and SPD together are called a “grand coalition” or “black-red”. A coalition of the CSU, the Left and the Greens has never existed.",
+    "memoryTip": "Traffic light = red, yellow, green = SPD, FDP, Greens.",
+    "legalBasis": []
+  },
+  "104": {
+    "summary": "Pregnancy must not be a reason for dismissal if the boss knows about it.",
+    "whyCorrect": "The Maternity Protection Act prohibits dismissal during pregnancy and up to four months after giving birth.",
+    "background": "Pregnant women and young mothers are specially protected in Germany. Under the Maternity Protection Act, an employer may generally not dismiss a woman during pregnancy and up to four months after childbirth if the employer knows about the pregnancy or is informed of it shortly after the dismissal. There is also special protection against dismissal during parental leave. In addition, the General Equal Treatment Act prohibits discrimination on the grounds of sex.",
+    "otherOptions": "Long illness, frequent lateness or doing private things during working hours can justify dismissal under certain conditions – in the case of misconduct, usually only after a formal warning. Pregnancy, however, is not misconduct and must not be a reason for dismissal.",
+    "memoryTip": "Pregnant = special protection against dismissal (maternity protection).",
+    "legalBasis": [
+      {
+        "label": "Sec. 17 Maternity Protection Act",
+        "url": "https://www.gesetze-im-internet.de/muschg_2018/__17.html"
+      }
+    ]
+  },
+  "105": {
+    "summary": "Election workers count the votes after the polls close.",
+    "whyCorrect": "At the polling station they form the electoral board, which runs the election and counts the votes in public.",
+    "background": "On election day, volunteer election workers work in every polling station. They check whether someone is on the electoral roll, hand out ballot papers and make sure the vote is secret. Polling stations close at 6 pm; then the election workers count the votes. The count is public – anyone may watch. They report the results to the election office. Workers usually receive a small allowance for their work.",
+    "otherOptions": "Everyone votes alone in the polling booth; anyone who needs help can bring a helper of their choice – that is not a general task of election workers. The municipality sends out polling cards by post beforehand. Election workers may not pass interim results to the media.",
+    "memoryTip": "Election workers = count the votes.",
+    "legalBasis": []
+  },
+  "106": {
+    "summary": "Volunteer election workers count the votes after the polls close.",
+    "whyCorrect": "This is the same question as question 105, just with different answers.",
+    "background": "Elections in Germany are largely organised by citizens who help voluntarily. In a federal election, several hundred thousand people take part. Municipalities often recruit election workers among their staff or call for volunteers publicly; in principle, people can also be required to serve. This is democracy in action: citizens themselves check that the votes are counted correctly.",
+    "otherOptions": "Children cannot vote, and election workers do not generally help older people in the polling booth. The municipality sends out the cards and letters stating the polling station (the polling card). Passing interim results to journalists is not one of their tasks.",
+    "memoryTip": "Election workers = count the votes (as in question 105).",
+    "legalBasis": []
+  },
+  "107": {
+    "summary": "The Bundestag is elected for four years.",
+    "whyCorrect": "Article 39 of the Basic Law sets the legislative term at four years.",
+    "background": "The Bundestag’s legislative term lasts four years. It begins with the first session of the new Bundestag and ends with the first session of the next one. Only in exceptional cases is there an early election, for example when the Federal Chancellor asks for a vote of confidence, loses it and the Federal President dissolves the Bundestag – as happened most recently in December 2024 before the election in February 2025.",
+    "otherOptions": "Two, six or eight years are wrong. Most state parliaments and the European Parliament are elected for five years, as is the Federal President – only the Bundestag is elected for four.",
+    "memoryTip": "Bundestag: 4 years. State parliament, European Parliament, Federal President: 5 years.",
+    "legalBasis": [
+      {
+        "label": "Art. 39 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_39.html"
+      }
+    ]
+  },
+  "108": {
+    "summary": "Anyone who is a German citizen and at least 18 years old may vote in the federal election.",
+    "whyCorrect": "German citizens aged 18 and over are eligible to vote (Article 38 of the Basic Law, Federal Electoral Act).",
+    "background": "The right to vote in Bundestag elections depends on German citizenship. That is why naturalisation is so important for political participation: only with a German passport can you vote for the Bundestag and the state parliaments. You must also be 18 and usually have lived in Germany for at least three months. Germans living abroad can also vote under certain conditions.",
+    "otherOptions": "Living in Germany is not enough: foreign nationals cannot vote in the Bundestag election; EU citizens can, however, vote in local and European elections. “Three years in Germany” is not a requirement, and the voting age is 18, not 21.",
+    "memoryTip": "Federal election: German passport + age 18.",
+    "legalBasis": [
+      {
+        "label": "Art. 38 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_38.html"
+      }
+    ]
+  },
+  "109": {
+    "summary": "Federal elections normally take place every four years.",
+    "whyCorrect": "The Bundestag’s legislative term lasts four years (Article 39).",
+    "background": "The Bundestag is regularly re-elected every four years. The election always takes place on a Sunday or public holiday so that as many people as possible have time. Anyone unable to vote on election day can vote in advance by post. Only if the Bundestag is dissolved early does the election take place sooner – this has happened four times so far in the history of the Federal Republic (1972, 1983, 2005 and 2025).",
+    "otherOptions": "Every three, five or six years is wrong. Five years applies to most state parliaments, the European Parliament and the Federal President’s term.",
+    "memoryTip": "Bundestag = every 4 years.",
+    "legalBasis": [
+      {
+        "label": "Art. 39 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_39.html"
+      }
+    ]
+  },
+  "110": {
+    "summary": "The Bundestag is elected for four years.",
+    "whyCorrect": "This is the same question as question 107, just with different answer options.",
+    "background": "Four years is a compromise: long enough for a government to implement its plans, and short enough for voters to decide regularly whether they are satisfied with its policies. Legislative terms in many other countries are of similar length, for example five years in Austria or two years for the US House of Representatives.",
+    "otherOptions": "Two and three years are too short; five years applies to most state parliaments and the European Parliament, not the Bundestag.",
+    "memoryTip": "Questions 107 and 110: the answer is always 4 years.",
+    "legalBasis": [
+      {
+        "label": "Art. 39 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_39.html"
+      }
+    ]
+  },
+  "111": {
+    "summary": "Publicly calling for the destruction of Israel is forbidden in Germany.",
+    "whyCorrect": "It can be punished as incitement to hatred or as public incitement to commit crimes.",
+    "background": "Because of the Holocaust, Germany bears a special historical responsibility towards Jews and the State of Israel. German governments describe Israel’s security as part of Germany’s “reason of state”. Anyone who publicly calls for the destruction of Israel is calling for violence and genocide. This is not covered by freedom of expression and can be punished under the Criminal Code. Publicly burning foreign flags has also been a criminal offence since 2020.",
+    "otherOptions": "You may publicly criticise and discuss Israel’s policies – this is protected by freedom of expression, as with any other state. Hanging an Israeli flag on your own property is of course allowed.",
+    "memoryTip": "Criticising policy – allowed. Calling for destruction – forbidden.",
+    "legalBasis": [
+      {
+        "label": "§ 130 StGB (Criminal Code)",
+        "url": "https://www.gesetze-im-internet.de/stgb/__130.html"
+      },
+      {
+        "label": "§ 111 StGB (Criminal Code)",
+        "url": "https://www.gesetze-im-internet.de/stgb/__111.html"
+      }
+    ]
+  },
+  "112": {
+    "summary": "Elections in Germany are secret.",
+    "whyCorrect": "Nobody may find out whom a person voted for (Article 38 of the Basic Law).",
+    "background": "Secret is one of the five electoral principles: general, direct, free, equal and secret. That is why you mark your ballot alone in a polling booth and fold it before putting it in the ballot box. Postal voters must also declare that they filled in the ballot personally and unobserved. The secret ballot protects people from being put under pressure because of their vote.",
+    "otherOptions": "“Special”, “job-related” and “gender-dependent” are not electoral principles. On the contrary: elections are general and equal – job and gender play no role.",
+    "memoryTip": "Polling booth = secret ballot.",
+    "legalBasis": [
+      {
+        "label": "Art. 38 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_38.html"
+      }
+    ]
+  },
+  "113": {
+    "summary": "An election in Germany is won by the party that receives the most votes.",
+    "whyCorrect": "In the federal election, the second votes are decisive for this.",
+    "background": "The party with the most votes is the winner of the election and receives the most seats in parliament. But who then governs is only decided in coalition negotiations: the government needs a majority of the seats. Usually the strongest party leads the government – but a coalition without it can also be formed, such as the SPD–FDP coalition under Willy Brandt in 1969.",
+    "otherOptions": "All votes count equally, whether they come from men, women, workers or other groups. You cannot vote directly for a chancellor candidate: with the first vote you choose a person in your constituency, and the Chancellor is elected by the Bundestag.",
+    "memoryTip": "Most votes = winner. All votes count equally.",
+    "legalBasis": [
+      {
+        "label": "Art. 38 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_38.html"
+      }
+    ]
+  },
+  "114": {
+    "summary": "Taking part in democratic elections in Germany is a right.",
+    "whyCorrect": "There is no compulsory voting; everyone can decide for themselves whether to vote.",
+    "background": "The right to vote is one of the most important political rights: through their vote, citizens decide who represents them in parliament. In Germany, participation is voluntary – a free election also includes the freedom not to vote. Nevertheless, politicians and society encourage people to vote, because high turnout strengthens democracy. In the 2025 federal election it was over 82 percent.",
+    "otherOptions": "There is no duty or compulsion to vote in Germany – unlike, for example, in Belgium or Australia. Voting is not a “burden” either; it is an opportunity to have a say.",
+    "memoryTip": "Voting is a right, not a duty.",
+    "legalBasis": [
+      {
+        "label": "Art. 38 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_38.html"
+      }
+    ]
+  },
+  "115": {
+    "summary": "“Active voting right” means: you can vote.",
+    "whyCorrect": "Anyone with the active right to vote may cast their vote in an election.",
+    "background": "There are two sides to the right to vote. The active right to vote is the right to vote – to cast your vote. The passive right to vote is the right to be elected – to stand as a candidate. For the Bundestag, German citizens aged 18 and over have both rights.",
+    "otherOptions": "“You can be elected” describes the passive right to vote. You do not have to vote in Germany – there is no compulsory voting. And nobody has to go to the vote count; it is public, so you are allowed to watch.",
+    "memoryTip": "Active = voting yourself. Passive = being elected.",
+    "legalBasis": [
+      {
+        "label": "Art. 38 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_38.html"
+      }
+    ]
+  },
+  "116": {
+    "summary": "If you are allowed to vote in a federal election, you have the active right to vote.",
+    "whyCorrect": "The active right to vote is the right to cast your vote in an election.",
+    "background": "This question is closely linked to question 115. German citizens aged 18 and over have the active right to vote for the Bundestag. With naturalisation you gain this right – and also the passive right to vote, i.e. the possibility of standing for a parliament yourself.",
+    "otherOptions": "An election campaign is the parties’ advertising before an election, with posters, speeches and debates. The electoral procedure is the way the election is run. None of these terms describes the right to vote.",
+    "memoryTip": "Being allowed to vote = active right to vote.",
+    "legalBasis": [
+      {
+        "label": "Art. 38 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_38.html"
+      }
+    ]
+  },
+  "117": {
+    "summary": "Parties need at least 5 percent of the second votes to enter the Bundestag.",
+    "whyCorrect": "This is the so-called 5 percent threshold.",
+    "background": "The 5 percent threshold is meant to prevent a very large number of small parties from sitting in parliament and making it difficult to form a government – a lesson from the Weimar Republic. There are exceptions: a party that directly wins at least three constituencies also enters the Bundestag. Parties of national minorities, such as the SSW of the Danish minority, are exempt from the threshold.",
+    "otherOptions": "3, 4 or 6 percent are wrong. In 2025, for example, the FDP and BSW fell just short of 5 percent and are therefore not in the Bundestag.",
+    "memoryTip": "Five percent – like the five fingers of a hand.",
+    "legalBasis": []
+  },
+  "118": {
+    "summary": "Anyone can become a member of the Jewish Maccabi sports clubs.",
+    "whyCorrect": "Maccabi clubs are open to everyone – regardless of religion, origin or nationality.",
+    "background": "Makkabi Deutschland is the umbrella organisation of Jewish gymnastics and sports clubs in Germany, with around 40 local clubs. Jewish sports clubs already existed before 1933; under National Socialism they were banned. Makkabi Deutschland was re-founded in 1965. Today many members are not Jewish – the clubs see themselves as open places of encounter and campaign against antisemitism and racism in sport.",
+    "otherOptions": "Maccabi clubs are not only for Germans, not only for Israelis and not only for religious people. As in any sports club, anyone who enjoys sport and community can take part.",
+    "memoryTip": "Maccabi = open to all.",
+    "legalBasis": []
+  },
+  "119": {
+    "summary": "A free election means: everyone can decide without coercion whether to vote and whom to vote for.",
+    "whyCorrect": "Nobody may put voters under pressure or force them to vote in a certain way.",
+    "background": "Freedom of election is one of the five electoral principles in the Basic Law (Article 38). It protects against pressure from the state, employers, family or other people. Free also means: you may spoil your ballot or not vote at all. This question is closely related to question 5.",
+    "otherOptions": "Convicted offenders can usually vote; only in rare cases can a court take away the right to vote. Since elections take place on Sundays, you usually do not need time off from your employer. And you cannot freely choose your polling station – it depends on where you live; with a polling certificate, however, you can vote by post or at another polling station in your constituency.",
+    "memoryTip": "Free = without coercion – whether and whom.",
+    "legalBasis": [
+      {
+        "label": "Art. 38 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_38.html"
+      }
+    ]
+  },
+  "120": {
+    "summary": "Germany’s electoral system combines majority voting and proportional representation.",
+    "whyCorrect": "With the first vote a constituency candidate is elected by majority, with the second vote a party by proportional representation.",
+    "background": "The German system is called personalised proportional representation. The second votes determine how many seats each party receives in the Bundestag – that is the proportional part. With the first vote, voters choose a person in each of the 299 constituencies; whoever gets the most votes wins the constituency – that is the majority part. This way each region has its own members of parliament, while the distribution of seats still reflects the parties’ share of the vote.",
+    "otherOptions": "Under a census suffrage, the right to vote depends on property or taxes; under the three-class franchise (in Prussia until 1918), the rich had more weight. A men-only suffrage no longer exists: women in Germany have been able to vote since 1918.",
+    "memoryTip": "First vote = majority (person), second vote = proportional (party).",
+    "legalBasis": [
+      {
+        "label": "Art. 38 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_38.html"
+      }
+    ]
+  },
+  "121": {
+    "summary": "The minimum share of votes a party needs for the Bundestag is called the 5 percent threshold.",
+    "whyCorrect": "A party must receive at least five percent of the second votes.",
+    "background": "The 5 percent threshold applies to the federal election and most state elections. It is intended to prevent parliament from splitting into many small groups, as happened in the Weimar Republic. Critics say that many votes are “lost” as a result. However, the Federal Constitutional Court considers the threshold permissible for the Bundestag because it makes stable governments possible. There is currently no threshold for the European election in Germany.",
+    "otherOptions": "“Admission limit”, “base value” and “directive” are not technical terms for this rule. A directive, for example, is a legal act of the EU.",
+    "memoryTip": "Minimum share = 5 percent threshold.",
+    "legalBasis": []
+  },
+  "122": {
+    "summary": "Elections in Germany are free, equal and secret.",
+    "whyCorrect": "Add to this “general” and “direct” – together, the five electoral principles from Article 38.",
+    "background": "The five electoral principles are: general (all eligible voters may vote), direct (the vote goes directly to candidates or parties, without electors), free (without pressure or coercion), equal (every vote counts the same) and secret (nobody finds out whom you voted for). This answer names three of them.",
+    "otherOptions": "“Open” contradicts the principle of the secret ballot. “Closed” and “safe” are not electoral principles, and “voluntary” is not stated as such in the Basic Law – even though there is no compulsory voting.",
+    "memoryTip": "General, direct, free, equal, secret.",
+    "legalBasis": [
+      {
+        "label": "Art. 38 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_38.html"
+      }
+    ]
+  },
+  "123": {
+    "summary": "The 5 percent threshold is the minimum share of votes a party needs to enter parliament.",
+    "whyCorrect": "In the federal election this means five percent of the second votes.",
+    "background": "A party that receives less than five percent of the second votes generally gets no seats in the Bundestag. Its votes are not taken into account when seats are allocated. Exceptions apply to parties that directly win at least three constituencies and to parties of national minorities. Questions 117 and 121 deal with the same rule.",
+    "otherOptions": "The 5 percent threshold has nothing to do with votes in the Bundestag or Bundesrat and is not an attendance check. It applies at the election, not afterwards in parliament.",
+    "memoryTip": "5 percent threshold = the entry ticket to parliament.",
+    "legalBasis": []
+  },
+  "124": {
+    "summary": "The federal election is the election of the parliament for Germany.",
+    "whyCorrect": "In the federal election, citizens elect the members of the German Bundestag.",
+    "background": "The Bundestag is the parliament of the Federal Republic. In the federal election, its members are elected for four years; since 2025 there have been 630 of them. The newly elected Bundestag then elects the Federal Chancellor. Many people already have the chancellor candidate in mind when they vote – but the ballot only lists constituency candidates and parties.",
+    "otherOptions": "The Chancellor is elected by the Bundestag, the Federal President by the Federal Convention. The state parliaments are elected in state elections.",
+    "memoryTip": "Federal election = election of the Bundestag (parliament).",
+    "legalBasis": [
+      {
+        "label": "Art. 38 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_38.html"
+      }
+    ]
+  },
+  "125": {
+    "summary": "Regular elections make it possible to change the government according to the will of the majority of voters.",
+    "whyCorrect": "If the majority is dissatisfied with the government, it can elect a different one at the next election.",
+    "background": "In a democracy, power is only granted for a limited time. Through regular elections, citizens can confirm or vote out the government – peacefully and without violence. This forces politicians to seek people’s approval and to be accountable. Germany has seen many such peaceful changes of power since 1949.",
+    "otherOptions": "Elections do not force anyone to vote – there is no compulsory voting. They are not meant to preserve existing laws, but precisely to make change possible. And elections do not give any particular group more power: every vote counts the same, whether poor or rich.",
+    "memoryTip": "Election = a peaceful change of government is possible.",
+    "legalBasis": [
+      {
+        "label": "Art. 20 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_20.html"
+      }
+    ]
   }
 }

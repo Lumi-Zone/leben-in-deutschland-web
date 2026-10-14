@@ -1224,5 +1224,294 @@
     "otherOptions": "Yasal emeklilik sigortası, işsizlik sigortası ve bakım sigortası, yasal sosyal sigortanın parçalarıdır.",
     "memoryTip": "“Yasal” = zorunlu ve devlet tarafından düzenlenmiş; hayat sigortası = özel ve gönüllü.",
     "legalBasis": []
+  },
+  "101": {
+    "summary": "Sendikalar çalışanların çıkar örgütleridir.",
+    "whyCorrect": "Çalışanların çıkarlarını, örneğin ücretler ve çalışma saatleri konusunda temsil ederler.",
+    "background": "Anayasa’nın 9. maddesinin 3. fıkrası, çalışma ve ekonomik koşulları korumak için dernek kurma hakkını – örgütlenme özgürlüğünü – güvence altına alır. Sendikalar işveren dernekleriyle toplu sözleşmeler, yani ücretler, izin ve çalışma süresi konusunda pazarlık yapar. Görüşmeler başarısız olursa grev çağrısı yapabilirler. Tanınmış sendikalar IG Metall ve ver.di’dir; birçoğu Alman Sendikalar Birliği’nde (DGB) bir araya gelir.",
+    "otherOptions": "İşverenlerin kendi çıkar örgütleri, işveren dernekleri vardır – bunlar sendikaların pazarlık ortağıdır. Gençler için gençlik örgütleri, emekliler için sosyal ve yaşlı dernekleri vardır; ama bunlar sendika değildir.",
+    "memoryTip": "Sendika = çalışanlar için; işveren derneği = işverenler için.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 9",
+        "url": "https://www.gesetze-im-internet.de/gg/art_9.html"
+      }
+    ]
+  },
+  "102": {
+    "summary": "Olağanüstü başarılar Federal Liyakat Nişanı (Bundesverdienstkreuz) ile onurlandırılabilir.",
+    "whyCorrect": "Bundesverdienstkreuz, Federal Almanya Cumhuriyeti’nin liyakat nişanıdır ve Cumhurbaşkanı tarafından verilir.",
+    "background": "Federal Almanya Cumhuriyeti Liyakat Nişanı, genellikle Bundesverdienstkreuz olarak anılır ve 1951’de Cumhurbaşkanı Theodor Heuss tarafından kuruldu. Federal düzeyde kamu yararına hizmetler için verilen tek genel ödüldür – siyasette, ekonomide, kültürde, bilimde, sporda veya sosyal ve gönüllü alanda. Herkes birini aday gösterebilir; nişanı Cumhurbaşkanı verir.",
+    "otherOptions": "Federal kartal bir ödül değil, arma hayvanıdır. “Vatan Liyakat Nişanı” ve “Alman Demokratik Cumhuriyeti Kahramanı” onur unvanı DDR’in ödülleriydi ve 1990’dan beri yoktur.",
+    "memoryTip": "Liyakat (Verdienst) → Bundesverdienstkreuz.",
+    "legalBasis": []
+  },
+  "103": {
+    "summary": "“Trafik ışığı koalisyonu” (Ampelkoalition), SPD, FDP ve Birlik 90/Yeşiller’den oluşan bir hükümettir.",
+    "whyCorrect": "Adı, parti renkleri olan kırmızı (SPD), sarı (FDP) ve yeşilden (Yeşiller) gelir – trafik ışığı gibi.",
+    "background": "Almanya’da koalisyonlara sık sık partilerin renklerine göre ad verilir: Siyah CDU/CSU, kırmızı SPD, sarı FDP, yeşil Yeşiller içindir. 2021–2024 arasında federal düzeyde Federal Şansölye Olaf Scholz yönetiminde bir trafik ışığı koalisyonu vardı; Kasım 2024’te dağıldı. Diğer bilinen adlar “büyük koalisyon” (CDU/CSU ve SPD) ve “Jamaika”dır (siyah, sarı, yeşil – Jamaika bayrağının renkleri).",
+    "otherOptions": "CDU ve CSU Federal Meclis’te “Birlik” (Union) denen ortak bir grup oluşturur – bu olağan anlamda bir koalisyon değildir. CDU/CSU ve SPD birlikte “büyük koalisyon” veya “siyah-kırmızı” olarak anılır. CSU, Sol Parti ve Yeşiller’den oluşan bir koalisyon hiç olmadı.",
+    "memoryTip": "Trafik ışığı = kırmızı, sarı, yeşil = SPD, FDP, Yeşiller.",
+    "legalBasis": []
+  },
+  "104": {
+    "summary": "Patron biliyorsa, hamilelik işten çıkarma nedeni olamaz.",
+    "whyCorrect": "Annelik Koruma Kanunu, hamilelik süresince ve doğumdan sonraki dört aya kadar işten çıkarmayı yasaklar.",
+    "background": "Almanya’da hamile kadınlar ve yeni anneler özel koruma altındadır. Annelik Koruma Kanunu’na göre işveren, hamileliği biliyorsa veya işten çıkarmadan kısa süre sonra bundan haberdar edilirse, bir kadını hamilelik süresince ve doğumdan sonraki dört aya kadar kural olarak işten çıkaramaz. Ebeveyn izni sırasında da işten çıkarmaya karşı özel koruma vardır. Ayrıca Genel Eşit Muamele Kanunu cinsiyete dayalı ayrımcılığı yasaklar.",
+    "otherOptions": "Uzun süreli hastalık, sık sık geç kalmak veya çalışma saatinde özel işler yapmak belirli koşullarda işten çıkarmayı haklı kılabilir – kusurlu davranışta genellikle önce bir uyarı (Abmahnung) gerekir. Hamilelik ise kusurlu bir davranış değildir ve işten çıkarma nedeni olamaz.",
+    "memoryTip": "Hamile = işten çıkarmaya karşı özel koruma (Mutterschutz).",
+    "legalBasis": [
+      {
+        "label": "Annelik Koruma Kanunu § 17",
+        "url": "https://www.gesetze-im-internet.de/muschg_2018/__17.html"
+      }
+    ]
+  },
+  "105": {
+    "summary": "Sandık görevlileri (Wahlhelfer) seçim bittikten sonra oyları sayar.",
+    "whyCorrect": "Sandık başında seçimi yöneten ve oyları açık olarak sayan sandık kurulunu oluştururlar.",
+    "background": "Seçim günü her sandık yerinde gönüllü sandık görevlileri çalışır. Kişinin seçmen listesinde olup olmadığını kontrol eder, oy pusulalarını dağıtır ve oyların gizli kullanılmasına dikkat ederler. Sandıklar saat 18’de kapanır; sonra görevliler oyları sayar. Sayım herkese açıktır – herkes izleyebilir. Sonuçları seçim kuruluna bildirirler. Bu iş için genellikle küçük bir “ikram parası” verilir.",
+    "otherOptions": "Herkes oy kabininde kural olarak yalnız oy verir; yardıma ihtiyacı olan kişi seçtiği bir yardımcıyı getirebilir – bu, sandık görevlilerinin genel bir görevi değildir. Seçim bildirimlerini belediye önceden postayla gönderir. Sandık görevlileri ara sonuçları medyaya veremez.",
+    "memoryTip": "Sandık görevlileri = oyları sayar.",
+    "legalBasis": []
+  },
+  "106": {
+    "summary": "Gönüllü sandık görevlileri seçim bittikten sonra oyları sayar.",
+    "whyCorrect": "Bu, 105. soruyla aynı sorudur, sadece cevaplar farklıdır.",
+    "background": "Almanya’daki seçimler büyük ölçüde gönüllü yardım eden vatandaşlar tarafından düzenlenir. Bir federal seçimde birkaç yüz bin kişi görev alır. Belediyeler sandık görevlilerini çoğu zaman kendi çalışanları arasından bulur veya kamuoyuna çağrı yapar; ilke olarak bu göreve zorunlu olarak da çağrılınabilir. Bu yaşayan demokrasidir: Oyların doğru sayılıp sayılmadığını vatandaşlar bizzat denetler.",
+    "otherOptions": "Çocuklar oy kullanamaz; sandık görevlileri yaşlılara da oy kabininde genel olarak yardım etmez. Sandık yerini bildiren kart ve mektupları (seçim bildirimi) belediye gönderir. Ara sonuçları gazetecilere iletmek görevleri arasında değildir.",
+    "memoryTip": "Sandık görevlileri = oyları sayar (105. sorudaki gibi).",
+    "legalBasis": []
+  },
+  "107": {
+    "summary": "Federal Meclis dört yıllığına seçilir.",
+    "whyCorrect": "Anayasa’nın 39. maddesi yasama dönemini dört yıl olarak belirler.",
+    "background": "Federal Meclis’in yasama dönemi dört yıl sürer. Yeni Meclis’in ilk oturumuyla başlar ve bir sonrakinin ilk oturumuyla biter. Sadece istisnai durumlarda erken seçim olur; örneğin Federal Şansölye güven oylaması ister, kaybeder ve Cumhurbaşkanı Meclis’i feshederse – en son Şubat 2025 seçiminden önce, Aralık 2024’te böyle oldu.",
+    "otherOptions": "İki, altı veya sekiz yıl yanlıştır. Çoğu eyalet meclisi ve Avrupa Parlamentosu beş yıllığına seçilir, Cumhurbaşkanı da beş yıllığına – sadece Federal Meclis dört yıllığına seçilir.",
+    "memoryTip": "Federal Meclis: 4 yıl. Eyalet meclisi, Avrupa Parlamentosu, Cumhurbaşkanı: 5 yıl.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 39",
+        "url": "https://www.gesetze-im-internet.de/gg/art_39.html"
+      }
+    ]
+  },
+  "108": {
+    "summary": "Federal seçimde Alman vatandaşı olan ve en az 18 yaşında olan herkes oy kullanabilir.",
+    "whyCorrect": "18 yaşından büyük Alman vatandaşları seçme hakkına sahiptir (Anayasa madde 38, Federal Seçim Kanunu).",
+    "background": "Federal Meclis seçimlerinde oy hakkı Alman vatandaşlığına bağlıdır. Bu yüzden vatandaşlığa geçiş siyasi katılım için çok önemlidir: Federal Meclis’i ve eyalet meclislerini ancak Alman pasaportuyla seçebilirsin. Ayrıca 18 yaşında olmak ve genellikle en az üç aydır Almanya’da oturuyor olmak gerekir. Yurt dışında yaşayan Almanlar da belirli koşullarda oy kullanabilir.",
+    "otherOptions": "Sadece Almanya’da oturmak yetmez: Yabancılar Federal Meclis seçiminde oy kullanamaz; AB vatandaşları ise yerel seçimlerde ve Avrupa seçimlerinde oy kullanabilir. “Almanya’da üç yıl” bir koşul değildir ve oy verme yaşı 21 değil, 18’dir.",
+    "memoryTip": "Federal seçim: Alman pasaportu + 18 yaş.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 38",
+        "url": "https://www.gesetze-im-internet.de/gg/art_38.html"
+      }
+    ]
+  },
+  "109": {
+    "summary": "Federal seçimler normalde dört yılda bir yapılır.",
+    "whyCorrect": "Federal Meclis’in yasama dönemi dört yıl sürer (madde 39).",
+    "background": "Federal Meclis olağan olarak dört yılda bir yeniden seçilir. Seçim, mümkün olduğunca çok kişinin vakti olsun diye her zaman bir pazar günü veya resmî tatilde yapılır. Seçim günü oy veremeyecek olanlar önceden posta yoluyla oy kullanabilir. Sadece Meclis erken feshedilirse seçim daha erken olur – Federal Cumhuriyet tarihinde bu şimdiye kadar dört kez oldu (1972, 1983, 2005 ve 2025).",
+    "otherOptions": "Üç, beş veya altı yılda bir yanlıştır. Beş yıl çoğu eyalet meclisi, Avrupa Parlamentosu ve Cumhurbaşkanının görev süresi için geçerlidir.",
+    "memoryTip": "Federal Meclis = 4 yılda bir.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 39",
+        "url": "https://www.gesetze-im-internet.de/gg/art_39.html"
+      }
+    ]
+  },
+  "110": {
+    "summary": "Federal Meclis dört yıllığına seçilir.",
+    "whyCorrect": "Bu, 107. soruyla aynı sorudur, sadece cevap seçenekleri farklıdır.",
+    "background": "Dört yıl bir uzlaşmadır: Bir hükümetin planlarını hayata geçirmesine yetecek kadar uzun, seçmenlerin politikadan memnun olup olmadıklarına düzenli olarak karar verebilecekleri kadar kısa. Birçok başka ülkede yasama dönemleri benzer uzunluktadır; örneğin Avusturya’da beş yıl, ABD Temsilciler Meclisi’nde iki yıl.",
+    "otherOptions": "İki ve üç yıl çok kısadır; beş yıl Federal Meclis için değil, çoğu eyalet meclisi ve Avrupa Parlamentosu için geçerlidir.",
+    "memoryTip": "107. ve 110. soru: Cevap her zaman 4 yıl.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 39",
+        "url": "https://www.gesetze-im-internet.de/gg/art_39.html"
+      }
+    ]
+  },
+  "111": {
+    "summary": "Almanya’da İsrail’in yok edilmesi için kamuya açık çağrı yapmak yasaktır.",
+    "whyCorrect": "Bu, halkı kin ve nefrete tahrik veya suç işlemeye alenen tahrik olarak cezalandırılabilir.",
+    "background": "Almanya, Holokost nedeniyle Yahudilere ve İsrail Devleti’ne karşı özel bir tarihsel sorumluluk taşır. Alman hükümetleri İsrail’in güvenliğini Alman “devlet aklı”nın (Staatsräson) bir parçası olarak tanımlar. İsrail’in yok edilmesi için alenen çağrı yapan kişi şiddete ve soykırıma çağırıyor demektir. Bu ifade özgürlüğü kapsamında değildir ve Ceza Kanunu’na göre cezalandırılabilir. Yabancı bayrakları alenen yakmak da 2020’den beri suçtur.",
+    "otherOptions": "İsrail’in politikası, diğer her devletinki gibi, alenen eleştirilebilir ve tartışılabilir – bunu ifade özgürlüğü korur. Kendi arazine bir İsrail bayrağı asmak elbette serbesttir.",
+    "memoryTip": "Politikayı eleştirmek – serbest. Yok edilmesine çağrı – yasak.",
+    "legalBasis": [
+      {
+        "label": "Ceza Kanunu (StGB) § 130",
+        "url": "https://www.gesetze-im-internet.de/stgb/__130.html"
+      },
+      {
+        "label": "Ceza Kanunu (StGB) § 111",
+        "url": "https://www.gesetze-im-internet.de/stgb/__111.html"
+      }
+    ]
+  },
+  "112": {
+    "summary": "Almanya’da seçimler gizlidir.",
+    "whyCorrect": "Kimse bir kişinin kime oy verdiğini öğrenemez (Anayasa madde 38).",
+    "background": "Gizlilik, beş seçim ilkesinden biridir: genel, doğrudan, serbest, eşit ve gizli. Bu yüzden oy pusulası oy kabininde yalnız işaretlenir ve sandığa atılmadan önce katlanır. Posta yoluyla oy verenler de pusulayı bizzat ve kimse görmeden doldurduklarını beyan etmelidir. Gizli oy, kimsenin oyu yüzünden baskı altına alınmasını önler.",
+    "otherOptions": "“Özel”, “mesleğe bağlı” ve “cinsiyete bağlı” seçim ilkeleri değildir. Tam tersine: Seçimler genel ve eşittir – meslek ve cinsiyet rol oynamaz.",
+    "memoryTip": "Oy kabini = gizli oy.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 38",
+        "url": "https://www.gesetze-im-internet.de/gg/art_38.html"
+      }
+    ]
+  },
+  "113": {
+    "summary": "Almanya’da seçimi en çok oyu alan parti kazanır.",
+    "whyCorrect": "Federal seçimde bunun için ikinci oylar belirleyicidir.",
+    "background": "En çok oyu alan parti seçimin galibidir ve parlamentoda en çok sandalyeyi alır. Ama sonra kimin yöneteceği ancak koalisyon görüşmelerinde belli olur: Hükümetin sandalyelerin çoğunluğuna ihtiyacı vardır. Genellikle en güçlü parti hükümete liderlik eder – ama onsuz bir koalisyon da kurulabilir; örneğin 1969’da Willy Brandt yönetimindeki SPD-FDP koalisyonu.",
+    "otherOptions": "Erkeklerden, kadınlardan, işçilerden veya başka gruplardan gelsin, bütün oylar eşit sayılır. Şansölye adayına doğrudan oy verilemez: Birinci oyla kendi seçim bölgendeki bir kişi seçilir, Şansölye’yi ise Federal Meclis seçer.",
+    "memoryTip": "En çok oy = galip. Bütün oylar eşit sayılır.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 38",
+        "url": "https://www.gesetze-im-internet.de/gg/art_38.html"
+      }
+    ]
+  },
+  "114": {
+    "summary": "Almanya’da demokratik seçimlere katılmak bir haktır.",
+    "whyCorrect": "Oy verme zorunluluğu yoktur; herkes oy kullanıp kullanmayacağına kendisi karar verebilir.",
+    "background": "Seçme hakkı en önemli siyasi haklardan biridir: Vatandaşlar oylarıyla parlamentoda kimin onları temsil edeceğine karar verir. Almanya’da katılım gönüllüdür – serbest seçime oy kullanmama özgürlüğü de dahildir. Yine de siyaset ve toplum insanları oy vermeye çağırır, çünkü yüksek katılım demokrasiyi güçlendirir. 2025 federal seçiminde katılım yüzde 82’nin üzerindeydi.",
+    "otherOptions": "Almanya’da – örneğin Belçika veya Avustralya’nın aksine – oy verme yükümlülüğü veya zorunluluğu yoktur. Seçim bir “yük” de değildir; söz sahibi olma imkânıdır.",
+    "memoryTip": "Oy vermek bir haktır, zorunluluk değil.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 38",
+        "url": "https://www.gesetze-im-internet.de/gg/art_38.html"
+      }
+    ]
+  },
+  "115": {
+    "summary": "“Aktif seçme hakkı” şu demektir: Oy kullanabilirsin.",
+    "whyCorrect": "Aktif seçme hakkına sahip olan kişi bir seçimde oy kullanabilir.",
+    "background": "Seçim hakkının iki yönü vardır. Aktif seçme hakkı oy verme, yani oyunu kullanma hakkıdır. Pasif seçme hakkı (seçilme hakkı) ise seçilme, yani aday olma hakkıdır. Federal Meclis için 18 yaşından büyük Alman vatandaşları her iki hakka da sahiptir.",
+    "otherOptions": "“Seçilebilirsin” pasif seçme hakkını anlatır. Almanya’da oy vermek zorunlu değildir – oy verme zorunluluğu yoktur. Oyların sayımına da kimse gitmek zorunda değildir; sayım herkese açıktır, yani izleyebilirsin.",
+    "memoryTip": "Aktif = kendin oy vermek. Pasif = seçilmek.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 38",
+        "url": "https://www.gesetze-im-internet.de/gg/art_38.html"
+      }
+    ]
+  },
+  "116": {
+    "summary": "Bir federal seçimde oy kullanabiliyorsan aktif seçme hakkına sahipsin.",
+    "whyCorrect": "Aktif seçme hakkı, bir seçimde oy kullanma hakkıdır.",
+    "background": "Bu soru 115. soruyla yakından ilişkilidir. Federal Meclis için aktif seçme hakkı 18 yaşından büyük Alman vatandaşlarına aittir. Vatandaşlığa geçişle bu hakkı – ve pasif seçme hakkını, yani bir parlamento için kendin aday olma imkânını – kazanırsın.",
+    "otherOptions": "Seçim kampanyası (Wahlkampagne, Wahlkampf), partilerin seçimden önce afişler, konuşmalar ve tartışmalarla yaptığı tanıtımdır. Seçim usulü (Wahlverfahren) seçimin işleyişidir. Bu terimlerin hiçbiri oy kullanma hakkını anlatmaz.",
+    "memoryTip": "Oy kullanabilmek = aktif seçme hakkı.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 38",
+        "url": "https://www.gesetze-im-internet.de/gg/art_38.html"
+      }
+    ]
+  },
+  "117": {
+    "summary": "Partilerin Federal Meclis’e girmek için ikinci oyların en az yüzde 5’ini alması gerekir.",
+    "whyCorrect": "Buna %5 barajı denir.",
+    "background": "%5 barajı, çok sayıda küçük partinin parlamentoya girip hükümet kurmayı zorlaştırmasını önlemek içindir – Weimar Cumhuriyeti’nden çıkarılan bir derstir. İstisnalar vardır: En az üç seçim bölgesini doğrudan kazanan bir parti de Federal Meclis’e girer. Danimarka azınlığının partisi SSW gibi ulusal azınlık partileri barajdan muaftır.",
+    "otherOptions": "Yüzde 3, 4 veya 6 yanlıştır. Örneğin 2025’te FDP ve BSW yüzde 5’in biraz altında kaldı ve bu yüzden Federal Meclis’te değiller.",
+    "memoryTip": "Yüzde beş – bir eldeki beş parmak gibi.",
+    "legalBasis": []
+  },
+  "118": {
+    "summary": "Yahudi Makkabi spor kulüplerine herkes üye olabilir.",
+    "whyCorrect": "Makkabi kulüpleri dini, kökeni veya vatandaşlığı ne olursa olsun herkese açıktır.",
+    "background": "Makkabi Deutschland, Almanya’daki Yahudi jimnastik ve spor kulüplerinin çatı örgütüdür ve yaklaşık 40 yerel kulübü vardır. Yahudi spor kulüpleri 1933’ten önce de vardı; Nasyonal Sosyalizm döneminde yasaklandılar. Makkabi Deutschland 1965’te yeniden kuruldu. Bugün üyelerin çoğu Yahudi değildir – kulüpler kendilerini açık buluşma yerleri olarak görür ve sporda antisemitizme ve ırkçılığa karşı mücadele eder.",
+    "otherOptions": "Makkabi kulüpleri sadece Almanlar, sadece İsrailliler veya sadece dindar insanlar için değildir. Her spor kulübünde olduğu gibi, spordan ve topluluktan hoşlanan herkes katılabilir.",
+    "memoryTip": "Makkabi = herkese açık.",
+    "legalBasis": []
+  },
+  "119": {
+    "summary": "Serbest seçim şu demektir: Herkes oy kullanıp kullanmayacağına ve kime oy vereceğine zorlanmadan karar verebilir.",
+    "whyCorrect": "Kimse seçmenlere baskı yapamaz veya onları belirli bir oya zorlayamaz.",
+    "background": "Seçim özgürlüğü Anayasa’daki beş seçim ilkesinden biridir (madde 38). Devletin, işverenlerin, ailenin veya başka insanların baskısına karşı korur. Serbest şu anlama da gelir: Geçersiz oy verebilir veya hiç oy vermeyebilirsin. Bu soru 5. soruyla yakından ilişkilidir.",
+    "otherOptions": "Hüküm giymiş suçlular genellikle oy kullanabilir; seçme hakkını sadece nadir durumlarda bir mahkeme kaldırabilir. Seçimler pazar günü yapıldığı için genellikle işverenden izin almak gerekmez. Sandık yeri de serbestçe seçilemez – oturduğun yere göre belirlenir; ama bir oy belgesiyle (Wahlschein) posta yoluyla veya seçim bölgendeki başka bir sandıkta oy verebilirsin.",
+    "memoryTip": "Serbest = zorlama olmadan – verip vermemek ve kime vermek.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 38",
+        "url": "https://www.gesetze-im-internet.de/gg/art_38.html"
+      }
+    ]
+  },
+  "120": {
+    "summary": "Almanya’nın seçim sistemi çoğunluk ve nispi temsil sistemini birleştirir.",
+    "whyCorrect": "Birinci oyla çoğunluk usulüyle bir seçim bölgesi adayı, ikinci oyla nispi temsil usulüyle bir parti seçilir.",
+    "background": "Alman sistemine kişiselleştirilmiş nispi temsil denir. İkinci oylar her partinin Federal Meclis’te kaç sandalye alacağını belirler – bu nispi temsil kısmıdır. Birinci oyla 299 seçim bölgesinin her birinde bir kişi seçilir; en çok oyu alan bölgeyi kazanır – bu çoğunluk kısmıdır. Böylece her bölgenin kendi milletvekilleri olur ve sandalye dağılımı yine de partilerin oy oranına karşılık gelir.",
+    "otherOptions": "Zensuswahlrecht’te oy hakkı mülke veya vergiye bağlıdır; üç sınıflı seçim sisteminde (Prusya’da 1918’e kadar) zenginlerin ağırlığı daha fazlaydı. Sadece erkeklerin oy kullandığı sistem artık yoktur: Almanya’da kadınlar 1918’den beri oy kullanabilir.",
+    "memoryTip": "Birinci oy = çoğunluk (kişi), ikinci oy = nispi temsil (parti).",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 38",
+        "url": "https://www.gesetze-im-internet.de/gg/art_38.html"
+      }
+    ]
+  },
+  "121": {
+    "summary": "Bir partinin Federal Meclis için ihtiyaç duyduğu asgari oy oranına %5 barajı denir.",
+    "whyCorrect": "Bir partinin ikinci oyların en az yüzde beşini alması gerekir.",
+    "background": "%5 barajı federal seçimde ve çoğu eyalet seçiminde vardır. Weimar Cumhuriyeti’nde olduğu gibi parlamentonun birçok küçük gruba bölünmesini önlemek içindir. Eleştirmenler bu yüzden birçok oyun “boşa gittiğini” söyler. Ama Federal Anayasa Mahkemesi, istikrarlı hükümetleri mümkün kıldığı için barajı Federal Meclis için uygun bulur. Almanya’da Avrupa seçimi için şu anda baraj yoktur.",
+    "otherOptions": "“Kabul sınırı”, “temel değer” ve “yönerge” bu kuralın teknik adları değildir. Yönerge (Richtlinie) örneğin AB’nin bir hukuki düzenlemesidir.",
+    "memoryTip": "Asgari oran = %5 barajı.",
+    "legalBasis": []
+  },
+  "122": {
+    "summary": "Almanya’da seçimler serbest, eşit ve gizlidir.",
+    "whyCorrect": "Buna “genel” ve “doğrudan” da eklenir – birlikte 38. maddedeki beş seçim ilkesi.",
+    "background": "Beş seçim ilkesi şunlardır: genel (seçme hakkı olan herkes oy kullanabilir), doğrudan (oy, ara seçiciler olmadan doğrudan adaylara veya partilere gider), serbest (baskı veya zorlama olmadan), eşit (her oy aynı değerdedir) ve gizli (kimse kime oy verdiğini öğrenemez). Bu cevapta bunlardan üçü sayılmıştır.",
+    "otherOptions": "“Açık” gizli oy ilkesiyle çelişir. “Kapalı” ve “güvenli” seçim ilkesi değildir; “gönüllü” ise – oy verme zorunluluğu olmasa da – Anayasa’da bu şekilde yazmaz.",
+    "memoryTip": "Genel, doğrudan, serbest, eşit, gizli.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 38",
+        "url": "https://www.gesetze-im-internet.de/gg/art_38.html"
+      }
+    ]
+  },
+  "123": {
+    "summary": "%5 barajı, bir partinin parlamentoya girmek için ihtiyaç duyduğu asgari oy oranıdır.",
+    "whyCorrect": "Federal seçimde bu, ikinci oyların yüzde beşi demektir.",
+    "background": "İkinci oyların yüzde beşinden azını alan bir parti kural olarak Federal Meclis’te sandalye alamaz. Oyları sandalye dağılımında dikkate alınmaz. En az üç seçim bölgesini doğrudan kazanan partiler ve ulusal azınlık partileri için istisnalar vardır. 117. ve 121. sorular da aynı kuralla ilgilidir.",
+    "otherOptions": "%5 barajının Federal Meclis’teki veya Federal Konsey’deki oylamalarla ilgisi yoktur ve bir yoklama kontrolü de değildir. Seçimde geçerlidir, sonrasında parlamentoda değil.",
+    "memoryTip": "%5 barajı = parlamentoya giriş bileti.",
+    "legalBasis": []
+  },
+  "124": {
+    "summary": "Federal seçim (Bundestagswahl), Almanya’nın parlamentosunun seçimidir.",
+    "whyCorrect": "Federal seçimde vatandaşlar Alman Federal Meclisi’nin milletvekillerini seçer.",
+    "background": "Federal Meclis, Federal Cumhuriyet’in parlamentosudur. Federal seçimde milletvekilleri dört yıllığına seçilir; 2025’ten beri sayıları 630’dur. Yeni seçilen Federal Meclis daha sonra Federal Şansölye’yi seçer. Birçok insan oy verirken aklında şansölye adayını tutar – ama oy pusulasında yalnızca seçim bölgesi adayları ve partiler vardır.",
+    "otherOptions": "Şansölye’yi Federal Meclis, Cumhurbaşkanını Federal Kurul seçer. Eyalet parlamentoları eyalet seçimlerinde seçilir.",
+    "memoryTip": "Bundestagswahl = Federal Meclis’in (parlamentonun) seçimi.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 38",
+        "url": "https://www.gesetze-im-internet.de/gg/art_38.html"
+      }
+    ]
+  },
+  "125": {
+    "summary": "Düzenli seçimler, seçmen çoğunluğunun iradesine göre hükümet değişikliğini mümkün kılar.",
+    "whyCorrect": "Çoğunluk hükümetten memnun değilse bir sonraki seçimde başka bir hükümet seçebilir.",
+    "background": "Demokraside güç yalnızca belirli bir süre için verilir. Vatandaşlar düzenli seçimlerle hükümeti onaylayabilir veya görevden alabilir – barışçıl ve şiddet olmadan. Bu, siyaseti insanların onayını kazanmaya ve hesap vermeye zorlar. Almanya’da 1949’dan beri bu tür birçok barışçıl iktidar değişikliği yaşandı.",
+    "otherOptions": "Seçimler kimseyi oy vermeye zorlamaz – oy verme zorunluluğu yoktur. Var olan yasaları korumak için değil, tam tersine değişikliği mümkün kılmak için vardır. Seçimler belirli bir gruba daha fazla güç de vermez: Yoksul ya da zengin, her oy eşit sayılır.",
+    "memoryTip": "Seçim = barışçıl hükümet değişikliği mümkün.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 20",
+        "url": "https://www.gesetze-im-internet.de/gg/art_20.html"
+      }
+    ]
   }
 }

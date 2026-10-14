@@ -1224,5 +1224,294 @@
     "otherOptions": "Die gesetzliche Rentenversicherung, die Arbeitslosenversicherung und die Pflegeversicherung sind alle Teil der gesetzlichen Sozialversicherung.",
     "memoryTip": "„Gesetzlich“ = Pflicht und staatlich organisiert; Lebensversicherung = privat und freiwillig.",
     "legalBasis": []
+  },
+  "101": {
+    "summary": "Gewerkschaften sind Interessenverbände der Arbeitnehmerinnen und Arbeitnehmer.",
+    "whyCorrect": "Sie vertreten die Interessen der Beschäftigten, zum Beispiel bei Löhnen und Arbeitszeiten.",
+    "background": "Das Grundgesetz garantiert in Artikel 9 Absatz 3 das Recht, Vereinigungen zur Wahrung der Arbeits- und Wirtschaftsbedingungen zu bilden – die Koalitionsfreiheit. Gewerkschaften verhandeln mit Arbeitgeberverbänden über Tarifverträge, also über Löhne, Urlaub und Arbeitszeit. Wenn die Verhandlungen scheitern, können sie zum Streik aufrufen. Bekannte Gewerkschaften sind IG Metall und ver.di; viele sind im Deutschen Gewerkschaftsbund (DGB) zusammengeschlossen.",
+    "otherOptions": "Arbeitgeber haben eigene Interessenverbände, die Arbeitgeberverbände – sie sind die Verhandlungspartner der Gewerkschaften. Für Jugendliche gibt es Jugendverbände, für Rentnerinnen und Rentner Sozial- und Seniorenverbände; Gewerkschaften sind das aber nicht.",
+    "memoryTip": "Gewerkschaft = für Arbeitnehmer; Arbeitgeberverband = für Arbeitgeber.",
+    "legalBasis": [
+      {
+        "label": "Art. 9 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_9.html"
+      }
+    ]
+  },
+  "102": {
+    "summary": "Für besondere Leistungen kann man mit dem Bundesverdienstkreuz geehrt werden.",
+    "whyCorrect": "Das Bundesverdienstkreuz ist der Verdienstorden der Bundesrepublik Deutschland und wird vom Bundespräsidenten verliehen.",
+    "background": "Der Verdienstorden der Bundesrepublik Deutschland, meist Bundesverdienstkreuz genannt, wurde 1951 von Bundespräsident Theodor Heuss gestiftet. Er ist die einzige allgemeine Auszeichnung des Bundes für Verdienste um das Gemeinwohl – in Politik, Wirtschaft, Kultur, Wissenschaft, Sport oder im sozialen und ehrenamtlichen Bereich. Jeder kann eine Person dafür vorschlagen; verliehen wird es vom Bundespräsidenten.",
+    "otherOptions": "Der Bundesadler ist das Wappentier, keine Auszeichnung. Der „Vaterländische Verdienstorden“ und der Ehrentitel „Held der Deutschen Demokratischen Republik“ waren Auszeichnungen der DDR, die es seit 1990 nicht mehr gibt.",
+    "memoryTip": "Verdienst → Bundesverdienstkreuz.",
+    "legalBasis": []
+  },
+  "103": {
+    "summary": "Eine „Ampelkoalition“ ist eine Regierung aus SPD, FDP und Bündnis 90/Die Grünen.",
+    "whyCorrect": "Der Name kommt von den Parteifarben Rot (SPD), Gelb (FDP) und Grün (Grüne) – wie bei einer Verkehrsampel.",
+    "background": "In Deutschland werden Koalitionen oft nach den Farben der Parteien benannt: Schwarz steht für CDU/CSU, Rot für SPD, Gelb für FDP, Grün für die Grünen. Von 2021 bis 2024 regierte im Bund eine Ampelkoalition unter Bundeskanzler Olaf Scholz; sie zerbrach im November 2024. Andere bekannte Bezeichnungen sind „Große Koalition“ (CDU/CSU und SPD) und „Jamaika“ (Schwarz, Gelb, Grün – die Farben der jamaikanischen Flagge).",
+    "otherOptions": "CDU und CSU bilden im Bundestag eine gemeinsame Fraktion, die „Union“ – das ist keine Koalition im üblichen Sinn. CDU/CSU und SPD zusammen nennt man „Große Koalition“ oder „Schwarz-Rot“. Eine Koalition aus CSU, Linken und Grünen gab es nie.",
+    "memoryTip": "Ampel = Rot, Gelb, Grün = SPD, FDP, Grüne.",
+    "legalBasis": []
+  },
+  "104": {
+    "summary": "Eine Schwangerschaft darf kein Grund für eine Kündigung sein, wenn der Chef davon weiß.",
+    "whyCorrect": "Das Mutterschutzgesetz verbietet die Kündigung während der Schwangerschaft und bis vier Monate nach der Geburt.",
+    "background": "Schwangere und junge Mütter stehen in Deutschland unter besonderem Schutz. Nach dem Mutterschutzgesetz darf der Arbeitgeber einer Frau während der Schwangerschaft und bis vier Monate nach der Entbindung grundsätzlich nicht kündigen, wenn er von der Schwangerschaft weiß oder sie ihm kurz nach der Kündigung mitgeteilt wird. Auch während der Elternzeit gibt es einen besonderen Kündigungsschutz. Außerdem verbietet das Allgemeine Gleichbehandlungsgesetz Benachteiligung wegen des Geschlechts.",
+    "otherOptions": "Lange Krankheit, häufiges Zuspätkommen oder private Erledigungen während der Arbeitszeit können unter bestimmten Bedingungen eine Kündigung rechtfertigen – bei Fehlverhalten meist erst nach einer Abmahnung. Eine Schwangerschaft dagegen ist kein Fehlverhalten und darf kein Kündigungsgrund sein.",
+    "memoryTip": "Schwanger = besonderer Kündigungsschutz (Mutterschutz).",
+    "legalBasis": [
+      {
+        "label": "§ 17 Mutterschutzgesetz",
+        "url": "https://www.gesetze-im-internet.de/muschg_2018/__17.html"
+      }
+    ]
+  },
+  "105": {
+    "summary": "Wahlhelferinnen und Wahlhelfer zählen nach dem Ende der Wahl die Stimmen.",
+    "whyCorrect": "Sie bilden im Wahllokal den Wahlvorstand, der die Wahl leitet und die Stimmen öffentlich auszählt.",
+    "background": "Am Wahltag arbeiten in jedem Wahllokal ehrenamtliche Wahlhelferinnen und Wahlhelfer. Sie prüfen, ob jemand im Wählerverzeichnis steht, geben die Stimmzettel aus und achten darauf, dass geheim gewählt wird. Um 18 Uhr schließen die Wahllokale; danach zählen die Wahlhelfer die Stimmen. Die Auszählung ist öffentlich – jeder darf zuschauen. Die Ergebnisse melden sie an die Wahlleitung. Für die Arbeit gibt es meist ein kleines „Erfrischungsgeld“.",
+    "otherOptions": "Jeder wählt grundsätzlich allein in der Wahlkabine; wer Hilfe braucht, kann eine Hilfsperson mitbringen – das ist keine allgemeine Aufgabe der Wahlhelfer. Die Wahlbenachrichtigungen verschickt die Gemeinde vorher per Post. Zwischenergebnisse an Medien weitergeben dürfen Wahlhelfer nicht.",
+    "memoryTip": "Wahlhelfer = zählen die Stimmen.",
+    "legalBasis": []
+  },
+  "106": {
+    "summary": "Ehrenamtliche Wahlhelferinnen und Wahlhelfer zählen nach dem Ende der Wahl die Stimmen.",
+    "whyCorrect": "Das ist dieselbe Frage wie Frage 105, nur mit anderen Antworten.",
+    "background": "Wahlen in Deutschland werden zu einem großen Teil von Bürgerinnen und Bürgern organisiert, die freiwillig helfen. Bei einer Bundestagswahl sind es mehrere hunderttausend Menschen. Die Gemeinden suchen Wahlhelfer oft unter ihren Beschäftigten oder rufen öffentlich dazu auf; grundsätzlich kann man auch dazu verpflichtet werden. Das ist gelebte Demokratie: Die Bürger kontrollieren selbst, dass richtig gezählt wird.",
+    "otherOptions": "Kinder dürfen nicht wählen, und auch älteren Menschen helfen Wahlhelfer nicht allgemein in der Wahlkabine. Karten und Briefe mit dem Wahllokal (die Wahlbenachrichtigung) verschickt die Gemeinde. Zwischenergebnisse an Journalisten weiterzugeben gehört nicht zu ihren Aufgaben.",
+    "memoryTip": "Wahlhelfer = zählen die Stimmen (wie in Frage 105).",
+    "legalBasis": []
+  },
+  "107": {
+    "summary": "Der Bundestag wird für vier Jahre gewählt.",
+    "whyCorrect": "Artikel 39 des Grundgesetzes legt die Wahlperiode auf vier Jahre fest.",
+    "background": "Die Wahlperiode des Bundestages dauert vier Jahre. Sie beginnt mit der ersten Sitzung des neuen Bundestages und endet mit der ersten Sitzung des nächsten. Nur in Ausnahmefällen gibt es eine vorgezogene Neuwahl, etwa wenn der Bundeskanzler die Vertrauensfrage stellt und verliert und der Bundespräsident den Bundestag auflöst – so geschehen zuletzt im Dezember 2024 vor der Wahl im Februar 2025.",
+    "otherOptions": "Zwei, sechs oder acht Jahre sind falsch. Die meisten Landtage und das Europäische Parlament werden für fünf Jahre gewählt, der Bundespräsident ebenfalls für fünf Jahre – nur der Bundestag für vier.",
+    "memoryTip": "Bundestag: 4 Jahre. Landtag, EU-Parlament, Bundespräsident: 5 Jahre.",
+    "legalBasis": [
+      {
+        "label": "Art. 39 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_39.html"
+      }
+    ]
+  },
+  "108": {
+    "summary": "Bei der Bundestagswahl darf wählen, wer deutscher Staatsbürger ist und mindestens 18 Jahre alt ist.",
+    "whyCorrect": "Wahlberechtigt sind deutsche Staatsangehörige ab 18 Jahren (Artikel 38 Grundgesetz, Bundeswahlgesetz).",
+    "background": "Das Wahlrecht zum Bundestag hängt an der deutschen Staatsangehörigkeit. Deshalb ist die Einbürgerung so wichtig für politische Teilhabe: Erst mit dem deutschen Pass darf man den Bundestag und die Landtage wählen. Außerdem muss man 18 Jahre alt sein und in der Regel seit mindestens drei Monaten in Deutschland wohnen. Auch Deutsche, die im Ausland leben, können unter bestimmten Voraussetzungen wählen.",
+    "otherOptions": "Nur in Deutschland zu wohnen reicht nicht: Ausländerinnen und Ausländer dürfen den Bundestag nicht wählen; EU-Bürger dürfen aber bei Kommunal- und Europawahlen wählen. „Drei Jahre in Deutschland“ ist keine Voraussetzung, und das Wahlalter liegt bei 18, nicht 21.",
+    "memoryTip": "Bundestagswahl: deutscher Pass + 18 Jahre.",
+    "legalBasis": [
+      {
+        "label": "Art. 38 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_38.html"
+      }
+    ]
+  },
+  "109": {
+    "summary": "Bundestagswahlen gibt es normalerweise alle vier Jahre.",
+    "whyCorrect": "Die Wahlperiode des Bundestages dauert vier Jahre (Artikel 39).",
+    "background": "Regulär wird der Bundestag alle vier Jahre neu gewählt. Die Wahl findet immer an einem Sonntag oder gesetzlichen Feiertag statt, damit möglichst viele Menschen Zeit haben. Wer am Wahltag verhindert ist, kann vorher per Briefwahl abstimmen. Nur wenn der Bundestag vorzeitig aufgelöst wird, kommt die Wahl früher – das ist in der Geschichte der Bundesrepublik bisher viermal passiert (1972, 1983, 2005 und 2025).",
+    "otherOptions": "Alle drei, fünf oder sechs Jahre ist falsch. Fünf Jahre gelten für die meisten Landtage, das Europäische Parlament und die Amtszeit des Bundespräsidenten.",
+    "memoryTip": "Bundestag = alle 4 Jahre.",
+    "legalBasis": [
+      {
+        "label": "Art. 39 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_39.html"
+      }
+    ]
+  },
+  "110": {
+    "summary": "Der Bundestag wird für vier Jahre gewählt.",
+    "whyCorrect": "Das ist dieselbe Frage wie Frage 107, nur mit anderen Antwortmöglichkeiten.",
+    "background": "Vier Jahre sind ein Kompromiss: Lang genug, damit eine Regierung ihre Pläne umsetzen kann, und kurz genug, damit die Wählerinnen und Wähler regelmäßig entscheiden können, ob sie mit der Politik zufrieden sind. In vielen anderen Ländern dauern Wahlperioden ähnlich lange, zum Beispiel in Österreich fünf Jahre oder im US-Repräsentantenhaus zwei Jahre.",
+    "otherOptions": "Zwei und drei Jahre sind zu kurz, fünf Jahre gelten für die meisten Landtage und das Europäische Parlament, nicht für den Bundestag.",
+    "memoryTip": "Frage 107 und 110: Antwort immer 4 Jahre.",
+    "legalBasis": [
+      {
+        "label": "Art. 39 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_39.html"
+      }
+    ]
+  },
+  "111": {
+    "summary": "Der öffentliche Aufruf zur Vernichtung Israels ist in Deutschland verboten.",
+    "whyCorrect": "Er kann als Volksverhetzung oder als öffentliche Aufforderung zu Straftaten bestraft werden.",
+    "background": "Deutschland trägt wegen des Holocaust eine besondere historische Verantwortung gegenüber Jüdinnen und Juden und dem Staat Israel. Die Sicherheit Israels wird von deutschen Regierungen als Teil der deutschen Staatsräson bezeichnet. Wer öffentlich zur Vernichtung Israels aufruft, ruft zu Gewalt und Völkermord auf. Das ist nicht von der Meinungsfreiheit gedeckt und kann nach dem Strafgesetzbuch bestraft werden. Auch das öffentliche Verbrennen ausländischer Flaggen ist seit 2020 strafbar.",
+    "otherOptions": "Die Politik Israels darf man öffentlich kritisieren und darüber diskutieren – das schützt die Meinungsfreiheit, wie bei jedem anderen Staat. Eine israelische Flagge auf dem eigenen Grundstück aufzuhängen ist selbstverständlich erlaubt.",
+    "memoryTip": "Kritik an Politik – erlaubt. Aufruf zur Vernichtung – verboten.",
+    "legalBasis": [
+      {
+        "label": "§ 130 StGB",
+        "url": "https://www.gesetze-im-internet.de/stgb/__130.html"
+      },
+      {
+        "label": "§ 111 StGB",
+        "url": "https://www.gesetze-im-internet.de/stgb/__111.html"
+      }
+    ]
+  },
+  "112": {
+    "summary": "Die Wahlen in Deutschland sind geheim.",
+    "whyCorrect": "Niemand darf erfahren, wen eine Person gewählt hat (Artikel 38 Grundgesetz).",
+    "background": "Geheim ist einer der fünf Wahlgrundsätze: allgemein, unmittelbar, frei, gleich und geheim. Deshalb kreuzt man den Stimmzettel allein in einer Wahlkabine an und faltet ihn, bevor man ihn in die Urne wirft. Auch bei der Briefwahl muss man versichern, dass man den Stimmzettel persönlich und unbeobachtet ausgefüllt hat. Das geheime Wahlrecht schützt davor, dass jemand wegen seiner Stimme unter Druck gesetzt wird.",
+    "otherOptions": "„Speziell“, „berufsbezogen“ und „geschlechtsabhängig“ sind keine Wahlgrundsätze. Im Gegenteil: Wahlen sind allgemein und gleich – Beruf und Geschlecht spielen keine Rolle.",
+    "memoryTip": "Wahlkabine = geheime Wahl.",
+    "legalBasis": [
+      {
+        "label": "Art. 38 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_38.html"
+      }
+    ]
+  },
+  "113": {
+    "summary": "Eine Wahl in Deutschland gewinnt die Partei, die die meisten Stimmen bekommt.",
+    "whyCorrect": "Bei der Bundestagswahl sind dafür die Zweitstimmen entscheidend.",
+    "background": "Die Partei mit den meisten Stimmen ist die Wahlsiegerin und bekommt die meisten Sitze im Parlament. Wer danach regiert, entscheidet sich aber erst in Koalitionsverhandlungen: Die Regierung braucht eine Mehrheit der Sitze. Meist führt die stärkste Partei die Regierung an – es kann aber auch eine Koalition ohne sie zustande kommen, wie zum Beispiel 1969 die SPD-FDP-Koalition unter Willy Brandt.",
+    "otherOptions": "Alle Stimmen zählen gleich, egal ob sie von Männern, Frauen, Arbeitern oder anderen Gruppen kommen. Einen Kanzlerkandidaten kann man nicht direkt wählen: Mit der Erststimme wählt man eine Person im eigenen Wahlkreis, den Kanzler wählt der Bundestag.",
+    "memoryTip": "Meiste Stimmen = Wahlsieger. Alle Stimmen zählen gleich.",
+    "legalBasis": [
+      {
+        "label": "Art. 38 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_38.html"
+      }
+    ]
+  },
+  "114": {
+    "summary": "An demokratischen Wahlen teilzunehmen ist in Deutschland ein Recht.",
+    "whyCorrect": "Es gibt keine Wahlpflicht; jeder darf selbst entscheiden, ob er wählen geht.",
+    "background": "Das Wahlrecht ist eines der wichtigsten politischen Rechte: Mit ihrer Stimme bestimmen die Bürgerinnen und Bürger, wer sie im Parlament vertritt. In Deutschland ist die Teilnahme freiwillig – zur freien Wahl gehört auch die Freiheit, nicht zu wählen. Trotzdem rufen Politik und Gesellschaft dazu auf, wählen zu gehen, denn eine hohe Wahlbeteiligung stärkt die Demokratie. Bei der Bundestagswahl 2025 lag sie bei über 82 Prozent.",
+    "otherOptions": "Eine Pflicht oder einen Zwang zur Wahl gibt es in Deutschland nicht – anders als zum Beispiel in Belgien oder Australien. Eine „Last“ ist die Wahl auch nicht; sie ist eine Möglichkeit, mitzubestimmen.",
+    "memoryTip": "Wählen ist ein Recht, keine Pflicht.",
+    "legalBasis": [
+      {
+        "label": "Art. 38 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_38.html"
+      }
+    ]
+  },
+  "115": {
+    "summary": "„Aktives Wahlrecht“ bedeutet: Man kann wählen.",
+    "whyCorrect": "Wer das aktive Wahlrecht hat, darf bei einer Wahl seine Stimme abgeben.",
+    "background": "Man unterscheidet zwei Seiten des Wahlrechts. Das aktive Wahlrecht ist das Recht, zu wählen – also seine Stimme abzugeben. Das passive Wahlrecht ist das Recht, gewählt zu werden – also als Kandidatin oder Kandidat anzutreten. Für den Bundestag haben deutsche Staatsangehörige ab 18 Jahren beide Rechte.",
+    "otherOptions": "„Man kann gewählt werden“ beschreibt das passive Wahlrecht. Wählen gehen muss man in Deutschland nicht – es gibt keine Wahlpflicht. Und zur Auszählung der Stimmen muss niemand gehen; sie ist öffentlich, man darf also zuschauen.",
+    "memoryTip": "Aktiv = selbst wählen. Passiv = gewählt werden.",
+    "legalBasis": [
+      {
+        "label": "Art. 38 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_38.html"
+      }
+    ]
+  },
+  "116": {
+    "summary": "Wenn man bei einer Bundestagswahl wählen darf, hat man das aktive Wahlrecht.",
+    "whyCorrect": "Das aktive Wahlrecht ist das Recht, bei einer Wahl seine Stimme abzugeben.",
+    "background": "Diese Frage hängt eng mit Frage 115 zusammen. Das aktive Wahlrecht für den Bundestag haben deutsche Staatsangehörige ab 18 Jahren. Mit der Einbürgerung bekommt man dieses Recht – und auch das passive Wahlrecht, also die Möglichkeit, selbst für ein Parlament zu kandidieren.",
+    "otherOptions": "Eine Wahlkampagne oder ein Wahlkampf ist die Werbung der Parteien vor einer Wahl, mit Plakaten, Reden und Debatten. Das Wahlverfahren ist der Ablauf der Wahl. Keiner dieser Begriffe beschreibt das Recht, wählen zu dürfen.",
+    "memoryTip": "Wählen dürfen = aktives Wahlrecht.",
+    "legalBasis": [
+      {
+        "label": "Art. 38 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_38.html"
+      }
+    ]
+  },
+  "117": {
+    "summary": "Parteien brauchen mindestens 5 Prozent der Zweitstimmen, um in den Bundestag zu kommen.",
+    "whyCorrect": "Das ist die sogenannte 5-Prozent-Hürde (Sperrklausel).",
+    "background": "Die 5-Prozent-Hürde soll verhindern, dass sehr viele kleine Parteien im Parlament sitzen und die Regierungsbildung schwierig wird – eine Lehre aus der Weimarer Republik. Es gibt Ausnahmen: Eine Partei, die mindestens drei Wahlkreise direkt gewinnt, kommt ebenfalls in den Bundestag (Grundmandatsklausel). Parteien nationaler Minderheiten wie der SSW der dänischen Minderheit sind von der Hürde befreit.",
+    "otherOptions": "3, 4 oder 6 Prozent sind falsch. Im Jahr 2025 scheiterten zum Beispiel FDP und BSW knapp unter 5 Prozent und sind deshalb nicht im Bundestag.",
+    "memoryTip": "Fünf Prozent – fünf Finger einer Hand.",
+    "legalBasis": []
+  },
+  "118": {
+    "summary": "Bei den jüdischen Makkabi-Sportvereinen dürfen alle Menschen Mitglied werden.",
+    "whyCorrect": "Makkabi-Vereine stehen allen offen – unabhängig von Religion, Herkunft oder Staatsangehörigkeit.",
+    "background": "Makkabi Deutschland ist der Dachverband der jüdischen Turn- und Sportvereine in Deutschland mit rund 40 Ortsvereinen. Jüdische Sportvereine gab es schon vor 1933; im Nationalsozialismus wurden sie verboten. 1965 wurde Makkabi Deutschland neu gegründet. Heute sind viele Mitglieder nicht jüdisch – die Vereine verstehen sich als offene Orte der Begegnung und setzen sich gegen Antisemitismus und Rassismus im Sport ein.",
+    "otherOptions": "Makkabi-Vereine sind nicht nur für Deutsche, nicht nur für Israelis und nicht nur für religiöse Menschen. Wie in jedem Sportverein kann jeder mitmachen, der Lust auf Sport und Gemeinschaft hat.",
+    "memoryTip": "Makkabi = offen für alle.",
+    "legalBasis": []
+  },
+  "119": {
+    "summary": "Freie Wahl heißt: Jede Person kann ohne Zwang entscheiden, ob und wen sie wählt.",
+    "whyCorrect": "Niemand darf Wählerinnen und Wähler unter Druck setzen oder zu einer Stimmabgabe zwingen.",
+    "background": "Die Freiheit der Wahl ist einer der fünf Wahlgrundsätze im Grundgesetz (Artikel 38). Sie schützt vor Druck durch den Staat, durch Arbeitgeber, durch die Familie oder durch andere Menschen. Frei bedeutet auch: Man darf ungültig wählen oder gar nicht wählen gehen. Diese Frage ist eng verwandt mit Frage 5.",
+    "otherOptions": "Verurteilte Straftäter dürfen in der Regel wählen; nur in seltenen Fällen kann ein Gericht das Wahlrecht entziehen. Da Wahlen sonntags stattfinden, braucht man meist nicht frei vom Arbeitgeber. Und das Wahllokal kann man nicht frei aussuchen – es richtet sich nach dem Wohnort; mit einem Wahlschein kann man aber per Brief oder in einem anderen Wahllokal des Wahlkreises wählen.",
+    "memoryTip": "Frei = ohne Zwang – ob und wen.",
+    "legalBasis": [
+      {
+        "label": "Art. 38 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_38.html"
+      }
+    ]
+  },
+  "120": {
+    "summary": "Das Wahlsystem in Deutschland ist ein Mehrheits- und Verhältniswahlrecht.",
+    "whyCorrect": "Mit der Erststimme wird nach Mehrheitswahl ein Wahlkreiskandidat gewählt, mit der Zweitstimme nach Verhältniswahl eine Partei.",
+    "background": "Das deutsche System heißt personalisierte Verhältniswahl. Die Zweitstimmen bestimmen, wie viele Sitze jede Partei im Bundestag bekommt – das ist der Verhältniswahl-Teil. Mit der Erststimme wählt man in jedem der 299 Wahlkreise eine Person; wer die meisten Stimmen hat, gewinnt den Wahlkreis – das ist der Mehrheitswahl-Teil. So hat jede Region eigene Abgeordnete, und trotzdem entspricht die Sitzverteilung dem Stimmenanteil der Parteien.",
+    "otherOptions": "Beim Zensuswahlrecht hängt das Wahlrecht von Besitz oder Steuern ab, beim Dreiklassenwahlrecht (in Preußen bis 1918) hatten Reiche mehr Gewicht. Ein Männerwahlrecht gibt es nicht mehr: Frauen dürfen in Deutschland seit 1918 wählen.",
+    "memoryTip": "Erststimme = Mehrheitswahl (Person), Zweitstimme = Verhältniswahl (Partei).",
+    "legalBasis": [
+      {
+        "label": "Art. 38 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_38.html"
+      }
+    ]
+  },
+  "121": {
+    "summary": "Der Mindestanteil an Stimmen, den eine Partei für den Bundestag braucht, heißt 5-Prozent-Hürde.",
+    "whyCorrect": "Eine Partei muss mindestens fünf Prozent der Zweitstimmen bekommen.",
+    "background": "Die 5-Prozent-Hürde gibt es bei der Bundestagswahl und bei den meisten Landtagswahlen. Sie soll verhindern, dass das Parlament in viele kleine Gruppen zersplittert, wie es in der Weimarer Republik der Fall war. Kritiker sagen, dass dadurch viele Stimmen „verloren“ gehen. Das Bundesverfassungsgericht hält die Hürde für den Bundestag aber für zulässig, weil sie stabile Regierungen ermöglicht. Bei der Europawahl gibt es in Deutschland derzeit keine Sperrklausel.",
+    "otherOptions": "„Zulassungsgrenze“, „Basiswert“ und „Richtlinie“ sind keine Fachbegriffe für diese Regel. Eine Richtlinie ist zum Beispiel ein Rechtsakt der EU.",
+    "memoryTip": "Mindestanteil = 5-Prozent-Hürde.",
+    "legalBasis": []
+  },
+  "122": {
+    "summary": "Wahlen in Deutschland sind frei, gleich und geheim.",
+    "whyCorrect": "Dazu kommen noch „allgemein“ und „unmittelbar“ – zusammen die fünf Wahlgrundsätze aus Artikel 38.",
+    "background": "Die fünf Wahlgrundsätze lauten: allgemein (alle Wahlberechtigten dürfen wählen), unmittelbar (die Stimme geht direkt an Kandidaten oder Parteien, ohne Wahlmänner), frei (ohne Druck oder Zwang), gleich (jede Stimme zählt gleich viel) und geheim (niemand erfährt, wen man gewählt hat). In dieser Antwort sind drei davon genannt.",
+    "otherOptions": "„Offen“ widerspricht dem Grundsatz der geheimen Wahl. „Geschlossen“ und „sicher“ sind keine Wahlgrundsätze, und „freiwillig“ steht so nicht im Grundgesetz – auch wenn es keine Wahlpflicht gibt.",
+    "memoryTip": "Allgemein, unmittelbar, frei, gleich, geheim – „AUFGG“.",
+    "legalBasis": [
+      {
+        "label": "Art. 38 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_38.html"
+      }
+    ]
+  },
+  "123": {
+    "summary": "Die 5-Prozent-Hürde ist der Mindestanteil an Wählerstimmen, den eine Partei braucht, um ins Parlament zu kommen.",
+    "whyCorrect": "Bei der Bundestagswahl sind das fünf Prozent der Zweitstimmen.",
+    "background": "Eine Partei, die weniger als fünf Prozent der Zweitstimmen bekommt, erhält grundsätzlich keine Sitze im Bundestag. Ihre Stimmen werden bei der Sitzverteilung nicht berücksichtigt. Ausnahmen gelten für Parteien, die mindestens drei Wahlkreise direkt gewinnen, und für Parteien nationaler Minderheiten. Die Fragen 117 und 121 behandeln dieselbe Regel.",
+    "otherOptions": "Die 5-Prozent-Hürde hat nichts mit Abstimmungen im Bundestag oder Bundesrat zu tun und ist auch keine Anwesenheitskontrolle. Sie gilt bei der Wahl, nicht danach im Parlament.",
+    "memoryTip": "5-%-Hürde = Eintrittskarte ins Parlament.",
+    "legalBasis": []
+  },
+  "124": {
+    "summary": "Die Bundestagswahl ist die Wahl des Parlaments für Deutschland.",
+    "whyCorrect": "Bei der Bundestagswahl wählen die Bürgerinnen und Bürger die Abgeordneten des Deutschen Bundestages.",
+    "background": "Der Bundestag ist das Parlament der Bundesrepublik. Bei der Bundestagswahl werden seine Abgeordneten für vier Jahre gewählt, seit 2025 sind es 630. Der neu gewählte Bundestag wählt dann den Bundeskanzler oder die Bundeskanzlerin. Viele Menschen haben bei der Wahl zwar schon den Kanzlerkandidaten im Kopf – auf dem Stimmzettel stehen aber nur Wahlkreiskandidaten und Parteien.",
+    "otherOptions": "Den Kanzler wählt der Bundestag, den Bundespräsidenten die Bundesversammlung. Die Parlamente der Länder werden bei den Landtagswahlen gewählt.",
+    "memoryTip": "Bundestagswahl = Wahl des Bundestages (Parlament).",
+    "legalBasis": [
+      {
+        "label": "Art. 38 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_38.html"
+      }
+    ]
+  },
+  "125": {
+    "summary": "Regelmäßige Wahlen ermöglichen einen Regierungswechsel nach dem Willen der Wählermehrheit.",
+    "whyCorrect": "Wenn die Mehrheit mit der Regierung unzufrieden ist, kann sie bei der nächsten Wahl eine andere wählen.",
+    "background": "In einer Demokratie wird Macht nur auf Zeit vergeben. Durch regelmäßige Wahlen können die Bürgerinnen und Bürger die Regierung bestätigen oder abwählen – friedlich und ohne Gewalt. Das zwingt die Politik, sich um die Zustimmung der Menschen zu bemühen und Rechenschaft abzulegen. In Deutschland hat es seit 1949 viele solcher friedlichen Machtwechsel gegeben.",
+    "otherOptions": "Wahlen zwingen niemanden, seine Stimme abzugeben – es gibt keine Wahlpflicht. Sie sollen nicht bestehende Gesetze festhalten, sondern gerade Veränderungen möglich machen. Und Wahlen geben nicht einer bestimmten Gruppe mehr Macht: Jede Stimme zählt gleich, egal ob arm oder reich.",
+    "memoryTip": "Wahl = friedlicher Regierungswechsel möglich.",
+    "legalBasis": [
+      {
+        "label": "Art. 20 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_20.html"
+      }
+    ]
   }
 }
