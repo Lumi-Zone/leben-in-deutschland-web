@@ -2451,5 +2451,271 @@
     "otherOptions": "The Czech Republic has only a small German minority. Some Germans do live in Norway and Spain, for example retirees on Mallorca, but there is no large German-speaking population there.",
     "memoryTip": "German as an official language: Germany, Austria, Switzerland, Liechtenstein, Luxembourg, Belgium.",
     "legalBasis": []
+  },
+  "226": {
+    "summary": "The flag of the European Union is image 2.",
+    "whyCorrect": "It shows a circle of twelve golden stars on a blue background.",
+    "background": "The twelve stars do not represent the number of member states but unity, perfection and harmony – which is why the number always stays the same, even when new countries join. The flag was introduced by the Council of Europe in 1955 and has also been used by the European Communities since 1986 and today by the EU. In Germany it often flies next to the federal flag on public buildings.",
+    "otherOptions": "Image 1 is the flag of the USA with stars and stripes. Image 3 is the flag of the United Nations with the world map. Image 4 is the flag of the Commonwealth of Independent States (CIS), an association of several former Soviet republics.",
+    "memoryTip": "EU = twelve golden stars in a circle on blue.",
+    "legalBasis": []
+  },
+  "227": {
+    "summary": "Denmark is a neighbouring country of Germany.",
+    "whyCorrect": "Denmark shares a border with Germany.",
+    "background": "Denmark is Germany’s only neighbour to the north. The border is in Schleswig-Holstein, for example near Flensburg. Minorities live on both sides: Danes in Germany and Germans in Denmark. The party of the Danish minority, the SSW, is exempt from the 5 percent threshold. In total, Germany has nine neighbouring countries.",
+    "otherOptions": "Finland, Norway and Sweden are also in the north, but on the other side of the Baltic Sea – they have no land border with Germany.",
+    "memoryTip": "Only one neighbour to the north: Denmark.",
+    "legalBasis": []
+  },
+  "228": {
+    "summary": "The GDR’s accession to the Federal Republic in 1990 is called German reunification.",
+    "whyCorrect": "After more than 40 years of division, the two German states became one state again on 3 October 1990.",
+    "background": "The term reunification describes the coming together of what had been separated after the Second World War. It was made possible by the Peaceful Revolution in the GDR, the fall of the Wall and the consent of the four victorious powers in the Two Plus Four Treaty. People also speak of “German Unity”. That is why 3 October is a national holiday.",
+    "otherOptions": "NATO’s eastward enlargement began in 1999, when former Eastern Bloc states such as Poland, the Czech Republic and Hungary joined NATO. The EU’s eastward enlargement took place in 2004, when ten states – most of them from Central and Eastern Europe – joined the EU. The European Community was the forerunner of the EU.",
+    "memoryTip": "1990: German reunification (German Unity).",
+    "legalBasis": []
+  },
+  "229": {
+    "summary": "Luxembourg is a neighbouring country of Germany.",
+    "whyCorrect": "Luxembourg shares a border with Germany.",
+    "background": "Luxembourg borders Rhineland-Palatinate and Saarland in the west. The small Grand Duchy is one of the founding states of the European Communities, and the city of Luxembourg hosts important EU institutions such as the Court of Justice. German is an official language there alongside Luxembourgish and French. Many people commute daily from Germany to work in Luxembourg.",
+    "otherOptions": "Spain lies in south-western Europe beyond France, Bulgaria in the south-east and Norway in the north beyond the Baltic Sea – none of them borders Germany.",
+    "memoryTip": "In the west: France, Luxembourg, Belgium, the Netherlands.",
+    "legalBasis": []
+  },
+  "230": {
+    "summary": "The European Parliament is elected every five years.",
+    "whyCorrect": "The last European election was in June 2024; the next is in 2029.",
+    "background": "In the European election, citizens of all 27 EU states elect their members of the European Parliament. It currently has 720 members in total; Germany, with 96, has the most. In Germany, 16-year-olds have been able to vote since 2024, as can all EU citizens living here. Together with the Council of the EU, the Parliament adopts European laws and the EU budget.",
+    "otherOptions": "Six, seven or eight years are wrong. Five years also applies to most state parliaments and to the Federal President’s term; the Bundestag is elected every four years.",
+    "memoryTip": "European Parliament: every 5 years (2024, 2029 …).",
+    "legalBasis": []
+  },
+  "231": {
+    "summary": "“European integration” means the coming together of European states to form the EU.",
+    "whyCorrect": "It refers to the gradual process in which European states cooperate ever more closely.",
+    "background": "European integration began after the Second World War with the aim of securing peace. In 1951, six states founded the Coal and Steel Community, and in 1957 the European Economic Community. Later came the single market, the Schengen Area without border checks and the euro. At the same time, the community grew from six to 27 members today. People speak of “deepening” (more cooperation) and “widening” (more members).",
+    "otherOptions": "Immigrants from America, an immigration stop or European emigrants in the USA have nothing to do with the term. Here “integration” means states growing together, not individual people.",
+    "memoryTip": "Integration = states grow together → EU.",
+    "legalBasis": [
+      {
+        "label": "Art. 23 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_23.html"
+      }
+    ]
+  },
+  "232": {
+    "summary": "In the European election, the members of the European Parliament are elected.",
+    "whyCorrect": "The European Parliament is the only EU institution elected directly by citizens.",
+    "background": "Members of the European Parliament work together in political groups formed by political orientation, not by country. Together with the Council of the EU (the governments of the member states), the Parliament adopts laws, decides on the budget and confirms the European Commission. In Germany there is no 5 percent threshold for the European election, so smaller parties are also represented.",
+    "otherOptions": "The European Commission is not elected directly: the governments propose it, and Parliament must approve it. The EU states decide together on the accession of new countries, not the voters. A European constitution was rejected in referendums in 2005; the Treaty of Lisbon applies instead.",
+    "memoryTip": "European election = election of the European Parliament.",
+    "legalBasis": []
+  },
+  "233": {
+    "summary": "The Czech Republic is a neighbouring country of Germany.",
+    "whyCorrect": "The Czech Republic shares a border with Germany.",
+    "background": "The Czech Republic borders Bavaria and Saxony in the south-east; the border runs through the Ore Mountains and the Bavarian Forest, among other places. The capital, Prague, is about two hours from Dresden. The Czech Republic has been an EU member since 2004 and belongs to the Schengen Area. In the past there was a large German-speaking population in Bohemia, which was expelled after 1945.",
+    "otherOptions": "Bulgaria, Greece and Portugal lie further away in southern and south-eastern Europe and have no border with Germany.",
+    "memoryTip": "In the east: Poland and the Czech Republic.",
+    "legalBasis": []
+  },
+  "234": {
+    "summary": "Strasbourg is one of the seats of the European Parliament.",
+    "whyCorrect": "Most plenary sessions of the European Parliament take place in Strasbourg, France.",
+    "background": "The European Parliament has three places of work. Its official seat is Strasbourg, where Parliament meets twelve times a year for plenary sessions lasting several days. Committees and political groups meet in Brussels, where there are also additional plenary sessions. The General Secretariat, i.e. the administration, works in Luxembourg. Strasbourg is in Alsace, right on the German border – a symbol of Franco-German reconciliation.",
+    "otherOptions": "London is the capital of the United Kingdom, which left the EU in 2020. Paris and Berlin are capitals of member states but not seats of the European Parliament.",
+    "memoryTip": "European Parliament: Strasbourg (plenary), Brussels (committees), Luxembourg (administration).",
+    "legalBasis": []
+  },
+  "235": {
+    "summary": "The meeting at Verdun shows the EU’s aim of peace and security among its member states.",
+    "whyCorrect": "Former wartime enemies jointly commemorate the dead and show that enemies have become partners.",
+    "background": "On 22 September 1984, Federal Chancellor Helmut Kohl and President François Mitterrand stood in front of a military cemetery near Verdun and held hands. Hundreds of thousands of German and French soldiers had died in the Battle of Verdun in 1916. The image became a symbol of Franco-German friendship, which is the engine of European unification. The EU was created precisely to make war between its members impossible; in 2012 it received the Nobel Peace Prize for this.",
+    "otherOptions": "England does not appear in this picture – it is about Germany and France. Freedom of travel and common public holidays are not the subject of a commemoration of war dead.",
+    "memoryTip": "Verdun 1984: Kohl + Mitterrand hand in hand = peace in Europe.",
+    "legalBasis": []
+  },
+  "236": {
+    "summary": "The EU has 27 member states today.",
+    "whyCorrect": "There have been 27 since the United Kingdom left on 31 January 2020.",
+    "background": "The European Community began in 1957 with six states. More joined over time; the biggest enlargement was in 2004 with ten new countries, and the most recent member was Croatia in 2013 as the 28th state. With Brexit, the United Kingdom became the first country to leave the EU. Several countries, such as those in the Western Balkans as well as Ukraine and Moldova, are candidates for membership.",
+    "otherOptions": "21, 23 and 25 are wrong. The EU had 25 members from 2004 to 2007, before Bulgaria and Romania joined.",
+    "memoryTip": "EU today: 27 (after Brexit).",
+    "legalBasis": []
+  },
+  "237": {
+    "summary": "The Treaties of Rome founded the European Economic Community (EEC).",
+    "whyCorrect": "The treaties were signed in Rome on 25 March 1957 and are regarded as the birth of today’s EU.",
+    "background": "In 1957, Belgium, the Federal Republic of Germany, France, Italy, Luxembourg and the Netherlands signed two treaties in Rome: one founded the European Economic Community with the goal of a common market, the other the European Atomic Energy Community (Euratom). The treaties entered into force in 1958. Customs duties between the members were gradually abolished. In 2007, the EU celebrated the 50th anniversary with the “Berlin Declaration”.",
+    "otherOptions": "The Federal Republic joined NATO in 1955 – this was arranged by the Paris Agreements. Reparations and the Oder–Neisse border were not part of the Treaties of Rome; united Germany finally recognised the Oder–Neisse border in 1990.",
+    "memoryTip": "Rome 1957 = EEC = the beginning of the EU.",
+    "legalBasis": []
+  },
+  "238": {
+    "summary": "The European Parliament works in Strasbourg, Luxembourg and Brussels.",
+    "whyCorrect": "Strasbourg is the official seat for plenary sessions, Brussels the place for committees and Luxembourg the seat of the administration.",
+    "background": "The fact that Parliament works in three places is set out in the EU treaties and is a compromise between the member states. For the members, this means a lot of travel: every month, Parliament moves from Brussels to Strasbourg for a session week. This is repeatedly debated, but any change would have to be agreed unanimously by all member states. This question is closely related to question 234.",
+    "otherOptions": "Paris, London, The Hague, Rome, Bern, Vienna, Bonn, Zurich and Milan are not places of work of the European Parliament. Bern and Zurich are in Switzerland, which is not an EU member at all; London is in the United Kingdom, which has left the EU.",
+    "memoryTip": "Three places: Strasbourg, Brussels, Luxembourg.",
+    "legalBasis": []
+  },
+  "239": {
+    "summary": "The Federal Republic joined other states to form the European Economic Community through the Treaties of Rome.",
+    "whyCorrect": "The Treaties of Rome of 1957 founded the EEC and Euratom.",
+    "background": "The Treaties of Rome were a major step in European unification: instead of only cooperating on coal and steel, the six founding states created a common market for all goods. The EEC later became the European Community (EC) and in 1993, with the Maastricht Treaty, the European Union. Federal Chancellor Konrad Adenauer signed the treaties for the Federal Republic. See also question 237.",
+    "otherOptions": "“Paris Treaties” is a trap: the Coal and Steel Community was founded in Paris in 1951, and the Paris Agreements of 1954 arranged the Federal Republic’s accession to NATO – but the EEC was founded in Rome. “Hamburg” and “London Treaties” have nothing to do with the EEC.",
+    "memoryTip": "EEC = Rome (1957). Coal and steel = Paris (1951).",
+    "legalBasis": []
+  },
+  "240": {
+    "summary": "Cash payments in euros have been made in Germany since 2002.",
+    "whyCorrect": "On 1 January 2002, euro banknotes and coins were introduced and replaced the Deutsche Mark.",
+    "background": "As book money, for example for bank transfers, the euro had already existed since 1 January 1999. Cash followed three years later. The exchange rate was fixed: 1 euro equalled 1.95583 Deutsche Marks. That is why many people kept “dividing by two” for a long time. Deutsche Mark notes and coins can still be exchanged at the Deutsche Bundesbank with no time limit.",
+    "otherOptions": "In 1995 and 1998 the euro did not yet exist as cash; in 1995, however, the name “euro” was decided. By 2005, people had already been paying with euros for three years.",
+    "memoryTip": "1999 book money – 2002 cash.",
+    "legalBasis": []
+  },
+  "241": {
+    "summary": "To receive parental allowance (Elterngeld), Ms Seger must submit an application to the parental allowance office.",
+    "whyCorrect": "Parental allowance is only paid on application; the parental allowance office of the federal state or municipality is responsible.",
+    "background": "Parental allowance replaces part of income when parents work less or not at all after the birth in order to look after their child. It usually amounts to 65 to 67 percent of previous net income, at least 300 and at most 1,800 euros a month. Parents can receive it for up to 14 months together. You apply after the birth, in many states also online. Important: parental allowance is only paid retroactively for three months – so you should not apply too late.",
+    "otherOptions": "During maternity protection, the health insurance fund pays maternity benefit, but not parental allowance. Parental allowance is not paid automatically. And the employment office does not have to give permission – parental leave is requested from the employer.",
+    "memoryTip": "Parental allowance = apply to the parental allowance office, not too late.",
+    "legalBasis": [
+      {
+        "label": "Sec. 7 Parental Allowance Act (BEEG)",
+        "url": "https://www.gesetze-im-internet.de/beeg/__7.html"
+      }
+    ]
+  },
+  "242": {
+    "summary": "Whether a child goes to nursery (Kindergarten) is decided by the parents or legal guardians.",
+    "whyCorrect": "In Germany, nursery is generally voluntary – unlike school.",
+    "background": "Since 2013, every child from their first birthday has had a legal right to a place in a day-care centre or with a childminder. But whether the family uses this place is up to the parents. Many parents send their children to nursery because they play with other children there, learn German and are prepared for school. Costs vary from state to state; in some states nursery is entirely or partly free of charge.",
+    "otherOptions": "The state and the federal states ensure there are enough places, but generally do not make attendance compulsory. Schools are only responsible once compulsory schooling begins.",
+    "memoryTip": "School = compulsory; nursery = the parents’ decision.",
+    "legalBasis": [
+      {
+        "label": "Art. 6 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_6.html"
+      }
+    ]
+  },
+  "243": {
+    "summary": "A street demonstration must be registered in advance.",
+    "whyCorrect": "Open-air assemblies must usually be registered with the competent authority at least 48 hours before they are announced.",
+    "background": "Article 8 of the Basic Law guarantees all Germans the right to assemble peacefully and unarmed – “without prior notification or permission”. For open-air assemblies, however, the law can require registration, and it does. Important: registration is not a request for permission. The authority mainly has to manage traffic and ensure safety. A demonstration can only be banned in exceptional cases, for example if there is an immediate danger to public safety. Spontaneous demonstrations are also possible.",
+    "otherOptions": "You cannot demonstrate “anywhere at any time” without doing anything – on the street, registration is needed. Demonstrations are not forbidden in Germany; they are a fundamental right. And you do not have to found an association: anyone may register a demonstration.",
+    "memoryTip": "Demonstrating is a right – but outdoors, register first.",
+    "legalBasis": [
+      {
+        "label": "Art. 8 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_8.html"
+      },
+      {
+        "label": "Sec. 14 Assembly Act",
+        "url": "https://www.gesetze-im-internet.de/versammlg/__14.html"
+      }
+    ]
+  },
+  "244": {
+    "summary": "To start studying at a university, you normally need the Abitur.",
+    "whyCorrect": "The Abitur is the general higher education entrance qualification and entitles you to study at all universities.",
+    "background": "The Abitur is usually taken after 12 or 13 years of school at a grammar school (Gymnasium) or comprehensive school. But there are other routes to higher education: with the Fachhochschulreife you can study at universities of applied sciences, and people with vocational qualifications – for example a master craftsman’s certificate or after training and work experience – can also begin a degree. Foreign school qualifications are assessed and may be recognised.",
+    "otherOptions": "A Diplom is a university degree you receive at the end of your studies, not before. Prokura is a commercial power of attorney for company employees. The journeyman’s examination (Gesellenprüfung) completes an apprenticeship in a skilled trade.",
+    "memoryTip": "Abitur → university.",
+    "legalBasis": []
+  },
+  "245": {
+    "summary": "Anne (13) and Tim (25) may not live together as a couple.",
+    "whyCorrect": "Anne is a child; sexual acts with children under 14 are strictly forbidden in Germany.",
+    "background": "Criminal law gives special protection to children under 14: sexual acts with them are always a criminal offence, even if the child seems to agree (Section 176 of the Criminal Code). A child cannot enter into a romantic relationship with an adult. Young people between 14 and 18 are also specially protected by law. Since 2017, people in Germany may generally only marry from the age of 18.",
+    "otherOptions": "Hans and Marie are both adults. Tom and Klaus are a same-sex couple – that is allowed, and since 2017 they can also marry. Sofie and Lisa are adults too. An age difference between adults does not matter.",
+    "memoryTip": "Adults may live together freely – children under 14 are protected.",
+    "legalBasis": [
+      {
+        "label": "§ 176 StGB (Criminal Code)",
+        "url": "https://www.gesetze-im-internet.de/stgb/__176.html"
+      }
+    ]
+  },
+  "246": {
+    "summary": "In Germany you come of age at 18.",
+    "whyCorrect": "At 18 you have full legal capacity and all the rights and duties of an adult.",
+    "background": "Being of age means, for example, that you can sign contracts, rent a flat, marry, drive a car alone with a licence and vote in federal elections without your parents’ consent. But you are also fully responsible yourself, for instance for debts. The age of majority in Germany has been 18 since 1975; before that it was 21. Young people between 14 and 18 already have some rights, for example choosing their religion from 14.",
+    "otherOptions": "16 is, for example, the age for a moped licence or, in some states, for local and state elections, but not the age of majority. 19 has no special role, and 21 was the age of majority only until 1975.",
+    "memoryTip": "18 = of age.",
+    "legalBasis": [
+      {
+        "label": "Sec. 2 Civil Code (BGB)",
+        "url": "https://www.gesetze-im-internet.de/bgb/__2.html"
+      }
+    ]
+  },
+  "247": {
+    "summary": "The special protection for women shortly before and after giving birth is called maternity protection (Mutterschutz).",
+    "whyCorrect": "The Maternity Protection Act protects the health of mother and child and secures the job.",
+    "background": "The maternity protection period begins six weeks before the expected due date and usually ends eight weeks after the birth, or twelve weeks after premature or multiple births. Before the birth, the woman may work if she expressly wishes to; after the birth there is a ban on employment. During this time she receives maternity benefit from the health insurance fund and a supplement from her employer. In addition, she generally may not be dismissed during pregnancy and up to four months after the birth.",
+    "otherOptions": "Parental leave (Elternzeit) is time off work for mothers and fathers until the child’s third birthday. Birth preparation is a course for expectant parents, and the “Wochenbett” is the weeks of physical recovery after the birth – neither is legal protection.",
+    "memoryTip": "Maternity protection: 6 weeks before, 8 weeks after the birth.",
+    "legalBasis": [
+      {
+        "label": "Sec. 3 Maternity Protection Act",
+        "url": "https://www.gesetze-im-internet.de/muschg_2018/__3.html"
+      }
+    ]
+  },
+  "248": {
+    "summary": "In Germany, raising children is primarily the task of the parents.",
+    "whyCorrect": "Article 6 of the Basic Law calls the care and upbringing of children “the natural right of parents and a duty primarily incumbent upon them”.",
+    "background": "Parents decide how to raise their children – for example regarding religion, nursery or leisure. But they are also responsible for their children’s well-being. The state watches over this to make sure the child’s welfare is not at risk: in cases of neglect or violence, the youth welfare office can intervene. Since 2000, children have had an explicit right to an upbringing free of violence. Schools have their own educational mission but do not replace parents.",
+    "otherOptions": "The state only has a guardian role: it intervenes when the child’s welfare is at risk but does not raise children in place of the parents. Grandparents can help but do not have the main responsibility. Schools teach and help with upbringing, but raising children remains primarily the parents’ job.",
+    "memoryTip": "Upbringing: parents first – the state only watches over it.",
+    "legalBasis": [
+      {
+        "label": "Art. 6 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_6.html"
+      },
+      {
+        "label": "Sec. 1631 Civil Code (BGB)",
+        "url": "https://www.gesetze-im-internet.de/bgb/__1631.html"
+      }
+    ]
+  },
+  "249": {
+    "summary": "In Germany, raising children is primarily the task of the parents.",
+    "whyCorrect": "Article 6 of the Basic Law calls the care and upbringing of children “the natural right of parents and a duty primarily incumbent upon them”.",
+    "background": "Parents decide how to raise their children – for example regarding religion, nursery or leisure. But they are also responsible for their children’s well-being. The state watches over this to make sure the child’s welfare is not at risk: in cases of neglect or violence, the youth welfare office can intervene. Since 2000, children have had an explicit right to an upbringing free of violence. Schools have their own educational mission but do not replace parents. This question is almost the same as question 248.",
+    "otherOptions": "The state, relatives and schools support parents but are not mainly responsible. The state only intervenes when the child’s welfare is at risk.",
+    "memoryTip": "Upbringing: parents first – the state only watches over it.",
+    "legalBasis": [
+      {
+        "label": "Art. 6 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_6.html"
+      },
+      {
+        "label": "Sec. 1631 Civil Code (BGB)",
+        "url": "https://www.gesetze-im-internet.de/bgb/__1631.html"
+      }
+    ]
+  },
+  "250": {
+    "summary": "You have the best chance of a well-paid job if you are well educated and trained.",
+    "whyCorrect": "In Germany, qualifications such as vocational training, university studies and work experience count most.",
+    "background": "Germany has a special training system: dual vocational training, in which you work in a company while attending vocational school. There are also university degrees and further training, for example to become a master craftsman or technician. Well-trained people find work more easily and earn more on average. For immigrants it is worth having foreign qualifications recognised – advice is available, for example, through the portal “Recognition in Germany”.",
+    "otherOptions": "Religion, gender or party membership must play no role in hiring; discrimination is prohibited by the Basic Law and the General Equal Treatment Act. On average, women still even earn somewhat less than men.",
+    "memoryTip": "Education and training = better chances.",
+    "legalBasis": [
+      {
+        "label": "Art. 3 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_3.html"
+      },
+      {
+        "label": "Art. 12 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_12.html"
+      }
+    ]
   }
 }
