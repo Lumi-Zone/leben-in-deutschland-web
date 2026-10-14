@@ -16,7 +16,7 @@ Paylaşılacak ana kaynak sayfası:
 
 ## Kime yazılır (öncelik sırasıyla)
 
-1. **Volkshochschulen ve entegrasyon kursu sağlayıcıları** – özellikle sınavı da yapan VHS'ler (Berlin, Hamburg, Münih, Köln ve Frankfurt şehir rehberlerimizle doğrudan ilgili).
+1. **Volkshochschulen ve entegrasyon kursu sağlayıcıları** – özellikle sınavı da yapan VHS'ler (Berlin, Hamburg, Münih, Köln, Frankfurt ve Stuttgart şehir rehberlerimizle doğrudan ilgili).
 2. **Migrationsberatung für erwachsene Zuwanderer (MBE)** ve **Jugendmigrationsdienste (JMD)** – Caritas, Diakonie, AWO, DRK, Paritätischer gibi kuruluşlarda.
 3. **Belediyelerin uyum görevlileri** (Integrationsbeauftragte) ve vatandaşlık danışmanlığı yapan birimler.
 4. **Göçmen dernekleri ve topluluk grupları** (Facebook/WhatsApp grupları dahil – önce yönetici izni).
@@ -74,6 +74,7 @@ Stadtratgeber, die bereits online sind:
 - München: https://lid-einbuergerung.de/de/blog/einbuergerungstest-muenchen/
 - Köln: https://lid-einbuergerung.de/de/blog/einbuergerungstest-koeln/
 - Frankfurt am Main: https://lid-einbuergerung.de/de/blog/einbuergerungstest-frankfurt/
+- Stuttgart: https://lid-einbuergerung.de/de/blog/einbuergerungstest-stuttgart/
 
 ---
 

@@ -52,7 +52,7 @@ In der echten Prüfung kommen 3 landesbezogene Fragen vor. Sie gehören zu den 3
 Nein. Für die Prüfung reicht Ihr eigenes Bundesland. Die anderen Bundesländer sind für Ihre Prüfung normalerweise nicht nötig.
 
 ## Einbürgerungstest in Ihrer Stadt
-Konkrete Hinweise zu Prüfstellen, Anmeldung und zuständiger Behörde finden Sie für [Berlin](/de/blog/einbuergerungstest-berlin/), [Hamburg](/de/blog/einbuergerungstest-hamburg/), [München](/de/blog/einbuergerungstest-muenchen/), [Köln](/de/blog/einbuergerungstest-koeln/) und [Frankfurt am Main](/de/blog/einbuergerungstest-frankfurt/).
+Konkrete Hinweise zu Prüfstellen, Anmeldung und zuständiger Behörde finden Sie für [Berlin](/de/blog/einbuergerungstest-berlin/), [Hamburg](/de/blog/einbuergerungstest-hamburg/), [München](/de/blog/einbuergerungstest-muenchen/), [Köln](/de/blog/einbuergerungstest-koeln/), [Frankfurt am Main](/de/blog/einbuergerungstest-frankfurt/) und [Stuttgart](/de/blog/einbuergerungstest-stuttgart/).
 
 ## Nächster Schritt
 Lesen Sie auch **[Wie viele Fragen hat der Einbürgerungstest?](/de/blog/wie-viele-fragen-hat-der-einbuergerungstest/)** und **[Einbürgerungstest Themen 2026](/de/blog/wichtige-themengebiete/)**.
