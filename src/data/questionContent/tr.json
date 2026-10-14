@@ -2717,5 +2717,296 @@
         "url": "https://www.gesetze-im-internet.de/gg/art_12.html"
       }
     ]
+  },
+  "251": {
+    "summary": "Bir çocuğa vuran kişi bunun için cezalandırılabilir.",
+    "whyCorrect": "Almanya’da çocukların şiddetsiz bir şekilde yetiştirilme hakkı vardır; dövmek yasaktır.",
+    "background": "2000 yılından beri Medeni Kanun’da şöyle yazar: “Çocukların şiddetsiz bir yetiştirilme hakkı vardır. Bedensel cezalar, ruhsal yaralamalar ve diğer onur kırıcı önlemler yasaktır” (BGB § 1631). Bir çocuğa vuran kişi yaralama suçundan yargılanabilir. Bu ebeveynler için de geçerlidir. Gençlik dairesi müdahale edebilir ve aileyi destekleyebilir; bir çocuk tehlikedeyse onu geçici olarak koruma altına da alabilir.",
+    "otherOptions": "Çocuklara karşı şiddet ailenin özel meselesi değildir. Komşular, öğretmenler veya doktorlar endişelendiklerinde gençlik dairesine başvurabilir ve başvurmalıdır. Bunun için cezalandırılamayacağı doğru değildir.",
+    "memoryTip": "Çocuğa vurmak = yasak ve cezalandırılabilir.",
+    "legalBasis": [
+      {
+        "label": "Medeni Kanun (BGB) § 1631",
+        "url": "https://www.gesetze-im-internet.de/bgb/__1631.html"
+      },
+      {
+        "label": "Ceza Kanunu (StGB) § 223",
+        "url": "https://www.gesetze-im-internet.de/stgb/__223.html"
+      }
+    ]
+  },
+  "252": {
+    "summary": "Almanya’da aynı anda yalnızca bir kişiyle evli olunabilir.",
+    "whyCorrect": "Aynı anda iki kişiyle evli olmak (bigami) yasaktır ve suçtur.",
+    "background": "Alman evlilik hukuku yalnızca iki kişi arasındaki evliliği tanır. Zaten evli olup yeniden evlenen kişi Ceza Kanunu’nun 172. paragrafına göre suç işler; ikinci evlilik ayrıca iptal edilebilir. 2017’den beri iki erkek veya iki kadın da evlenebilir. Almanya yurt dışında yapılan çok eşli evlilikleri de kural olarak eşdeğer bir evlilik olarak tanımaz.",
+    "otherOptions": "Aynı anda birden fazla eş yasaktır. Boşandıktan sonra veya eş öldüğünde elbette yeniden evlenilebilir – bu kadınlar ve erkekler için aynı şekilde geçerlidir.",
+    "memoryTip": "Bir evlilik = iki kişi.",
+    "legalBasis": [
+      {
+        "label": "Ceza Kanunu (StGB) § 172",
+        "url": "https://www.gesetze-im-internet.de/stgb/__172.html"
+      }
+    ]
+  },
+  "253": {
+    "summary": "Taşındıktan sonra nüfus dairesine (Einwohnermeldeamt) kayıt yaptırmak gerekir.",
+    "whyCorrect": "Kayıt taşındıktan sonra iki hafta içinde yapılmalıdır; birçok şehirde bu daireye bugün Bürgeramt denir.",
+    "background": "Almanya’da kayıt zorunluluğu vardır: Yeni bir eve taşınan kişi iki hafta içinde kayıt dairesine kayıt yaptırmalıdır (Federal Kayıt Kanunu § 17). Bunun için kimlik ve ev sahibinden bir onay belgesi (Wohnungsgeberbestätigung) gerekir. Kayıttan sonra banka, işveren veya resmî kurumlar için çoğu zaman gereken bir kayıt belgesi (Meldebescheinigung) alınır. Kayıt yaptırmayan kişiye para cezası verilebilir. Birçok şehirde internetten randevu alınabilir.",
+    "otherOptions": "Standesamt (evlendirme ve nüfus olayları dairesi) doğumlardan, evliliklerden ve ölümlerden sorumludur. Ordnungsamt kamu düzeniyle, Gewerbeamt ise işyeri kaydıyla ilgilenir.",
+    "memoryTip": "Taşınma → iki hafta → nüfus dairesi (Bürgeramt).",
+    "legalBasis": [
+      {
+        "label": "Federal Kayıt Kanunu § 17",
+        "url": "https://www.gesetze-im-internet.de/bmg/__17.html"
+      }
+    ]
+  },
+  "254": {
+    "summary": "Ayrılık yılı şu demektir: Eşler en az bir yıl boyunca ayrı hayatlar sürer; ondan sonra boşanmak mümkündür.",
+    "whyCorrect": "Bir yıllık ayrılıktan sonra, iki eş de boşanmak istiyorsa yasa evliliğin bittiğini varsayar.",
+    "background": "Bir evlilik bitmişse boşanılabilir (BGB § 1565). Çiftlerin aceleci davranmaması için yasa kural olarak bir ayrılık yılı ister. Ayrı mutfak ve ayrı yatak varsa aynı evde de ayrı yaşanabilir. İki eş de boşanmayı kabul ederse bir yıl yeter; biri istemezse evlilik üç yıllık ayrılıktan sonra bitmiş sayılır. Sadece şiddet gibi özel ağır durumlarda daha erken boşanmak mümkündür. Boşanmaya aile mahkemesi karar verir.",
+    "otherOptions": "Dava sürecinin ne kadar süreceği duruma bağlıdır. Ne kadar süre evli kalındığının ayrılık yılıyla ilgisi yoktur. Çocuklarla görüşme hakkı bir yılla sınırlı değildir.",
+    "memoryTip": "Önce bir yıl ayrı yaşamak – sonra boşanma.",
+    "legalBasis": [
+      {
+        "label": "Medeni Kanun (BGB) § 1566",
+        "url": "https://www.gesetze-im-internet.de/bgb/__1566.html"
+      }
+    ]
+  },
+  "255": {
+    "summary": "Ebeveynler çocuk yetiştirme sorunlarında gençlik dairesinden (Jugendamt) yardım alabilir.",
+    "whyCorrect": "Gençlik dairesi ailelere ücretsiz danışmanlık verir ve çocuk yetiştirmedeki zorluklarda onları destekler.",
+    "background": "Her şehirde ve her ilçede bir gençlik dairesi vardır. Ebeveynlik danışmanlığı sunar, aile yardımına aracılık eder ve örneğin yalnız ebeveynleri veya krizdeki aileleri destekler. Danışmanlık ücretsiz ve gizlidir. Caritas, Diakonie veya AWO gibi yardım kuruluşlarının ebeveynlik danışma merkezleri de yardımcı olur. Gençlik dairesinin ayrıca, iyilikleri tehlikede olan çocukları koruma görevi vardır. Birçok ebeveyn gençlik dairesinden korkar – oysa en önemli görevi ailelere yardım etmektir.",
+    "otherOptions": "Ordnungsamt kamu düzeninden, okul dairesi (Schulamt) okulların denetiminden, sağlık dairesi ise sağlığın korunmasından ve hijyenden sorumludur. Çocuk yetiştirme sorularında doğru muhatap gençlik dairesidir (Jugendamt).",
+    "memoryTip": "Aile + çocuk yetiştirme = gençlik dairesi.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 6",
+        "url": "https://www.gesetze-im-internet.de/gg/art_6.html"
+      }
+    ]
+  },
+  "256": {
+    "summary": "Restoran açmak için yetkili makamdan bir lokanta izni (Gaststättenerlaubnis) gerekir.",
+    "whyCorrect": "İzni genellikle şehir veya belediye, örneğin Gewerbeamt ya da Ordnungsamt verir.",
+    "background": "Lokanta işleten kişi misafirlerden, komşulardan ve gıdalardan sorumludur. Bu yüzden makam önceden örneğin işletmecinin güvenilir olup olmadığını ve mekânın uygun olup olmadığını kontrol eder. Bunun yanında başka adımlar da vardır: işyerini kaydettirmek, gıdayla çalışan herkesin sağlık dairesinde bir bilgilendirme almasını sağlamak ve gıda denetiminin kontrol ettiği hijyen kurallarına uymak. Ayrıntılı kurallar eyaletten eyalete farklıdır.",
+    "otherOptions": "Polis restoranlar için izin vermez. Partilerin şirket izinleriyle ilgisi yoktur. Nüfus dairesi işyerinden değil, adres kaydından sorumludur.",
+    "memoryTip": "Restoran = lokanta izni + işyeri kaydı.",
+    "legalBasis": []
+  },
+  "257": {
+    "summary": "Yetişkin bir kadın Abitur’u bir akşam lisesinde (Abendgymnasium) sonradan alabilir.",
+    "whyCorrect": "Akşam liseleri, Abitur’u işlerinin yanında sonradan almak isteyen yetişkinler için okullardır.",
+    "background": "Akşam lisesinde dersler genellikle akşamları yapılır, böylece gündüz çalışmaya devam edilebilir. Tamamen okula odaklanmak isteyenler, derslerin gündüz yapıldığı bir “Kolleg”e gidebilir. Koşul genellikle tamamlanmış bir meslek eğitimi veya birkaç yıllık iş deneyimidir. Devlet akşam liseleri ve Kolleg’ler okul ücreti almaz ve belirli koşullarda BAföG desteği alınabilir. Yani daha yüksek bir okul diploması için hiçbir zaman geç değildir.",
+    "otherOptions": "Üniversitede veya özel üniversitede ancak Abitur’dan sonra okunur – Abitur orada alınamaz. Hauptschule Abitur’a değil, Hauptschule diplomasına götürür.",
+    "memoryTip": "Abitur’u sonradan almak: akşam lisesi (akşam) veya Kolleg (gündüz).",
+    "legalBasis": []
+  },
+  "258": {
+    "summary": "Gençlik dairesi dövülen veya aç bırakılan bir çocuğu aileden alabilir.",
+    "whyCorrect": "Bir çocuğun iyiliği acil olarak tehlikedeyse gençlik dairesi onu koruma altına alabilir.",
+    "background": "Gençlik dairesi önce ailelere, örneğin danışmanlıkla veya bir aile yardımcısıyla yardım etmelidir. Ama bir çocuk – örneğin şiddet, ihmal veya açlık nedeniyle – akut tehlikedeyse, onu geçici olarak koruma altına alabilir ve koruyucu bir aileye veya bir kuruma yerleştirebilir (Sosyal Kanun Kitabı VIII § 42). Velayetin daha uzun süreli kaldırılmasına ise aile mahkemesi karar verir. Zor durumdaki çocuklar ve gençler gençlik dairesine kendileri de başvurabilir.",
+    "otherOptions": "Çocuğun hangi okula gideceğine okul yasaları çerçevesinde ebeveynler karar verir. Çocuk parasını Federal İş Ajansı’nın Familienkasse’si öder. Çocuğun anaokuluna gidip gitmemesi isteğe bağlıdır – gençlik dairesi bunu denetlemez.",
+    "memoryTip": "Gençlik dairesi: yardım eder – acil durumda çocuğu korur.",
+    "legalBasis": [
+      {
+        "label": "Sosyal Kanun Kitabı VIII § 42",
+        "url": "https://www.gesetze-im-internet.de/sgb_8/__42.html"
+      }
+    ]
+  },
+  "259": {
+    "summary": "Meslek Bilgi Merkezi (BIZ), çıraklık yeri (Lehrstelle) aramada yardım eder.",
+    "whyCorrect": "İş ajansının BIZ’inde meslekler, meslek eğitimleri ve üniversite bölümleri hakkında ücretsiz bilgi alınabilir.",
+    "background": "Meslek Bilgi Merkezleri Almanya’nın her yerindeki iş ajanslarında bulunur. Orada yüzlerce meslek eğitimi hakkında bilgi, başvuru ipuçları, iş aramak için bilgisayarlar ve etkinlikler vardır. Ajansın meslek danışmanlığı, gençlere ve yetişkinlere uygun bir eğitim yeri bulmalarında yardım eder. Lehrstelle, ikili sistemde – işletmede ve meslek okulunda – bir eğitim yeridir.",
+    "otherOptions": "Emeklilik hesaplamasında Alman Emeklilik Sigortası, vergi beyannamesinde vergi dairesi, bir gelir vergisi yardım derneği veya bir vergi danışmanı yardım eder. Sağlık sigortası sorularını sağlık sigortası kurumu yanıtlar.",
+    "memoryTip": "BIZ = meslekleri tanımak, çıraklık yeri bulmak.",
+    "legalBasis": []
+  },
+  "260": {
+    "summary": "Okulda çocuğun devam zorunluluğu vardır.",
+    "whyCorrect": "Okul zorunluluğu nedeniyle öğrenciler derslere düzenli olarak katılmak zorundadır.",
+    "background": "Okul zorunluluğu sadece çocuğun bir okula kayıtlı olması değil, gerçekten okula gitmesi demektir. Hasta olan çocuğun özrü, genellikle ebeveynler tarafından, uzun süreli hastalıkta doktor raporuyla bildirilmelidir. Özel durumlar için izin istenebilir. Özürsüz devamsızlık okul zorunluluğunu ihlal eder; ebeveynlere para cezası verilebilir ve aşırı durumlarda polis çocuğu okula götürebilir.",
+    "otherOptions": "Okul döneminde sınırsız boş zaman yoktur. Derslerin çoğu zorunludur; sadece bazı alanlarda seçim yapılabilir. “Schulgeld” ise ödenen bir ücrettir – Almanya’daki devlet okulları ücretsizdir, yani kimseye okul parası verilmez.",
+    "memoryTip": "Okul zorunluluğu = sadece kayıtlı olmak değil, gitmek.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 7",
+        "url": "https://www.gesetze-im-internet.de/gg/art_7.html"
+      }
+    ]
+  },
+  "261": {
+    "summary": "30 yaşında bir erkek Abitur’u bir akşam lisesinde (Abendgymnasium) sonradan alabilir.",
+    "whyCorrect": "Akşam liseleri, Abitur’u işlerinin yanında sonradan almak isteyen yetişkinler için okullardır.",
+    "background": "Akşam lisesinde dersler genellikle akşamları yapılır, böylece gündüz çalışmaya devam edilebilir. Tamamen okula odaklanmak isteyenler, derslerin gündüz yapıldığı bir “Kolleg”e gidebilir. Koşul genellikle tamamlanmış bir meslek eğitimi veya birkaç yıllık iş deneyimidir. Devlet akşam liseleri ve Kolleg’ler okul ücreti almaz ve belirli koşullarda BAföG desteği alınabilir. Yani daha yüksek bir okul diploması için hiçbir zaman geç değildir. Bu soru 257. soruyla neredeyse aynıdır.",
+    "otherOptions": "Üniversitede veya özel üniversitede ancak Abitur’dan sonra okunur – Abitur orada alınamaz. Hauptschule Abitur’a değil, Hauptschule diplomasına götürür.",
+    "memoryTip": "Abitur’u sonradan almak: akşam lisesi (akşam) veya Kolleg (gündüz).",
+    "legalBasis": []
+  },
+  "262": {
+    "summary": "Eşit muamele şu demektir: Kimse örneğin bir engeli nedeniyle dezavantajlı duruma düşürülemez.",
+    "whyCorrect": "Anayasa’nın 3. maddesi, diğerlerinin yanında cinsiyet, köken, din ve engellilik nedeniyle ayrımcılığı yasaklar.",
+    "background": "1994’ten beri Anayasa’da açıkça şöyle yazar: “Kimse engeli nedeniyle dezavantajlı duruma düşürülemez.” 2006 tarihli Genel Eşit Muamele Kanunu (AGG) ayrıca iş hayatında ve günlük hayatta – örneğin ev ararken veya restoranda – etnik köken, cinsiyet, din, engellilik, yaş veya cinsel kimlik nedeniyle ayrımcılığa karşı korur. Ayrımcılığa uğrayan kişi, örneğin Federal Ayrımcılıkla Mücadele Dairesi’nin yardımıyla kendini savunabilir ve tazminat isteyebilir.",
+    "otherOptions": "Kişisel nedenler ayrımcılığı haklı kılmaz. Tam tersine, ayrımcılığa uğrayan kişi dava açabilir. Dezavantajlı gruplara her yıl para bağışlamak gibi yasal bir yükümlülük yoktur.",
+    "memoryTip": "Eşit muamele = engellilik gibi özellikler nedeniyle ayrımcılık yok.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 3",
+        "url": "https://www.gesetze-im-internet.de/gg/art_3.html"
+      }
+    ]
+  },
+  "263": {
+    "summary": "14 yaşından itibaren cezai ehliyet şu demektir: 14 yaş ve üzerindeki gençler ceza yasalarını çiğnerse cezalandırılır.",
+    "whyCorrect": "Onlar için esas olarak cezadan çok eğitime odaklanan çocuk ve genç ceza hukuku geçerlidir.",
+    "background": "Almanya’da 14 yaşından küçük çocukların cezai ehliyeti yoktur ve cezalandırılamazlar (StGB § 19). 14 yaşından itibaren gençler için Gençlik Mahkemeleri Kanunu geçerlidir. Bir gençlik mahkemesi örneğin kamu hizmeti saatleri, sosyal eğitim kursu, fail-mağdur uzlaşması, kısa süreli gözaltı (Jugendarrest) veya ağır durumlarda genç hapis cezası verebilir. Amaç gençlerin hatalarından ders alması ve yeni suç işlememesidir. Genç ceza hukuku 18–20 yaşındakilere de hâlâ uygulanabilir.",
+    "otherOptions": "Gençlere yetişkin gibi değil, özel genç ceza hukukuna göre davranılır. Ebeveynler cezayı çocuklarıyla paylaşmaz – ceza her zaman kişiseldir. “Cezalandırılmaz” ise sadece 14 yaşından küçük çocuklar için geçerlidir.",
+    "memoryTip": "14 yaş altı: ceza yok. 14’ten itibaren: genç ceza hukuku.",
+    "legalBasis": [
+      {
+        "label": "Ceza Kanunu (StGB) § 19",
+        "url": "https://www.gesetze-im-internet.de/stgb/__19.html"
+      }
+    ]
+  },
+  "264": {
+    "summary": "İnsanlar Rosenmontag’da (Gül Pazartesisi) renkli kostümler ve maskeler giyer.",
+    "whyCorrect": "Rosenmontag, bölgeye göre Fastnacht veya Fasching de denen karnavalın doruk noktasıdır.",
+    "background": "Karnaval özellikle Ren bölgesinde, Mainz’da ve Güney Almanya’da kutlanır; bölgeye göre Fastnacht veya Fasching da denir. “Beşinci mevsim” geleneksel olarak 11 Kasım saat 11:11’de başlar; doruk noktasına Kül Çarşambası’ndan önceki haftada ulaşır. Rosenmontag’da Köln, Düsseldorf ve Mainz gibi şehirlerde süslü arabalarla büyük geçit törenleri yapılır, insanlar kostüm giyer ve kalabalığa şekerleme atılır. Kül Çarşambası ile Paskalya’dan önceki Hristiyan oruç dönemi başlar.",
+    "otherOptions": "1 Mayıs Emek Günü’nde mitingler ve bahar şenlikleri olur. Münih’teki Oktoberfest’te birçok kişi Dirndl ve Lederhose gibi geleneksel kıyafetler giyer, ama maske takmaz. Pentekost (Pfingsten), Paskalya’dan 50 gün sonraki bir Hristiyan bayramıdır.",
+    "memoryTip": "Rosenmontag = karnaval = kostümler.",
+    "legalBasis": []
+  },
+  "265": {
+    "summary": "Evlenmek isteyen kişi önce evlendirme dairesine (Standesamt) gitmelidir.",
+    "whyCorrect": "Evlilik başvurusu Standesamt’a yapılır; Almanya’da hukuken sadece resmî nikâh geçerlidir.",
+    "background": "Çift oturduğu yerdeki Standesamt’a evlilik başvurusu yapar ve kimlik ve doğum belgesi gibi belgeler sunar; yabancıların çoğu zaman örneğin evlenme ehliyet belgesi gibi ek belgelere ihtiyacı vardır. Nikâh daha sonra bir nikâh memuru önünde kıyılır. Ayrıca kilisede veya başka bir dinî tören yapılabilir, ama bunun hukuki bir etkisi yoktur. 18 yaşından itibaren evlenilebilir.",
+    "otherOptions": "Nüfus dairesinde adres kaydı yapılır, Ordnungsamt kamu düzeniyle ilgilenir, iş ajansı da iş aramada yardım eder – hiçbiri evlilikten sorumlu değildir.",
+    "memoryTip": "Evlenmek → Standesamt.",
+    "legalBasis": []
+  },
+  "266": {
+    "summary": "Almanya’da gece sessizliği genellikle saat 22’de başlar.",
+    "whyCorrect": "Komşuları rahatsız etmemek için saat 22’den sabah 6’ya kadar gürültüden kaçınılmalıdır.",
+    "background": "Gece sessizliği eyaletlerin gürültü ve çevre koruma yasalarında, çoğu zaman da apartman yönetmeliğinde (Hausordnung) düzenlenir. Bu süre içinde örneğin yüksek sesle müzik dinlenmemeli, matkap kullanılmamalı ve partiler sessiz tutulmalıdır. Birçok apartman yönetmeliğinde ayrıca pazar günleri ve tatillerde, bazen de öğle saatlerinde sessizlik süreleri vardır. Gece sessizliğini bozan kişi komşularla sorun yaşayabilir ve tekrarlanırsa para cezası alabilir.",
+    "otherOptions": "Gece sessizliği ne gün batımına ne de komşuların ne zaman yattığına bağlıdır. Gece yarısı değil, saat 22’de başlar.",
+    "memoryTip": "Sessizlik saat 22’den 6’ya kadar.",
+    "legalBasis": []
+  },
+  "267": {
+    "summary": "Ebeveynler reşit kızlarının kararına saygı göstermek zorundadır.",
+    "whyCorrect": "22 yaşındaki kadın yetişkindir ve kiminle yaşayacağına kendisi karar verebilir.",
+    "background": "Anayasa’nın 2. maddesi her insanın kişiliğini serbestçe geliştirme hakkını korur. Buna kimi seveceğine, kiminle yaşayacağına ve kiminle evleneceğine kendin karar vermek de dahildir. 18 yaşından itibaren buna ebeveynler karar vermez. Görüşlerini söyleyebilir ve tavsiye verebilirler, ama baskı yapamazlar. Birini şiddet veya tehditle evliliğe zorlayan kişi suç işler (zorla evlendirme, StGB § 237).",
+    "otherOptions": "Ebeveynler kızlarını iradesi dışında eve geri getiremez – bu, cebir veya kişiyi hürriyetinden yoksun kılma gibi bir suç bile olabilir. Onu polise şikâyet edemezler, çünkü yasak bir şey yapmıyor. Ebeveynler kızları için bir koca da seçemez.",
+    "memoryTip": "Yetişkin = aşkta da kendi kararını verir.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 2",
+        "url": "https://www.gesetze-im-internet.de/gg/art_2.html"
+      },
+      {
+        "label": "Ceza Kanunu (StGB) § 237",
+        "url": "https://www.gesetze-im-internet.de/stgb/__237.html"
+      }
+    ]
+  },
+  "268": {
+    "summary": "Ehliyet teori sınavına belki ana dilinde girebilir.",
+    "whyCorrect": "Teorik ehliyet sınavı Almancanın yanında ondan fazla yabancı dilde sunulur.",
+    "background": "Almanya’da teori sınavına diğerlerinin yanında İngilizce, Türkçe, Arapça, Rusça, Lehçe, Rumence, Hırvatça, Yunanca, İtalyanca, İspanyolca, Portekizce ve Fransızca girilebilir. Sorular bilgisayarda sorulur. Başka bir ülkeden zaten ehliyeti olan kişi, bazı koşullarda ehliyetini çevirtebilir: AB ehliyetleri doğrudan geçerlidir; diğer birçok yabancı ehliyet Almanya’da kayıt yaptırdıktan sonra altı ay geçerlidir ve sonra çevrilmelidir.",
+    "otherOptions": "Almanya’da on yıllık asgari bir süre yoktur. Ehliyet Almanca bilgisine bağlı değildir. Başka bir ülkeye gitmek de gerekmez – sınav Almanya’da birçok dilde yapılabilir.",
+    "memoryTip": "Teori sınavı: birçok yabancı dilde de.",
+    "legalBasis": []
+  },
+  "269": {
+    "summary": "Çocukların üç yaşından okula başlayana kadar bir anaokulu yeri hakkı vardır.",
+    "whyCorrect": "Bu yasal hak 1996’dan beri geçerlidir; 2013’ten beri ayrıca bir yaşından itibaren bakım hakkı vardır.",
+    "background": "Yasal hak şu demektir: Ebeveynler isterse şehir veya ilçe bir yer sunmak zorundadır. Yer yoksa ebeveynler gerekirse dava açabilir. Devam etmek ise isteğe bağlıdır (bkz. 242. soru). Özellikle evde başka bir dil konuşan ailelerin çocukları için anaokulu, erken yaşta Almanca öğrenmek ve arkadaş edinmek için iyi bir fırsattır. Bazı şehirlerde yerler az olduğundan çocuğu erken kaydettirmek gerekir.",
+    "otherOptions": "Harçlığı devlet değil, ebeveynler verir. Spor kulübünde yer veya tatil kartı hakkı yoktur; ama birçok şehir uygun fiyatlı tatil programları sunar.",
+    "memoryTip": "3 yaşından itibaren: anaokulu yeri hakkı; 1 yaşından itibaren: bakım hakkı.",
+    "legalBasis": [
+      {
+        "label": "Sosyal Kanun Kitabı VIII § 24",
+        "url": "https://www.gesetze-im-internet.de/sgb_8/__24.html"
+      }
+    ]
+  },
+  "270": {
+    "summary": "Volkshochschule (halk eğitim merkezi) bir sürekli eğitim kurumudur.",
+    "whyCorrect": "Halk eğitim merkezleri her yaştan yetişkin için – çoğu zaman uygun fiyatlı ve neredeyse her şehirde – kurslar sunar.",
+    "background": "Almanya’da 800’den fazla halk eğitim merkezi (VHS) vardır. Örneğin dil kursları, uyum ve Almanca kursları, bilgisayar kursları, sağlık, yemek, sanat veya siyaset kursları ve hatta okul diplomaları sunarlar. Birçok uyum kursu halk eğitim merkezlerinde yapılır. Kurslar yaşı, kökeni veya önceki eğitimi ne olursa olsun herkese açıktır. Halk eğitim merkezlerini çoğunlukla şehirler ve belediyeler işletir.",
+    "otherOptions": "Din dersi VHS’te değil, okullarda ve dinî topluluklarda verilir. Halk eğitim merkezi sadece gençler veya sadece emekliler için de değildir – bütün yetişkinler içindir.",
+    "memoryTip": "VHS = bütün yetişkinler için öğrenme.",
+    "legalBasis": []
+  },
+  "271": {
+    "summary": "Noel’de bir çam ağacı süslemek Almanya’da bir gelenektir.",
+    "whyCorrect": "Birçok ailede Noel’de oturma odasında süslenmiş bir Noel ağacı durur.",
+    "background": "Noel Almanya’daki en önemli bayramlardan biridir. Advent döneminde dört mumlu Advent çelenkleri, Advent takvimleri ve Noel pazarları zaten vardır. 24 Aralık Noel arifesinde birçok aile ağacı süslerle ve ışıklarla donatır, hediyeler verilir ve birçok kişi kiliseye gider. 25 ve 26 Aralık resmî tatildir. Dindar olmayan birçok insan da Noel’i bir aile bayramı olarak kutlar.",
+    "otherOptions": "Renkli yumurtalar Paskalya’da saklanır. Maskeler ve kostümler karnavalda giyilir. Balkabakları, ABD’den Almanya’ya gelen bir gelenek olan Cadılar Bayramı’nda (Halloween) kapının önüne konur.",
+    "memoryTip": "Noel = çam ağacı; Paskalya = yumurtalar; karnaval = kostümler.",
+    "legalBasis": []
+  },
+  "272": {
+    "summary": "Bir erkeğin aynı anda iki kadınla evli olmasına izin verilmez.",
+    "whyCorrect": "Almanya’da çok eşlilik yasaktır; aynı anda yalnızca bir kişiyle evli olunabilir.",
+    "background": "Almanya evliliği ve aileyi korur (Anayasa madde 6), ama insanlara nasıl birlikte yaşayacakları konusunda büyük özgürlük tanır. Birçok yaşam biçimi serbesttir: evli ve evli olmayan çiftler, karma aileler, eşcinsel çiftler, yalnız ebeveynler veya ortak evler. Yasak olan sadece aynı anda birden fazla kişiyle evli olmaktır; çift evlilik StGB § 172’ye göre suçtur. Bu soru 252. soruyla yakından ilişkilidir.",
+    "otherOptions": "Boşanmış kişilerin yeni partnerleriyle yaşaması serbesttir. İki kadın birlikte yaşayabilir ve 2017’den beri evlenebilir de. Çocuklarıyla yaşayan yalnız bir baba tamamen normal bir ailedir.",
+    "memoryTip": "Birçok yaşam biçimi serbest – sadece aynı anda birden fazla eş değil.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 6",
+        "url": "https://www.gesetze-im-internet.de/gg/art_6.html"
+      },
+      {
+        "label": "Ceza Kanunu (StGB) § 172",
+        "url": "https://www.gesetze-im-internet.de/stgb/__172.html"
+      }
+    ]
+  },
+  "273": {
+    "summary": "Ebeveynler çocuk yetiştirme sorunlarında gençlik dairesinden (Jugendamt) yardım alabilir.",
+    "whyCorrect": "Gençlik dairesi ailelere ücretsiz danışmanlık verir ve çocuk yetiştirmedeki zorluklarda onları destekler.",
+    "background": "Her şehirde ve her ilçede bir gençlik dairesi vardır. Ebeveynlik danışmanlığı sunar, aile yardımına aracılık eder ve örneğin yalnız ebeveynleri veya krizdeki aileleri destekler. Danışmanlık ücretsiz ve gizlidir. Caritas, Diakonie veya AWO gibi yardım kuruluşlarının ebeveynlik danışma merkezleri de yardımcı olur. Gençlik dairesinin ayrıca, iyilikleri tehlikede olan çocukları koruma görevi vardır. Birçok ebeveyn gençlik dairesinden korkar – oysa en önemli görevi ailelere yardım etmektir. Bu soru 255. soruyla neredeyse aynıdır.",
+    "otherOptions": "Doktorlar hastalıklarda, sağlık dairesi sağlığın korunmasında ve hijyende, nüfus dairesi ise adres kaydında yardım eder. Çocuk yetiştirme sorunlarından gençlik dairesi sorumludur.",
+    "memoryTip": "Aile + çocuk yetiştirme = gençlik dairesi.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 6",
+        "url": "https://www.gesetze-im-internet.de/gg/art_6.html"
+      }
+    ]
+  },
+  "274": {
+    "summary": "Başkasına ait bir mektubu kasıtlı olarak açan kişi haberleşmenin gizliliğini (Briefgeheimnis) ihlal eder.",
+    "whyCorrect": "Haberleşmenin gizliliği bir temel haktır (Anayasa madde 10) ve Ceza Kanunu ile korunur.",
+    "background": "Anayasa’nın 10. maddesi şöyle der: “Mektup gizliliği ile posta ve telekomünikasyon gizliliği dokunulmazdır.” Bu, kimsenin başka birine gönderilmiş mektupları, paketleri veya mesajları izinsiz okuyamayacağı anlamına gelir – aile üyeleri veya ev arkadaşları da. Kapalı bir mektubu yetkisiz açan kişi StGB § 202’ye göre bir yıla kadar hapis veya para cezasıyla cezalandırılabilir. Devlet de mektup ve telekomünikasyon gizliliğine ancak dar istisnalarda ve yasal bir dayanakla müdahale edebilir.",
+    "otherOptions": "Susma hakkı, örneğin bir şüpheli olarak polise veya mahkemeye hiçbir şey söylememe hakkıdır. Sır saklama yükümlülüğü örneğin doktorlar ve avukatlar için geçerlidir. İfade özgürlüğünün mektup açmakla ilgisi yoktur.",
+    "memoryTip": "Başkasının postası = açılmaz (mektup gizliliği).",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 10",
+        "url": "https://www.gesetze-im-internet.de/gg/art_10.html"
+      },
+      {
+        "label": "Ceza Kanunu (StGB) § 202",
+        "url": "https://www.gesetze-im-internet.de/stgb/__202.html"
+      }
+    ]
+  },
+  "275": {
+    "summary": "Boşanmak için bir avukatın desteği gerekir.",
+    "whyCorrect": "Aile mahkemesinde en azından boşanma başvurusunu yapan kişi avukatla temsil edilmelidir.",
+    "background": "Almanya’da bir evliliği yalnızca aile mahkemesi sona erdirebilir. Boşanma dilekçesini bir avukat vermelidir (avukat zorunluluğu). İki eş de anlaşmışsa başvuran için çoğu zaman tek avukat yeterlidir; diğer eşin ancak kendisi de talepte bulunmak isterse ayrı bir avukata ihtiyacı vardır. Dava sürecinde nafaka, emeklilik hakları (Versorgungsausgleich) ve bazen çocukların velayeti de ele alınır. Parası az olanlar adli yardım (Verfahrenskostenhilfe) isteyebilir.",
+    "otherOptions": "Ne ebeveynlerin ne de çocukların boşanmaya onay vermesi gerekir – eşler yetişkindir ve kendileri karar verir. Boşanma için doktor raporu gerekmez.",
+    "memoryTip": "Boşanma = aile mahkemesi + avukat.",
+    "legalBasis": [
+      {
+        "label": "Aile Davaları Kanunu (FamFG) § 114",
+        "url": "https://www.gesetze-im-internet.de/famfg/__114.html"
+      }
+    ]
   }
 }

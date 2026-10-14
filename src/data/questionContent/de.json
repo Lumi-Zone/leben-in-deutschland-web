@@ -2717,5 +2717,296 @@
         "url": "https://www.gesetze-im-internet.de/gg/art_12.html"
       }
     ]
+  },
+  "251": {
+    "summary": "Wer ein Kind schlägt, kann dafür bestraft werden.",
+    "whyCorrect": "Kinder haben in Deutschland ein Recht auf gewaltfreie Erziehung; Schläge sind verboten.",
+    "background": "Seit dem Jahr 2000 steht im Bürgerlichen Gesetzbuch: „Kinder haben ein Recht auf gewaltfreie Erziehung. Körperliche Bestrafungen, seelische Verletzungen und andere entwürdigende Maßnahmen sind unzulässig“ (§ 1631 BGB). Wer ein Kind schlägt, kann sich wegen Körperverletzung strafbar machen. Das gilt auch für Eltern. Das Jugendamt kann eingreifen und die Familie unterstützen; wenn ein Kind in Gefahr ist, kann es das Kind auch vorübergehend in Obhut nehmen.",
+    "otherOptions": "Gewalt gegen Kinder ist keine Privatsache der Familie. Nachbarn, Lehrkräfte oder Ärzte können und sollen sich ans Jugendamt wenden, wenn sie sich Sorgen machen. Dass man dafür nicht bestraft werden kann, ist falsch.",
+    "memoryTip": "Kinder schlagen = verboten und strafbar.",
+    "legalBasis": [
+      {
+        "label": "§ 1631 BGB",
+        "url": "https://www.gesetze-im-internet.de/bgb/__1631.html"
+      },
+      {
+        "label": "§ 223 StGB",
+        "url": "https://www.gesetze-im-internet.de/stgb/__223.html"
+      }
+    ]
+  },
+  "252": {
+    "summary": "In Deutschland darf man zur gleichen Zeit nur mit einer Person verheiratet sein.",
+    "whyCorrect": "Eine Doppelehe (Bigamie) ist verboten und strafbar.",
+    "background": "Das deutsche Eherecht kennt nur die Ehe zwischen zwei Personen. Wer bereits verheiratet ist und noch einmal heiratet, macht sich nach § 172 des Strafgesetzbuches strafbar; die zweite Ehe kann außerdem aufgehoben werden. Seit 2017 dürfen auch zwei Männer oder zwei Frauen heiraten. Auch im Ausland geschlossene Mehrehen erkennt Deutschland grundsätzlich nicht als gleichwertige Ehe an.",
+    "otherOptions": "Mehrere Ehepartner gleichzeitig sind verboten. Nach einer Scheidung oder wenn der Ehepartner gestorben ist, darf man selbstverständlich wieder heiraten – das gilt für Frauen und Männer gleichermaßen.",
+    "memoryTip": "Eine Ehe = zwei Personen.",
+    "legalBasis": [
+      {
+        "label": "§ 172 StGB",
+        "url": "https://www.gesetze-im-internet.de/stgb/__172.html"
+      }
+    ]
+  },
+  "253": {
+    "summary": "Nach einem Umzug muss man sich beim Einwohnermeldeamt anmelden.",
+    "whyCorrect": "Die Anmeldung muss innerhalb von zwei Wochen nach dem Einzug erfolgen; in vielen Städten heißt die Stelle heute Bürgeramt.",
+    "background": "In Deutschland gilt eine Meldepflicht: Wer in eine neue Wohnung zieht, muss sich innerhalb von zwei Wochen bei der Meldebehörde anmelden (§ 17 Bundesmeldegesetz). Dafür braucht man einen Ausweis und eine Wohnungsgeberbestätigung vom Vermieter. Nach der Anmeldung bekommt man eine Meldebescheinigung, die man oft für Bank, Arbeitgeber oder Behörden braucht. Wer sich nicht anmeldet, kann ein Bußgeld bekommen. In vielen Städten kann man online einen Termin buchen.",
+    "otherOptions": "Das Standesamt ist für Geburten, Eheschließungen und Sterbefälle zuständig. Das Ordnungsamt kümmert sich um öffentliche Ordnung, das Gewerbeamt um die Anmeldung eines Gewerbes.",
+    "memoryTip": "Umzug → zwei Wochen → Einwohnermeldeamt (Bürgeramt).",
+    "legalBasis": [
+      {
+        "label": "§ 17 Bundesmeldegesetz",
+        "url": "https://www.gesetze-im-internet.de/bmg/__17.html"
+      }
+    ]
+  },
+  "254": {
+    "summary": "Trennungsjahr heißt: Die Ehegatten führen mindestens ein Jahr getrennt ihr eigenes Leben; danach ist die Scheidung möglich.",
+    "whyCorrect": "Das Gesetz geht nach einem Jahr Trennung davon aus, dass die Ehe gescheitert ist, wenn beide die Scheidung wollen.",
+    "background": "Eine Ehe kann geschieden werden, wenn sie gescheitert ist (§ 1565 BGB). Damit Paare nicht vorschnell handeln, verlangt das Gesetz in der Regel ein Trennungsjahr. Getrennt leben kann man auch in derselben Wohnung, wenn man getrennt wirtschaftet und schläft. Stimmen beide der Scheidung zu, reicht ein Jahr; will einer nicht, gilt die Ehe nach drei Jahren Trennung als gescheitert. Nur in besonderen Härtefällen, etwa bei Gewalt, ist eine Scheidung früher möglich. Über die Scheidung entscheidet das Familiengericht.",
+    "otherOptions": "Wie lange das Gerichtsverfahren dauert, hängt vom Einzelfall ab. Wie lange man verheiratet war, spielt für das Trennungsjahr keine Rolle. Das Umgangsrecht für die Kinder ist nicht auf ein Jahr begrenzt.",
+    "memoryTip": "Erst ein Jahr getrennt leben – dann Scheidung.",
+    "legalBasis": [
+      {
+        "label": "§ 1566 BGB",
+        "url": "https://www.gesetze-im-internet.de/bgb/__1566.html"
+      }
+    ]
+  },
+  "255": {
+    "summary": "Bei Erziehungsproblemen können Eltern Hilfe vom Jugendamt erhalten.",
+    "whyCorrect": "Das Jugendamt berät Familien kostenlos und unterstützt sie bei Schwierigkeiten mit der Erziehung.",
+    "background": "Jede Stadt und jeder Landkreis hat ein Jugendamt. Es bietet Erziehungsberatung an, vermittelt Familienhilfe und unterstützt zum Beispiel Alleinerziehende oder Familien in Krisen. Die Beratung ist kostenlos und vertraulich. Auch Erziehungsberatungsstellen von Wohlfahrtsverbänden wie Caritas, Diakonie oder AWO helfen weiter. Das Jugendamt hat außerdem die Aufgabe, Kinder zu schützen, wenn ihr Wohl in Gefahr ist. Viele Eltern haben Angst vor dem Jugendamt – dabei ist seine wichtigste Aufgabe, Familien zu helfen.",
+    "otherOptions": "Das Ordnungsamt ist für öffentliche Ordnung zuständig, das Schulamt für die Aufsicht über Schulen und das Gesundheitsamt für Gesundheitsschutz und Hygiene. Bei Erziehungsfragen ist das Jugendamt der richtige Ansprechpartner.",
+    "memoryTip": "Familie + Erziehung = Jugendamt.",
+    "legalBasis": [
+      {
+        "label": "Art. 6 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_6.html"
+      }
+    ]
+  },
+  "256": {
+    "summary": "Für ein Restaurant braucht man eine Gaststättenerlaubnis von der zuständigen Behörde.",
+    "whyCorrect": "Die Erlaubnis erteilt in der Regel die Stadt oder Gemeinde, zum Beispiel das Gewerbe- oder Ordnungsamt.",
+    "background": "Wer eine Gaststätte betreibt, trägt Verantwortung für Gäste, Nachbarn und Lebensmittel. Deshalb prüft die Behörde vorher zum Beispiel, ob der Betreiber zuverlässig ist und ob die Räume geeignet sind. Dazu kommen weitere Schritte: das Gewerbe anmelden, eine Belehrung beim Gesundheitsamt für alle, die mit Lebensmitteln arbeiten, und die Einhaltung der Hygienevorschriften, die die Lebensmittelkontrolle überprüft. Die genauen Regeln unterscheiden sich je nach Bundesland.",
+    "otherOptions": "Die Polizei erteilt keine Erlaubnis für Restaurants. Parteien haben mit Genehmigungen für Unternehmen nichts zu tun. Das Einwohnermeldeamt ist für die Anmeldung des Wohnsitzes zuständig, nicht für Gewerbe.",
+    "memoryTip": "Restaurant = Gaststättenerlaubnis + Gewerbeanmeldung.",
+    "legalBasis": []
+  },
+  "257": {
+    "summary": "Eine erwachsene Frau kann das Abitur an einem Abendgymnasium nachholen.",
+    "whyCorrect": "Abendgymnasien sind Schulen für Erwachsene, die das Abitur neben dem Beruf nachholen möchten.",
+    "background": "Am Abendgymnasium findet der Unterricht meist abends statt, damit man tagsüber weiter arbeiten kann. Wer sich ganz auf die Schule konzentrieren möchte, kann ein Kolleg besuchen, wo am Tag unterrichtet wird. Voraussetzung ist meist eine abgeschlossene Berufsausbildung oder einige Jahre Berufserfahrung. Der Besuch staatlicher Abendgymnasien und Kollegs kostet kein Schulgeld, und unter bestimmten Bedingungen kann man BAföG bekommen. Es ist also nie zu spät für einen höheren Schulabschluss.",
+    "otherOptions": "An einer Hochschule oder Privatuniversität studiert man erst nach dem Abitur – man kann es dort nicht machen. Die Hauptschule führt zum Hauptschulabschluss, nicht zum Abitur.",
+    "memoryTip": "Abitur nachholen: Abendgymnasium (abends) oder Kolleg (tagsüber).",
+    "legalBasis": []
+  },
+  "258": {
+    "summary": "Das Jugendamt kann ein Kind, das geschlagen wird oder hungern muss, aus der Familie nehmen.",
+    "whyCorrect": "Wenn das Wohl eines Kindes dringend gefährdet ist, darf das Jugendamt es in Obhut nehmen.",
+    "background": "Das Jugendamt soll Familien zuerst helfen, etwa mit Beratung oder einer Familienhelferin. Wenn ein Kind aber akut in Gefahr ist – zum Beispiel durch Gewalt, Vernachlässigung oder Hunger –, darf es das Kind vorübergehend in Obhut nehmen und bei Pflegeeltern oder in einer Einrichtung unterbringen (§ 42 SGB VIII). Über einen längeren Entzug des Sorgerechts entscheidet dann das Familiengericht. Kinder und Jugendliche können sich in Notlagen auch selbst ans Jugendamt wenden.",
+    "otherOptions": "Welche Schule ein Kind besucht, entscheiden die Eltern im Rahmen der Schulgesetze. Das Kindergeld zahlt die Familienkasse der Bundesagentur für Arbeit. Und ob ein Kind in den Kindergarten geht, ist freiwillig – das kontrolliert das Jugendamt nicht.",
+    "memoryTip": "Jugendamt: helfen – und im Notfall das Kind schützen.",
+    "legalBasis": [
+      {
+        "label": "§ 42 SGB VIII",
+        "url": "https://www.gesetze-im-internet.de/sgb_8/__42.html"
+      }
+    ]
+  },
+  "259": {
+    "summary": "Das Berufsinformationszentrum (BIZ) hilft bei der Lehrstellensuche.",
+    "whyCorrect": "Im BIZ der Agentur für Arbeit kann man sich kostenlos über Berufe, Ausbildungen und Studiengänge informieren.",
+    "background": "Berufsinformationszentren gibt es bei den Agenturen für Arbeit in ganz Deutschland. Dort findet man Informationen zu Hunderten Ausbildungsberufen, Bewerbungstipps, Computer für die Stellensuche und Veranstaltungen. Die Berufsberatung der Agentur hilft Jugendlichen und Erwachsenen dabei, einen passenden Ausbildungsplatz zu finden. Eine Lehrstelle ist ein Ausbildungsplatz in der dualen Ausbildung – im Betrieb und in der Berufsschule.",
+    "otherOptions": "Bei der Rentenberechnung hilft die Deutsche Rentenversicherung, bei der Steuererklärung das Finanzamt, ein Lohnsteuerhilfeverein oder eine Steuerberaterin. Fragen zur Krankenversicherung beantwortet die Krankenkasse.",
+    "memoryTip": "BIZ = Berufe kennenlernen, Lehrstelle finden.",
+    "legalBasis": []
+  },
+  "260": {
+    "summary": "In der Schule hat ein Kind Anwesenheitspflicht.",
+    "whyCorrect": "Wegen der Schulpflicht müssen Schülerinnen und Schüler regelmäßig am Unterricht teilnehmen.",
+    "background": "Die Schulpflicht bedeutet nicht nur, dass ein Kind an einer Schule angemeldet ist, sondern dass es auch wirklich hingeht. Wer krank ist, muss entschuldigt werden, meist durch die Eltern und bei längerer Krankheit mit einem ärztlichen Attest. Für besondere Anlässe kann man eine Befreiung beantragen. Wer unentschuldigt fehlt, verstößt gegen die Schulpflicht; den Eltern kann ein Bußgeld drohen, und im Extremfall kann die Polizei ein Kind zur Schule bringen.",
+    "otherOptions": "Unbegrenzte Freizeit gibt es während der Schulzeit nicht. Die meisten Fächer sind Pflichtfächer; nur in manchen Bereichen kann man wählen. Und „Schulgeld“ ist eine Gebühr, die man zahlt – staatliche Schulen in Deutschland sind kostenlos, man bekommt also kein Schulgeld.",
+    "memoryTip": "Schulpflicht = hingehen, nicht nur angemeldet sein.",
+    "legalBasis": [
+      {
+        "label": "Art. 7 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_7.html"
+      }
+    ]
+  },
+  "261": {
+    "summary": "Ein Mann mit 30 Jahren kann das Abitur an einem Abendgymnasium nachholen.",
+    "whyCorrect": "Abendgymnasien sind Schulen für Erwachsene, die das Abitur neben dem Beruf nachholen möchten.",
+    "background": "Am Abendgymnasium findet der Unterricht meist abends statt, damit man tagsüber weiter arbeiten kann. Wer sich ganz auf die Schule konzentrieren möchte, kann ein Kolleg besuchen, wo am Tag unterrichtet wird. Voraussetzung ist meist eine abgeschlossene Berufsausbildung oder einige Jahre Berufserfahrung. Der Besuch staatlicher Abendgymnasien und Kollegs kostet kein Schulgeld, und unter bestimmten Bedingungen kann man BAföG bekommen. Es ist also nie zu spät für einen höheren Schulabschluss. Diese Frage ist fast gleich wie Frage 257.",
+    "otherOptions": "An einer Hochschule oder Privatuniversität studiert man erst nach dem Abitur – man kann es dort nicht machen. Die Hauptschule führt zum Hauptschulabschluss, nicht zum Abitur.",
+    "memoryTip": "Abitur nachholen: Abendgymnasium (abends) oder Kolleg (tagsüber).",
+    "legalBasis": []
+  },
+  "262": {
+    "summary": "Gleichbehandlung bedeutet: Niemand darf zum Beispiel wegen einer Behinderung benachteiligt werden.",
+    "whyCorrect": "Artikel 3 des Grundgesetzes verbietet Benachteiligungen unter anderem wegen Geschlecht, Herkunft, Religion und Behinderung.",
+    "background": "Seit 1994 steht ausdrücklich im Grundgesetz: „Niemand darf wegen seiner Behinderung benachteiligt werden.“ Das Allgemeine Gleichbehandlungsgesetz (AGG) von 2006 schützt außerdem im Arbeitsleben und im Alltag – etwa bei der Wohnungssuche oder im Restaurant – vor Diskriminierung wegen Herkunft, Geschlecht, Religion, Behinderung, Alter oder sexueller Identität. Wer benachteiligt wird, kann sich wehren, zum Beispiel mit Hilfe der Antidiskriminierungsstelle des Bundes, und Schadenersatz verlangen.",
+    "otherOptions": "Persönliche Gründe rechtfertigen keine Benachteiligung. Wer benachteiligt wurde, darf im Gegenteil klagen. Eine gesetzliche Pflicht, jährlich Geld an benachteiligte Gruppen zu spenden, gibt es nicht.",
+    "memoryTip": "Gleichbehandlung = keine Benachteiligung wegen Merkmalen wie Behinderung.",
+    "legalBasis": [
+      {
+        "label": "Art. 3 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_3.html"
+      }
+    ]
+  },
+  "263": {
+    "summary": "Strafmündig ab 14 heißt: Jugendliche ab 14 Jahren, die gegen Strafgesetze verstoßen, werden bestraft.",
+    "whyCorrect": "Für sie gilt das Jugendstrafrecht, das vor allem auf Erziehung statt auf Strafe setzt.",
+    "background": "Kinder unter 14 Jahren sind in Deutschland nicht strafmündig und können nicht bestraft werden (§ 19 StGB). Ab 14 gilt für Jugendliche das Jugendgerichtsgesetz. Ein Jugendgericht kann zum Beispiel Arbeitsstunden, einen sozialen Trainingskurs, einen Täter-Opfer-Ausgleich, Jugendarrest oder in schweren Fällen Jugendstrafe anordnen. Ziel ist, dass junge Menschen aus ihren Fehlern lernen und keine weiteren Straftaten begehen. Auch für 18- bis 20-Jährige kann das Jugendstrafrecht noch angewendet werden.",
+    "otherOptions": "Jugendliche werden nicht wie Erwachsene behandelt, sondern nach dem besonderen Jugendstrafrecht. Eltern teilen die Strafe nicht mit ihren Kindern – Strafe ist immer persönlich. Und „werden nicht bestraft“ gilt nur für Kinder unter 14.",
+    "memoryTip": "Unter 14: keine Strafe. Ab 14: Jugendstrafrecht.",
+    "legalBasis": [
+      {
+        "label": "§ 19 StGB",
+        "url": "https://www.gesetze-im-internet.de/stgb/__19.html"
+      }
+    ]
+  },
+  "264": {
+    "summary": "Bunte Kostüme und Masken trägt man am Rosenmontag.",
+    "whyCorrect": "Der Rosenmontag ist der Höhepunkt des Karnevals, der Fastnacht oder des Faschings.",
+    "background": "Karneval wird vor allem im Rheinland, in Mainz und in Süddeutschland gefeiert, je nach Region auch Fastnacht oder Fasching genannt. Die „fünfte Jahreszeit“ beginnt traditionell am 11.11. um 11:11 Uhr; ihren Höhepunkt erreicht sie in der Woche vor Aschermittwoch. Am Rosenmontag ziehen große Umzüge mit Wagen durch Städte wie Köln, Düsseldorf und Mainz, die Menschen sind verkleidet, und es werden Süßigkeiten („Kamelle“) geworfen. Mit dem Aschermittwoch beginnt die christliche Fastenzeit vor Ostern.",
+    "otherOptions": "Am 1. Mai, dem Tag der Arbeit, gibt es Kundgebungen und Maifeste. Beim Oktoberfest in München tragen viele Menschen Tracht wie Dirndl und Lederhose, aber keine Masken. Pfingsten ist ein christliches Fest 50 Tage nach Ostern.",
+    "memoryTip": "Rosenmontag = Karneval = Kostüme.",
+    "legalBasis": []
+  },
+  "265": {
+    "summary": "Wer heiraten möchte, muss zuerst zum Standesamt.",
+    "whyCorrect": "Beim Standesamt meldet man die Eheschließung an; rechtlich gültig ist in Deutschland nur die standesamtliche Trauung.",
+    "background": "Das Paar meldet die Eheschließung beim Standesamt am Wohnort an und legt Dokumente vor, zum Beispiel Ausweise und Geburtsurkunden; Ausländerinnen und Ausländer brauchen oft weitere Papiere, etwa ein Ehefähigkeitszeugnis. Die Trauung selbst findet dann vor einem Standesbeamten oder einer Standesbeamtin statt. Eine kirchliche oder andere religiöse Trauung ist zusätzlich möglich, hat aber keine rechtliche Wirkung. Heiraten darf man ab 18 Jahren.",
+    "otherOptions": "Beim Einwohnermeldeamt meldet man seinen Wohnsitz an, beim Ordnungsamt geht es um öffentliche Ordnung, und die Agentur für Arbeit hilft bei der Arbeitssuche – für eine Hochzeit sind sie nicht zuständig.",
+    "memoryTip": "Heiraten → Standesamt.",
+    "legalBasis": []
+  },
+  "266": {
+    "summary": "Die Nachtruhe beginnt in Deutschland in der Regel um 22 Uhr.",
+    "whyCorrect": "Von 22 Uhr bis 6 Uhr morgens soll man Lärm vermeiden, um die Nachbarn nicht zu stören.",
+    "background": "Die Nachtruhe ist in Lärmschutz- und Immissionsschutzgesetzen der Länder und meist auch in der Hausordnung geregelt. In dieser Zeit sollte man zum Beispiel keine laute Musik hören, nicht bohren und Feiern leise halten. In vielen Hausordnungen gibt es außerdem Ruhezeiten am Sonntag und an Feiertagen, manchmal auch eine Mittagsruhe. Wer die Nachtruhe stört, riskiert Ärger mit den Nachbarn und im Wiederholungsfall ein Bußgeld.",
+    "otherOptions": "Die Nachtruhe hängt weder vom Sonnenuntergang noch davon ab, wann die Nachbarn schlafen gehen. Und sie beginnt nicht erst um Mitternacht, sondern schon um 22 Uhr.",
+    "memoryTip": "Ruhe von 22 bis 6 Uhr.",
+    "legalBasis": []
+  },
+  "267": {
+    "summary": "Die Eltern müssen die Entscheidung ihrer volljährigen Tochter respektieren.",
+    "whyCorrect": "Mit 22 Jahren ist die Frau erwachsen und darf selbst entscheiden, mit wem sie zusammenlebt.",
+    "background": "Artikel 2 des Grundgesetzes schützt das Recht jedes Menschen auf freie Entfaltung der Persönlichkeit. Dazu gehört, selbst zu bestimmen, wen man liebt, mit wem man zusammenlebt und wen man heiratet. Ab 18 Jahren entscheiden Eltern darüber nicht mehr. Sie dürfen ihre Meinung sagen und Rat geben, aber keinen Druck ausüben. Wer jemanden mit Gewalt oder Drohungen zu einer Ehe zwingt, macht sich strafbar (Zwangsheirat, § 237 StGB).",
+    "otherOptions": "Die Eltern dürfen die Tochter nicht gegen ihren Willen zurückholen – das könnte sogar eine Straftat wie Nötigung oder Freiheitsberaubung sein. Bei der Polizei anzeigen kann man sie nicht, denn sie tut nichts Verbotenes. Und einen Mann für die Tochter aussuchen dürfen die Eltern nicht.",
+    "memoryTip": "Erwachsen = selbst entscheiden, auch in der Liebe.",
+    "legalBasis": [
+      {
+        "label": "Art. 2 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_2.html"
+      },
+      {
+        "label": "§ 237 StGB",
+        "url": "https://www.gesetze-im-internet.de/stgb/__237.html"
+      }
+    ]
+  },
+  "268": {
+    "summary": "Die Theorieprüfung für den Führerschein kann sie vielleicht in ihrer Muttersprache machen.",
+    "whyCorrect": "Die theoretische Fahrerlaubnisprüfung wird außer auf Deutsch in mehr als zehn Fremdsprachen angeboten.",
+    "background": "Die Theorieprüfung kann man in Deutschland unter anderem auf Englisch, Türkisch, Arabisch, Russisch, Polnisch, Rumänisch, Kroatisch, Griechisch, Italienisch, Spanisch, Portugiesisch und Französisch ablegen. Die Fragen werden am Computer gestellt. Wer schon einen Führerschein aus einem anderen Land hat, kann ihn unter Umständen umschreiben lassen: EU-Führerscheine gelten direkt, viele andere ausländische Führerscheine gelten für sechs Monate nach der Anmeldung in Deutschland und müssen dann umgeschrieben werden.",
+    "otherOptions": "Eine Mindestzeit von zehn Jahren in Deutschland gibt es nicht. Ein Führerschein ist nicht von Deutschkenntnissen abhängig. Und man muss nicht in ein anderes Land gehen – die Prüfung ist in Deutschland in vielen Sprachen möglich.",
+    "memoryTip": "Theorieprüfung: auch in vielen Fremdsprachen.",
+    "legalBasis": []
+  },
+  "269": {
+    "summary": "Kinder haben ab drei Jahren bis zur Einschulung einen Anspruch auf einen Kindergartenplatz.",
+    "whyCorrect": "Dieser Rechtsanspruch gilt seit 1996; seit 2013 gibt es außerdem einen Anspruch auf Betreuung ab dem ersten Geburtstag.",
+    "background": "Der Rechtsanspruch bedeutet: Die Stadt oder der Landkreis muss einen Platz anbieten, wenn die Eltern das möchten. Gibt es keinen Platz, können Eltern ihn notfalls einklagen. Der Besuch selbst bleibt freiwillig (siehe Frage 242). Gerade für Kinder, deren Familie zu Hause eine andere Sprache spricht, ist der Kindergarten eine gute Gelegenheit, früh Deutsch zu lernen und Freundschaften zu schließen. Anmelden sollte man sein Kind früh, weil die Plätze in manchen Städten knapp sind.",
+    "otherOptions": "Taschengeld geben die Eltern, nicht der Staat. Einen Anspruch auf einen Platz im Sportverein oder auf einen Ferienpass gibt es nicht; viele Städte bieten aber günstige Ferienprogramme an.",
+    "memoryTip": "Ab 3: Recht auf Kindergartenplatz; ab 1: Recht auf Betreuung.",
+    "legalBasis": [
+      {
+        "label": "§ 24 SGB VIII",
+        "url": "https://www.gesetze-im-internet.de/sgb_8/__24.html"
+      }
+    ]
+  },
+  "270": {
+    "summary": "Die Volkshochschule ist eine Einrichtung zur Weiterbildung.",
+    "whyCorrect": "Volkshochschulen bieten Kurse für Erwachsene aller Altersgruppen an – oft günstig und in fast jeder Stadt.",
+    "background": "In Deutschland gibt es über 800 Volkshochschulen (VHS). Sie bieten zum Beispiel Sprachkurse, Integrations- und Deutschkurse, Computerkurse, Kurse zu Gesundheit, Kochen, Kunst oder Politik und auch Schulabschlüsse an. Viele Integrationskurse finden an Volkshochschulen statt. Die Kurse sind offen für alle, unabhängig von Alter, Herkunft oder Vorbildung. Getragen werden die Volkshochschulen meist von den Städten und Gemeinden.",
+    "otherOptions": "Religionsunterricht findet in Schulen und Religionsgemeinschaften statt, nicht an der VHS. Die Volkshochschule ist auch nicht nur für Jugendliche oder nur für Rentner – sie ist für alle Erwachsenen da.",
+    "memoryTip": "VHS = Lernen für alle Erwachsenen.",
+    "legalBasis": []
+  },
+  "271": {
+    "summary": "Ein Brauch zu Weihnachten ist es, einen Tannenbaum zu schmücken.",
+    "whyCorrect": "In vielen Familien steht an Weihnachten ein geschmückter Weihnachtsbaum im Wohnzimmer.",
+    "background": "Weihnachten ist eines der wichtigsten Feste in Deutschland. Schon in der Adventszeit gibt es Adventskränze mit vier Kerzen, Adventskalender und Weihnachtsmärkte. Am Heiligabend, dem 24. Dezember, schmücken viele Familien den Baum mit Kugeln und Lichtern, es gibt die Bescherung mit Geschenken, und viele gehen in die Kirche. Der 25. und 26. Dezember sind gesetzliche Feiertage. Auch viele nichtreligiöse Menschen feiern Weihnachten als Familienfest.",
+    "otherOptions": "Bunte Eier versteckt man zu Ostern. Masken und Kostüme trägt man im Karneval. Kürbisse vor die Tür stellt man zu Halloween, einem Brauch, der aus den USA nach Deutschland gekommen ist.",
+    "memoryTip": "Weihnachten = Tannenbaum; Ostern = Eier; Karneval = Kostüme.",
+    "legalBasis": []
+  },
+  "272": {
+    "summary": "Nicht erlaubt ist, dass ein Mann mit zwei Frauen zur selben Zeit verheiratet ist.",
+    "whyCorrect": "Mehrehe ist in Deutschland verboten; man darf nur mit einer Person gleichzeitig verheiratet sein.",
+    "background": "Deutschland schützt Ehe und Familie (Artikel 6 Grundgesetz), lässt den Menschen aber viel Freiheit, wie sie zusammenleben. Erlaubt sind viele Lebensformen: verheiratete und unverheiratete Paare, Patchworkfamilien, gleichgeschlechtliche Paare, Alleinerziehende oder Wohngemeinschaften. Verboten ist nur die gleichzeitige Ehe mit mehreren Personen; die Doppelehe ist nach § 172 StGB strafbar. Diese Frage hängt eng mit Frage 252 zusammen.",
+    "otherOptions": "Dass Geschiedene mit neuen Partnern zusammenleben, ist erlaubt. Zwei Frauen dürfen zusammenleben und seit 2017 auch heiraten. Ein alleinerziehender Vater mit Kindern ist eine ganz normale Familie.",
+    "memoryTip": "Viele Lebensformen sind erlaubt – nur nicht mehrere Ehepartner gleichzeitig.",
+    "legalBasis": [
+      {
+        "label": "Art. 6 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_6.html"
+      },
+      {
+        "label": "§ 172 StGB",
+        "url": "https://www.gesetze-im-internet.de/stgb/__172.html"
+      }
+    ]
+  },
+  "273": {
+    "summary": "Bei Erziehungsproblemen können Eltern Hilfe vom Jugendamt erhalten.",
+    "whyCorrect": "Das Jugendamt berät Familien kostenlos und unterstützt sie bei Schwierigkeiten mit der Erziehung.",
+    "background": "Jede Stadt und jeder Landkreis hat ein Jugendamt. Es bietet Erziehungsberatung an, vermittelt Familienhilfe und unterstützt zum Beispiel Alleinerziehende oder Familien in Krisen. Die Beratung ist kostenlos und vertraulich. Auch Erziehungsberatungsstellen von Wohlfahrtsverbänden wie Caritas, Diakonie oder AWO helfen weiter. Das Jugendamt hat außerdem die Aufgabe, Kinder zu schützen, wenn ihr Wohl in Gefahr ist. Viele Eltern haben Angst vor dem Jugendamt – dabei ist seine wichtigste Aufgabe, Familien zu helfen. Diese Frage ist fast gleich wie Frage 255.",
+    "otherOptions": "Ärztinnen und Ärzte helfen bei Krankheiten, das Gesundheitsamt bei Gesundheitsschutz und Hygiene, das Einwohnermeldeamt bei der Anmeldung des Wohnsitzes. Für Erziehungsprobleme ist das Jugendamt zuständig.",
+    "memoryTip": "Familie + Erziehung = Jugendamt.",
+    "legalBasis": [
+      {
+        "label": "Art. 6 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_6.html"
+      }
+    ]
+  },
+  "274": {
+    "summary": "Wer absichtlich einen fremden Brief öffnet, verletzt das Briefgeheimnis.",
+    "whyCorrect": "Das Briefgeheimnis ist ein Grundrecht (Artikel 10 Grundgesetz) und durch das Strafgesetzbuch geschützt.",
+    "background": "Artikel 10 des Grundgesetzes sagt: „Das Briefgeheimnis sowie das Post- und Fernmeldegeheimnis sind unverletzlich.“ Das bedeutet: Niemand darf ohne Erlaubnis Briefe, Pakete oder Nachrichten lesen, die an eine andere Person gerichtet sind – auch nicht Familienmitglieder oder Mitbewohner. Wer einen verschlossenen Brief unbefugt öffnet, kann nach § 202 StGB mit Freiheitsstrafe bis zu einem Jahr oder Geldstrafe bestraft werden. Auch der Staat darf nur in engen Ausnahmen und mit gesetzlicher Grundlage in das Brief- und Fernmeldegeheimnis eingreifen.",
+    "otherOptions": "Das Schweigerecht ist das Recht, zum Beispiel als Beschuldigter vor Polizei oder Gericht nichts zu sagen. Die Schweigepflicht gilt etwa für Ärzte und Anwälte. Die Meinungsfreiheit hat mit dem Öffnen von Briefen nichts zu tun.",
+    "memoryTip": "Fremde Post = nicht öffnen (Briefgeheimnis).",
+    "legalBasis": [
+      {
+        "label": "Art. 10 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_10.html"
+      },
+      {
+        "label": "§ 202 StGB",
+        "url": "https://www.gesetze-im-internet.de/stgb/__202.html"
+      }
+    ]
+  },
+  "275": {
+    "summary": "Für eine Ehescheidung braucht man die Unterstützung eines Anwalts oder einer Anwältin.",
+    "whyCorrect": "Vor dem Familiengericht muss mindestens die Person, die die Scheidung beantragt, anwaltlich vertreten sein.",
+    "background": "In Deutschland kann nur ein Familiengericht eine Ehe scheiden. Den Scheidungsantrag muss ein Rechtsanwalt oder eine Rechtsanwältin stellen (Anwaltszwang). Wenn beide Ehegatten einverstanden sind, reicht oft ein Anwalt für den Antragsteller; der andere Ehegatte braucht nur dann einen eigenen Anwalt, wenn er selbst Anträge stellen will. Im Verfahren geht es auch um Unterhalt, Rentenansprüche (Versorgungsausgleich) und manchmal um das Sorgerecht für die Kinder. Wer wenig Geld hat, kann Verfahrenskostenhilfe beantragen.",
+    "otherOptions": "Weder die Eltern noch die Kinder müssen einer Scheidung zustimmen – die Ehegatten sind erwachsen und entscheiden selbst. Ein ärztliches Attest ist für eine Scheidung nicht nötig.",
+    "memoryTip": "Scheidung = Familiengericht + Anwalt.",
+    "legalBasis": [
+      {
+        "label": "§ 114 FamFG",
+        "url": "https://www.gesetze-im-internet.de/famfg/__114.html"
+      }
+    ]
   }
 }

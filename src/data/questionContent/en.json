@@ -2717,5 +2717,296 @@
         "url": "https://www.gesetze-im-internet.de/gg/art_12.html"
       }
     ]
+  },
+  "251": {
+    "summary": "Anyone who hits a child can be punished for it.",
+    "whyCorrect": "In Germany, children have a right to an upbringing free of violence; hitting is forbidden.",
+    "background": "Since 2000, the Civil Code has stated: “Children have a right to an upbringing free of violence. Corporal punishment, psychological injury and other degrading measures are inadmissible” (Section 1631 BGB). Anyone who hits a child can be prosecuted for bodily harm. This also applies to parents. The youth welfare office can intervene and support the family; if a child is in danger, it can also take the child into temporary care.",
+    "otherOptions": "Violence against children is not a private family matter. Neighbours, teachers or doctors can and should contact the youth welfare office if they are worried. It is wrong that you cannot be punished for it.",
+    "memoryTip": "Hitting children = forbidden and punishable.",
+    "legalBasis": [
+      {
+        "label": "Sec. 1631 Civil Code (BGB)",
+        "url": "https://www.gesetze-im-internet.de/bgb/__1631.html"
+      },
+      {
+        "label": "Sec. 223 Criminal Code (StGB)",
+        "url": "https://www.gesetze-im-internet.de/stgb/__223.html"
+      }
+    ]
+  },
+  "252": {
+    "summary": "In Germany, you may only be married to one person at a time.",
+    "whyCorrect": "Being married to two people (bigamy) is forbidden and a criminal offence.",
+    "background": "German marriage law only recognises marriage between two people. Anyone who is already married and marries again commits a criminal offence under Section 172 of the Criminal Code; the second marriage can also be annulled. Since 2017, two men or two women may also marry. Germany generally does not recognise polygamous marriages concluded abroad as equivalent marriages either.",
+    "otherOptions": "Several spouses at the same time are forbidden. After a divorce or the death of a spouse, you may of course marry again – this applies equally to women and men.",
+    "memoryTip": "One marriage = two people.",
+    "legalBasis": [
+      {
+        "label": "Sec. 172 Criminal Code (StGB)",
+        "url": "https://www.gesetze-im-internet.de/stgb/__172.html"
+      }
+    ]
+  },
+  "253": {
+    "summary": "After moving, you must register at the residents’ registration office (Einwohnermeldeamt).",
+    "whyCorrect": "Registration must take place within two weeks of moving in; in many cities the office is now called the citizens’ office (Bürgeramt).",
+    "background": "Germany has a registration requirement: anyone moving into a new home must register with the registration authority within two weeks (Section 17 of the Federal Registration Act). You need an ID document and a confirmation from your landlord. After registering, you receive a registration certificate, which you often need for banks, employers or authorities. Anyone who does not register can be fined. In many cities you can book an appointment online.",
+    "otherOptions": "The registry office (Standesamt) is responsible for births, marriages and deaths. The public order office deals with public order, and the trade office with registering a business.",
+    "memoryTip": "Moving → two weeks → residents’ registration office (Bürgeramt).",
+    "legalBasis": [
+      {
+        "label": "Sec. 17 Federal Registration Act",
+        "url": "https://www.gesetze-im-internet.de/bmg/__17.html"
+      }
+    ]
+  },
+  "254": {
+    "summary": "The separation year means: the spouses live their own separate lives for at least one year; after that, divorce is possible.",
+    "whyCorrect": "After one year of separation, the law assumes the marriage has broken down if both want a divorce.",
+    "background": "A marriage can be dissolved if it has broken down (Section 1565 BGB). To prevent couples from acting hastily, the law generally requires a separation year. You can also live separately in the same flat if you keep separate finances and sleep apart. If both agree to the divorce, one year is enough; if one does not, the marriage is deemed to have broken down after three years of separation. Only in special cases of hardship, such as violence, is an earlier divorce possible. The family court decides on the divorce.",
+    "otherOptions": "How long the court proceedings take depends on the individual case. How long you were married plays no role in the separation year. Contact rights for the children are not limited to one year.",
+    "memoryTip": "First live apart for a year – then divorce.",
+    "legalBasis": [
+      {
+        "label": "Sec. 1566 Civil Code (BGB)",
+        "url": "https://www.gesetze-im-internet.de/bgb/__1566.html"
+      }
+    ]
+  },
+  "255": {
+    "summary": "Parents can get help with upbringing problems from the youth welfare office (Jugendamt).",
+    "whyCorrect": "The youth welfare office advises families free of charge and supports them with difficulties in raising children.",
+    "background": "Every town and district has a youth welfare office. It offers parenting advice, arranges family support and helps, for example, single parents or families in crisis. Advice is free and confidential. Parenting advice centres run by welfare organisations such as Caritas, Diakonie or AWO can also help. The youth welfare office also has the task of protecting children when their welfare is at risk. Many parents are afraid of the Jugendamt – yet its most important task is to help families.",
+    "otherOptions": "The public order office deals with public order, the school authority with supervising schools and the health office with health protection and hygiene. For questions about upbringing, the youth welfare office is the right contact.",
+    "memoryTip": "Family + upbringing = youth welfare office.",
+    "legalBasis": [
+      {
+        "label": "Art. 6 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_6.html"
+      }
+    ]
+  },
+  "256": {
+    "summary": "To open a restaurant you need a restaurant licence (Gaststättenerlaubnis) from the competent authority.",
+    "whyCorrect": "The licence is usually issued by the town or municipality, for example the trade office or public order office.",
+    "background": "Anyone running a restaurant is responsible for guests, neighbours and food. That is why the authority checks in advance, for example, whether the operator is reliable and whether the premises are suitable. There are further steps: registering the business, an instruction session at the health office for everyone who works with food, and compliance with hygiene rules, which food inspectors check. The exact rules differ from state to state.",
+    "otherOptions": "The police do not issue licences for restaurants. Parties have nothing to do with permits for businesses. The residents’ registration office is responsible for registering your address, not businesses.",
+    "memoryTip": "Restaurant = restaurant licence + business registration.",
+    "legalBasis": []
+  },
+  "257": {
+    "summary": "An adult woman can take the Abitur later at an evening grammar school (Abendgymnasium).",
+    "whyCorrect": "Evening grammar schools are schools for adults who want to obtain the Abitur alongside their job.",
+    "background": "At an evening grammar school, lessons usually take place in the evening so that students can keep working during the day. Those who want to focus fully on school can attend a “Kolleg”, where classes are held during the day. The requirement is usually completed vocational training or several years of work experience. State evening grammar schools and Kollegs charge no school fees, and under certain conditions students can receive BAföG funding. So it is never too late for a higher school qualification.",
+    "otherOptions": "You can only study at a university or private university after the Abitur – you cannot take it there. The Hauptschule leads to the lower secondary certificate, not the Abitur.",
+    "memoryTip": "Catching up on the Abitur: evening grammar school (evenings) or Kolleg (daytime).",
+    "legalBasis": []
+  },
+  "258": {
+    "summary": "The youth welfare office can remove a child who is being beaten or starved from the family.",
+    "whyCorrect": "If a child’s welfare is in urgent danger, the youth welfare office may take the child into care.",
+    "background": "The youth welfare office should first help families, for example with advice or a family support worker. But if a child is in acute danger – for example from violence, neglect or hunger – it may take the child into temporary care and place them with foster parents or in a facility (Section 42 of Social Code Book VIII). The family court then decides on any longer-term withdrawal of custody. Children and young people in need can also contact the youth welfare office themselves.",
+    "otherOptions": "Parents decide which school a child attends, within the school laws. Child benefit is paid by the Family Benefits Office of the Federal Employment Agency. And whether a child attends nursery is voluntary – the youth welfare office does not check this.",
+    "memoryTip": "Youth welfare office: help – and protect the child in an emergency.",
+    "legalBasis": [
+      {
+        "label": "Sec. 42 Social Code Book VIII",
+        "url": "https://www.gesetze-im-internet.de/sgb_8/__42.html"
+      }
+    ]
+  },
+  "259": {
+    "summary": "The Career Information Centre (BIZ) helps with finding an apprenticeship.",
+    "whyCorrect": "At the BIZ of the employment agency, you can get free information about careers, vocational training and degree programmes.",
+    "background": "Career Information Centres exist at employment agencies throughout Germany. They offer information on hundreds of apprenticeship occupations, application tips, computers for job searches and events. The agency’s career guidance service helps young people and adults find a suitable training place. An apprenticeship (Lehrstelle) is a training place in the dual system – in a company and at vocational school.",
+    "otherOptions": "The German Pension Insurance helps with calculating pensions, and the tax office, an income tax assistance association or a tax adviser helps with tax returns. The health insurance fund answers questions about health insurance.",
+    "memoryTip": "BIZ = get to know careers, find an apprenticeship.",
+    "legalBasis": []
+  },
+  "260": {
+    "summary": "At school, a child is obliged to attend.",
+    "whyCorrect": "Because of compulsory schooling, pupils must attend lessons regularly.",
+    "background": "Compulsory schooling does not just mean being enrolled at a school, but actually going. A child who is ill must be excused, usually by the parents and, for longer illnesses, with a doctor’s certificate. Exemptions can be requested for special occasions. Unexcused absence violates compulsory schooling; parents may face a fine, and in extreme cases the police can take a child to school.",
+    "otherOptions": "There is no unlimited free time during school. Most subjects are compulsory; choices are only possible in some areas. And “Schulgeld” is a fee you pay – state schools in Germany are free of charge, so you do not receive school money.",
+    "memoryTip": "Compulsory schooling = going to school, not just being enrolled.",
+    "legalBasis": [
+      {
+        "label": "Art. 7 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_7.html"
+      }
+    ]
+  },
+  "261": {
+    "summary": "A 30-year-old man can take the Abitur later at an evening grammar school (Abendgymnasium).",
+    "whyCorrect": "Evening grammar schools are schools for adults who want to obtain the Abitur alongside their job.",
+    "background": "At an evening grammar school, lessons usually take place in the evening so that students can keep working during the day. Those who want to focus fully on school can attend a “Kolleg”, where classes are held during the day. The requirement is usually completed vocational training or several years of work experience. State evening grammar schools and Kollegs charge no school fees, and under certain conditions students can receive BAföG funding. So it is never too late for a higher school qualification. This question is almost the same as question 257.",
+    "otherOptions": "You can only study at a university or private university after the Abitur – you cannot take it there. The Hauptschule leads to the lower secondary certificate, not the Abitur.",
+    "memoryTip": "Catching up on the Abitur: evening grammar school (evenings) or Kolleg (daytime).",
+    "legalBasis": []
+  },
+  "262": {
+    "summary": "Equal treatment means: nobody may be disadvantaged, for example, because of a disability.",
+    "whyCorrect": "Article 3 of the Basic Law prohibits discrimination on grounds including sex, origin, religion and disability.",
+    "background": "Since 1994, the Basic Law has stated explicitly: “No person shall be disfavoured because of disability.” The General Equal Treatment Act (AGG) of 2006 also protects against discrimination at work and in everyday life – for example when looking for a flat or in a restaurant – on grounds of ethnic origin, sex, religion, disability, age or sexual identity. Anyone who is discriminated against can take action, for example with the help of the Federal Anti-Discrimination Agency, and claim compensation.",
+    "otherOptions": "Personal reasons do not justify discrimination. On the contrary, anyone who has been discriminated against may take legal action. There is no legal obligation to donate money to disadvantaged groups every year.",
+    "memoryTip": "Equal treatment = no discrimination because of characteristics such as disability.",
+    "legalBasis": [
+      {
+        "label": "Art. 3 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_3.html"
+      }
+    ]
+  },
+  "263": {
+    "summary": "Being criminally responsible from 14 means: young people aged 14 and over who break criminal laws are punished.",
+    "whyCorrect": "Juvenile criminal law applies to them, which focuses mainly on education rather than punishment.",
+    "background": "Children under 14 are not criminally responsible in Germany and cannot be punished (Section 19 of the Criminal Code). From 14, the Youth Courts Act applies to young people. A youth court can order, for example, community service, a social training course, victim–offender mediation, youth detention or, in serious cases, youth imprisonment. The aim is for young people to learn from their mistakes and not commit further crimes. Juvenile criminal law can also still be applied to 18- to 20-year-olds.",
+    "otherOptions": "Young people are not treated like adults but under special juvenile criminal law. Parents do not share the punishment with their children – punishment is always personal. And “are not punished” only applies to children under 14.",
+    "memoryTip": "Under 14: no punishment. From 14: juvenile criminal law.",
+    "legalBasis": [
+      {
+        "label": "Sec. 19 Criminal Code (StGB)",
+        "url": "https://www.gesetze-im-internet.de/stgb/__19.html"
+      }
+    ]
+  },
+  "264": {
+    "summary": "People wear colourful costumes and masks on Rose Monday (Rosenmontag).",
+    "whyCorrect": "Rose Monday is the highlight of the carnival season, also called Fastnacht or Fasching.",
+    "background": "Carnival is celebrated above all in the Rhineland, in Mainz and in southern Germany, and depending on the region it is also called Fastnacht or Fasching. The “fifth season” traditionally begins on 11 November at 11:11 am; it reaches its peak in the week before Ash Wednesday. On Rose Monday, large parades with floats move through cities such as Cologne, Düsseldorf and Mainz, people are in costume and sweets are thrown into the crowd. Ash Wednesday marks the start of the Christian season of Lent before Easter.",
+    "otherOptions": "On 1 May, Labour Day, there are rallies and May festivals. At the Oktoberfest in Munich, many people wear traditional dress such as dirndls and lederhosen, but no masks. Pentecost is a Christian festival 50 days after Easter.",
+    "memoryTip": "Rose Monday = carnival = costumes.",
+    "legalBasis": []
+  },
+  "265": {
+    "summary": "Anyone who wants to marry must first go to the registry office (Standesamt).",
+    "whyCorrect": "You give notice of marriage at the registry office; in Germany only a civil wedding is legally valid.",
+    "background": "The couple gives notice of marriage at the registry office where they live and presents documents, such as IDs and birth certificates; foreign nationals often need additional papers, such as a certificate of no impediment to marriage. The wedding itself then takes place before a registrar. A church or other religious ceremony is also possible but has no legal effect. You can marry from the age of 18.",
+    "otherOptions": "At the residents’ registration office you register your address, the public order office deals with public order, and the employment agency helps with job searches – none of them is responsible for weddings.",
+    "memoryTip": "Marrying → registry office.",
+    "legalBasis": []
+  },
+  "266": {
+    "summary": "Night-time quiet hours in Germany usually begin at 10 pm.",
+    "whyCorrect": "From 10 pm to 6 am, you should avoid noise so as not to disturb the neighbours.",
+    "background": "Quiet hours are regulated in the states’ noise and pollution control laws and usually also in the house rules. During this time you should, for example, not play loud music, not drill and keep parties quiet. Many house rules also set quiet times on Sundays and public holidays, sometimes also at midday. Anyone who disturbs the night-time quiet risks trouble with the neighbours and, if repeated, a fine.",
+    "otherOptions": "Quiet hours do not depend on sunset or on when the neighbours go to bed. And they do not begin at midnight, but already at 10 pm.",
+    "memoryTip": "Quiet from 10 pm to 6 am.",
+    "legalBasis": []
+  },
+  "267": {
+    "summary": "The parents must respect the decision of their adult daughter.",
+    "whyCorrect": "At 22, the woman is an adult and may decide for herself whom she lives with.",
+    "background": "Article 2 of the Basic Law protects every person’s right to the free development of their personality. This includes deciding for yourself whom you love, whom you live with and whom you marry. From the age of 18, parents no longer decide this. They may give their opinion and advice, but must not exert pressure. Anyone who forces someone into marriage through violence or threats commits a crime (forced marriage, Section 237 of the Criminal Code).",
+    "otherOptions": "The parents may not bring their daughter back against her will – that could even be a crime such as coercion or false imprisonment. They cannot report her to the police, because she is doing nothing forbidden. And the parents may not choose a husband for their daughter.",
+    "memoryTip": "Adult = decides for herself, in love too.",
+    "legalBasis": [
+      {
+        "label": "Art. 2 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_2.html"
+      },
+      {
+        "label": "Sec. 237 Criminal Code (StGB)",
+        "url": "https://www.gesetze-im-internet.de/stgb/__237.html"
+      }
+    ]
+  },
+  "268": {
+    "summary": "She may be able to take the theory test for the driving licence in her mother tongue.",
+    "whyCorrect": "Besides German, the theory test is offered in more than ten foreign languages.",
+    "background": "In Germany, the theory test can be taken in languages including English, Turkish, Arabic, Russian, Polish, Romanian, Croatian, Greek, Italian, Spanish, Portuguese and French. The questions are asked on a computer. Anyone who already has a driving licence from another country may be able to have it converted: EU licences are valid directly, while many other foreign licences are valid for six months after registering in Germany and must then be converted.",
+    "otherOptions": "There is no minimum period of ten years in Germany. A driving licence does not depend on knowledge of German. And you do not have to go to another country – the test can be taken in Germany in many languages.",
+    "memoryTip": "Theory test: also in many foreign languages.",
+    "legalBasis": []
+  },
+  "269": {
+    "summary": "From the age of three until starting school, children are entitled to a nursery (Kindergarten) place.",
+    "whyCorrect": "This legal entitlement has existed since 1996; since 2013 there has also been an entitlement to childcare from the first birthday.",
+    "background": "The legal entitlement means: the town or district must offer a place if the parents want one. If there is no place, parents can if necessary take legal action. Attendance itself remains voluntary (see question 242). Especially for children whose families speak another language at home, nursery is a good opportunity to learn German early and make friends. You should register your child early, because places are scarce in some cities.",
+    "otherOptions": "Pocket money is given by parents, not the state. There is no entitlement to a place in a sports club or to a holiday pass, although many towns offer affordable holiday programmes.",
+    "memoryTip": "From 3: right to a nursery place; from 1: right to childcare.",
+    "legalBasis": [
+      {
+        "label": "Sec. 24 Social Code Book VIII",
+        "url": "https://www.gesetze-im-internet.de/sgb_8/__24.html"
+      }
+    ]
+  },
+  "270": {
+    "summary": "The adult education centre (Volkshochschule) is an institution for further education.",
+    "whyCorrect": "Adult education centres offer courses for adults of all ages – often affordable and in almost every town.",
+    "background": "There are more than 800 adult education centres (VHS) in Germany. They offer, for example, language courses, integration and German courses, computer courses, courses on health, cooking, art or politics and also school qualifications. Many integration courses take place at adult education centres. The courses are open to everyone, regardless of age, origin or previous education. Adult education centres are usually run by towns and municipalities.",
+    "otherOptions": "Religious education takes place in schools and religious communities, not at the VHS. The adult education centre is not only for young people or only for pensioners either – it is there for all adults.",
+    "memoryTip": "VHS = learning for all adults.",
+    "legalBasis": []
+  },
+  "271": {
+    "summary": "Decorating a fir tree is a Christmas custom in Germany.",
+    "whyCorrect": "In many families, a decorated Christmas tree stands in the living room at Christmas.",
+    "background": "Christmas is one of the most important festivals in Germany. During Advent there are already Advent wreaths with four candles, Advent calendars and Christmas markets. On Christmas Eve, 24 December, many families decorate the tree with baubles and lights, presents are exchanged and many go to church. 25 and 26 December are public holidays. Many non-religious people also celebrate Christmas as a family festival.",
+    "otherOptions": "Colourful eggs are hidden at Easter. Masks and costumes are worn at carnival. Pumpkins are placed outside the door at Halloween, a custom that came to Germany from the USA.",
+    "memoryTip": "Christmas = fir tree; Easter = eggs; carnival = costumes.",
+    "legalBasis": []
+  },
+  "272": {
+    "summary": "It is not allowed for a man to be married to two women at the same time.",
+    "whyCorrect": "Polygamy is forbidden in Germany; you may only be married to one person at a time.",
+    "background": "Germany protects marriage and the family (Article 6 of the Basic Law) but gives people a lot of freedom in how they live together. Many forms of living are allowed: married and unmarried couples, blended families, same-sex couples, single parents or shared flats. The only thing forbidden is being married to several people at once; bigamy is a criminal offence under Section 172 of the Criminal Code. This question is closely related to question 252.",
+    "otherOptions": "Divorced people living with new partners is allowed. Two women may live together and, since 2017, also marry. A single father with children is a completely normal family.",
+    "memoryTip": "Many ways of living are allowed – just not several spouses at once.",
+    "legalBasis": [
+      {
+        "label": "Art. 6 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_6.html"
+      },
+      {
+        "label": "Sec. 172 Criminal Code (StGB)",
+        "url": "https://www.gesetze-im-internet.de/stgb/__172.html"
+      }
+    ]
+  },
+  "273": {
+    "summary": "Parents can get help with upbringing problems from the youth welfare office (Jugendamt).",
+    "whyCorrect": "The youth welfare office advises families free of charge and supports them with difficulties in raising children.",
+    "background": "Every town and district has a youth welfare office. It offers parenting advice, arranges family support and helps, for example, single parents or families in crisis. Advice is free and confidential. Parenting advice centres run by welfare organisations such as Caritas, Diakonie or AWO can also help. The youth welfare office also has the task of protecting children when their welfare is at risk. Many parents are afraid of the Jugendamt – yet its most important task is to help families. This question is almost the same as question 255.",
+    "otherOptions": "Doctors help with illness, the health office with health protection and hygiene, and the residents’ registration office with registering your address. The youth welfare office is responsible for problems with upbringing.",
+    "memoryTip": "Family + upbringing = youth welfare office.",
+    "legalBasis": [
+      {
+        "label": "Art. 6 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_6.html"
+      }
+    ]
+  },
+  "274": {
+    "summary": "Anyone who deliberately opens someone else’s letter violates the privacy of correspondence.",
+    "whyCorrect": "The privacy of correspondence is a fundamental right (Article 10 of the Basic Law) and protected by the Criminal Code.",
+    "background": "Article 10 of the Basic Law states: “The privacy of correspondence, posts and telecommunications shall be inviolable.” This means nobody may read letters, parcels or messages addressed to another person without permission – not even family members or flatmates. Anyone who opens a sealed letter without authorisation can be punished under Section 202 of the Criminal Code with imprisonment of up to one year or a fine. The state, too, may only interfere with the privacy of correspondence and telecommunications in narrow exceptions and on a legal basis.",
+    "otherOptions": "The right to remain silent is the right, for example as a suspect, not to say anything to the police or in court. Confidentiality obligations apply, for instance, to doctors and lawyers. Freedom of expression has nothing to do with opening letters.",
+    "memoryTip": "Other people’s post = do not open (privacy of correspondence).",
+    "legalBasis": [
+      {
+        "label": "Art. 10 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_10.html"
+      },
+      {
+        "label": "Sec. 202 Criminal Code (StGB)",
+        "url": "https://www.gesetze-im-internet.de/stgb/__202.html"
+      }
+    ]
+  },
+  "275": {
+    "summary": "A divorce requires the support of a lawyer.",
+    "whyCorrect": "Before the family court, at least the person applying for divorce must be represented by a lawyer.",
+    "background": "In Germany, only a family court can dissolve a marriage. The divorce petition must be filed by a lawyer (mandatory legal representation). If both spouses agree, one lawyer for the applicant is often enough; the other spouse only needs their own lawyer if they want to file their own motions. The proceedings also cover maintenance, pension rights (pension rights adjustment) and sometimes custody of the children. People with little money can apply for legal aid.",
+    "otherOptions": "Neither the parents nor the children have to agree to a divorce – the spouses are adults and decide for themselves. A doctor’s certificate is not needed for a divorce.",
+    "memoryTip": "Divorce = family court + lawyer.",
+    "legalBasis": [
+      {
+        "label": "Sec. 114 Family Proceedings Act (FamFG)",
+        "url": "https://www.gesetze-im-internet.de/famfg/__114.html"
+      }
+    ]
   }
 }
