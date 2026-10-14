@@ -1513,5 +1513,304 @@
         "url": "https://www.gesetze-im-internet.de/gg/art_20.html"
       }
     ]
+  },
+  "126": {
+    "summary": "Seçimden önce seçme hakkı olanlar belediyeden bir seçim bildirimi (Wahlbenachrichtigung) alır.",
+    "whyCorrect": "Belediye bunu seçimden en geç üç hafta önce seçmen listesinde bulunan herkese postayla gönderir.",
+    "background": "Seçim bildiriminde seçim günü, saatler ve oy kullanabileceğin sandık yeri yazar. Arka yüzünde genellikle posta yoluyla oy için bir başvuru formu vardır. Sandığa bildirimi ve kimliğini götürürsün. Seçme hakkı olduğu hâlde bildirim almayan kişi zamanında belediyeye başvurmalı ve seçmen listesinde olup olmadığını kontrol etmelidir.",
+    "otherOptions": "Cumhurbaşkanından bir “oy izni” yoktur – oy hakkı yasadan doğar. Federal Kurul sadece Cumhurbaşkanını seçer ve seçmenlere mektup yazmaz. Pfarramt kiliseye aittir ve seçimlerle ilgisi yoktur.",
+    "memoryTip": "Belediyeden gelen seçim mektubu = seçim bildirimi.",
+    "legalBasis": []
+  },
+  "127": {
+    "summary": "%5 barajı, çok sayıda küçük parti hükümet kurmayı zorlaştırdığı için vardır.",
+    "whyCorrect": "Parçalanmış bir parlamentoyu önlemeyi ve istikrarlı çoğunlukları mümkün kılmayı amaçlar.",
+    "background": "Weimar Cumhuriyeti’nde zaman zaman Reichstag’da ondan fazla parti vardı. İstikrarlı çoğunluk bulmak çok zordu, hükümetler sık sık değişti – bu da demokrasinin çökmesine katkıda bulundu. Anayasa’yı ve seçim yasalarını hazırlayanlar bunu önlemek istedi. Bu yüzden bir partinin federal seçimde sandalye alabilmesi için ikinci oyların en az yüzde beşini alması gerekir.",
+    "otherOptions": "Küçük partilerin programlarının benzer olup olmaması bu kural için önemli değildir. Vatandaşların yolunu kaybetmesi de neden değildir – oy pusulasında yine birçok parti olabilir. Politikacıların maaşını da partileri ödemez: Milletvekilleri kamu kaynaklarından ödenek alır.",
+    "memoryTip": "Daha az küçük parti → hükümet kurmak daha kolay.",
+    "legalBasis": []
+  },
+  "128": {
+    "summary": "Vatandaşların seçtiği parlamento üyelerine Abgeordnete (milletvekili) denir.",
+    "whyCorrect": "Milletvekilleri Federal Meclis’te, bir eyalet meclisinde veya Avrupa Parlamentosu’nda vatandaşları temsil eder.",
+    "background": "Milletvekilleri halk tarafından seçilir ve “bütün halkın temsilcileridir” (Anayasa madde 38). Yasaları görüşüp kabul eder, hükümeti denetler ve seçim bölgelerindeki insanların sorunlarıyla ilgilenirler. 2025’ten beri Federal Meclis’te 630 milletvekili vardır. Çalışmaları için ödenek alırlar.",
+    "otherOptions": "Federal Şansölye’yi vatandaşlar doğrudan değil, Federal Meclis seçer. Büyükelçiler Almanya’yı yurt dışında temsil eder; seçilmez, atanır. Eyalet başbakanlarını eyalet meclisleri seçer.",
+    "memoryTip": "Halkın parlamentoya gönderdiği kişiler = milletvekilleri.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 38",
+        "url": "https://www.gesetze-im-internet.de/gg/art_38.html"
+      }
+    ]
+  },
+  "129": {
+    "summary": "Almanya’da halk tarafından seçilen Federal Meclis’tir.",
+    "whyCorrect": "Şansölye, eyalet başbakanları ve Cumhurbaşkanı ise dolaylı olarak seçilir.",
+    "background": "Almanya temsilî bir demokrasidir: Halk parlamentoları – Federal Meclis’i, eyalet meclislerini, belediye meclislerini ve Avrupa Parlamentosu’nu – doğrudan seçer. Parlamentolar da diğer makamları seçer. Federal Meclis Federal Şansölye’yi, eyalet meclisleri eyalet başbakanlarını, Federal Kurul da Cumhurbaşkanını seçer. Yerel düzeyde vatandaşlar çoğu eyalette belediye başkanını da doğrudan seçer.",
+    "otherOptions": "Federal Şansölye, eyalet başbakanları ve Cumhurbaşkanı halk tarafından doğrudan seçilmez. Bu bilinçli bir tercihtir: Anayasa güçlü parlamentolara dayanır.",
+    "memoryTip": "Halk parlamentoları seçer; parlamentolar hükümet başkanlarını seçer.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 38",
+        "url": "https://www.gesetze-im-internet.de/gg/art_38.html"
+      },
+      {
+        "label": "Anayasa (GG) md. 63",
+        "url": "https://www.gesetze-im-internet.de/gg/art_63.html"
+      }
+    ]
+  },
+  "130": {
+    "summary": "Geçerli olan 1 numaralı oy pusulasıdır.",
+    "whyCorrect": "Üzerinde birinci oy sütununda ve ikinci oy sütununda tam birer çarpı vardır.",
+    "background": "Federal seçimde iki oyun vardır. Solda birinci oyla kendi seçim bölgenden bir kişiyi, sağda ikinci oyla bir partiyi işaretlersin. Her sütunda en fazla bir çarpı olabilir. İki oyu da kullanmak zorunda değilsin – o zaman sadece kullandığın oy sayılır. Bir sütunda birden fazla çarpı varsa, pusulaya bir şey yazarsan veya ne kastettiğin açık değilse oy geçersiz olur.",
+    "otherOptions": "2, 3 ve 4 numaralı pusulalarda en az bir sütunda birden fazla çarpı vardır. O zaman kime oy vermek istediğin açık değildir ve o oy geçersizdir.",
+    "memoryTip": "İki sütun, her birinde bir çarpı.",
+    "legalBasis": []
+  },
+  "131": {
+    "summary": "Bürgermeister (belediye başkanı) bir belediyenin başıdır.",
+    "whyCorrect": "Belediye yönetimini yürütür ve belediyeyi dışarıda temsil eder.",
+    "background": "Her şehrin ve beldenin bir belediye başkanı vardır; büyük şehirlerde bu makama çoğu zaman Oberbürgermeister (büyükşehir belediye başkanı) denir. Çoğu eyalette belediye başkanını vatandaşlar doğrudan seçer. Belediye başkanı belediye binasındaki (Rathaus) idareyi yönetir, belediye meclisinin kararlarını uygular ve yerel halkın muhatabıdır.",
+    "otherOptions": "Bir okulu okul müdürü, bir bankayı yönetim kurulu yönetir. Bir partinin başında parti başkanı bulunur. “Bürgermeister” kelimesi, bir belediyenin vatandaşlarının “ustası” anlamına gelir.",
+    "memoryTip": "Bürgermeister = belediyenin başı, belediye binasında (Rathaus) çalışır.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 28",
+        "url": "https://www.gesetze-im-internet.de/gg/art_28.html"
+      }
+    ]
+  },
+  "132": {
+    "summary": "Ehrenamtlich (fahrî) şu demektir: Örneğin derneklerde ve kuruluşlarda gönüllü ve ücretsiz çalışmak.",
+    "whyCorrect": "Gönüllüler boş zamanlarında maaş almadan başkaları için çalışır.",
+    "background": "Gönüllülük Almanya’da çok yaygındır: 14 yaş üstü insanların yaklaşık yüzde 40’ı gönüllü çalışır. Spor kulübünde çocukları çalıştırır, gönüllü itfaiyede veya Teknik Yardım Kurumu’nda (THW) yardım eder, gıda bankasında (Tafel) yiyecek dağıtır, mültecilere eşlik eder ya da sandık görevlisi ve halktan hâkim (Schöffe) olurlar. Bu katkı olmadan birçok hizmet işlemezdi. Bazı gönüllü görevler için küçük bir masraf ödeneği verilir.",
+    "otherOptions": "Askerler Bundeswehr’de meslek olarak çalışır ve maaş alır. Federal hükümette veya hastanede çalışıp para kazanan kişi gönüllü değil, asıl işi olarak çalışır.",
+    "memoryTip": "Ehrenamt = para yerine onur (Ehre).",
+    "legalBasis": []
+  },
+  "133": {
+    "summary": "Federal ve eyalet seçimlerinde posta yoluyla oy verilebilir.",
+    "whyCorrect": "Seçim günü sandığa gidemeyen veya gitmek istemeyen kişi önceden postayla oy kullanabilir.",
+    "background": "Posta yoluyla oy için belediyeye başvurulur; örneğin seçim bildirimindeki formla veya internetten. Ardından bir oy belgesi (Wahlschein), oy pusulası ve zarflar gelir. Pusula bizzat ve kimse görmeden doldurulur ve her şey en geç seçim günü saat 18’de ulaşacak şekilde gönderilir. 2021 federal seçiminde seçmenlerin neredeyse yarısı postayla oy verdi.",
+    "otherOptions": "Kimse başkası adına oy veremez – koca da karısı adına veremez. Bu gizli ve kişisel oy ilkesine aykırıdır ve suçtur. Telefonla oy verilemez. Federal Meclis ve çoğu eyalet meclisi için oy verme yaşı 18’dir; bazı eyaletler eyalet seçiminde 16 yaşından itibaren oy vermeye izin verir, ama 14’ten değil.",
+    "memoryTip": "Posta yoluyla oy evet – vekil, telefon, çocuklar hayır.",
+    "legalBasis": []
+  },
+  "134": {
+    "summary": "Otobüs hattını korumak için bir vatandaş girişimine (Bürgerinitiative) katılabilir veya kendin bir tane kurabilirsin.",
+    "whyCorrect": "Vatandaş girişimleri, yerelde ortak bir amaç için çalışmanın tipik bir yoludur.",
+    "background": "Vatandaş girişiminde ortak bir hedefi olan insanlar bir araya gelir – örneğin bir otobüs hattını, bir oyun parkını veya bir yüzme havuzunu korumak için. İmza toplar, belediye meclisindeki politikacılarla konuşur, basına yazar veya gösteriler düzenlerler. Birçok eyalette bir vatandaş talebiyle (Bürgerbegehren) konunun yerel halk oylamasına sunulması da sağlanabilir. Demokrasi seçimler arasında da böyle işler.",
+    "otherOptions": "Bir spor kulübü ve bisiklet antrenmanı otobüs hattı kararını değiştirmez. Vergi dairesi vergi toplar ve otobüs hatlarından sorumlu değildir; vergi ödeyen biri olarak belirli bir otobüs hattı üzerinde hakkın yoktur. Orman dairesi (Forstamt) ormanla ilgilenir.",
+    "memoryTip": "Birlikte bir şey başarmak = vatandaş girişimi.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 8",
+        "url": "https://www.gesetze-im-internet.de/gg/art_8.html"
+      },
+      {
+        "label": "Anayasa (GG) md. 17",
+        "url": "https://www.gesetze-im-internet.de/gg/art_17.html"
+      }
+    ]
+  },
+  "135": {
+    "summary": "Sendikalar çalışanları temsil eder.",
+    "whyCorrect": "Çalışanlar için daha iyi ücretler ve çalışma koşulları için mücadele ederler.",
+    "background": "Sendikalar çalışanların gönüllü birlikleridir. Toplu sözleşme pazarlığı yapar, üyelerine işyerindeki sorunlarda danışmanlık verir ve örneğin işten çıkarılma durumunda hukuki koruma sağlarlar. Birçok işletmede işyeri konseyleriyle (Betriebsrat) birlikte çalışırlar. Her çalışan üye olabilir; aidat genellikle brüt maaşın yaklaşık yüzde biridir. Bu soru 101. soruyla yakından ilişkilidir.",
+    "otherOptions": "Büyük ve küçük şirketleri işveren dernekleri ve ticaret odaları gibi ekonomi kuruluşları temsil eder. Serbest çalışanların kendi meslek dernekleri ve odaları vardır.",
+    "memoryTip": "Sendika = çalışanların sesi.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 9",
+        "url": "https://www.gesetze-im-internet.de/gg/art_9.html"
+      }
+    ]
+  },
+  "136": {
+    "summary": "İş mahkemesine örneğin patronun haksız yere işten çıkarması durumunda gidilir.",
+    "whyCorrect": "İş mahkemeleri çalışanlar ile işverenler arasındaki anlaşmazlıklara karar verir.",
+    "background": "Almanya’da iş ilişkisinden doğan anlaşmazlıklar için ayrı mahkemeler vardır: iş mahkemeleri. Orada işten çıkarmalar, ödenmeyen ücretler, izin, bonservis veya uyarılar ele alınır. İlk derecede avukat zorunlu değildir ve her taraf kendi avukatlık masrafını kendisi öder. Dava çoğu zaman mahkemenin bir anlaşma sağlamaya çalıştığı bir uzlaşma oturumuyla başlar.",
+    "otherOptions": "Yanlış yan gider (Nebenkosten) hesabı bir kira anlaşmazlığıdır – bundan sulh mahkemesi (Amtsgericht) sorumludur. Komşularla anlaşmazlıklar da sulh mahkemesine gider; çoğu zaman önce arabuluculuk denenmelidir. Trafik kazasından sonra mesele tazminat (hukuk mahkemesi) veya bir suçtur (ceza mahkemesi).",
+    "memoryTip": "İş + anlaşmazlık = iş mahkemesi.",
+    "legalBasis": []
+  },
+  "137": {
+    "summary": "Çalışma hayatındaki anlaşmazlıklardan iş mahkemesi sorumludur.",
+    "whyCorrect": "İş mahkemeleri, iş ilişkilerinden doğan anlaşmazlıklar için uzmanlaşmış mahkemelerdir.",
+    "background": "İş yargısının üç kademesi vardır: iş mahkemesi, eyalet iş mahkemesi ve Erfurt’taki Federal İş Mahkemesi. Meslekten hâkimlerin yanında, çalışan ve işveren tarafından gelen fahrî hâkimler de karar verir. Böylece kararlara pratik deneyim yansır. Sendikalar ile işverenler arasındaki, örneğin grevlerle ilgili anlaşmazlıklar da iş mahkemelerine gelir.",
+    "otherOptions": "Aile mahkemesi boşanma, velayet veya nafakaya karar verir. Ceza mahkemesi suçları yargılar. Sulh mahkemesi (Amtsgericht) birçok genel hukuk ve ceza davasından sorumludur, ama iş hukukundan değil.",
+    "memoryTip": "Çalışma hayatı → iş mahkemesi → eyalet iş mahkemesi → Federal İş Mahkemesi.",
+    "legalBasis": []
+  },
+  "138": {
+    "summary": "Haksız işten çıkarmada işe iade davası (Kündigungsschutzklage) açılabilir.",
+    "whyCorrect": "Dava, yazılı fesih bildiriminin alınmasından itibaren üç hafta içinde iş mahkemesine ulaşmalıdır.",
+    "background": "İşten Çıkarmaya Karşı Koruma Kanunu, işletmede altı aydan uzun süredir çalışan ve on kişiden fazla çalışanı olan işletmelerdeki çalışanları sosyal açıdan haksız işten çıkarmaya karşı korur. İşten çıkarmanın geçersiz olduğunu düşünen kişi hızlı davranmalıdır: Üç haftadan sonra fesih aksi hâlde geçerli sayılır. Avukattan, sendikadan veya iş mahkemesinin başvuru bürosundan yardım alınabilir. Bu tür davalar çoğu zaman bir uzlaşmayla, örneğin bir tazminatla biter.",
+    "otherOptions": "Çalışmaya devam edip nazik olmak işten çıkarmayı değiştirmez. İhtarlı ödeme takibi (Mahnverfahren) ödenmemiş para alacakları içindir, işten çıkarma için değil. Haksız işten çıkarma bir suç değildir – polis bundan sorumlu değildir.",
+    "memoryTip": "İşten çıkarma → üç hafta → işe iade davası.",
+    "legalBasis": [
+      {
+        "label": "İşten Çıkarmaya Karşı Koruma Kanunu § 4",
+        "url": "https://www.gesetze-im-internet.de/kschg/__4.html"
+      }
+    ]
+  },
+  "139": {
+    "summary": "Mahkemede dava, örneğin biri suç işlemiş ve suçlanmışsa açılır.",
+    "whyCorrect": "Savcılık iddianame düzenler ve mahkeme bir duruşmada suç ve ceza hakkında karar verir.",
+    "background": "Polis bir suçu soruşturduğunda, savcılık yeterli delil olup olmadığını inceler. Sonra iddianame düzenler ve ceza davası açılır. Karara kadar masumiyet karinesi geçerlidir: Bir mahkeme aksine karar verene kadar kimse suçlu sayılmaz. Her sanığın bir müdafi ve mahkemede dinlenme hakkı vardır (Anayasa madde 103). Mahkemeler ayrıca vatandaşlar arasındaki, örneğin sözleşmeler veya kiralarla ilgili anlaşmazlıklara da karar verir.",
+    "otherOptions": "Din değiştirmek ve hükümetten farklı bir görüşe sahip olmak temel haklardır – bunun için mahkemeye çıkılmaz. Yanlış park etmek bir kabahattir: Para cezası alırsın ve çekici masrafını ödersin. Mahkemeye ancak kendin itiraz edersen gidilir.",
+    "memoryTip": "Suç + iddianame = dava.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 103",
+        "url": "https://www.gesetze-im-internet.de/gg/art_103.html"
+      }
+    ]
+  },
+  "140": {
+    "summary": "Halktan hâkim (Schöffe), meslekten hâkimlerle birlikte suç ve ceza hakkında karar verir.",
+    "whyCorrect": "Schöffen ceza davalarında fahrî hâkimlerdir ve meslekten hâkimlerle aynı oy hakkına sahiptir.",
+    "background": "Halktan hâkimler, hukuk eğitimi olmayan ve ceza mahkemelerinde karara katılan vatandaşlardır. Böylece halkın bakış açısını yargıya taşırlar. Beş yıllığına seçilirler; belediyeler bunun için aday listeleri hazırlar. Halktan hâkim olabilmek için Alman vatandaşı olmak ve 25 ile 69 yaş arasında bulunmak gerekir. Kazanç kaybı için tazminat verilir.",
+    "otherOptions": "Hukuki danışmanlığı avukatlar verir. Belgeleri resmî kurumlar veya noterler düzenler. Sanığı bir müdafi, yani avukat savunur.",
+    "memoryTip": "Schöffe = hâkimlik yapan vatandaş (fahrî).",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 92",
+        "url": "https://www.gesetze-im-internet.de/gg/art_92.html"
+      }
+    ]
+  },
+  "141": {
+    "summary": "Hukuki konularda avukat danışmanlık yapar ve kişileri mahkemede temsil eder.",
+    "whyCorrect": "Avukatlar müvekkillerinin çıkarlarını temsil eden bağımsız danışmanlardır.",
+    "background": "Avukatlar hukuk okumuş ve ruhsat almış kişilerdir. Örneğin kira sözleşmeleri, işyerindeki sorunlar, oturum meseleleri veya boşanma konusunda danışmanlık yapar ve müvekkillerini mahkemede temsil ederler. Az parası olanlar, masrafların tamamını veya bir kısmını devletin karşılaması için danışma yardımı veya adli yardım başvurusu yapabilir. Tüketici merkezleri, kiracı dernekleri veya sendikalar da üyelerine hukuki danışmanlık sunar.",
+    "otherOptions": "Hâkimler tarafsız karar verir ve hiçbir tarafı temsil edemez. Schöffen fahrî hâkimlerdir. Savcılar suçları soruşturur ve dava açar – tek tek vatandaşları değil, devleti temsil ederler.",
+    "memoryTip": "Avukat = benim temsilcim; hâkim = tarafsız; savcı = suçlayan.",
+    "legalBasis": []
+  },
+  "142": {
+    "summary": "Hâkim bir mahkemede çalışır ve karar (hüküm) verir.",
+    "whyCorrect": "Hâkimler hukuki anlaşmazlıklara ve ceza davalarına bağımsız olarak ve yalnızca yasaya göre karar verir.",
+    "background": "Anayasa’nın 97. maddesine göre hâkimler bağımsızdır ve yalnızca yasaya tabidir. Kimse – hükümet bile – onlara nasıl karar vereceklerini söyleyemez. İki tarafı dinler, delilleri inceler ve sonra karar verirler. Bağımsız kalmaları için kural olarak iradeleri dışında görevden alınamaz veya başka yere atanamazlar.",
+    "otherOptions": "Vatandaşları mahkemede avukatlar temsil eder. Yasaları parlamento değiştirir. Mahkemedeki gençlere gençlik dairesinin çocuk mahkemesi yardım servisi destek olur.",
+    "memoryTip": "Hâkim = bağımsız olarak hüküm verir.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 97",
+        "url": "https://www.gesetze-im-internet.de/gg/art_97.html"
+      }
+    ]
+  },
+  "143": {
+    "summary": "Hâkim yargıya (Judikative) aittir.",
+    "whyCorrect": "Judikative, yargı gücü için kullanılan teknik terimdir.",
+    "background": "Almanya’da devlet gücü üç kuvvete dağıtılmıştır. Yargı – Latince “iudicare”, yani yargılamak kelimesinden – mahkemeler ve hâkimlerden oluşur. Anayasa’nın 92. maddesi şöyle der: “Yargı gücü hâkimlere emanet edilmiştir.” Yargı diğer güçleri de denetler: Mahkemeler resmî kurumların kararlarını iptal edebilir, Federal Anayasa Mahkemesi de yasaları geçersiz ilan edebilir.",
+    "otherOptions": "Yürütmeye (Exekutive) hükümet ve idare, yasamaya (Legislative) parlamentolar dahildir. “Operative” diye bir devlet gücü yoktur.",
+    "memoryTip": "Judikative – adalet (Justiz) – hâkimler.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 92",
+        "url": "https://www.gesetze-im-internet.de/gg/art_92.html"
+      },
+      {
+        "label": "Anayasa (GG) md. 97",
+        "url": "https://www.gesetze-im-internet.de/gg/art_97.html"
+      }
+    ]
+  },
+  "144": {
+    "summary": "Hâkim yargı gücüne (rechtsprechende Gewalt) aittir.",
+    "whyCorrect": "Bu, Judikative’nin Almancasıdır – hüküm veren güç.",
+    "background": "Bu soru 143. soruyla aynı şeyi sorar, sadece Latince yerine Almanca terimlerle. Üç güç Almanca şöyle adlandırılır: yasama gücü (gesetzgebende Gewalt), yürütme gücü (vollziehende Gewalt) ve yargı gücü (rechtsprechende Gewalt). Anayasa’nın 20. maddesinin 3. fıkrasında da böyle yazar. Yargı gücü hâkimlere emanet edilmiştir (madde 92).",
+    "otherOptions": "Yürütme gücü Exekutive’dir (hükümet ve idare), yasama gücü Legislative’dir (parlamentolar). “Planlama gücü” diye bir şey yoktur.",
+    "memoryTip": "Hüküm vermek (Recht sprechen) → rechtsprechende Gewalt.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 20",
+        "url": "https://www.gesetze-im-internet.de/gg/art_20.html"
+      },
+      {
+        "label": "Anayasa (GG) md. 92",
+        "url": "https://www.gesetze-im-internet.de/gg/art_92.html"
+      }
+    ]
+  },
+  "145": {
+    "summary": "Hâkim yargı (Judikative) için çalışır.",
+    "whyCorrect": "Judikative yargı gücü, yani mahkemelerdir.",
+    "background": "Devlet gücünün bölünmesi demokrasinin temel ilkelerinden biridir. Aynı kurum yasa yapabilse, uygulayabilse ve bunlar hakkında karar verebilse çok güçlü olurdu. Bu yüzden mahkemeler parlamentodan ve hükümetten ayrıdır ve bağımsızdır. Böylece vatandaşlar mahkemede devlete karşı bile kendilerini savunabilir – bunu Anayasa’nın 19. maddesinin 4. fıkrası güvence altına alır.",
+    "otherOptions": "Yürütme (Exekutive) yasaları uygular, yasama (Legislative) kabul eder. Basın bir devlet gücü değildir, devletten bağımsızdır – bazen “dördüncü güç” denilse de.",
+    "memoryTip": "143, 144, 145 ve 147. sorular: hâkim = Judikative = hüküm vermek.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 19",
+        "url": "https://www.gesetze-im-internet.de/gg/art_19.html"
+      },
+      {
+        "label": "Anayasa (GG) md. 92",
+        "url": "https://www.gesetze-im-internet.de/gg/art_92.html"
+      }
+    ]
+  },
+  "146": {
+    "summary": "Mahkemedeki bir yargılamaya Prozess (dava) denir.",
+    "whyCorrect": "Örneğin ceza davası (Strafprozess) veya hukuk davası (Zivilprozess) denir.",
+    "background": "Dava, bir mahkemenin bir olayı incelediği ve karara bağladığı düzenlenmiş süreçtir. Ceza davasında birinin suç işleyip işlemediği sorusu ele alınır. Hukuk davasında vatandaşlar veya şirketler, örneğin para veya sözleşmeler yüzünden birbirleriyle anlaşmazlık içindedir. Davanın nasıl işleyeceğini Ceza Muhakemesi Kanunu ve Hukuk Muhakemeleri Kanunu gibi yasalar düzenler. Duruşmaların çoğu herkese açıktır – izleyici olarak gidebilirsin.",
+    "otherOptions": "Protokoll (tutanak) bir duruşmada olanların yazılı kaydıdır. “Prozedur” bir süreç için genel bir kelimedir, program ise örneğin bir plan veya yazılımdır – hiçbiri teknik terim değildir.",
+    "memoryTip": "Mahkeme + yargılama = Prozess.",
+    "legalBasis": []
+  },
+  "147": {
+    "summary": "Hâkimin işi hüküm vermektir (Recht sprechen).",
+    "whyCorrect": "Hâkimler mahkeme süreçlerinde yasaya göre neyin hukuka uygun olduğuna karar verir.",
+    "background": "“Hüküm vermek”, somut bir olayda yasaya göre neyin geçerli olduğuna karar vermek demektir – örneğin bir işten çıkarmanın geçerli olup olmadığına, bir kazadan sonra kimin tazminat ödemesi gerektiğine veya bir sanığın suçlu olup olmadığına. Kararlar “halk adına” açıklanır. Birçok karara karşı, daha yüksek bir mahkemenin davayı yeniden incelemesi için kanun yoluna başvurulabilir.",
+    "otherOptions": "Almanya’yı federal hükümet yönetir, yasaları parlamento çıkarır. “Plan hazırlamak” hâkimlerin değil, örneğin idarelerin görevidir.",
+    "memoryTip": "Hâkim → hüküm verir → “halk adına” karar.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 92",
+        "url": "https://www.gesetze-im-internet.de/gg/art_92.html"
+      },
+      {
+        "label": "Anayasa (GG) md. 97",
+        "url": "https://www.gesetze-im-internet.de/gg/art_97.html"
+      }
+    ]
+  },
+  "148": {
+    "summary": "Polisin görevlerinden biri yasalara uyulmasını denetlemektir.",
+    "whyCorrect": "Polis tehlikeleri önler ve suçları kovuşturur.",
+    "background": "Polis kamu güvenliğini ve düzenini sağlar. Acil durumlarda yardım eder (acil numara 110), trafiği düzenler, suç duyurularını alır ve savcılık adına suçları soruşturur. Almanya’da polis esas olarak eyaletlerin işidir. Buna ek olarak örneğin sınırları, tren istasyonlarını ve havalimanlarını koruyan Federal Polis ve Federal Kriminal Dairesi vardır. Polis de yasalara bağlıdır ve ancak bir yasa izin verirse harekete geçebilir.",
+    "otherOptions": "Ülkeyi savunmak Bundeswehr’in görevidir. Vatandaşları dinlemek kural olarak yasaktır; gözetim yalnızca dar istisnalarda ve çoğunlukla hâkim izniyle yapılabilir. Yasaları parlamentolar kabul eder.",
+    "memoryTip": "Polis = iç güvenlik; Bundeswehr = dışa karşı savunma.",
+    "legalBasis": []
+  },
+  "149": {
+    "summary": "Holokost’u inkâr etmek antisemitik davranışa bir örnektir.",
+    "whyCorrect": "Holokost inkârı Yahudileri hedef alır ve Almanya’da suçtur.",
+    "background": "Antisemitizm Yahudilere karşı düşmanlık veya nefrettir. Holokost’u – Nasyonal Sosyalistlerin yaklaşık altı milyon Avrupalı Yahudiyi öldürmesini – inkâr eden kişi kurbanlarla alay eder ve antisemitik komplo anlatıları yayar. Almanya’da bu, halkı kin ve nefrete tahrik olarak cezalandırılır (StGB § 130). Sinagoglara saldırılar, Yahudilere hakaretler veya Yahudilerin dünyayı yönettiği iddiası da antisemitizm örnekleridir.",
+    "otherOptions": "Bir Yahudi bayramına katılmak ilgi ve saygı gösterir. İsrail hükümetini eleştirmek, her hükümette olduğu gibi serbesttir; ancak bütün Yahudiler sorumlu tutulduğunda veya İsrail’in var olma hakkı reddedildiğinde antisemitik olur. Bir Yahudi kulübüne karşı futbol oynamak tamamen normal bir spordur.",
+    "memoryTip": "Holokost’u inkâr etmek = antisemitizm ve suç.",
+    "legalBasis": [
+      {
+        "label": "Ceza Kanunu (StGB) § 130",
+        "url": "https://www.gesetze-im-internet.de/stgb/__130.html"
+      }
+    ]
+  },
+  "150": {
+    "summary": "Gerichtsschöffe, fahrî bir hâkimdir.",
+    "whyCorrect": "Halktan hâkimler ceza davalarına meslekten hâkimlerin yanında katılır ve aynı oy hakkına sahiptir.",
+    "background": "Almanya’da yaklaşık 60.000 halktan hâkim vardır. Örneğin sulh mahkemesinde bir meslekten hâkimin, asliye mahkemesinde (Landgericht) iki veya üç meslekten hâkimin yanında oturur ve suç ile ceza hakkında birlikte karar verirler. Hukuk okumuş olmaları gerekmez – tam tersine, “sıradan” vatandaşlar olarak yaşam deneyimleri istenir. Görev fahrîdir; ancak önemli nedenlerle reddedilebilir. Bu soru 140. soruyla yakından ilişkilidir.",
+    "otherOptions": "Belediye başkanının yardımcısı ikinci belediye başkanı veya başkan yardımcısıdır. Belediye meclisi üyeleri seçilmiş yerel politikacılardır. Hukuk okumuş kişi hukukçudur – halktan hâkimler ise tam olarak hukukçu olmayanlardır.",
+    "memoryTip": "Schöffe = fahrî hâkim, hukukçu değil.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 92",
+        "url": "https://www.gesetze-im-internet.de/gg/art_92.html"
+      }
+    ]
   }
 }

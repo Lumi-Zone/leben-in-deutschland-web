@@ -1513,5 +1513,304 @@
         "url": "https://www.gesetze-im-internet.de/gg/art_20.html"
       }
     ]
+  },
+  "126": {
+    "summary": "Vor einer Wahl bekommen Wahlberechtigte eine Wahlbenachrichtigung von der Gemeinde.",
+    "whyCorrect": "Die Gemeinde schickt sie spätestens drei Wochen vor der Wahl per Post an alle, die im Wählerverzeichnis stehen.",
+    "background": "Auf der Wahlbenachrichtigung stehen der Wahltag, die Uhrzeit und das Wahllokal, in dem man wählen kann. Auf der Rückseite gibt es meist einen Antrag für die Briefwahl. Zur Wahl bringt man die Benachrichtigung und einen Ausweis mit. Wer keine Benachrichtigung bekommen hat, obwohl er wahlberechtigt ist, sollte sich rechtzeitig bei der Gemeinde melden und prüfen, ob er im Wählerverzeichnis steht.",
+    "otherOptions": "Eine „Wahlerlaubnis“ vom Bundespräsidenten gibt es nicht – das Wahlrecht ergibt sich aus dem Gesetz. Die Bundesversammlung wählt nur den Bundespräsidenten und schreibt keine Briefe an Wähler. Das Pfarramt gehört zur Kirche und hat mit Wahlen nichts zu tun.",
+    "memoryTip": "Wahlbrief von der Gemeinde = Wahlbenachrichtigung.",
+    "legalBasis": []
+  },
+  "127": {
+    "summary": "Die 5-Prozent-Hürde gibt es, weil viele kleine Parteien die Regierungsbildung erschweren.",
+    "whyCorrect": "Sie soll ein zersplittertes Parlament verhindern und stabile Mehrheiten ermöglichen.",
+    "background": "In der Weimarer Republik saßen zeitweise mehr als ein Dutzend Parteien im Reichstag. Stabile Mehrheiten zu finden war sehr schwer, Regierungen wechselten oft – das trug dazu bei, dass die Demokratie scheiterte. Die Väter und Mütter des Grundgesetzes und der Wahlgesetze wollten das verhindern. Deshalb braucht eine Partei bei der Bundestagswahl mindestens fünf Prozent der Zweitstimmen, um Sitze zu bekommen.",
+    "otherOptions": "Ob kleine Parteien ähnliche Programme haben, spielt für die Regel keine Rolle. Die Orientierung der Bürger ist nicht der Grund – auf dem Stimmzettel dürfen trotzdem viele Parteien stehen. Und Politiker werden nicht von ihren Parteien bezahlt: Abgeordnete erhalten eine Entschädigung aus öffentlichen Mitteln.",
+    "memoryTip": "Weniger Splitterparteien → leichter eine Regierung bilden.",
+    "legalBasis": []
+  },
+  "128": {
+    "summary": "Gewählte Parlamentsmitglieder nennt man Abgeordnete.",
+    "whyCorrect": "Abgeordnete vertreten im Bundestag, in einem Landtag oder im Europäischen Parlament die Bürgerinnen und Bürger.",
+    "background": "Abgeordnete werden vom Volk gewählt und sind „Vertreter des ganzen Volkes“ (Artikel 38 Grundgesetz). Sie beraten und beschließen Gesetze, kontrollieren die Regierung und kümmern sich um die Anliegen der Menschen in ihrem Wahlkreis. Im Bundestag gibt es seit 2025 630 Abgeordnete. Für ihre Arbeit erhalten sie eine Entschädigung, die sogenannten Diäten.",
+    "otherOptions": "Der Bundeskanzler wird vom Bundestag gewählt, nicht direkt von den Bürgern. Botschafterinnen und Botschafter vertreten Deutschland im Ausland und werden ernannt, nicht gewählt. Ministerpräsidenten werden von den Landtagen gewählt.",
+    "memoryTip": "Vom Volk ins Parlament geschickt = Abgeordnete.",
+    "legalBasis": [
+      {
+        "label": "Art. 38 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_38.html"
+      }
+    ]
+  },
+  "129": {
+    "summary": "Vom Volk gewählt wird in Deutschland der Bundestag.",
+    "whyCorrect": "Kanzler, Ministerpräsidenten und Bundespräsident werden dagegen indirekt gewählt.",
+    "background": "Deutschland ist eine repräsentative Demokratie: Das Volk wählt direkt die Parlamente – den Bundestag, die Landtage, die Gemeinderäte und das Europäische Parlament. Die Parlamente wählen dann weitere Ämter. Der Bundestag wählt den Bundeskanzler, die Landtage wählen die Ministerpräsidenten, und die Bundesversammlung wählt den Bundespräsidenten. Auf kommunaler Ebene wählen die Bürger in den meisten Ländern auch den Bürgermeister direkt.",
+    "otherOptions": "Bundeskanzler, Ministerpräsidenten und Bundespräsident werden nicht direkt vom Volk gewählt. Das ist bewusst so: Das Grundgesetz setzt auf starke Parlamente.",
+    "memoryTip": "Das Volk wählt Parlamente; die Parlamente wählen die Regierungschefs.",
+    "legalBasis": [
+      {
+        "label": "Art. 38 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_38.html"
+      },
+      {
+        "label": "Art. 63 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_63.html"
+      }
+    ]
+  },
+  "130": {
+    "summary": "Gültig ist Stimmzettel 1.",
+    "whyCorrect": "Auf ihm ist in der Spalte für die Erststimme und in der Spalte für die Zweitstimme jeweils genau ein Kreuz.",
+    "background": "Bei der Bundestagswahl hat man zwei Stimmen. Links kreuzt man mit der Erststimme eine Person aus dem eigenen Wahlkreis an, rechts mit der Zweitstimme eine Partei. In jeder Spalte darf höchstens ein Kreuz stehen. Man muss nicht beide Stimmen abgeben – dann zählt nur die abgegebene. Ungültig wird eine Stimme, wenn mehrere Kreuze in einer Spalte sind, wenn man etwas dazuschreibt oder wenn nicht klar ist, was gemeint ist.",
+    "otherOptions": "Auf den Stimmzetteln 2, 3 und 4 stehen in mindestens einer Spalte mehrere Kreuze. Dann ist nicht eindeutig, wen man wählen will, und diese Stimme ist ungültig.",
+    "memoryTip": "Zwei Spalten, je ein Kreuz.",
+    "legalBasis": []
+  },
+  "131": {
+    "summary": "Ein Bürgermeister oder eine Bürgermeisterin ist das Oberhaupt einer Gemeinde.",
+    "whyCorrect": "Er oder sie leitet die Gemeindeverwaltung und vertritt die Gemeinde nach außen.",
+    "background": "Jede Stadt und Gemeinde hat einen Bürgermeister oder eine Bürgermeisterin; in größeren Städten heißt das Amt oft Oberbürgermeister. In den meisten Bundesländern wird er oder sie direkt von den Bürgerinnen und Bürgern gewählt. Der Bürgermeister leitet die Verwaltung im Rathaus, setzt die Beschlüsse des Gemeinderats um und ist Ansprechpartner für die Menschen vor Ort.",
+    "otherOptions": "Eine Schule leitet ein Schulleiter oder eine Schulleiterin, eine Bank ein Vorstand. Den Vorsitz einer Partei hat der oder die Parteivorsitzende. Das Wort „Bürgermeister“ bedeutet: Er ist der „Meister“ der Bürger einer Gemeinde.",
+    "memoryTip": "Bürgermeister = Chef der Gemeinde, sitzt im Rathaus.",
+    "legalBasis": [
+      {
+        "label": "Art. 28 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_28.html"
+      }
+    ]
+  },
+  "132": {
+    "summary": "Ehrenamtlich bedeutet: freiwillig und unbezahlt arbeiten, zum Beispiel in Vereinen und Verbänden.",
+    "whyCorrect": "Ehrenamtliche engagieren sich in ihrer Freizeit für andere, ohne dafür ein Gehalt zu bekommen.",
+    "background": "Ehrenamt ist in Deutschland sehr verbreitet: Rund 40 Prozent der Menschen ab 14 Jahren engagieren sich freiwillig. Sie trainieren Kinder im Sportverein, helfen bei der Freiwilligen Feuerwehr oder dem Technischen Hilfswerk, verteilen Lebensmittel bei der Tafel, begleiten Geflüchtete oder sind Wahlhelfer und Schöffen. Ohne dieses Engagement würden viele Angebote nicht funktionieren. Für manche Ehrenämter gibt es eine kleine Aufwandsentschädigung.",
+    "otherOptions": "Soldaten arbeiten bei der Bundeswehr in ihrem Beruf und werden bezahlt. Wer in der Bundesregierung oder im Krankenhaus arbeitet und Geld verdient, arbeitet hauptberuflich, nicht ehrenamtlich.",
+    "memoryTip": "Ehrenamt = Ehre statt Geld.",
+    "legalBasis": []
+  },
+  "133": {
+    "summary": "Bei Bundestags- und Landtagswahlen darf man per Briefwahl wählen.",
+    "whyCorrect": "Wer am Wahltag nicht ins Wahllokal gehen kann oder will, kann vorher per Post abstimmen.",
+    "background": "Die Briefwahl beantragt man bei der Gemeinde, zum Beispiel mit dem Formular auf der Wahlbenachrichtigung oder online. Man bekommt dann einen Wahlschein, den Stimmzettel und Umschläge. Den Stimmzettel füllt man persönlich und unbeobachtet aus und schickt alles so ab, dass es spätestens am Wahltag um 18 Uhr ankommt. Bei der Bundestagswahl 2021 hat fast die Hälfte der Wählerinnen und Wähler per Brief gewählt.",
+    "otherOptions": "Niemand darf für einen anderen wählen – auch ein Ehemann nicht für seine Frau. Das verstößt gegen die geheime und persönliche Wahl und ist strafbar. Telefonisch kann man nicht wählen. Das Wahlalter für Bundestag und die meisten Landtage liegt bei 18; einige Länder erlauben die Landtagswahl ab 16, aber nicht ab 14.",
+    "memoryTip": "Briefwahl ja – Stellvertreter, Telefon, Kinder nein.",
+    "legalBasis": []
+  },
+  "134": {
+    "summary": "Um die Buslinie zu erhalten, kann man sich einer Bürgerinitiative anschließen oder selbst eine gründen.",
+    "whyCorrect": "Bürgerinitiativen sind ein typischer Weg, sich vor Ort für ein gemeinsames Anliegen einzusetzen.",
+    "background": "In einer Bürgerinitiative schließen sich Menschen zusammen, die ein gemeinsames Ziel haben – zum Beispiel eine Buslinie, einen Spielplatz oder ein Schwimmbad zu erhalten. Sie sammeln Unterschriften, sprechen mit Politikerinnen und Politikern im Gemeinderat, schreiben an die Presse oder organisieren Demonstrationen. In vielen Ländern kann man außerdem mit einem Bürgerbegehren erreichen, dass die Bürger selbst über eine Frage abstimmen. So funktioniert Demokratie auch zwischen den Wahlen.",
+    "otherOptions": "Ein Sportverein und Radtraining ändern nichts an der Entscheidung über die Buslinie. Das Finanzamt zieht Steuern ein und ist für Buslinien nicht zuständig; als Steuerzahler hat man kein Recht auf eine bestimmte Buslinie. Das Forstamt kümmert sich um den Wald.",
+    "memoryTip": "Gemeinsam etwas erreichen = Bürgerinitiative.",
+    "legalBasis": [
+      {
+        "label": "Art. 8 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_8.html"
+      },
+      {
+        "label": "Art. 17 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_17.html"
+      }
+    ]
+  },
+  "135": {
+    "summary": "Gewerkschaften vertreten die Arbeitnehmerinnen und Arbeitnehmer.",
+    "whyCorrect": "Sie setzen sich für bessere Löhne und Arbeitsbedingungen der Beschäftigten ein.",
+    "background": "Gewerkschaften sind freiwillige Zusammenschlüsse von Beschäftigten. Sie verhandeln Tarifverträge, beraten ihre Mitglieder bei Problemen am Arbeitsplatz und geben ihnen Rechtsschutz, etwa bei einer Kündigung. In vielen Betrieben arbeiten sie mit den Betriebsräten zusammen. Mitglied kann jeder Arbeitnehmer werden; der Beitrag beträgt meist rund ein Prozent des Bruttolohns. Diese Frage ist eng verwandt mit Frage 101.",
+    "otherOptions": "Große und kleine Unternehmen werden von Arbeitgeberverbänden und Wirtschaftsverbänden vertreten, etwa von Industrie- und Handelskammern. Selbstständige haben eigene Berufsverbände und Kammern.",
+    "memoryTip": "Gewerkschaft = Stimme der Arbeitnehmer.",
+    "legalBasis": [
+      {
+        "label": "Art. 9 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_9.html"
+      }
+    ]
+  },
+  "136": {
+    "summary": "Zum Arbeitsgericht geht man zum Beispiel bei einer ungerechtfertigten Kündigung durch den Chef.",
+    "whyCorrect": "Arbeitsgerichte entscheiden Streit zwischen Arbeitnehmern und Arbeitgebern.",
+    "background": "Für Konflikte aus dem Arbeitsverhältnis gibt es in Deutschland eigene Gerichte: die Arbeitsgerichte. Dort geht es um Kündigungen, nicht gezahlten Lohn, Urlaub, Zeugnisse oder Abmahnungen. In der ersten Instanz muss man keinen Anwalt haben, und jede Seite trägt ihre eigenen Anwaltskosten selbst. Oft beginnt das Verfahren mit einem Gütetermin, in dem das Gericht eine Einigung versucht.",
+    "otherOptions": "Eine falsche Nebenkostenabrechnung ist ein Mietstreit – dafür ist das Amtsgericht zuständig. Streit mit Nachbarn gehört ebenfalls vor das Amtsgericht, oft muss man vorher eine Schlichtung versuchen. Nach einem Verkehrsunfall geht es um Schadenersatz (Zivilgericht) oder eine Straftat (Strafgericht).",
+    "memoryTip": "Arbeit + Streit = Arbeitsgericht.",
+    "legalBasis": []
+  },
+  "137": {
+    "summary": "Bei Konflikten in der Arbeitswelt ist das Arbeitsgericht zuständig.",
+    "whyCorrect": "Arbeitsgerichte sind spezialisierte Gerichte für Streit aus Arbeitsverhältnissen.",
+    "background": "Die Arbeitsgerichtsbarkeit hat drei Stufen: Arbeitsgericht, Landesarbeitsgericht und Bundesarbeitsgericht in Erfurt. Neben Berufsrichtern entscheiden dort ehrenamtliche Richterinnen und Richter mit, die von Arbeitnehmer- und Arbeitgeberseite kommen. So fließt Erfahrung aus der Praxis in die Urteile ein. Auch Streit zwischen Gewerkschaften und Arbeitgebern, etwa über Streiks, landet vor den Arbeitsgerichten.",
+    "otherOptions": "Das Familiengericht entscheidet über Scheidung, Sorgerecht oder Unterhalt. Das Strafgericht verhandelt über Straftaten. Das Amtsgericht ist für viele allgemeine Zivil- und Strafsachen zuständig, aber nicht für Arbeitsrecht.",
+    "memoryTip": "Arbeitswelt → Arbeitsgericht → Landesarbeitsgericht → Bundesarbeitsgericht.",
+    "legalBasis": []
+  },
+  "138": {
+    "summary": "Bei einer ungerechtfertigten Kündigung kann man Kündigungsschutzklage erheben.",
+    "whyCorrect": "Die Klage muss innerhalb von drei Wochen nach Erhalt der schriftlichen Kündigung beim Arbeitsgericht eingehen.",
+    "background": "Das Kündigungsschutzgesetz schützt Beschäftigte vor einer sozial ungerechtfertigten Kündigung, wenn sie länger als sechs Monate im Betrieb arbeiten und der Betrieb mehr als zehn Beschäftigte hat. Wer die Kündigung für unwirksam hält, muss schnell handeln: Nach drei Wochen gilt die Kündigung sonst als wirksam. Hilfe bekommt man bei einer Anwältin, bei der Gewerkschaft oder bei der Rechtsantragstelle des Arbeitsgerichts. Oft endet ein solches Verfahren mit einem Vergleich, etwa einer Abfindung.",
+    "otherOptions": "Einfach weiterzuarbeiten und freundlich zu sein ändert nichts an der Kündigung. Ein Mahnverfahren ist für offene Geldforderungen gedacht, nicht für eine Kündigung. Eine unberechtigte Kündigung ist keine Straftat – die Polizei ist dafür nicht zuständig.",
+    "memoryTip": "Kündigung → drei Wochen → Kündigungsschutzklage.",
+    "legalBasis": [
+      {
+        "label": "§ 4 Kündigungsschutzgesetz",
+        "url": "https://www.gesetze-im-internet.de/kschg/__4.html"
+      }
+    ]
+  },
+  "139": {
+    "summary": "Zu einem Prozess vor Gericht kommt es zum Beispiel, wenn jemand eine Straftat begangen hat und angeklagt wird.",
+    "whyCorrect": "Die Staatsanwaltschaft erhebt Anklage, und ein Gericht entscheidet in einer Hauptverhandlung über Schuld und Strafe.",
+    "background": "Wenn die Polizei eine Straftat ermittelt, prüft die Staatsanwaltschaft, ob genug Beweise vorliegen. Dann erhebt sie Anklage, und es kommt zum Strafprozess. Bis zum Urteil gilt die Unschuldsvermutung: Niemand gilt als schuldig, bevor ein Gericht es festgestellt hat. Jeder Angeklagte hat das Recht auf einen Verteidiger und auf rechtliches Gehör (Artikel 103 Grundgesetz). Gerichte entscheiden außerdem auch Streit zwischen Bürgern, zum Beispiel über Verträge oder Mieten.",
+    "otherOptions": "Die Religion zu wechseln und eine andere Meinung als die Regierung zu haben sind Grundrechte – dafür kommt man nicht vor Gericht. Falschparken ist eine Ordnungswidrigkeit: Man bekommt ein Bußgeld und muss das Abschleppen bezahlen. Vor Gericht geht es nur, wenn man selbst Einspruch einlegt.",
+    "memoryTip": "Straftat + Anklage = Prozess.",
+    "legalBasis": [
+      {
+        "label": "Art. 103 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_103.html"
+      }
+    ]
+  },
+  "140": {
+    "summary": "Ein Schöffe oder eine Schöffin entscheidet zusammen mit Berufsrichtern über Schuld und Strafe.",
+    "whyCorrect": "Schöffen sind ehrenamtliche Richter in Strafverfahren und haben dabei die gleiche Stimme wie Berufsrichter.",
+    "background": "Schöffinnen und Schöffen sind Bürgerinnen und Bürger ohne juristische Ausbildung, die an Strafgerichten mitentscheiden. So bringen sie die Sicht der Bevölkerung in die Rechtsprechung ein. Sie werden für fünf Jahre gewählt; die Gemeinden stellen dafür Vorschlagslisten auf. Schöffe kann werden, wer die deutsche Staatsangehörigkeit hat und zwischen 25 und 69 Jahre alt ist. Für den Verdienstausfall gibt es eine Entschädigung.",
+    "otherOptions": "Rechtlichen Rat geben Rechtsanwältinnen und Rechtsanwälte. Urkunden stellen Behörden oder Notare aus. Den Angeklagten verteidigt ein Strafverteidiger, also ein Rechtsanwalt.",
+    "memoryTip": "Schöffe = Bürger als Richter (ehrenamtlich).",
+    "legalBasis": [
+      {
+        "label": "Art. 92 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_92.html"
+      }
+    ]
+  },
+  "141": {
+    "summary": "Bei Rechtsfragen berät ein Rechtsanwalt oder eine Rechtsanwältin und vertritt Personen vor Gericht.",
+    "whyCorrect": "Anwälte sind unabhängige Berater, die die Interessen ihrer Mandanten vertreten.",
+    "background": "Rechtsanwältinnen und Rechtsanwälte haben Jura studiert und eine Zulassung. Sie beraten zum Beispiel bei Mietverträgen, Arbeitsproblemen, Aufenthaltsfragen oder einer Scheidung und vertreten ihre Mandanten vor Gericht. Wer wenig Geld hat, kann Beratungshilfe oder Prozesskostenhilfe beantragen, damit der Staat die Kosten ganz oder teilweise übernimmt. Auch Verbraucherzentralen, Mietervereine oder Gewerkschaften bieten Rechtsberatung für ihre Mitglieder.",
+    "otherOptions": "Richterinnen und Richter entscheiden neutral und dürfen keine Partei vertreten. Schöffen sind ehrenamtliche Richter. Staatsanwälte ermitteln und klagen Straftaten an – sie vertreten den Staat, nicht einzelne Bürger.",
+    "memoryTip": "Anwalt = mein Vertreter; Richter = neutral; Staatsanwalt = Ankläger.",
+    "legalBasis": []
+  },
+  "142": {
+    "summary": "Ein Richter oder eine Richterin arbeitet an einem Gericht und spricht Urteile.",
+    "whyCorrect": "Richter entscheiden Rechtsstreitigkeiten und Strafsachen unabhängig und nur nach dem Gesetz.",
+    "background": "Richterinnen und Richter sind nach Artikel 97 des Grundgesetzes unabhängig und nur dem Gesetz unterworfen. Niemand – auch keine Regierung – darf ihnen vorschreiben, wie sie entscheiden. Sie hören beide Seiten an, prüfen Beweise und fällen dann ein Urteil. Damit sie unabhängig bleiben, können sie grundsätzlich nicht gegen ihren Willen entlassen oder versetzt werden.",
+    "otherOptions": "Bürger vor Gericht vertreten Rechtsanwälte. Gesetze ändert das Parlament. Jugendliche vor Gericht betreut die Jugendgerichtshilfe des Jugendamts.",
+    "memoryTip": "Richter = urteilen, unabhängig.",
+    "legalBasis": [
+      {
+        "label": "Art. 97 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_97.html"
+      }
+    ]
+  },
+  "143": {
+    "summary": "Ein Richter oder eine Richterin gehört zur Judikative.",
+    "whyCorrect": "Judikative ist der Fachbegriff für die rechtsprechende Gewalt.",
+    "background": "Die Staatsgewalt ist in Deutschland auf drei Gewalten verteilt. Die Judikative – vom lateinischen „iudicare“, urteilen – besteht aus den Gerichten mit ihren Richterinnen und Richtern. Artikel 92 des Grundgesetzes sagt: „Die rechtsprechende Gewalt ist den Richtern anvertraut.“ Die Judikative kontrolliert auch die anderen Gewalten: Gerichte können Entscheidungen von Behörden aufheben, und das Bundesverfassungsgericht kann Gesetze für nichtig erklären.",
+    "otherOptions": "Zur Exekutive gehören Regierung und Verwaltung, zur Legislative die Parlamente. Eine „Operative“ gibt es als Staatsgewalt nicht.",
+    "memoryTip": "Judikative – „Justiz“ – Richter.",
+    "legalBasis": [
+      {
+        "label": "Art. 92 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_92.html"
+      },
+      {
+        "label": "Art. 97 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_97.html"
+      }
+    ]
+  },
+  "144": {
+    "summary": "Ein Richter oder eine Richterin gehört zur rechtsprechenden Gewalt.",
+    "whyCorrect": "Das ist das deutsche Wort für Judikative – die Gewalt, die Recht spricht.",
+    "background": "Diese Frage fragt dasselbe wie Frage 143, nur mit deutschen statt lateinischen Begriffen. Die drei Gewalten heißen auf Deutsch: gesetzgebende Gewalt (Legislative), vollziehende Gewalt (Exekutive) und rechtsprechende Gewalt (Judikative). So steht es auch in Artikel 20 Absatz 3 des Grundgesetzes. Die rechtsprechende Gewalt ist den Richterinnen und Richtern anvertraut (Artikel 92).",
+    "otherOptions": "Die vollziehende Gewalt ist die Exekutive (Regierung und Verwaltung), die gesetzgebende Gewalt die Legislative (Parlamente). Eine „planende Gewalt“ gibt es nicht.",
+    "memoryTip": "Recht sprechen → rechtsprechende Gewalt.",
+    "legalBasis": [
+      {
+        "label": "Art. 20 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_20.html"
+      },
+      {
+        "label": "Art. 92 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_92.html"
+      }
+    ]
+  },
+  "145": {
+    "summary": "Ein Richter oder eine Richterin arbeitet für die Judikative.",
+    "whyCorrect": "Die Judikative ist die rechtsprechende Gewalt, also die Gerichte.",
+    "background": "Dass die Staatsgewalt geteilt wird, ist ein Grundprinzip der Demokratie. Wenn dieselbe Stelle Gesetze machen, ausführen und darüber urteilen könnte, wäre sie zu mächtig. Deshalb sind die Gerichte von Parlament und Regierung getrennt und unabhängig. Bürgerinnen und Bürger können sich so vor Gericht auch gegen den Staat wehren – das garantiert Artikel 19 Absatz 4 des Grundgesetzes.",
+    "otherOptions": "Die Exekutive führt Gesetze aus, die Legislative beschließt sie. Die Presse ist keine Staatsgewalt, sondern unabhängig vom Staat – auch wenn man sie manchmal „vierte Gewalt“ nennt.",
+    "memoryTip": "Fragen 143, 144, 145 und 147: Richter = Judikative = Recht sprechen.",
+    "legalBasis": [
+      {
+        "label": "Art. 19 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_19.html"
+      },
+      {
+        "label": "Art. 92 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_92.html"
+      }
+    ]
+  },
+  "146": {
+    "summary": "Ein Verfahren vor einem Gericht nennt man Prozess.",
+    "whyCorrect": "Man spricht zum Beispiel von einem Strafprozess oder einem Zivilprozess.",
+    "background": "Ein Prozess ist das geregelte Verfahren, in dem ein Gericht einen Fall prüft und entscheidet. Im Strafprozess geht es um die Frage, ob jemand eine Straftat begangen hat. Im Zivilprozess streiten Bürger oder Firmen miteinander, etwa über Geld oder Verträge. Wie ein Prozess abläuft, regeln Gesetze wie die Strafprozessordnung und die Zivilprozessordnung. Die meisten Verhandlungen sind öffentlich – man darf als Zuschauer hingehen.",
+    "otherOptions": "Ein Protokoll ist die schriftliche Aufzeichnung dessen, was in einer Verhandlung passiert. „Prozedur“ ist ein allgemeines Wort für einen Ablauf, und ein Programm ist zum Beispiel ein Plan oder eine Software – keines davon ist der Fachbegriff.",
+    "memoryTip": "Gericht + Verfahren = Prozess.",
+    "legalBasis": []
+  },
+  "147": {
+    "summary": "Die Arbeit eines Richters oder einer Richterin ist es, Recht zu sprechen.",
+    "whyCorrect": "Richter entscheiden in Gerichtsverfahren, was nach dem Gesetz rechtens ist.",
+    "background": "„Recht sprechen“ heißt: In einem konkreten Fall entscheiden, was nach dem Gesetz gilt – zum Beispiel, ob eine Kündigung wirksam war, wer bei einem Unfall Schadenersatz zahlen muss oder ob ein Angeklagter schuldig ist. Urteile werden „im Namen des Volkes“ verkündet. Gegen viele Urteile kann man Rechtsmittel einlegen, damit ein höheres Gericht den Fall noch einmal prüft.",
+    "otherOptions": "Deutschland regiert die Bundesregierung, Gesetze erlässt das Parlament. „Pläne erstellen“ ist keine besondere Aufgabe von Richtern, sondern zum Beispiel von Verwaltungen.",
+    "memoryTip": "Richter → Recht sprechen → Urteil „im Namen des Volkes“.",
+    "legalBasis": [
+      {
+        "label": "Art. 92 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_92.html"
+      },
+      {
+        "label": "Art. 97 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_97.html"
+      }
+    ]
+  },
+  "148": {
+    "summary": "Eine Aufgabe der Polizei ist es, die Einhaltung von Gesetzen zu überwachen.",
+    "whyCorrect": "Die Polizei wehrt Gefahren ab und verfolgt Straftaten.",
+    "background": "Die Polizei sorgt für öffentliche Sicherheit und Ordnung. Sie hilft in Notfällen (Notruf 110), regelt den Verkehr, nimmt Anzeigen auf und ermittelt bei Straftaten im Auftrag der Staatsanwaltschaft. In Deutschland ist die Polizei vor allem Sache der Bundesländer. Dazu kommen die Bundespolizei, die zum Beispiel Grenzen, Bahnhöfe und Flughäfen schützt, und das Bundeskriminalamt. Auch die Polizei ist an Gesetze gebunden und darf nur handeln, wenn ein Gesetz es erlaubt.",
+    "otherOptions": "Das Land zu verteidigen ist Aufgabe der Bundeswehr. Bürgerinnen und Bürger abzuhören ist grundsätzlich verboten; nur in engen Ausnahmen und meist nur mit richterlicher Erlaubnis darf überwacht werden. Gesetze beschließen die Parlamente.",
+    "memoryTip": "Polizei = Sicherheit im Inland; Bundeswehr = Verteidigung nach außen.",
+    "legalBasis": []
+  },
+  "149": {
+    "summary": "Den Holocaust zu leugnen ist ein Beispiel für antisemitisches Verhalten.",
+    "whyCorrect": "Holocaustleugnung richtet sich gegen Jüdinnen und Juden und ist in Deutschland strafbar.",
+    "background": "Antisemitismus ist Feindschaft oder Hass gegenüber Jüdinnen und Juden. Wer den Holocaust – die Ermordung von rund sechs Millionen europäischen Juden durch die Nationalsozialisten – leugnet, verhöhnt die Opfer und verbreitet antisemitische Verschwörungserzählungen. In Deutschland ist das als Volksverhetzung strafbar (§ 130 StGB). Antisemitisch sind zum Beispiel auch Angriffe auf Synagogen, Beleidigungen von Juden oder die Behauptung, Juden würden die Welt beherrschen.",
+    "otherOptions": "Ein jüdisches Fest zu besuchen zeigt Interesse und Respekt. Die israelische Regierung zu kritisieren ist erlaubt – wie bei jeder Regierung; antisemitisch wird es erst, wenn Juden insgesamt verantwortlich gemacht oder Israel das Existenzrecht abgesprochen wird. Gegen einen jüdischen Verein Fußball zu spielen ist ganz normaler Sport.",
+    "memoryTip": "Holocaust leugnen = Antisemitismus und Straftat.",
+    "legalBasis": [
+      {
+        "label": "§ 130 StGB",
+        "url": "https://www.gesetze-im-internet.de/stgb/__130.html"
+      }
+    ]
+  },
+  "150": {
+    "summary": "Ein Gerichtsschöffe oder eine Gerichtsschöffin ist ein ehrenamtlicher Richter oder eine ehrenamtliche Richterin.",
+    "whyCorrect": "Schöffen wirken neben Berufsrichtern an Strafverfahren mit und haben dabei das gleiche Stimmrecht.",
+    "background": "In Deutschland gibt es rund 60.000 Schöffinnen und Schöffen. Sie sitzen zum Beispiel am Amtsgericht neben einem Berufsrichter oder am Landgericht neben zwei oder drei Berufsrichtern und entscheiden mit über Schuld und Strafe. Sie brauchen kein Jurastudium – im Gegenteil, ihre Lebenserfahrung als „normale“ Bürger ist gewollt. Das Amt ist ein Ehrenamt; man kann es nur aus wichtigen Gründen ablehnen. Diese Frage hängt eng mit Frage 140 zusammen.",
+    "otherOptions": "Die Stellvertretung des Stadtoberhaupts ist der zweite Bürgermeister oder Beigeordnete. Mitglieder des Gemeinderats sind gewählte Kommunalpolitiker. Wer Jura studiert hat, ist Jurist – Schöffen sind gerade Laien.",
+    "memoryTip": "Schöffe = ehrenamtlicher Richter, kein Jurist.",
+    "legalBasis": [
+      {
+        "label": "Art. 92 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_92.html"
+      }
+    ]
   }
 }

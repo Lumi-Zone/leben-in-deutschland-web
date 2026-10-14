@@ -1513,5 +1513,304 @@
         "url": "https://www.gesetze-im-internet.de/gg/art_20.html"
       }
     ]
+  },
+  "126": {
+    "summary": "Before an election, eligible voters receive a polling card (Wahlbenachrichtigung) from their municipality.",
+    "whyCorrect": "The municipality sends it by post no later than three weeks before the election to everyone on the electoral roll.",
+    "background": "The polling card shows the election date, the opening hours and the polling station where you can vote. On the back there is usually an application for postal voting. You bring the polling card and an ID document to the polling station. Anyone who is eligible but has not received a card should contact the municipality in good time and check whether they are on the electoral roll.",
+    "otherOptions": "There is no “voting permit” from the Federal President – the right to vote comes from the law. The Federal Convention only elects the Federal President and does not write to voters. A parish office belongs to the church and has nothing to do with elections.",
+    "memoryTip": "Letter from the municipality = polling card.",
+    "legalBasis": []
+  },
+  "127": {
+    "summary": "The 5 percent threshold exists because many small parties make it harder to form a government.",
+    "whyCorrect": "It is meant to prevent a fragmented parliament and make stable majorities possible.",
+    "background": "In the Weimar Republic, more than a dozen parties sat in the Reichstag at times. Finding stable majorities was very difficult and governments changed often – this contributed to the failure of democracy. The authors of the Basic Law and the electoral laws wanted to prevent this. That is why a party needs at least five percent of the second votes in the federal election to receive seats.",
+    "otherOptions": "Whether small parties have similar programmes plays no role in the rule. Citizens’ orientation is not the reason – many parties can still appear on the ballot. And politicians are not paid by their parties: members of parliament receive an allowance from public funds.",
+    "memoryTip": "Fewer splinter parties → easier to form a government.",
+    "legalBasis": []
+  },
+  "128": {
+    "summary": "Members of parliament elected by citizens are called Abgeordnete (members of parliament).",
+    "whyCorrect": "They represent citizens in the Bundestag, a state parliament or the European Parliament.",
+    "background": "Members of parliament are elected by the people and are “representatives of the whole people” (Article 38 of the Basic Law). They debate and pass laws, scrutinise the government and take care of the concerns of people in their constituency. Since 2025 there have been 630 members of the Bundestag. They receive an allowance for their work.",
+    "otherOptions": "The Federal Chancellor is elected by the Bundestag, not directly by citizens. Ambassadors represent Germany abroad and are appointed, not elected. Minister-Presidents are elected by the state parliaments.",
+    "memoryTip": "Sent to parliament by the people = members of parliament.",
+    "legalBasis": [
+      {
+        "label": "Art. 38 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_38.html"
+      }
+    ]
+  },
+  "129": {
+    "summary": "In Germany, the Bundestag is elected by the people.",
+    "whyCorrect": "The Chancellor, Minister-Presidents and Federal President, by contrast, are elected indirectly.",
+    "background": "Germany is a representative democracy: the people directly elect the parliaments – the Bundestag, the state parliaments, the municipal councils and the European Parliament. The parliaments then elect other offices. The Bundestag elects the Federal Chancellor, the state parliaments elect the Minister-Presidents, and the Federal Convention elects the Federal President. At local level, citizens in most states also elect the mayor directly.",
+    "otherOptions": "The Federal Chancellor, Minister-Presidents and Federal President are not elected directly by the people. This is deliberate: the Basic Law relies on strong parliaments.",
+    "memoryTip": "The people elect parliaments; parliaments elect the heads of government.",
+    "legalBasis": [
+      {
+        "label": "Art. 38 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_38.html"
+      },
+      {
+        "label": "Art. 63 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_63.html"
+      }
+    ]
+  },
+  "130": {
+    "summary": "Ballot 1 is valid.",
+    "whyCorrect": "It has exactly one cross in the first-vote column and exactly one in the second-vote column.",
+    "background": "In the federal election you have two votes. On the left, you use the first vote to mark a person from your constituency; on the right, you use the second vote to mark a party. There may be at most one cross in each column. You do not have to cast both votes – then only the one you cast counts. A vote becomes invalid if there are several crosses in one column, if you write something extra or if your intention is unclear.",
+    "otherOptions": "Ballots 2, 3 and 4 have several crosses in at least one column. Then it is not clear whom you want to vote for, and that vote is invalid.",
+    "memoryTip": "Two columns, one cross each.",
+    "legalBasis": []
+  },
+  "131": {
+    "summary": "A mayor (Bürgermeister) is the head of a municipality.",
+    "whyCorrect": "The mayor leads the municipal administration and represents the municipality externally.",
+    "background": "Every town and municipality has a mayor; in larger cities the office is often called Lord Mayor (Oberbürgermeister). In most federal states the mayor is elected directly by the citizens. The mayor runs the administration in the town hall, implements the decisions of the municipal council and is the point of contact for local people.",
+    "otherOptions": "A school is headed by a head teacher, a bank by a board of directors. A party is chaired by its party leader. The word “Bürgermeister” literally means the “master” of a municipality’s citizens.",
+    "memoryTip": "Mayor = head of the municipality, works in the town hall.",
+    "legalBasis": [
+      {
+        "label": "Art. 28 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_28.html"
+      }
+    ]
+  },
+  "132": {
+    "summary": "Volunteering (Ehrenamt) means working voluntarily and unpaid, for example in clubs and associations.",
+    "whyCorrect": "Volunteers commit themselves to others in their free time without receiving a salary.",
+    "background": "Volunteering is very common in Germany: around 40 percent of people aged 14 and over volunteer. They coach children in sports clubs, help in the volunteer fire brigade or the Federal Agency for Technical Relief, hand out food at food banks, support refugees or serve as election workers and lay judges. Many services would not work without this commitment. Some volunteer roles come with a small expense allowance.",
+    "otherOptions": "Soldiers work professionally in the Bundeswehr and are paid. Anyone who works in the federal government or a hospital and earns money is working professionally, not as a volunteer.",
+    "memoryTip": "Ehrenamt = honour (Ehre) instead of money.",
+    "legalBasis": []
+  },
+  "133": {
+    "summary": "In federal and state elections you can vote by post.",
+    "whyCorrect": "Anyone who cannot or does not want to go to the polling station on election day can vote by post in advance.",
+    "background": "You apply for a postal vote at your municipality, for example using the form on the polling card or online. You then receive a polling certificate, the ballot paper and envelopes. You fill in the ballot personally and unobserved and send everything so that it arrives by 6 pm on election day at the latest. In the 2021 federal election, almost half of all voters voted by post.",
+    "otherOptions": "Nobody may vote for someone else – not even a husband for his wife. This violates the principle of secret and personal voting and is a criminal offence. You cannot vote by phone. The voting age for the Bundestag and most state parliaments is 18; some states allow voting in state elections from 16, but not from 14.",
+    "memoryTip": "Postal vote yes – proxies, phone and children no.",
+    "legalBasis": []
+  },
+  "134": {
+    "summary": "To keep the bus line, you can join a citizens’ initiative or start one yourself.",
+    "whyCorrect": "Citizens’ initiatives are a typical way to campaign locally for a shared concern.",
+    "background": "In a citizens’ initiative, people with a common goal join together – for example to keep a bus line, a playground or a swimming pool. They collect signatures, talk to politicians on the municipal council, write to the press or organise demonstrations. In many states, a citizens’ petition can also lead to a local referendum on the issue. This is how democracy works between elections too.",
+    "otherOptions": "A sports club and cycling training do not change the decision about the bus line. The tax office collects taxes and is not responsible for bus lines; being a taxpayer does not give you a right to a particular bus line. The forestry office looks after the forest.",
+    "memoryTip": "Achieving something together = citizens’ initiative.",
+    "legalBasis": [
+      {
+        "label": "Art. 8 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_8.html"
+      },
+      {
+        "label": "Art. 17 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_17.html"
+      }
+    ]
+  },
+  "135": {
+    "summary": "Trade unions represent employees.",
+    "whyCorrect": "They campaign for better wages and working conditions for workers.",
+    "background": "Trade unions are voluntary associations of workers. They negotiate collective agreements, advise their members on problems at work and provide legal protection, for example in the case of dismissal. In many companies they work together with works councils. Any employee can become a member; the fee is usually around one percent of gross pay. This question is closely related to question 101.",
+    "otherOptions": "Large and small companies are represented by employers’ and business associations, such as chambers of industry and commerce. The self-employed have their own professional associations and chambers.",
+    "memoryTip": "Trade union = the voice of employees.",
+    "legalBasis": [
+      {
+        "label": "Art. 9 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_9.html"
+      }
+    ]
+  },
+  "136": {
+    "summary": "You go to the labour court, for example, in case of unjustified dismissal by your boss.",
+    "whyCorrect": "Labour courts decide disputes between employees and employers.",
+    "background": "Germany has special courts for conflicts arising from employment: the labour courts. They deal with dismissals, unpaid wages, holidays, references or formal warnings. At first instance you do not need a lawyer, and each side bears its own legal costs. Proceedings often begin with a conciliation hearing in which the court tries to reach an agreement.",
+    "otherOptions": "An incorrect utility bill is a tenancy dispute – the local court (Amtsgericht) is responsible. Disputes with neighbours also go to the local court; often you must first try mediation. After a traffic accident, the issue is compensation (civil court) or a criminal offence (criminal court).",
+    "memoryTip": "Work + dispute = labour court.",
+    "legalBasis": []
+  },
+  "137": {
+    "summary": "The labour court is responsible for conflicts in the world of work.",
+    "whyCorrect": "Labour courts are specialised courts for disputes arising from employment.",
+    "background": "Labour jurisdiction has three levels: the labour court, the state labour court and the Federal Labour Court in Erfurt. Alongside professional judges, lay judges from both the employee and employer side take part in decisions. This brings practical experience into the judgments. Disputes between trade unions and employers, for example about strikes, also end up in the labour courts.",
+    "otherOptions": "The family court decides on divorce, custody or maintenance. The criminal court hears criminal cases. The local court is responsible for many general civil and criminal matters, but not for labour law.",
+    "memoryTip": "World of work → labour court → state labour court → Federal Labour Court.",
+    "legalBasis": []
+  },
+  "138": {
+    "summary": "In case of unjustified dismissal, you can file an unfair dismissal claim (Kündigungsschutzklage).",
+    "whyCorrect": "The claim must reach the labour court within three weeks of receiving the written notice of dismissal.",
+    "background": "The Protection Against Dismissal Act protects employees from socially unjustified dismissal if they have worked at the company for more than six months and the company has more than ten employees. Anyone who considers the dismissal invalid must act quickly: after three weeks, the dismissal is otherwise deemed valid. Help is available from a lawyer, the trade union or the labour court’s legal application office. Such proceedings often end in a settlement, such as a severance payment.",
+    "otherOptions": "Simply continuing to work and being friendly does not change the dismissal. A dunning procedure is intended for outstanding money claims, not for a dismissal. An unjustified dismissal is not a crime – the police are not responsible.",
+    "memoryTip": "Dismissal → three weeks → unfair dismissal claim.",
+    "legalBasis": [
+      {
+        "label": "Sec. 4 Protection Against Dismissal Act",
+        "url": "https://www.gesetze-im-internet.de/kschg/__4.html"
+      }
+    ]
+  },
+  "139": {
+    "summary": "A court trial takes place, for example, when someone has committed a crime and is charged.",
+    "whyCorrect": "The public prosecutor brings charges, and a court decides on guilt and punishment in a main hearing.",
+    "background": "When the police investigate a crime, the public prosecutor’s office checks whether there is enough evidence. It then brings charges, and a criminal trial follows. Until the verdict, the presumption of innocence applies: nobody is considered guilty until a court has established it. Every defendant has the right to a defence lawyer and to be heard in court (Article 103 of the Basic Law). Courts also decide disputes between citizens, for example about contracts or rent.",
+    "otherOptions": "Changing your religion and holding a different opinion from the government are fundamental rights – you do not go to court for that. Wrong parking is an administrative offence: you get a fine and must pay for the towing. It only goes to court if you file an objection yourself.",
+    "memoryTip": "Crime + charge = trial.",
+    "legalBasis": [
+      {
+        "label": "Art. 103 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_103.html"
+      }
+    ]
+  },
+  "140": {
+    "summary": "A lay judge (Schöffe) decides on guilt and punishment together with professional judges.",
+    "whyCorrect": "Lay judges serve voluntarily in criminal proceedings and have the same vote as professional judges.",
+    "background": "Lay judges are citizens without legal training who take part in decisions at criminal courts. This brings the perspective of the population into the administration of justice. They are elected for five years; the municipalities draw up lists of nominees. To become a lay judge, you must have German citizenship and be between 25 and 69 years old. There is compensation for loss of earnings.",
+    "otherOptions": "Legal advice is given by lawyers. Documents are issued by authorities or notaries. The defendant is defended by a defence lawyer.",
+    "memoryTip": "Lay judge = a citizen acting as a judge (voluntarily).",
+    "legalBasis": [
+      {
+        "label": "Art. 92 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_92.html"
+      }
+    ]
+  },
+  "141": {
+    "summary": "A lawyer advises people on legal questions and represents them in court.",
+    "whyCorrect": "Lawyers are independent advisers who represent their clients’ interests.",
+    "background": "Lawyers have studied law and are admitted to the bar. They advise, for example, on tenancy agreements, problems at work, residence issues or a divorce and represent their clients in court. People with little money can apply for advice assistance or legal aid so that the state covers all or part of the costs. Consumer advice centres, tenants’ associations or trade unions also offer legal advice to their members.",
+    "otherOptions": "Judges decide neutrally and may not represent either side. Lay judges are volunteer judges. Public prosecutors investigate and prosecute crimes – they represent the state, not individual citizens.",
+    "memoryTip": "Lawyer = my representative; judge = neutral; prosecutor = accuser.",
+    "legalBasis": []
+  },
+  "142": {
+    "summary": "A judge works at a court and delivers judgments.",
+    "whyCorrect": "Judges decide legal disputes and criminal cases independently and solely according to the law.",
+    "background": "According to Article 97 of the Basic Law, judges are independent and subject only to the law. Nobody – not even a government – may tell them how to decide. They hear both sides, examine evidence and then deliver a judgment. To keep them independent, they generally cannot be dismissed or transferred against their will.",
+    "otherOptions": "Citizens are represented in court by lawyers. Parliament changes laws. Young people in court are supported by the youth court assistance service of the youth welfare office.",
+    "memoryTip": "Judge = judges, independently.",
+    "legalBasis": [
+      {
+        "label": "Art. 97 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_97.html"
+      }
+    ]
+  },
+  "143": {
+    "summary": "A judge belongs to the judiciary (Judikative).",
+    "whyCorrect": "Judiciary is the technical term for the judicial power.",
+    "background": "State power in Germany is divided into three branches. The judiciary – from the Latin “iudicare”, to judge – consists of the courts and their judges. Article 92 of the Basic Law states: “The judicial power shall be vested in the judges.” The judiciary also checks the other powers: courts can overturn decisions by authorities, and the Federal Constitutional Court can declare laws void.",
+    "otherOptions": "The executive includes the government and administration, the legislature the parliaments. There is no state power called “operative”.",
+    "memoryTip": "Judiciary – justice – judges.",
+    "legalBasis": [
+      {
+        "label": "Art. 92 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_92.html"
+      },
+      {
+        "label": "Art. 97 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_97.html"
+      }
+    ]
+  },
+  "144": {
+    "summary": "A judge belongs to the judicial power (rechtsprechende Gewalt).",
+    "whyCorrect": "This is the German term for the judiciary – the power that administers justice.",
+    "background": "This question asks the same as question 143, just with German instead of Latin terms. The three powers in German are: legislative power (gesetzgebende Gewalt), executive power (vollziehende Gewalt) and judicial power (rechtsprechende Gewalt). This is also how Article 20(3) of the Basic Law puts it. Judicial power is vested in the judges (Article 92).",
+    "otherOptions": "Executive power is the executive (government and administration), legislative power the legislature (parliaments). There is no “planning power”.",
+    "memoryTip": "Administering justice → judicial power.",
+    "legalBasis": [
+      {
+        "label": "Art. 20 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_20.html"
+      },
+      {
+        "label": "Art. 92 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_92.html"
+      }
+    ]
+  },
+  "145": {
+    "summary": "A judge works for the judiciary.",
+    "whyCorrect": "The judiciary is the judicial power, i.e. the courts.",
+    "background": "The separation of state power is a basic principle of democracy. If the same body could make, implement and judge laws, it would be too powerful. That is why the courts are separate from and independent of parliament and the government. This allows citizens to defend themselves in court even against the state – guaranteed by Article 19(4) of the Basic Law.",
+    "otherOptions": "The executive carries out laws, the legislature passes them. The press is not a state power but independent of the state – even if it is sometimes called the “fourth estate”.",
+    "memoryTip": "Questions 143, 144, 145 and 147: judge = judiciary = administering justice.",
+    "legalBasis": [
+      {
+        "label": "Art. 19 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_19.html"
+      },
+      {
+        "label": "Art. 92 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_92.html"
+      }
+    ]
+  },
+  "146": {
+    "summary": "Proceedings before a court are called a trial (Prozess).",
+    "whyCorrect": "One speaks, for example, of a criminal trial or a civil trial.",
+    "background": "A trial is the regulated procedure in which a court examines and decides a case. In a criminal trial, the question is whether someone has committed a crime. In a civil trial, citizens or companies are in dispute with each other, for example about money or contracts. How a trial works is set out in laws such as the Code of Criminal Procedure and the Code of Civil Procedure. Most hearings are public – you may attend as a spectator.",
+    "otherOptions": "A record (Protokoll) is the written account of what happens in a hearing. “Procedure” (Prozedur) is a general word for a process, and a programme is, for example, a plan or software – none of these is the technical term.",
+    "memoryTip": "Court + proceedings = trial (Prozess).",
+    "legalBasis": []
+  },
+  "147": {
+    "summary": "A judge’s work is to administer justice (Recht sprechen).",
+    "whyCorrect": "In court proceedings, judges decide what is lawful under the law.",
+    "background": "“Administering justice” means deciding in a specific case what applies under the law – for example, whether a dismissal was valid, who has to pay compensation after an accident or whether a defendant is guilty. Judgments are delivered “in the name of the people”. Many judgments can be appealed so that a higher court reviews the case again.",
+    "otherOptions": "Germany is governed by the federal government, and laws are enacted by parliament. “Drawing up plans” is not a particular task of judges but, for example, of administrations.",
+    "memoryTip": "Judge → administering justice → judgment “in the name of the people”.",
+    "legalBasis": [
+      {
+        "label": "Art. 92 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_92.html"
+      },
+      {
+        "label": "Art. 97 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_97.html"
+      }
+    ]
+  },
+  "148": {
+    "summary": "One of the police’s tasks is to monitor compliance with the law.",
+    "whyCorrect": "The police avert danger and prosecute crimes.",
+    "background": "The police ensure public safety and order. They help in emergencies (emergency number 110), direct traffic, take criminal complaints and investigate crimes on behalf of the public prosecutor’s office. In Germany, policing is mainly the responsibility of the federal states. In addition, there is the Federal Police, which protects borders, railway stations and airports, for example, and the Federal Criminal Police Office. The police are also bound by the law and may only act if a law allows it.",
+    "otherOptions": "Defending the country is the task of the Bundeswehr. Wiretapping citizens is generally forbidden; surveillance is only permitted in narrow exceptions and usually only with a judge’s authorisation. Laws are passed by parliaments.",
+    "memoryTip": "Police = internal security; Bundeswehr = external defence.",
+    "legalBasis": []
+  },
+  "149": {
+    "summary": "Denying the Holocaust is an example of antisemitic behaviour.",
+    "whyCorrect": "Holocaust denial is directed against Jews and is a criminal offence in Germany.",
+    "background": "Antisemitism is hostility or hatred towards Jews. Anyone who denies the Holocaust – the murder of around six million European Jews by the National Socialists – mocks the victims and spreads antisemitic conspiracy narratives. In Germany this is punishable as incitement to hatred (Section 130 of the Criminal Code). Other examples of antisemitism are attacks on synagogues, insults against Jews or the claim that Jews control the world.",
+    "otherOptions": "Visiting a Jewish festival shows interest and respect. Criticising the Israeli government is allowed – as with any government; it only becomes antisemitic when Jews as a whole are blamed or Israel’s right to exist is denied. Playing football against a Jewish club is completely normal sport.",
+    "memoryTip": "Denying the Holocaust = antisemitism and a crime.",
+    "legalBasis": [
+      {
+        "label": "§ 130 StGB (Criminal Code)",
+        "url": "https://www.gesetze-im-internet.de/stgb/__130.html"
+      }
+    ]
+  },
+  "150": {
+    "summary": "A lay judge (Gerichtsschöffe) is a volunteer judge.",
+    "whyCorrect": "Lay judges take part in criminal proceedings alongside professional judges and have the same voting rights.",
+    "background": "There are around 60,000 lay judges in Germany. They sit, for example, alongside one professional judge at the local court or two or three professional judges at the regional court and help decide on guilt and punishment. They do not need a law degree – on the contrary, their life experience as “ordinary” citizens is what is wanted. The office is voluntary; you can only refuse it for important reasons. This question is closely related to question 140.",
+    "otherOptions": "The deputy of the head of a town is the second mayor or a deputy. Members of the municipal council are elected local politicians. Someone who has studied law is a lawyer – lay judges are precisely non-lawyers.",
+    "memoryTip": "Lay judge = volunteer judge, not a lawyer.",
+    "legalBasis": [
+      {
+        "label": "Art. 92 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_92.html"
+      }
+    ]
   }
 }
