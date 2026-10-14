@@ -1,0 +1,604 @@
+{
+  "1": {
+    "summary": "People are generally allowed to criticise the government.",
+    "whyCorrect": "Freedom of expression protects the open communication of political opinions, subject to legal limits that protect other people.",
+    "background": "Freedom of expression is set out in Article 5 of the Basic Law. Everyone may freely express their opinion in speech, writing and pictures – even when the government does not like it. Criticising politicians, demonstrating and publishing critical newspaper articles are therefore part of everyday life in Germany. There are still limits: insults, defamation and incitement to hatred are criminal offences. Factual or even sharp criticism, however, is protected.",
+    "otherOptions": "Freedom of religion (Article 4) protects belief, not political statements. Paying taxes does not give anyone a special right to criticise – freedom of expression also applies to people without an income. The right to vote is a trap: it is also a democratic right, but it concerns casting a vote in elections, not speaking openly.",
+    "memoryTip": "Look for the word “speak”: whoever may speak freely has freedom of expression.",
+    "legalBasis": [
+      {
+        "label": "Art. 5 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_5.html"
+      }
+    ]
+  },
+  "2": {
+    "summary": "Parents decide on participation in religious education until the child is 14.",
+    "whyCorrect": "The rule concerns the child’s religious upbringing, so religious education is the relevant school subject.",
+    "background": "Religious education is a regular school subject in most state schools (Article 7 of the Basic Law). Because religion is a personal matter of conscience, nobody may be forced to take part. Until the child’s 14th birthday, the parents decide whether the child attends. From the age of 14, a child is considered “of religious age” and decides on their own religion – and therefore on religious education. Pupils who do not attend usually take a substitute subject such as ethics.",
+    "otherOptions": "History, politics and languages are compulsory subjects. Parents cannot simply withdraw their child from them, because the state has an educational mandate. Only religious education offers this choice, because freedom of belief is involved.",
+    "memoryTip": "14 and religion belong together: at 14, the child decides on their own faith.",
+    "legalBasis": [
+      {
+        "label": "Art. 7 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_7.html"
+      },
+      {
+        "label": "Sec. 5 Religious Education of Children Act",
+        "url": "https://www.gesetze-im-internet.de/kerzg/__5.html"
+      }
+    ]
+  },
+  "3": {
+    "summary": "In a state governed by law, public authorities are also bound by the law.",
+    "whyCorrect": "The rule of law means that residents and the state must follow the applicable law rather than act arbitrarily.",
+    "background": "The rule of law means that the law stands above everyone – above the residents, but also above the state itself. The government, authorities and police may only act if a law allows it (Article 20(3) of the Basic Law). Anyone who feels treated unfairly by an authority can take the matter to an independent court. This protects against arbitrary decisions, because no office and no politician is above the law.",
+    "otherOptions": "A state that does not have to obey the law would be the opposite of the rule of law. Laws apply to everyone in Germany, not only to Germans. And courts do not make laws: that is the job of the parliaments (Bundestag, Bundesrat, state parliaments). Courts apply the laws – this is called the separation of powers.",
+    "memoryTip": "Rule of law = the law applies to everyone, including the state.",
+    "legalBasis": [
+      {
+        "label": "Art. 20 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_20.html"
+      }
+    ]
+  },
+  "4": {
+    "summary": "Freedom of expression is a fundamental right.",
+    "whyCorrect": "It is protected by the Basic Law; possessing weapons, vigilante force and taking the law into one’s own hands are not fundamental rights.",
+    "background": "The fundamental rights are at the beginning of the Basic Law, in Articles 1 to 19. Freedom of expression (Article 5) is one of the most important, because a democracy cannot work without free debate. Fundamental rights mainly protect people from the state: it may only restrict them within narrow limits and only by law.",
+    "otherOptions": "Owning weapons is not a fundamental right in Germany – unlike what many people know from the USA. Anyone who wants to own a weapon needs a permit under the Weapons Act. “Fist law” and vigilante justice mean using violence to get “justice” yourself. This is forbidden, because in Germany only the state has a monopoly on the use of force: the police and courts enforce the law.",
+    "memoryTip": "Three answers have to do with violence – the fundamental right is the only peaceful answer.",
+    "legalBasis": [
+      {
+        "label": "Art. 5 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_5.html"
+      }
+    ]
+  },
+  "5": {
+    "summary": "A free election allows a choice without coercion or disadvantage.",
+    "whyCorrect": "Voters must make their own decision and may not be forced or improperly influenced to cast a particular vote.",
+    "background": "For federal elections, the Basic Law sets out five electoral principles: general, direct, free, equal and secret (Article 38). “Free” means that nobody may pressure, bribe or threaten voters, and nobody may suffer disadvantages because of their vote. A free election also means that you do not have to vote at all.",
+    "otherOptions": "Accepting money for a particular vote is vote buying and a criminal offence. People who have been or are in prison are usually allowed to vote as well – only a court can take away the right to vote, and only in rare cases. Germany has no compulsory voting, unlike Belgium, for example.",
+    "memoryTip": "The five electoral principles: general, direct, free, equal, secret. “Free” means without pressure and without obligation.",
+    "legalBasis": [
+      {
+        "label": "Art. 38 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_38.html"
+      }
+    ]
+  },
+  "6": {
+    "summary": "Germany’s constitution is called the Basic Law.",
+    "whyCorrect": "“Basic Law for the Federal Republic of Germany” is the constitution’s official name.",
+    "background": "The German constitution is called the Basic Law (Grundgesetz, GG). It was drafted by the Parliamentary Council in Bonn and promulgated on 23 May 1949. The word “constitution” was avoided on purpose, because Germany was divided at the time and the Basic Law was meant to apply only until all of Germany adopted a constitution. Since reunification in 1990, the Basic Law has applied to the whole of Germany. 23 May is therefore “Basic Law Day”.",
+    "otherOptions": "A federal law is an ordinary law passed by the Bundestag and Bundesrat, for example the Nationality Act. It ranks below the Basic Law and must not contradict it. A “People’s Law” or a “German Law” does not exist.",
+    "memoryTip": "Grundgesetz = the foundation (“Grund”) of all laws. Abbreviation: GG.",
+    "legalBasis": [
+      {
+        "label": "Art. 146 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_146.html"
+      }
+    ]
+  },
+  "7": {
+    "summary": "Freedom of faith and conscience is constitutionally protected.",
+    "whyCorrect": "It is one of the fundamental rights guaranteed by the Basic Law; entertainment, work and housing are not the guarantee asked for here.",
+    "background": "Article 4 of the Basic Law guarantees freedom of faith and conscience. Everyone may freely decide whether and what they believe, practise their religion, change it or have no religion at all. The state remains neutral: there is no state church, and nobody may be disadvantaged because of their faith. Freedom of conscience also includes the right to refuse military service with weapons.",
+    "otherOptions": "A right to work, to housing or to entertainment is not in the Basic Law. There is freedom of occupation (Article 12): you may freely choose your profession – but the state does not have to guarantee you a job. Some state constitutions name work or housing as state objectives, but these are not enforceable fundamental rights.",
+    "memoryTip": "Fundamental rights are mostly freedoms (“believe freely, speak freely”), not claims to things like housing or work.",
+    "legalBasis": [
+      {
+        "label": "Art. 4 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_4.html"
+      }
+    ]
+  },
+  "8": {
+    "summary": "The Basic Law does not guarantee that everyone has the same amount of money.",
+    "whyCorrect": "It protects human dignity, expression and equality before the law, but it does not prescribe equal incomes.",
+    "background": "The three correct statements come almost word for word from the Basic Law: “Human dignity shall be inviolable” (Article 1), “All persons shall be equal before the law” (Article 3) and freedom of expression (Article 5). Germany is a social state (Article 20): it helps people in need, for example with citizen’s income (Bürgergeld) or health insurance. But the Basic Law does not promise the same income for everyone.",
+    "otherOptions": "“Everyone should have the same amount of money” describes an idea that is not in the Basic Law. Property (Article 14) and freedom of occupation apply in Germany, and incomes may differ. In the Basic Law, equality means equal rights, not equal money.",
+    "memoryTip": "Equal before the law – yes. Equal money – no.",
+    "legalBasis": [
+      {
+        "label": "Art. 1 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_1.html"
+      },
+      {
+        "label": "Art. 3 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_3.html"
+      }
+    ]
+  },
+  "9": {
+    "summary": "The constitutional right of asylum concerns foreign nationals facing political persecution.",
+    "whyCorrect": "Human dignity and the freedoms of family and expression apply generally, while asylum concerns protection for persecuted foreigners.",
+    "background": "Article 16a of the Basic Law states: “Persons persecuted on political grounds shall have the right of asylum.” Asylum protects people who are persecuted in their country of origin because of their political opinion, religion or origin. Germans do not need this protection in Germany – that is why the right of asylum only applies to foreigners. In practice, many refugees also receive protection under the Geneva Refugee Convention.",
+    "otherOptions": "Human dignity (Article 1), protection of the family (Article 6) and freedom of expression (Article 5) are human rights: they apply to everyone in Germany, whatever their nationality. Conversely, some rights apply only to Germans, for example freedom of assembly under Article 8.",
+    "memoryTip": "Asylum is protection from persecution in your home country – only people from other countries need it.",
+    "legalBasis": [
+      {
+        "label": "Art. 16a Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_16a.html"
+      }
+    ]
+  },
+  "10": {
+    "summary": "A fine is compatible with the Basic Law.",
+    "whyCorrect": "It is a sanction provided by law. Corporal punishment, torture and the death penalty violate fundamental constitutional protections.",
+    "background": "A fine is a completely normal penalty under German criminal law: a court orders a person to pay a certain amount of money. This is compatible with the Basic Law. The death penalty, on the other hand, was explicitly abolished by the Basic Law (Article 102: “Capital punishment is abolished.”). The basis for this is human dignity in Article 1, which the state must always respect.",
+    "otherOptions": "Torture violates human dignity and is forbidden without exception, even when serious crimes are suspected. Detained persons may not be subjected to mental or physical mistreatment (Article 104). Corporal punishment does not exist in Germany; parents are not allowed to hit their children either.",
+    "memoryTip": "Only one answer does not physically hurt anyone: the fine.",
+    "legalBasis": [
+      {
+        "label": "Art. 102 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_102.html"
+      },
+      {
+        "label": "Art. 1 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_1.html"
+      }
+    ]
+  },
+  "11": {
+    "summary": "The constitution of the Federal Republic is called the Basic Law.",
+    "whyCorrect": "Terms such as federal constitution or constitutional treaty are not its official name.",
+    "background": "The constitution of the Federal Republic is called the Basic Law (Grundgesetz). It sets out the fundamental rights (Articles 1 to 19), the principles of the state such as democracy, the rule of law and federalism, and the tasks of the constitutional bodies, for example the Bundestag, the Bundesrat and the Federal President. All other laws must be compatible with the Basic Law. In case of dispute, the Federal Constitutional Court in Karlsruhe decides. The Basic Law can only be amended with two-thirds majorities in both the Bundestag and the Bundesrat.",
+    "otherOptions": "“Federal Constitution” (Bundesverfassung) is the name of Switzerland’s constitution, not Germany’s. A code (Gesetzbuch) is a collection of laws on one area of law, for example the Civil Code (BGB) or the Criminal Code (StGB). “Constitutional Treaty” was the name of a planned EU treaty that failed in 2005.",
+    "memoryTip": "This question is almost the same as question 6 – the answer is always Grundgesetz (Basic Law).",
+    "legalBasis": [
+      {
+        "label": "Art. 79 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_79.html"
+      }
+    ]
+  },
+  "12": {
+    "summary": "A political party cannot simply abolish freedom of the press.",
+    "whyCorrect": "Freedom of the press is protected as a fundamental right and cannot be removed by an ordinary political majority.",
+    "background": "Freedom of the press is set out in Article 5 of the Basic Law: newspapers, broadcasters and online media may report freely, and “there shall be no censorship”. Fundamental rights can be restricted by law within limits, but according to Article 19, “in no case may the essence of a basic right be affected”. In addition, democracy is protected by the so-called eternity clause (Article 79(3)) – and there is no democracy without a free press.",
+    "otherOptions": "A simple majority is not even enough for a normal amendment to the Basic Law. Even with two thirds in the Bundestag (and the Bundesrat), freedom of the press could not be abolished, because its core is protected. The Bundesrat represents the federal states and cannot abolish fundamental rights either.",
+    "memoryTip": "No majority can abolish fundamental rights – neither half nor two thirds.",
+    "legalBasis": [
+      {
+        "label": "Art. 5 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_5.html"
+      },
+      {
+        "label": "Art. 19 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_19.html"
+      },
+      {
+        "label": "Art. 79 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_79.html"
+      }
+    ]
+  },
+  "13": {
+    "summary": "The opposition consists of members of parliament outside the governing parties.",
+    "whyCorrect": "They scrutinise and criticise the government in parliament and offer political alternatives.",
+    "background": "There are two sides in the Bundestag: the governing parties, which together support the federal government, and the opposition. The opposition consists of all members of parliament whose parties are not part of the government. Its job is to scrutinise and criticise the government and to make its own proposals – for example through parliamentary questions, debates or committees of inquiry. A strong opposition is important for democracy.",
+    "otherOptions": "The governing parties are the exact opposite of the opposition. The parliamentary group with the most members usually forms the government, but it does not have to. All parties in the Bundestag have passed the 5 percent threshold – governing parties and opposition parties alike.",
+    "memoryTip": "Opposition = the side “opposite” the government: everyone who is not governing.",
+    "legalBasis": []
+  },
+  "14": {
+    "summary": "An opinion may generally also be expressed online.",
+    "whyCorrect": "Freedom of expression applies regardless of the medium, while illegal content and violations of others’ rights remain restricted.",
+    "background": "Freedom of expression (Article 5 of the Basic Law) means: I may freely say, write and share my opinion – on the street, in the newspaper and also online, for example on social media or in a blog. I may also criticise the government. But freedom of expression has limits: the law protects other people’s honour and bans certain symbols and hate speech.",
+    "otherOptions": "Insulting passers-by is an insult under criminal law and can be punished. Publicly displaying symbols of unconstitutional or banned organisations – such as Nazi symbols or symbols of Hamas and the “Islamic State” – is forbidden. And an opinion that contradicts the government is explicitly allowed.",
+    "memoryTip": "Online – yes. Insults and banned symbols – no.",
+    "legalBasis": [
+      {
+        "label": "Art. 5 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_5.html"
+      }
+    ]
+  },
+  "15": {
+    "summary": "The Basic Law prohibits forced labour.",
+    "whyCorrect": "People may not generally be compelled to work; free choice of occupation and working abroad are not the prohibition asked for.",
+    "background": "Article 12 of the Basic Law protects freedom of occupation. It also states that nobody may be forced to do a particular kind of work, and that forced labour is only permitted for people deprived of their liberty by a court decision, for example work in prison. History is part of the background: under National Socialism, millions of people were forced to do forced labour.",
+    "otherOptions": "Military service is not forbidden – Article 12a explicitly allows it. Free choice of occupation is not forbidden but a fundamental right. Working abroad is also allowed; anyone may leave Germany and work in another country.",
+    "memoryTip": "What is forbidden is the force, not the work: forced labour.",
+    "legalBasis": [
+      {
+        "label": "Art. 12 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_12.html"
+      }
+    ]
+  },
+  "16": {
+    "summary": "False factual claims about individuals may be restricted.",
+    "whyCorrect": "Freedom of expression protects criticism and opinions, but not every untrue assertion that violates personality rights.",
+    "background": "Freedom of expression is limited, among other things, by the “right to personal honour” (Article 5(2)). Anyone who publicly spreads false facts about a specific person can commit a criminal offence, for example defamation or slander. Those affected can also demand that the false claim be deleted or retracted. An opinion (“I think she is a bad politician”) is protected; an invented fact (“she stole money”) is not.",
+    "otherOptions": "Opinions about the federal government, discussions about religions and criticism of the state are covered by freedom of expression. In fact, criticism of the government and the state is exactly what freedom of expression is meant to protect.",
+    "memoryTip": "Opinions are free – false claims about people are not.",
+    "legalBasis": [
+      {
+        "label": "Art. 5 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_5.html"
+      }
+    ]
+  },
+  "17": {
+    "summary": "The state may not arbitrarily treat citizens unequally.",
+    "whyCorrect": "The equality principle binds state action, while petitions and the freedoms of expression and assembly are protected rights.",
+    "background": "Article 3 of the Basic Law states: “All persons shall be equal before the law.” Nobody may be disadvantaged because of their sex, parentage, language, origin, faith, political opinions or a disability. The state must treat everyone equally – for example at public offices, at school or in court. Unequal treatment by the state is therefore forbidden.",
+    "otherOptions": "Freedom of expression (Article 5), petitions (Article 17) and freedom of assembly (Article 8) are fundamental rights and therefore explicitly allowed. With a petition, you can address requests or complaints in writing to authorities or parliaments.",
+    "memoryTip": "Three answers are fundamental rights – only unequal treatment is forbidden.",
+    "legalBasis": [
+      {
+        "label": "Art. 3 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_3.html"
+      }
+    ]
+  },
+  "18": {
+    "summary": "Article 1 protects the inviolability of human dignity.",
+    "whyCorrect": "Human dignity appears at the beginning of the Basic Law and binds all public authority to respect and protect it.",
+    "background": "Article 1(1) is the most important sentence of the Basic Law: “Human dignity shall be inviolable. To respect and protect it shall be the duty of all state authority.” Every person has dignity, regardless of origin, religion or nationality. After the crimes of National Socialism, this sentence was deliberately placed at the very beginning. Under the eternity clause (Article 79(3)), Article 1 may never be changed.",
+    "otherOptions": "The other rights are also fundamental rights, but they are in other articles: the right to life in Article 2, freedom of religion in Article 4 and freedom of expression in Article 5.",
+    "memoryTip": "Article 1 – the first and most important: human dignity.",
+    "legalBasis": [
+      {
+        "label": "Art. 1 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_1.html"
+      }
+    ]
+  },
+  "19": {
+    "summary": "Freedom of movement includes choosing where to live within Germany.",
+    "whyCorrect": "The right concerns movement and residence, not occupation, religion or clothing.",
+    "background": "Freedom of movement (Freizügigkeit, Article 11 of the Basic Law) means: you may decide freely where to live in Germany and move within the country. The Basic Law guarantees this right to all Germans. Citizens of the EU also enjoy EU freedom of movement. For other foreign nationals, residence law determines where they may live.",
+    "otherOptions": "Changing your job belongs to freedom of occupation (Article 12), changing your religion to freedom of faith (Article 4). The last answer is a trap: in everyday German, “freizügig” can also mean “scantily dressed” – which has nothing to do with the fundamental right.",
+    "memoryTip": "Freizügigkeit = moving freely: choosing and changing where you live.",
+    "legalBasis": [
+      {
+        "label": "Art. 11 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_11.html"
+      }
+    ]
+  },
+  "20": {
+    "summary": "A party seeking to establish a dictatorship acts against the constitution.",
+    "whyCorrect": "The free democratic constitutional order excludes replacing democracy with dictatorship.",
+    "background": "A party that wants to establish a dictatorship is fighting against the free democratic basic order. According to Article 21(2) of the Basic Law, it is then unconstitutional. However, only the Federal Constitutional Court can ban a party. This happened to the Socialist Reich Party in 1952 and to the Communist Party (KPD) in 1956. Germany calls this a “defensive democracy”: democracy protects itself against its enemies.",
+    "otherOptions": "Tolerant, committed to the rule of law and law-abiding describe the exact opposite of a party that wants a dictatorship. A dictatorship abolishes elections, fundamental rights and independent courts.",
+    "memoryTip": "Against the constitution = unconstitutional (verfassungswidrig).",
+    "legalBasis": [
+      {
+        "label": "Art. 21 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_21.html"
+      }
+    ]
+  },
+  "21": {
+    "summary": "Image 1 shows the federal coat of arms.",
+    "whyCorrect": "The federal coat of arms is the black federal eagle on a gold background; in this image question that is number 1.",
+    "background": "The coat of arms of the Federal Republic of Germany shows a black eagle with red claws, a red beak and a red tongue on a golden-yellow background – the federal eagle. You can see it on ID cards, coins, signs on public buildings and in the plenary hall of the Bundestag. Black, red and gold are also the colours of the federal flag.",
+    "otherOptions": "Image 2 shows the Chi-Rho, a Christian symbol. Image 3 is the Iron Cross, the emblem of the German armed forces (Bundeswehr). Image 4 is the state coat of arms of the GDR with hammer, compass and a wreath of wheat – it has not been used since reunification in 1990.",
+    "memoryTip": "The federal coat of arms has the same colours as the flag: black, red, gold.",
+    "legalBasis": []
+  },
+  "22": {
+    "summary": "Germany is a republic.",
+    "whyCorrect": "The head of state is not hereditary; Germany is not a monarchy, principality or dictatorship.",
+    "background": "Germany is a republic. This means the head of state is not a king and does not inherit the office, but is elected for a limited period. The Federal President is elected by the Federal Convention for five years. The country’s name already says it: Federal Republic of Germany. The monarchy in Germany ended in 1918.",
+    "otherOptions": "In a monarchy or a principality, a king or prince rules, usually by inheriting the office – for example in Liechtenstein or Monaco. Germany was a dictatorship under National Socialism (1933–1945); today the Basic Law rules this out.",
+    "memoryTip": "Federal Republic of Germany – the answer is in the name.",
+    "legalBasis": [
+      {
+        "label": "Art. 20 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_20.html"
+      }
+    ]
+  },
+  "23": {
+    "summary": "Most working people are employees.",
+    "whyCorrect": "Most work for a company or public authority rather than being self-employed or working voluntarily.",
+    "background": "Most people in work in Germany are employees: they work for a company or for a public authority and receive a wage or salary. This applies to about nine out of ten people in work. Only a small share are self-employed, for example with their own shop, practice or as freelancers.",
+    "otherOptions": "Many companies in Germany are family businesses, but most people do not work in small family firms. Voluntary work is unpaid and is done in addition to a job. Self-employed people with their own company are a minority.",
+    "memoryTip": "Most people are employed – by a company or by the state.",
+    "legalBasis": []
+  },
+  "24": {
+    "summary": "The Federal Republic of Germany has 16 federal states.",
+    "whyCorrect": "They include 13 territorial states and the three city states Berlin, Bremen and Hamburg.",
+    "background": "Germany has 16 federal states: 13 territorial states such as Bavaria or North Rhine-Westphalia and 3 city states – Berlin, Hamburg and Bremen. There have been 16 since reunification in 1990, when the five eastern states of Brandenburg, Mecklenburg-Western Pomerania, Saxony, Saxony-Anhalt and Thuringia joined and Berlin was reunited. Each state has its own constitution, parliament and government.",
+    "otherOptions": "14, 15 and 17 are wrong. The question catalogue also contains 10 questions for each federal state; 3 questions about your own state come up in the test.",
+    "memoryTip": "16 = 13 territorial states + 3 city states.",
+    "legalBasis": []
+  },
+  "25": {
+    "summary": "Alsace-Lorraine is not a German federal state.",
+    "whyCorrect": "The region is in present-day France; North Rhine-Westphalia, Mecklenburg-Western Pomerania and Saxony-Anhalt are German states.",
+    "background": "Alsace-Lorraine (Elsass-Lothringen) is a region in France on the German border. It belonged to the German Empire from 1871 to 1918, but has been French again for over a hundred years. It has never been part of the Federal Republic of Germany. The 16 federal states are: Baden-Württemberg, Bavaria, Berlin, Brandenburg, Bremen, Hamburg, Hesse, Mecklenburg-Western Pomerania, Lower Saxony, North Rhine-Westphalia, Rhineland-Palatinate, Saarland, Saxony, Saxony-Anhalt, Schleswig-Holstein and Thuringia.",
+    "otherOptions": "North Rhine-Westphalia is the most populous state, with Düsseldorf as its capital. Mecklenburg-Western Pomerania (capital Schwerin) and Saxony-Anhalt (capital Magdeburg) are among the states that joined with reunification in 1990.",
+    "memoryTip": "Elsass = Alsace: it sounds French, and it is French.",
+    "legalBasis": []
+  },
+  "26": {
+    "summary": "Germany is a democratic and social federal state.",
+    "whyCorrect": "These constitutional principles combine democracy, the social state and a federal structure.",
+    "background": "Article 20 of the Basic Law begins: “The Federal Republic of Germany is a democratic and social federal state.” Democratic means the people elect their representatives. Social means the state provides social security, for example through pension, health and unemployment insurance. Federal state means power is shared between the federation and the 16 states.",
+    "otherOptions": "A communist republic or socialist state was the GDR, not the Federal Republic. Germany has not been a monarchy since 1918. The answer “social and socialist federal state” is a trap: “social” is right, “socialist” is not.",
+    "memoryTip": "The three words from Article 20: democratic, social, federal state.",
+    "legalBasis": [
+      {
+        "label": "Art. 20 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_20.html"
+      }
+    ]
+  },
+  "27": {
+    "summary": "Germany is a federal state.",
+    "whyCorrect": "Public responsibilities are divided between the federation and 16 states; Germany is not a monarchy, dictatorship or socialist unitary state.",
+    "background": "Germany is a federal state: it consists of 16 states that together form the federation. The states have their own constitutions, parliaments and governments and are responsible, for example, for schools and the police. Through the Bundesrat, they take part in federal legislation. The Basic Law gives this federal order special protection: under the eternity clause it may not be abolished.",
+    "otherOptions": "The GDR was a socialist state until 1990. Germany was a dictatorship under National Socialism. There was a monarchy with an emperor until 1918. None of these describes Germany today.",
+    "memoryTip": "Federal Republic = a federal state of 16 states.",
+    "legalBasis": [
+      {
+        "label": "Art. 20 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_20.html"
+      },
+      {
+        "label": "Art. 79 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_79.html"
+      }
+    ]
+  },
+  "28": {
+    "summary": "Eligible voters elect the members of the Bundestag.",
+    "whyCorrect": "In representative democracy, eligible citizens cast their votes in the federal election.",
+    "background": "“All state authority is derived from the people,” says Article 20 of the Basic Law. That is why eligible citizens elect the members of the Bundestag, usually every four years. German citizens aged 18 and over are eligible to vote. With the first vote you choose a person in your constituency, with the second vote a party.",
+    "otherOptions": "The military, the economy and the administration have no vote of their own in elections. Soldiers, business owners or civil servants may of course vote – but only as individual eligible citizens, not as institutions.",
+    "memoryTip": "Democracy means rule by the people: the people vote.",
+    "legalBasis": [
+      {
+        "label": "Art. 20 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_20.html"
+      },
+      {
+        "label": "Art. 38 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_38.html"
+      }
+    ]
+  },
+  "29": {
+    "summary": "The eagle is the heraldic animal of the Federal Republic.",
+    "whyCorrect": "The federal eagle is a traditional German state symbol and appears in the federal coat of arms.",
+    "background": "The heraldic animal of the Federal Republic of Germany is the eagle. The federal eagle is black on a gold background and is one of the oldest German state symbols. You can see it on coins, passports and in the plenary hall of the Bundestag, where a large eagle sculpture hangs.",
+    "otherOptions": "The lion, bear and horse are heraldic animals of individual states and cities: the bear is the symbol of Berlin, the leaping horse appears in the coats of arms of Lower Saxony and North Rhine-Westphalia, and lions appear, for example, in the coats of arms of Bavaria and Hesse.",
+    "memoryTip": "The federation has the eagle – the states have lions, bears or horses.",
+    "legalBasis": []
+  },
+  "30": {
+    "summary": "Press censorship is not a feature of democracy.",
+    "whyCorrect": "Regular elections, free expression and multiple parties enable democratic control, while censorship prevents open public debate.",
+    "background": "Article 5 of the Basic Law guarantees freedom of the press and states explicitly: “There shall be no censorship.” The state may therefore not tell newspapers, broadcasters and online media what to report, and may not check or ban articles before publication. Free media inform people and hold the government to account.",
+    "otherOptions": "Regular elections, freedom of expression and multiple parties are typical features of democracy. Press censorship, by contrast, exists in dictatorships – it is not part of our democracy.",
+    "memoryTip": "Watch for “not”: you are looking for what does not fit – censorship.",
+    "legalBasis": [
+      {
+        "label": "Art. 5 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_5.html"
+      }
+    ]
+  },
+  "31": {
+    "summary": "Several parties governing together form a coalition.",
+    "whyCorrect": "If no party has a majority in parliament on its own, parties join together in a coalition and form the government together.",
+    "background": "In a federal election, no party usually wins more than half the seats on its own. Several parties then work together to form a majority and the government. This is called a coalition. The parties set out their joint plans in a coalition agreement. After the 2025 federal election, for example, the CDU/CSU and the SPD formed a coalition.",
+    "otherOptions": "A parliamentary group (Fraktion) is the group of a party’s members in parliament – in a coalition it works together with other groups. A ministry is an authority headed by a minister. “Unity” is not a political term for forming a government.",
+    "memoryTip": "Coalition = parties working together; Fraktion = a party’s members of parliament.",
+    "legalBasis": []
+  },
+  "32": {
+    "summary": "The press is not a power of the state.",
+    "whyCorrect": "The three powers of the state are legislation, executive power (government) and the judiciary; the press is independent of the state.",
+    "background": "The Basic Law divides state power into three branches (Article 20(2)): legislation (the legislature, i.e. parliament), executive power (the executive, i.e. government and administration) and the judiciary (the courts). This separation of powers prevents any one body from gaining too much power.",
+    "otherOptions": "The press is often called the “fourth estate” because it scrutinises those in power. But that is only a metaphor: the press is not a state power, it is independent of the state. Legislation, government and the judiciary are the three powers of the state.",
+    "memoryTip": "Three state powers: making laws, carrying them out, judging. The press is free and not one of them.",
+    "legalBasis": [
+      {
+        "label": "Art. 20 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_20.html"
+      }
+    ]
+  },
+  "33": {
+    "summary": "In Germany, the state and religious communities are separate.",
+    "whyCorrect": "There is no state church; the state is religiously neutral and does not favour any religion.",
+    "background": "In Germany, the state and religious communities are separate. The Basic Law adopts provisions of the Weimar Constitution for this: “There shall be no state church.” The state is religiously neutral and does not favour any religion. Still, the state and religious communities cooperate in some areas, for example on religious education in schools or the church tax, which the tax office collects for the churches.",
+    "otherOptions": "Religious communities do not form the state, the state does not depend on them, and they do not form a single unit. That would be a theocracy or a state church, which the Basic Law rules out.",
+    "memoryTip": "No state church: state and religion are separate.",
+    "legalBasis": [
+      {
+        "label": "Art. 140 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_140.html"
+      },
+      {
+        "label": "Art. 4 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_4.html"
+      }
+    ]
+  },
+  "34": {
+    "summary": "Germany is not a monarchy.",
+    "whyCorrect": "Germany is a republic with an elected head of state; democracy, the rule of law and the social state are core principles of the Basic Law.",
+    "background": "Germany is not a monarchy but a republic. The head of state is not a king or queen, but the Federal President, who is elected for five years. The monarchy in Germany ended in 1918 with the end of the German Empire.",
+    "otherOptions": "Democracy, the rule of law and the social state describe Germany correctly. These principles are in the Basic Law (Articles 20 and 28) and are among the most important features of the Federal Republic.",
+    "memoryTip": "You are looking for what Germany is not: there has been no king since 1918.",
+    "legalBasis": [
+      {
+        "label": "Art. 20 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_20.html"
+      }
+    ]
+  },
+  "35": {
+    "summary": "Social insurance is mainly financed through social security contributions.",
+    "whyCorrect": "Employees and employers pay contributions to health, long-term care, pension and unemployment insurance; church tax, donations and membership fees are not part of it.",
+    "background": "Social insurance is mainly financed through social security contributions, which are deducted from wages and salaries. For most types of insurance, employees and employers each pay roughly half. Social insurance includes health, long-term care, pension, unemployment and accident insurance. Accident insurance is paid by employers alone; the state also adds subsidies from taxes, for example for pensions.",
+    "otherOptions": "Church tax goes to the churches, not to social insurance. Donations and membership fees are voluntary payments to organisations or clubs; the state does not use them to finance social insurance.",
+    "memoryTip": "Social insurance is paid for with social contributions (Sozialabgaben) – the word is already in the name.",
+    "legalBasis": []
+  },
+  "36": {
+    "summary": "Health insurance provides social security.",
+    "whyCorrect": "It is part of social insurance and protects people when they are ill; car, building and liability insurance are private insurances for property.",
+    "background": "Health insurance is part of social insurance and is compulsory in Germany. It pays for doctor’s visits, hospital stays and many medicines. Most people have statutory health insurance; some, such as civil servants or the self-employed, can take out private insurance. Together with pension, long-term care, unemployment and accident insurance, it provides social security.",
+    "otherOptions": "Car, building and liability insurance are private insurances. They protect against damage to property or against compensation claims. Liability insurance is compulsory for cars, but it is still not part of social security.",
+    "memoryTip": "Social security is about people (illness, old age, unemployment), not cars or houses.",
+    "legalBasis": []
+  },
+  "37": {
+    "summary": "In most federal states, the head of government is called Minister-President.",
+    "whyCorrect": "This applies to the 13 territorial states; in the city states of Berlin, Hamburg and Bremen the office is called mayor.",
+    "background": "In 13 of the 16 federal states, the head of government is called Minister-President (Ministerpräsident or Ministerpräsidentin). They are elected by the state parliament and lead the state government. The three city states use other titles: in Berlin the office is called Governing Mayor, in Hamburg First Mayor and in Bremen President of the Senate.",
+    "otherOptions": "Prime Minister is the title of the British head of government, First Minister that of Scotland or Wales. In the city states of Berlin, Hamburg and Bremen, senators are the members of the state government – something like state ministers, not the heads.",
+    "memoryTip": "State = Minister-President; federation = Federal Chancellor.",
+    "legalBasis": []
+  },
+  "38": {
+    "summary": "Germany is a democratic and social federal state.",
+    "whyCorrect": "This is stated in Article 20 of the Basic Law: the federation and 16 states together form the state.",
+    "background": "According to Article 20 of the Basic Law, Germany is a “democratic and social federal state”. In a federal state, states join together to form one common state. The states keep their own responsibilities, for example for schools and the police; the federation is responsible, for example, for foreign policy and defence.",
+    "otherOptions": "A confederation (Staatenbund) is a loose association of independent states without a common state. The Federal Constitutional Court calls the European Union a “Staatenverbund” (association of states). In a centralised state like France, there are no states with their own parliaments and governments.",
+    "memoryTip": "Federal Republic → federal state (Bundesstaat).",
+    "legalBasis": [
+      {
+        "label": "Art. 20 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_20.html"
+      }
+    ]
+  },
+  "39": {
+    "summary": "Every federal state has its own government.",
+    "whyCorrect": "Foreign policy, the army and currency are matters for the federation or the EU; but each state has its own government and parliament.",
+    "background": "Each of the 16 federal states has its own government, its own parliament (usually called Landtag) and its own constitution. The state government is responsible, for example, for schools, the police and universities. In most states it is headed by a Minister-President.",
+    "otherOptions": "Foreign policy, defence and currency are matters for the federation or the EU. The Bundeswehr is Germany’s only army, there is a foreign minister only at federal level, and people pay with the euro throughout Germany.",
+    "memoryTip": "Foreign policy, the army and money are federal matters – but every state has a government.",
+    "legalBasis": [
+      {
+        "label": "Art. 30 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_30.html"
+      }
+    ]
+  },
+  "40": {
+    "summary": "The national anthem begins with “Einigkeit und Recht und Freiheit”.",
+    "whyCorrect": "The national anthem is the third verse of the “Song of the Germans” by Hoffmann von Fallersleben.",
+    "background": "The German national anthem is the third verse of the “Song of the Germans” (Lied der Deutschen). The lyrics were written by August Heinrich Hoffmann von Fallersleben in 1841, and the melody is by Joseph Haydn. Since 1991, only the third verse has officially been the national anthem. It begins with the words “Einigkeit und Recht und Freiheit für das deutsche Vaterland” (Unity and justice and freedom for the German fatherland).",
+    "otherOptions": "“Völker, hört die Signale” comes from “The Internationale”, a song of the labour movement. “Freude schöner Götterfunken” is the beginning of Beethoven’s “Ode to Joy”, the European anthem. “Deutschland einig Vaterland” is a line from the national anthem of the GDR.",
+    "memoryTip": "Unity, justice, freedom – these words are also on the edge of the German 2-euro coin.",
+    "legalBasis": []
+  },
+  "41": {
+    "summary": "Several parties represent the different opinions of citizens.",
+    "whyCorrect": "Only with several parties do voters have a real choice between different political positions.",
+    "background": "In a democracy, people have different opinions and interests. Parties gather these opinions, turn them into programmes and stand for election. Only if there are several parties do voters have a real choice. Article 21 of the Basic Law says that parties participate in forming the political will of the people.",
+    "otherOptions": "Several parties do not automatically prevent bribery – there are laws and controls for that. In a democracy, demonstrations should not be prevented; they are protected by freedom of assembly. Economic competition is a matter for the economy, not the reason for having several parties.",
+    "memoryTip": "Many opinions → many parties.",
+    "legalBasis": [
+      {
+        "label": "Art. 21 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_21.html"
+      }
+    ]
+  },
+  "42": {
+    "summary": "New laws are passed by parliament.",
+    "whyCorrect": "At federal level, the Bundestag passes laws, often together with the Bundesrat; the government, courts and police do not pass laws.",
+    "background": "New federal laws are passed by parliament: the Bundestag, together with the Bundesrat for many laws. Proposals for laws can come from the federal government, from the Bundestag or from the Bundesrat. The state parliaments are responsible for state laws. This is part of the separation of powers: parliament makes the laws.",
+    "otherOptions": "The government can propose laws but does not pass them. Courts apply laws and can review whether they are compatible with the Basic Law. The police make sure laws are followed.",
+    "memoryTip": "Parliament = makes laws; government = carries them out; courts = judge.",
+    "legalBasis": [
+      {
+        "label": "Art. 77 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_77.html"
+      }
+    ]
+  },
+  "43": {
+    "summary": "A party can be banned if it fights against the constitution.",
+    "whyCorrect": "Only the Federal Constitutional Court can ban a party that seeks to abolish the free democratic basic order.",
+    "background": "A party can be banned if it seeks to abolish the free democratic basic order or endangers the existence of Germany (Article 21 of the Basic Law). Only the Federal Constitutional Court can impose a ban. An application can be made by the Bundestag, the Bundesrat or the federal government. The hurdles are high so that parties cannot simply be banned for political reasons.",
+    "otherOptions": "An expensive election campaign, criticism of the head of state or a programme with new ideas are allowed in a democracy. Criticism and new political directions are part of the democratic competition between parties.",
+    "memoryTip": "Only those who fight the constitution are banned – not those who criticise.",
+    "legalBasis": [
+      {
+        "label": "Art. 21 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_21.html"
+      }
+    ]
+  },
+  "44": {
+    "summary": "The Federal President is not elected directly.",
+    "whyCorrect": "The head of state is elected by the Federal Convention; citizens directly elect members of the European Parliament, state parliaments and the Bundestag.",
+    "background": "The Federal President is not elected directly by the people but by the Federal Convention. It is made up of all members of the Bundestag and the same number of delegates chosen by the state parliaments. The term of office is five years; one re-election is possible.",
+    "otherOptions": "Citizens directly elect the members of the European Parliament, the state parliament and the Bundestag. EU citizens living in Germany may also vote in local elections and European elections.",
+    "memoryTip": "President → Federal Convention; parliaments → the people.",
+    "legalBasis": [
+      {
+        "label": "Art. 54 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_54.html"
+      }
+    ]
+  },
+  "45": {
+    "summary": "Long-term care insurance is part of social insurance.",
+    "whyCorrect": "Together with health, pension, unemployment and accident insurance, it is one of the five branches of social insurance.",
+    "background": "Long-term care insurance is part of social insurance. It was introduced in 1995 as the newest branch and helps people who need long-term care because of illness, disability or old age – at home or in a care home. Anyone with statutory health insurance is automatically covered by long-term care insurance. Employees and employers share the contributions; people without children pay a small surcharge.",
+    "otherOptions": "Accident insurance is itself a branch of social insurance, but long-term care insurance is not part of it. Household contents, liability and fire insurance are private insurances against damage to property.",
+    "memoryTip": "Five branches of social insurance: health, long-term care, pension, unemployment and accident insurance.",
+    "legalBasis": []
+  },
+  "46": {
+    "summary": "The state builds, for example, roads and schools.",
+    "whyCorrect": "Public infrastructure is a task of the state; food, clothing and vehicles are produced by private companies.",
+    "background": "The state provides public infrastructure: it builds and maintains roads, bridges, schools and hospitals. Depending on the task, the federation, the states or the municipalities are responsible – motorways, for example, are federal, while school buildings are usually provided by towns and municipalities. This is paid for mainly from taxes.",
+    "otherOptions": "In the social market economy, food, clothing, cars and buses are produced and sold by private companies. The state does not hand out free newspapers to everyone; the press is independent of the state.",
+    "memoryTip": "The state builds what everyone needs: roads and schools.",
+    "legalBasis": []
+  },
+  "47": {
+    "summary": "The state does not pay for holidays.",
+    "whyCorrect": "Child benefit, funding for museums and support for athletes are tasks of the state; private holidays are not.",
+    "background": "The state supports families, culture and sport. For example, it pays child benefit (Kindergeld), funds museums and theatres and supports athletes. But people have to pay for their own holidays – that is not a task of the state.",
+    "otherOptions": "Child benefit is paid to parents by the Family Benefits Office (Familienkasse). Museums are funded mainly by the states and cities. Sport is funded at both elite and grassroots level, for example through clubs. All three are tasks of the state.",
+    "memoryTip": "You are looking for what does not fit: you pay for your holidays yourself.",
+    "legalBasis": []
+  },
+  "48": {
+    "summary": "The citizens’ assembly is not a constitutional body.",
+    "whyCorrect": "Constitutional bodies include the Bundestag, the Bundesrat, the Federal President, the federal government and the Federal Constitutional Court.",
+    "background": "Constitutional bodies are the highest bodies of the federation set out in the Basic Law: the Bundestag, the Bundesrat, the federal government, the Federal President, the Federal Convention and the Federal Constitutional Court. They share the tasks of the state and keep a check on each other. The Federal Constitutional Court in Karlsruhe ensures that all other bodies respect the Basic Law.",
+    "otherOptions": "The Bundesrat, the Federal President and the federal government are constitutional bodies. A “citizens’ assembly” (Bürgerversammlung) exists only at local level in some states, as a meeting of a municipality’s residents. It is not a constitutional body of the federation.",
+    "memoryTip": "Constitutional bodies start with “Bundes-” (federal) – the citizens’ assembly does not fit.",
+    "legalBasis": []
+  },
+  "49": {
+    "summary": "The federal states decide school policy.",
+    "whyCorrect": "Education is a matter for the states in Germany; that is why they have their own school laws and curricula.",
+    "background": "In Germany, the federal states are responsible for schools. This is called the cultural sovereignty of the states. That is why each state has its own school laws, curricula, types of schools and holiday dates. To keep qualifications comparable, the states coordinate in the Standing Conference of Ministers of Education (Kultusministerkonferenz).",
+    "otherOptions": "Teachers teach according to the states’ rules but do not make school policy. The Federal Ministry for Family Affairs is responsible for families, senior citizens, women and youth, not schools. Universities train teachers but do not decide school policy.",
+    "memoryTip": "Schools are a matter for the states – that is why summer holidays differ everywhere.",
+    "legalBasis": [
+      {
+        "label": "Art. 30 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_30.html"
+      }
+    ]
+  },
+  "50": {
+    "summary": "Germany’s economic system is called the social market economy.",
+    "whyCorrect": "It combines a free market with social balance provided by the state; the GDR had a planned economy.",
+    "background": "Germany’s economic system is called the social market economy. Companies produce and sell freely, and prices are set by supply and demand. But the state ensures social balance, for example through social insurance, protection against dismissal, the minimum wage and rules for fair competition. Ludwig Erhard, the first economics minister of the Federal Republic, is considered the father of the social market economy.",
+    "otherOptions": "In a planned economy or a centrally directed economy, the state decides what is produced and what it costs – as in the GDR. A “free central economy” does not exist; free and centrally directed do not go together.",
+    "memoryTip": "Market + social balance = social market economy.",
+    "legalBasis": []
+  }
+}

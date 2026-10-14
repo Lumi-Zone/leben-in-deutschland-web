@@ -1,0 +1,604 @@
+{
+  "1": {
+    "summary": "İnsanlar genel olarak hükümeti açıkça eleştirebilir.",
+    "whyCorrect": "İfade özgürlüğü siyasi görüşleri açıkça söyleme hakkını korur. Başkalarını koruyan yasal sınırlar yine geçerlidir.",
+    "background": "İfade özgürlüğü Anayasa’nın (Grundgesetz) 5. maddesinde yer alır. Herkes görüşünü sözlü, yazılı ve görsel olarak özgürce ifade edebilir – hükümetin hoşuna gitmese bile. Bu yüzden politikacıları eleştirmek, gösteri yapmak ve eleştirel gazete yazıları yayımlamak Almanya’da gündelik hayatın parçasıdır. Yine de sınırlar vardır: hakaret, iftira ve halkı kin ve nefrete kışkırtma suçtur. Ancak nesnel, hatta sert eleştiri korunur.",
+    "otherOptions": "Din özgürlüğü (madde 4) inancı korur, siyasi açıklamaları değil. Vergi ödemek eleştiri için özel bir hak vermez – ifade özgürlüğü geliri olmayan insanlar için de geçerlidir. Seçme hakkı bir tuzaktır: O da demokratik bir haktır, ama seçimlerde oy kullanmakla ilgilidir, açıkça konuşmakla değil.",
+    "memoryTip": "“Söylemek” kelimesine dikkat et: Bir şey söyleyebilen kişinin ifade özgürlüğü vardır.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 5",
+        "url": "https://www.gesetze-im-internet.de/gg/art_5.html"
+      }
+    ]
+  },
+  "2": {
+    "summary": "Çocuk 14 yaşına gelene kadar din dersine katılım konusunda ebeveynler karar verir.",
+    "whyCorrect": "Kural çocuğun dinî eğitimiyle ilgilidir; bu nedenle doğru seçenek din dersidir.",
+    "background": "Din dersi çoğu devlet okulunda normal bir derstir (Anayasa madde 7). Ama din kişisel bir vicdan meselesi olduğu için kimse derse katılmaya zorlanamaz. Çocuk 14 yaşına girene kadar derse katılıp katılmayacağına ebeveynler karar verir. 14 yaşından itibaren çocuk dinî açıdan reşit sayılır; kendi dinine ve dolayısıyla din dersine kendisi karar verir. Derse katılmayan öğrenciler genellikle etik gibi bir alternatif derse girer.",
+    "otherOptions": "Tarih, siyaset ve dil dersleri zorunludur. Devletin eğitim görevi olduğu için ebeveynler çocuklarını bu derslerden kolayca muaf tutamaz. Bu seçim hakkı yalnızca din dersinde vardır, çünkü burada inanç özgürlüğü söz konusudur.",
+    "memoryTip": "14 ve din birlikte gider: Çocuk 14 yaşında kendi inancına kendisi karar verir.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 7",
+        "url": "https://www.gesetze-im-internet.de/gg/art_7.html"
+      },
+      {
+        "label": "Çocukların Dinî Eğitimi Kanunu § 5",
+        "url": "https://www.gesetze-im-internet.de/kerzg/__5.html"
+      }
+    ]
+  },
+  "3": {
+    "summary": "Hukuk devletinde resmî makamlar da yasalara bağlıdır.",
+    "whyCorrect": "Hukuk devleti, hem insanların hem de devletin keyfî davranmayıp yürürlükteki yasalara uyması demektir.",
+    "background": "Hukuk devleti, hukukun herkesin üstünde olması demektir – sadece halkın değil, devletin de. Hükümet, resmî kurumlar ve polis ancak bir yasa izin verirse harekete geçebilir (Anayasa madde 20, fıkra 3). Bir kurumdan haksızlık gördüğünü düşünen herkes bağımsız bir mahkemeye başvurabilir. Bu keyfî kararlara karşı korur; çünkü hiçbir makam ve hiçbir politikacı yasanın üstünde değildir.",
+    "otherOptions": "Devletin yasalara uymak zorunda olmaması hukuk devletinin tam tersi olurdu. Yasalar sadece Almanlar için değil, Almanya’daki herkes için geçerlidir. Mahkemeler de yasa yapmaz: Bu, parlamentoların (Federal Meclis, Federal Konsey, eyalet meclisleri) görevidir. Mahkemeler yasaları uygular – buna kuvvetler ayrılığı denir.",
+    "memoryTip": "Hukuk devleti = Hukuk herkes için geçerlidir, devlet için de.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 20",
+        "url": "https://www.gesetze-im-internet.de/gg/art_20.html"
+      }
+    ]
+  },
+  "4": {
+    "summary": "İfade özgürlüğü temel bir haktır.",
+    "whyCorrect": "Bu hak Anayasa tarafından korunur; silah sahibi olmak, kaba kuvvet ve kendi adaletini uygulamak temel hak değildir.",
+    "background": "Temel haklar Anayasa’nın başında, 1 ile 19. maddeler arasında yer alır. İfade özgürlüğü (madde 5) bunların en önemlilerinden biridir, çünkü özgür tartışma olmadan demokrasi işlemez. Temel haklar insanları özellikle devlete karşı korur: Devlet bu hakları ancak dar sınırlar içinde ve yalnızca bir yasayla kısıtlayabilir.",
+    "otherOptions": "Silah sahibi olmak Almanya’da temel bir hak değildir – ABD’den bilinenin aksine. Silah sahibi olmak isteyen kişi Silah Kanunu’na göre resmî izin almak zorundadır. Kaba kuvvet hukuku ve kendi adaletini sağlamak, “hakkını” zor kullanarak kendin almak demektir. Bu yasaktır, çünkü Almanya’da güç kullanma tekeli yalnızca devlettedir: Hukuku polis ve mahkemeler uygular.",
+    "memoryTip": "Üç cevap şiddetle ilgili – temel hak tek barışçıl cevaptır.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 5",
+        "url": "https://www.gesetze-im-internet.de/gg/art_5.html"
+      }
+    ]
+  },
+  "5": {
+    "summary": "Özgür seçim, baskı veya olumsuz sonuç korkusu olmadan tercih yapabilmektir.",
+    "whyCorrect": "Seçmen kararını kendisi verebilmeli; belirli bir oya zorlanmamalı veya uygunsuz biçimde etkilenmemelidir.",
+    "background": "Federal seçimler için Anayasa beş seçim ilkesi belirler: genel, doğrudan, serbest, eşit ve gizli (madde 38). “Serbest”, kimsenin seçmenlere baskı yapamayacağı, rüşvet veremeyeceği veya onları tehdit edemeyeceği ve kimsenin verdiği oy yüzünden zarar görmeyeceği anlamına gelir. Serbest seçim, oy kullanmaya hiç gitmeme hakkını da kapsar.",
+    "otherOptions": "Belirli bir oy için para almak seçmen rüşvetidir ve suçtur. Cezaevinde bulunmuş veya hâlâ bulunan kişiler de genellikle oy kullanabilir – seçme hakkını yalnızca bir mahkeme, nadir durumlarda elinden alabilir. Almanya’da, örneğin Belçika’nın aksine, zorunlu oy yoktur.",
+    "memoryTip": "Beş seçim ilkesi: genel, doğrudan, serbest, eşit, gizli. “Serbest”: baskı olmadan ve zorunluluk olmadan.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 38",
+        "url": "https://www.gesetze-im-internet.de/gg/art_38.html"
+      }
+    ]
+  },
+  "6": {
+    "summary": "Almanya Anayasasının adı Grundgesetz’dir.",
+    "whyCorrect": "“Almanya Federal Cumhuriyeti Temel Yasası” anayasanın resmî adıdır.",
+    "background": "Alman anayasasının adı Grundgesetz’tir (GG, “Temel Yasa”). Parlamenter Konsey tarafından Bonn’da hazırlandı ve 23 Mayıs 1949’da ilan edildi. “Anayasa” kelimesinden bilerek kaçınıldı; çünkü Almanya o dönemde bölünmüştü ve Grundgesetz’in, bütün Almanya bir anayasa kabul edene kadar geçici olarak geçerli olması düşünülmüştü. 1990’daki yeniden birleşmeden beri Grundgesetz tüm Almanya’da geçerlidir. Bu yüzden 23 Mayıs “Anayasa Günü”dür.",
+    "otherOptions": "Federal yasa (Bundesgesetz), Federal Meclis ve Federal Konsey’in çıkardığı normal bir yasadır; örneğin Vatandaşlık Kanunu. Grundgesetz’in altında yer alır ve ona aykırı olamaz. “Volksgesetz” ve “Deutsches Gesetz” diye bir şey yoktur.",
+    "memoryTip": "Grundgesetz = bütün yasaların temeli (“Grund”). Kısaltması: GG.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 146",
+        "url": "https://www.gesetze-im-internet.de/gg/art_146.html"
+      }
+    ]
+  },
+  "7": {
+    "summary": "İnanç ve vicdan özgürlüğü anayasal koruma altındadır.",
+    "whyCorrect": "Bu, Temel Yasa’nın güvence altına aldığı temel haklardan biridir; eğlence, iş ve konut burada sorulan güvence değildir.",
+    "background": "Anayasa’nın 4. maddesi inanç ve vicdan özgürlüğünü güvence altına alır. Herkes bir şeye inanıp inanmayacağına ve neye inanacağına özgürce karar verebilir; dinini yaşayabilir, değiştirebilir ya da hiçbir dine bağlı olmayabilir. Devlet bu konuda tarafsızdır: Devlet kilisesi yoktur ve kimse inancı yüzünden dezavantajlı duruma düşürülemez. Vicdan özgürlüğüne silahlı askerlik hizmetini reddetme hakkı da dahildir.",
+    "otherOptions": "Çalışma hakkı, konut hakkı veya eğlence hakkı Anayasa’da yer almaz. Meslek özgürlüğü vardır (madde 12): Mesleğini özgürce seçebilirsin – ama devlet sana iş garantisi vermek zorunda değildir. Bazı eyalet anayasaları çalışmayı veya konutu devletin hedefleri arasında sayar, ancak bunlar mahkemede talep edilebilecek temel haklar değildir.",
+    "memoryTip": "Temel haklar çoğunlukla özgürlüklerdir (“özgürce inan, özgürce söyle”), konut veya iş gibi şeyler üzerinde talep hakkı değildir.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 4",
+        "url": "https://www.gesetze-im-internet.de/gg/art_4.html"
+      }
+    ]
+  },
+  "8": {
+    "summary": "Temel Yasa herkesin aynı miktarda paraya sahip olmasını garanti etmez.",
+    "whyCorrect": "İnsan onurunu, ifade özgürlüğünü ve yasa önünde eşitliği korur; fakat herkes için eşit gelir öngörmez.",
+    "background": "Doğru olan üç cümle neredeyse kelimesi kelimesine Anayasa’dan alınmıştır: “İnsan onuru dokunulmazdır” (madde 1), “Herkes yasa önünde eşittir” (madde 3) ve ifade özgürlüğü (madde 5). Almanya bir sosyal devlettir (madde 20): Zor durumdaki insanlara, örneğin Bürgergeld (vatandaş geliri) veya sağlık sigortası ile yardım eder. Ama Anayasa herkese aynı geliri vaat etmez.",
+    "otherOptions": "“Herkesin eşit miktarda parası olmalı” Anayasa’da bulunmayan bir fikirdir. Almanya’da mülkiyet hakkı (madde 14) ve meslek özgürlüğü geçerlidir; gelirler farklı olabilir. Anayasa’da eşitlik, eşit para değil eşit haklar demektir.",
+    "memoryTip": "Yasa önünde eşitlik – evet. Eşit para – hayır.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 1",
+        "url": "https://www.gesetze-im-internet.de/gg/art_1.html"
+      },
+      {
+        "label": "Anayasa (GG) md. 3",
+        "url": "https://www.gesetze-im-internet.de/gg/art_3.html"
+      }
+    ]
+  },
+  "9": {
+    "summary": "Anayasal sığınma hakkı siyasi zulüm gören yabancılarla ilgilidir.",
+    "whyCorrect": "İnsan onuru, aile ve ifade özgürlüğü genel haklardır; sığınma ise zulüm gören yabancıların korunmasına yöneliktir.",
+    "background": "Anayasa’nın 16a maddesi şöyle der: “Siyasi nedenlerle zulme uğrayanlar sığınma hakkına sahiptir.” Sığınma (iltica), siyasi görüşü, dini veya kökeni nedeniyle kendi ülkesinde zulme uğrayan insanları korur. Almanların Almanya’da bu korumaya ihtiyacı yoktur – bu yüzden sığınma hakkı yalnızca yabancılar için geçerlidir. Uygulamada birçok mülteci Cenevre Mülteci Sözleşmesi kapsamında da koruma alır.",
+    "otherOptions": "İnsan onuru (madde 1), ailenin korunması (madde 6) ve ifade özgürlüğü (madde 5) insan haklarıdır: Vatandaşlığı ne olursa olsun Almanya’daki herkes için geçerlidir. Tersine, bazı haklar yalnızca Almanlar için geçerlidir; örneğin 8. maddedeki toplanma özgürlüğü.",
+    "memoryTip": "Sığınma, kendi ülkendeki zulme karşı korumadır – buna yalnızca başka ülkelerden gelen insanlar ihtiyaç duyar.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 16a",
+        "url": "https://www.gesetze-im-internet.de/gg/art_16a.html"
+      }
+    ]
+  },
+  "10": {
+    "summary": "Para cezası Temel Yasa ile bağdaşır.",
+    "whyCorrect": "Yasada öngörülen bir yaptırımdır. Dayak, işkence ve ölüm cezası temel anayasal korumalara aykırıdır.",
+    "background": "Para cezası Alman ceza hukukunda tamamen normal bir cezadır: Mahkeme, bir kişinin belirli bir miktar ödemesine karar verir. Bu Anayasa ile uyumludur. Ölüm cezası ise Anayasa tarafından açıkça kaldırılmıştır (madde 102: “Ölüm cezası kaldırılmıştır.”). Bunun temeli, devletin her zaman saygı göstermek zorunda olduğu 1. maddedeki insan onurudur.",
+    "otherOptions": "İşkence insan onurunu ihlal eder ve ağır suç şüphesi olsa bile istisnasız yasaktır. Gözaltındaki kişilere ruhsal veya bedensel kötü muamele yapılamaz (madde 104). Almanya’da dayak cezası yoktur; ebeveynler de çocuklarına vuramaz.",
+    "memoryTip": "Sadece bir cevap kimsenin canını yakmaz: para cezası.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 102",
+        "url": "https://www.gesetze-im-internet.de/gg/art_102.html"
+      },
+      {
+        "label": "Anayasa (GG) md. 1",
+        "url": "https://www.gesetze-im-internet.de/gg/art_1.html"
+      }
+    ]
+  },
+  "11": {
+    "summary": "Federal Almanya Cumhuriyeti Anayasasının adı Grundgesetz’dir.",
+    "whyCorrect": "Federal anayasa veya anayasa sözleşmesi gibi ifadeler resmî ad değildir.",
+    "background": "Federal Almanya’nın anayasasının adı Grundgesetz’tir (Temel Yasa). Temel hakları (madde 1–19), demokrasi, hukuk devleti ve federal devlet gibi devlet ilkelerini ve Federal Meclis, Federal Konsey ve Cumhurbaşkanı gibi anayasal organların görevlerini düzenler. Diğer bütün yasalar Grundgesetz’e uygun olmak zorundadır. Anlaşmazlık olursa buna Karlsruhe’deki Federal Anayasa Mahkemesi karar verir. Grundgesetz ancak hem Federal Meclis’te hem Federal Konsey’de üçte iki çoğunlukla değiştirilebilir.",
+    "otherOptions": "“Bundesverfassung” İsviçre’nin anayasasının adıdır, Almanya’nın değil. “Gesetzbuch” (kanun kitabı) bir hukuk alanındaki yasaların toplamıdır; örneğin Medeni Kanun (BGB) veya Ceza Kanunu (StGB). “Verfassungsvertrag” (Anayasa Antlaşması), 2005’te başarısız olan planlanmış bir AB antlaşmasının adıydı.",
+    "memoryTip": "Bu soru neredeyse 6. soruyla aynı – cevap her zaman Grundgesetz.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 79",
+        "url": "https://www.gesetze-im-internet.de/gg/art_79.html"
+      }
+    ]
+  },
+  "12": {
+    "summary": "Bir siyasi parti basın özgürlüğünü kolayca ortadan kaldıramaz.",
+    "whyCorrect": "Basın özgürlüğü temel hak olarak korunur; sıradan bir siyasi çoğunluk bu korumayı kaldıramaz.",
+    "background": "Basın özgürlüğü Anayasa’nın 5. maddesinde yer alır: Gazeteler, radyo-televizyon ve internet medyası özgürce haber yapabilir ve “sansür yapılmaz”. Temel haklar yasayla belirli sınırlar içinde kısıtlanabilir; ama 19. maddeye göre bir temel hakkın “özüne hiçbir durumda dokunulamaz”. Ayrıca demokrasi, “sonsuzluk maddesi” denen 79. maddenin 3. fıkrasıyla korunur – özgür basın olmadan da demokrasi olmaz.",
+    "otherOptions": "Basit çoğunluk normal bir anayasa değişikliği için bile yetmez. Federal Meclis’te (ve Federal Konsey’de) üçte iki çoğunluk olsa bile basın özgürlüğü kaldırılamaz, çünkü özü korunur. Federal Konsey eyaletlerin temsilcisidir ve o da temel hakları kaldıramaz.",
+    "memoryTip": "Hiçbir çoğunluk temel hakları kaldıramaz – ne yarısı ne de üçte ikisi.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 5",
+        "url": "https://www.gesetze-im-internet.de/gg/art_5.html"
+      },
+      {
+        "label": "Anayasa (GG) md. 19",
+        "url": "https://www.gesetze-im-internet.de/gg/art_19.html"
+      },
+      {
+        "label": "Anayasa (GG) md. 79",
+        "url": "https://www.gesetze-im-internet.de/gg/art_79.html"
+      }
+    ]
+  },
+  "13": {
+    "summary": "Muhalefet, hükümet partilerine bağlı olmayan milletvekillerinden oluşur.",
+    "whyCorrect": "Hükümeti parlamentoda denetler, eleştirir ve siyasi alternatifler sunarlar.",
+    "background": "Federal Meclis’te iki taraf vardır: federal hükümeti birlikte oluşturan iktidar partileri ve muhalefet. Muhalefet, partisi hükümette yer almayan bütün milletvekillerinden oluşur. Görevi hükümeti denetlemek, eleştirmek ve kendi önerilerini sunmaktır – örneğin soru önergeleri, tartışmalar veya araştırma komisyonları aracılığıyla. Güçlü bir muhalefet demokrasi için önemlidir.",
+    "otherOptions": "İktidar partileri muhalefetin tam tersidir. En çok milletvekiline sahip grup genellikle hükümeti kurar, ama kurmak zorunda değildir. Federal Meclis’teki bütün partiler %5 barajını geçmiştir – hem iktidar hem muhalefet partileri.",
+    "memoryTip": "Muhalefet = hükümetin “karşısındakiler”: hükümette olmayan herkes.",
+    "legalBasis": []
+  },
+  "14": {
+    "summary": "Bir görüş genel olarak internette de ifade edilebilir.",
+    "whyCorrect": "İfade özgürlüğü kullanılan araca bağlı değildir; suç oluşturan içerikler ve başkalarının haklarını ihlal eden ifadeler sınırlıdır.",
+    "background": "İfade özgürlüğü (Anayasa madde 5) şu demektir: Görüşümü sokakta, gazetede ve internette, örneğin sosyal medyada veya bir blogda özgürce söyleyebilir, yazabilir ve paylaşabilirim. Hükümeti de eleştirebilirim. Ama ifade özgürlüğünün sınırları vardır: Yasalar başkalarının onurunu korur, belirli sembolleri ve nefret söylemini yasaklar.",
+    "otherOptions": "Yoldan geçenlere küfretmek hakarettir ve cezalandırılabilir. Anayasaya aykırı veya yasaklanmış örgütlerin sembollerini – örneğin Nazi sembollerini ya da Hamas ve “İslam Devleti” sembollerini – herkesin önünde göstermek yasaktır. Hükümete karşı çıkan bir görüş ise açıkça serbesttir.",
+    "memoryTip": "İnternet – evet. Hakaret ve yasak semboller – hayır.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 5",
+        "url": "https://www.gesetze-im-internet.de/gg/art_5.html"
+      }
+    ]
+  },
+  "15": {
+    "summary": "Temel Yasa zorla çalıştırmayı yasaklar.",
+    "whyCorrect": "İnsanlar genel olarak çalışmaya zorlanamaz; meslek seçimi ve yurt dışında çalışma burada sorulan yasak değildir.",
+    "background": "Anayasa’nın 12. maddesi meslek özgürlüğünü korur. Aynı maddede, kimsenin belirli bir işi yapmaya zorlanamayacağı ve zorla çalıştırmanın ancak mahkeme kararıyla özgürlüğü kısıtlanan kişiler için, örneğin cezaevinde çalışma olarak, mümkün olduğu yazar. Bunun arka planında tarih de vardır: Nasyonal Sosyalizm döneminde milyonlarca insan zorla çalıştırıldı.",
+    "otherOptions": "Askerlik hizmeti yasak değildir – 12a maddesi buna açıkça izin verir. Mesleği özgürce seçmek yasak değil, temel bir haktır. Yurt dışında çalışmak da serbesttir; herkes Almanya’dan ayrılıp başka bir ülkede çalışabilir.",
+    "memoryTip": "Yasak olan çalışmak değil, zorlamaktır: zorla çalıştırma.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 12",
+        "url": "https://www.gesetze-im-internet.de/gg/art_12.html"
+      }
+    ]
+  },
+  "16": {
+    "summary": "Kişiler hakkında yanlış olgusal iddialar sınırlandırılabilir.",
+    "whyCorrect": "İfade özgürlüğü eleştiri ve görüşleri korur; kişilik haklarını ihlal eden her yanlış iddiayı korumaz.",
+    "background": "İfade özgürlüğü, diğerlerinin yanında “kişisel onur hakkı” ile sınırlanır (madde 5, fıkra 2). Belirli bir kişi hakkında herkesin önünde yanlış olgular yayan kişi, örneğin iftira veya karalama nedeniyle suç işlemiş olabilir. Mağdurlar ayrıca yanlış iddianın silinmesini veya geri alınmasını isteyebilir. Bir görüş (“Bence o kötü bir politikacı”) korunur, uydurulmuş bir olgu (“Para çaldı”) korunmaz.",
+    "otherOptions": "Federal hükümet hakkındaki görüşler, dinler hakkındaki tartışmalar ve devleti eleştirmek ifade özgürlüğü kapsamındadır. Zaten ifade özgürlüğü tam da hükümete ve devlete yönelik eleştiriyi korumak için vardır.",
+    "memoryTip": "Görüş serbesttir – kişiler hakkında yanlış iddialar değil.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 5",
+        "url": "https://www.gesetze-im-internet.de/gg/art_5.html"
+      }
+    ]
+  },
+  "17": {
+    "summary": "Devlet vatandaşlara keyfî biçimde eşitsiz davranamaz.",
+    "whyCorrect": "Eşitlik ilkesi devlet işlemlerini bağlar; dilekçe, ifade ve toplantı özgürlüğü ise korunan haklardır.",
+    "background": "Anayasa’nın 3. maddesi şöyle der: “Herkes yasa önünde eşittir.” Kimse cinsiyeti, soyu, dili, kökeni, inancı, siyasi görüşü veya engeli nedeniyle dezavantajlı duruma düşürülemez. Devlet herkese eşit davranmak zorundadır – örneğin resmî dairelerde, okulda veya mahkemede. Bu yüzden devletin eşitsiz muamelesi yasaktır.",
+    "otherOptions": "İfade özgürlüğü (madde 5), dilekçe hakkı (madde 17) ve toplanma özgürlüğü (madde 8) temel haklardır, yani açıkça serbesttir. Dilekçeyle resmî kurumlara veya parlamentolara yazılı olarak istek ya da şikâyet iletilebilir.",
+    "memoryTip": "Üç cevap temel haktır – yasak olan sadece eşitsiz muameledir.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 3",
+        "url": "https://www.gesetze-im-internet.de/gg/art_3.html"
+      }
+    ]
+  },
+  "18": {
+    "summary": "Temel Yasa’nın 1. maddesi insan onurunun dokunulmazlığını korur.",
+    "whyCorrect": "İnsan onuru anayasanın başında yer alır ve tüm devlet gücünü ona saygı gösterip korumakla yükümlü kılar.",
+    "background": "1. maddenin 1. fıkrası Anayasa’nın en önemli cümlesidir: “İnsan onuru dokunulmazdır. Ona saygı göstermek ve onu korumak bütün devlet gücünün görevidir.” Kökeni, dini veya vatandaşlığı ne olursa olsun her insanın onuru vardır. Nasyonal Sosyalizmin suçlarından sonra bu cümle bilinçli olarak en başa konuldu. Sonsuzluk maddesine (madde 79, fıkra 3) göre 1. madde hiçbir zaman değiştirilemez.",
+    "otherOptions": "Diğer haklar da temel haktır, ama başka maddelerde yer alır: yaşam hakkı 2. maddede, din özgürlüğü 4. maddede ve ifade özgürlüğü 5. maddede.",
+    "memoryTip": "1. madde – ilk ve en önemlisi: insan onuru.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 1",
+        "url": "https://www.gesetze-im-internet.de/gg/art_1.html"
+      }
+    ]
+  },
+  "19": {
+    "summary": "Yerleşme özgürlüğü, Almanya içinde yaşayacağınız yeri seçebilmenizdir.",
+    "whyCorrect": "Bu hak hareket ve ikametle ilgilidir; meslek, din veya kıyafetle ilgili değildir.",
+    "background": "Serbest dolaşım ve yerleşme hakkı (Freizügigkeit, Anayasa madde 11) şu demektir: Almanya’da nerede yaşayacağına özgürce karar verebilir ve ülke içinde taşınabilirsin. Anayasa bu hakkı bütün Almanlara güvence altına alır. AB vatandaşları ayrıca AB’nin serbest dolaşım hakkından yararlanır. Diğer yabancıların nerede yaşayabileceğini oturum hukuku belirler.",
+    "otherOptions": "Meslek değiştirmek meslek özgürlüğüne (madde 12), din değiştirmek inanç özgürlüğüne (madde 4) girer. Son cevap bir tuzaktır: Günlük Almancada “freizügig” “açık giyimli” anlamına da gelir – bunun temel hakla hiçbir ilgisi yoktur.",
+    "memoryTip": "Freizügigkeit = özgürce taşınmak: yaşadığın yeri seçmek ve değiştirmek.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 11",
+        "url": "https://www.gesetze-im-internet.de/gg/art_11.html"
+      }
+    ]
+  },
+  "20": {
+    "summary": "Diktatörlük kurmayı hedefleyen bir parti anayasaya aykırı hareket eder.",
+    "whyCorrect": "Özgür demokratik anayasal düzen, demokrasinin diktatörlükle değiştirilmesini dışlar.",
+    "background": "Diktatörlük kurmak isteyen bir parti, özgürlükçü demokratik temel düzene karşı savaşıyor demektir. Anayasa’nın 21. maddesinin 2. fıkrasına göre böyle bir parti anayasaya aykırıdır. Ancak bir partiyi yalnızca Federal Anayasa Mahkemesi yasaklayabilir. 1952’de Sosyalist Reich Partisi ve 1956’da Komünist Parti (KPD) bu şekilde yasaklandı. Almanya buna “kendini savunabilen demokrasi” der: Demokrasi kendini düşmanlarına karşı korur.",
+    "otherOptions": "Hoşgörülü, hukuk devletine bağlı ve yasalara saygılı, diktatörlük isteyen bir partinin tam tersini anlatır. Bir diktatörlük seçimleri, temel hakları ve bağımsız mahkemeleri ortadan kaldırır.",
+    "memoryTip": "Anayasaya karşı = anayasaya aykırı (verfassungswidrig).",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 21",
+        "url": "https://www.gesetze-im-internet.de/gg/art_21.html"
+      }
+    ]
+  },
+  "21": {
+    "summary": "1 numaralı görsel Federal Almanya armasını gösterir.",
+    "whyCorrect": "Federal arma altın zemin üzerindeki siyah federal kartaldır; görsel soruda bu 1 numaradır.",
+    "background": "Federal Almanya’nın arması, altın sarısı zemin üzerinde kırmızı pençeli, kırmızı gagalı ve kırmızı dilli siyah bir kartal gösterir – federal kartal. Bu kartalı kimlik kartlarında, madeni paralarda, resmî binaların tabelalarında ve Federal Meclis’in genel kurul salonunda görebilirsin. Siyah, kırmızı ve altın rengi aynı zamanda federal bayrağın renkleridir.",
+    "otherOptions": "2 numaralı görsel bir Hristiyan sembolü olan Chi-Rho monogramını gösterir. 3 numaralı görsel, Alman Silahlı Kuvvetleri’nin (Bundeswehr) amblemi olan Demir Haç’tır. 4 numaralı görsel çekiç, pergel ve başak çelengiyle DDR’in (Doğu Almanya) devlet armasıdır – 1990’daki yeniden birleşmeden beri kullanılmaz.",
+    "memoryTip": "Federal arma bayrakla aynı renklere sahiptir: siyah, kırmızı, altın.",
+    "legalBasis": []
+  },
+  "22": {
+    "summary": "Almanya bir cumhuriyettir.",
+    "whyCorrect": "Devlet başkanlığı kalıtsal değildir; Almanya monarşi, prenslik veya diktatörlük değildir.",
+    "background": "Almanya bir cumhuriyettir. Bu, devlet başkanının kral olmadığı ve makamı miras yoluyla almadığı, belirli bir süre için seçildiği anlamına gelir. Cumhurbaşkanını Federal Kurul beş yıllığına seçer. Ülkenin adı bile bunu söyler: Federal Almanya Cumhuriyeti. Almanya’da monarşi 1918’de sona erdi.",
+    "otherOptions": "Monarşide veya prenslikte genellikle makamı miras alan bir kral ya da prens yönetir – örneğin Lihtenştayn veya Monako’da. Almanya Nasyonal Sosyalizm döneminde (1933–1945) bir diktatörlüktü; bugün Anayasa bunu engeller.",
+    "memoryTip": "Federal Almanya Cumhuriyeti – cevap adında saklı.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 20",
+        "url": "https://www.gesetze-im-internet.de/gg/art_20.html"
+      }
+    ]
+  },
+  "23": {
+    "summary": "Çalışanların çoğu ücretli çalışan statüsündedir.",
+    "whyCorrect": "Çoğunluk bir şirket veya resmî kurumda çalışır; serbest çalışan ya da gönüllü değildir.",
+    "background": "Almanya’da çalışanların çoğu ücretli çalışandır: Bir şirkette veya bir kamu kurumunda çalışır ve karşılığında ücret ya da maaş alırlar. Bu, çalışan her on kişiden yaklaşık dokuzu için geçerlidir. Sadece küçük bir kısmı serbest çalışır; örneğin kendi dükkânı, muayenehanesi olanlar veya serbest meslek sahipleri.",
+    "otherOptions": "Almanya’daki birçok şirket aile şirketidir, ama insanların çoğu küçük aile işletmelerinde çalışmaz. Gönüllü çalışma ücretsizdir ve işe ek olarak yapılır. Kendi şirketi olan serbest çalışanlar azınlıktadır.",
+    "memoryTip": "İnsanların çoğu bir yerde çalışır – bir şirkette veya devlette.",
+    "legalBasis": []
+  },
+  "24": {
+    "summary": "Almanya Federal Cumhuriyeti 16 eyaletten oluşur.",
+    "whyCorrect": "Bunlar 13 bölgesel eyalet ile Berlin, Bremen ve Hamburg şehir eyaletleridir.",
+    "background": "Almanya’nın 16 eyaleti vardır: Bavyera veya Kuzey Ren-Vestfalya gibi 13 alan eyaleti ve 3 şehir eyaleti – Berlin, Hamburg ve Bremen. 1990’daki yeniden birleşmeden beri sayı 16’dır; o zaman doğudaki beş eyalet Brandenburg, Mecklenburg-Ön Pomeranya, Saksonya, Saksonya-Anhalt ve Türingen katıldı ve Berlin birleşti. Her eyaletin kendi anayasası, parlamentosu ve hükümeti vardır.",
+    "otherOptions": "14, 15 ve 17 yanlıştır. Soru kataloğunda ayrıca her eyalet için 10 soru vardır; sınavda bunlardan kendi eyaletinle ilgili 3 soru çıkar.",
+    "memoryTip": "16 = 13 alan eyaleti + 3 şehir eyaleti.",
+    "legalBasis": []
+  },
+  "25": {
+    "summary": "Alsace-Lorraine Almanya’nın bir eyaleti değildir.",
+    "whyCorrect": "Bölge bugün Fransa’dadır; Kuzey Ren-Vestfalya, Mecklenburg-Vorpommern ve Saksonya-Anhalt Alman eyaletleridir.",
+    "background": "Elsass-Lothringen (Alsas-Loren), Fransa’da, Almanya sınırında bir bölgedir. 1871’den 1918’e kadar Alman İmparatorluğu’na aitti, ama yüz yılı aşkın süredir yeniden Fransız toprağıdır. Federal Almanya Cumhuriyeti’ne hiç ait olmadı. 16 eyalet şunlardır: Baden-Württemberg, Bavyera, Berlin, Brandenburg, Bremen, Hamburg, Hessen, Mecklenburg-Ön Pomeranya, Aşağı Saksonya, Kuzey Ren-Vestfalya, Renanya-Pfalz, Saarland, Saksonya, Saksonya-Anhalt, Schleswig-Holstein ve Türingen.",
+    "otherOptions": "Kuzey Ren-Vestfalya en kalabalık eyalettir, başkenti Düsseldorf’tur. Mecklenburg-Ön Pomeranya (başkenti Schwerin) ve Saksonya-Anhalt (başkenti Magdeburg) 1990’da yeniden birleşmeyle katılan eyaletlerdendir.",
+    "memoryTip": "Elsass = Alsace: Kulağa Fransızca gelir, çünkü Fransız’dır.",
+    "legalBasis": []
+  },
+  "26": {
+    "summary": "Almanya demokratik ve sosyal bir federal devlettir.",
+    "whyCorrect": "Bu anayasal ilkeler demokrasi, sosyal devlet ve federal yapıyı bir araya getirir.",
+    "background": "Anayasa’nın 20. maddesi şu cümleyle başlar: “Federal Almanya Cumhuriyeti demokratik ve sosyal bir federal devlettir.” Demokratik: Halk temsilcilerini seçer. Sosyal: Devlet, örneğin emeklilik, sağlık ve işsizlik sigortasıyla sosyal güvence sağlar. Federal devlet: Güç, federal yönetim ile 16 eyalet arasında paylaşılır.",
+    "otherOptions": "Komünist cumhuriyet veya sosyalist devlet Federal Cumhuriyet değil, DDR’di (Doğu Almanya). Almanya 1918’den beri monarşi değildir. “Sosyal ve sosyalist federal devlet” cevabı bir tuzaktır: “sosyal” doğru, “sosyalist” yanlış.",
+    "memoryTip": "20. maddedeki üç kelime: demokratik, sosyal, federal devlet.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 20",
+        "url": "https://www.gesetze-im-internet.de/gg/art_20.html"
+      }
+    ]
+  },
+  "27": {
+    "summary": "Almanya federal bir devlettir.",
+    "whyCorrect": "Devlet görevleri federal yönetim ile 16 eyalet arasında paylaşılır; Almanya monarşi, diktatörlük veya sosyalist üniter devlet değildir.",
+    "background": "Almanya federal bir devlettir: Birlikte federasyonu oluşturan 16 eyaletten oluşur. Eyaletlerin kendi anayasaları, parlamentoları ve hükümetleri vardır; örneğin okullardan ve polisten sorumludurlar. Federal Konsey aracılığıyla federal yasamaya katılırlar. Anayasa bu federal düzeni özel olarak korur: Sonsuzluk maddesine göre kaldırılamaz.",
+    "otherOptions": "DDR 1990’a kadar sosyalist bir devletti. Nasyonal Sosyalizm döneminde diktatörlük vardı. 1918’e kadar imparatorlu bir monarşi vardı. Bunların hiçbiri bugünkü Almanya’yı anlatmaz.",
+    "memoryTip": "Federal Cumhuriyet = 16 eyaletten oluşan federal devlet.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 20",
+        "url": "https://www.gesetze-im-internet.de/gg/art_20.html"
+      },
+      {
+        "label": "Anayasa (GG) md. 79",
+        "url": "https://www.gesetze-im-internet.de/gg/art_79.html"
+      }
+    ]
+  },
+  "28": {
+    "summary": "Federal Meclis milletvekillerini oy kullanma hakkına sahip halk seçer.",
+    "whyCorrect": "Temsilî demokraside seçme hakkı bulunan vatandaşlar federal seçimde oy kullanır.",
+    "background": "Anayasa’nın 20. maddesi “Bütün devlet gücü halktan gelir” der. Bu yüzden Federal Meclis milletvekillerini seçme hakkı olan vatandaşlar, genellikle dört yılda bir seçer. 18 yaşını doldurmuş Alman vatandaşları oy kullanabilir. Birinci oyla seçim bölgesindeki bir kişi, ikinci oyla bir parti seçilir.",
+    "otherOptions": "Ordunun, ekonominin ve idarenin seçimlerde kendi oyu yoktur. Askerler, işverenler veya memurlar elbette oy kullanabilir – ama kurum olarak değil, sadece tek tek seçmen vatandaşlar olarak.",
+    "memoryTip": "Demokrasi halkın yönetimi demektir: Halk seçer.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 20",
+        "url": "https://www.gesetze-im-internet.de/gg/art_20.html"
+      },
+      {
+        "label": "Anayasa (GG) md. 38",
+        "url": "https://www.gesetze-im-internet.de/gg/art_38.html"
+      }
+    ]
+  },
+  "29": {
+    "summary": "Almanya Federal Cumhuriyeti’nin arma hayvanı kartaldır.",
+    "whyCorrect": "Federal kartal geleneksel bir Alman devlet sembolüdür ve federal armada yer alır.",
+    "background": "Federal Almanya’nın arma hayvanı kartaldır. Federal kartal altın zemin üzerinde siyahtır ve en eski Alman devlet sembollerinden biridir. Onu madeni paralarda, pasaportlarda ve büyük bir kartal heykelinin asılı olduğu Federal Meclis genel kurul salonunda görebilirsin.",
+    "otherOptions": "Aslan, ayı ve at bazı eyaletlerin ve şehirlerin arma hayvanlarıdır: Ayı Berlin’in sembolüdür, şaha kalkmış at Aşağı Saksonya ve Kuzey Ren-Vestfalya armalarında yer alır, aslanlar ise örneğin Bavyera ve Hessen armalarında bulunur.",
+    "memoryTip": "Federal devletin kartalı var – eyaletlerin aslanı, ayısı veya atı.",
+    "legalBasis": []
+  },
+  "30": {
+    "summary": "Basın sansürü demokrasinin bir özelliği değildir.",
+    "whyCorrect": "Düzenli seçimler, ifade özgürlüğü ve farklı partiler demokratik denetimi sağlar; sansür özgür kamusal tartışmayı engeller.",
+    "background": "Anayasa’nın 5. maddesi basın özgürlüğünü güvence altına alır ve açıkça “Sansür yapılmaz” der. Yani devlet gazetelere, radyo-televizyona ve internet medyasına ne yazacaklarını söyleyemez, yazıları yayımlanmadan önce denetleyemez veya yasaklayamaz. Özgür medya insanları bilgilendirir ve hükümeti denetler.",
+    "otherOptions": "Düzenli seçimler, ifade özgürlüğü ve farklı partiler demokrasinin tipik özellikleridir. Basın sansürü ise diktatörlüklerde olur – bizim demokrasimizin parçası değildir.",
+    "memoryTip": "“Değil” kelimesine dikkat: Uymayanı arıyorsun – sansürü.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 5",
+        "url": "https://www.gesetze-im-internet.de/gg/art_5.html"
+      }
+    ]
+  },
+  "31": {
+    "summary": "Birlikte hükümet kuran partiler bir koalisyon oluşturur.",
+    "whyCorrect": "Hiçbir parti parlamentoda tek başına çoğunluğa sahip değilse, partiler bir koalisyonda birleşip hükümeti birlikte kurar.",
+    "background": "Federal seçimde genellikle hiçbir parti tek başına sandalyelerin yarısından fazlasını alamaz. O zaman birkaç parti çoğunluğu sağlamak ve hükümeti kurmak için birlikte çalışır. Buna koalisyon denir. Partiler ortak planlarını bir koalisyon sözleşmesine yazar. Örneğin 2025 federal seçiminden sonra CDU/CSU ve SPD bir koalisyon kurdu.",
+    "otherOptions": "Fraktion (meclis grubu), bir partinin parlamentodaki milletvekillerinin grubudur – koalisyonda diğer gruplarla birlikte çalışır. Bakanlık, bir bakanın yönettiği bir kurumdur. “Birlik” (Einheit) hükümet kurmak için kullanılan siyasi bir terim değildir.",
+    "memoryTip": "Koalisyon = partilerin birlikte çalışması; Fraktion = bir partinin milletvekilleri.",
+    "legalBasis": []
+  },
+  "32": {
+    "summary": "Basın bir devlet gücü değildir.",
+    "whyCorrect": "Devletin üç gücü yasama, yürütme (hükümet) ve yargıdır; basın devletten bağımsızdır.",
+    "background": "Anayasa devlet gücünü üçe ayırır (madde 20, fıkra 2): yasama (parlamento), yürütme (hükümet ve idare) ve yargı (mahkemeler). Bu kuvvetler ayrılığı, tek bir kurumun çok fazla güç kazanmasını önler.",
+    "otherOptions": "Basına güçlüleri denetlediği için sık sık “dördüncü güç” denir. Ama bu sadece bir benzetmedir: Basın bir devlet gücü değildir, devletten bağımsızdır. Yasama, hükümet ve yargı devletin üç gücüdür.",
+    "memoryTip": "Devletin üç gücü: yasa yapmak, uygulamak, yargılamak. Basın özgürdür ve bunlara dahil değildir.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 20",
+        "url": "https://www.gesetze-im-internet.de/gg/art_20.html"
+      }
+    ]
+  },
+  "33": {
+    "summary": "Almanya’da devlet ve dinî topluluklar birbirinden ayrıdır.",
+    "whyCorrect": "Devlet kilisesi yoktur; devlet dinler karşısında tarafsızdır ve hiçbir dini kayırmaz.",
+    "background": "Almanya’da devlet ve dinî topluluklar birbirinden ayrıdır. Anayasa bunun için Weimar Anayasası’nın kurallarını alır: “Devlet kilisesi yoktur.” Devlet dinler karşısında tarafsızdır ve hiçbir dini kayırmaz. Yine de devlet ve dinî topluluklar bazı alanlarda iş birliği yapar; örneğin okullardaki din dersinde veya vergi dairesinin kiliseler adına topladığı kilise vergisinde.",
+    "otherOptions": "Dinî topluluklar devleti oluşturmaz, devlet onlara bağımlı değildir ve birlikte bir bütün de oluşturmazlar. Bu bir din devleti veya devlet kilisesi olurdu; Anayasa bunu engeller.",
+    "memoryTip": "Devlet kilisesi yok: Devlet ve din ayrıdır.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 140",
+        "url": "https://www.gesetze-im-internet.de/gg/art_140.html"
+      },
+      {
+        "label": "Anayasa (GG) md. 4",
+        "url": "https://www.gesetze-im-internet.de/gg/art_4.html"
+      }
+    ]
+  },
+  "34": {
+    "summary": "Almanya bir monarşi değildir.",
+    "whyCorrect": "Almanya seçilmiş bir devlet başkanı olan bir cumhuriyettir; demokrasi, hukuk devleti ve sosyal devlet Anayasa’nın temel ilkeleridir.",
+    "background": "Almanya bir monarşi değil, cumhuriyettir. Devletin başında bir kral veya kraliçe değil, beş yıllığına seçilen Cumhurbaşkanı bulunur. Almanya’da monarşi 1918’de Alman İmparatorluğu’nun sona ermesiyle bitti.",
+    "otherOptions": "Demokrasi, hukuk devleti ve sosyal devlet Almanya’yı doğru anlatır. Bu ilkeler Anayasa’da (madde 20 ve 28) yer alır ve Federal Cumhuriyet’in en önemli özellikleri arasındadır.",
+    "memoryTip": "Almanya’nın ne olmadığını arıyorsun: 1918’den beri kral yok.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 20",
+        "url": "https://www.gesetze-im-internet.de/gg/art_20.html"
+      }
+    ]
+  },
+  "35": {
+    "summary": "Sosyal sigorta esas olarak sosyal sigorta primleriyle finanse edilir.",
+    "whyCorrect": "Çalışanlar ve işverenler sağlık, bakım, emeklilik ve işsizlik sigortasına prim öder; kilise vergisi, bağışlar ve aidatlar buna dahil değildir.",
+    "background": "Sosyal sigorta esas olarak ücret ve maaştan kesilen sosyal sigorta primleriyle finanse edilir. Çoğu sigortada çalışan ve işveren yaklaşık yarı yarıya öder. Sosyal sigortaya sağlık, bakım, emeklilik, işsizlik ve iş kazası sigortası dahildir. İş kazası sigortasını yalnızca işverenler öder; devlet ayrıca vergilerden, örneğin emeklilik için, katkı yapar.",
+    "otherOptions": "Kilise vergisi sosyal sigortaya değil, kiliselere gider. Bağışlar ve dernek aidatları kuruluşlara veya derneklere yapılan gönüllü ödemelerdir; devlet sosyal sigortayı bunlarla finanse etmez.",
+    "memoryTip": "Sosyal sigorta sosyal primlerle (Sozialabgaben) ödenir – kelime zaten adında var.",
+    "legalBasis": []
+  },
+  "36": {
+    "summary": "Sağlık sigortası sosyal güvence sağlar.",
+    "whyCorrect": "Sosyal sigortanın bir parçasıdır ve insanları hastalıkta korur; araç, bina ve sorumluluk sigortası eşya için özel sigortalardır.",
+    "background": "Sağlık sigortası sosyal sigortanın bir parçasıdır ve Almanya’da zorunludur. Doktor ziyaretlerini, hastane yatışlarını ve birçok ilacı karşılar. İnsanların çoğu yasal sağlık sigortasındadır; memurlar veya serbest çalışanlar gibi bazı kişiler özel sigorta yaptırabilir. Emeklilik, bakım, işsizlik ve iş kazası sigortasıyla birlikte sosyal güvence sağlar.",
+    "otherOptions": "Araç, bina ve sorumluluk sigortası özel sigortalardır. Eşyalara gelen zarara veya tazminat taleplerine karşı korurlar. Araçlar için sorumluluk sigortası zorunludur, ama yine de sosyal güvencenin parçası değildir.",
+    "memoryTip": "Sosyal güvence insanlarla ilgilidir (hastalık, yaşlılık, işsizlik), arabalar veya evlerle değil.",
+    "legalBasis": []
+  },
+  "37": {
+    "summary": "Çoğu eyalette hükümet başkanına Ministerpräsident denir.",
+    "whyCorrect": "Bu 13 alan eyaleti için geçerlidir; Berlin, Hamburg ve Bremen şehir eyaletlerinde bu makama belediye başkanı denir.",
+    "background": "16 eyaletin 13’ünde hükümet başkanına Ministerpräsident (eyalet başbakanı) denir. Eyalet meclisi tarafından seçilir ve eyalet hükümetini yönetir. Üç şehir eyaletinde başka unvanlar kullanılır: Berlin’de “Regierender Bürgermeister”, Hamburg’da “Erster Bürgermeister” ve Bremen’de “Senato Başkanı”.",
+    "otherOptions": "Premierminister İngiltere’nin hükümet başkanının unvanıdır, Erster Minister ise İskoçya veya Galler’inki. Berlin, Hamburg ve Bremen şehir eyaletlerinde senatörler eyalet hükümetinin üyeleridir – yani eyalet bakanı gibidirler, başkan değil.",
+    "memoryTip": "Eyalet = Ministerpräsident; federal düzey = Federal Şansölye.",
+    "legalBasis": []
+  },
+  "38": {
+    "summary": "Almanya demokratik ve sosyal bir federal devlettir.",
+    "whyCorrect": "Anayasa’nın 20. maddesinde böyle yazar: Federal yönetim ve 16 eyalet birlikte devleti oluşturur.",
+    "background": "Anayasa’nın 20. maddesine göre Almanya “demokratik ve sosyal bir federal devlettir”. Federal devlette eyaletler bir araya gelerek ortak bir devlet oluşturur. Eyaletler örneğin okullar ve polis gibi kendi sorumluluklarını korur; federal yönetim ise örneğin dış politika ve savunmadan sorumludur.",
+    "otherOptions": "Devletler birliği (Staatenbund), ortak bir devleti olmayan bağımsız devletlerin gevşek bir birleşimidir. Federal Anayasa Mahkemesi Avrupa Birliği’ni “Staatenverbund” olarak tanımlar. Fransa gibi merkezî bir devlette kendi parlamentosu ve hükümeti olan eyaletler yoktur.",
+    "memoryTip": "Federal Cumhuriyet → federal devlet (Bundesstaat).",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 20",
+        "url": "https://www.gesetze-im-internet.de/gg/art_20.html"
+      }
+    ]
+  },
+  "39": {
+    "summary": "Her eyaletin kendi hükümeti vardır.",
+    "whyCorrect": "Dış politika, ordu ve para birimi federal yönetimin veya AB’nin işidir; ama her eyaletin kendi hükümeti ve parlamentosu vardır.",
+    "background": "16 eyaletin her birinin kendi hükümeti, kendi parlamentosu (çoğunlukla Landtag denir) ve kendi anayasası vardır. Eyalet hükümeti örneğin okullardan, polisten ve üniversitelerden sorumludur. Çoğu eyalette başında bir Ministerpräsident bulunur.",
+    "otherOptions": "Dış politika, savunma ve para birimi federal yönetimin veya AB’nin işidir. Bundeswehr Almanya’nın tek ordusudur, dışişleri bakanı yalnızca federal düzeyde vardır ve Almanya’nın her yerinde euro ile ödeme yapılır.",
+    "memoryTip": "Dış politika, ordu ve para federal düzeyin işidir – ama her eyaletin bir hükümeti vardır.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 30",
+        "url": "https://www.gesetze-im-internet.de/gg/art_30.html"
+      }
+    ]
+  },
+  "40": {
+    "summary": "Milli marş “Einigkeit und Recht und Freiheit” ile başlar.",
+    "whyCorrect": "Milli marş, Hoffmann von Fallersleben’in “Almanların Şarkısı”nın üçüncü kıtasıdır.",
+    "background": "Alman milli marşı “Almanların Şarkısı”nın (Lied der Deutschen) üçüncü kıtasıdır. Sözlerini 1841’de August Heinrich Hoffmann von Fallersleben yazdı, bestesi Joseph Haydn’a aittir. 1991’den beri resmî olarak yalnızca üçüncü kıta milli marştır. “Einigkeit und Recht und Freiheit für das deutsche Vaterland” (Alman vatanı için birlik, hukuk ve özgürlük) sözleriyle başlar.",
+    "otherOptions": "“Völker, hört die Signale” işçi hareketinin şarkısı “Enternasyonal”den gelir. “Freude schöner Götterfunken” Beethoven’ın Avrupa marşı olan “Neşeye Övgü”sünün başlangıcıdır. “Deutschland einig Vaterland” DDR milli marşından bir dizedir.",
+    "memoryTip": "Birlik, hukuk, özgürlük – bu kelimeler Alman 2 euroluğunun kenarında da yazar.",
+    "legalBasis": []
+  },
+  "41": {
+    "summary": "Birden fazla parti, vatandaşların farklı görüşlerini temsil eder.",
+    "whyCorrect": "Seçmenler ancak birden fazla parti varsa farklı siyasi görüşler arasında gerçek bir seçim yapabilir.",
+    "background": "Demokraside insanların farklı görüşleri ve çıkarları vardır. Partiler bu görüşleri toplar, programlara dönüştürür ve seçime girer. Seçmenlerin gerçek bir seçeneği ancak birden fazla parti varsa olur. Anayasa’nın 21. maddesi, partilerin halkın siyasi iradesinin oluşumuna katıldığını söyler.",
+    "otherOptions": "Birden fazla parti olması rüşveti kendiliğinden önlemez – bunun için yasalar ve denetimler vardır. Demokraside gösteriler engellenmemelidir; toplanma özgürlüğüyle korunurlar. Ekonomik rekabet ekonominin konusudur, birden fazla parti olmasının nedeni değildir.",
+    "memoryTip": "Çok görüş → çok parti.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 21",
+        "url": "https://www.gesetze-im-internet.de/gg/art_21.html"
+      }
+    ]
+  },
+  "42": {
+    "summary": "Yeni yasaları parlamento kabul eder.",
+    "whyCorrect": "Federal düzeyde yasaları Federal Meclis, çoğu zaman Federal Konsey ile birlikte kabul eder; hükümet, mahkemeler ve polis yasa kabul etmez.",
+    "background": "Yeni federal yasaları parlamento kabul eder: Federal Meclis, birçok yasada Federal Konsey ile birlikte. Yasa önerileri federal hükümetten, Federal Meclis’ten veya Federal Konsey’den gelebilir. Eyalet yasalarından eyalet meclisleri sorumludur. Bu kuvvetler ayrılığının bir parçasıdır: Yasaları parlamento yapar.",
+    "otherOptions": "Hükümet yasa önerebilir ama kabul etmez. Mahkemeler yasaları uygular ve Anayasa’ya uygun olup olmadıklarını denetleyebilir. Polis yasalara uyulmasını sağlar.",
+    "memoryTip": "Parlamento = yasa yapar; hükümet = uygular; mahkemeler = yargılar.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 77",
+        "url": "https://www.gesetze-im-internet.de/gg/art_77.html"
+      }
+    ]
+  },
+  "43": {
+    "summary": "Bir parti anayasaya karşı savaşırsa yasaklanabilir.",
+    "whyCorrect": "Özgürlükçü demokratik temel düzeni ortadan kaldırmak isteyen bir partiyi yalnızca Federal Anayasa Mahkemesi yasaklayabilir.",
+    "background": "Bir parti, özgürlükçü demokratik temel düzeni ortadan kaldırmak isterse veya Almanya’nın varlığını tehlikeye atarsa yasaklanabilir (Anayasa madde 21). Yasak kararını yalnızca Federal Anayasa Mahkemesi verebilir. Bunun için Federal Meclis, Federal Konsey veya federal hükümet başvurabilir. Partilerin siyasi nedenlerle kolayca yasaklanmaması için engeller yüksektir.",
+    "otherOptions": "Pahalı bir seçim kampanyası, devlet başkanını eleştirmek veya yeni fikirler içeren bir program demokraside serbesttir. Eleştiri ve yeni siyasi yönelimler partiler arasındaki demokratik rekabetin parçasıdır.",
+    "memoryTip": "Sadece anayasaya karşı savaşan yasaklanır – eleştiren değil.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 21",
+        "url": "https://www.gesetze-im-internet.de/gg/art_21.html"
+      }
+    ]
+  },
+  "44": {
+    "summary": "Cumhurbaşkanı doğrudan seçilmez.",
+    "whyCorrect": "Devlet başkanını Federal Kurul seçer; vatandaşlar Avrupa Parlamentosu, eyalet meclisi ve Federal Meclis üyelerini doğrudan seçer.",
+    "background": "Cumhurbaşkanını halk doğrudan değil, Federal Kurul (Bundesversammlung) seçer. Federal Kurul, bütün Federal Meclis üyelerinden ve eyalet meclislerinin belirlediği aynı sayıda temsilciden oluşur. Görev süresi beş yıldır; bir kez yeniden seçilmek mümkündür.",
+    "otherOptions": "Vatandaşlar Avrupa Parlamentosu, eyalet meclisi ve Federal Meclis üyelerini doğrudan seçer. Almanya’da yaşayan AB vatandaşları da yerel seçimlerde ve Avrupa seçimlerinde oy kullanabilir.",
+    "memoryTip": "Cumhurbaşkanı → Federal Kurul; parlamentolar → halk.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 54",
+        "url": "https://www.gesetze-im-internet.de/gg/art_54.html"
+      }
+    ]
+  },
+  "45": {
+    "summary": "Bakım sigortası sosyal sigortanın bir parçasıdır.",
+    "whyCorrect": "Sağlık, emeklilik, işsizlik ve iş kazası sigortasıyla birlikte sosyal sigortanın beş kolundan biridir.",
+    "background": "Bakım sigortası sosyal sigortanın bir parçasıdır. 1995’te en yeni kol olarak getirildi ve hastalık, engellilik veya yaşlılık nedeniyle uzun süreli bakıma ihtiyaç duyan insanlara – evde ya da bakımevinde – yardım eder. Yasal sağlık sigortası olan herkes otomatik olarak bakım sigortasına da dahildir. Primleri çalışan ve işveren paylaşır; çocuğu olmayanlar küçük bir ek prim öder.",
+    "otherOptions": "İş kazası sigortası da sosyal sigortanın bir koludur, ama bakım sigortası ona dahil değildir. Ev eşyası, sorumluluk ve yangın sigortaları eşya hasarlarına karşı özel sigortalardır.",
+    "memoryTip": "Sosyal sigortanın beş kolu: sağlık, bakım, emeklilik, işsizlik ve iş kazası sigortası.",
+    "legalBasis": []
+  },
+  "46": {
+    "summary": "Devlet örneğin yollar ve okullar yapar.",
+    "whyCorrect": "Kamusal altyapı devletin görevidir; gıda, giysi ve araçları özel şirketler üretir.",
+    "background": "Devlet kamusal altyapıyı sağlar: Yolları, köprüleri, okulları ve hastaneleri yapar ve bakımını üstlenir. Göreve göre federal yönetim, eyaletler veya belediyeler sorumludur – örneğin otoyollar federal yönetimin, okul binaları ise genellikle şehirlerin ve belediyelerin işidir. Bunlar esas olarak vergilerle ödenir.",
+    "otherOptions": "Sosyal piyasa ekonomisinde gıdayı, giysiyi, arabaları ve otobüsleri özel şirketler üretir ve satar. Devlet herkese ücretsiz gazete dağıtmaz; basın devletten bağımsızdır.",
+    "memoryTip": "Devlet herkesin ihtiyaç duyduğunu yapar: yollar ve okullar.",
+    "legalBasis": []
+  },
+  "47": {
+    "summary": "Devlet tatil yolculuklarını ödemez.",
+    "whyCorrect": "Çocuk parası, müzelerin desteklenmesi ve sporculara yardım devletin görevleridir; özel tatiller değildir.",
+    "background": "Devlet aileleri, kültürü ve sporu destekler. Örneğin çocuklar için çocuk parası (Kindergeld) öder, müzeleri ve tiyatroları destekler ve sporculara yardım eder. Ama tatil yolculuklarını insanlar kendileri ödemek zorundadır – bu devletin görevi değildir.",
+    "otherOptions": "Çocuk parasını ebeveynlere Familienkasse (Aile Kasası) öder. Müzeler esas olarak eyaletler ve şehirler tarafından desteklenir. Spor, hem profesyonel hem de amatör düzeyde, örneğin kulüpler aracılığıyla desteklenir. Üçü de devletin görevleri arasındadır.",
+    "memoryTip": "Uymayanı arıyorsun: Tatilini kendin ödersin.",
+    "legalBasis": []
+  },
+  "48": {
+    "summary": "Vatandaş toplantısı bir anayasal organ değildir.",
+    "whyCorrect": "Anayasal organlar arasında Federal Meclis, Federal Konsey, Cumhurbaşkanı, federal hükümet ve Federal Anayasa Mahkemesi vardır.",
+    "background": "Anayasal organlar, federal düzeyde Anayasa’da düzenlenen en üst organlardır: Federal Meclis, Federal Konsey, federal hükümet, Cumhurbaşkanı, Federal Kurul ve Federal Anayasa Mahkemesi. Devletin görevlerini paylaşır ve birbirlerini denetlerler. Karlsruhe’deki Federal Anayasa Mahkemesi, diğer bütün organların Anayasa’ya uymasını gözetir.",
+    "otherOptions": "Federal Konsey, Cumhurbaşkanı ve federal hükümet anayasal organlardır. “Vatandaş toplantısı” (Bürgerversammlung) yalnızca bazı eyaletlerde, yerel düzeyde bir belediye sakinlerinin toplantısı olarak vardır. Federal düzeyde bir anayasal organ değildir.",
+    "memoryTip": "Anayasal organlar “Bundes-” (federal) ile başlar – vatandaş toplantısı uymaz.",
+    "legalBasis": []
+  },
+  "49": {
+    "summary": "Okul politikasını eyaletler belirler.",
+    "whyCorrect": "Almanya’da eğitim eyaletlerin işidir; bu yüzden her eyaletin kendi okul yasaları ve müfredatları vardır.",
+    "background": "Almanya’da okullardan eyaletler sorumludur. Buna eyaletlerin kültür egemenliği denir. Bu yüzden her eyaletin kendi okul yasaları, müfredatları, okul türleri ve tatil tarihleri vardır. Diplomaların karşılaştırılabilir kalması için eyaletler Kültür Bakanları Konferansı’nda (Kultusministerkonferenz) uzlaşır.",
+    "otherOptions": "Öğretmenler eyaletlerin kurallarına göre ders verir, ama eğitim politikası yapmaz. Federal Aile Bakanlığı okullardan değil; ailelerden, yaşlılardan, kadınlardan ve gençlerden sorumludur. Üniversiteler öğretmen yetiştirir, ama okul politikasını belirlemez.",
+    "memoryTip": "Okul eyaletlerin işidir – bu yüzden yaz tatilleri her yerde farklıdır.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 30",
+        "url": "https://www.gesetze-im-internet.de/gg/art_30.html"
+      }
+    ]
+  },
+  "50": {
+    "summary": "Almanya’nın ekonomik sistemine sosyal piyasa ekonomisi denir.",
+    "whyCorrect": "Serbest piyasayı devletin sağladığı sosyal dengeyle birleştirir; DDR’de planlı ekonomi vardı.",
+    "background": "Almanya’nın ekonomik sistemine sosyal piyasa ekonomisi denir. Şirketler özgürce üretir ve satar, fiyatlar arz ve talebe göre oluşur. Ama devlet, örneğin sosyal sigorta, işten çıkarmaya karşı koruma, asgari ücret ve adil rekabet kurallarıyla sosyal dengeyi sağlar. Federal Cumhuriyet’in ilk ekonomi bakanı Ludwig Erhard sosyal piyasa ekonomisinin babası kabul edilir.",
+    "otherOptions": "Planlı ekonomide veya merkezden yönlendirilen ekonomide neyin üretileceğine ve fiyatına devlet karar verir – DDR’de olduğu gibi. “Serbest merkezî ekonomi” diye bir şey yoktur; serbest ve merkezden yönlendirilen bir arada olmaz.",
+    "memoryTip": "Piyasa + sosyal denge = sosyal piyasa ekonomisi.",
+    "legalBasis": []
+  }
+}
