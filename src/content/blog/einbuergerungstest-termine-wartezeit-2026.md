@@ -60,7 +60,7 @@ Prüfen Sie regelmäßig alternative Prüfstellen, kurzfristig frei werdende Pl�
 Häufig ja. Ohne Testnachweis kann die Bearbeitung je nach Fall ins Stocken geraten.
 
 ## Einbürgerungstest in Ihrer Stadt
-Konkrete Hinweise zu Prüfstellen, Anmeldung und zuständiger Behörde finden Sie für [Berlin](/de/blog/einbuergerungstest-berlin/), [Hamburg](/de/blog/einbuergerungstest-hamburg/), [München](/de/blog/einbuergerungstest-muenchen/) und [Frankfurt am Main](/de/blog/einbuergerungstest-frankfurt/).
+Konkrete Hinweise zu Prüfstellen, Anmeldung und zuständiger Behörde finden Sie für [Berlin](/de/blog/einbuergerungstest-berlin/), [Hamburg](/de/blog/einbuergerungstest-hamburg/), [München](/de/blog/einbuergerungstest-muenchen/), [Köln](/de/blog/einbuergerungstest-koeln/) und [Frankfurt am Main](/de/blog/einbuergerungstest-frankfurt/).
 
 ## Nächster Schritt
 Weiterlesen: **[Einbürgerungstest anmelden 2026](/de/blog/anmeldung-pruefung-schritte/)**, **[Einbürgerung Antrag 2026: Checkliste](/de/blog/einbuergerung-antrag-checkliste-2026/)** und **[Einbürgerung Bearbeitungszeit 2026](/de/blog/bearbeitungszeit-einbuergerung/)**.
