@@ -3293,5 +3293,1509 @@
     "otherOptions": "Spain, Portugal and Turkey only followed a few years later: Spain in 1960, Turkey in 1961 and Portugal in 1964.",
     "memoryTip": "1955 Italy first – then Spain, Greece, Turkey …",
     "legalBasis": []
+  },
+  "301": {
+    "summary": "The coat of arms of Brandenburg is image 1.",
+    "whyCorrect": "It shows a red eagle on a silver (white) background – the Brandenburg eagle.",
+    "background": "Every federal state has its own coat of arms. The coat of arms of Brandenburg shows a red eagle on a silver (white) background – the Brandenburg eagle. You can see it, for example, on public buildings, on state documents and on the state flag. Brandenburg lies in north-eastern Germany and completely surrounds the capital, Berlin. To the east it borders Poland. Around 2.6 million people live in Brandenburg.",
+    "otherOptions": "The other images show other coats of arms that do not belong to Brandenburg. For the test it is worth looking closely at your own state’s coat of arms – this question appears for every state.",
+    "memoryTip": "Coat of arms of Brandenburg: a red eagle on a silver (white) background.",
+    "legalBasis": []
+  },
+  "302": {
+    "summary": "Prignitz is a rural district (Landkreis) in Brandenburg.",
+    "whyCorrect": "The Prignitz lies in north-western Brandenburg, between Berlin and Hamburg; its district town is Perleberg.",
+    "background": "Territorial states are divided into rural districts and independent cities. Districts take on tasks that are too large for individual municipalities, such as district roads, waste disposal or the foreigners’ registration office. They are headed by a district administrator (Landrat). The Prignitz lies in north-western Brandenburg, between Berlin and Hamburg; its district town is Perleberg.",
+    "otherOptions": "The other names belong to other federal states: Rhein-Sieg-Kreis is in North Rhine-Westphalia; Vogtlandkreis is in Saxony; Amberg-Sulzbach is in Bavaria.",
+    "memoryTip": "Prignitz → Brandenburg.",
+    "legalBasis": []
+  },
+  "303": {
+    "summary": "The state parliament of Brandenburg – the state parliament (Landtag) – is elected for 5 years.",
+    "whyCorrect": "The state parliament (Landtag) has a legislative term of 5 years.",
+    "background": "Every federal state has its own directly elected parliament (Article 28 of the Basic Law). In Brandenburg it is called the state parliament (Landtag). It passes state laws, for example on schools and the police, adopts the state budget and elects the head of the state government. In almost all states the term lasts five years – only Bremen votes every four years.",
+    "otherOptions": "3, 4, 6 years are wrong. For comparison: the Bundestag is elected every four years, the European Parliament every five years.",
+    "memoryTip": "Brandenburg: state parliament (Landtag) every 5 years.",
+    "legalBasis": [
+      {
+        "label": "Art. 28 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_28.html"
+      }
+    ]
+  },
+  "304": {
+    "summary": "In Brandenburg you can vote in local elections from the age of 16.",
+    "whyCorrect": "The voting age is set by the law of Brandenburg and is 16.",
+    "background": "In Brandenburg, young people aged 16 and over may already vote in local elections. Many states have lowered the voting age for local elections to 16 so that young people can have a say earlier in what happens in their town or municipality. For the federal election, however, the voting age is still 18. Citizens of other EU countries who live there may also vote in local elections.",
+    "otherOptions": "14, 18, 20 are wrong for Brandenburg. The voting age differs from state to state – remember the number for your state.",
+    "memoryTip": "Brandenburg: vote from 16.",
+    "legalBasis": []
+  },
+  "305": {
+    "summary": "The state flag of Brandenburg is red and white.",
+    "whyCorrect": "The state flag is red at the top and white at the bottom, with the state coat of arms with the red eagle in the centre.",
+    "background": "Besides the federal flag, every federal state has its own flag. The state flag is red at the top and white at the bottom, with the state coat of arms with the red eagle in the centre. The state flag flies, for example, at the state parliament, ministries and on public buildings on holidays. The coat of arms of Brandenburg shows a red eagle on a silver (white) background – the Brandenburg eagle.",
+    "otherOptions": "The other colour combinations do not belong to Brandenburg: blue, white and red is the flag of Schleswig-Holstein; green, white and red is the flag of North Rhine-Westphalia; black and yellow is not the flag of any state.",
+    "memoryTip": "Brandenburg: red and white.",
+    "legalBasis": []
+  },
+  "306": {
+    "summary": "In Brandenburg you can get information on political topics from the state centre for political education.",
+    "whyCorrect": "The state centre for political education in Brandenburg provides non-partisan information on politics, usually free of charge.",
+    "background": "Every federal state has an institution for political education, and there is also the Federal Agency for Civic Education (bpb). They offer free books and brochures, seminars, talks, excursions and online resources – for example on democracy, elections, history or integration. Important: these institutions are non-partisan, so they do not promote any party. One well-known example is the bpb’s Wahl-O-Mat before elections.",
+    "otherOptions": "Churches are religious communities, not neutral sources of political information. The public order office deals with public order, and the consumer advice centre advises on consumer issues such as contracts or complaints.",
+    "memoryTip": "Political education, non-partisan: state centre (and federal agency).",
+    "legalBasis": []
+  },
+  "307": {
+    "summary": "The state capital of Brandenburg is Potsdam.",
+    "whyCorrect": "The state parliament and state government of Brandenburg are based in Potsdam.",
+    "background": "Every territorial state has a capital where parliament, government and ministries are based. Potsdam lies right next to Berlin and is famous above all for Sanssouci Palace and its parks, a UNESCO World Heritage Site. “Brandenburg an der Havel” is a separate town – the state is named after it, but it is not the capital. Brandenburg lies in north-eastern Germany and completely surrounds the capital, Berlin. To the east it borders Poland.",
+    "otherOptions": "Cottbus, Brandenburg, Frankfurt/Oder are also towns in Brandenburg, but not the state capital.",
+    "memoryTip": "Brandenburg → Potsdam.",
+    "legalBasis": []
+  },
+  "308": {
+    "summary": "Brandenburg is number 4 on the map.",
+    "whyCorrect": "Brandenburg lies in north-eastern Germany and completely surrounds the capital, Berlin. To the east it borders Poland.",
+    "background": "Brandenburg lies in north-eastern Germany and completely surrounds the capital, Berlin. To the east it borders Poland. Germany has 16 federal states: 13 territorial states and the three city states of Berlin, Hamburg and Bremen. It helps to memorise the location of your own state and its neighbours on a map.",
+    "otherOptions": "The other numbers show other federal states. Pay attention to the location: north or south, east or west, and which countries or seas Brandenburg borders.",
+    "memoryTip": "Remember the location: Brandenburg lies in north-eastern Germany and completely surrounds the capital, Berlin.",
+    "legalBasis": []
+  },
+  "309": {
+    "summary": "The head of government in Brandenburg is called Minister-President (Ministerpräsident/in).",
+    "whyCorrect": "He or she is elected by the state parliament and heads the government of Brandenburg.",
+    "background": "In all 13 territorial states, the head of government is called Minister-President. After the state election, he or she is elected by the state parliament, sets the guidelines of state policy and appoints the state ministers. He or she also represents the state externally and sits in the Bundesrat. Brandenburg lies in north-eastern Germany and completely surrounds the capital, Berlin. To the east it borders Poland.",
+    "otherOptions": "“First Minister” is the title in Scotland or Wales, “Prime Minister” in the UK, for example. Mayors head towns and municipalities – only in the city states are they also head of the state government.",
+    "memoryTip": "Territorial state = Minister-President.",
+    "legalBasis": []
+  },
+  "310": {
+    "summary": "Brandenburg has no foreign minister.",
+    "whyCorrect": "Under the Basic Law, foreign policy is a federal task.",
+    "background": "The government of Brandenburg consists of the Minister-President and several state ministers, for example for the interior, justice, finance, education, economic affairs or social affairs. Relations with other countries, however, are the responsibility of the federation (Articles 32 and 73 of the Basic Law) – through the Federal Foreign Office in Berlin. The states may only cooperate with other countries to a limited extent, for example with partner regions.",
+    "otherOptions": "Brandenburg does have ministers of justice, finance and the interior: they are responsible for courts and prisons, the state budget, and the police and administration.",
+    "memoryTip": "Foreign policy = federation. No state has a foreign minister.",
+    "legalBasis": [
+      {
+        "label": "Art. 32 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_32.html"
+      },
+      {
+        "label": "Art. 73 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_73.html"
+      }
+    ]
+  },
+  "311": {
+    "summary": "The coat of arms of Berlin is image 4.",
+    "whyCorrect": "It shows a black bear with a red tongue and red claws on a white background.",
+    "background": "Every federal state has its own coat of arms. The coat of arms of Berlin shows a black bear with a red tongue and red claws on a white background. You can see it, for example, on public buildings, on state documents and on the state flag. Berlin is a city state in eastern Germany and lies in the middle of the state of Brandenburg. Around 3.9 million people live in Berlin.",
+    "otherOptions": "The other images show other coats of arms that do not belong to Berlin. For the test it is worth looking closely at your own state’s coat of arms – this question appears for every state.",
+    "memoryTip": "Coat of arms of Berlin: a black bear with a red tongue and red claws on a white background.",
+    "legalBasis": []
+  },
+  "312": {
+    "summary": "Pankow is a district (Bezirk) in Berlin.",
+    "whyCorrect": "Pankow is one of Berlin’s twelve districts and lies in the north of the city; with over 400,000 inhabitants it is the most populous district.",
+    "background": "Berlin is a city state divided into twelve districts, each with its own district assembly and district mayor. Pankow is one of Berlin’s twelve districts and lies in the north of the city; with over 400,000 inhabitants it is the most populous district.",
+    "otherOptions": "The other names belong to other federal states: Altona is in Hamburg; Prignitz is in Brandenburg; Mecklenburgische Seenplatte is in Mecklenburg-Western Pomerania.",
+    "memoryTip": "Pankow → Berlin.",
+    "legalBasis": []
+  },
+  "313": {
+    "summary": "The state parliament of Berlin – the House of Representatives (Abgeordnetenhaus) – is elected for 5 years.",
+    "whyCorrect": "The House of Representatives (Abgeordnetenhaus) has a legislative term of 5 years.",
+    "background": "Every federal state has its own directly elected parliament (Article 28 of the Basic Law). In Berlin it is called the House of Representatives (Abgeordnetenhaus). It passes state laws, for example on schools and the police, adopts the state budget and elects the head of the state government. In almost all states the term lasts five years – only Bremen votes every four years.",
+    "otherOptions": "3, 4, 6 years are wrong. For comparison: the Bundestag is elected every four years, the European Parliament every five years.",
+    "memoryTip": "Berlin: House of Representatives (Abgeordnetenhaus) every 5 years.",
+    "legalBasis": [
+      {
+        "label": "Art. 28 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_28.html"
+      }
+    ]
+  },
+  "314": {
+    "summary": "In Berlin you can vote in elections to the district assemblies from the age of 16.",
+    "whyCorrect": "The voting age is set by the law of Berlin and is 16.",
+    "background": "In Berlin, young people aged 16 and over may already vote in elections to the district assemblies. Many states have lowered the voting age for local elections to 16 so that young people can have a say earlier in what happens in their town or municipality. For the federal election, however, the voting age is still 18. Citizens of other EU countries who live there may also vote in local elections.",
+    "otherOptions": "14, 18, 20 are wrong for Berlin. The voting age differs from state to state – remember the number for your state.",
+    "memoryTip": "Berlin: vote from 16.",
+    "legalBasis": []
+  },
+  "315": {
+    "summary": "The state flag of Berlin is white and red.",
+    "whyCorrect": "The state flag is white with a red stripe at the top and bottom; the Berlin bear is in the centre.",
+    "background": "Besides the federal flag, every federal state has its own flag. The state flag is white with a red stripe at the top and bottom; the Berlin bear is in the centre. The state flag flies, for example, at the state parliament, ministries and on public buildings on holidays. The coat of arms of Berlin shows a black bear with a red tongue and red claws on a white background.",
+    "otherOptions": "The other colour combinations do not belong to Berlin: blue, white and red is the flag of Schleswig-Holstein; green, white and red is the flag of North Rhine-Westphalia; black and gold is the flag of Baden-Württemberg.",
+    "memoryTip": "Berlin: white and red.",
+    "legalBasis": []
+  },
+  "316": {
+    "summary": "In Berlin you can get information on political topics from the state centre for political education.",
+    "whyCorrect": "The state centre for political education in Berlin provides non-partisan information on politics, usually free of charge.",
+    "background": "Every federal state has an institution for political education, and there is also the Federal Agency for Civic Education (bpb). They offer free books and brochures, seminars, talks, excursions and online resources – for example on democracy, elections, history or integration. Important: these institutions are non-partisan, so they do not promote any party. One well-known example is the bpb’s Wahl-O-Mat before elections.",
+    "otherOptions": "Churches are religious communities, not neutral sources of political information. The public order office deals with public order, and the consumer advice centre advises on consumer issues such as contracts or complaints.",
+    "memoryTip": "Political education, non-partisan: state centre (and federal agency).",
+    "legalBasis": []
+  },
+  "317": {
+    "summary": "Berlin is a city state.",
+    "whyCorrect": "Berlin is a city and at the same time a federal state of its own.",
+    "background": "Germany has three city states: Berlin, Hamburg and Bremen. In a city state, the city and the state are the same – so there are no rural districts, and the state government is also the city government. It is called the Senate, and its ministers are called senators. Berlin is a city state in eastern Germany and lies in the middle of the state of Brandenburg.",
+    "otherOptions": "Saarland, Brandenburg and Hesse are territorial states with many towns and municipalities.",
+    "memoryTip": "Three city states: Berlin, Hamburg, Bremen.",
+    "legalBasis": []
+  },
+  "318": {
+    "summary": "Berlin is number 4 on the map.",
+    "whyCorrect": "Berlin is a city state in eastern Germany and lies in the middle of the state of Brandenburg.",
+    "background": "Berlin is a city state in eastern Germany and lies in the middle of the state of Brandenburg. Germany has 16 federal states: 13 territorial states and the three city states of Berlin, Hamburg and Bremen. It helps to memorise the location of your own state and its neighbours on a map.",
+    "otherOptions": "The other numbers show other federal states. Pay attention to the location: north or south, east or west, and which countries or seas Berlin borders.",
+    "memoryTip": "Remember the location: Berlin is a city state in eastern Germany and lies in the middle of the state of Brandenburg.",
+    "legalBasis": []
+  },
+  "319": {
+    "summary": "The head of government of Berlin is called Regierender Bürgermeister / Regierende Bürgermeisterin.",
+    "whyCorrect": "In city states the state government is called the Senate; it is headed by a mayor with a special title.",
+    "background": "Because the city and the state are one in a city state, the mayor is also head of the state government. The Governing Mayor heads the Berlin Senate and represents the state, for example in the Bundesrat. He or she is elected by the state parliament (House of Representatives (Abgeordnetenhaus)). The three city states use different titles: in Berlin the office is called Governing Mayor, in Hamburg First Mayor and in Bremen President of the Senate.",
+    "otherOptions": "The other titles do not fit Berlin: Minister-President is the title in the territorial states, and the other titles belong to the other city states or do not exist in this form.",
+    "memoryTip": "Berlin: Governing Mayor; Hamburg: First Mayor; Bremen: President of the Senate.",
+    "legalBasis": []
+  },
+  "320": {
+    "summary": "Berlin has no senator for foreign affairs.",
+    "whyCorrect": "Foreign policy is a federal task; the states have no foreign ministers of their own.",
+    "background": "In the city states, members of the state government are called senators. They head departments such as the interior, justice or finance – similar to ministers in the other states. Relations with other countries, however, are the responsibility of the federation under the Basic Law (Articles 32 and 73), i.e. the Federal Foreign Office in Berlin. The states may only cooperate with other countries to a limited extent, for example through partnerships.",
+    "otherOptions": "Berlin does have senators for finance, the interior and justice – they are responsible for the state budget, the police and the courts.",
+    "memoryTip": "Foreign policy = federation. No state has a foreign minister.",
+    "legalBasis": [
+      {
+        "label": "Art. 32 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_32.html"
+      },
+      {
+        "label": "Art. 73 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_73.html"
+      }
+    ]
+  },
+  "321": {
+    "summary": "The coat of arms of Baden-Württemberg is image 1.",
+    "whyCorrect": "It shows three black lions on a gold background – the lions of the Staufer dynasty.",
+    "background": "Every federal state has its own coat of arms. The coat of arms of Baden-Württemberg shows three black lions on a gold background – the lions of the Staufer dynasty. You can see it, for example, on public buildings, on state documents and on the state flag. Baden-Württemberg lies in south-western Germany. It borders France and Switzerland; Lake Constance is in the south. Around 11.2 million people live in Baden-Württemberg.",
+    "otherOptions": "The other images show other coats of arms that do not belong to Baden-Württemberg. For the test it is worth looking closely at your own state’s coat of arms – this question appears for every state.",
+    "memoryTip": "Coat of arms of Baden-Württemberg: three black lions on a gold background.",
+    "legalBasis": []
+  },
+  "322": {
+    "summary": "Neckar-Odenwald-Kreis is a rural district (Landkreis) in Baden-Württemberg.",
+    "whyCorrect": "The Neckar-Odenwald district lies in northern Baden-Württemberg; its district town is Mosbach.",
+    "background": "Territorial states are divided into rural districts and independent cities. Districts take on tasks that are too large for individual municipalities, such as district roads, waste disposal or the foreigners’ registration office. They are headed by a district administrator (Landrat). The Neckar-Odenwald district lies in northern Baden-Württemberg; its district town is Mosbach.",
+    "otherOptions": "The other names belong to other federal states: Mecklenburgische Seenplatte is in Mecklenburg-Western Pomerania; Nordfriesland is in Schleswig-Holstein; Altötting is in Bavaria.",
+    "memoryTip": "Neckar-Odenwald-Kreis → Baden-Württemberg.",
+    "legalBasis": []
+  },
+  "323": {
+    "summary": "The state parliament of Baden-Württemberg – the state parliament (Landtag) – is elected for 5 years.",
+    "whyCorrect": "The state parliament (Landtag) has a legislative term of 5 years.",
+    "background": "Every federal state has its own directly elected parliament (Article 28 of the Basic Law). In Baden-Württemberg it is called the state parliament (Landtag). It passes state laws, for example on schools and the police, adopts the state budget and elects the head of the state government. In almost all states the term lasts five years – only Bremen votes every four years.",
+    "otherOptions": "3, 4, 6 years are wrong. For comparison: the Bundestag is elected every four years, the European Parliament every five years.",
+    "memoryTip": "Baden-Württemberg: state parliament (Landtag) every 5 years.",
+    "legalBasis": [
+      {
+        "label": "Art. 28 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_28.html"
+      }
+    ]
+  },
+  "324": {
+    "summary": "In Baden-Württemberg you can vote in local elections from the age of 16.",
+    "whyCorrect": "The voting age is set by the law of Baden-Württemberg and is 16.",
+    "background": "In Baden-Württemberg, young people aged 16 and over may already vote in local elections. Many states have lowered the voting age for local elections to 16 so that young people can have a say earlier in what happens in their town or municipality. For the federal election, however, the voting age is still 18. Citizens of other EU countries who live there may also vote in local elections.",
+    "otherOptions": "14, 18, 20 are wrong for Baden-Württemberg. The voting age differs from state to state – remember the number for your state.",
+    "memoryTip": "Baden-Württemberg: vote from 16.",
+    "legalBasis": []
+  },
+  "325": {
+    "summary": "The state flag of Baden-Württemberg is black and gold.",
+    "whyCorrect": "The state flag is black at the top and gold (yellow) at the bottom.",
+    "background": "Besides the federal flag, every federal state has its own flag. The state flag is black at the top and gold (yellow) at the bottom. The state flag flies, for example, at the state parliament, ministries and on public buildings on holidays. The coat of arms of Baden-Württemberg shows three black lions on a gold background – the lions of the Staufer dynasty.",
+    "otherOptions": "The other colour combinations do not belong to Baden-Württemberg: blue, white and red is the flag of Schleswig-Holstein; white and blue is the flag of Bavaria; green, white and red is the flag of North Rhine-Westphalia.",
+    "memoryTip": "Baden-Württemberg: black and gold.",
+    "legalBasis": []
+  },
+  "326": {
+    "summary": "In Baden-Württemberg you can get information on political topics from the state centre for political education.",
+    "whyCorrect": "The state centre for political education in Baden-Württemberg provides non-partisan information on politics, usually free of charge.",
+    "background": "Every federal state has an institution for political education, and there is also the Federal Agency for Civic Education (bpb). They offer free books and brochures, seminars, talks, excursions and online resources – for example on democracy, elections, history or integration. Important: these institutions are non-partisan, so they do not promote any party. One well-known example is the bpb’s Wahl-O-Mat before elections.",
+    "otherOptions": "Churches are religious communities, not neutral sources of political information. The public order office deals with public order, and the consumer advice centre advises on consumer issues such as contracts or complaints.",
+    "memoryTip": "Political education, non-partisan: state centre (and federal agency).",
+    "legalBasis": []
+  },
+  "327": {
+    "summary": "The state capital of Baden-Württemberg is Stuttgart.",
+    "whyCorrect": "The state parliament and state government of Baden-Württemberg are based in Stuttgart.",
+    "background": "Every territorial state has a capital where parliament, government and ministries are based. Stuttgart is the state’s largest city and a centre of the car industry. Karlsruhe is home to the Federal Constitutional Court, and Heidelberg has Germany’s oldest university. Baden-Württemberg lies in south-western Germany. It borders France and Switzerland; Lake Constance is in the south.",
+    "otherOptions": "Heidelberg, Karlsruhe, Mannheim are also towns in Baden-Württemberg, but not the state capital.",
+    "memoryTip": "Baden-Württemberg → Stuttgart.",
+    "legalBasis": []
+  },
+  "328": {
+    "summary": "Baden-Württemberg is number 2 on the map.",
+    "whyCorrect": "Baden-Württemberg lies in south-western Germany. It borders France and Switzerland; Lake Constance is in the south.",
+    "background": "Baden-Württemberg lies in south-western Germany. It borders France and Switzerland; Lake Constance is in the south. Germany has 16 federal states: 13 territorial states and the three city states of Berlin, Hamburg and Bremen. It helps to memorise the location of your own state and its neighbours on a map.",
+    "otherOptions": "The other numbers show other federal states. Pay attention to the location: north or south, east or west, and which countries or seas Baden-Württemberg borders.",
+    "memoryTip": "Remember the location: Baden-Württemberg lies in south-western Germany.",
+    "legalBasis": []
+  },
+  "329": {
+    "summary": "The head of government in Baden-Württemberg is called Minister-President (Ministerpräsident/in).",
+    "whyCorrect": "He or she is elected by the state parliament and heads the government of Baden-Württemberg.",
+    "background": "In all 13 territorial states, the head of government is called Minister-President. After the state election, he or she is elected by the state parliament, sets the guidelines of state policy and appoints the state ministers. He or she also represents the state externally and sits in the Bundesrat. Baden-Württemberg lies in south-western Germany. It borders France and Switzerland; Lake Constance is in the south.",
+    "otherOptions": "“First Minister” is the title in Scotland or Wales, “Prime Minister” in the UK, for example. Mayors head towns and municipalities – only in the city states are they also head of the state government.",
+    "memoryTip": "Territorial state = Minister-President.",
+    "legalBasis": []
+  },
+  "330": {
+    "summary": "Baden-Württemberg has no foreign minister.",
+    "whyCorrect": "Under the Basic Law, foreign policy is a federal task.",
+    "background": "The government of Baden-Württemberg consists of the Minister-President and several state ministers, for example for the interior, justice, finance, education, economic affairs or social affairs. Relations with other countries, however, are the responsibility of the federation (Articles 32 and 73 of the Basic Law) – through the Federal Foreign Office in Berlin. The states may only cooperate with other countries to a limited extent, for example with partner regions.",
+    "otherOptions": "Baden-Württemberg does have ministers of justice, finance and the interior: they are responsible for courts and prisons, the state budget, and the police and administration.",
+    "memoryTip": "Foreign policy = federation. No state has a foreign minister.",
+    "legalBasis": [
+      {
+        "label": "Art. 32 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_32.html"
+      },
+      {
+        "label": "Art. 73 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_73.html"
+      }
+    ]
+  },
+  "331": {
+    "summary": "The coat of arms of Bavaria is image 2.",
+    "whyCorrect": "It shows the white and blue lozenges, combined in the large state coat of arms with lions and a crown.",
+    "background": "Every federal state has its own coat of arms. The coat of arms of Bavaria shows the white and blue lozenges, combined in the large state coat of arms with lions and a crown. You can see it, for example, on public buildings, on state documents and on the state flag. Bavaria lies in south-eastern Germany and is the largest federal state by area. It borders Austria and the Czech Republic; the Alps are in the south. Around 13.4 million people live in Bavaria.",
+    "otherOptions": "The other images show other coats of arms that do not belong to Bavaria. For the test it is worth looking closely at your own state’s coat of arms – this question appears for every state.",
+    "memoryTip": "Coat of arms of Bavaria: the white and blue lozenges, combined in the large state coat of arms with lions and a crown.",
+    "legalBasis": []
+  },
+  "332": {
+    "summary": "Altötting is a rural district (Landkreis) in Bavaria.",
+    "whyCorrect": "Altötting lies in Upper Bavaria near the Austrian border and is a well-known place of pilgrimage.",
+    "background": "Territorial states are divided into rural districts and independent cities. Districts take on tasks that are too large for individual municipalities, such as district roads, waste disposal or the foreigners’ registration office. They are headed by a district administrator (Landrat). Altötting lies in Upper Bavaria near the Austrian border and is a well-known place of pilgrimage.",
+    "otherOptions": "The other names belong to other federal states: Prignitz is in Brandenburg; Rhein-Sieg-Kreis is in North Rhine-Westphalia; Nordfriesland is in Schleswig-Holstein.",
+    "memoryTip": "Altötting → Bavaria.",
+    "legalBasis": []
+  },
+  "333": {
+    "summary": "The state parliament of Bavaria – the state parliament (Landtag) – is elected for 5 years.",
+    "whyCorrect": "The state parliament (Landtag) has a legislative term of 5 years.",
+    "background": "Every federal state has its own directly elected parliament (Article 28 of the Basic Law). In Bavaria it is called the state parliament (Landtag). It passes state laws, for example on schools and the police, adopts the state budget and elects the head of the state government. In almost all states the term lasts five years – only Bremen votes every four years.",
+    "otherOptions": "3, 4, 6 years are wrong. For comparison: the Bundestag is elected every four years, the European Parliament every five years.",
+    "memoryTip": "Bavaria: state parliament (Landtag) every 5 years.",
+    "legalBasis": [
+      {
+        "label": "Art. 28 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_28.html"
+      }
+    ]
+  },
+  "334": {
+    "summary": "In Bavaria you can vote in local elections from the age of 18.",
+    "whyCorrect": "The voting age is set by the law of Bavaria and is 18.",
+    "background": "In Bavaria, you can vote in local elections from the age of 18 – just as in the federal election. In many other federal states, however, the voting age for local elections is already 16. Local elections choose, for example, the municipal council, the district council and often the mayor. Citizens of other EU countries who live there may also vote.",
+    "otherOptions": "14, 16, 20 are wrong for Bavaria. The voting age differs from state to state – remember the number for your state.",
+    "memoryTip": "Bavaria: vote from 18.",
+    "legalBasis": []
+  },
+  "335": {
+    "summary": "The state flag of Bavaria is white and blue.",
+    "whyCorrect": "The state flag is white and blue – either striped or with the well-known lozenges.",
+    "background": "Besides the federal flag, every federal state has its own flag. The state flag is white and blue – either striped or with the well-known lozenges. The state flag flies, for example, at the state parliament, ministries and on public buildings on holidays. The coat of arms of Bavaria shows the white and blue lozenges, combined in the large state coat of arms with lions and a crown.",
+    "otherOptions": "The other colour combinations do not belong to Bavaria: blue, white and red is the flag of Schleswig-Holstein; green, white and red is the flag of North Rhine-Westphalia; black and yellow is not the flag of any state.",
+    "memoryTip": "Bavaria: white and blue.",
+    "legalBasis": []
+  },
+  "336": {
+    "summary": "In Bavaria you can get information on political topics from the state centre for political education.",
+    "whyCorrect": "The state centre for political education in Bavaria provides non-partisan information on politics, usually free of charge.",
+    "background": "Every federal state has an institution for political education, and there is also the Federal Agency for Civic Education (bpb). They offer free books and brochures, seminars, talks, excursions and online resources – for example on democracy, elections, history or integration. Important: these institutions are non-partisan, so they do not promote any party. One well-known example is the bpb’s Wahl-O-Mat before elections.",
+    "otherOptions": "Churches are religious communities, not neutral sources of political information. The public order office deals with public order, and the consumer advice centre advises on consumer issues such as contracts or complaints.",
+    "memoryTip": "Political education, non-partisan: state centre (and federal agency).",
+    "legalBasis": []
+  },
+  "337": {
+    "summary": "The state capital of Bavaria is München.",
+    "whyCorrect": "The state parliament and state government of Bavaria are based in München.",
+    "background": "Every territorial state has a capital where parliament, government and ministries are based. Munich is Bavaria’s largest city and known for the Oktoberfest. Nuremberg is the second-largest city; Regensburg and Ingolstadt are other important cities. Bavaria lies in south-eastern Germany and is the largest federal state by area. It borders Austria and the Czech Republic; the Alps are in the south.",
+    "otherOptions": "Ingolstadt, Regensburg, Nürnberg are also towns in Bavaria, but not the state capital.",
+    "memoryTip": "Bavaria → München.",
+    "legalBasis": []
+  },
+  "338": {
+    "summary": "Bavaria is number 4 on the map.",
+    "whyCorrect": "Bavaria lies in south-eastern Germany and is the largest federal state by area. It borders Austria and the Czech Republic; the Alps are in the south.",
+    "background": "Bavaria lies in south-eastern Germany and is the largest federal state by area. It borders Austria and the Czech Republic; the Alps are in the south. Germany has 16 federal states: 13 territorial states and the three city states of Berlin, Hamburg and Bremen. It helps to memorise the location of your own state and its neighbours on a map.",
+    "otherOptions": "The other numbers show other federal states. Pay attention to the location: north or south, east or west, and which countries or seas Bavaria borders.",
+    "memoryTip": "Remember the location: Bavaria lies in south-eastern Germany and is the largest federal state by area.",
+    "legalBasis": []
+  },
+  "339": {
+    "summary": "The head of government in Bavaria is called Minister-President (Ministerpräsident/in).",
+    "whyCorrect": "He or she is elected by the state parliament and heads the government of Bavaria.",
+    "background": "In all 13 territorial states, the head of government is called Minister-President. After the state election, he or she is elected by the state parliament, sets the guidelines of state policy and appoints the state ministers. He or she also represents the state externally and sits in the Bundesrat. Bavaria lies in south-eastern Germany and is the largest federal state by area. It borders Austria and the Czech Republic; the Alps are in the south.",
+    "otherOptions": "“First Minister” is the title in Scotland or Wales, “Prime Minister” in the UK, for example. Mayors head towns and municipalities – only in the city states are they also head of the state government.",
+    "memoryTip": "Territorial state = Minister-President.",
+    "legalBasis": []
+  },
+  "340": {
+    "summary": "Bavaria has no foreign minister.",
+    "whyCorrect": "Under the Basic Law, foreign policy is a federal task.",
+    "background": "The government of Bavaria consists of the Minister-President and several state ministers, for example for the interior, justice, finance, education, economic affairs or social affairs. Relations with other countries, however, are the responsibility of the federation (Articles 32 and 73 of the Basic Law) – through the Federal Foreign Office in Berlin. The states may only cooperate with other countries to a limited extent, for example with partner regions.",
+    "otherOptions": "Bavaria does have ministers of justice, finance and the interior: they are responsible for courts and prisons, the state budget, and the police and administration.",
+    "memoryTip": "Foreign policy = federation. No state has a foreign minister.",
+    "legalBasis": [
+      {
+        "label": "Art. 32 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_32.html"
+      },
+      {
+        "label": "Art. 73 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_73.html"
+      }
+    ]
+  },
+  "341": {
+    "summary": "The coat of arms of Bremen is image 3.",
+    "whyCorrect": "It shows a silver key on a red background – the Bremen key.",
+    "background": "Every federal state has its own coat of arms. The coat of arms of Bremen shows a silver key on a red background – the Bremen key. You can see it, for example, on public buildings, on state documents and on the state flag. Bremen is the smallest federal state. It consists of two cities, Bremen and Bremerhaven, both surrounded by Lower Saxony. Around 0.7 million people live in Bremen.",
+    "otherOptions": "The other images show other coats of arms that do not belong to Bremen. For the test it is worth looking closely at your own state’s coat of arms – this question appears for every state.",
+    "memoryTip": "Coat of arms of Bremen: a silver key on a red background.",
+    "legalBasis": []
+  },
+  "342": {
+    "summary": "Hemelingen is a district of the city in Bremen.",
+    "whyCorrect": "Hemelingen is a district in the east of the city of Bremen.",
+    "background": "The state of Bremen consists of the two cities of Bremen and Bremerhaven; the city of Bremen is divided into districts and neighbourhoods. Hemelingen is a district in the east of the city of Bremen.",
+    "otherOptions": "The other names belong to other federal states: Altona is in Hamburg; Pankow is in Berlin; Babelsberg is a district of Potsdam in Brandenburg.",
+    "memoryTip": "Hemelingen → Bremen.",
+    "legalBasis": []
+  },
+  "343": {
+    "summary": "The state parliament of Bremen – the Bürgerschaft (state parliament) – is elected for 4 years.",
+    "whyCorrect": "The Bürgerschaft (state parliament) has a legislative term of 4 years.",
+    "background": "Every federal state has its own directly elected parliament (Article 28 of the Basic Law). In Bremen it is called the Bürgerschaft (state parliament). It passes state laws, for example on schools and the police, adopts the state budget and elects the head of the state government. In almost all states the term lasts five years; Bremen, with four years, is the exception.",
+    "otherOptions": "3, 5, 6 years are wrong. For comparison: the Bundestag is elected every four years, the European Parliament every five years.",
+    "memoryTip": "Bremen: Bürgerschaft (state parliament) every 4 years.",
+    "legalBasis": [
+      {
+        "label": "Art. 28 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_28.html"
+      }
+    ]
+  },
+  "344": {
+    "summary": "In Bremen you can vote in elections to the Bürgerschaft (the state parliament) from the age of 16.",
+    "whyCorrect": "The voting age is set by the law of Bremen and is 16.",
+    "background": "In Bremen, young people aged 16 and over may already vote in elections to the Bürgerschaft (the state parliament). Many states have lowered the voting age for local elections to 16 so that young people can have a say earlier in what happens in their town or municipality. For the federal election, however, the voting age is still 18. Citizens of other EU countries who live there may also vote in local elections.",
+    "otherOptions": "14, 18, 20 are wrong for Bremen. The voting age differs from state to state – remember the number for your state.",
+    "memoryTip": "Bremen: vote from 16.",
+    "legalBasis": []
+  },
+  "345": {
+    "summary": "The state flag of Bremen is red and white.",
+    "whyCorrect": "The state flag has red and white stripes, often chequered at the side; it is also called the “bacon flag”.",
+    "background": "Besides the federal flag, every federal state has its own flag. The state flag has red and white stripes, often chequered at the side; it is also called the “bacon flag”. The state flag flies, for example, at the state parliament, ministries and on public buildings on holidays. The coat of arms of Bremen shows a silver key on a red background – the Bremen key.",
+    "otherOptions": "The other colour combinations do not belong to Bremen: blue, white and red is the flag of Schleswig-Holstein; green, white and red is the flag of North Rhine-Westphalia; black and gold is the flag of Baden-Württemberg.",
+    "memoryTip": "Bremen: red and white.",
+    "legalBasis": []
+  },
+  "346": {
+    "summary": "In Bremen you can get information on political topics from the state centre for political education.",
+    "whyCorrect": "The state centre for political education in Bremen provides non-partisan information on politics, usually free of charge.",
+    "background": "Every federal state has an institution for political education, and there is also the Federal Agency for Civic Education (bpb). They offer free books and brochures, seminars, talks, excursions and online resources – for example on democracy, elections, history or integration. Important: these institutions are non-partisan, so they do not promote any party. One well-known example is the bpb’s Wahl-O-Mat before elections.",
+    "otherOptions": "Churches are religious communities, not neutral sources of political information. The public order office deals with public order, and the consumer advice centre advises on consumer issues such as contracts or complaints.",
+    "memoryTip": "Political education, non-partisan: state centre (and federal agency).",
+    "legalBasis": []
+  },
+  "347": {
+    "summary": "Bremen is a city state.",
+    "whyCorrect": "Bremen is a city and at the same time a federal state of its own.",
+    "background": "Germany has three city states: Berlin, Hamburg and Bremen. In a city state, the city and the state are the same – so there are no rural districts, and the state government is also the city government. It is called the Senate, and its ministers are called senators. Bremen is the smallest federal state. It consists of two cities, Bremen and Bremerhaven, both surrounded by Lower Saxony.",
+    "otherOptions": "Munich, Frankfurt and Erfurt are cities, but not federal states of their own: Munich is the capital of Bavaria, Erfurt the capital of Thuringia, and Frankfurt is in Hesse.",
+    "memoryTip": "Three city states: Berlin, Hamburg, Bremen.",
+    "legalBasis": []
+  },
+  "348": {
+    "summary": "Bremen is number 1 on the map.",
+    "whyCorrect": "Bremen is the smallest federal state. It consists of two cities, Bremen and Bremerhaven, both surrounded by Lower Saxony.",
+    "background": "Bremen is the smallest federal state. It consists of two cities, Bremen and Bremerhaven, both surrounded by Lower Saxony. Germany has 16 federal states: 13 territorial states and the three city states of Berlin, Hamburg and Bremen. It helps to memorise the location of your own state and its neighbours on a map.",
+    "otherOptions": "The other numbers show other federal states. Pay attention to the location: north or south, east or west, and which countries or seas Bremen borders.",
+    "memoryTip": "Remember the location: Bremen is the smallest federal state.",
+    "legalBasis": []
+  },
+  "349": {
+    "summary": "The head of government of Bremen is called Präsident / Präsidentin des Senats.",
+    "whyCorrect": "In city states the state government is called the Senate; it is headed by a mayor with a special title.",
+    "background": "Because the city and the state are one in a city state, the mayor is also head of the state government. The President of the Senate is also Mayor of the city of Bremen; he or she heads the state government and represents the state, for example in the Bundesrat. He or she is elected by the state parliament (Bürgerschaft (state parliament)). The three city states use different titles: in Berlin the office is called Governing Mayor, in Hamburg First Mayor and in Bremen President of the Senate.",
+    "otherOptions": "The other titles do not fit Bremen: Minister-President is the title in the territorial states, and the other titles belong to the other city states or do not exist in this form.",
+    "memoryTip": "Berlin: Governing Mayor; Hamburg: First Mayor; Bremen: President of the Senate.",
+    "legalBasis": []
+  },
+  "350": {
+    "summary": "Bremen has no senator for foreign affairs.",
+    "whyCorrect": "Foreign policy is a federal task; the states have no foreign ministers of their own.",
+    "background": "In the city states, members of the state government are called senators. They head departments such as the interior, justice or finance – similar to ministers in the other states. Relations with other countries, however, are the responsibility of the federation under the Basic Law (Articles 32 and 73), i.e. the Federal Foreign Office in Berlin. The states may only cooperate with other countries to a limited extent, for example through partnerships.",
+    "otherOptions": "Bremen does have senators for finance, the interior and justice – they are responsible for the state budget, the police and the courts.",
+    "memoryTip": "Foreign policy = federation. No state has a foreign minister.",
+    "legalBasis": [
+      {
+        "label": "Art. 32 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_32.html"
+      },
+      {
+        "label": "Art. 73 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_73.html"
+      }
+    ]
+  },
+  "351": {
+    "summary": "The coat of arms of Hesse is image 1.",
+    "whyCorrect": "It shows a red and white striped lion on a blue background – the “colourful lion”.",
+    "background": "Every federal state has its own coat of arms. The coat of arms of Hesse shows a red and white striped lion on a blue background – the “colourful lion”. You can see it, for example, on public buildings, on state documents and on the state flag. Hesse lies in the middle of Germany. Frankfurt am Main, one of Europe’s most important financial centres, is located here. Around 6.4 million people live in Hesse.",
+    "otherOptions": "The other images show other coats of arms that do not belong to Hesse. For the test it is worth looking closely at your own state’s coat of arms – this question appears for every state.",
+    "memoryTip": "Coat of arms of Hesse: a red and white striped lion on a blue background.",
+    "legalBasis": []
+  },
+  "352": {
+    "summary": "Main-Taunus-Kreis is a rural district (Landkreis) in Hesse.",
+    "whyCorrect": "The Main-Taunus district lies west of Frankfurt am Main; its district town is Hofheim am Taunus.",
+    "background": "Territorial states are divided into rural districts and independent cities. Districts take on tasks that are too large for individual municipalities, such as district roads, waste disposal or the foreigners’ registration office. They are headed by a district administrator (Landrat). The Main-Taunus district lies west of Frankfurt am Main; its district town is Hofheim am Taunus.",
+    "otherOptions": "The other names belong to other federal states: Ammerland is in Lower Saxony; Altötting is in Bavaria; Prignitz is in Brandenburg.",
+    "memoryTip": "Main-Taunus-Kreis → Hesse.",
+    "legalBasis": []
+  },
+  "353": {
+    "summary": "The state parliament of Hesse – the state parliament (Landtag) – is elected for 5 years.",
+    "whyCorrect": "The state parliament (Landtag) has a legislative term of 5 years.",
+    "background": "Every federal state has its own directly elected parliament (Article 28 of the Basic Law). In Hesse it is called the state parliament (Landtag). It passes state laws, for example on schools and the police, adopts the state budget and elects the head of the state government. In almost all states the term lasts five years – only Bremen votes every four years.",
+    "otherOptions": "3, 4, 6 years are wrong. For comparison: the Bundestag is elected every four years, the European Parliament every five years.",
+    "memoryTip": "Hesse: state parliament (Landtag) every 5 years.",
+    "legalBasis": [
+      {
+        "label": "Art. 28 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_28.html"
+      }
+    ]
+  },
+  "354": {
+    "summary": "In Hesse you can vote in local elections from the age of 18.",
+    "whyCorrect": "The voting age is set by the law of Hesse and is 18.",
+    "background": "In Hesse, you can vote in local elections from the age of 18 – just as in the federal election. In many other federal states, however, the voting age for local elections is already 16. Local elections choose, for example, the municipal council, the district council and often the mayor. Citizens of other EU countries who live there may also vote.",
+    "otherOptions": "14, 16, 20 are wrong for Hesse. The voting age differs from state to state – remember the number for your state.",
+    "memoryTip": "Hesse: vote from 18.",
+    "legalBasis": []
+  },
+  "355": {
+    "summary": "The state flag of Hesse is red and white.",
+    "whyCorrect": "The state flag is red at the top and white at the bottom.",
+    "background": "Besides the federal flag, every federal state has its own flag. The state flag is red at the top and white at the bottom. The state flag flies, for example, at the state parliament, ministries and on public buildings on holidays. The coat of arms of Hesse shows a red and white striped lion on a blue background – the “colourful lion”.",
+    "otherOptions": "The other colour combinations do not belong to Hesse: blue, white and red is the flag of Schleswig-Holstein; black and gold is the flag of Baden-Württemberg; green, white and red is the flag of North Rhine-Westphalia.",
+    "memoryTip": "Hesse: red and white.",
+    "legalBasis": []
+  },
+  "356": {
+    "summary": "In Hesse you can get information on political topics from the state centre for political education.",
+    "whyCorrect": "The state centre for political education in Hesse provides non-partisan information on politics, usually free of charge.",
+    "background": "Every federal state has an institution for political education, and there is also the Federal Agency for Civic Education (bpb). They offer free books and brochures, seminars, talks, excursions and online resources – for example on democracy, elections, history or integration. Important: these institutions are non-partisan, so they do not promote any party. One well-known example is the bpb’s Wahl-O-Mat before elections.",
+    "otherOptions": "Churches are religious communities, not neutral sources of political information. The public order office deals with public order, and the consumer advice centre advises on consumer issues such as contracts or complaints.",
+    "memoryTip": "Political education, non-partisan: state centre (and federal agency).",
+    "legalBasis": []
+  },
+  "357": {
+    "summary": "The state capital of Hesse is Wiesbaden.",
+    "whyCorrect": "The state parliament and state government of Hesse are based in Wiesbaden.",
+    "background": "Every territorial state has a capital where parliament, government and ministries are based. Wiesbaden is the state capital, even though Frankfurt am Main is the largest city in Hesse – a common trap. Darmstadt and Kassel are other large cities. Hesse lies in the middle of Germany. Frankfurt am Main, one of Europe’s most important financial centres, is located here.",
+    "otherOptions": "Kassel, Darmstadt, Frankfurt are also towns in Hesse, but not the state capital.",
+    "memoryTip": "Hesse → Wiesbaden.",
+    "legalBasis": []
+  },
+  "358": {
+    "summary": "Hesse is number 3 on the map.",
+    "whyCorrect": "Hesse lies in the middle of Germany. Frankfurt am Main, one of Europe’s most important financial centres, is located here.",
+    "background": "Hesse lies in the middle of Germany. Frankfurt am Main, one of Europe’s most important financial centres, is located here. Germany has 16 federal states: 13 territorial states and the three city states of Berlin, Hamburg and Bremen. It helps to memorise the location of your own state and its neighbours on a map.",
+    "otherOptions": "The other numbers show other federal states. Pay attention to the location: north or south, east or west, and which countries or seas Hesse borders.",
+    "memoryTip": "Remember the location: Hesse lies in the middle of Germany.",
+    "legalBasis": []
+  },
+  "359": {
+    "summary": "The head of government in Hesse is called Minister-President (Ministerpräsident/in).",
+    "whyCorrect": "He or she is elected by the state parliament and heads the government of Hesse.",
+    "background": "In all 13 territorial states, the head of government is called Minister-President. After the state election, he or she is elected by the state parliament, sets the guidelines of state policy and appoints the state ministers. He or she also represents the state externally and sits in the Bundesrat. Hesse lies in the middle of Germany. Frankfurt am Main, one of Europe’s most important financial centres, is located here.",
+    "otherOptions": "“First Minister” is the title in Scotland or Wales, “Prime Minister” in the UK, for example. Mayors head towns and municipalities – only in the city states are they also head of the state government.",
+    "memoryTip": "Territorial state = Minister-President.",
+    "legalBasis": []
+  },
+  "360": {
+    "summary": "Hesse has no foreign minister.",
+    "whyCorrect": "Under the Basic Law, foreign policy is a federal task.",
+    "background": "The government of Hesse consists of the Minister-President and several state ministers, for example for the interior, justice, finance, education, economic affairs or social affairs. Relations with other countries, however, are the responsibility of the federation (Articles 32 and 73 of the Basic Law) – through the Federal Foreign Office in Berlin. The states may only cooperate with other countries to a limited extent, for example with partner regions.",
+    "otherOptions": "Hesse does have ministers of justice, finance and the interior: they are responsible for courts and prisons, the state budget, and the police and administration.",
+    "memoryTip": "Foreign policy = federation. No state has a foreign minister.",
+    "legalBasis": [
+      {
+        "label": "Art. 32 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_32.html"
+      },
+      {
+        "label": "Art. 73 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_73.html"
+      }
+    ]
+  },
+  "361": {
+    "summary": "The coat of arms of Hamburg is image 2.",
+    "whyCorrect": "It shows a white castle with three towers on a red background.",
+    "background": "Every federal state has its own coat of arms. The coat of arms of Hamburg shows a white castle with three towers on a red background. You can see it, for example, on public buildings, on state documents and on the state flag. Hamburg is a city state in northern Germany on the Elbe, between Schleswig-Holstein and Lower Saxony. Its port is one of the largest in Europe. Around 1.9 million people live in Hamburg.",
+    "otherOptions": "The other images show other coats of arms that do not belong to Hamburg. For the test it is worth looking closely at your own state’s coat of arms – this question appears for every state.",
+    "memoryTip": "Coat of arms of Hamburg: a white castle with three towers on a red background.",
+    "legalBasis": []
+  },
+  "362": {
+    "summary": "Altona is a district (Bezirk) in Hamburg.",
+    "whyCorrect": "Altona is one of Hamburg’s seven districts and lies in the west of the city on the Elbe.",
+    "background": "Hamburg is a city state divided into seven districts, each with its own district assembly. Altona is one of Hamburg’s seven districts and lies in the west of the city on the Elbe.",
+    "otherOptions": "The other names belong to other federal states: Hemelingen is in Bremen; Pankow is in Berlin; Mecklenburgische Seenplatte is in Mecklenburg-Western Pomerania.",
+    "memoryTip": "Altona → Hamburg.",
+    "legalBasis": []
+  },
+  "363": {
+    "summary": "The state parliament of Hamburg – the Bürgerschaft (state parliament) – is elected for 5 years.",
+    "whyCorrect": "The Bürgerschaft (state parliament) has a legislative term of 5 years.",
+    "background": "Every federal state has its own directly elected parliament (Article 28 of the Basic Law). In Hamburg it is called the Bürgerschaft (state parliament). It passes state laws, for example on schools and the police, adopts the state budget and elects the head of the state government. In almost all states the term lasts five years – only Bremen votes every four years.",
+    "otherOptions": "3, 4, 6 years are wrong. For comparison: the Bundestag is elected every four years, the European Parliament every five years.",
+    "memoryTip": "Hamburg: Bürgerschaft (state parliament) every 5 years.",
+    "legalBasis": [
+      {
+        "label": "Art. 28 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_28.html"
+      }
+    ]
+  },
+  "364": {
+    "summary": "In Hamburg you can vote in elections to the district assemblies from the age of 16.",
+    "whyCorrect": "The voting age is set by the law of Hamburg and is 16.",
+    "background": "In Hamburg, young people aged 16 and over may already vote in elections to the district assemblies. Many states have lowered the voting age for local elections to 16 so that young people can have a say earlier in what happens in their town or municipality. For the federal election, however, the voting age is still 18. Citizens of other EU countries who live there may also vote in local elections.",
+    "otherOptions": "14, 18, 20 are wrong for Hamburg. The voting age differs from state to state – remember the number for your state.",
+    "memoryTip": "Hamburg: vote from 16.",
+    "legalBasis": []
+  },
+  "365": {
+    "summary": "The state flag of Hamburg is white and red.",
+    "whyCorrect": "The state flag is red with a white castle in the centre.",
+    "background": "Besides the federal flag, every federal state has its own flag. The state flag is red with a white castle in the centre. The state flag flies, for example, at the state parliament, ministries and on public buildings on holidays. The coat of arms of Hamburg shows a white castle with three towers on a red background.",
+    "otherOptions": "The other colour combinations do not belong to Hamburg: blue, white and red is the flag of Schleswig-Holstein; green, white and red is the flag of North Rhine-Westphalia; black and yellow is not the flag of any state.",
+    "memoryTip": "Hamburg: white and red.",
+    "legalBasis": []
+  },
+  "366": {
+    "summary": "In Hamburg you can get information on political topics from the state centre for political education.",
+    "whyCorrect": "The state centre for political education in Hamburg provides non-partisan information on politics, usually free of charge.",
+    "background": "Every federal state has an institution for political education, and there is also the Federal Agency for Civic Education (bpb). They offer free books and brochures, seminars, talks, excursions and online resources – for example on democracy, elections, history or integration. Important: these institutions are non-partisan, so they do not promote any party. One well-known example is the bpb’s Wahl-O-Mat before elections.",
+    "otherOptions": "Churches are religious communities, not neutral sources of political information. The public order office deals with public order, and the consumer advice centre advises on consumer issues such as contracts or complaints.",
+    "memoryTip": "Political education, non-partisan: state centre (and federal agency).",
+    "legalBasis": []
+  },
+  "367": {
+    "summary": "Hamburg is a city state.",
+    "whyCorrect": "Hamburg is a city and at the same time a federal state of its own.",
+    "background": "Germany has three city states: Berlin, Hamburg and Bremen. In a city state, the city and the state are the same – so there are no rural districts, and the state government is also the city government. It is called the Senate, and its ministers are called senators. Hamburg is a city state in northern Germany on the Elbe, between Schleswig-Holstein and Lower Saxony. Its port is one of the largest in Europe.",
+    "otherOptions": "Saxony, Bavaria and Thuringia are territorial states with many towns and municipalities.",
+    "memoryTip": "Three city states: Berlin, Hamburg, Bremen.",
+    "legalBasis": []
+  },
+  "368": {
+    "summary": "Hamburg is number 3 on the map.",
+    "whyCorrect": "Hamburg is a city state in northern Germany on the Elbe, between Schleswig-Holstein and Lower Saxony. Its port is one of the largest in Europe.",
+    "background": "Hamburg is a city state in northern Germany on the Elbe, between Schleswig-Holstein and Lower Saxony. Its port is one of the largest in Europe. Germany has 16 federal states: 13 territorial states and the three city states of Berlin, Hamburg and Bremen. It helps to memorise the location of your own state and its neighbours on a map.",
+    "otherOptions": "The other numbers show other federal states. Pay attention to the location: north or south, east or west, and which countries or seas Hamburg borders.",
+    "memoryTip": "Remember the location: Hamburg is a city state in northern Germany on the Elbe, between Schleswig-Holstein and Lower Saxony.",
+    "legalBasis": []
+  },
+  "369": {
+    "summary": "The head of government of Hamburg is called Erster Bürgermeister / Erste Bürgermeisterin.",
+    "whyCorrect": "In city states the state government is called the Senate; it is headed by a mayor with a special title.",
+    "background": "Because the city and the state are one in a city state, the mayor is also head of the state government. The First Mayor heads the Hamburg Senate and represents the state, for example in the Bundesrat. He or she is elected by the state parliament (Bürgerschaft (state parliament)). The three city states use different titles: in Berlin the office is called Governing Mayor, in Hamburg First Mayor and in Bremen President of the Senate.",
+    "otherOptions": "The other titles do not fit Hamburg: Minister-President is the title in the territorial states, and the other titles belong to the other city states or do not exist in this form.",
+    "memoryTip": "Berlin: Governing Mayor; Hamburg: First Mayor; Bremen: President of the Senate.",
+    "legalBasis": []
+  },
+  "370": {
+    "summary": "Hamburg has no senator for foreign affairs.",
+    "whyCorrect": "Foreign policy is a federal task; the states have no foreign ministers of their own.",
+    "background": "In the city states, members of the state government are called senators. They head departments such as the interior, justice or finance – similar to ministers in the other states. Relations with other countries, however, are the responsibility of the federation under the Basic Law (Articles 32 and 73), i.e. the Federal Foreign Office in Berlin. The states may only cooperate with other countries to a limited extent, for example through partnerships.",
+    "otherOptions": "Hamburg does have senators for finance, the interior and justice – they are responsible for the state budget, the police and the courts.",
+    "memoryTip": "Foreign policy = federation. No state has a foreign minister.",
+    "legalBasis": [
+      {
+        "label": "Art. 32 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_32.html"
+      },
+      {
+        "label": "Art. 73 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_73.html"
+      }
+    ]
+  },
+  "371": {
+    "summary": "The coat of arms of Mecklenburg-Western Pomerania is image 3.",
+    "whyCorrect": "It shows bulls’ heads for Mecklenburg and griffins for Western Pomerania.",
+    "background": "Every federal state has its own coat of arms. The coat of arms of Mecklenburg-Western Pomerania shows bulls’ heads for Mecklenburg and griffins for Western Pomerania. You can see it, for example, on public buildings, on state documents and on the state flag. Mecklenburg-Western Pomerania lies in north-eastern Germany on the Baltic Sea and borders Poland. The islands of Rügen and Usedom belong to it. Around 1.6 million people live in Mecklenburg-Western Pomerania.",
+    "otherOptions": "The other images show other coats of arms that do not belong to Mecklenburg-Western Pomerania. For the test it is worth looking closely at your own state’s coat of arms – this question appears for every state.",
+    "memoryTip": "Coat of arms of Mecklenburg-Western Pomerania: bulls’ heads for Mecklenburg and griffins for Western Pomerania.",
+    "legalBasis": []
+  },
+  "372": {
+    "summary": "Mecklenburgische Seenplatte is a rural district (Landkreis) in Mecklenburg-Western Pomerania.",
+    "whyCorrect": "The Mecklenburg Lake District is Germany’s largest district by area; it contains the Müritz, the largest lake lying entirely within Germany.",
+    "background": "Territorial states are divided into rural districts and independent cities. Districts take on tasks that are too large for individual municipalities, such as district roads, waste disposal or the foreigners’ registration office. They are headed by a district administrator (Landrat). The Mecklenburg Lake District is Germany’s largest district by area; it contains the Müritz, the largest lake lying entirely within Germany.",
+    "otherOptions": "The other names belong to other federal states: Prignitz is in Brandenburg; Vogtlandkreis is in Saxony; Rhein-Sieg-Kreis is in North Rhine-Westphalia.",
+    "memoryTip": "Mecklenburgische Seenplatte → Mecklenburg-Western Pomerania.",
+    "legalBasis": []
+  },
+  "373": {
+    "summary": "The state parliament of Mecklenburg-Western Pomerania – the state parliament (Landtag) – is elected for 5 years.",
+    "whyCorrect": "The state parliament (Landtag) has a legislative term of 5 years.",
+    "background": "Every federal state has its own directly elected parliament (Article 28 of the Basic Law). In Mecklenburg-Western Pomerania it is called the state parliament (Landtag). It passes state laws, for example on schools and the police, adopts the state budget and elects the head of the state government. In almost all states the term lasts five years – only Bremen votes every four years.",
+    "otherOptions": "3, 4, 6 years are wrong. For comparison: the Bundestag is elected every four years, the European Parliament every five years.",
+    "memoryTip": "Mecklenburg-Western Pomerania: state parliament (Landtag) every 5 years.",
+    "legalBasis": [
+      {
+        "label": "Art. 28 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_28.html"
+      }
+    ]
+  },
+  "374": {
+    "summary": "In Mecklenburg-Western Pomerania you can vote in local elections from the age of 16.",
+    "whyCorrect": "The voting age is set by the law of Mecklenburg-Western Pomerania and is 16.",
+    "background": "In Mecklenburg-Western Pomerania, young people aged 16 and over may already vote in local elections. Many states have lowered the voting age for local elections to 16 so that young people can have a say earlier in what happens in their town or municipality. For the federal election, however, the voting age is still 18. Citizens of other EU countries who live there may also vote in local elections.",
+    "otherOptions": "14, 18, 20 are wrong for Mecklenburg-Western Pomerania. The voting age differs from state to state – remember the number for your state.",
+    "memoryTip": "Mecklenburg-Western Pomerania: vote from 16.",
+    "legalBasis": []
+  },
+  "375": {
+    "summary": "The state flag of Mecklenburg-Western Pomerania is blue, white, yellow and red.",
+    "whyCorrect": "The state flag is blue, white, yellow and red; it combines the colours of Mecklenburg and Pomerania.",
+    "background": "Besides the federal flag, every federal state has its own flag. The state flag is blue, white, yellow and red; it combines the colours of Mecklenburg and Pomerania. The state flag flies, for example, at the state parliament, ministries and on public buildings on holidays. The coat of arms of Mecklenburg-Western Pomerania shows bulls’ heads for Mecklenburg and griffins for Western Pomerania.",
+    "otherOptions": "The other colour combinations do not belong to Mecklenburg-Western Pomerania: black, red and gold is the flag of Lower Saxony, Rhineland-Palatinate, Saarland; green, white and red is the flag of North Rhine-Westphalia; black and yellow is not the flag of any state.",
+    "memoryTip": "Mecklenburg-Western Pomerania: blue, white, yellow and red.",
+    "legalBasis": []
+  },
+  "376": {
+    "summary": "In Mecklenburg-Western Pomerania you can get information on political topics from the state centre for political education.",
+    "whyCorrect": "The state centre for political education in Mecklenburg-Western Pomerania provides non-partisan information on politics, usually free of charge.",
+    "background": "Every federal state has an institution for political education, and there is also the Federal Agency for Civic Education (bpb). They offer free books and brochures, seminars, talks, excursions and online resources – for example on democracy, elections, history or integration. Important: these institutions are non-partisan, so they do not promote any party. One well-known example is the bpb’s Wahl-O-Mat before elections.",
+    "otherOptions": "Churches are religious communities, not neutral sources of political information. The public order office deals with public order, and the consumer advice centre advises on consumer issues such as contracts or complaints.",
+    "memoryTip": "Political education, non-partisan: state centre (and federal agency).",
+    "legalBasis": []
+  },
+  "377": {
+    "summary": "The state capital of Mecklenburg-Western Pomerania is Schwerin.",
+    "whyCorrect": "The state parliament and state government of Mecklenburg-Western Pomerania are based in Schwerin.",
+    "background": "Every territorial state has a capital where parliament, government and ministries are based. Schwerin is Germany’s smallest state capital; the state parliament sits in a palace on an island. Rostock is the state’s largest city, and Greifswald and Wismar are old Hanseatic towns. Mecklenburg-Western Pomerania lies in north-eastern Germany on the Baltic Sea and borders Poland. The islands of Rügen and Usedom belong to it.",
+    "otherOptions": "Greifswald, Rostock, Wismar are also towns in Mecklenburg-Western Pomerania, but not the state capital.",
+    "memoryTip": "Mecklenburg-Western Pomerania → Schwerin.",
+    "legalBasis": []
+  },
+  "378": {
+    "summary": "Mecklenburg-Western Pomerania is number 3 on the map.",
+    "whyCorrect": "Mecklenburg-Western Pomerania lies in north-eastern Germany on the Baltic Sea and borders Poland. The islands of Rügen and Usedom belong to it.",
+    "background": "Mecklenburg-Western Pomerania lies in north-eastern Germany on the Baltic Sea and borders Poland. The islands of Rügen and Usedom belong to it. Germany has 16 federal states: 13 territorial states and the three city states of Berlin, Hamburg and Bremen. It helps to memorise the location of your own state and its neighbours on a map.",
+    "otherOptions": "The other numbers show other federal states. Pay attention to the location: north or south, east or west, and which countries or seas Mecklenburg-Western Pomerania borders.",
+    "memoryTip": "Remember the location: Mecklenburg-Western Pomerania lies in north-eastern Germany on the Baltic Sea and borders Poland.",
+    "legalBasis": []
+  },
+  "379": {
+    "summary": "The head of government in Mecklenburg-Western Pomerania is called Minister-President (Ministerpräsident/in).",
+    "whyCorrect": "He or she is elected by the state parliament and heads the government of Mecklenburg-Western Pomerania.",
+    "background": "In all 13 territorial states, the head of government is called Minister-President. After the state election, he or she is elected by the state parliament, sets the guidelines of state policy and appoints the state ministers. He or she also represents the state externally and sits in the Bundesrat. Mecklenburg-Western Pomerania lies in north-eastern Germany on the Baltic Sea and borders Poland. The islands of Rügen and Usedom belong to it.",
+    "otherOptions": "“First Minister” is the title in Scotland or Wales, “Prime Minister” in the UK, for example. Mayors head towns and municipalities – only in the city states are they also head of the state government.",
+    "memoryTip": "Territorial state = Minister-President.",
+    "legalBasis": []
+  },
+  "380": {
+    "summary": "Mecklenburg-Western Pomerania has no foreign minister.",
+    "whyCorrect": "Under the Basic Law, foreign policy is a federal task.",
+    "background": "The government of Mecklenburg-Western Pomerania consists of the Minister-President and several state ministers, for example for the interior, justice, finance, education, economic affairs or social affairs. Relations with other countries, however, are the responsibility of the federation (Articles 32 and 73 of the Basic Law) – through the Federal Foreign Office in Berlin. The states may only cooperate with other countries to a limited extent, for example with partner regions.",
+    "otherOptions": "Mecklenburg-Western Pomerania does have ministers of justice, finance and the interior: they are responsible for courts and prisons, the state budget, and the police and administration.",
+    "memoryTip": "Foreign policy = federation. No state has a foreign minister.",
+    "legalBasis": [
+      {
+        "label": "Art. 32 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_32.html"
+      },
+      {
+        "label": "Art. 73 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_73.html"
+      }
+    ]
+  },
+  "381": {
+    "summary": "The coat of arms of Lower Saxony is image 3.",
+    "whyCorrect": "It shows a white leaping horse on a red background – the Saxon steed.",
+    "background": "Every federal state has its own coat of arms. The coat of arms of Lower Saxony shows a white leaping horse on a red background – the Saxon steed. You can see it, for example, on public buildings, on state documents and on the state flag. Lower Saxony lies in north-western Germany on the North Sea and is the second-largest federal state by area. It surrounds the state of Bremen and borders the Netherlands. Around 8.1 million people live in Lower Saxony.",
+    "otherOptions": "The other images show other coats of arms that do not belong to Lower Saxony. For the test it is worth looking closely at your own state’s coat of arms – this question appears for every state.",
+    "memoryTip": "Coat of arms of Lower Saxony: a white leaping horse on a red background.",
+    "legalBasis": []
+  },
+  "382": {
+    "summary": "Ammerland is a rural district (Landkreis) in Lower Saxony.",
+    "whyCorrect": "Ammerland district lies in north-western Lower Saxony near Oldenburg and is known for its rhododendron parks.",
+    "background": "Territorial states are divided into rural districts and independent cities. Districts take on tasks that are too large for individual municipalities, such as district roads, waste disposal or the foreigners’ registration office. They are headed by a district administrator (Landrat). Ammerland district lies in north-western Lower Saxony near Oldenburg and is known for its rhododendron parks.",
+    "otherOptions": "The other names belong to other federal states: Rhein-Sieg-Kreis is in North Rhine-Westphalia; Nordfriesland is in Schleswig-Holstein; Vogtlandkreis is in Saxony.",
+    "memoryTip": "Ammerland → Lower Saxony.",
+    "legalBasis": []
+  },
+  "383": {
+    "summary": "The state parliament of Lower Saxony – the state parliament (Landtag) – is elected for 5 years.",
+    "whyCorrect": "The state parliament (Landtag) has a legislative term of 5 years.",
+    "background": "Every federal state has its own directly elected parliament (Article 28 of the Basic Law). In Lower Saxony it is called the state parliament (Landtag). It passes state laws, for example on schools and the police, adopts the state budget and elects the head of the state government. In almost all states the term lasts five years – only Bremen votes every four years.",
+    "otherOptions": "3, 4, 6 years are wrong. For comparison: the Bundestag is elected every four years, the European Parliament every five years.",
+    "memoryTip": "Lower Saxony: state parliament (Landtag) every 5 years.",
+    "legalBasis": [
+      {
+        "label": "Art. 28 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_28.html"
+      }
+    ]
+  },
+  "384": {
+    "summary": "In Lower Saxony you can vote in local elections from the age of 16.",
+    "whyCorrect": "The voting age is set by the law of Lower Saxony and is 16.",
+    "background": "In Lower Saxony, young people aged 16 and over may already vote in local elections. Many states have lowered the voting age for local elections to 16 so that young people can have a say earlier in what happens in their town or municipality. For the federal election, however, the voting age is still 18. Citizens of other EU countries who live there may also vote in local elections.",
+    "otherOptions": "14, 18, 20 are wrong for Lower Saxony. The voting age differs from state to state – remember the number for your state.",
+    "memoryTip": "Lower Saxony: vote from 16.",
+    "legalBasis": []
+  },
+  "385": {
+    "summary": "The state flag of Lower Saxony is black, red and gold.",
+    "whyCorrect": "The state flag is black, red and gold like the federal flag, but with the state coat of arms, the white horse.",
+    "background": "Besides the federal flag, every federal state has its own flag. The state flag is black, red and gold like the federal flag, but with the state coat of arms, the white horse. The state flag flies, for example, at the state parliament, ministries and on public buildings on holidays. Black, red and gold on its own is the federal flag; some states use the same colours with their state coat of arms. The coat of arms of Lower Saxony shows a white leaping horse on a red background – the Saxon steed.",
+    "otherOptions": "The other colour combinations do not belong to Lower Saxony: white and blue is the flag of Bavaria; black and yellow is not the flag of any state; blue, white and red is the flag of Schleswig-Holstein.",
+    "memoryTip": "Lower Saxony: black, red and gold.",
+    "legalBasis": []
+  },
+  "386": {
+    "summary": "In Lower Saxony you can get information on political topics from the state centre for political education.",
+    "whyCorrect": "The state centre for political education in Lower Saxony provides non-partisan information on politics, usually free of charge.",
+    "background": "Every federal state has an institution for political education, and there is also the Federal Agency for Civic Education (bpb). They offer free books and brochures, seminars, talks, excursions and online resources – for example on democracy, elections, history or integration. Important: these institutions are non-partisan, so they do not promote any party. One well-known example is the bpb’s Wahl-O-Mat before elections.",
+    "otherOptions": "Churches are religious communities, not neutral sources of political information. The public order office deals with public order, and the consumer advice centre advises on consumer issues such as contracts or complaints.",
+    "memoryTip": "Political education, non-partisan: state centre (and federal agency).",
+    "legalBasis": []
+  },
+  "387": {
+    "summary": "The state capital of Lower Saxony is Hannover.",
+    "whyCorrect": "The state parliament and state government of Lower Saxony are based in Hannover.",
+    "background": "Every territorial state has a capital where parliament, government and ministries are based. Hanover is the largest city in Lower Saxony and known for its trade fair. Braunschweig, Osnabrück and Wolfsburg, home of Volkswagen, are other important cities. Lower Saxony lies in north-western Germany on the North Sea and is the second-largest federal state by area. It surrounds the state of Bremen and borders the Netherlands.",
+    "otherOptions": "Braunschweig, Wolfsburg, Osnabrück are also towns in Lower Saxony, but not the state capital.",
+    "memoryTip": "Lower Saxony → Hannover.",
+    "legalBasis": []
+  },
+  "388": {
+    "summary": "Lower Saxony is number 1 on the map.",
+    "whyCorrect": "Lower Saxony lies in north-western Germany on the North Sea and is the second-largest federal state by area. It surrounds the state of Bremen and borders the Netherlands.",
+    "background": "Lower Saxony lies in north-western Germany on the North Sea and is the second-largest federal state by area. It surrounds the state of Bremen and borders the Netherlands. Germany has 16 federal states: 13 territorial states and the three city states of Berlin, Hamburg and Bremen. It helps to memorise the location of your own state and its neighbours on a map.",
+    "otherOptions": "The other numbers show other federal states. Pay attention to the location: north or south, east or west, and which countries or seas Lower Saxony borders.",
+    "memoryTip": "Remember the location: Lower Saxony lies in north-western Germany on the North Sea and is the second-largest federal state by area.",
+    "legalBasis": []
+  },
+  "389": {
+    "summary": "The head of government in Lower Saxony is called Minister-President (Ministerpräsident/in).",
+    "whyCorrect": "He or she is elected by the state parliament and heads the government of Lower Saxony.",
+    "background": "In all 13 territorial states, the head of government is called Minister-President. After the state election, he or she is elected by the state parliament, sets the guidelines of state policy and appoints the state ministers. He or she also represents the state externally and sits in the Bundesrat. Lower Saxony lies in north-western Germany on the North Sea and is the second-largest federal state by area. It surrounds the state of Bremen and borders the Netherlands.",
+    "otherOptions": "“First Minister” is the title in Scotland or Wales, “Prime Minister” in the UK, for example. Mayors head towns and municipalities – only in the city states are they also head of the state government.",
+    "memoryTip": "Territorial state = Minister-President.",
+    "legalBasis": []
+  },
+  "390": {
+    "summary": "Lower Saxony has no foreign minister.",
+    "whyCorrect": "Under the Basic Law, foreign policy is a federal task.",
+    "background": "The government of Lower Saxony consists of the Minister-President and several state ministers, for example for the interior, justice, finance, education, economic affairs or social affairs. Relations with other countries, however, are the responsibility of the federation (Articles 32 and 73 of the Basic Law) – through the Federal Foreign Office in Berlin. The states may only cooperate with other countries to a limited extent, for example with partner regions.",
+    "otherOptions": "Lower Saxony does have ministers of justice, finance and the interior: they are responsible for courts and prisons, the state budget, and the police and administration.",
+    "memoryTip": "Foreign policy = federation. No state has a foreign minister.",
+    "legalBasis": [
+      {
+        "label": "Art. 32 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_32.html"
+      },
+      {
+        "label": "Art. 73 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_73.html"
+      }
+    ]
+  },
+  "391": {
+    "summary": "The coat of arms of North Rhine-Westphalia is image 2.",
+    "whyCorrect": "It shows three parts: a white wavy line for the Rhine, a white horse for Westphalia and a red rose for Lippe.",
+    "background": "Every federal state has its own coat of arms. The coat of arms of North Rhine-Westphalia shows three parts: a white wavy line for the Rhine, a white horse for Westphalia and a red rose for Lippe. You can see it, for example, on public buildings, on state documents and on the state flag. North Rhine-Westphalia lies in western Germany and borders the Netherlands and Belgium. It is the most populous federal state and includes the Ruhr area. Around 18.1 million people live in North Rhine-Westphalia.",
+    "otherOptions": "The other images show other coats of arms that do not belong to North Rhine-Westphalia. For the test it is worth looking closely at your own state’s coat of arms – this question appears for every state.",
+    "memoryTip": "Coat of arms of North Rhine-Westphalia: three parts: a white wavy line for the Rhine, a white horse for Westphalia and a red rose for Lippe.",
+    "legalBasis": []
+  },
+  "392": {
+    "summary": "Rhein-Sieg-Kreis is a rural district (Landkreis) in North Rhine-Westphalia.",
+    "whyCorrect": "The Rhein-Sieg district surrounds the city of Bonn; its district town is Siegburg.",
+    "background": "Territorial states are divided into rural districts and independent cities. Districts take on tasks that are too large for individual municipalities, such as district roads, waste disposal or the foreigners’ registration office. They are headed by a district administrator (Landrat). The Rhein-Sieg district surrounds the city of Bonn; its district town is Siegburg.",
+    "otherOptions": "The other names belong to other federal states: Ammerland is in Lower Saxony; Nordfriesland is in Schleswig-Holstein; Vogtlandkreis is in Saxony.",
+    "memoryTip": "Rhein-Sieg-Kreis → North Rhine-Westphalia.",
+    "legalBasis": []
+  },
+  "393": {
+    "summary": "The state parliament of North Rhine-Westphalia – the state parliament (Landtag) – is elected for 5 years.",
+    "whyCorrect": "The state parliament (Landtag) has a legislative term of 5 years.",
+    "background": "Every federal state has its own directly elected parliament (Article 28 of the Basic Law). In North Rhine-Westphalia it is called the state parliament (Landtag). It passes state laws, for example on schools and the police, adopts the state budget and elects the head of the state government. In almost all states the term lasts five years – only Bremen votes every four years.",
+    "otherOptions": "3, 4, 6 years are wrong. For comparison: the Bundestag is elected every four years, the European Parliament every five years.",
+    "memoryTip": "North Rhine-Westphalia: state parliament (Landtag) every 5 years.",
+    "legalBasis": [
+      {
+        "label": "Art. 28 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_28.html"
+      }
+    ]
+  },
+  "394": {
+    "summary": "In North Rhine-Westphalia you can vote in local elections from the age of 16.",
+    "whyCorrect": "The voting age is set by the law of North Rhine-Westphalia and is 16.",
+    "background": "In North Rhine-Westphalia, young people aged 16 and over may already vote in local elections. Many states have lowered the voting age for local elections to 16 so that young people can have a say earlier in what happens in their town or municipality. For the federal election, however, the voting age is still 18. Citizens of other EU countries who live there may also vote in local elections.",
+    "otherOptions": "14, 18, 20 are wrong for North Rhine-Westphalia. The voting age differs from state to state – remember the number for your state.",
+    "memoryTip": "North Rhine-Westphalia: vote from 16.",
+    "legalBasis": []
+  },
+  "395": {
+    "summary": "The state flag of North Rhine-Westphalia is green, white and red.",
+    "whyCorrect": "The state flag is green, white and red, often with the state coat of arms.",
+    "background": "Besides the federal flag, every federal state has its own flag. The state flag is green, white and red, often with the state coat of arms. The state flag flies, for example, at the state parliament, ministries and on public buildings on holidays. The coat of arms of North Rhine-Westphalia shows three parts: a white wavy line for the Rhine, a white horse for Westphalia and a red rose for Lippe.",
+    "otherOptions": "The other colour combinations do not belong to North Rhine-Westphalia: red and white is the flag of Brandenburg, Bremen, Hesse; black and gold is the flag of Baden-Württemberg; blue, white and red is the flag of Schleswig-Holstein.",
+    "memoryTip": "North Rhine-Westphalia: green, white and red.",
+    "legalBasis": []
+  },
+  "396": {
+    "summary": "In North Rhine-Westphalia you can get information on political topics from the state centre for political education.",
+    "whyCorrect": "The state centre for political education in North Rhine-Westphalia provides non-partisan information on politics, usually free of charge.",
+    "background": "Every federal state has an institution for political education, and there is also the Federal Agency for Civic Education (bpb). They offer free books and brochures, seminars, talks, excursions and online resources – for example on democracy, elections, history or integration. Important: these institutions are non-partisan, so they do not promote any party. One well-known example is the bpb’s Wahl-O-Mat before elections.",
+    "otherOptions": "Churches are religious communities, not neutral sources of political information. The public order office deals with public order, and the consumer advice centre advises on consumer issues such as contracts or complaints.",
+    "memoryTip": "Political education, non-partisan: state centre (and federal agency).",
+    "legalBasis": []
+  },
+  "397": {
+    "summary": "The state capital of North Rhine-Westphalia is Düsseldorf.",
+    "whyCorrect": "The state parliament and state government of North Rhine-Westphalia are based in Düsseldorf.",
+    "background": "Every territorial state has a capital where parliament, government and ministries are based. Düsseldorf is the state capital, even though Cologne is the largest city in North Rhine-Westphalia – a common trap. Bonn was the capital of the Federal Republic until 1990, and Dortmund is in the Ruhr area. North Rhine-Westphalia lies in western Germany and borders the Netherlands and Belgium. It is the most populous federal state and includes the Ruhr area.",
+    "otherOptions": "Köln, Bonn, Dortmund are also towns in North Rhine-Westphalia, but not the state capital.",
+    "memoryTip": "North Rhine-Westphalia → Düsseldorf.",
+    "legalBasis": []
+  },
+  "398": {
+    "summary": "North Rhine-Westphalia is number 3 on the map.",
+    "whyCorrect": "North Rhine-Westphalia lies in western Germany and borders the Netherlands and Belgium. It is the most populous federal state and includes the Ruhr area.",
+    "background": "North Rhine-Westphalia lies in western Germany and borders the Netherlands and Belgium. It is the most populous federal state and includes the Ruhr area. Germany has 16 federal states: 13 territorial states and the three city states of Berlin, Hamburg and Bremen. It helps to memorise the location of your own state and its neighbours on a map.",
+    "otherOptions": "The other numbers show other federal states. Pay attention to the location: north or south, east or west, and which countries or seas North Rhine-Westphalia borders.",
+    "memoryTip": "Remember the location: North Rhine-Westphalia lies in western Germany and borders the Netherlands and Belgium.",
+    "legalBasis": []
+  },
+  "399": {
+    "summary": "The head of government in North Rhine-Westphalia is called Minister-President (Ministerpräsident/in).",
+    "whyCorrect": "He or she is elected by the state parliament and heads the government of North Rhine-Westphalia.",
+    "background": "In all 13 territorial states, the head of government is called Minister-President. After the state election, he or she is elected by the state parliament, sets the guidelines of state policy and appoints the state ministers. He or she also represents the state externally and sits in the Bundesrat. North Rhine-Westphalia lies in western Germany and borders the Netherlands and Belgium. It is the most populous federal state and includes the Ruhr area.",
+    "otherOptions": "“First Minister” is the title in Scotland or Wales, “Prime Minister” in the UK, for example. Mayors head towns and municipalities – only in the city states are they also head of the state government.",
+    "memoryTip": "Territorial state = Minister-President.",
+    "legalBasis": []
+  },
+  "400": {
+    "summary": "North Rhine-Westphalia has no foreign minister.",
+    "whyCorrect": "Under the Basic Law, foreign policy is a federal task.",
+    "background": "The government of North Rhine-Westphalia consists of the Minister-President and several state ministers, for example for the interior, justice, finance, education, economic affairs or social affairs. Relations with other countries, however, are the responsibility of the federation (Articles 32 and 73 of the Basic Law) – through the Federal Foreign Office in Berlin. The states may only cooperate with other countries to a limited extent, for example with partner regions.",
+    "otherOptions": "North Rhine-Westphalia does have ministers of justice, finance and the interior: they are responsible for courts and prisons, the state budget, and the police and administration.",
+    "memoryTip": "Foreign policy = federation. No state has a foreign minister.",
+    "legalBasis": [
+      {
+        "label": "Art. 32 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_32.html"
+      },
+      {
+        "label": "Art. 73 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_73.html"
+      }
+    ]
+  },
+  "401": {
+    "summary": "The coat of arms of Rhineland-Palatinate is image 1.",
+    "whyCorrect": "It shows three fields: a red cross (Trier), a white wheel (Mainz) and a golden lion (Palatinate), with a crown above.",
+    "background": "Every federal state has its own coat of arms. The coat of arms of Rhineland-Palatinate shows three fields: a red cross (Trier), a white wheel (Mainz) and a golden lion (Palatinate), with a crown above. You can see it, for example, on public buildings, on state documents and on the state flag. Rhineland-Palatinate lies in western Germany and borders France, Luxembourg and Belgium. It is known for wine-growing along the Rhine and Moselle. Around 4.2 million people live in Rhineland-Palatinate.",
+    "otherOptions": "The other images show other coats of arms that do not belong to Rhineland-Palatinate. For the test it is worth looking closely at your own state’s coat of arms – this question appears for every state.",
+    "memoryTip": "Coat of arms of Rhineland-Palatinate: three fields: a red cross (Trier), a white wheel (Mainz) and a golden lion (Palatinate), with a crown above.",
+    "legalBasis": []
+  },
+  "402": {
+    "summary": "Westerwaldkreis is a rural district (Landkreis) in Rhineland-Palatinate.",
+    "whyCorrect": "The Westerwald district lies in the north of Rhineland-Palatinate; its district town is Montabaur.",
+    "background": "Territorial states are divided into rural districts and independent cities. Districts take on tasks that are too large for individual municipalities, such as district roads, waste disposal or the foreigners’ registration office. They are headed by a district administrator (Landrat). The Westerwald district lies in the north of Rhineland-Palatinate; its district town is Montabaur.",
+    "otherOptions": "The other names belong to other federal states: Altötting is in Bavaria; Emsland is in Lower Saxony; Prignitz is in Brandenburg.",
+    "memoryTip": "Westerwaldkreis → Rhineland-Palatinate.",
+    "legalBasis": []
+  },
+  "403": {
+    "summary": "The state parliament of Rhineland-Palatinate – the state parliament (Landtag) – is elected for 5 years.",
+    "whyCorrect": "The state parliament (Landtag) has a legislative term of 5 years.",
+    "background": "Every federal state has its own directly elected parliament (Article 28 of the Basic Law). In Rhineland-Palatinate it is called the state parliament (Landtag). It passes state laws, for example on schools and the police, adopts the state budget and elects the head of the state government. In almost all states the term lasts five years – only Bremen votes every four years.",
+    "otherOptions": "3, 4, 6 years are wrong. For comparison: the Bundestag is elected every four years, the European Parliament every five years.",
+    "memoryTip": "Rhineland-Palatinate: state parliament (Landtag) every 5 years.",
+    "legalBasis": [
+      {
+        "label": "Art. 28 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_28.html"
+      }
+    ]
+  },
+  "404": {
+    "summary": "In Rhineland-Palatinate you can vote in local elections from the age of 18.",
+    "whyCorrect": "The voting age is set by the law of Rhineland-Palatinate and is 18.",
+    "background": "In Rhineland-Palatinate, you can vote in local elections from the age of 18 – just as in the federal election. In many other federal states, however, the voting age for local elections is already 16. Local elections choose, for example, the municipal council, the district council and often the mayor. Citizens of other EU countries who live there may also vote.",
+    "otherOptions": "14, 16, 20 are wrong for Rhineland-Palatinate. The voting age differs from state to state – remember the number for your state.",
+    "memoryTip": "Rhineland-Palatinate: vote from 18.",
+    "legalBasis": []
+  },
+  "405": {
+    "summary": "The state flag of Rhineland-Palatinate is black, red and gold.",
+    "whyCorrect": "The state flag is black, red and gold with the state coat of arms in the upper corner.",
+    "background": "Besides the federal flag, every federal state has its own flag. The state flag is black, red and gold with the state coat of arms in the upper corner. The state flag flies, for example, at the state parliament, ministries and on public buildings on holidays. Black, red and gold on its own is the federal flag; some states use the same colours with their state coat of arms. The coat of arms of Rhineland-Palatinate shows three fields: a red cross (Trier), a white wheel (Mainz) and a golden lion (Palatinate), with a crown above.",
+    "otherOptions": "The other colour combinations do not belong to Rhineland-Palatinate: white and red is the flag of Berlin, Hamburg, Thuringia; black and yellow is not the flag of any state; green, white and red is the flag of North Rhine-Westphalia.",
+    "memoryTip": "Rhineland-Palatinate: black, red and gold.",
+    "legalBasis": []
+  },
+  "406": {
+    "summary": "In Rhineland-Palatinate you can get information on political topics from the state centre for political education.",
+    "whyCorrect": "The state centre for political education in Rhineland-Palatinate provides non-partisan information on politics, usually free of charge.",
+    "background": "Every federal state has an institution for political education, and there is also the Federal Agency for Civic Education (bpb). They offer free books and brochures, seminars, talks, excursions and online resources – for example on democracy, elections, history or integration. Important: these institutions are non-partisan, so they do not promote any party. One well-known example is the bpb’s Wahl-O-Mat before elections.",
+    "otherOptions": "Churches are religious communities, not neutral sources of political information. The public order office deals with public order, and the consumer advice centre advises on consumer issues such as contracts or complaints.",
+    "memoryTip": "Political education, non-partisan: state centre (and federal agency).",
+    "legalBasis": []
+  },
+  "407": {
+    "summary": "The state capital of Rhineland-Palatinate is Mainz.",
+    "whyCorrect": "The state parliament and state government of Rhineland-Palatinate are based in Mainz.",
+    "background": "Every territorial state has a capital where parliament, government and ministries are based. Mainz is the state’s largest city and lies on the Rhine opposite Wiesbaden. Ludwigshafen, Koblenz and Kaiserslautern are other large towns. Rhineland-Palatinate lies in western Germany and borders France, Luxembourg and Belgium. It is known for wine-growing along the Rhine and Moselle.",
+    "otherOptions": "Kaiserslautern, Ludwigshafen, Koblenz are also towns in Rhineland-Palatinate, but not the state capital.",
+    "memoryTip": "Rhineland-Palatinate → Mainz.",
+    "legalBasis": []
+  },
+  "408": {
+    "summary": "Rhineland-Palatinate is number 1 on the map.",
+    "whyCorrect": "Rhineland-Palatinate lies in western Germany and borders France, Luxembourg and Belgium. It is known for wine-growing along the Rhine and Moselle.",
+    "background": "Rhineland-Palatinate lies in western Germany and borders France, Luxembourg and Belgium. It is known for wine-growing along the Rhine and Moselle. Germany has 16 federal states: 13 territorial states and the three city states of Berlin, Hamburg and Bremen. It helps to memorise the location of your own state and its neighbours on a map.",
+    "otherOptions": "The other numbers show other federal states. Pay attention to the location: north or south, east or west, and which countries or seas Rhineland-Palatinate borders.",
+    "memoryTip": "Remember the location: Rhineland-Palatinate lies in western Germany and borders France, Luxembourg and Belgium.",
+    "legalBasis": []
+  },
+  "409": {
+    "summary": "The head of government in Rhineland-Palatinate is called Minister-President (Ministerpräsident/in).",
+    "whyCorrect": "He or she is elected by the state parliament and heads the government of Rhineland-Palatinate.",
+    "background": "In all 13 territorial states, the head of government is called Minister-President. After the state election, he or she is elected by the state parliament, sets the guidelines of state policy and appoints the state ministers. He or she also represents the state externally and sits in the Bundesrat. Rhineland-Palatinate lies in western Germany and borders France, Luxembourg and Belgium. It is known for wine-growing along the Rhine and Moselle.",
+    "otherOptions": "“First Minister” is the title in Scotland or Wales, “Prime Minister” in the UK, for example. Mayors head towns and municipalities – only in the city states are they also head of the state government.",
+    "memoryTip": "Territorial state = Minister-President.",
+    "legalBasis": []
+  },
+  "410": {
+    "summary": "Rhineland-Palatinate has no foreign minister.",
+    "whyCorrect": "Under the Basic Law, foreign policy is a federal task.",
+    "background": "The government of Rhineland-Palatinate consists of the Minister-President and several state ministers, for example for the interior, justice, finance, education, economic affairs or social affairs. Relations with other countries, however, are the responsibility of the federation (Articles 32 and 73 of the Basic Law) – through the Federal Foreign Office in Berlin. The states may only cooperate with other countries to a limited extent, for example with partner regions.",
+    "otherOptions": "Rhineland-Palatinate does have ministers of justice, finance and the interior: they are responsible for courts and prisons, the state budget, and the police and administration.",
+    "memoryTip": "Foreign policy = federation. No state has a foreign minister.",
+    "legalBasis": [
+      {
+        "label": "Art. 32 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_32.html"
+      },
+      {
+        "label": "Art. 73 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_73.html"
+      }
+    ]
+  },
+  "411": {
+    "summary": "The coat of arms of Schleswig-Holstein is image 3.",
+    "whyCorrect": "It shows two blue lions for Schleswig and a white nettle leaf on red for Holstein.",
+    "background": "Every federal state has its own coat of arms. The coat of arms of Schleswig-Holstein shows two blue lions for Schleswig and a white nettle leaf on red for Holstein. You can see it, for example, on public buildings, on state documents and on the state flag. Schleswig-Holstein is the northernmost federal state. It lies between the North Sea and the Baltic Sea and borders Denmark. Around 3.0 million people live in Schleswig-Holstein.",
+    "otherOptions": "The other images show other coats of arms that do not belong to Schleswig-Holstein. For the test it is worth looking closely at your own state’s coat of arms – this question appears for every state.",
+    "memoryTip": "Coat of arms of Schleswig-Holstein: two blue lions for Schleswig and a white nettle leaf on red for Holstein.",
+    "legalBasis": []
+  },
+  "412": {
+    "summary": "Nordfriesland is a rural district (Landkreis) in Schleswig-Holstein.",
+    "whyCorrect": "North Frisia lies on the North Sea coast; it includes islands such as Sylt and Föhr, and its district town is Husum.",
+    "background": "Territorial states are divided into rural districts and independent cities. Districts take on tasks that are too large for individual municipalities, such as district roads, waste disposal or the foreigners’ registration office. They are headed by a district administrator (Landrat). North Frisia lies on the North Sea coast; it includes islands such as Sylt and Föhr, and its district town is Husum.",
+    "otherOptions": "The other names belong to other federal states: Ammerland is in Lower Saxony; Mecklenburgische Seenplatte is in Mecklenburg-Western Pomerania; Rhein-Sieg-Kreis is in North Rhine-Westphalia.",
+    "memoryTip": "Nordfriesland → Schleswig-Holstein.",
+    "legalBasis": []
+  },
+  "413": {
+    "summary": "The state parliament of Schleswig-Holstein – the state parliament (Landtag) – is elected for 5 years.",
+    "whyCorrect": "The state parliament (Landtag) has a legislative term of 5 years.",
+    "background": "Every federal state has its own directly elected parliament (Article 28 of the Basic Law). In Schleswig-Holstein it is called the state parliament (Landtag). It passes state laws, for example on schools and the police, adopts the state budget and elects the head of the state government. In almost all states the term lasts five years – only Bremen votes every four years.",
+    "otherOptions": "3, 4, 6 years are wrong. For comparison: the Bundestag is elected every four years, the European Parliament every five years.",
+    "memoryTip": "Schleswig-Holstein: state parliament (Landtag) every 5 years.",
+    "legalBasis": [
+      {
+        "label": "Art. 28 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_28.html"
+      }
+    ]
+  },
+  "414": {
+    "summary": "In Schleswig-Holstein you can vote in local elections from the age of 16.",
+    "whyCorrect": "The voting age is set by the law of Schleswig-Holstein and is 16.",
+    "background": "In Schleswig-Holstein, young people aged 16 and over may already vote in local elections. Many states have lowered the voting age for local elections to 16 so that young people can have a say earlier in what happens in their town or municipality. For the federal election, however, the voting age is still 18. Citizens of other EU countries who live there may also vote in local elections.",
+    "otherOptions": "14, 18, 20 are wrong for Schleswig-Holstein. The voting age differs from state to state – remember the number for your state.",
+    "memoryTip": "Schleswig-Holstein: vote from 16.",
+    "legalBasis": []
+  },
+  "415": {
+    "summary": "The state flag of Schleswig-Holstein is blue, white and red.",
+    "whyCorrect": "The state flag is blue, white and red.",
+    "background": "Besides the federal flag, every federal state has its own flag. The state flag is blue, white and red. The state flag flies, for example, at the state parliament, ministries and on public buildings on holidays. The coat of arms of Schleswig-Holstein shows two blue lions for Schleswig and a white nettle leaf on red for Holstein.",
+    "otherOptions": "The other colour combinations do not belong to Schleswig-Holstein: white and blue is the flag of Bavaria; white and red is the flag of Berlin, Hamburg, Thuringia; green, white and red is the flag of North Rhine-Westphalia.",
+    "memoryTip": "Schleswig-Holstein: blue, white and red.",
+    "legalBasis": []
+  },
+  "416": {
+    "summary": "In Schleswig-Holstein you can get information on political topics from the state commissioner for political education.",
+    "whyCorrect": "In Schleswig-Holstein the office is called the State Commissioner for Political Education and is attached to the state parliament.",
+    "background": "Every federal state has an institution for political education, and there is also the Federal Agency for Civic Education (bpb). They offer free books and brochures, seminars, talks, excursions and online resources – for example on democracy, elections, history or integration. Important: these institutions are non-partisan, so they do not promote any party. One well-known example is the bpb’s Wahl-O-Mat before elections.",
+    "otherOptions": "Churches are religious communities, not neutral sources of political information. The public order office deals with public order, and the consumer advice centre advises on consumer issues such as contracts or complaints.",
+    "memoryTip": "Political education, non-partisan: state centre (and federal agency).",
+    "legalBasis": []
+  },
+  "417": {
+    "summary": "The state capital of Schleswig-Holstein is Kiel.",
+    "whyCorrect": "The state parliament and state government of Schleswig-Holstein are based in Kiel.",
+    "background": "Every territorial state has a capital where parliament, government and ministries are based. Kiel lies on the Baltic Sea and is known for Kiel Week, one of the largest sailing festivals in the world. Lübeck is an old Hanseatic city, and Flensburg is on the Danish border. Schleswig-Holstein is the northernmost federal state. It lies between the North Sea and the Baltic Sea and borders Denmark.",
+    "otherOptions": "Husum, Flensburg, Lübeck are also towns in Schleswig-Holstein, but not the state capital.",
+    "memoryTip": "Schleswig-Holstein → Kiel.",
+    "legalBasis": []
+  },
+  "418": {
+    "summary": "Schleswig-Holstein is number 1 on the map.",
+    "whyCorrect": "Schleswig-Holstein is the northernmost federal state. It lies between the North Sea and the Baltic Sea and borders Denmark.",
+    "background": "Schleswig-Holstein is the northernmost federal state. It lies between the North Sea and the Baltic Sea and borders Denmark. Germany has 16 federal states: 13 territorial states and the three city states of Berlin, Hamburg and Bremen. It helps to memorise the location of your own state and its neighbours on a map.",
+    "otherOptions": "The other numbers show other federal states. Pay attention to the location: north or south, east or west, and which countries or seas Schleswig-Holstein borders.",
+    "memoryTip": "Remember the location: Schleswig-Holstein is the northernmost federal state.",
+    "legalBasis": []
+  },
+  "419": {
+    "summary": "The head of government in Schleswig-Holstein is called Minister-President (Ministerpräsident/in).",
+    "whyCorrect": "He or she is elected by the state parliament and heads the government of Schleswig-Holstein.",
+    "background": "In all 13 territorial states, the head of government is called Minister-President. After the state election, he or she is elected by the state parliament, sets the guidelines of state policy and appoints the state ministers. He or she also represents the state externally and sits in the Bundesrat. Schleswig-Holstein is the northernmost federal state. It lies between the North Sea and the Baltic Sea and borders Denmark.",
+    "otherOptions": "“First Minister” is the title in Scotland or Wales, “Prime Minister” in the UK, for example. Mayors head towns and municipalities – only in the city states are they also head of the state government.",
+    "memoryTip": "Territorial state = Minister-President.",
+    "legalBasis": []
+  },
+  "420": {
+    "summary": "Schleswig-Holstein has no foreign minister.",
+    "whyCorrect": "Under the Basic Law, foreign policy is a federal task.",
+    "background": "The government of Schleswig-Holstein consists of the Minister-President and several state ministers, for example for the interior, justice, finance, education, economic affairs or social affairs. Relations with other countries, however, are the responsibility of the federation (Articles 32 and 73 of the Basic Law) – through the Federal Foreign Office in Berlin. The states may only cooperate with other countries to a limited extent, for example with partner regions.",
+    "otherOptions": "Schleswig-Holstein does have ministers of justice, finance and the interior: they are responsible for courts and prisons, the state budget, and the police and administration.",
+    "memoryTip": "Foreign policy = federation. No state has a foreign minister.",
+    "legalBasis": [
+      {
+        "label": "Art. 32 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_32.html"
+      },
+      {
+        "label": "Art. 73 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_73.html"
+      }
+    ]
+  },
+  "421": {
+    "summary": "The coat of arms of Saarland is image 4.",
+    "whyCorrect": "It shows four fields with lions, a cross and eagles recalling the historic territories of the region.",
+    "background": "Every federal state has its own coat of arms. The coat of arms of Saarland shows four fields with lions, a cross and eagles recalling the historic territories of the region. You can see it, for example, on public buildings, on state documents and on the state flag. Saarland is the smallest territorial state. It lies in the south-west on the border with France and Luxembourg and has only belonged to the Federal Republic since 1957. Around 1.0 million people live in Saarland.",
+    "otherOptions": "The other images show other coats of arms that do not belong to Saarland. For the test it is worth looking closely at your own state’s coat of arms – this question appears for every state.",
+    "memoryTip": "Coat of arms of Saarland: four fields with lions, a cross and eagles recalling the historic territories of the region.",
+    "legalBasis": []
+  },
+  "422": {
+    "summary": "Neunkirchen is a rural district (Landkreis) in Saarland.",
+    "whyCorrect": "Neunkirchen district lies in the east of Saarland; the town of the same name is the state’s second-largest.",
+    "background": "Territorial states are divided into rural districts and independent cities. Districts take on tasks that are too large for individual municipalities, such as district roads, waste disposal or the foreigners’ registration office. They are headed by a district administrator (Landrat). Neunkirchen district lies in the east of Saarland; the town of the same name is the state’s second-largest.",
+    "otherOptions": "The other names belong to other federal states: Mecklenburgische Seenplatte is in Mecklenburg-Western Pomerania; Altötting is in Bavaria; Rhein-Sieg-Kreis is in North Rhine-Westphalia.",
+    "memoryTip": "Neunkirchen → Saarland.",
+    "legalBasis": []
+  },
+  "423": {
+    "summary": "The state parliament of Saarland – the state parliament (Landtag) – is elected for 5 years.",
+    "whyCorrect": "The state parliament (Landtag) has a legislative term of 5 years.",
+    "background": "Every federal state has its own directly elected parliament (Article 28 of the Basic Law). In Saarland it is called the state parliament (Landtag). It passes state laws, for example on schools and the police, adopts the state budget and elects the head of the state government. In almost all states the term lasts five years – only Bremen votes every four years.",
+    "otherOptions": "3, 4, 6 years are wrong. For comparison: the Bundestag is elected every four years, the European Parliament every five years.",
+    "memoryTip": "Saarland: state parliament (Landtag) every 5 years.",
+    "legalBasis": [
+      {
+        "label": "Art. 28 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_28.html"
+      }
+    ]
+  },
+  "424": {
+    "summary": "In Saarland you can vote in local elections from the age of 18.",
+    "whyCorrect": "The voting age is set by the law of Saarland and is 18.",
+    "background": "In Saarland, you can vote in local elections from the age of 18 – just as in the federal election. In many other federal states, however, the voting age for local elections is already 16. Local elections choose, for example, the municipal council, the district council and often the mayor. Citizens of other EU countries who live there may also vote.",
+    "otherOptions": "14, 16, 20 are wrong for Saarland. The voting age differs from state to state – remember the number for your state.",
+    "memoryTip": "Saarland: vote from 18.",
+    "legalBasis": []
+  },
+  "425": {
+    "summary": "The state flag of Saarland is black, red and gold.",
+    "whyCorrect": "The state flag is black, red and gold with the state coat of arms in the centre.",
+    "background": "Besides the federal flag, every federal state has its own flag. The state flag is black, red and gold with the state coat of arms in the centre. The state flag flies, for example, at the state parliament, ministries and on public buildings on holidays. Black, red and gold on its own is the federal flag; some states use the same colours with their state coat of arms. The coat of arms of Saarland shows four fields with lions, a cross and eagles recalling the historic territories of the region.",
+    "otherOptions": "The other colour combinations do not belong to Saarland: white and blue is the flag of Bavaria; black and yellow is not the flag of any state; green, white and red is the flag of North Rhine-Westphalia.",
+    "memoryTip": "Saarland: black, red and gold.",
+    "legalBasis": []
+  },
+  "426": {
+    "summary": "In Saarland you can get information on political topics from the state centre for political education.",
+    "whyCorrect": "The state centre for political education in Saarland provides non-partisan information on politics, usually free of charge.",
+    "background": "Every federal state has an institution for political education, and there is also the Federal Agency for Civic Education (bpb). They offer free books and brochures, seminars, talks, excursions and online resources – for example on democracy, elections, history or integration. Important: these institutions are non-partisan, so they do not promote any party. One well-known example is the bpb’s Wahl-O-Mat before elections.",
+    "otherOptions": "Churches are religious communities, not neutral sources of political information. The public order office deals with public order, and the consumer advice centre advises on consumer issues such as contracts or complaints.",
+    "memoryTip": "Political education, non-partisan: state centre (and federal agency).",
+    "legalBasis": []
+  },
+  "427": {
+    "summary": "The state capital of Saarland is Saarbrücken.",
+    "whyCorrect": "The state parliament and state government of Saarland are based in Saarbrücken.",
+    "background": "Every territorial state has a capital where parliament, government and ministries are based. Saarbrücken is the largest city in Saarland and lies right on the French border. Neunkirchen, Homburg and Völklingen, home to the Völklingen Ironworks World Heritage Site, are other towns. Saarland is the smallest territorial state. It lies in the south-west on the border with France and Luxembourg and has only belonged to the Federal Republic since 1957.",
+    "otherOptions": "Neunkirchen, Homburg, Völklingen are also towns in Saarland, but not the state capital.",
+    "memoryTip": "Saarland → Saarbrücken.",
+    "legalBasis": []
+  },
+  "428": {
+    "summary": "Saarland is number 2 on the map.",
+    "whyCorrect": "Saarland is the smallest territorial state. It lies in the south-west on the border with France and Luxembourg and has only belonged to the Federal Republic since 1957.",
+    "background": "Saarland is the smallest territorial state. It lies in the south-west on the border with France and Luxembourg and has only belonged to the Federal Republic since 1957. Germany has 16 federal states: 13 territorial states and the three city states of Berlin, Hamburg and Bremen. It helps to memorise the location of your own state and its neighbours on a map.",
+    "otherOptions": "The other numbers show other federal states. Pay attention to the location: north or south, east or west, and which countries or seas Saarland borders.",
+    "memoryTip": "Remember the location: Saarland is the smallest territorial state.",
+    "legalBasis": []
+  },
+  "429": {
+    "summary": "The head of government in Saarland is called Minister-President (Ministerpräsident/in).",
+    "whyCorrect": "He or she is elected by the state parliament and heads the government of Saarland.",
+    "background": "In all 13 territorial states, the head of government is called Minister-President. After the state election, he or she is elected by the state parliament, sets the guidelines of state policy and appoints the state ministers. He or she also represents the state externally and sits in the Bundesrat. Saarland is the smallest territorial state. It lies in the south-west on the border with France and Luxembourg and has only belonged to the Federal Republic since 1957.",
+    "otherOptions": "“First Minister” is the title in Scotland or Wales, “Prime Minister” in the UK, for example. Mayors head towns and municipalities – only in the city states are they also head of the state government.",
+    "memoryTip": "Territorial state = Minister-President.",
+    "legalBasis": []
+  },
+  "430": {
+    "summary": "Saarland has no foreign minister.",
+    "whyCorrect": "Under the Basic Law, foreign policy is a federal task.",
+    "background": "The government of Saarland consists of the Minister-President and several state ministers, for example for the interior, justice, finance, education, economic affairs or social affairs. Relations with other countries, however, are the responsibility of the federation (Articles 32 and 73 of the Basic Law) – through the Federal Foreign Office in Berlin. The states may only cooperate with other countries to a limited extent, for example with partner regions.",
+    "otherOptions": "Saarland does have ministers of justice, finance and the interior: they are responsible for courts and prisons, the state budget, and the police and administration.",
+    "memoryTip": "Foreign policy = federation. No state has a foreign minister.",
+    "legalBasis": [
+      {
+        "label": "Art. 32 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_32.html"
+      },
+      {
+        "label": "Art. 73 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_73.html"
+      }
+    ]
+  },
+  "431": {
+    "summary": "The coat of arms of Saxony is image 4.",
+    "whyCorrect": "It shows black and gold stripes with a green diagonal crown of rue.",
+    "background": "Every federal state has its own coat of arms. The coat of arms of Saxony shows black and gold stripes with a green diagonal crown of rue. You can see it, for example, on public buildings, on state documents and on the state flag. Saxony lies in eastern Germany and borders Poland and the Czech Republic. It is one of the five states that joined the Federal Republic in 1990. Around 4.0 million people live in Saxony.",
+    "otherOptions": "The other images show other coats of arms that do not belong to Saxony. For the test it is worth looking closely at your own state’s coat of arms – this question appears for every state.",
+    "memoryTip": "Coat of arms of Saxony: black and gold stripes with a green diagonal crown of rue.",
+    "legalBasis": []
+  },
+  "432": {
+    "summary": "Vogtlandkreis is a rural district (Landkreis) in Saxony.",
+    "whyCorrect": "The Vogtland district lies in south-western Saxony on the border with Bavaria and the Czech Republic; its district town is Plauen.",
+    "background": "Territorial states are divided into rural districts and independent cities. Districts take on tasks that are too large for individual municipalities, such as district roads, waste disposal or the foreigners’ registration office. They are headed by a district administrator (Landrat). The Vogtland district lies in south-western Saxony on the border with Bavaria and the Czech Republic; its district town is Plauen.",
+    "otherOptions": "The other names belong to other federal states: Altötting is in Bavaria; Uckermark is in Brandenburg; Nordfriesland is in Schleswig-Holstein.",
+    "memoryTip": "Vogtlandkreis → Saxony.",
+    "legalBasis": []
+  },
+  "433": {
+    "summary": "The state parliament of Saxony – the state parliament (Landtag) – is elected for 5 years.",
+    "whyCorrect": "The state parliament (Landtag) has a legislative term of 5 years.",
+    "background": "Every federal state has its own directly elected parliament (Article 28 of the Basic Law). In Saxony it is called the state parliament (Landtag). It passes state laws, for example on schools and the police, adopts the state budget and elects the head of the state government. In almost all states the term lasts five years – only Bremen votes every four years.",
+    "otherOptions": "3, 4, 6 years are wrong. For comparison: the Bundestag is elected every four years, the European Parliament every five years.",
+    "memoryTip": "Saxony: state parliament (Landtag) every 5 years.",
+    "legalBasis": [
+      {
+        "label": "Art. 28 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_28.html"
+      }
+    ]
+  },
+  "434": {
+    "summary": "In Saxony you can vote in local elections from the age of 18.",
+    "whyCorrect": "The voting age is set by the law of Saxony and is 18.",
+    "background": "In Saxony, you can vote in local elections from the age of 18 – just as in the federal election. In many other federal states, however, the voting age for local elections is already 16. Local elections choose, for example, the municipal council, the district council and often the mayor. Citizens of other EU countries who live there may also vote.",
+    "otherOptions": "14, 16, 20 are wrong for Saxony. The voting age differs from state to state – remember the number for your state.",
+    "memoryTip": "Saxony: vote from 18.",
+    "legalBasis": []
+  },
+  "435": {
+    "summary": "The state flag of Saxony is white and green.",
+    "whyCorrect": "The state flag is white at the top and green at the bottom.",
+    "background": "Besides the federal flag, every federal state has its own flag. The state flag is white at the top and green at the bottom. The state flag flies, for example, at the state parliament, ministries and on public buildings on holidays. The coat of arms of Saxony shows black and gold stripes with a green diagonal crown of rue.",
+    "otherOptions": "The other colour combinations do not belong to Saxony: blue, white and red is the flag of Schleswig-Holstein; green, white and red is the flag of North Rhine-Westphalia; black and yellow is not the flag of any state.",
+    "memoryTip": "Saxony: white and green.",
+    "legalBasis": []
+  },
+  "436": {
+    "summary": "In Saxony you can get information on political topics from the state centre for political education.",
+    "whyCorrect": "The state centre for political education in Saxony provides non-partisan information on politics, usually free of charge.",
+    "background": "Every federal state has an institution for political education, and there is also the Federal Agency for Civic Education (bpb). They offer free books and brochures, seminars, talks, excursions and online resources – for example on democracy, elections, history or integration. Important: these institutions are non-partisan, so they do not promote any party. One well-known example is the bpb’s Wahl-O-Mat before elections.",
+    "otherOptions": "Churches are religious communities, not neutral sources of political information. The public order office deals with public order, and the consumer advice centre advises on consumer issues such as contracts or complaints.",
+    "memoryTip": "Political education, non-partisan: state centre (and federal agency).",
+    "legalBasis": []
+  },
+  "437": {
+    "summary": "The state capital of Saxony is Dresden.",
+    "whyCorrect": "The state parliament and state government of Saxony are based in Dresden.",
+    "background": "Every territorial state has a capital where parliament, government and ministries are based. Dresden is known for the Frauenkirche and the Zwinger. Leipzig is now Saxony’s largest city and was the centre of the Monday demonstrations in 1989. Chemnitz and Zwickau are other large cities. Saxony lies in eastern Germany and borders Poland and the Czech Republic. It is one of the five states that joined the Federal Republic in 1990.",
+    "otherOptions": "Leipzig, Chemnitz, Zwickau are also towns in Saxony, but not the state capital.",
+    "memoryTip": "Saxony → Dresden.",
+    "legalBasis": []
+  },
+  "438": {
+    "summary": "Saxony is number 4 on the map.",
+    "whyCorrect": "Saxony lies in eastern Germany and borders Poland and the Czech Republic. It is one of the five states that joined the Federal Republic in 1990.",
+    "background": "Saxony lies in eastern Germany and borders Poland and the Czech Republic. It is one of the five states that joined the Federal Republic in 1990. Germany has 16 federal states: 13 territorial states and the three city states of Berlin, Hamburg and Bremen. It helps to memorise the location of your own state and its neighbours on a map.",
+    "otherOptions": "The other numbers show other federal states. Pay attention to the location: north or south, east or west, and which countries or seas Saxony borders.",
+    "memoryTip": "Remember the location: Saxony lies in eastern Germany and borders Poland and the Czech Republic.",
+    "legalBasis": []
+  },
+  "439": {
+    "summary": "The head of government in Saxony is called Minister-President (Ministerpräsident/in).",
+    "whyCorrect": "He or she is elected by the state parliament and heads the government of Saxony.",
+    "background": "In all 13 territorial states, the head of government is called Minister-President. After the state election, he or she is elected by the state parliament, sets the guidelines of state policy and appoints the state ministers. He or she also represents the state externally and sits in the Bundesrat. Saxony lies in eastern Germany and borders Poland and the Czech Republic. It is one of the five states that joined the Federal Republic in 1990.",
+    "otherOptions": "“First Minister” is the title in Scotland or Wales, “Prime Minister” in the UK, for example. Mayors head towns and municipalities – only in the city states are they also head of the state government.",
+    "memoryTip": "Territorial state = Minister-President.",
+    "legalBasis": []
+  },
+  "440": {
+    "summary": "Saxony has no foreign minister.",
+    "whyCorrect": "Under the Basic Law, foreign policy is a federal task.",
+    "background": "The government of Saxony consists of the Minister-President and several state ministers, for example for the interior, justice, finance, education, economic affairs or social affairs. Relations with other countries, however, are the responsibility of the federation (Articles 32 and 73 of the Basic Law) – through the Federal Foreign Office in Berlin. The states may only cooperate with other countries to a limited extent, for example with partner regions.",
+    "otherOptions": "Saxony does have ministers of justice, finance and the interior: they are responsible for courts and prisons, the state budget, and the police and administration.",
+    "memoryTip": "Foreign policy = federation. No state has a foreign minister.",
+    "legalBasis": [
+      {
+        "label": "Art. 32 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_32.html"
+      },
+      {
+        "label": "Art. 73 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_73.html"
+      }
+    ]
+  },
+  "441": {
+    "summary": "The coat of arms of Saxony-Anhalt is image 4.",
+    "whyCorrect": "It shows black and gold stripes with a green crown of rue at the top and a black bear on a red wall below – the Anhalt bear.",
+    "background": "Every federal state has its own coat of arms. The coat of arms of Saxony-Anhalt shows black and gold stripes with a green crown of rue at the top and a black bear on a red wall below – the Anhalt bear. You can see it, for example, on public buildings, on state documents and on the state flag. Saxony-Anhalt lies in the middle of eastern Germany on the Elbe. Wittenberg, where Martin Luther started the Reformation in 1517, is located here. Around 2.1 million people live in Saxony-Anhalt.",
+    "otherOptions": "The other images show other coats of arms that do not belong to Saxony-Anhalt. For the test it is worth looking closely at your own state’s coat of arms – this question appears for every state.",
+    "memoryTip": "Coat of arms of Saxony-Anhalt: black and gold stripes with a green crown of rue at the top and a black bear on a red wall below.",
+    "legalBasis": []
+  },
+  "442": {
+    "summary": "Börde is a rural district (Landkreis) in Saxony-Anhalt.",
+    "whyCorrect": "Börde district lies west of Magdeburg and is known for its particularly fertile soils.",
+    "background": "Territorial states are divided into rural districts and independent cities. Districts take on tasks that are too large for individual municipalities, such as district roads, waste disposal or the foreigners’ registration office. They are headed by a district administrator (Landrat). Börde district lies west of Magdeburg and is known for its particularly fertile soils.",
+    "otherOptions": "The other names belong to other federal states: Ammerland is in Lower Saxony; Altötting is in Bavaria; Uckermark is in Brandenburg.",
+    "memoryTip": "Börde → Saxony-Anhalt.",
+    "legalBasis": []
+  },
+  "443": {
+    "summary": "The state parliament of Saxony-Anhalt – the state parliament (Landtag) – is elected for 5 years.",
+    "whyCorrect": "The state parliament (Landtag) has a legislative term of 5 years.",
+    "background": "Every federal state has its own directly elected parliament (Article 28 of the Basic Law). In Saxony-Anhalt it is called the state parliament (Landtag). It passes state laws, for example on schools and the police, adopts the state budget and elects the head of the state government. In almost all states the term lasts five years – only Bremen votes every four years.",
+    "otherOptions": "3, 4, 6 years are wrong. For comparison: the Bundestag is elected every four years, the European Parliament every five years.",
+    "memoryTip": "Saxony-Anhalt: state parliament (Landtag) every 5 years.",
+    "legalBasis": [
+      {
+        "label": "Art. 28 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_28.html"
+      }
+    ]
+  },
+  "444": {
+    "summary": "In Saxony-Anhalt you can vote in local elections from the age of 16.",
+    "whyCorrect": "The voting age is set by the law of Saxony-Anhalt and is 16.",
+    "background": "In Saxony-Anhalt, young people aged 16 and over may already vote in local elections. Many states have lowered the voting age for local elections to 16 so that young people can have a say earlier in what happens in their town or municipality. For the federal election, however, the voting age is still 18. Citizens of other EU countries who live there may also vote in local elections.",
+    "otherOptions": "14, 18, 20 are wrong for Saxony-Anhalt. The voting age differs from state to state – remember the number for your state.",
+    "memoryTip": "Saxony-Anhalt: vote from 16.",
+    "legalBasis": []
+  },
+  "445": {
+    "summary": "The state flag of Saxony-Anhalt is yellow and black.",
+    "whyCorrect": "The state flag is yellow at the top and black at the bottom, with the state coat of arms in the centre.",
+    "background": "Besides the federal flag, every federal state has its own flag. The state flag is yellow at the top and black at the bottom, with the state coat of arms in the centre. The state flag flies, for example, at the state parliament, ministries and on public buildings on holidays. The coat of arms of Saxony-Anhalt shows black and gold stripes with a green crown of rue at the top and a black bear on a red wall below – the Anhalt bear.",
+    "otherOptions": "The other colour combinations do not belong to Saxony-Anhalt: blue, white and red is the flag of Schleswig-Holstein; green, white and red is the flag of North Rhine-Westphalia; white and red is the flag of Berlin, Hamburg, Thuringia.",
+    "memoryTip": "Saxony-Anhalt: yellow and black.",
+    "legalBasis": []
+  },
+  "446": {
+    "summary": "In Saxony-Anhalt you can get information on political topics from the state centre for political education.",
+    "whyCorrect": "The state centre for political education in Saxony-Anhalt provides non-partisan information on politics, usually free of charge.",
+    "background": "Every federal state has an institution for political education, and there is also the Federal Agency for Civic Education (bpb). They offer free books and brochures, seminars, talks, excursions and online resources – for example on democracy, elections, history or integration. Important: these institutions are non-partisan, so they do not promote any party. One well-known example is the bpb’s Wahl-O-Mat before elections.",
+    "otherOptions": "Churches are religious communities, not neutral sources of political information. The public order office deals with public order, and the consumer advice centre advises on consumer issues such as contracts or complaints.",
+    "memoryTip": "Political education, non-partisan: state centre (and federal agency).",
+    "legalBasis": []
+  },
+  "447": {
+    "summary": "The state capital of Saxony-Anhalt is Magdeburg.",
+    "whyCorrect": "The state parliament and state government of Saxony-Anhalt are based in Magdeburg.",
+    "background": "Every territorial state has a capital where parliament, government and ministries are based. Magdeburg lies on the Elbe and is one of Germany’s oldest cities. Halle (Saale) is about the same size, Dessau is known for the Bauhaus and Wittenberg for Martin Luther. Saxony-Anhalt lies in the middle of eastern Germany on the Elbe. Wittenberg, where Martin Luther started the Reformation in 1517, is located here.",
+    "otherOptions": "Halle, Dessau, Wittenberg are also towns in Saxony-Anhalt, but not the state capital.",
+    "memoryTip": "Saxony-Anhalt → Magdeburg.",
+    "legalBasis": []
+  },
+  "448": {
+    "summary": "Saxony-Anhalt is number 3 on the map.",
+    "whyCorrect": "Saxony-Anhalt lies in the middle of eastern Germany on the Elbe. Wittenberg, where Martin Luther started the Reformation in 1517, is located here.",
+    "background": "Saxony-Anhalt lies in the middle of eastern Germany on the Elbe. Wittenberg, where Martin Luther started the Reformation in 1517, is located here. Germany has 16 federal states: 13 territorial states and the three city states of Berlin, Hamburg and Bremen. It helps to memorise the location of your own state and its neighbours on a map.",
+    "otherOptions": "The other numbers show other federal states. Pay attention to the location: north or south, east or west, and which countries or seas Saxony-Anhalt borders.",
+    "memoryTip": "Remember the location: Saxony-Anhalt lies in the middle of eastern Germany on the Elbe.",
+    "legalBasis": []
+  },
+  "449": {
+    "summary": "The head of government in Saxony-Anhalt is called Minister-President (Ministerpräsident/in).",
+    "whyCorrect": "He or she is elected by the state parliament and heads the government of Saxony-Anhalt.",
+    "background": "In all 13 territorial states, the head of government is called Minister-President. After the state election, he or she is elected by the state parliament, sets the guidelines of state policy and appoints the state ministers. He or she also represents the state externally and sits in the Bundesrat. Saxony-Anhalt lies in the middle of eastern Germany on the Elbe. Wittenberg, where Martin Luther started the Reformation in 1517, is located here.",
+    "otherOptions": "“First Minister” is the title in Scotland or Wales, “Prime Minister” in the UK, for example. Mayors head towns and municipalities – only in the city states are they also head of the state government.",
+    "memoryTip": "Territorial state = Minister-President.",
+    "legalBasis": []
+  },
+  "450": {
+    "summary": "Saxony-Anhalt has no foreign minister.",
+    "whyCorrect": "Under the Basic Law, foreign policy is a federal task.",
+    "background": "The government of Saxony-Anhalt consists of the Minister-President and several state ministers, for example for the interior, justice, finance, education, economic affairs or social affairs. Relations with other countries, however, are the responsibility of the federation (Articles 32 and 73 of the Basic Law) – through the Federal Foreign Office in Berlin. The states may only cooperate with other countries to a limited extent, for example with partner regions.",
+    "otherOptions": "Saxony-Anhalt does have ministers of justice, finance and the interior: they are responsible for courts and prisons, the state budget, and the police and administration.",
+    "memoryTip": "Foreign policy = federation. No state has a foreign minister.",
+    "legalBasis": [
+      {
+        "label": "Art. 32 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_32.html"
+      },
+      {
+        "label": "Art. 73 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_73.html"
+      }
+    ]
+  },
+  "451": {
+    "summary": "The coat of arms of Thuringia is image 4.",
+    "whyCorrect": "It shows a red and white striped lion on a blue background surrounded by eight white stars.",
+    "background": "Every federal state has its own coat of arms. The coat of arms of Thuringia shows a red and white striped lion on a blue background surrounded by eight white stars. You can see it, for example, on public buildings, on state documents and on the state flag. Thuringia lies in the middle of Germany and is called “the green heart of Germany” because of its many forests. Around 2.1 million people live in Thuringia.",
+    "otherOptions": "The other images show other coats of arms that do not belong to Thuringia. For the test it is worth looking closely at your own state’s coat of arms – this question appears for every state.",
+    "memoryTip": "Coat of arms of Thuringia: a red and white striped lion on a blue background surrounded by eight white stars.",
+    "legalBasis": []
+  },
+  "452": {
+    "summary": "Wartburgkreis is a rural district (Landkreis) in Thuringia.",
+    "whyCorrect": "The Wartburg district lies in western Thuringia; it is home to Wartburg Castle near Eisenach, where Martin Luther translated the New Testament.",
+    "background": "Territorial states are divided into rural districts and independent cities. Districts take on tasks that are too large for individual municipalities, such as district roads, waste disposal or the foreigners’ registration office. They are headed by a district administrator (Landrat). The Wartburg district lies in western Thuringia; it is home to Wartburg Castle near Eisenach, where Martin Luther translated the New Testament.",
+    "otherOptions": "The other names belong to other federal states: Ammerland is in Lower Saxony; Altötting is in Bavaria; Nordfriesland is in Schleswig-Holstein.",
+    "memoryTip": "Wartburgkreis → Thuringia.",
+    "legalBasis": []
+  },
+  "453": {
+    "summary": "The state parliament of Thuringia – the state parliament (Landtag) – is elected for 5 years.",
+    "whyCorrect": "The state parliament (Landtag) has a legislative term of 5 years.",
+    "background": "Every federal state has its own directly elected parliament (Article 28 of the Basic Law). In Thuringia it is called the state parliament (Landtag). It passes state laws, for example on schools and the police, adopts the state budget and elects the head of the state government. In almost all states the term lasts five years – only Bremen votes every four years.",
+    "otherOptions": "3, 4, 6 years are wrong. For comparison: the Bundestag is elected every four years, the European Parliament every five years.",
+    "memoryTip": "Thuringia: state parliament (Landtag) every 5 years.",
+    "legalBasis": [
+      {
+        "label": "Art. 28 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_28.html"
+      }
+    ]
+  },
+  "454": {
+    "summary": "In Thuringia you can vote in local elections from the age of 16.",
+    "whyCorrect": "The voting age is set by the law of Thuringia and is 16.",
+    "background": "In Thuringia, young people aged 16 and over may already vote in local elections. Many states have lowered the voting age for local elections to 16 so that young people can have a say earlier in what happens in their town or municipality. For the federal election, however, the voting age is still 18. Citizens of other EU countries who live there may also vote in local elections.",
+    "otherOptions": "14, 18, 20 are wrong for Thuringia. The voting age differs from state to state – remember the number for your state.",
+    "memoryTip": "Thuringia: vote from 16.",
+    "legalBasis": []
+  },
+  "455": {
+    "summary": "The state flag of Thuringia is white and red.",
+    "whyCorrect": "The state flag is white at the top and red at the bottom.",
+    "background": "Besides the federal flag, every federal state has its own flag. The state flag is white at the top and red at the bottom. The state flag flies, for example, at the state parliament, ministries and on public buildings on holidays. The coat of arms of Thuringia shows a red and white striped lion on a blue background surrounded by eight white stars.",
+    "otherOptions": "The other colour combinations do not belong to Thuringia: blue, white and red is the flag of Schleswig-Holstein; green, white and red is the flag of North Rhine-Westphalia; black and gold is the flag of Baden-Württemberg.",
+    "memoryTip": "Thuringia: white and red.",
+    "legalBasis": []
+  },
+  "456": {
+    "summary": "In Thuringia you can get information on political topics from the state centre for political education.",
+    "whyCorrect": "The state centre for political education in Thuringia provides non-partisan information on politics, usually free of charge.",
+    "background": "Every federal state has an institution for political education, and there is also the Federal Agency for Civic Education (bpb). They offer free books and brochures, seminars, talks, excursions and online resources – for example on democracy, elections, history or integration. Important: these institutions are non-partisan, so they do not promote any party. One well-known example is the bpb’s Wahl-O-Mat before elections.",
+    "otherOptions": "Churches are religious communities, not neutral sources of political information. The public order office deals with public order, and the consumer advice centre advises on consumer issues such as contracts or complaints.",
+    "memoryTip": "Political education, non-partisan: state centre (and federal agency).",
+    "legalBasis": []
+  },
+  "457": {
+    "summary": "The state capital of Thuringia is Erfurt.",
+    "whyCorrect": "The state parliament and state government of Thuringia are based in Erfurt.",
+    "background": "Every territorial state has a capital where parliament, government and ministries are based. Erfurt is Thuringia’s largest city and has a well-preserved medieval old town. Jena is a university town, Eisenach is known for the Wartburg, and the painter Otto Dix was born in Gera. Thuringia lies in the middle of Germany and is called “the green heart of Germany” because of its many forests.",
+    "otherOptions": "Eisenach, Gera, Jena are also towns in Thuringia, but not the state capital.",
+    "memoryTip": "Thuringia → Erfurt.",
+    "legalBasis": []
+  },
+  "458": {
+    "summary": "Thuringia is number 2 on the map.",
+    "whyCorrect": "Thuringia lies in the middle of Germany and is called “the green heart of Germany” because of its many forests.",
+    "background": "Thuringia lies in the middle of Germany and is called “the green heart of Germany” because of its many forests. Germany has 16 federal states: 13 territorial states and the three city states of Berlin, Hamburg and Bremen. It helps to memorise the location of your own state and its neighbours on a map.",
+    "otherOptions": "The other numbers show other federal states. Pay attention to the location: north or south, east or west, and which countries or seas Thuringia borders.",
+    "memoryTip": "Remember the location: Thuringia lies in the middle of Germany and is called “the green heart of Germany” because of its many forests.",
+    "legalBasis": []
+  },
+  "459": {
+    "summary": "The head of government in Thuringia is called Minister-President (Ministerpräsident/in).",
+    "whyCorrect": "He or she is elected by the state parliament and heads the government of Thuringia.",
+    "background": "In all 13 territorial states, the head of government is called Minister-President. After the state election, he or she is elected by the state parliament, sets the guidelines of state policy and appoints the state ministers. He or she also represents the state externally and sits in the Bundesrat. Thuringia lies in the middle of Germany and is called “the green heart of Germany” because of its many forests.",
+    "otherOptions": "“First Minister” is the title in Scotland or Wales, “Prime Minister” in the UK, for example. Mayors head towns and municipalities – only in the city states are they also head of the state government.",
+    "memoryTip": "Territorial state = Minister-President.",
+    "legalBasis": []
+  },
+  "460": {
+    "summary": "Thuringia has no foreign minister.",
+    "whyCorrect": "Under the Basic Law, foreign policy is a federal task.",
+    "background": "The government of Thuringia consists of the Minister-President and several state ministers, for example for the interior, justice, finance, education, economic affairs or social affairs. Relations with other countries, however, are the responsibility of the federation (Articles 32 and 73 of the Basic Law) – through the Federal Foreign Office in Berlin. The states may only cooperate with other countries to a limited extent, for example with partner regions.",
+    "otherOptions": "Thuringia does have ministers of justice, finance and the interior: they are responsible for courts and prisons, the state budget, and the police and administration.",
+    "memoryTip": "Foreign policy = federation. No state has a foreign minister.",
+    "legalBasis": [
+      {
+        "label": "Art. 32 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_32.html"
+      },
+      {
+        "label": "Art. 73 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_73.html"
+      }
+    ]
   }
 }

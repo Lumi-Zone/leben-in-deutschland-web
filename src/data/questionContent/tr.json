@@ -3293,5 +3293,1509 @@
     "otherOptions": "İspanya, Portekiz ve Türkiye birkaç yıl sonra geldi: İspanya 1960’ta, Türkiye 1961’de, Portekiz 1964’te.",
     "memoryTip": "1955’te önce İtalya – sonra İspanya, Yunanistan, Türkiye …",
     "legalBasis": []
+  },
+  "301": {
+    "summary": "Brandenburg eyaletinin arması 1 numaralı görseldir.",
+    "whyCorrect": "Arma şunu gösterir: gümüş (beyaz) zemin üzerinde kırmızı bir kartal – Brandenburg kartalı.",
+    "background": "Her eyaletin kendi arması vardır. Brandenburg eyaletinin arması şunu gösterir: gümüş (beyaz) zemin üzerinde kırmızı bir kartal – Brandenburg kartalı. Arma örneğin resmî binalarda, eyalet belgelerinde ve eyalet bayrağında görülür. Brandenburg Almanya’nın kuzeydoğusundadır ve başkent Berlin’i tamamen çevreler. Doğuda Polonya ile sınır komşusudur. Brandenburg eyaletinde yaklaşık 2,6 milyon insan yaşar.",
+    "otherOptions": "Diğer görseller Brandenburg eyaletine ait olmayan başka armaları gösterir. Sınav için kendi eyaletinin armasına dikkatle bakmaya değer – bu soru her eyalette çıkar.",
+    "memoryTip": "Brandenburg arması: gümüş (beyaz) zemin üzerinde kırmızı bir kartal.",
+    "legalBasis": []
+  },
+  "302": {
+    "summary": "Prignitz, Brandenburg eyaletinde bir ilçedir (Landkreis).",
+    "whyCorrect": "Prignitz, Brandenburg’un kuzeybatısında, Berlin ile Hamburg arasındadır; ilçe merkezi Perleberg’dir.",
+    "background": "Alan eyaletleri ilçelere (Landkreis) ve ilçeye bağlı olmayan şehirlere ayrılır. İlçeler, ilçe yolları, çöp toplama veya yabancılar dairesi gibi tek tek belediyeler için çok büyük olan görevleri üstlenir. Başlarında bir ilçe yöneticisi (Landrat) bulunur. Prignitz, Brandenburg’un kuzeybatısında, Berlin ile Hamburg arasındadır; ilçe merkezi Perleberg’dir.",
+    "otherOptions": "Diğer adlar başka eyaletlere aittir: Rhein-Sieg-Kreis Kuzey Ren-Vestfalya eyaletindedir; Vogtlandkreis Saksonya eyaletindedir; Amberg-Sulzbach Bavyera eyaletindedir.",
+    "memoryTip": "Prignitz → Brandenburg.",
+    "legalBasis": []
+  },
+  "303": {
+    "summary": "Brandenburg eyaletinin parlamentosu – eyalet meclisi (Landtag) – 5 yıllığına seçilir.",
+    "whyCorrect": "eyalet meclisi (Landtag) için yasama dönemi 5 yıldır.",
+    "background": "Her eyaletin doğrudan seçilen kendi parlamentosu vardır (Anayasa madde 28). Brandenburg eyaletinde buna eyalet meclisi (Landtag) denir. Örneğin okullar ve polisle ilgili eyalet yasalarını kabul eder, eyalet bütçesini onaylar ve eyalet hükümetinin başkanını seçer. Neredeyse bütün eyaletlerde yasama dönemi beş yıldır – sadece Bremen dört yılda bir seçim yapar.",
+    "otherOptions": "3, 4, 6 yıl yanlıştır. Karşılaştırma için: Federal Meclis dört yılda bir, Avrupa Parlamentosu beş yılda bir seçilir.",
+    "memoryTip": "Brandenburg: eyalet meclisi (Landtag) 5 yılda bir.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 28",
+        "url": "https://www.gesetze-im-internet.de/gg/art_28.html"
+      }
+    ]
+  },
+  "304": {
+    "summary": "Brandenburg eyaletinde yerel seçimlerde 16 yaşından itibaren oy kullanılabilir.",
+    "whyCorrect": "Oy verme yaşı Brandenburg eyaletinin yasasında düzenlenir ve 16’dır.",
+    "background": "Brandenburg eyaletinde 16 yaşındaki gençler bile yerel seçimlerde oy kullanabilir. Birçok eyalet, gençler şehirlerinde veya beldelerinde olanlara daha erken söz sahibi olabilsin diye yerel seçimlerde oy verme yaşını 16’ya indirdi. Federal seçimde ise oy verme yaşı hâlâ 18’dir. Yerel seçimlerde orada yaşayan diğer AB ülkelerinin vatandaşları da oy kullanabilir.",
+    "otherOptions": "14, 18, 20 Brandenburg eyaleti için yanlıştır. Oy verme yaşı eyaletten eyalete farklıdır – kendi eyaletin için rakamı aklında tut.",
+    "memoryTip": "Brandenburg: 16 yaşından itibaren oy.",
+    "legalBasis": []
+  },
+  "305": {
+    "summary": "Brandenburg eyaletinin bayrağı kırmızı-beyaz renklerindedir.",
+    "whyCorrect": "Eyalet bayrağının üstü kırmızı, altı beyazdır; ortasında kırmızı kartallı eyalet arması bulunur.",
+    "background": "Federal bayrağın yanında her eyaletin kendi bayrağı vardır. Eyalet bayrağının üstü kırmızı, altı beyazdır; ortasında kırmızı kartallı eyalet arması bulunur. Eyalet bayrağı örneğin eyalet meclisinde, bakanlıklarda ve bayramlarda resmî binalarda dalgalanır. Brandenburg eyaletinin arması şunu gösterir: gümüş (beyaz) zemin üzerinde kırmızı bir kartal – Brandenburg kartalı.",
+    "otherOptions": "Diğer renk kombinasyonları Brandenburg eyaletine ait değildir: mavi-beyaz-kırmızı Schleswig-Holstein eyaletinin bayrağıdır; yeşil-beyaz-kırmızı Kuzey Ren-Vestfalya eyaletinin bayrağıdır; siyah-sarı hiçbir eyaletin bayrağı değildir.",
+    "memoryTip": "Brandenburg: kırmızı-beyaz.",
+    "legalBasis": []
+  },
+  "306": {
+    "summary": "Brandenburg eyaletinde siyasi konularda eyalet siyasi eğitim merkezinden (Landeszentrale für politische Bildung) bilgi alınabilir.",
+    "whyCorrect": "Brandenburg eyaletindeki siyasi eğitim merkezi siyaset hakkında tarafsız ve çoğu zaman ücretsiz bilgi verir.",
+    "background": "Her eyaletin bir siyasi eğitim kurumu vardır; buna ek olarak Federal Siyasi Eğitim Merkezi (bpb) bulunur. Ücretsiz kitaplar ve broşürler, seminerler, konferanslar, geziler ve çevrimiçi içerikler sunarlar – örneğin demokrasi, seçimler, tarih veya uyum hakkında. Önemli: Bu kurumlar tarafsızdır, yani hiçbir partinin reklamını yapmaz. Seçimlerden önce bpb’nin Wahl-O-Mat’ı iyi bilinen bir örnektir.",
+    "otherOptions": "Kiliseler dinî topluluklardır, siyaset için tarafsız bilgi kaynakları değildir. Ordnungsamt kamu düzeniyle ilgilenir, tüketici merkezi (Verbraucherzentrale) ise sözleşmeler veya şikâyetler gibi tüketici konularında danışmanlık yapar.",
+    "memoryTip": "Tarafsız siyasi eğitim: eyalet merkezi (ve federal merkez).",
+    "legalBasis": []
+  },
+  "307": {
+    "summary": "Brandenburg eyaletinin başkenti: Potsdam.",
+    "whyCorrect": "Brandenburg eyaletinin meclisi ve hükümeti Potsdam şehrindedir.",
+    "background": "Her alan eyaletinin parlamentonun, hükümetin ve bakanlıkların bulunduğu bir başkenti vardır. Potsdam Berlin’in hemen yanındadır ve özellikle UNESCO Dünya Mirası olan Sanssouci Sarayı ve parklarıyla tanınır. “Brandenburg an der Havel” ayrı bir şehirdir – eyalet adını ondan alır, ama başkent değildir. Brandenburg Almanya’nın kuzeydoğusundadır ve başkent Berlin’i tamamen çevreler. Doğuda Polonya ile sınır komşusudur.",
+    "otherOptions": "Cottbus, Brandenburg, Frankfurt/Oder de Brandenburg eyaletindeki şehirlerdir, ama eyalet başkenti değildir.",
+    "memoryTip": "Brandenburg → Potsdam.",
+    "legalBasis": []
+  },
+  "308": {
+    "summary": "Brandenburg haritada 4 numaradır.",
+    "whyCorrect": "Brandenburg Almanya’nın kuzeydoğusundadır ve başkent Berlin’i tamamen çevreler. Doğuda Polonya ile sınır komşusudur.",
+    "background": "Brandenburg Almanya’nın kuzeydoğusundadır ve başkent Berlin’i tamamen çevreler. Doğuda Polonya ile sınır komşusudur. Almanya’nın 16 eyaleti vardır: 13 alan eyaleti ve Berlin, Hamburg ve Bremen olmak üzere üç şehir eyaleti. Kendi eyaletinin ve komşularının haritadaki yerini aklında tutmak faydalıdır.",
+    "otherOptions": "Diğer numaralar başka eyaletleri gösterir. Konuma dikkat et: kuzey mi güney mi, doğu mu batı mı ve Brandenburg eyaletinin hangi ülkelere veya denizlere komşu olduğu.",
+    "memoryTip": "Konumu hatırla: Brandenburg Almanya’nın kuzeydoğusundadır ve başkent Berlin’i tamamen çevreler.",
+    "legalBasis": []
+  },
+  "309": {
+    "summary": "Brandenburg eyaletinin hükümet başkanına Ministerpräsident (eyalet başbakanı) denir.",
+    "whyCorrect": "Eyalet meclisi tarafından seçilir ve Brandenburg eyalet hükümetini yönetir.",
+    "background": "13 alan eyaletinin hepsinde hükümet başkanına Ministerpräsident denir. Eyalet seçiminden sonra eyalet meclisi tarafından seçilir, eyalet politikasının ana hatlarını belirler ve eyalet bakanlarını atar. Ayrıca eyaleti dışarıda temsil eder ve Federal Konsey’de yer alır. Brandenburg Almanya’nın kuzeydoğusundadır ve başkent Berlin’i tamamen çevreler. Doğuda Polonya ile sınır komşusudur.",
+    "otherOptions": "“Erster Minister” İskoçya veya Galler’deki, “Premierminister” ise örneğin Birleşik Krallık’taki unvandır. Belediye başkanları şehirleri ve beldeleri yönetir – sadece şehir eyaletlerinde aynı zamanda eyalet hükümetinin başkanıdırlar.",
+    "memoryTip": "Alan eyaleti = Ministerpräsident.",
+    "legalBasis": []
+  },
+  "310": {
+    "summary": "Brandenburg eyaletinin dışişleri bakanı yoktur.",
+    "whyCorrect": "Anayasa’ya göre dış politika federal yönetimin görevidir.",
+    "background": "Brandenburg eyalet hükümeti eyalet başbakanından ve örneğin içişleri, adalet, maliye, eğitim (Kultus), ekonomi veya sosyal işler için birkaç eyalet bakanından oluşur. Ancak başka devletlerle ilişkilerden – Berlin’deki Dışişleri Bakanlığı ile – federal yönetim sorumludur (Anayasa madde 32 ve 73). Eyaletler yurt dışıyla ancak sınırlı ölçüde, örneğin ortak bölgelerle iş birliği yapabilir.",
+    "otherOptions": "Brandenburg eyaletinde adalet, maliye ve içişleri bakanları vardır: Mahkemelerden ve cezaevlerinden, eyalet bütçesinden ve polis ile idareden sorumludurlar.",
+    "memoryTip": "Dış politika = federal yönetim. Hiçbir eyaletin dışişleri bakanı yoktur.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 32",
+        "url": "https://www.gesetze-im-internet.de/gg/art_32.html"
+      },
+      {
+        "label": "Anayasa (GG) md. 73",
+        "url": "https://www.gesetze-im-internet.de/gg/art_73.html"
+      }
+    ]
+  },
+  "311": {
+    "summary": "Berlin eyaletinin arması 4 numaralı görseldir.",
+    "whyCorrect": "Arma şunu gösterir: beyaz zemin üzerinde kırmızı dilli ve kırmızı pençeli siyah bir ayı.",
+    "background": "Her eyaletin kendi arması vardır. Berlin eyaletinin arması şunu gösterir: beyaz zemin üzerinde kırmızı dilli ve kırmızı pençeli siyah bir ayı. Arma örneğin resmî binalarda, eyalet belgelerinde ve eyalet bayrağında görülür. Berlin, Almanya’nın doğusunda bir şehir eyaletidir ve Brandenburg eyaletinin ortasında yer alır. Berlin eyaletinde yaklaşık 3,9 milyon insan yaşar.",
+    "otherOptions": "Diğer görseller Berlin eyaletine ait olmayan başka armaları gösterir. Sınav için kendi eyaletinin armasına dikkatle bakmaya değer – bu soru her eyalette çıkar.",
+    "memoryTip": "Berlin arması: beyaz zemin üzerinde kırmızı dilli ve kırmızı pençeli siyah bir ayı.",
+    "legalBasis": []
+  },
+  "312": {
+    "summary": "Pankow, Berlin eyaletinde bir ilçedir (Bezirk).",
+    "whyCorrect": "Pankow, Berlin’in on iki ilçesinden (Bezirk) biridir ve şehrin kuzeyindedir; 400.000’i aşkın nüfusuyla en kalabalık ilçedir.",
+    "background": "Berlin bir şehir eyaletidir ve her birinin kendi ilçe meclisi ve ilçe belediye başkanı olan on iki ilçeye ayrılır. Pankow, Berlin’in on iki ilçesinden (Bezirk) biridir ve şehrin kuzeyindedir; 400.000’i aşkın nüfusuyla en kalabalık ilçedir.",
+    "otherOptions": "Diğer adlar başka eyaletlere aittir: Altona Hamburg eyaletindedir; Prignitz Brandenburg eyaletindedir; Mecklenburgische Seenplatte Mecklenburg-Ön Pomeranya eyaletindedir.",
+    "memoryTip": "Pankow → Berlin.",
+    "legalBasis": []
+  },
+  "313": {
+    "summary": "Berlin eyaletinin parlamentosu – Temsilciler Meclisi (Abgeordnetenhaus) – 5 yıllığına seçilir.",
+    "whyCorrect": "Temsilciler Meclisi (Abgeordnetenhaus) için yasama dönemi 5 yıldır.",
+    "background": "Her eyaletin doğrudan seçilen kendi parlamentosu vardır (Anayasa madde 28). Berlin eyaletinde buna Temsilciler Meclisi (Abgeordnetenhaus) denir. Örneğin okullar ve polisle ilgili eyalet yasalarını kabul eder, eyalet bütçesini onaylar ve eyalet hükümetinin başkanını seçer. Neredeyse bütün eyaletlerde yasama dönemi beş yıldır – sadece Bremen dört yılda bir seçim yapar.",
+    "otherOptions": "3, 4, 6 yıl yanlıştır. Karşılaştırma için: Federal Meclis dört yılda bir, Avrupa Parlamentosu beş yılda bir seçilir.",
+    "memoryTip": "Berlin: Temsilciler Meclisi (Abgeordnetenhaus) 5 yılda bir.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 28",
+        "url": "https://www.gesetze-im-internet.de/gg/art_28.html"
+      }
+    ]
+  },
+  "314": {
+    "summary": "Berlin eyaletinde ilçe meclisi seçimlerinde 16 yaşından itibaren oy kullanılabilir.",
+    "whyCorrect": "Oy verme yaşı Berlin eyaletinin yasasında düzenlenir ve 16’dır.",
+    "background": "Berlin eyaletinde 16 yaşındaki gençler bile ilçe meclisi seçimlerinde oy kullanabilir. Birçok eyalet, gençler şehirlerinde veya beldelerinde olanlara daha erken söz sahibi olabilsin diye yerel seçimlerde oy verme yaşını 16’ya indirdi. Federal seçimde ise oy verme yaşı hâlâ 18’dir. Yerel seçimlerde orada yaşayan diğer AB ülkelerinin vatandaşları da oy kullanabilir.",
+    "otherOptions": "14, 18, 20 Berlin eyaleti için yanlıştır. Oy verme yaşı eyaletten eyalete farklıdır – kendi eyaletin için rakamı aklında tut.",
+    "memoryTip": "Berlin: 16 yaşından itibaren oy.",
+    "legalBasis": []
+  },
+  "315": {
+    "summary": "Berlin eyaletinin bayrağı beyaz-kırmızı renklerindedir.",
+    "whyCorrect": "Eyalet bayrağı beyazdır, üstünde ve altında birer kırmızı şerit vardır; ortasında Berlin ayısı bulunur.",
+    "background": "Federal bayrağın yanında her eyaletin kendi bayrağı vardır. Eyalet bayrağı beyazdır, üstünde ve altında birer kırmızı şerit vardır; ortasında Berlin ayısı bulunur. Eyalet bayrağı örneğin eyalet meclisinde, bakanlıklarda ve bayramlarda resmî binalarda dalgalanır. Berlin eyaletinin arması şunu gösterir: beyaz zemin üzerinde kırmızı dilli ve kırmızı pençeli siyah bir ayı.",
+    "otherOptions": "Diğer renk kombinasyonları Berlin eyaletine ait değildir: mavi-beyaz-kırmızı Schleswig-Holstein eyaletinin bayrağıdır; yeşil-beyaz-kırmızı Kuzey Ren-Vestfalya eyaletinin bayrağıdır; siyah-altın Baden-Württemberg eyaletinin bayrağıdır.",
+    "memoryTip": "Berlin: beyaz-kırmızı.",
+    "legalBasis": []
+  },
+  "316": {
+    "summary": "Berlin eyaletinde siyasi konularda eyalet siyasi eğitim merkezinden (Landeszentrale für politische Bildung) bilgi alınabilir.",
+    "whyCorrect": "Berlin eyaletindeki siyasi eğitim merkezi siyaset hakkında tarafsız ve çoğu zaman ücretsiz bilgi verir.",
+    "background": "Her eyaletin bir siyasi eğitim kurumu vardır; buna ek olarak Federal Siyasi Eğitim Merkezi (bpb) bulunur. Ücretsiz kitaplar ve broşürler, seminerler, konferanslar, geziler ve çevrimiçi içerikler sunarlar – örneğin demokrasi, seçimler, tarih veya uyum hakkında. Önemli: Bu kurumlar tarafsızdır, yani hiçbir partinin reklamını yapmaz. Seçimlerden önce bpb’nin Wahl-O-Mat’ı iyi bilinen bir örnektir.",
+    "otherOptions": "Kiliseler dinî topluluklardır, siyaset için tarafsız bilgi kaynakları değildir. Ordnungsamt kamu düzeniyle ilgilenir, tüketici merkezi (Verbraucherzentrale) ise sözleşmeler veya şikâyetler gibi tüketici konularında danışmanlık yapar.",
+    "memoryTip": "Tarafsız siyasi eğitim: eyalet merkezi (ve federal merkez).",
+    "legalBasis": []
+  },
+  "317": {
+    "summary": "Berlin bir şehir eyaletidir (Stadtstaat).",
+    "whyCorrect": "Berlin hem bir şehir hem de kendi başına bir eyalettir.",
+    "background": "Almanya’nın üç şehir eyaleti vardır: Berlin, Hamburg ve Bremen. Şehir eyaletinde şehir ve eyalet aynıdır – bu yüzden orada ilçe (Landkreis) yoktur ve eyalet hükümeti aynı zamanda şehir yönetimidir. Hükümete Senato, bakanlara senatör denir. Berlin, Almanya’nın doğusunda bir şehir eyaletidir ve Brandenburg eyaletinin ortasında yer alır.",
+    "otherOptions": "Saarland, Brandenburg ve Hessen birçok şehir ve belediyesi olan alan eyaletleridir.",
+    "memoryTip": "Üç şehir eyaleti: Berlin, Hamburg, Bremen.",
+    "legalBasis": []
+  },
+  "318": {
+    "summary": "Berlin haritada 4 numaradır.",
+    "whyCorrect": "Berlin, Almanya’nın doğusunda bir şehir eyaletidir ve Brandenburg eyaletinin ortasında yer alır.",
+    "background": "Berlin, Almanya’nın doğusunda bir şehir eyaletidir ve Brandenburg eyaletinin ortasında yer alır. Almanya’nın 16 eyaleti vardır: 13 alan eyaleti ve Berlin, Hamburg ve Bremen olmak üzere üç şehir eyaleti. Kendi eyaletinin ve komşularının haritadaki yerini aklında tutmak faydalıdır.",
+    "otherOptions": "Diğer numaralar başka eyaletleri gösterir. Konuma dikkat et: kuzey mi güney mi, doğu mu batı mı ve Berlin eyaletinin hangi ülkelere veya denizlere komşu olduğu.",
+    "memoryTip": "Konumu hatırla: Berlin, Almanya’nın doğusunda bir şehir eyaletidir ve Brandenburg eyaletinin ortasında yer alır.",
+    "legalBasis": []
+  },
+  "319": {
+    "summary": "Berlin eyaletinin hükümet başkanına Regierender Bürgermeister / Regierende Bürgermeisterin denir.",
+    "whyCorrect": "Şehir eyaletlerinde eyalet hükümetine Senato denir; başında özel unvanlı bir belediye başkanı bulunur.",
+    "background": "Şehir eyaletinde şehir ve eyalet bir olduğu için belediye başkanı aynı zamanda eyalet hükümetinin başkanıdır. Yönetici Belediye Başkanı (Regierender Bürgermeister) Berlin Senatosu’nu yönetir ve eyaleti, örneğin Federal Konsey’de temsil eder. Eyalet parlamentosu (Temsilciler Meclisi (Abgeordnetenhaus)) tarafından seçilir. Üç şehir eyaletinde unvanlar farklıdır: Berlin’de Regierender Bürgermeister, Hamburg’da Erster Bürgermeister, Bremen’de Präsident des Senats.",
+    "otherOptions": "Diğer unvanlar Berlin için uymaz: Ministerpräsident alan eyaletlerindeki unvandır; diğer unvanlar ise başka şehir eyaletlerine aittir veya bu şekilde yoktur.",
+    "memoryTip": "Berlin: Regierender Bürgermeister; Hamburg: Erster Bürgermeister; Bremen: Präsident des Senats.",
+    "legalBasis": []
+  },
+  "320": {
+    "summary": "Berlin eyaletinde dış ilişkiler senatörü yoktur.",
+    "whyCorrect": "Dış politika federal yönetimin görevidir; eyaletlerin kendi dışişleri bakanları yoktur.",
+    "background": "Şehir eyaletlerinde eyalet hükümetinin üyelerine senatör denir. Diğer eyaletlerdeki bakanlar gibi içişleri, adalet veya maliye gibi alanları yönetirler. Ancak Anayasa’ya göre başka devletlerle ilişkilerden federal yönetim, yani Berlin’deki Dışişleri Bakanlığı sorumludur (madde 32 ve 73). Eyaletler yurt dışıyla ancak sınırlı ölçüde, örneğin ortaklıklar yoluyla iş birliği yapabilir.",
+    "otherOptions": "Berlin eyaletinde maliye, içişleri ve adalet senatörleri vardır – eyalet bütçesinden, polisten ve mahkemelerden sorumludurlar.",
+    "memoryTip": "Dış politika = federal yönetim. Hiçbir eyaletin dışişleri bakanı yoktur.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 32",
+        "url": "https://www.gesetze-im-internet.de/gg/art_32.html"
+      },
+      {
+        "label": "Anayasa (GG) md. 73",
+        "url": "https://www.gesetze-im-internet.de/gg/art_73.html"
+      }
+    ]
+  },
+  "321": {
+    "summary": "Baden-Württemberg eyaletinin arması 1 numaralı görseldir.",
+    "whyCorrect": "Arma şunu gösterir: altın zemin üzerinde üç siyah aslan – Staufen hanedanının aslanları.",
+    "background": "Her eyaletin kendi arması vardır. Baden-Württemberg eyaletinin arması şunu gösterir: altın zemin üzerinde üç siyah aslan – Staufen hanedanının aslanları. Arma örneğin resmî binalarda, eyalet belgelerinde ve eyalet bayrağında görülür. Baden-Württemberg Almanya’nın güneybatısındadır. Fransa ve İsviçre ile sınır komşusudur; güneyde Konstanz Gölü bulunur. Baden-Württemberg eyaletinde yaklaşık 11,2 milyon insan yaşar.",
+    "otherOptions": "Diğer görseller Baden-Württemberg eyaletine ait olmayan başka armaları gösterir. Sınav için kendi eyaletinin armasına dikkatle bakmaya değer – bu soru her eyalette çıkar.",
+    "memoryTip": "Baden-Württemberg arması: altın zemin üzerinde üç siyah aslan.",
+    "legalBasis": []
+  },
+  "322": {
+    "summary": "Neckar-Odenwald-Kreis, Baden-Württemberg eyaletinde bir ilçedir (Landkreis).",
+    "whyCorrect": "Neckar-Odenwald ilçesi Baden-Württemberg’in kuzeyindedir; ilçe merkezi Mosbach’tır.",
+    "background": "Alan eyaletleri ilçelere (Landkreis) ve ilçeye bağlı olmayan şehirlere ayrılır. İlçeler, ilçe yolları, çöp toplama veya yabancılar dairesi gibi tek tek belediyeler için çok büyük olan görevleri üstlenir. Başlarında bir ilçe yöneticisi (Landrat) bulunur. Neckar-Odenwald ilçesi Baden-Württemberg’in kuzeyindedir; ilçe merkezi Mosbach’tır.",
+    "otherOptions": "Diğer adlar başka eyaletlere aittir: Mecklenburgische Seenplatte Mecklenburg-Ön Pomeranya eyaletindedir; Nordfriesland Schleswig-Holstein eyaletindedir; Altötting Bavyera eyaletindedir.",
+    "memoryTip": "Neckar-Odenwald-Kreis → Baden-Württemberg.",
+    "legalBasis": []
+  },
+  "323": {
+    "summary": "Baden-Württemberg eyaletinin parlamentosu – eyalet meclisi (Landtag) – 5 yıllığına seçilir.",
+    "whyCorrect": "eyalet meclisi (Landtag) için yasama dönemi 5 yıldır.",
+    "background": "Her eyaletin doğrudan seçilen kendi parlamentosu vardır (Anayasa madde 28). Baden-Württemberg eyaletinde buna eyalet meclisi (Landtag) denir. Örneğin okullar ve polisle ilgili eyalet yasalarını kabul eder, eyalet bütçesini onaylar ve eyalet hükümetinin başkanını seçer. Neredeyse bütün eyaletlerde yasama dönemi beş yıldır – sadece Bremen dört yılda bir seçim yapar.",
+    "otherOptions": "3, 4, 6 yıl yanlıştır. Karşılaştırma için: Federal Meclis dört yılda bir, Avrupa Parlamentosu beş yılda bir seçilir.",
+    "memoryTip": "Baden-Württemberg: eyalet meclisi (Landtag) 5 yılda bir.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 28",
+        "url": "https://www.gesetze-im-internet.de/gg/art_28.html"
+      }
+    ]
+  },
+  "324": {
+    "summary": "Baden-Württemberg eyaletinde yerel seçimlerde 16 yaşından itibaren oy kullanılabilir.",
+    "whyCorrect": "Oy verme yaşı Baden-Württemberg eyaletinin yasasında düzenlenir ve 16’dır.",
+    "background": "Baden-Württemberg eyaletinde 16 yaşındaki gençler bile yerel seçimlerde oy kullanabilir. Birçok eyalet, gençler şehirlerinde veya beldelerinde olanlara daha erken söz sahibi olabilsin diye yerel seçimlerde oy verme yaşını 16’ya indirdi. Federal seçimde ise oy verme yaşı hâlâ 18’dir. Yerel seçimlerde orada yaşayan diğer AB ülkelerinin vatandaşları da oy kullanabilir.",
+    "otherOptions": "14, 18, 20 Baden-Württemberg eyaleti için yanlıştır. Oy verme yaşı eyaletten eyalete farklıdır – kendi eyaletin için rakamı aklında tut.",
+    "memoryTip": "Baden-Württemberg: 16 yaşından itibaren oy.",
+    "legalBasis": []
+  },
+  "325": {
+    "summary": "Baden-Württemberg eyaletinin bayrağı siyah-altın renklerindedir.",
+    "whyCorrect": "Eyalet bayrağının üstü siyah, altı altın (sarı) rengidir.",
+    "background": "Federal bayrağın yanında her eyaletin kendi bayrağı vardır. Eyalet bayrağının üstü siyah, altı altın (sarı) rengidir. Eyalet bayrağı örneğin eyalet meclisinde, bakanlıklarda ve bayramlarda resmî binalarda dalgalanır. Baden-Württemberg eyaletinin arması şunu gösterir: altın zemin üzerinde üç siyah aslan – Staufen hanedanının aslanları.",
+    "otherOptions": "Diğer renk kombinasyonları Baden-Württemberg eyaletine ait değildir: mavi-beyaz-kırmızı Schleswig-Holstein eyaletinin bayrağıdır; beyaz-mavi Bavyera eyaletinin bayrağıdır; yeşil-beyaz-kırmızı Kuzey Ren-Vestfalya eyaletinin bayrağıdır.",
+    "memoryTip": "Baden-Württemberg: siyah-altın.",
+    "legalBasis": []
+  },
+  "326": {
+    "summary": "Baden-Württemberg eyaletinde siyasi konularda eyalet siyasi eğitim merkezinden (Landeszentrale für politische Bildung) bilgi alınabilir.",
+    "whyCorrect": "Baden-Württemberg eyaletindeki siyasi eğitim merkezi siyaset hakkında tarafsız ve çoğu zaman ücretsiz bilgi verir.",
+    "background": "Her eyaletin bir siyasi eğitim kurumu vardır; buna ek olarak Federal Siyasi Eğitim Merkezi (bpb) bulunur. Ücretsiz kitaplar ve broşürler, seminerler, konferanslar, geziler ve çevrimiçi içerikler sunarlar – örneğin demokrasi, seçimler, tarih veya uyum hakkında. Önemli: Bu kurumlar tarafsızdır, yani hiçbir partinin reklamını yapmaz. Seçimlerden önce bpb’nin Wahl-O-Mat’ı iyi bilinen bir örnektir.",
+    "otherOptions": "Kiliseler dinî topluluklardır, siyaset için tarafsız bilgi kaynakları değildir. Ordnungsamt kamu düzeniyle ilgilenir, tüketici merkezi (Verbraucherzentrale) ise sözleşmeler veya şikâyetler gibi tüketici konularında danışmanlık yapar.",
+    "memoryTip": "Tarafsız siyasi eğitim: eyalet merkezi (ve federal merkez).",
+    "legalBasis": []
+  },
+  "327": {
+    "summary": "Baden-Württemberg eyaletinin başkenti: Stuttgart.",
+    "whyCorrect": "Baden-Württemberg eyaletinin meclisi ve hükümeti Stuttgart şehrindedir.",
+    "background": "Her alan eyaletinin parlamentonun, hükümetin ve bakanlıkların bulunduğu bir başkenti vardır. Stuttgart eyaletin en büyük şehridir ve otomobil sanayisinin merkezidir. Karlsruhe Federal Anayasa Mahkemesi’nin merkezidir, Heidelberg ise Almanya’nın en eski üniversitesine sahiptir. Baden-Württemberg Almanya’nın güneybatısındadır. Fransa ve İsviçre ile sınır komşusudur; güneyde Konstanz Gölü bulunur.",
+    "otherOptions": "Heidelberg, Karlsruhe, Mannheim de Baden-Württemberg eyaletindeki şehirlerdir, ama eyalet başkenti değildir.",
+    "memoryTip": "Baden-Württemberg → Stuttgart.",
+    "legalBasis": []
+  },
+  "328": {
+    "summary": "Baden-Württemberg haritada 2 numaradır.",
+    "whyCorrect": "Baden-Württemberg Almanya’nın güneybatısındadır. Fransa ve İsviçre ile sınır komşusudur; güneyde Konstanz Gölü bulunur.",
+    "background": "Baden-Württemberg Almanya’nın güneybatısındadır. Fransa ve İsviçre ile sınır komşusudur; güneyde Konstanz Gölü bulunur. Almanya’nın 16 eyaleti vardır: 13 alan eyaleti ve Berlin, Hamburg ve Bremen olmak üzere üç şehir eyaleti. Kendi eyaletinin ve komşularının haritadaki yerini aklında tutmak faydalıdır.",
+    "otherOptions": "Diğer numaralar başka eyaletleri gösterir. Konuma dikkat et: kuzey mi güney mi, doğu mu batı mı ve Baden-Württemberg eyaletinin hangi ülkelere veya denizlere komşu olduğu.",
+    "memoryTip": "Konumu hatırla: Baden-Württemberg Almanya’nın güneybatısındadır.",
+    "legalBasis": []
+  },
+  "329": {
+    "summary": "Baden-Württemberg eyaletinin hükümet başkanına Ministerpräsident (eyalet başbakanı) denir.",
+    "whyCorrect": "Eyalet meclisi tarafından seçilir ve Baden-Württemberg eyalet hükümetini yönetir.",
+    "background": "13 alan eyaletinin hepsinde hükümet başkanına Ministerpräsident denir. Eyalet seçiminden sonra eyalet meclisi tarafından seçilir, eyalet politikasının ana hatlarını belirler ve eyalet bakanlarını atar. Ayrıca eyaleti dışarıda temsil eder ve Federal Konsey’de yer alır. Baden-Württemberg Almanya’nın güneybatısındadır. Fransa ve İsviçre ile sınır komşusudur; güneyde Konstanz Gölü bulunur.",
+    "otherOptions": "“Erster Minister” İskoçya veya Galler’deki, “Premierminister” ise örneğin Birleşik Krallık’taki unvandır. Belediye başkanları şehirleri ve beldeleri yönetir – sadece şehir eyaletlerinde aynı zamanda eyalet hükümetinin başkanıdırlar.",
+    "memoryTip": "Alan eyaleti = Ministerpräsident.",
+    "legalBasis": []
+  },
+  "330": {
+    "summary": "Baden-Württemberg eyaletinin dışişleri bakanı yoktur.",
+    "whyCorrect": "Anayasa’ya göre dış politika federal yönetimin görevidir.",
+    "background": "Baden-Württemberg eyalet hükümeti eyalet başbakanından ve örneğin içişleri, adalet, maliye, eğitim (Kultus), ekonomi veya sosyal işler için birkaç eyalet bakanından oluşur. Ancak başka devletlerle ilişkilerden – Berlin’deki Dışişleri Bakanlığı ile – federal yönetim sorumludur (Anayasa madde 32 ve 73). Eyaletler yurt dışıyla ancak sınırlı ölçüde, örneğin ortak bölgelerle iş birliği yapabilir.",
+    "otherOptions": "Baden-Württemberg eyaletinde adalet, maliye ve içişleri bakanları vardır: Mahkemelerden ve cezaevlerinden, eyalet bütçesinden ve polis ile idareden sorumludurlar.",
+    "memoryTip": "Dış politika = federal yönetim. Hiçbir eyaletin dışişleri bakanı yoktur.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 32",
+        "url": "https://www.gesetze-im-internet.de/gg/art_32.html"
+      },
+      {
+        "label": "Anayasa (GG) md. 73",
+        "url": "https://www.gesetze-im-internet.de/gg/art_73.html"
+      }
+    ]
+  },
+  "331": {
+    "summary": "Bavyera eyaletinin arması 2 numaralı görseldir.",
+    "whyCorrect": "Arma şunu gösterir: beyaz-mavi baklava desenleri; büyük devlet armasında aslanlar ve bir taçla birlikte.",
+    "background": "Her eyaletin kendi arması vardır. Bavyera eyaletinin arması şunu gösterir: beyaz-mavi baklava desenleri; büyük devlet armasında aslanlar ve bir taçla birlikte. Arma örneğin resmî binalarda, eyalet belgelerinde ve eyalet bayrağında görülür. Bavyera Almanya’nın güneydoğusundadır ve yüzölçümü bakımından en büyük eyalettir. Avusturya ve Çekya ile sınır komşusudur; güneyde Alpler bulunur. Bavyera eyaletinde yaklaşık 13,4 milyon insan yaşar.",
+    "otherOptions": "Diğer görseller Bavyera eyaletine ait olmayan başka armaları gösterir. Sınav için kendi eyaletinin armasına dikkatle bakmaya değer – bu soru her eyalette çıkar.",
+    "memoryTip": "Bavyera arması: beyaz-mavi baklava desenleri; büyük devlet armasında aslanlar ve bir taçla birlikte.",
+    "legalBasis": []
+  },
+  "332": {
+    "summary": "Altötting, Bavyera eyaletinde bir ilçedir (Landkreis).",
+    "whyCorrect": "Altötting, Yukarı Bavyera’da Avusturya sınırına yakındır ve bilinen bir hac yeridir.",
+    "background": "Alan eyaletleri ilçelere (Landkreis) ve ilçeye bağlı olmayan şehirlere ayrılır. İlçeler, ilçe yolları, çöp toplama veya yabancılar dairesi gibi tek tek belediyeler için çok büyük olan görevleri üstlenir. Başlarında bir ilçe yöneticisi (Landrat) bulunur. Altötting, Yukarı Bavyera’da Avusturya sınırına yakındır ve bilinen bir hac yeridir.",
+    "otherOptions": "Diğer adlar başka eyaletlere aittir: Prignitz Brandenburg eyaletindedir; Rhein-Sieg-Kreis Kuzey Ren-Vestfalya eyaletindedir; Nordfriesland Schleswig-Holstein eyaletindedir.",
+    "memoryTip": "Altötting → Bavyera.",
+    "legalBasis": []
+  },
+  "333": {
+    "summary": "Bavyera eyaletinin parlamentosu – eyalet meclisi (Landtag) – 5 yıllığına seçilir.",
+    "whyCorrect": "eyalet meclisi (Landtag) için yasama dönemi 5 yıldır.",
+    "background": "Her eyaletin doğrudan seçilen kendi parlamentosu vardır (Anayasa madde 28). Bavyera eyaletinde buna eyalet meclisi (Landtag) denir. Örneğin okullar ve polisle ilgili eyalet yasalarını kabul eder, eyalet bütçesini onaylar ve eyalet hükümetinin başkanını seçer. Neredeyse bütün eyaletlerde yasama dönemi beş yıldır – sadece Bremen dört yılda bir seçim yapar.",
+    "otherOptions": "3, 4, 6 yıl yanlıştır. Karşılaştırma için: Federal Meclis dört yılda bir, Avrupa Parlamentosu beş yılda bir seçilir.",
+    "memoryTip": "Bavyera: eyalet meclisi (Landtag) 5 yılda bir.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 28",
+        "url": "https://www.gesetze-im-internet.de/gg/art_28.html"
+      }
+    ]
+  },
+  "334": {
+    "summary": "Bavyera eyaletinde yerel seçimlerde 18 yaşından itibaren oy kullanılabilir.",
+    "whyCorrect": "Oy verme yaşı Bavyera eyaletinin yasasında düzenlenir ve 18’dir.",
+    "background": "Bavyera eyaletinde yerel seçimlerde – federal seçimde olduğu gibi – 18 yaşından itibaren oy kullanılabilir. Diğer birçok eyalette ise yerel seçimlerde oy verme yaşı zaten 16’dır. Yerel seçimlerde örneğin belediye meclisi, ilçe meclisi ve çoğu zaman belediye başkanı seçilir. Orada yaşayan diğer AB ülkelerinin vatandaşları da oy kullanabilir.",
+    "otherOptions": "14, 16, 20 Bavyera eyaleti için yanlıştır. Oy verme yaşı eyaletten eyalete farklıdır – kendi eyaletin için rakamı aklında tut.",
+    "memoryTip": "Bavyera: 18 yaşından itibaren oy.",
+    "legalBasis": []
+  },
+  "335": {
+    "summary": "Bavyera eyaletinin bayrağı beyaz-mavi renklerindedir.",
+    "whyCorrect": "Eyalet bayrağı beyaz-mavidir – ya şeritli ya da bilinen baklava desenli.",
+    "background": "Federal bayrağın yanında her eyaletin kendi bayrağı vardır. Eyalet bayrağı beyaz-mavidir – ya şeritli ya da bilinen baklava desenli. Eyalet bayrağı örneğin eyalet meclisinde, bakanlıklarda ve bayramlarda resmî binalarda dalgalanır. Bavyera eyaletinin arması şunu gösterir: beyaz-mavi baklava desenleri; büyük devlet armasında aslanlar ve bir taçla birlikte.",
+    "otherOptions": "Diğer renk kombinasyonları Bavyera eyaletine ait değildir: mavi-beyaz-kırmızı Schleswig-Holstein eyaletinin bayrağıdır; yeşil-beyaz-kırmızı Kuzey Ren-Vestfalya eyaletinin bayrağıdır; siyah-sarı hiçbir eyaletin bayrağı değildir.",
+    "memoryTip": "Bavyera: beyaz-mavi.",
+    "legalBasis": []
+  },
+  "336": {
+    "summary": "Bavyera eyaletinde siyasi konularda eyalet siyasi eğitim merkezinden (Landeszentrale für politische Bildung) bilgi alınabilir.",
+    "whyCorrect": "Bavyera eyaletindeki siyasi eğitim merkezi siyaset hakkında tarafsız ve çoğu zaman ücretsiz bilgi verir.",
+    "background": "Her eyaletin bir siyasi eğitim kurumu vardır; buna ek olarak Federal Siyasi Eğitim Merkezi (bpb) bulunur. Ücretsiz kitaplar ve broşürler, seminerler, konferanslar, geziler ve çevrimiçi içerikler sunarlar – örneğin demokrasi, seçimler, tarih veya uyum hakkında. Önemli: Bu kurumlar tarafsızdır, yani hiçbir partinin reklamını yapmaz. Seçimlerden önce bpb’nin Wahl-O-Mat’ı iyi bilinen bir örnektir.",
+    "otherOptions": "Kiliseler dinî topluluklardır, siyaset için tarafsız bilgi kaynakları değildir. Ordnungsamt kamu düzeniyle ilgilenir, tüketici merkezi (Verbraucherzentrale) ise sözleşmeler veya şikâyetler gibi tüketici konularında danışmanlık yapar.",
+    "memoryTip": "Tarafsız siyasi eğitim: eyalet merkezi (ve federal merkez).",
+    "legalBasis": []
+  },
+  "337": {
+    "summary": "Bavyera eyaletinin başkenti: München.",
+    "whyCorrect": "Bavyera eyaletinin meclisi ve hükümeti München şehrindedir.",
+    "background": "Her alan eyaletinin parlamentonun, hükümetin ve bakanlıkların bulunduğu bir başkenti vardır. Münih Bavyera’nın en büyük şehridir ve Oktoberfest ile tanınır. Nürnberg ikinci büyük şehirdir; Regensburg ve Ingolstadt diğer önemli şehirlerdir. Bavyera Almanya’nın güneydoğusundadır ve yüzölçümü bakımından en büyük eyalettir. Avusturya ve Çekya ile sınır komşusudur; güneyde Alpler bulunur.",
+    "otherOptions": "Ingolstadt, Regensburg, Nürnberg de Bavyera eyaletindeki şehirlerdir, ama eyalet başkenti değildir.",
+    "memoryTip": "Bavyera → München.",
+    "legalBasis": []
+  },
+  "338": {
+    "summary": "Bavyera haritada 4 numaradır.",
+    "whyCorrect": "Bavyera Almanya’nın güneydoğusundadır ve yüzölçümü bakımından en büyük eyalettir. Avusturya ve Çekya ile sınır komşusudur; güneyde Alpler bulunur.",
+    "background": "Bavyera Almanya’nın güneydoğusundadır ve yüzölçümü bakımından en büyük eyalettir. Avusturya ve Çekya ile sınır komşusudur; güneyde Alpler bulunur. Almanya’nın 16 eyaleti vardır: 13 alan eyaleti ve Berlin, Hamburg ve Bremen olmak üzere üç şehir eyaleti. Kendi eyaletinin ve komşularının haritadaki yerini aklında tutmak faydalıdır.",
+    "otherOptions": "Diğer numaralar başka eyaletleri gösterir. Konuma dikkat et: kuzey mi güney mi, doğu mu batı mı ve Bavyera eyaletinin hangi ülkelere veya denizlere komşu olduğu.",
+    "memoryTip": "Konumu hatırla: Bavyera Almanya’nın güneydoğusundadır ve yüzölçümü bakımından en büyük eyalettir.",
+    "legalBasis": []
+  },
+  "339": {
+    "summary": "Bavyera eyaletinin hükümet başkanına Ministerpräsident (eyalet başbakanı) denir.",
+    "whyCorrect": "Eyalet meclisi tarafından seçilir ve Bavyera eyalet hükümetini yönetir.",
+    "background": "13 alan eyaletinin hepsinde hükümet başkanına Ministerpräsident denir. Eyalet seçiminden sonra eyalet meclisi tarafından seçilir, eyalet politikasının ana hatlarını belirler ve eyalet bakanlarını atar. Ayrıca eyaleti dışarıda temsil eder ve Federal Konsey’de yer alır. Bavyera Almanya’nın güneydoğusundadır ve yüzölçümü bakımından en büyük eyalettir. Avusturya ve Çekya ile sınır komşusudur; güneyde Alpler bulunur.",
+    "otherOptions": "“Erster Minister” İskoçya veya Galler’deki, “Premierminister” ise örneğin Birleşik Krallık’taki unvandır. Belediye başkanları şehirleri ve beldeleri yönetir – sadece şehir eyaletlerinde aynı zamanda eyalet hükümetinin başkanıdırlar.",
+    "memoryTip": "Alan eyaleti = Ministerpräsident.",
+    "legalBasis": []
+  },
+  "340": {
+    "summary": "Bavyera eyaletinin dışişleri bakanı yoktur.",
+    "whyCorrect": "Anayasa’ya göre dış politika federal yönetimin görevidir.",
+    "background": "Bavyera eyalet hükümeti eyalet başbakanından ve örneğin içişleri, adalet, maliye, eğitim (Kultus), ekonomi veya sosyal işler için birkaç eyalet bakanından oluşur. Ancak başka devletlerle ilişkilerden – Berlin’deki Dışişleri Bakanlığı ile – federal yönetim sorumludur (Anayasa madde 32 ve 73). Eyaletler yurt dışıyla ancak sınırlı ölçüde, örneğin ortak bölgelerle iş birliği yapabilir.",
+    "otherOptions": "Bavyera eyaletinde adalet, maliye ve içişleri bakanları vardır: Mahkemelerden ve cezaevlerinden, eyalet bütçesinden ve polis ile idareden sorumludurlar.",
+    "memoryTip": "Dış politika = federal yönetim. Hiçbir eyaletin dışişleri bakanı yoktur.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 32",
+        "url": "https://www.gesetze-im-internet.de/gg/art_32.html"
+      },
+      {
+        "label": "Anayasa (GG) md. 73",
+        "url": "https://www.gesetze-im-internet.de/gg/art_73.html"
+      }
+    ]
+  },
+  "341": {
+    "summary": "Bremen eyaletinin arması 3 numaralı görseldir.",
+    "whyCorrect": "Arma şunu gösterir: kırmızı zemin üzerinde gümüş bir anahtar – Bremen anahtarı.",
+    "background": "Her eyaletin kendi arması vardır. Bremen eyaletinin arması şunu gösterir: kırmızı zemin üzerinde gümüş bir anahtar – Bremen anahtarı. Arma örneğin resmî binalarda, eyalet belgelerinde ve eyalet bayrağında görülür. Bremen en küçük eyalettir. Her ikisi de Aşağı Saksonya ile çevrili olan iki şehirden, Bremen ve Bremerhaven’den oluşur. Bremen eyaletinde yaklaşık 0,7 milyon insan yaşar.",
+    "otherOptions": "Diğer görseller Bremen eyaletine ait olmayan başka armaları gösterir. Sınav için kendi eyaletinin armasına dikkatle bakmaya değer – bu soru her eyalette çıkar.",
+    "memoryTip": "Bremen arması: kırmızı zemin üzerinde gümüş bir anahtar.",
+    "legalBasis": []
+  },
+  "342": {
+    "summary": "Hemelingen, Bremen eyaletinde bir semttir.",
+    "whyCorrect": "Hemelingen, Bremen şehrinin doğusunda bir semttir.",
+    "background": "Bremen eyaleti Bremen ve Bremerhaven şehirlerinden oluşur; Bremen şehri semtlere ve mahallelere ayrılır. Hemelingen, Bremen şehrinin doğusunda bir semttir.",
+    "otherOptions": "Diğer adlar başka eyaletlere aittir: Altona Hamburg eyaletindedir; Pankow Berlin eyaletindedir; Babelsberg, Brandenburg’daki Potsdam’ın bir semtidir.",
+    "memoryTip": "Hemelingen → Bremen.",
+    "legalBasis": []
+  },
+  "343": {
+    "summary": "Bremen eyaletinin parlamentosu – Bürgerschaft (eyalet meclisi) – 4 yıllığına seçilir.",
+    "whyCorrect": "Bürgerschaft (eyalet meclisi) için yasama dönemi 4 yıldır.",
+    "background": "Her eyaletin doğrudan seçilen kendi parlamentosu vardır (Anayasa madde 28). Bremen eyaletinde buna Bürgerschaft (eyalet meclisi) denir. Örneğin okullar ve polisle ilgili eyalet yasalarını kabul eder, eyalet bütçesini onaylar ve eyalet hükümetinin başkanını seçer. Neredeyse bütün eyaletlerde yasama dönemi beş yıldır; dört yılla Bremen istisnadır.",
+    "otherOptions": "3, 5, 6 yıl yanlıştır. Karşılaştırma için: Federal Meclis dört yılda bir, Avrupa Parlamentosu beş yılda bir seçilir.",
+    "memoryTip": "Bremen: Bürgerschaft (eyalet meclisi) 4 yılda bir.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 28",
+        "url": "https://www.gesetze-im-internet.de/gg/art_28.html"
+      }
+    ]
+  },
+  "344": {
+    "summary": "Bremen eyaletinde Bürgerschaft (eyalet meclisi) seçiminde 16 yaşından itibaren oy kullanılabilir.",
+    "whyCorrect": "Oy verme yaşı Bremen eyaletinin yasasında düzenlenir ve 16’dır.",
+    "background": "Bremen eyaletinde 16 yaşındaki gençler bile Bürgerschaft (eyalet meclisi) seçiminde oy kullanabilir. Birçok eyalet, gençler şehirlerinde veya beldelerinde olanlara daha erken söz sahibi olabilsin diye yerel seçimlerde oy verme yaşını 16’ya indirdi. Federal seçimde ise oy verme yaşı hâlâ 18’dir. Yerel seçimlerde orada yaşayan diğer AB ülkelerinin vatandaşları da oy kullanabilir.",
+    "otherOptions": "14, 18, 20 Bremen eyaleti için yanlıştır. Oy verme yaşı eyaletten eyalete farklıdır – kendi eyaletin için rakamı aklında tut.",
+    "memoryTip": "Bremen: 16 yaşından itibaren oy.",
+    "legalBasis": []
+  },
+  "345": {
+    "summary": "Bremen eyaletinin bayrağı kırmızı-beyaz renklerindedir.",
+    "whyCorrect": "Eyalet bayrağı kırmızı-beyaz çizgilidir, kenarı çoğu zaman damalıdır; “domuz pastırması bayrağı” (Speckflagge) da denir.",
+    "background": "Federal bayrağın yanında her eyaletin kendi bayrağı vardır. Eyalet bayrağı kırmızı-beyaz çizgilidir, kenarı çoğu zaman damalıdır; “domuz pastırması bayrağı” (Speckflagge) da denir. Eyalet bayrağı örneğin eyalet meclisinde, bakanlıklarda ve bayramlarda resmî binalarda dalgalanır. Bremen eyaletinin arması şunu gösterir: kırmızı zemin üzerinde gümüş bir anahtar – Bremen anahtarı.",
+    "otherOptions": "Diğer renk kombinasyonları Bremen eyaletine ait değildir: mavi-beyaz-kırmızı Schleswig-Holstein eyaletinin bayrağıdır; yeşil-beyaz-kırmızı Kuzey Ren-Vestfalya eyaletinin bayrağıdır; siyah-altın Baden-Württemberg eyaletinin bayrağıdır.",
+    "memoryTip": "Bremen: kırmızı-beyaz.",
+    "legalBasis": []
+  },
+  "346": {
+    "summary": "Bremen eyaletinde siyasi konularda eyalet siyasi eğitim merkezinden (Landeszentrale für politische Bildung) bilgi alınabilir.",
+    "whyCorrect": "Bremen eyaletindeki siyasi eğitim merkezi siyaset hakkında tarafsız ve çoğu zaman ücretsiz bilgi verir.",
+    "background": "Her eyaletin bir siyasi eğitim kurumu vardır; buna ek olarak Federal Siyasi Eğitim Merkezi (bpb) bulunur. Ücretsiz kitaplar ve broşürler, seminerler, konferanslar, geziler ve çevrimiçi içerikler sunarlar – örneğin demokrasi, seçimler, tarih veya uyum hakkında. Önemli: Bu kurumlar tarafsızdır, yani hiçbir partinin reklamını yapmaz. Seçimlerden önce bpb’nin Wahl-O-Mat’ı iyi bilinen bir örnektir.",
+    "otherOptions": "Kiliseler dinî topluluklardır, siyaset için tarafsız bilgi kaynakları değildir. Ordnungsamt kamu düzeniyle ilgilenir, tüketici merkezi (Verbraucherzentrale) ise sözleşmeler veya şikâyetler gibi tüketici konularında danışmanlık yapar.",
+    "memoryTip": "Tarafsız siyasi eğitim: eyalet merkezi (ve federal merkez).",
+    "legalBasis": []
+  },
+  "347": {
+    "summary": "Bremen bir şehir eyaletidir (Stadtstaat).",
+    "whyCorrect": "Bremen hem bir şehir hem de kendi başına bir eyalettir.",
+    "background": "Almanya’nın üç şehir eyaleti vardır: Berlin, Hamburg ve Bremen. Şehir eyaletinde şehir ve eyalet aynıdır – bu yüzden orada ilçe (Landkreis) yoktur ve eyalet hükümeti aynı zamanda şehir yönetimidir. Hükümete Senato, bakanlara senatör denir. Bremen en küçük eyalettir. Her ikisi de Aşağı Saksonya ile çevrili olan iki şehirden, Bremen ve Bremerhaven’den oluşur.",
+    "otherOptions": "Münih, Frankfurt ve Erfurt şehirdir, ama kendi başlarına eyalet değildir: Münih Bavyera’nın, Erfurt Türingen’in başkentidir, Frankfurt ise Hessen’dedir.",
+    "memoryTip": "Üç şehir eyaleti: Berlin, Hamburg, Bremen.",
+    "legalBasis": []
+  },
+  "348": {
+    "summary": "Bremen haritada 1 numaradır.",
+    "whyCorrect": "Bremen en küçük eyalettir. Her ikisi de Aşağı Saksonya ile çevrili olan iki şehirden, Bremen ve Bremerhaven’den oluşur.",
+    "background": "Bremen en küçük eyalettir. Her ikisi de Aşağı Saksonya ile çevrili olan iki şehirden, Bremen ve Bremerhaven’den oluşur. Almanya’nın 16 eyaleti vardır: 13 alan eyaleti ve Berlin, Hamburg ve Bremen olmak üzere üç şehir eyaleti. Kendi eyaletinin ve komşularının haritadaki yerini aklında tutmak faydalıdır.",
+    "otherOptions": "Diğer numaralar başka eyaletleri gösterir. Konuma dikkat et: kuzey mi güney mi, doğu mu batı mı ve Bremen eyaletinin hangi ülkelere veya denizlere komşu olduğu.",
+    "memoryTip": "Konumu hatırla: Bremen en küçük eyalettir.",
+    "legalBasis": []
+  },
+  "349": {
+    "summary": "Bremen eyaletinin hükümet başkanına Präsident / Präsidentin des Senats denir.",
+    "whyCorrect": "Şehir eyaletlerinde eyalet hükümetine Senato denir; başında özel unvanlı bir belediye başkanı bulunur.",
+    "background": "Şehir eyaletinde şehir ve eyalet bir olduğu için belediye başkanı aynı zamanda eyalet hükümetinin başkanıdır. Senato Başkanı (Präsident des Senats) aynı zamanda Bremen şehrinin belediye başkanıdır; eyalet hükümetini yönetir ve eyaleti, örneğin Federal Konsey’de temsil eder. Eyalet parlamentosu (Bürgerschaft (eyalet meclisi)) tarafından seçilir. Üç şehir eyaletinde unvanlar farklıdır: Berlin’de Regierender Bürgermeister, Hamburg’da Erster Bürgermeister, Bremen’de Präsident des Senats.",
+    "otherOptions": "Diğer unvanlar Bremen için uymaz: Ministerpräsident alan eyaletlerindeki unvandır; diğer unvanlar ise başka şehir eyaletlerine aittir veya bu şekilde yoktur.",
+    "memoryTip": "Berlin: Regierender Bürgermeister; Hamburg: Erster Bürgermeister; Bremen: Präsident des Senats.",
+    "legalBasis": []
+  },
+  "350": {
+    "summary": "Bremen eyaletinde dış ilişkiler senatörü yoktur.",
+    "whyCorrect": "Dış politika federal yönetimin görevidir; eyaletlerin kendi dışişleri bakanları yoktur.",
+    "background": "Şehir eyaletlerinde eyalet hükümetinin üyelerine senatör denir. Diğer eyaletlerdeki bakanlar gibi içişleri, adalet veya maliye gibi alanları yönetirler. Ancak Anayasa’ya göre başka devletlerle ilişkilerden federal yönetim, yani Berlin’deki Dışişleri Bakanlığı sorumludur (madde 32 ve 73). Eyaletler yurt dışıyla ancak sınırlı ölçüde, örneğin ortaklıklar yoluyla iş birliği yapabilir.",
+    "otherOptions": "Bremen eyaletinde maliye, içişleri ve adalet senatörleri vardır – eyalet bütçesinden, polisten ve mahkemelerden sorumludurlar.",
+    "memoryTip": "Dış politika = federal yönetim. Hiçbir eyaletin dışişleri bakanı yoktur.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 32",
+        "url": "https://www.gesetze-im-internet.de/gg/art_32.html"
+      },
+      {
+        "label": "Anayasa (GG) md. 73",
+        "url": "https://www.gesetze-im-internet.de/gg/art_73.html"
+      }
+    ]
+  },
+  "351": {
+    "summary": "Hessen eyaletinin arması 1 numaralı görseldir.",
+    "whyCorrect": "Arma şunu gösterir: mavi zemin üzerinde kırmızı-beyaz çizgili bir aslan – “renkli aslan”.",
+    "background": "Her eyaletin kendi arması vardır. Hessen eyaletinin arması şunu gösterir: mavi zemin üzerinde kırmızı-beyaz çizgili bir aslan – “renkli aslan”. Arma örneğin resmî binalarda, eyalet belgelerinde ve eyalet bayrağında görülür. Hessen Almanya’nın ortasındadır. Avrupa’nın en önemli finans merkezlerinden biri olan Frankfurt am Main buradadır. Hessen eyaletinde yaklaşık 6,4 milyon insan yaşar.",
+    "otherOptions": "Diğer görseller Hessen eyaletine ait olmayan başka armaları gösterir. Sınav için kendi eyaletinin armasına dikkatle bakmaya değer – bu soru her eyalette çıkar.",
+    "memoryTip": "Hessen arması: mavi zemin üzerinde kırmızı-beyaz çizgili bir aslan.",
+    "legalBasis": []
+  },
+  "352": {
+    "summary": "Main-Taunus-Kreis, Hessen eyaletinde bir ilçedir (Landkreis).",
+    "whyCorrect": "Main-Taunus ilçesi Frankfurt am Main’in batısındadır; ilçe merkezi Hofheim am Taunus’tur.",
+    "background": "Alan eyaletleri ilçelere (Landkreis) ve ilçeye bağlı olmayan şehirlere ayrılır. İlçeler, ilçe yolları, çöp toplama veya yabancılar dairesi gibi tek tek belediyeler için çok büyük olan görevleri üstlenir. Başlarında bir ilçe yöneticisi (Landrat) bulunur. Main-Taunus ilçesi Frankfurt am Main’in batısındadır; ilçe merkezi Hofheim am Taunus’tur.",
+    "otherOptions": "Diğer adlar başka eyaletlere aittir: Ammerland Aşağı Saksonya eyaletindedir; Altötting Bavyera eyaletindedir; Prignitz Brandenburg eyaletindedir.",
+    "memoryTip": "Main-Taunus-Kreis → Hessen.",
+    "legalBasis": []
+  },
+  "353": {
+    "summary": "Hessen eyaletinin parlamentosu – eyalet meclisi (Landtag) – 5 yıllığına seçilir.",
+    "whyCorrect": "eyalet meclisi (Landtag) için yasama dönemi 5 yıldır.",
+    "background": "Her eyaletin doğrudan seçilen kendi parlamentosu vardır (Anayasa madde 28). Hessen eyaletinde buna eyalet meclisi (Landtag) denir. Örneğin okullar ve polisle ilgili eyalet yasalarını kabul eder, eyalet bütçesini onaylar ve eyalet hükümetinin başkanını seçer. Neredeyse bütün eyaletlerde yasama dönemi beş yıldır – sadece Bremen dört yılda bir seçim yapar.",
+    "otherOptions": "3, 4, 6 yıl yanlıştır. Karşılaştırma için: Federal Meclis dört yılda bir, Avrupa Parlamentosu beş yılda bir seçilir.",
+    "memoryTip": "Hessen: eyalet meclisi (Landtag) 5 yılda bir.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 28",
+        "url": "https://www.gesetze-im-internet.de/gg/art_28.html"
+      }
+    ]
+  },
+  "354": {
+    "summary": "Hessen eyaletinde yerel seçimlerde 18 yaşından itibaren oy kullanılabilir.",
+    "whyCorrect": "Oy verme yaşı Hessen eyaletinin yasasında düzenlenir ve 18’dir.",
+    "background": "Hessen eyaletinde yerel seçimlerde – federal seçimde olduğu gibi – 18 yaşından itibaren oy kullanılabilir. Diğer birçok eyalette ise yerel seçimlerde oy verme yaşı zaten 16’dır. Yerel seçimlerde örneğin belediye meclisi, ilçe meclisi ve çoğu zaman belediye başkanı seçilir. Orada yaşayan diğer AB ülkelerinin vatandaşları da oy kullanabilir.",
+    "otherOptions": "14, 16, 20 Hessen eyaleti için yanlıştır. Oy verme yaşı eyaletten eyalete farklıdır – kendi eyaletin için rakamı aklında tut.",
+    "memoryTip": "Hessen: 18 yaşından itibaren oy.",
+    "legalBasis": []
+  },
+  "355": {
+    "summary": "Hessen eyaletinin bayrağı kırmızı-beyaz renklerindedir.",
+    "whyCorrect": "Eyalet bayrağının üstü kırmızı, altı beyazdır.",
+    "background": "Federal bayrağın yanında her eyaletin kendi bayrağı vardır. Eyalet bayrağının üstü kırmızı, altı beyazdır. Eyalet bayrağı örneğin eyalet meclisinde, bakanlıklarda ve bayramlarda resmî binalarda dalgalanır. Hessen eyaletinin arması şunu gösterir: mavi zemin üzerinde kırmızı-beyaz çizgili bir aslan – “renkli aslan”.",
+    "otherOptions": "Diğer renk kombinasyonları Hessen eyaletine ait değildir: mavi-beyaz-kırmızı Schleswig-Holstein eyaletinin bayrağıdır; siyah-altın Baden-Württemberg eyaletinin bayrağıdır; yeşil-beyaz-kırmızı Kuzey Ren-Vestfalya eyaletinin bayrağıdır.",
+    "memoryTip": "Hessen: kırmızı-beyaz.",
+    "legalBasis": []
+  },
+  "356": {
+    "summary": "Hessen eyaletinde siyasi konularda eyalet siyasi eğitim merkezinden (Landeszentrale für politische Bildung) bilgi alınabilir.",
+    "whyCorrect": "Hessen eyaletindeki siyasi eğitim merkezi siyaset hakkında tarafsız ve çoğu zaman ücretsiz bilgi verir.",
+    "background": "Her eyaletin bir siyasi eğitim kurumu vardır; buna ek olarak Federal Siyasi Eğitim Merkezi (bpb) bulunur. Ücretsiz kitaplar ve broşürler, seminerler, konferanslar, geziler ve çevrimiçi içerikler sunarlar – örneğin demokrasi, seçimler, tarih veya uyum hakkında. Önemli: Bu kurumlar tarafsızdır, yani hiçbir partinin reklamını yapmaz. Seçimlerden önce bpb’nin Wahl-O-Mat’ı iyi bilinen bir örnektir.",
+    "otherOptions": "Kiliseler dinî topluluklardır, siyaset için tarafsız bilgi kaynakları değildir. Ordnungsamt kamu düzeniyle ilgilenir, tüketici merkezi (Verbraucherzentrale) ise sözleşmeler veya şikâyetler gibi tüketici konularında danışmanlık yapar.",
+    "memoryTip": "Tarafsız siyasi eğitim: eyalet merkezi (ve federal merkez).",
+    "legalBasis": []
+  },
+  "357": {
+    "summary": "Hessen eyaletinin başkenti: Wiesbaden.",
+    "whyCorrect": "Hessen eyaletinin meclisi ve hükümeti Wiesbaden şehrindedir.",
+    "background": "Her alan eyaletinin parlamentonun, hükümetin ve bakanlıkların bulunduğu bir başkenti vardır. Frankfurt am Main Hessen’in en büyük şehri olsa da eyalet başkenti Wiesbaden’dir – sık yapılan bir hata. Darmstadt ve Kassel diğer büyük şehirlerdir. Hessen Almanya’nın ortasındadır. Avrupa’nın en önemli finans merkezlerinden biri olan Frankfurt am Main buradadır.",
+    "otherOptions": "Kassel, Darmstadt, Frankfurt de Hessen eyaletindeki şehirlerdir, ama eyalet başkenti değildir.",
+    "memoryTip": "Hessen → Wiesbaden.",
+    "legalBasis": []
+  },
+  "358": {
+    "summary": "Hessen haritada 3 numaradır.",
+    "whyCorrect": "Hessen Almanya’nın ortasındadır. Avrupa’nın en önemli finans merkezlerinden biri olan Frankfurt am Main buradadır.",
+    "background": "Hessen Almanya’nın ortasındadır. Avrupa’nın en önemli finans merkezlerinden biri olan Frankfurt am Main buradadır. Almanya’nın 16 eyaleti vardır: 13 alan eyaleti ve Berlin, Hamburg ve Bremen olmak üzere üç şehir eyaleti. Kendi eyaletinin ve komşularının haritadaki yerini aklında tutmak faydalıdır.",
+    "otherOptions": "Diğer numaralar başka eyaletleri gösterir. Konuma dikkat et: kuzey mi güney mi, doğu mu batı mı ve Hessen eyaletinin hangi ülkelere veya denizlere komşu olduğu.",
+    "memoryTip": "Konumu hatırla: Hessen Almanya’nın ortasındadır.",
+    "legalBasis": []
+  },
+  "359": {
+    "summary": "Hessen eyaletinin hükümet başkanına Ministerpräsident (eyalet başbakanı) denir.",
+    "whyCorrect": "Eyalet meclisi tarafından seçilir ve Hessen eyalet hükümetini yönetir.",
+    "background": "13 alan eyaletinin hepsinde hükümet başkanına Ministerpräsident denir. Eyalet seçiminden sonra eyalet meclisi tarafından seçilir, eyalet politikasının ana hatlarını belirler ve eyalet bakanlarını atar. Ayrıca eyaleti dışarıda temsil eder ve Federal Konsey’de yer alır. Hessen Almanya’nın ortasındadır. Avrupa’nın en önemli finans merkezlerinden biri olan Frankfurt am Main buradadır.",
+    "otherOptions": "“Erster Minister” İskoçya veya Galler’deki, “Premierminister” ise örneğin Birleşik Krallık’taki unvandır. Belediye başkanları şehirleri ve beldeleri yönetir – sadece şehir eyaletlerinde aynı zamanda eyalet hükümetinin başkanıdırlar.",
+    "memoryTip": "Alan eyaleti = Ministerpräsident.",
+    "legalBasis": []
+  },
+  "360": {
+    "summary": "Hessen eyaletinin dışişleri bakanı yoktur.",
+    "whyCorrect": "Anayasa’ya göre dış politika federal yönetimin görevidir.",
+    "background": "Hessen eyalet hükümeti eyalet başbakanından ve örneğin içişleri, adalet, maliye, eğitim (Kultus), ekonomi veya sosyal işler için birkaç eyalet bakanından oluşur. Ancak başka devletlerle ilişkilerden – Berlin’deki Dışişleri Bakanlığı ile – federal yönetim sorumludur (Anayasa madde 32 ve 73). Eyaletler yurt dışıyla ancak sınırlı ölçüde, örneğin ortak bölgelerle iş birliği yapabilir.",
+    "otherOptions": "Hessen eyaletinde adalet, maliye ve içişleri bakanları vardır: Mahkemelerden ve cezaevlerinden, eyalet bütçesinden ve polis ile idareden sorumludurlar.",
+    "memoryTip": "Dış politika = federal yönetim. Hiçbir eyaletin dışişleri bakanı yoktur.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 32",
+        "url": "https://www.gesetze-im-internet.de/gg/art_32.html"
+      },
+      {
+        "label": "Anayasa (GG) md. 73",
+        "url": "https://www.gesetze-im-internet.de/gg/art_73.html"
+      }
+    ]
+  },
+  "361": {
+    "summary": "Hamburg eyaletinin arması 2 numaralı görseldir.",
+    "whyCorrect": "Arma şunu gösterir: kırmızı zemin üzerinde üç kuleli beyaz bir kale.",
+    "background": "Her eyaletin kendi arması vardır. Hamburg eyaletinin arması şunu gösterir: kırmızı zemin üzerinde üç kuleli beyaz bir kale. Arma örneğin resmî binalarda, eyalet belgelerinde ve eyalet bayrağında görülür. Hamburg, Almanya’nın kuzeyinde, Elbe Nehri kıyısında, Schleswig-Holstein ile Aşağı Saksonya arasında bir şehir eyaletidir. Limanı Avrupa’nın en büyüklerinden biridir. Hamburg eyaletinde yaklaşık 1,9 milyon insan yaşar.",
+    "otherOptions": "Diğer görseller Hamburg eyaletine ait olmayan başka armaları gösterir. Sınav için kendi eyaletinin armasına dikkatle bakmaya değer – bu soru her eyalette çıkar.",
+    "memoryTip": "Hamburg arması: kırmızı zemin üzerinde üç kuleli beyaz bir kale.",
+    "legalBasis": []
+  },
+  "362": {
+    "summary": "Altona, Hamburg eyaletinde bir ilçedir (Bezirk).",
+    "whyCorrect": "Altona, Hamburg’un yedi ilçesinden biridir ve şehrin batısında, Elbe kıyısındadır.",
+    "background": "Hamburg bir şehir eyaletidir ve her birinin kendi ilçe meclisi olan yedi ilçeye ayrılır. Altona, Hamburg’un yedi ilçesinden biridir ve şehrin batısında, Elbe kıyısındadır.",
+    "otherOptions": "Diğer adlar başka eyaletlere aittir: Hemelingen Bremen eyaletindedir; Pankow Berlin eyaletindedir; Mecklenburgische Seenplatte Mecklenburg-Ön Pomeranya eyaletindedir.",
+    "memoryTip": "Altona → Hamburg.",
+    "legalBasis": []
+  },
+  "363": {
+    "summary": "Hamburg eyaletinin parlamentosu – Bürgerschaft (eyalet meclisi) – 5 yıllığına seçilir.",
+    "whyCorrect": "Bürgerschaft (eyalet meclisi) için yasama dönemi 5 yıldır.",
+    "background": "Her eyaletin doğrudan seçilen kendi parlamentosu vardır (Anayasa madde 28). Hamburg eyaletinde buna Bürgerschaft (eyalet meclisi) denir. Örneğin okullar ve polisle ilgili eyalet yasalarını kabul eder, eyalet bütçesini onaylar ve eyalet hükümetinin başkanını seçer. Neredeyse bütün eyaletlerde yasama dönemi beş yıldır – sadece Bremen dört yılda bir seçim yapar.",
+    "otherOptions": "3, 4, 6 yıl yanlıştır. Karşılaştırma için: Federal Meclis dört yılda bir, Avrupa Parlamentosu beş yılda bir seçilir.",
+    "memoryTip": "Hamburg: Bürgerschaft (eyalet meclisi) 5 yılda bir.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 28",
+        "url": "https://www.gesetze-im-internet.de/gg/art_28.html"
+      }
+    ]
+  },
+  "364": {
+    "summary": "Hamburg eyaletinde ilçe meclisi seçimlerinde 16 yaşından itibaren oy kullanılabilir.",
+    "whyCorrect": "Oy verme yaşı Hamburg eyaletinin yasasında düzenlenir ve 16’dır.",
+    "background": "Hamburg eyaletinde 16 yaşındaki gençler bile ilçe meclisi seçimlerinde oy kullanabilir. Birçok eyalet, gençler şehirlerinde veya beldelerinde olanlara daha erken söz sahibi olabilsin diye yerel seçimlerde oy verme yaşını 16’ya indirdi. Federal seçimde ise oy verme yaşı hâlâ 18’dir. Yerel seçimlerde orada yaşayan diğer AB ülkelerinin vatandaşları da oy kullanabilir.",
+    "otherOptions": "14, 18, 20 Hamburg eyaleti için yanlıştır. Oy verme yaşı eyaletten eyalete farklıdır – kendi eyaletin için rakamı aklında tut.",
+    "memoryTip": "Hamburg: 16 yaşından itibaren oy.",
+    "legalBasis": []
+  },
+  "365": {
+    "summary": "Hamburg eyaletinin bayrağı beyaz-kırmızı renklerindedir.",
+    "whyCorrect": "Eyalet bayrağı kırmızıdır, ortasında beyaz bir kale vardır.",
+    "background": "Federal bayrağın yanında her eyaletin kendi bayrağı vardır. Eyalet bayrağı kırmızıdır, ortasında beyaz bir kale vardır. Eyalet bayrağı örneğin eyalet meclisinde, bakanlıklarda ve bayramlarda resmî binalarda dalgalanır. Hamburg eyaletinin arması şunu gösterir: kırmızı zemin üzerinde üç kuleli beyaz bir kale.",
+    "otherOptions": "Diğer renk kombinasyonları Hamburg eyaletine ait değildir: mavi-beyaz-kırmızı Schleswig-Holstein eyaletinin bayrağıdır; yeşil-beyaz-kırmızı Kuzey Ren-Vestfalya eyaletinin bayrağıdır; siyah-sarı hiçbir eyaletin bayrağı değildir.",
+    "memoryTip": "Hamburg: beyaz-kırmızı.",
+    "legalBasis": []
+  },
+  "366": {
+    "summary": "Hamburg eyaletinde siyasi konularda eyalet siyasi eğitim merkezinden (Landeszentrale für politische Bildung) bilgi alınabilir.",
+    "whyCorrect": "Hamburg eyaletindeki siyasi eğitim merkezi siyaset hakkında tarafsız ve çoğu zaman ücretsiz bilgi verir.",
+    "background": "Her eyaletin bir siyasi eğitim kurumu vardır; buna ek olarak Federal Siyasi Eğitim Merkezi (bpb) bulunur. Ücretsiz kitaplar ve broşürler, seminerler, konferanslar, geziler ve çevrimiçi içerikler sunarlar – örneğin demokrasi, seçimler, tarih veya uyum hakkında. Önemli: Bu kurumlar tarafsızdır, yani hiçbir partinin reklamını yapmaz. Seçimlerden önce bpb’nin Wahl-O-Mat’ı iyi bilinen bir örnektir.",
+    "otherOptions": "Kiliseler dinî topluluklardır, siyaset için tarafsız bilgi kaynakları değildir. Ordnungsamt kamu düzeniyle ilgilenir, tüketici merkezi (Verbraucherzentrale) ise sözleşmeler veya şikâyetler gibi tüketici konularında danışmanlık yapar.",
+    "memoryTip": "Tarafsız siyasi eğitim: eyalet merkezi (ve federal merkez).",
+    "legalBasis": []
+  },
+  "367": {
+    "summary": "Hamburg bir şehir eyaletidir (Stadtstaat).",
+    "whyCorrect": "Hamburg hem bir şehir hem de kendi başına bir eyalettir.",
+    "background": "Almanya’nın üç şehir eyaleti vardır: Berlin, Hamburg ve Bremen. Şehir eyaletinde şehir ve eyalet aynıdır – bu yüzden orada ilçe (Landkreis) yoktur ve eyalet hükümeti aynı zamanda şehir yönetimidir. Hükümete Senato, bakanlara senatör denir. Hamburg, Almanya’nın kuzeyinde, Elbe Nehri kıyısında, Schleswig-Holstein ile Aşağı Saksonya arasında bir şehir eyaletidir. Limanı Avrupa’nın en büyüklerinden biridir.",
+    "otherOptions": "Saksonya, Bavyera ve Türingen birçok şehir ve belediyesi olan alan eyaletleridir.",
+    "memoryTip": "Üç şehir eyaleti: Berlin, Hamburg, Bremen.",
+    "legalBasis": []
+  },
+  "368": {
+    "summary": "Hamburg haritada 3 numaradır.",
+    "whyCorrect": "Hamburg, Almanya’nın kuzeyinde, Elbe Nehri kıyısında, Schleswig-Holstein ile Aşağı Saksonya arasında bir şehir eyaletidir. Limanı Avrupa’nın en büyüklerinden biridir.",
+    "background": "Hamburg, Almanya’nın kuzeyinde, Elbe Nehri kıyısında, Schleswig-Holstein ile Aşağı Saksonya arasında bir şehir eyaletidir. Limanı Avrupa’nın en büyüklerinden biridir. Almanya’nın 16 eyaleti vardır: 13 alan eyaleti ve Berlin, Hamburg ve Bremen olmak üzere üç şehir eyaleti. Kendi eyaletinin ve komşularının haritadaki yerini aklında tutmak faydalıdır.",
+    "otherOptions": "Diğer numaralar başka eyaletleri gösterir. Konuma dikkat et: kuzey mi güney mi, doğu mu batı mı ve Hamburg eyaletinin hangi ülkelere veya denizlere komşu olduğu.",
+    "memoryTip": "Konumu hatırla: Hamburg, Almanya’nın kuzeyinde, Elbe Nehri kıyısında, Schleswig-Holstein ile Aşağı Saksonya arasında bir şehir eyaletidir.",
+    "legalBasis": []
+  },
+  "369": {
+    "summary": "Hamburg eyaletinin hükümet başkanına Erster Bürgermeister / Erste Bürgermeisterin denir.",
+    "whyCorrect": "Şehir eyaletlerinde eyalet hükümetine Senato denir; başında özel unvanlı bir belediye başkanı bulunur.",
+    "background": "Şehir eyaletinde şehir ve eyalet bir olduğu için belediye başkanı aynı zamanda eyalet hükümetinin başkanıdır. Birinci Belediye Başkanı (Erster Bürgermeister) Hamburg Senatosu’nu yönetir ve eyaleti, örneğin Federal Konsey’de temsil eder. Eyalet parlamentosu (Bürgerschaft (eyalet meclisi)) tarafından seçilir. Üç şehir eyaletinde unvanlar farklıdır: Berlin’de Regierender Bürgermeister, Hamburg’da Erster Bürgermeister, Bremen’de Präsident des Senats.",
+    "otherOptions": "Diğer unvanlar Hamburg için uymaz: Ministerpräsident alan eyaletlerindeki unvandır; diğer unvanlar ise başka şehir eyaletlerine aittir veya bu şekilde yoktur.",
+    "memoryTip": "Berlin: Regierender Bürgermeister; Hamburg: Erster Bürgermeister; Bremen: Präsident des Senats.",
+    "legalBasis": []
+  },
+  "370": {
+    "summary": "Hamburg eyaletinde dış ilişkiler senatörü yoktur.",
+    "whyCorrect": "Dış politika federal yönetimin görevidir; eyaletlerin kendi dışişleri bakanları yoktur.",
+    "background": "Şehir eyaletlerinde eyalet hükümetinin üyelerine senatör denir. Diğer eyaletlerdeki bakanlar gibi içişleri, adalet veya maliye gibi alanları yönetirler. Ancak Anayasa’ya göre başka devletlerle ilişkilerden federal yönetim, yani Berlin’deki Dışişleri Bakanlığı sorumludur (madde 32 ve 73). Eyaletler yurt dışıyla ancak sınırlı ölçüde, örneğin ortaklıklar yoluyla iş birliği yapabilir.",
+    "otherOptions": "Hamburg eyaletinde maliye, içişleri ve adalet senatörleri vardır – eyalet bütçesinden, polisten ve mahkemelerden sorumludurlar.",
+    "memoryTip": "Dış politika = federal yönetim. Hiçbir eyaletin dışişleri bakanı yoktur.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 32",
+        "url": "https://www.gesetze-im-internet.de/gg/art_32.html"
+      },
+      {
+        "label": "Anayasa (GG) md. 73",
+        "url": "https://www.gesetze-im-internet.de/gg/art_73.html"
+      }
+    ]
+  },
+  "371": {
+    "summary": "Mecklenburg-Ön Pomeranya eyaletinin arması 3 numaralı görseldir.",
+    "whyCorrect": "Arma şunu gösterir: Mecklenburg için boğa başları ve Ön Pomeranya için griffonlar.",
+    "background": "Her eyaletin kendi arması vardır. Mecklenburg-Ön Pomeranya eyaletinin arması şunu gösterir: Mecklenburg için boğa başları ve Ön Pomeranya için griffonlar. Arma örneğin resmî binalarda, eyalet belgelerinde ve eyalet bayrağında görülür. Mecklenburg-Ön Pomeranya Almanya’nın kuzeydoğusunda, Baltık Denizi kıyısındadır ve Polonya ile sınır komşusudur. Rügen ve Usedom adaları bu eyalete aittir. Mecklenburg-Ön Pomeranya eyaletinde yaklaşık 1,6 milyon insan yaşar.",
+    "otherOptions": "Diğer görseller Mecklenburg-Ön Pomeranya eyaletine ait olmayan başka armaları gösterir. Sınav için kendi eyaletinin armasına dikkatle bakmaya değer – bu soru her eyalette çıkar.",
+    "memoryTip": "Mecklenburg-Ön Pomeranya arması: Mecklenburg için boğa başları ve Ön Pomeranya için griffonlar.",
+    "legalBasis": []
+  },
+  "372": {
+    "summary": "Mecklenburgische Seenplatte, Mecklenburg-Ön Pomeranya eyaletinde bir ilçedir (Landkreis).",
+    "whyCorrect": "Mecklenburgische Seenplatte yüzölçümü bakımından Almanya’nın en büyük ilçesidir; tamamen Almanya’da bulunan en büyük göl olan Müritz buradadır.",
+    "background": "Alan eyaletleri ilçelere (Landkreis) ve ilçeye bağlı olmayan şehirlere ayrılır. İlçeler, ilçe yolları, çöp toplama veya yabancılar dairesi gibi tek tek belediyeler için çok büyük olan görevleri üstlenir. Başlarında bir ilçe yöneticisi (Landrat) bulunur. Mecklenburgische Seenplatte yüzölçümü bakımından Almanya’nın en büyük ilçesidir; tamamen Almanya’da bulunan en büyük göl olan Müritz buradadır.",
+    "otherOptions": "Diğer adlar başka eyaletlere aittir: Prignitz Brandenburg eyaletindedir; Vogtlandkreis Saksonya eyaletindedir; Rhein-Sieg-Kreis Kuzey Ren-Vestfalya eyaletindedir.",
+    "memoryTip": "Mecklenburgische Seenplatte → Mecklenburg-Ön Pomeranya.",
+    "legalBasis": []
+  },
+  "373": {
+    "summary": "Mecklenburg-Ön Pomeranya eyaletinin parlamentosu – eyalet meclisi (Landtag) – 5 yıllığına seçilir.",
+    "whyCorrect": "eyalet meclisi (Landtag) için yasama dönemi 5 yıldır.",
+    "background": "Her eyaletin doğrudan seçilen kendi parlamentosu vardır (Anayasa madde 28). Mecklenburg-Ön Pomeranya eyaletinde buna eyalet meclisi (Landtag) denir. Örneğin okullar ve polisle ilgili eyalet yasalarını kabul eder, eyalet bütçesini onaylar ve eyalet hükümetinin başkanını seçer. Neredeyse bütün eyaletlerde yasama dönemi beş yıldır – sadece Bremen dört yılda bir seçim yapar.",
+    "otherOptions": "3, 4, 6 yıl yanlıştır. Karşılaştırma için: Federal Meclis dört yılda bir, Avrupa Parlamentosu beş yılda bir seçilir.",
+    "memoryTip": "Mecklenburg-Ön Pomeranya: eyalet meclisi (Landtag) 5 yılda bir.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 28",
+        "url": "https://www.gesetze-im-internet.de/gg/art_28.html"
+      }
+    ]
+  },
+  "374": {
+    "summary": "Mecklenburg-Ön Pomeranya eyaletinde yerel seçimlerde 16 yaşından itibaren oy kullanılabilir.",
+    "whyCorrect": "Oy verme yaşı Mecklenburg-Ön Pomeranya eyaletinin yasasında düzenlenir ve 16’dır.",
+    "background": "Mecklenburg-Ön Pomeranya eyaletinde 16 yaşındaki gençler bile yerel seçimlerde oy kullanabilir. Birçok eyalet, gençler şehirlerinde veya beldelerinde olanlara daha erken söz sahibi olabilsin diye yerel seçimlerde oy verme yaşını 16’ya indirdi. Federal seçimde ise oy verme yaşı hâlâ 18’dir. Yerel seçimlerde orada yaşayan diğer AB ülkelerinin vatandaşları da oy kullanabilir.",
+    "otherOptions": "14, 18, 20 Mecklenburg-Ön Pomeranya eyaleti için yanlıştır. Oy verme yaşı eyaletten eyalete farklıdır – kendi eyaletin için rakamı aklında tut.",
+    "memoryTip": "Mecklenburg-Ön Pomeranya: 16 yaşından itibaren oy.",
+    "legalBasis": []
+  },
+  "375": {
+    "summary": "Mecklenburg-Ön Pomeranya eyaletinin bayrağı mavi-beyaz-sarı-kırmızı renklerindedir.",
+    "whyCorrect": "Eyalet bayrağı mavi-beyaz-sarı-kırmızıdır; Mecklenburg ve Pomeranya’nın renklerini birleştirir.",
+    "background": "Federal bayrağın yanında her eyaletin kendi bayrağı vardır. Eyalet bayrağı mavi-beyaz-sarı-kırmızıdır; Mecklenburg ve Pomeranya’nın renklerini birleştirir. Eyalet bayrağı örneğin eyalet meclisinde, bakanlıklarda ve bayramlarda resmî binalarda dalgalanır. Mecklenburg-Ön Pomeranya eyaletinin arması şunu gösterir: Mecklenburg için boğa başları ve Ön Pomeranya için griffonlar.",
+    "otherOptions": "Diğer renk kombinasyonları Mecklenburg-Ön Pomeranya eyaletine ait değildir: siyah-kırmızı-altın Aşağı Saksonya, Renanya-Pfalz, Saarland eyaletinin bayrağıdır; yeşil-beyaz-kırmızı Kuzey Ren-Vestfalya eyaletinin bayrağıdır; siyah-sarı hiçbir eyaletin bayrağı değildir.",
+    "memoryTip": "Mecklenburg-Ön Pomeranya: mavi-beyaz-sarı-kırmızı.",
+    "legalBasis": []
+  },
+  "376": {
+    "summary": "Mecklenburg-Ön Pomeranya eyaletinde siyasi konularda eyalet siyasi eğitim merkezinden (Landeszentrale für politische Bildung) bilgi alınabilir.",
+    "whyCorrect": "Mecklenburg-Ön Pomeranya eyaletindeki siyasi eğitim merkezi siyaset hakkında tarafsız ve çoğu zaman ücretsiz bilgi verir.",
+    "background": "Her eyaletin bir siyasi eğitim kurumu vardır; buna ek olarak Federal Siyasi Eğitim Merkezi (bpb) bulunur. Ücretsiz kitaplar ve broşürler, seminerler, konferanslar, geziler ve çevrimiçi içerikler sunarlar – örneğin demokrasi, seçimler, tarih veya uyum hakkında. Önemli: Bu kurumlar tarafsızdır, yani hiçbir partinin reklamını yapmaz. Seçimlerden önce bpb’nin Wahl-O-Mat’ı iyi bilinen bir örnektir.",
+    "otherOptions": "Kiliseler dinî topluluklardır, siyaset için tarafsız bilgi kaynakları değildir. Ordnungsamt kamu düzeniyle ilgilenir, tüketici merkezi (Verbraucherzentrale) ise sözleşmeler veya şikâyetler gibi tüketici konularında danışmanlık yapar.",
+    "memoryTip": "Tarafsız siyasi eğitim: eyalet merkezi (ve federal merkez).",
+    "legalBasis": []
+  },
+  "377": {
+    "summary": "Mecklenburg-Ön Pomeranya eyaletinin başkenti: Schwerin.",
+    "whyCorrect": "Mecklenburg-Ön Pomeranya eyaletinin meclisi ve hükümeti Schwerin şehrindedir.",
+    "background": "Her alan eyaletinin parlamentonun, hükümetin ve bakanlıkların bulunduğu bir başkenti vardır. Schwerin Almanya’nın en küçük eyalet başkentidir; eyalet meclisi bir adadaki sarayda toplanır. Rostock eyaletin en büyük şehridir; Greifswald ve Wismar eski Hansa şehirleridir. Mecklenburg-Ön Pomeranya Almanya’nın kuzeydoğusunda, Baltık Denizi kıyısındadır ve Polonya ile sınır komşusudur. Rügen ve Usedom adaları bu eyalete aittir.",
+    "otherOptions": "Greifswald, Rostock, Wismar de Mecklenburg-Ön Pomeranya eyaletindeki şehirlerdir, ama eyalet başkenti değildir.",
+    "memoryTip": "Mecklenburg-Ön Pomeranya → Schwerin.",
+    "legalBasis": []
+  },
+  "378": {
+    "summary": "Mecklenburg-Ön Pomeranya haritada 3 numaradır.",
+    "whyCorrect": "Mecklenburg-Ön Pomeranya Almanya’nın kuzeydoğusunda, Baltık Denizi kıyısındadır ve Polonya ile sınır komşusudur. Rügen ve Usedom adaları bu eyalete aittir.",
+    "background": "Mecklenburg-Ön Pomeranya Almanya’nın kuzeydoğusunda, Baltık Denizi kıyısındadır ve Polonya ile sınır komşusudur. Rügen ve Usedom adaları bu eyalete aittir. Almanya’nın 16 eyaleti vardır: 13 alan eyaleti ve Berlin, Hamburg ve Bremen olmak üzere üç şehir eyaleti. Kendi eyaletinin ve komşularının haritadaki yerini aklında tutmak faydalıdır.",
+    "otherOptions": "Diğer numaralar başka eyaletleri gösterir. Konuma dikkat et: kuzey mi güney mi, doğu mu batı mı ve Mecklenburg-Ön Pomeranya eyaletinin hangi ülkelere veya denizlere komşu olduğu.",
+    "memoryTip": "Konumu hatırla: Mecklenburg-Ön Pomeranya Almanya’nın kuzeydoğusunda, Baltık Denizi kıyısındadır ve Polonya ile sınır komşusudur.",
+    "legalBasis": []
+  },
+  "379": {
+    "summary": "Mecklenburg-Ön Pomeranya eyaletinin hükümet başkanına Ministerpräsident (eyalet başbakanı) denir.",
+    "whyCorrect": "Eyalet meclisi tarafından seçilir ve Mecklenburg-Ön Pomeranya eyalet hükümetini yönetir.",
+    "background": "13 alan eyaletinin hepsinde hükümet başkanına Ministerpräsident denir. Eyalet seçiminden sonra eyalet meclisi tarafından seçilir, eyalet politikasının ana hatlarını belirler ve eyalet bakanlarını atar. Ayrıca eyaleti dışarıda temsil eder ve Federal Konsey’de yer alır. Mecklenburg-Ön Pomeranya Almanya’nın kuzeydoğusunda, Baltık Denizi kıyısındadır ve Polonya ile sınır komşusudur. Rügen ve Usedom adaları bu eyalete aittir.",
+    "otherOptions": "“Erster Minister” İskoçya veya Galler’deki, “Premierminister” ise örneğin Birleşik Krallık’taki unvandır. Belediye başkanları şehirleri ve beldeleri yönetir – sadece şehir eyaletlerinde aynı zamanda eyalet hükümetinin başkanıdırlar.",
+    "memoryTip": "Alan eyaleti = Ministerpräsident.",
+    "legalBasis": []
+  },
+  "380": {
+    "summary": "Mecklenburg-Ön Pomeranya eyaletinin dışişleri bakanı yoktur.",
+    "whyCorrect": "Anayasa’ya göre dış politika federal yönetimin görevidir.",
+    "background": "Mecklenburg-Ön Pomeranya eyalet hükümeti eyalet başbakanından ve örneğin içişleri, adalet, maliye, eğitim (Kultus), ekonomi veya sosyal işler için birkaç eyalet bakanından oluşur. Ancak başka devletlerle ilişkilerden – Berlin’deki Dışişleri Bakanlığı ile – federal yönetim sorumludur (Anayasa madde 32 ve 73). Eyaletler yurt dışıyla ancak sınırlı ölçüde, örneğin ortak bölgelerle iş birliği yapabilir.",
+    "otherOptions": "Mecklenburg-Ön Pomeranya eyaletinde adalet, maliye ve içişleri bakanları vardır: Mahkemelerden ve cezaevlerinden, eyalet bütçesinden ve polis ile idareden sorumludurlar.",
+    "memoryTip": "Dış politika = federal yönetim. Hiçbir eyaletin dışişleri bakanı yoktur.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 32",
+        "url": "https://www.gesetze-im-internet.de/gg/art_32.html"
+      },
+      {
+        "label": "Anayasa (GG) md. 73",
+        "url": "https://www.gesetze-im-internet.de/gg/art_73.html"
+      }
+    ]
+  },
+  "381": {
+    "summary": "Aşağı Saksonya eyaletinin arması 3 numaralı görseldir.",
+    "whyCorrect": "Arma şunu gösterir: kırmızı zemin üzerinde şaha kalkmış beyaz bir at – Sakson atı.",
+    "background": "Her eyaletin kendi arması vardır. Aşağı Saksonya eyaletinin arması şunu gösterir: kırmızı zemin üzerinde şaha kalkmış beyaz bir at – Sakson atı. Arma örneğin resmî binalarda, eyalet belgelerinde ve eyalet bayrağında görülür. Aşağı Saksonya Almanya’nın kuzeybatısında, Kuzey Denizi kıyısındadır ve yüzölçümü bakımından ikinci büyük eyalettir. Bremen eyaletini çevreler ve Hollanda ile sınır komşusudur. Aşağı Saksonya eyaletinde yaklaşık 8,1 milyon insan yaşar.",
+    "otherOptions": "Diğer görseller Aşağı Saksonya eyaletine ait olmayan başka armaları gösterir. Sınav için kendi eyaletinin armasına dikkatle bakmaya değer – bu soru her eyalette çıkar.",
+    "memoryTip": "Aşağı Saksonya arması: kırmızı zemin üzerinde şaha kalkmış beyaz bir at.",
+    "legalBasis": []
+  },
+  "382": {
+    "summary": "Ammerland, Aşağı Saksonya eyaletinde bir ilçedir (Landkreis).",
+    "whyCorrect": "Ammerland ilçesi Aşağı Saksonya’nın kuzeybatısında, Oldenburg yakınındadır ve orman gülü parklarıyla tanınır.",
+    "background": "Alan eyaletleri ilçelere (Landkreis) ve ilçeye bağlı olmayan şehirlere ayrılır. İlçeler, ilçe yolları, çöp toplama veya yabancılar dairesi gibi tek tek belediyeler için çok büyük olan görevleri üstlenir. Başlarında bir ilçe yöneticisi (Landrat) bulunur. Ammerland ilçesi Aşağı Saksonya’nın kuzeybatısında, Oldenburg yakınındadır ve orman gülü parklarıyla tanınır.",
+    "otherOptions": "Diğer adlar başka eyaletlere aittir: Rhein-Sieg-Kreis Kuzey Ren-Vestfalya eyaletindedir; Nordfriesland Schleswig-Holstein eyaletindedir; Vogtlandkreis Saksonya eyaletindedir.",
+    "memoryTip": "Ammerland → Aşağı Saksonya.",
+    "legalBasis": []
+  },
+  "383": {
+    "summary": "Aşağı Saksonya eyaletinin parlamentosu – eyalet meclisi (Landtag) – 5 yıllığına seçilir.",
+    "whyCorrect": "eyalet meclisi (Landtag) için yasama dönemi 5 yıldır.",
+    "background": "Her eyaletin doğrudan seçilen kendi parlamentosu vardır (Anayasa madde 28). Aşağı Saksonya eyaletinde buna eyalet meclisi (Landtag) denir. Örneğin okullar ve polisle ilgili eyalet yasalarını kabul eder, eyalet bütçesini onaylar ve eyalet hükümetinin başkanını seçer. Neredeyse bütün eyaletlerde yasama dönemi beş yıldır – sadece Bremen dört yılda bir seçim yapar.",
+    "otherOptions": "3, 4, 6 yıl yanlıştır. Karşılaştırma için: Federal Meclis dört yılda bir, Avrupa Parlamentosu beş yılda bir seçilir.",
+    "memoryTip": "Aşağı Saksonya: eyalet meclisi (Landtag) 5 yılda bir.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 28",
+        "url": "https://www.gesetze-im-internet.de/gg/art_28.html"
+      }
+    ]
+  },
+  "384": {
+    "summary": "Aşağı Saksonya eyaletinde yerel seçimlerde 16 yaşından itibaren oy kullanılabilir.",
+    "whyCorrect": "Oy verme yaşı Aşağı Saksonya eyaletinin yasasında düzenlenir ve 16’dır.",
+    "background": "Aşağı Saksonya eyaletinde 16 yaşındaki gençler bile yerel seçimlerde oy kullanabilir. Birçok eyalet, gençler şehirlerinde veya beldelerinde olanlara daha erken söz sahibi olabilsin diye yerel seçimlerde oy verme yaşını 16’ya indirdi. Federal seçimde ise oy verme yaşı hâlâ 18’dir. Yerel seçimlerde orada yaşayan diğer AB ülkelerinin vatandaşları da oy kullanabilir.",
+    "otherOptions": "14, 18, 20 Aşağı Saksonya eyaleti için yanlıştır. Oy verme yaşı eyaletten eyalete farklıdır – kendi eyaletin için rakamı aklında tut.",
+    "memoryTip": "Aşağı Saksonya: 16 yaşından itibaren oy.",
+    "legalBasis": []
+  },
+  "385": {
+    "summary": "Aşağı Saksonya eyaletinin bayrağı siyah-kırmızı-altın renklerindedir.",
+    "whyCorrect": "Eyalet bayrağı federal bayrak gibi siyah-kırmızı-altındır, ama üzerinde eyalet arması olan beyaz at vardır.",
+    "background": "Federal bayrağın yanında her eyaletin kendi bayrağı vardır. Eyalet bayrağı federal bayrak gibi siyah-kırmızı-altındır, ama üzerinde eyalet arması olan beyaz at vardır. Eyalet bayrağı örneğin eyalet meclisinde, bakanlıklarda ve bayramlarda resmî binalarda dalgalanır. Tek başına siyah-kırmızı-altın federal bayraktır; bazı eyaletler aynı renkleri kendi armalarıyla kullanır. Aşağı Saksonya eyaletinin arması şunu gösterir: kırmızı zemin üzerinde şaha kalkmış beyaz bir at – Sakson atı.",
+    "otherOptions": "Diğer renk kombinasyonları Aşağı Saksonya eyaletine ait değildir: beyaz-mavi Bavyera eyaletinin bayrağıdır; siyah-sarı hiçbir eyaletin bayrağı değildir; mavi-beyaz-kırmızı Schleswig-Holstein eyaletinin bayrağıdır.",
+    "memoryTip": "Aşağı Saksonya: siyah-kırmızı-altın.",
+    "legalBasis": []
+  },
+  "386": {
+    "summary": "Aşağı Saksonya eyaletinde siyasi konularda eyalet siyasi eğitim merkezinden (Landeszentrale für politische Bildung) bilgi alınabilir.",
+    "whyCorrect": "Aşağı Saksonya eyaletindeki siyasi eğitim merkezi siyaset hakkında tarafsız ve çoğu zaman ücretsiz bilgi verir.",
+    "background": "Her eyaletin bir siyasi eğitim kurumu vardır; buna ek olarak Federal Siyasi Eğitim Merkezi (bpb) bulunur. Ücretsiz kitaplar ve broşürler, seminerler, konferanslar, geziler ve çevrimiçi içerikler sunarlar – örneğin demokrasi, seçimler, tarih veya uyum hakkında. Önemli: Bu kurumlar tarafsızdır, yani hiçbir partinin reklamını yapmaz. Seçimlerden önce bpb’nin Wahl-O-Mat’ı iyi bilinen bir örnektir.",
+    "otherOptions": "Kiliseler dinî topluluklardır, siyaset için tarafsız bilgi kaynakları değildir. Ordnungsamt kamu düzeniyle ilgilenir, tüketici merkezi (Verbraucherzentrale) ise sözleşmeler veya şikâyetler gibi tüketici konularında danışmanlık yapar.",
+    "memoryTip": "Tarafsız siyasi eğitim: eyalet merkezi (ve federal merkez).",
+    "legalBasis": []
+  },
+  "387": {
+    "summary": "Aşağı Saksonya eyaletinin başkenti: Hannover.",
+    "whyCorrect": "Aşağı Saksonya eyaletinin meclisi ve hükümeti Hannover şehrindedir.",
+    "background": "Her alan eyaletinin parlamentonun, hükümetin ve bakanlıkların bulunduğu bir başkenti vardır. Hannover Aşağı Saksonya’nın en büyük şehridir ve fuarıyla tanınır. Braunschweig, Osnabrück ve Volkswagen’in merkezi Wolfsburg diğer önemli şehirlerdir. Aşağı Saksonya Almanya’nın kuzeybatısında, Kuzey Denizi kıyısındadır ve yüzölçümü bakımından ikinci büyük eyalettir. Bremen eyaletini çevreler ve Hollanda ile sınır komşusudur.",
+    "otherOptions": "Braunschweig, Wolfsburg, Osnabrück de Aşağı Saksonya eyaletindeki şehirlerdir, ama eyalet başkenti değildir.",
+    "memoryTip": "Aşağı Saksonya → Hannover.",
+    "legalBasis": []
+  },
+  "388": {
+    "summary": "Aşağı Saksonya haritada 1 numaradır.",
+    "whyCorrect": "Aşağı Saksonya Almanya’nın kuzeybatısında, Kuzey Denizi kıyısındadır ve yüzölçümü bakımından ikinci büyük eyalettir. Bremen eyaletini çevreler ve Hollanda ile sınır komşusudur.",
+    "background": "Aşağı Saksonya Almanya’nın kuzeybatısında, Kuzey Denizi kıyısındadır ve yüzölçümü bakımından ikinci büyük eyalettir. Bremen eyaletini çevreler ve Hollanda ile sınır komşusudur. Almanya’nın 16 eyaleti vardır: 13 alan eyaleti ve Berlin, Hamburg ve Bremen olmak üzere üç şehir eyaleti. Kendi eyaletinin ve komşularının haritadaki yerini aklında tutmak faydalıdır.",
+    "otherOptions": "Diğer numaralar başka eyaletleri gösterir. Konuma dikkat et: kuzey mi güney mi, doğu mu batı mı ve Aşağı Saksonya eyaletinin hangi ülkelere veya denizlere komşu olduğu.",
+    "memoryTip": "Konumu hatırla: Aşağı Saksonya Almanya’nın kuzeybatısında, Kuzey Denizi kıyısındadır ve yüzölçümü bakımından ikinci büyük eyalettir.",
+    "legalBasis": []
+  },
+  "389": {
+    "summary": "Aşağı Saksonya eyaletinin hükümet başkanına Ministerpräsident (eyalet başbakanı) denir.",
+    "whyCorrect": "Eyalet meclisi tarafından seçilir ve Aşağı Saksonya eyalet hükümetini yönetir.",
+    "background": "13 alan eyaletinin hepsinde hükümet başkanına Ministerpräsident denir. Eyalet seçiminden sonra eyalet meclisi tarafından seçilir, eyalet politikasının ana hatlarını belirler ve eyalet bakanlarını atar. Ayrıca eyaleti dışarıda temsil eder ve Federal Konsey’de yer alır. Aşağı Saksonya Almanya’nın kuzeybatısında, Kuzey Denizi kıyısındadır ve yüzölçümü bakımından ikinci büyük eyalettir. Bremen eyaletini çevreler ve Hollanda ile sınır komşusudur.",
+    "otherOptions": "“Erster Minister” İskoçya veya Galler’deki, “Premierminister” ise örneğin Birleşik Krallık’taki unvandır. Belediye başkanları şehirleri ve beldeleri yönetir – sadece şehir eyaletlerinde aynı zamanda eyalet hükümetinin başkanıdırlar.",
+    "memoryTip": "Alan eyaleti = Ministerpräsident.",
+    "legalBasis": []
+  },
+  "390": {
+    "summary": "Aşağı Saksonya eyaletinin dışişleri bakanı yoktur.",
+    "whyCorrect": "Anayasa’ya göre dış politika federal yönetimin görevidir.",
+    "background": "Aşağı Saksonya eyalet hükümeti eyalet başbakanından ve örneğin içişleri, adalet, maliye, eğitim (Kultus), ekonomi veya sosyal işler için birkaç eyalet bakanından oluşur. Ancak başka devletlerle ilişkilerden – Berlin’deki Dışişleri Bakanlığı ile – federal yönetim sorumludur (Anayasa madde 32 ve 73). Eyaletler yurt dışıyla ancak sınırlı ölçüde, örneğin ortak bölgelerle iş birliği yapabilir.",
+    "otherOptions": "Aşağı Saksonya eyaletinde adalet, maliye ve içişleri bakanları vardır: Mahkemelerden ve cezaevlerinden, eyalet bütçesinden ve polis ile idareden sorumludurlar.",
+    "memoryTip": "Dış politika = federal yönetim. Hiçbir eyaletin dışişleri bakanı yoktur.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 32",
+        "url": "https://www.gesetze-im-internet.de/gg/art_32.html"
+      },
+      {
+        "label": "Anayasa (GG) md. 73",
+        "url": "https://www.gesetze-im-internet.de/gg/art_73.html"
+      }
+    ]
+  },
+  "391": {
+    "summary": "Kuzey Ren-Vestfalya eyaletinin arması 2 numaralı görseldir.",
+    "whyCorrect": "Arma şunu gösterir: üç bölüm: Ren için beyaz dalgalı bir çizgi, Vestfalya için beyaz bir at ve Lippe için kırmızı bir gül.",
+    "background": "Her eyaletin kendi arması vardır. Kuzey Ren-Vestfalya eyaletinin arması şunu gösterir: üç bölüm: Ren için beyaz dalgalı bir çizgi, Vestfalya için beyaz bir at ve Lippe için kırmızı bir gül. Arma örneğin resmî binalarda, eyalet belgelerinde ve eyalet bayrağında görülür. Kuzey Ren-Vestfalya Almanya’nın batısındadır ve Hollanda ile Belçika’ya komşudur. En kalabalık eyalettir; Ruhr bölgesi de buradadır. Kuzey Ren-Vestfalya eyaletinde yaklaşık 18,1 milyon insan yaşar.",
+    "otherOptions": "Diğer görseller Kuzey Ren-Vestfalya eyaletine ait olmayan başka armaları gösterir. Sınav için kendi eyaletinin armasına dikkatle bakmaya değer – bu soru her eyalette çıkar.",
+    "memoryTip": "Kuzey Ren-Vestfalya arması: üç bölüm: Ren için beyaz dalgalı bir çizgi, Vestfalya için beyaz bir at ve Lippe için kırmızı bir gül.",
+    "legalBasis": []
+  },
+  "392": {
+    "summary": "Rhein-Sieg-Kreis, Kuzey Ren-Vestfalya eyaletinde bir ilçedir (Landkreis).",
+    "whyCorrect": "Rhein-Sieg ilçesi Bonn şehrinin çevresindedir; ilçe merkezi Siegburg’dur.",
+    "background": "Alan eyaletleri ilçelere (Landkreis) ve ilçeye bağlı olmayan şehirlere ayrılır. İlçeler, ilçe yolları, çöp toplama veya yabancılar dairesi gibi tek tek belediyeler için çok büyük olan görevleri üstlenir. Başlarında bir ilçe yöneticisi (Landrat) bulunur. Rhein-Sieg ilçesi Bonn şehrinin çevresindedir; ilçe merkezi Siegburg’dur.",
+    "otherOptions": "Diğer adlar başka eyaletlere aittir: Ammerland Aşağı Saksonya eyaletindedir; Nordfriesland Schleswig-Holstein eyaletindedir; Vogtlandkreis Saksonya eyaletindedir.",
+    "memoryTip": "Rhein-Sieg-Kreis → Kuzey Ren-Vestfalya.",
+    "legalBasis": []
+  },
+  "393": {
+    "summary": "Kuzey Ren-Vestfalya eyaletinin parlamentosu – eyalet meclisi (Landtag) – 5 yıllığına seçilir.",
+    "whyCorrect": "eyalet meclisi (Landtag) için yasama dönemi 5 yıldır.",
+    "background": "Her eyaletin doğrudan seçilen kendi parlamentosu vardır (Anayasa madde 28). Kuzey Ren-Vestfalya eyaletinde buna eyalet meclisi (Landtag) denir. Örneğin okullar ve polisle ilgili eyalet yasalarını kabul eder, eyalet bütçesini onaylar ve eyalet hükümetinin başkanını seçer. Neredeyse bütün eyaletlerde yasama dönemi beş yıldır – sadece Bremen dört yılda bir seçim yapar.",
+    "otherOptions": "3, 4, 6 yıl yanlıştır. Karşılaştırma için: Federal Meclis dört yılda bir, Avrupa Parlamentosu beş yılda bir seçilir.",
+    "memoryTip": "Kuzey Ren-Vestfalya: eyalet meclisi (Landtag) 5 yılda bir.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 28",
+        "url": "https://www.gesetze-im-internet.de/gg/art_28.html"
+      }
+    ]
+  },
+  "394": {
+    "summary": "Kuzey Ren-Vestfalya eyaletinde yerel seçimlerde 16 yaşından itibaren oy kullanılabilir.",
+    "whyCorrect": "Oy verme yaşı Kuzey Ren-Vestfalya eyaletinin yasasında düzenlenir ve 16’dır.",
+    "background": "Kuzey Ren-Vestfalya eyaletinde 16 yaşındaki gençler bile yerel seçimlerde oy kullanabilir. Birçok eyalet, gençler şehirlerinde veya beldelerinde olanlara daha erken söz sahibi olabilsin diye yerel seçimlerde oy verme yaşını 16’ya indirdi. Federal seçimde ise oy verme yaşı hâlâ 18’dir. Yerel seçimlerde orada yaşayan diğer AB ülkelerinin vatandaşları da oy kullanabilir.",
+    "otherOptions": "14, 18, 20 Kuzey Ren-Vestfalya eyaleti için yanlıştır. Oy verme yaşı eyaletten eyalete farklıdır – kendi eyaletin için rakamı aklında tut.",
+    "memoryTip": "Kuzey Ren-Vestfalya: 16 yaşından itibaren oy.",
+    "legalBasis": []
+  },
+  "395": {
+    "summary": "Kuzey Ren-Vestfalya eyaletinin bayrağı yeşil-beyaz-kırmızı renklerindedir.",
+    "whyCorrect": "Eyalet bayrağı yeşil-beyaz-kırmızıdır, çoğu zaman eyalet armasıyla birlikte.",
+    "background": "Federal bayrağın yanında her eyaletin kendi bayrağı vardır. Eyalet bayrağı yeşil-beyaz-kırmızıdır, çoğu zaman eyalet armasıyla birlikte. Eyalet bayrağı örneğin eyalet meclisinde, bakanlıklarda ve bayramlarda resmî binalarda dalgalanır. Kuzey Ren-Vestfalya eyaletinin arması şunu gösterir: üç bölüm: Ren için beyaz dalgalı bir çizgi, Vestfalya için beyaz bir at ve Lippe için kırmızı bir gül.",
+    "otherOptions": "Diğer renk kombinasyonları Kuzey Ren-Vestfalya eyaletine ait değildir: kırmızı-beyaz Brandenburg, Bremen, Hessen eyaletinin bayrağıdır; siyah-altın Baden-Württemberg eyaletinin bayrağıdır; mavi-beyaz-kırmızı Schleswig-Holstein eyaletinin bayrağıdır.",
+    "memoryTip": "Kuzey Ren-Vestfalya: yeşil-beyaz-kırmızı.",
+    "legalBasis": []
+  },
+  "396": {
+    "summary": "Kuzey Ren-Vestfalya eyaletinde siyasi konularda eyalet siyasi eğitim merkezinden (Landeszentrale für politische Bildung) bilgi alınabilir.",
+    "whyCorrect": "Kuzey Ren-Vestfalya eyaletindeki siyasi eğitim merkezi siyaset hakkında tarafsız ve çoğu zaman ücretsiz bilgi verir.",
+    "background": "Her eyaletin bir siyasi eğitim kurumu vardır; buna ek olarak Federal Siyasi Eğitim Merkezi (bpb) bulunur. Ücretsiz kitaplar ve broşürler, seminerler, konferanslar, geziler ve çevrimiçi içerikler sunarlar – örneğin demokrasi, seçimler, tarih veya uyum hakkında. Önemli: Bu kurumlar tarafsızdır, yani hiçbir partinin reklamını yapmaz. Seçimlerden önce bpb’nin Wahl-O-Mat’ı iyi bilinen bir örnektir.",
+    "otherOptions": "Kiliseler dinî topluluklardır, siyaset için tarafsız bilgi kaynakları değildir. Ordnungsamt kamu düzeniyle ilgilenir, tüketici merkezi (Verbraucherzentrale) ise sözleşmeler veya şikâyetler gibi tüketici konularında danışmanlık yapar.",
+    "memoryTip": "Tarafsız siyasi eğitim: eyalet merkezi (ve federal merkez).",
+    "legalBasis": []
+  },
+  "397": {
+    "summary": "Kuzey Ren-Vestfalya eyaletinin başkenti: Düsseldorf.",
+    "whyCorrect": "Kuzey Ren-Vestfalya eyaletinin meclisi ve hükümeti Düsseldorf şehrindedir.",
+    "background": "Her alan eyaletinin parlamentonun, hükümetin ve bakanlıkların bulunduğu bir başkenti vardır. Köln Kuzey Ren-Vestfalya’nın en büyük şehri olsa da eyalet başkenti Düsseldorf’tur – sık yapılan bir hata. Bonn 1990’a kadar Federal Cumhuriyet’in başkentiydi, Dortmund ise Ruhr bölgesindedir. Kuzey Ren-Vestfalya Almanya’nın batısındadır ve Hollanda ile Belçika’ya komşudur. En kalabalık eyalettir; Ruhr bölgesi de buradadır.",
+    "otherOptions": "Köln, Bonn, Dortmund de Kuzey Ren-Vestfalya eyaletindeki şehirlerdir, ama eyalet başkenti değildir.",
+    "memoryTip": "Kuzey Ren-Vestfalya → Düsseldorf.",
+    "legalBasis": []
+  },
+  "398": {
+    "summary": "Kuzey Ren-Vestfalya haritada 3 numaradır.",
+    "whyCorrect": "Kuzey Ren-Vestfalya Almanya’nın batısındadır ve Hollanda ile Belçika’ya komşudur. En kalabalık eyalettir; Ruhr bölgesi de buradadır.",
+    "background": "Kuzey Ren-Vestfalya Almanya’nın batısındadır ve Hollanda ile Belçika’ya komşudur. En kalabalık eyalettir; Ruhr bölgesi de buradadır. Almanya’nın 16 eyaleti vardır: 13 alan eyaleti ve Berlin, Hamburg ve Bremen olmak üzere üç şehir eyaleti. Kendi eyaletinin ve komşularının haritadaki yerini aklında tutmak faydalıdır.",
+    "otherOptions": "Diğer numaralar başka eyaletleri gösterir. Konuma dikkat et: kuzey mi güney mi, doğu mu batı mı ve Kuzey Ren-Vestfalya eyaletinin hangi ülkelere veya denizlere komşu olduğu.",
+    "memoryTip": "Konumu hatırla: Kuzey Ren-Vestfalya Almanya’nın batısındadır ve Hollanda ile Belçika’ya komşudur.",
+    "legalBasis": []
+  },
+  "399": {
+    "summary": "Kuzey Ren-Vestfalya eyaletinin hükümet başkanına Ministerpräsident (eyalet başbakanı) denir.",
+    "whyCorrect": "Eyalet meclisi tarafından seçilir ve Kuzey Ren-Vestfalya eyalet hükümetini yönetir.",
+    "background": "13 alan eyaletinin hepsinde hükümet başkanına Ministerpräsident denir. Eyalet seçiminden sonra eyalet meclisi tarafından seçilir, eyalet politikasının ana hatlarını belirler ve eyalet bakanlarını atar. Ayrıca eyaleti dışarıda temsil eder ve Federal Konsey’de yer alır. Kuzey Ren-Vestfalya Almanya’nın batısındadır ve Hollanda ile Belçika’ya komşudur. En kalabalık eyalettir; Ruhr bölgesi de buradadır.",
+    "otherOptions": "“Erster Minister” İskoçya veya Galler’deki, “Premierminister” ise örneğin Birleşik Krallık’taki unvandır. Belediye başkanları şehirleri ve beldeleri yönetir – sadece şehir eyaletlerinde aynı zamanda eyalet hükümetinin başkanıdırlar.",
+    "memoryTip": "Alan eyaleti = Ministerpräsident.",
+    "legalBasis": []
+  },
+  "400": {
+    "summary": "Kuzey Ren-Vestfalya eyaletinin dışişleri bakanı yoktur.",
+    "whyCorrect": "Anayasa’ya göre dış politika federal yönetimin görevidir.",
+    "background": "Kuzey Ren-Vestfalya eyalet hükümeti eyalet başbakanından ve örneğin içişleri, adalet, maliye, eğitim (Kultus), ekonomi veya sosyal işler için birkaç eyalet bakanından oluşur. Ancak başka devletlerle ilişkilerden – Berlin’deki Dışişleri Bakanlığı ile – federal yönetim sorumludur (Anayasa madde 32 ve 73). Eyaletler yurt dışıyla ancak sınırlı ölçüde, örneğin ortak bölgelerle iş birliği yapabilir.",
+    "otherOptions": "Kuzey Ren-Vestfalya eyaletinde adalet, maliye ve içişleri bakanları vardır: Mahkemelerden ve cezaevlerinden, eyalet bütçesinden ve polis ile idareden sorumludurlar.",
+    "memoryTip": "Dış politika = federal yönetim. Hiçbir eyaletin dışişleri bakanı yoktur.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 32",
+        "url": "https://www.gesetze-im-internet.de/gg/art_32.html"
+      },
+      {
+        "label": "Anayasa (GG) md. 73",
+        "url": "https://www.gesetze-im-internet.de/gg/art_73.html"
+      }
+    ]
+  },
+  "401": {
+    "summary": "Renanya-Pfalz eyaletinin arması 1 numaralı görseldir.",
+    "whyCorrect": "Arma şunu gösterir: üç alan: kırmızı bir haç (Trier), beyaz bir tekerlek (Mainz) ve altın bir aslan (Pfalz), üstünde bir taç.",
+    "background": "Her eyaletin kendi arması vardır. Renanya-Pfalz eyaletinin arması şunu gösterir: üç alan: kırmızı bir haç (Trier), beyaz bir tekerlek (Mainz) ve altın bir aslan (Pfalz), üstünde bir taç. Arma örneğin resmî binalarda, eyalet belgelerinde ve eyalet bayrağında görülür. Renanya-Pfalz Almanya’nın batısındadır ve Fransa, Lüksemburg ve Belçika ile sınır komşusudur. Ren ve Mozel boyunca şarapçılığıyla tanınır. Renanya-Pfalz eyaletinde yaklaşık 4,2 milyon insan yaşar.",
+    "otherOptions": "Diğer görseller Renanya-Pfalz eyaletine ait olmayan başka armaları gösterir. Sınav için kendi eyaletinin armasına dikkatle bakmaya değer – bu soru her eyalette çıkar.",
+    "memoryTip": "Renanya-Pfalz arması: üç alan: kırmızı bir haç (Trier), beyaz bir tekerlek (Mainz) ve altın bir aslan (Pfalz), üstünde bir taç.",
+    "legalBasis": []
+  },
+  "402": {
+    "summary": "Westerwaldkreis, Renanya-Pfalz eyaletinde bir ilçedir (Landkreis).",
+    "whyCorrect": "Westerwald ilçesi Renanya-Pfalz’ın kuzeyindedir; ilçe merkezi Montabaur’dur.",
+    "background": "Alan eyaletleri ilçelere (Landkreis) ve ilçeye bağlı olmayan şehirlere ayrılır. İlçeler, ilçe yolları, çöp toplama veya yabancılar dairesi gibi tek tek belediyeler için çok büyük olan görevleri üstlenir. Başlarında bir ilçe yöneticisi (Landrat) bulunur. Westerwald ilçesi Renanya-Pfalz’ın kuzeyindedir; ilçe merkezi Montabaur’dur.",
+    "otherOptions": "Diğer adlar başka eyaletlere aittir: Altötting Bavyera eyaletindedir; Emsland Aşağı Saksonya eyaletindedir; Prignitz Brandenburg eyaletindedir.",
+    "memoryTip": "Westerwaldkreis → Renanya-Pfalz.",
+    "legalBasis": []
+  },
+  "403": {
+    "summary": "Renanya-Pfalz eyaletinin parlamentosu – eyalet meclisi (Landtag) – 5 yıllığına seçilir.",
+    "whyCorrect": "eyalet meclisi (Landtag) için yasama dönemi 5 yıldır.",
+    "background": "Her eyaletin doğrudan seçilen kendi parlamentosu vardır (Anayasa madde 28). Renanya-Pfalz eyaletinde buna eyalet meclisi (Landtag) denir. Örneğin okullar ve polisle ilgili eyalet yasalarını kabul eder, eyalet bütçesini onaylar ve eyalet hükümetinin başkanını seçer. Neredeyse bütün eyaletlerde yasama dönemi beş yıldır – sadece Bremen dört yılda bir seçim yapar.",
+    "otherOptions": "3, 4, 6 yıl yanlıştır. Karşılaştırma için: Federal Meclis dört yılda bir, Avrupa Parlamentosu beş yılda bir seçilir.",
+    "memoryTip": "Renanya-Pfalz: eyalet meclisi (Landtag) 5 yılda bir.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 28",
+        "url": "https://www.gesetze-im-internet.de/gg/art_28.html"
+      }
+    ]
+  },
+  "404": {
+    "summary": "Renanya-Pfalz eyaletinde yerel seçimlerde 18 yaşından itibaren oy kullanılabilir.",
+    "whyCorrect": "Oy verme yaşı Renanya-Pfalz eyaletinin yasasında düzenlenir ve 18’dir.",
+    "background": "Renanya-Pfalz eyaletinde yerel seçimlerde – federal seçimde olduğu gibi – 18 yaşından itibaren oy kullanılabilir. Diğer birçok eyalette ise yerel seçimlerde oy verme yaşı zaten 16’dır. Yerel seçimlerde örneğin belediye meclisi, ilçe meclisi ve çoğu zaman belediye başkanı seçilir. Orada yaşayan diğer AB ülkelerinin vatandaşları da oy kullanabilir.",
+    "otherOptions": "14, 16, 20 Renanya-Pfalz eyaleti için yanlıştır. Oy verme yaşı eyaletten eyalete farklıdır – kendi eyaletin için rakamı aklında tut.",
+    "memoryTip": "Renanya-Pfalz: 18 yaşından itibaren oy.",
+    "legalBasis": []
+  },
+  "405": {
+    "summary": "Renanya-Pfalz eyaletinin bayrağı siyah-kırmızı-altın renklerindedir.",
+    "whyCorrect": "Eyalet bayrağı siyah-kırmızı-altındır, üst köşesinde eyalet arması bulunur.",
+    "background": "Federal bayrağın yanında her eyaletin kendi bayrağı vardır. Eyalet bayrağı siyah-kırmızı-altındır, üst köşesinde eyalet arması bulunur. Eyalet bayrağı örneğin eyalet meclisinde, bakanlıklarda ve bayramlarda resmî binalarda dalgalanır. Tek başına siyah-kırmızı-altın federal bayraktır; bazı eyaletler aynı renkleri kendi armalarıyla kullanır. Renanya-Pfalz eyaletinin arması şunu gösterir: üç alan: kırmızı bir haç (Trier), beyaz bir tekerlek (Mainz) ve altın bir aslan (Pfalz), üstünde bir taç.",
+    "otherOptions": "Diğer renk kombinasyonları Renanya-Pfalz eyaletine ait değildir: beyaz-kırmızı Berlin, Hamburg, Türingen eyaletinin bayrağıdır; siyah-sarı hiçbir eyaletin bayrağı değildir; yeşil-beyaz-kırmızı Kuzey Ren-Vestfalya eyaletinin bayrağıdır.",
+    "memoryTip": "Renanya-Pfalz: siyah-kırmızı-altın.",
+    "legalBasis": []
+  },
+  "406": {
+    "summary": "Renanya-Pfalz eyaletinde siyasi konularda eyalet siyasi eğitim merkezinden (Landeszentrale für politische Bildung) bilgi alınabilir.",
+    "whyCorrect": "Renanya-Pfalz eyaletindeki siyasi eğitim merkezi siyaset hakkında tarafsız ve çoğu zaman ücretsiz bilgi verir.",
+    "background": "Her eyaletin bir siyasi eğitim kurumu vardır; buna ek olarak Federal Siyasi Eğitim Merkezi (bpb) bulunur. Ücretsiz kitaplar ve broşürler, seminerler, konferanslar, geziler ve çevrimiçi içerikler sunarlar – örneğin demokrasi, seçimler, tarih veya uyum hakkında. Önemli: Bu kurumlar tarafsızdır, yani hiçbir partinin reklamını yapmaz. Seçimlerden önce bpb’nin Wahl-O-Mat’ı iyi bilinen bir örnektir.",
+    "otherOptions": "Kiliseler dinî topluluklardır, siyaset için tarafsız bilgi kaynakları değildir. Ordnungsamt kamu düzeniyle ilgilenir, tüketici merkezi (Verbraucherzentrale) ise sözleşmeler veya şikâyetler gibi tüketici konularında danışmanlık yapar.",
+    "memoryTip": "Tarafsız siyasi eğitim: eyalet merkezi (ve federal merkez).",
+    "legalBasis": []
+  },
+  "407": {
+    "summary": "Renanya-Pfalz eyaletinin başkenti: Mainz.",
+    "whyCorrect": "Renanya-Pfalz eyaletinin meclisi ve hükümeti Mainz şehrindedir.",
+    "background": "Her alan eyaletinin parlamentonun, hükümetin ve bakanlıkların bulunduğu bir başkenti vardır. Mainz eyaletin en büyük şehridir ve Ren Nehri kıyısında, Wiesbaden’in karşısındadır. Ludwigshafen, Koblenz ve Kaiserslautern diğer büyük şehirlerdir. Renanya-Pfalz Almanya’nın batısındadır ve Fransa, Lüksemburg ve Belçika ile sınır komşusudur. Ren ve Mozel boyunca şarapçılığıyla tanınır.",
+    "otherOptions": "Kaiserslautern, Ludwigshafen, Koblenz de Renanya-Pfalz eyaletindeki şehirlerdir, ama eyalet başkenti değildir.",
+    "memoryTip": "Renanya-Pfalz → Mainz.",
+    "legalBasis": []
+  },
+  "408": {
+    "summary": "Renanya-Pfalz haritada 1 numaradır.",
+    "whyCorrect": "Renanya-Pfalz Almanya’nın batısındadır ve Fransa, Lüksemburg ve Belçika ile sınır komşusudur. Ren ve Mozel boyunca şarapçılığıyla tanınır.",
+    "background": "Renanya-Pfalz Almanya’nın batısındadır ve Fransa, Lüksemburg ve Belçika ile sınır komşusudur. Ren ve Mozel boyunca şarapçılığıyla tanınır. Almanya’nın 16 eyaleti vardır: 13 alan eyaleti ve Berlin, Hamburg ve Bremen olmak üzere üç şehir eyaleti. Kendi eyaletinin ve komşularının haritadaki yerini aklında tutmak faydalıdır.",
+    "otherOptions": "Diğer numaralar başka eyaletleri gösterir. Konuma dikkat et: kuzey mi güney mi, doğu mu batı mı ve Renanya-Pfalz eyaletinin hangi ülkelere veya denizlere komşu olduğu.",
+    "memoryTip": "Konumu hatırla: Renanya-Pfalz Almanya’nın batısındadır ve Fransa, Lüksemburg ve Belçika ile sınır komşusudur.",
+    "legalBasis": []
+  },
+  "409": {
+    "summary": "Renanya-Pfalz eyaletinin hükümet başkanına Ministerpräsident (eyalet başbakanı) denir.",
+    "whyCorrect": "Eyalet meclisi tarafından seçilir ve Renanya-Pfalz eyalet hükümetini yönetir.",
+    "background": "13 alan eyaletinin hepsinde hükümet başkanına Ministerpräsident denir. Eyalet seçiminden sonra eyalet meclisi tarafından seçilir, eyalet politikasının ana hatlarını belirler ve eyalet bakanlarını atar. Ayrıca eyaleti dışarıda temsil eder ve Federal Konsey’de yer alır. Renanya-Pfalz Almanya’nın batısındadır ve Fransa, Lüksemburg ve Belçika ile sınır komşusudur. Ren ve Mozel boyunca şarapçılığıyla tanınır.",
+    "otherOptions": "“Erster Minister” İskoçya veya Galler’deki, “Premierminister” ise örneğin Birleşik Krallık’taki unvandır. Belediye başkanları şehirleri ve beldeleri yönetir – sadece şehir eyaletlerinde aynı zamanda eyalet hükümetinin başkanıdırlar.",
+    "memoryTip": "Alan eyaleti = Ministerpräsident.",
+    "legalBasis": []
+  },
+  "410": {
+    "summary": "Renanya-Pfalz eyaletinin dışişleri bakanı yoktur.",
+    "whyCorrect": "Anayasa’ya göre dış politika federal yönetimin görevidir.",
+    "background": "Renanya-Pfalz eyalet hükümeti eyalet başbakanından ve örneğin içişleri, adalet, maliye, eğitim (Kultus), ekonomi veya sosyal işler için birkaç eyalet bakanından oluşur. Ancak başka devletlerle ilişkilerden – Berlin’deki Dışişleri Bakanlığı ile – federal yönetim sorumludur (Anayasa madde 32 ve 73). Eyaletler yurt dışıyla ancak sınırlı ölçüde, örneğin ortak bölgelerle iş birliği yapabilir.",
+    "otherOptions": "Renanya-Pfalz eyaletinde adalet, maliye ve içişleri bakanları vardır: Mahkemelerden ve cezaevlerinden, eyalet bütçesinden ve polis ile idareden sorumludurlar.",
+    "memoryTip": "Dış politika = federal yönetim. Hiçbir eyaletin dışişleri bakanı yoktur.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 32",
+        "url": "https://www.gesetze-im-internet.de/gg/art_32.html"
+      },
+      {
+        "label": "Anayasa (GG) md. 73",
+        "url": "https://www.gesetze-im-internet.de/gg/art_73.html"
+      }
+    ]
+  },
+  "411": {
+    "summary": "Schleswig-Holstein eyaletinin arması 3 numaralı görseldir.",
+    "whyCorrect": "Arma şunu gösterir: Schleswig için iki mavi aslan ve Holstein için kırmızı üzerinde beyaz bir ısırgan yaprağı.",
+    "background": "Her eyaletin kendi arması vardır. Schleswig-Holstein eyaletinin arması şunu gösterir: Schleswig için iki mavi aslan ve Holstein için kırmızı üzerinde beyaz bir ısırgan yaprağı. Arma örneğin resmî binalarda, eyalet belgelerinde ve eyalet bayrağında görülür. Schleswig-Holstein en kuzeydeki eyalettir. Kuzey Denizi ile Baltık Denizi arasındadır ve Danimarka ile sınır komşusudur. Schleswig-Holstein eyaletinde yaklaşık 3,0 milyon insan yaşar.",
+    "otherOptions": "Diğer görseller Schleswig-Holstein eyaletine ait olmayan başka armaları gösterir. Sınav için kendi eyaletinin armasına dikkatle bakmaya değer – bu soru her eyalette çıkar.",
+    "memoryTip": "Schleswig-Holstein arması: Schleswig için iki mavi aslan ve Holstein için kırmızı üzerinde beyaz bir ısırgan yaprağı.",
+    "legalBasis": []
+  },
+  "412": {
+    "summary": "Nordfriesland, Schleswig-Holstein eyaletinde bir ilçedir (Landkreis).",
+    "whyCorrect": "Nordfriesland Kuzey Denizi kıyısındadır; Sylt ve Föhr gibi adalar bu ilçeye aittir, ilçe merkezi Husum’dur.",
+    "background": "Alan eyaletleri ilçelere (Landkreis) ve ilçeye bağlı olmayan şehirlere ayrılır. İlçeler, ilçe yolları, çöp toplama veya yabancılar dairesi gibi tek tek belediyeler için çok büyük olan görevleri üstlenir. Başlarında bir ilçe yöneticisi (Landrat) bulunur. Nordfriesland Kuzey Denizi kıyısındadır; Sylt ve Föhr gibi adalar bu ilçeye aittir, ilçe merkezi Husum’dur.",
+    "otherOptions": "Diğer adlar başka eyaletlere aittir: Ammerland Aşağı Saksonya eyaletindedir; Mecklenburgische Seenplatte Mecklenburg-Ön Pomeranya eyaletindedir; Rhein-Sieg-Kreis Kuzey Ren-Vestfalya eyaletindedir.",
+    "memoryTip": "Nordfriesland → Schleswig-Holstein.",
+    "legalBasis": []
+  },
+  "413": {
+    "summary": "Schleswig-Holstein eyaletinin parlamentosu – eyalet meclisi (Landtag) – 5 yıllığına seçilir.",
+    "whyCorrect": "eyalet meclisi (Landtag) için yasama dönemi 5 yıldır.",
+    "background": "Her eyaletin doğrudan seçilen kendi parlamentosu vardır (Anayasa madde 28). Schleswig-Holstein eyaletinde buna eyalet meclisi (Landtag) denir. Örneğin okullar ve polisle ilgili eyalet yasalarını kabul eder, eyalet bütçesini onaylar ve eyalet hükümetinin başkanını seçer. Neredeyse bütün eyaletlerde yasama dönemi beş yıldır – sadece Bremen dört yılda bir seçim yapar.",
+    "otherOptions": "3, 4, 6 yıl yanlıştır. Karşılaştırma için: Federal Meclis dört yılda bir, Avrupa Parlamentosu beş yılda bir seçilir.",
+    "memoryTip": "Schleswig-Holstein: eyalet meclisi (Landtag) 5 yılda bir.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 28",
+        "url": "https://www.gesetze-im-internet.de/gg/art_28.html"
+      }
+    ]
+  },
+  "414": {
+    "summary": "Schleswig-Holstein eyaletinde yerel seçimlerde 16 yaşından itibaren oy kullanılabilir.",
+    "whyCorrect": "Oy verme yaşı Schleswig-Holstein eyaletinin yasasında düzenlenir ve 16’dır.",
+    "background": "Schleswig-Holstein eyaletinde 16 yaşındaki gençler bile yerel seçimlerde oy kullanabilir. Birçok eyalet, gençler şehirlerinde veya beldelerinde olanlara daha erken söz sahibi olabilsin diye yerel seçimlerde oy verme yaşını 16’ya indirdi. Federal seçimde ise oy verme yaşı hâlâ 18’dir. Yerel seçimlerde orada yaşayan diğer AB ülkelerinin vatandaşları da oy kullanabilir.",
+    "otherOptions": "14, 18, 20 Schleswig-Holstein eyaleti için yanlıştır. Oy verme yaşı eyaletten eyalete farklıdır – kendi eyaletin için rakamı aklında tut.",
+    "memoryTip": "Schleswig-Holstein: 16 yaşından itibaren oy.",
+    "legalBasis": []
+  },
+  "415": {
+    "summary": "Schleswig-Holstein eyaletinin bayrağı mavi-beyaz-kırmızı renklerindedir.",
+    "whyCorrect": "Eyalet bayrağı mavi-beyaz-kırmızıdır.",
+    "background": "Federal bayrağın yanında her eyaletin kendi bayrağı vardır. Eyalet bayrağı mavi-beyaz-kırmızıdır. Eyalet bayrağı örneğin eyalet meclisinde, bakanlıklarda ve bayramlarda resmî binalarda dalgalanır. Schleswig-Holstein eyaletinin arması şunu gösterir: Schleswig için iki mavi aslan ve Holstein için kırmızı üzerinde beyaz bir ısırgan yaprağı.",
+    "otherOptions": "Diğer renk kombinasyonları Schleswig-Holstein eyaletine ait değildir: beyaz-mavi Bavyera eyaletinin bayrağıdır; beyaz-kırmızı Berlin, Hamburg, Türingen eyaletinin bayrağıdır; yeşil-beyaz-kırmızı Kuzey Ren-Vestfalya eyaletinin bayrağıdır.",
+    "memoryTip": "Schleswig-Holstein: mavi-beyaz-kırmızı.",
+    "legalBasis": []
+  },
+  "416": {
+    "summary": "Schleswig-Holstein eyaletinde siyasi konularda eyalet siyasi eğitim görevlisinden (Landesbeauftragter für politische Bildung) bilgi alınabilir.",
+    "whyCorrect": "Schleswig-Holstein’da bu birime eyalet siyasi eğitim görevlisi denir ve eyalet meclisine bağlıdır.",
+    "background": "Her eyaletin bir siyasi eğitim kurumu vardır; buna ek olarak Federal Siyasi Eğitim Merkezi (bpb) bulunur. Ücretsiz kitaplar ve broşürler, seminerler, konferanslar, geziler ve çevrimiçi içerikler sunarlar – örneğin demokrasi, seçimler, tarih veya uyum hakkında. Önemli: Bu kurumlar tarafsızdır, yani hiçbir partinin reklamını yapmaz. Seçimlerden önce bpb’nin Wahl-O-Mat’ı iyi bilinen bir örnektir.",
+    "otherOptions": "Kiliseler dinî topluluklardır, siyaset için tarafsız bilgi kaynakları değildir. Ordnungsamt kamu düzeniyle ilgilenir, tüketici merkezi (Verbraucherzentrale) ise sözleşmeler veya şikâyetler gibi tüketici konularında danışmanlık yapar.",
+    "memoryTip": "Tarafsız siyasi eğitim: eyalet merkezi (ve federal merkez).",
+    "legalBasis": []
+  },
+  "417": {
+    "summary": "Schleswig-Holstein eyaletinin başkenti: Kiel.",
+    "whyCorrect": "Schleswig-Holstein eyaletinin meclisi ve hükümeti Kiel şehrindedir.",
+    "background": "Her alan eyaletinin parlamentonun, hükümetin ve bakanlıkların bulunduğu bir başkenti vardır. Kiel Baltık Denizi kıyısındadır ve dünyanın en büyük yelken festivallerinden biri olan Kiel Haftası ile tanınır. Lübeck eski bir Hansa şehridir, Flensburg ise Danimarka sınırındadır. Schleswig-Holstein en kuzeydeki eyalettir. Kuzey Denizi ile Baltık Denizi arasındadır ve Danimarka ile sınır komşusudur.",
+    "otherOptions": "Husum, Flensburg, Lübeck de Schleswig-Holstein eyaletindeki şehirlerdir, ama eyalet başkenti değildir.",
+    "memoryTip": "Schleswig-Holstein → Kiel.",
+    "legalBasis": []
+  },
+  "418": {
+    "summary": "Schleswig-Holstein haritada 1 numaradır.",
+    "whyCorrect": "Schleswig-Holstein en kuzeydeki eyalettir. Kuzey Denizi ile Baltık Denizi arasındadır ve Danimarka ile sınır komşusudur.",
+    "background": "Schleswig-Holstein en kuzeydeki eyalettir. Kuzey Denizi ile Baltık Denizi arasındadır ve Danimarka ile sınır komşusudur. Almanya’nın 16 eyaleti vardır: 13 alan eyaleti ve Berlin, Hamburg ve Bremen olmak üzere üç şehir eyaleti. Kendi eyaletinin ve komşularının haritadaki yerini aklında tutmak faydalıdır.",
+    "otherOptions": "Diğer numaralar başka eyaletleri gösterir. Konuma dikkat et: kuzey mi güney mi, doğu mu batı mı ve Schleswig-Holstein eyaletinin hangi ülkelere veya denizlere komşu olduğu.",
+    "memoryTip": "Konumu hatırla: Schleswig-Holstein en kuzeydeki eyalettir.",
+    "legalBasis": []
+  },
+  "419": {
+    "summary": "Schleswig-Holstein eyaletinin hükümet başkanına Ministerpräsident (eyalet başbakanı) denir.",
+    "whyCorrect": "Eyalet meclisi tarafından seçilir ve Schleswig-Holstein eyalet hükümetini yönetir.",
+    "background": "13 alan eyaletinin hepsinde hükümet başkanına Ministerpräsident denir. Eyalet seçiminden sonra eyalet meclisi tarafından seçilir, eyalet politikasının ana hatlarını belirler ve eyalet bakanlarını atar. Ayrıca eyaleti dışarıda temsil eder ve Federal Konsey’de yer alır. Schleswig-Holstein en kuzeydeki eyalettir. Kuzey Denizi ile Baltık Denizi arasındadır ve Danimarka ile sınır komşusudur.",
+    "otherOptions": "“Erster Minister” İskoçya veya Galler’deki, “Premierminister” ise örneğin Birleşik Krallık’taki unvandır. Belediye başkanları şehirleri ve beldeleri yönetir – sadece şehir eyaletlerinde aynı zamanda eyalet hükümetinin başkanıdırlar.",
+    "memoryTip": "Alan eyaleti = Ministerpräsident.",
+    "legalBasis": []
+  },
+  "420": {
+    "summary": "Schleswig-Holstein eyaletinin dışişleri bakanı yoktur.",
+    "whyCorrect": "Anayasa’ya göre dış politika federal yönetimin görevidir.",
+    "background": "Schleswig-Holstein eyalet hükümeti eyalet başbakanından ve örneğin içişleri, adalet, maliye, eğitim (Kultus), ekonomi veya sosyal işler için birkaç eyalet bakanından oluşur. Ancak başka devletlerle ilişkilerden – Berlin’deki Dışişleri Bakanlığı ile – federal yönetim sorumludur (Anayasa madde 32 ve 73). Eyaletler yurt dışıyla ancak sınırlı ölçüde, örneğin ortak bölgelerle iş birliği yapabilir.",
+    "otherOptions": "Schleswig-Holstein eyaletinde adalet, maliye ve içişleri bakanları vardır: Mahkemelerden ve cezaevlerinden, eyalet bütçesinden ve polis ile idareden sorumludurlar.",
+    "memoryTip": "Dış politika = federal yönetim. Hiçbir eyaletin dışişleri bakanı yoktur.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 32",
+        "url": "https://www.gesetze-im-internet.de/gg/art_32.html"
+      },
+      {
+        "label": "Anayasa (GG) md. 73",
+        "url": "https://www.gesetze-im-internet.de/gg/art_73.html"
+      }
+    ]
+  },
+  "421": {
+    "summary": "Saarland eyaletinin arması 4 numaralı görseldir.",
+    "whyCorrect": "Arma şunu gösterir: bölgenin tarihî beyliklerini hatırlatan aslanlar, bir haç ve kartallar içeren dört alan.",
+    "background": "Her eyaletin kendi arması vardır. Saarland eyaletinin arması şunu gösterir: bölgenin tarihî beyliklerini hatırlatan aslanlar, bir haç ve kartallar içeren dört alan. Arma örneğin resmî binalarda, eyalet belgelerinde ve eyalet bayrağında görülür. Saarland en küçük alan eyaletidir. Güneybatıda, Fransa ve Lüksemburg sınırındadır ve ancak 1957’den beri Federal Cumhuriyet’e aittir. Saarland eyaletinde yaklaşık 1,0 milyon insan yaşar.",
+    "otherOptions": "Diğer görseller Saarland eyaletine ait olmayan başka armaları gösterir. Sınav için kendi eyaletinin armasına dikkatle bakmaya değer – bu soru her eyalette çıkar.",
+    "memoryTip": "Saarland arması: bölgenin tarihî beyliklerini hatırlatan aslanlar, bir haç ve kartallar içeren dört alan.",
+    "legalBasis": []
+  },
+  "422": {
+    "summary": "Neunkirchen, Saarland eyaletinde bir ilçedir (Landkreis).",
+    "whyCorrect": "Neunkirchen ilçesi Saarland’ın doğusundadır; aynı adı taşıyan şehir eyaletin ikinci büyük şehridir.",
+    "background": "Alan eyaletleri ilçelere (Landkreis) ve ilçeye bağlı olmayan şehirlere ayrılır. İlçeler, ilçe yolları, çöp toplama veya yabancılar dairesi gibi tek tek belediyeler için çok büyük olan görevleri üstlenir. Başlarında bir ilçe yöneticisi (Landrat) bulunur. Neunkirchen ilçesi Saarland’ın doğusundadır; aynı adı taşıyan şehir eyaletin ikinci büyük şehridir.",
+    "otherOptions": "Diğer adlar başka eyaletlere aittir: Mecklenburgische Seenplatte Mecklenburg-Ön Pomeranya eyaletindedir; Altötting Bavyera eyaletindedir; Rhein-Sieg-Kreis Kuzey Ren-Vestfalya eyaletindedir.",
+    "memoryTip": "Neunkirchen → Saarland.",
+    "legalBasis": []
+  },
+  "423": {
+    "summary": "Saarland eyaletinin parlamentosu – eyalet meclisi (Landtag) – 5 yıllığına seçilir.",
+    "whyCorrect": "eyalet meclisi (Landtag) için yasama dönemi 5 yıldır.",
+    "background": "Her eyaletin doğrudan seçilen kendi parlamentosu vardır (Anayasa madde 28). Saarland eyaletinde buna eyalet meclisi (Landtag) denir. Örneğin okullar ve polisle ilgili eyalet yasalarını kabul eder, eyalet bütçesini onaylar ve eyalet hükümetinin başkanını seçer. Neredeyse bütün eyaletlerde yasama dönemi beş yıldır – sadece Bremen dört yılda bir seçim yapar.",
+    "otherOptions": "3, 4, 6 yıl yanlıştır. Karşılaştırma için: Federal Meclis dört yılda bir, Avrupa Parlamentosu beş yılda bir seçilir.",
+    "memoryTip": "Saarland: eyalet meclisi (Landtag) 5 yılda bir.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 28",
+        "url": "https://www.gesetze-im-internet.de/gg/art_28.html"
+      }
+    ]
+  },
+  "424": {
+    "summary": "Saarland eyaletinde yerel seçimlerde 18 yaşından itibaren oy kullanılabilir.",
+    "whyCorrect": "Oy verme yaşı Saarland eyaletinin yasasında düzenlenir ve 18’dir.",
+    "background": "Saarland eyaletinde yerel seçimlerde – federal seçimde olduğu gibi – 18 yaşından itibaren oy kullanılabilir. Diğer birçok eyalette ise yerel seçimlerde oy verme yaşı zaten 16’dır. Yerel seçimlerde örneğin belediye meclisi, ilçe meclisi ve çoğu zaman belediye başkanı seçilir. Orada yaşayan diğer AB ülkelerinin vatandaşları da oy kullanabilir.",
+    "otherOptions": "14, 16, 20 Saarland eyaleti için yanlıştır. Oy verme yaşı eyaletten eyalete farklıdır – kendi eyaletin için rakamı aklında tut.",
+    "memoryTip": "Saarland: 18 yaşından itibaren oy.",
+    "legalBasis": []
+  },
+  "425": {
+    "summary": "Saarland eyaletinin bayrağı siyah-kırmızı-altın renklerindedir.",
+    "whyCorrect": "Eyalet bayrağı siyah-kırmızı-altındır, ortasında eyalet arması bulunur.",
+    "background": "Federal bayrağın yanında her eyaletin kendi bayrağı vardır. Eyalet bayrağı siyah-kırmızı-altındır, ortasında eyalet arması bulunur. Eyalet bayrağı örneğin eyalet meclisinde, bakanlıklarda ve bayramlarda resmî binalarda dalgalanır. Tek başına siyah-kırmızı-altın federal bayraktır; bazı eyaletler aynı renkleri kendi armalarıyla kullanır. Saarland eyaletinin arması şunu gösterir: bölgenin tarihî beyliklerini hatırlatan aslanlar, bir haç ve kartallar içeren dört alan.",
+    "otherOptions": "Diğer renk kombinasyonları Saarland eyaletine ait değildir: beyaz-mavi Bavyera eyaletinin bayrağıdır; siyah-sarı hiçbir eyaletin bayrağı değildir; yeşil-beyaz-kırmızı Kuzey Ren-Vestfalya eyaletinin bayrağıdır.",
+    "memoryTip": "Saarland: siyah-kırmızı-altın.",
+    "legalBasis": []
+  },
+  "426": {
+    "summary": "Saarland eyaletinde siyasi konularda eyalet siyasi eğitim merkezinden (Landeszentrale für politische Bildung) bilgi alınabilir.",
+    "whyCorrect": "Saarland eyaletindeki siyasi eğitim merkezi siyaset hakkında tarafsız ve çoğu zaman ücretsiz bilgi verir.",
+    "background": "Her eyaletin bir siyasi eğitim kurumu vardır; buna ek olarak Federal Siyasi Eğitim Merkezi (bpb) bulunur. Ücretsiz kitaplar ve broşürler, seminerler, konferanslar, geziler ve çevrimiçi içerikler sunarlar – örneğin demokrasi, seçimler, tarih veya uyum hakkında. Önemli: Bu kurumlar tarafsızdır, yani hiçbir partinin reklamını yapmaz. Seçimlerden önce bpb’nin Wahl-O-Mat’ı iyi bilinen bir örnektir.",
+    "otherOptions": "Kiliseler dinî topluluklardır, siyaset için tarafsız bilgi kaynakları değildir. Ordnungsamt kamu düzeniyle ilgilenir, tüketici merkezi (Verbraucherzentrale) ise sözleşmeler veya şikâyetler gibi tüketici konularında danışmanlık yapar.",
+    "memoryTip": "Tarafsız siyasi eğitim: eyalet merkezi (ve federal merkez).",
+    "legalBasis": []
+  },
+  "427": {
+    "summary": "Saarland eyaletinin başkenti: Saarbrücken.",
+    "whyCorrect": "Saarland eyaletinin meclisi ve hükümeti Saarbrücken şehrindedir.",
+    "background": "Her alan eyaletinin parlamentonun, hükümetin ve bakanlıkların bulunduğu bir başkenti vardır. Saarbrücken Saarland’ın en büyük şehridir ve Fransa sınırının hemen yanındadır. Neunkirchen, Homburg ve Dünya Mirası Völklingen Demir Fabrikası’nın bulunduğu Völklingen diğer şehirlerdir. Saarland en küçük alan eyaletidir. Güneybatıda, Fransa ve Lüksemburg sınırındadır ve ancak 1957’den beri Federal Cumhuriyet’e aittir.",
+    "otherOptions": "Neunkirchen, Homburg, Völklingen de Saarland eyaletindeki şehirlerdir, ama eyalet başkenti değildir.",
+    "memoryTip": "Saarland → Saarbrücken.",
+    "legalBasis": []
+  },
+  "428": {
+    "summary": "Saarland haritada 2 numaradır.",
+    "whyCorrect": "Saarland en küçük alan eyaletidir. Güneybatıda, Fransa ve Lüksemburg sınırındadır ve ancak 1957’den beri Federal Cumhuriyet’e aittir.",
+    "background": "Saarland en küçük alan eyaletidir. Güneybatıda, Fransa ve Lüksemburg sınırındadır ve ancak 1957’den beri Federal Cumhuriyet’e aittir. Almanya’nın 16 eyaleti vardır: 13 alan eyaleti ve Berlin, Hamburg ve Bremen olmak üzere üç şehir eyaleti. Kendi eyaletinin ve komşularının haritadaki yerini aklında tutmak faydalıdır.",
+    "otherOptions": "Diğer numaralar başka eyaletleri gösterir. Konuma dikkat et: kuzey mi güney mi, doğu mu batı mı ve Saarland eyaletinin hangi ülkelere veya denizlere komşu olduğu.",
+    "memoryTip": "Konumu hatırla: Saarland en küçük alan eyaletidir.",
+    "legalBasis": []
+  },
+  "429": {
+    "summary": "Saarland eyaletinin hükümet başkanına Ministerpräsident (eyalet başbakanı) denir.",
+    "whyCorrect": "Eyalet meclisi tarafından seçilir ve Saarland eyalet hükümetini yönetir.",
+    "background": "13 alan eyaletinin hepsinde hükümet başkanına Ministerpräsident denir. Eyalet seçiminden sonra eyalet meclisi tarafından seçilir, eyalet politikasının ana hatlarını belirler ve eyalet bakanlarını atar. Ayrıca eyaleti dışarıda temsil eder ve Federal Konsey’de yer alır. Saarland en küçük alan eyaletidir. Güneybatıda, Fransa ve Lüksemburg sınırındadır ve ancak 1957’den beri Federal Cumhuriyet’e aittir.",
+    "otherOptions": "“Erster Minister” İskoçya veya Galler’deki, “Premierminister” ise örneğin Birleşik Krallık’taki unvandır. Belediye başkanları şehirleri ve beldeleri yönetir – sadece şehir eyaletlerinde aynı zamanda eyalet hükümetinin başkanıdırlar.",
+    "memoryTip": "Alan eyaleti = Ministerpräsident.",
+    "legalBasis": []
+  },
+  "430": {
+    "summary": "Saarland eyaletinin dışişleri bakanı yoktur.",
+    "whyCorrect": "Anayasa’ya göre dış politika federal yönetimin görevidir.",
+    "background": "Saarland eyalet hükümeti eyalet başbakanından ve örneğin içişleri, adalet, maliye, eğitim (Kultus), ekonomi veya sosyal işler için birkaç eyalet bakanından oluşur. Ancak başka devletlerle ilişkilerden – Berlin’deki Dışişleri Bakanlığı ile – federal yönetim sorumludur (Anayasa madde 32 ve 73). Eyaletler yurt dışıyla ancak sınırlı ölçüde, örneğin ortak bölgelerle iş birliği yapabilir.",
+    "otherOptions": "Saarland eyaletinde adalet, maliye ve içişleri bakanları vardır: Mahkemelerden ve cezaevlerinden, eyalet bütçesinden ve polis ile idareden sorumludurlar.",
+    "memoryTip": "Dış politika = federal yönetim. Hiçbir eyaletin dışişleri bakanı yoktur.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 32",
+        "url": "https://www.gesetze-im-internet.de/gg/art_32.html"
+      },
+      {
+        "label": "Anayasa (GG) md. 73",
+        "url": "https://www.gesetze-im-internet.de/gg/art_73.html"
+      }
+    ]
+  },
+  "431": {
+    "summary": "Saksonya eyaletinin arması 4 numaralı görseldir.",
+    "whyCorrect": "Arma şunu gösterir: siyah ve altın şeritler üzerinde çapraz yeşil bir taç (Rautenkranz).",
+    "background": "Her eyaletin kendi arması vardır. Saksonya eyaletinin arması şunu gösterir: siyah ve altın şeritler üzerinde çapraz yeşil bir taç (Rautenkranz). Arma örneğin resmî binalarda, eyalet belgelerinde ve eyalet bayrağında görülür. Saksonya Almanya’nın doğusundadır ve Polonya ile Çekya’ya komşudur. 1990’da Federal Cumhuriyet’e katılan beş eyaletten biridir. Saksonya eyaletinde yaklaşık 4,0 milyon insan yaşar.",
+    "otherOptions": "Diğer görseller Saksonya eyaletine ait olmayan başka armaları gösterir. Sınav için kendi eyaletinin armasına dikkatle bakmaya değer – bu soru her eyalette çıkar.",
+    "memoryTip": "Saksonya arması: siyah ve altın şeritler üzerinde çapraz yeşil bir taç (Rautenkranz).",
+    "legalBasis": []
+  },
+  "432": {
+    "summary": "Vogtlandkreis, Saksonya eyaletinde bir ilçedir (Landkreis).",
+    "whyCorrect": "Vogtland ilçesi Saksonya’nın güneybatısında, Bavyera ve Çekya sınırındadır; ilçe merkezi Plauen’dir.",
+    "background": "Alan eyaletleri ilçelere (Landkreis) ve ilçeye bağlı olmayan şehirlere ayrılır. İlçeler, ilçe yolları, çöp toplama veya yabancılar dairesi gibi tek tek belediyeler için çok büyük olan görevleri üstlenir. Başlarında bir ilçe yöneticisi (Landrat) bulunur. Vogtland ilçesi Saksonya’nın güneybatısında, Bavyera ve Çekya sınırındadır; ilçe merkezi Plauen’dir.",
+    "otherOptions": "Diğer adlar başka eyaletlere aittir: Altötting Bavyera eyaletindedir; Uckermark Brandenburg eyaletindedir; Nordfriesland Schleswig-Holstein eyaletindedir.",
+    "memoryTip": "Vogtlandkreis → Saksonya.",
+    "legalBasis": []
+  },
+  "433": {
+    "summary": "Saksonya eyaletinin parlamentosu – eyalet meclisi (Landtag) – 5 yıllığına seçilir.",
+    "whyCorrect": "eyalet meclisi (Landtag) için yasama dönemi 5 yıldır.",
+    "background": "Her eyaletin doğrudan seçilen kendi parlamentosu vardır (Anayasa madde 28). Saksonya eyaletinde buna eyalet meclisi (Landtag) denir. Örneğin okullar ve polisle ilgili eyalet yasalarını kabul eder, eyalet bütçesini onaylar ve eyalet hükümetinin başkanını seçer. Neredeyse bütün eyaletlerde yasama dönemi beş yıldır – sadece Bremen dört yılda bir seçim yapar.",
+    "otherOptions": "3, 4, 6 yıl yanlıştır. Karşılaştırma için: Federal Meclis dört yılda bir, Avrupa Parlamentosu beş yılda bir seçilir.",
+    "memoryTip": "Saksonya: eyalet meclisi (Landtag) 5 yılda bir.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 28",
+        "url": "https://www.gesetze-im-internet.de/gg/art_28.html"
+      }
+    ]
+  },
+  "434": {
+    "summary": "Saksonya eyaletinde yerel seçimlerde 18 yaşından itibaren oy kullanılabilir.",
+    "whyCorrect": "Oy verme yaşı Saksonya eyaletinin yasasında düzenlenir ve 18’dir.",
+    "background": "Saksonya eyaletinde yerel seçimlerde – federal seçimde olduğu gibi – 18 yaşından itibaren oy kullanılabilir. Diğer birçok eyalette ise yerel seçimlerde oy verme yaşı zaten 16’dır. Yerel seçimlerde örneğin belediye meclisi, ilçe meclisi ve çoğu zaman belediye başkanı seçilir. Orada yaşayan diğer AB ülkelerinin vatandaşları da oy kullanabilir.",
+    "otherOptions": "14, 16, 20 Saksonya eyaleti için yanlıştır. Oy verme yaşı eyaletten eyalete farklıdır – kendi eyaletin için rakamı aklında tut.",
+    "memoryTip": "Saksonya: 18 yaşından itibaren oy.",
+    "legalBasis": []
+  },
+  "435": {
+    "summary": "Saksonya eyaletinin bayrağı beyaz-yeşil renklerindedir.",
+    "whyCorrect": "Eyalet bayrağının üstü beyaz, altı yeşildir.",
+    "background": "Federal bayrağın yanında her eyaletin kendi bayrağı vardır. Eyalet bayrağının üstü beyaz, altı yeşildir. Eyalet bayrağı örneğin eyalet meclisinde, bakanlıklarda ve bayramlarda resmî binalarda dalgalanır. Saksonya eyaletinin arması şunu gösterir: siyah ve altın şeritler üzerinde çapraz yeşil bir taç (Rautenkranz).",
+    "otherOptions": "Diğer renk kombinasyonları Saksonya eyaletine ait değildir: mavi-beyaz-kırmızı Schleswig-Holstein eyaletinin bayrağıdır; yeşil-beyaz-kırmızı Kuzey Ren-Vestfalya eyaletinin bayrağıdır; siyah-sarı hiçbir eyaletin bayrağı değildir.",
+    "memoryTip": "Saksonya: beyaz-yeşil.",
+    "legalBasis": []
+  },
+  "436": {
+    "summary": "Saksonya eyaletinde siyasi konularda eyalet siyasi eğitim merkezinden (Landeszentrale für politische Bildung) bilgi alınabilir.",
+    "whyCorrect": "Saksonya eyaletindeki siyasi eğitim merkezi siyaset hakkında tarafsız ve çoğu zaman ücretsiz bilgi verir.",
+    "background": "Her eyaletin bir siyasi eğitim kurumu vardır; buna ek olarak Federal Siyasi Eğitim Merkezi (bpb) bulunur. Ücretsiz kitaplar ve broşürler, seminerler, konferanslar, geziler ve çevrimiçi içerikler sunarlar – örneğin demokrasi, seçimler, tarih veya uyum hakkında. Önemli: Bu kurumlar tarafsızdır, yani hiçbir partinin reklamını yapmaz. Seçimlerden önce bpb’nin Wahl-O-Mat’ı iyi bilinen bir örnektir.",
+    "otherOptions": "Kiliseler dinî topluluklardır, siyaset için tarafsız bilgi kaynakları değildir. Ordnungsamt kamu düzeniyle ilgilenir, tüketici merkezi (Verbraucherzentrale) ise sözleşmeler veya şikâyetler gibi tüketici konularında danışmanlık yapar.",
+    "memoryTip": "Tarafsız siyasi eğitim: eyalet merkezi (ve federal merkez).",
+    "legalBasis": []
+  },
+  "437": {
+    "summary": "Saksonya eyaletinin başkenti: Dresden.",
+    "whyCorrect": "Saksonya eyaletinin meclisi ve hükümeti Dresden şehrindedir.",
+    "background": "Her alan eyaletinin parlamentonun, hükümetin ve bakanlıkların bulunduğu bir başkenti vardır. Dresden Frauenkirche ve Zwinger ile tanınır. Leipzig artık Saksonya’nın en büyük şehridir ve 1989’da Pazartesi gösterilerinin merkeziydi. Chemnitz ve Zwickau diğer büyük şehirlerdir. Saksonya Almanya’nın doğusundadır ve Polonya ile Çekya’ya komşudur. 1990’da Federal Cumhuriyet’e katılan beş eyaletten biridir.",
+    "otherOptions": "Leipzig, Chemnitz, Zwickau de Saksonya eyaletindeki şehirlerdir, ama eyalet başkenti değildir.",
+    "memoryTip": "Saksonya → Dresden.",
+    "legalBasis": []
+  },
+  "438": {
+    "summary": "Saksonya haritada 4 numaradır.",
+    "whyCorrect": "Saksonya Almanya’nın doğusundadır ve Polonya ile Çekya’ya komşudur. 1990’da Federal Cumhuriyet’e katılan beş eyaletten biridir.",
+    "background": "Saksonya Almanya’nın doğusundadır ve Polonya ile Çekya’ya komşudur. 1990’da Federal Cumhuriyet’e katılan beş eyaletten biridir. Almanya’nın 16 eyaleti vardır: 13 alan eyaleti ve Berlin, Hamburg ve Bremen olmak üzere üç şehir eyaleti. Kendi eyaletinin ve komşularının haritadaki yerini aklında tutmak faydalıdır.",
+    "otherOptions": "Diğer numaralar başka eyaletleri gösterir. Konuma dikkat et: kuzey mi güney mi, doğu mu batı mı ve Saksonya eyaletinin hangi ülkelere veya denizlere komşu olduğu.",
+    "memoryTip": "Konumu hatırla: Saksonya Almanya’nın doğusundadır ve Polonya ile Çekya’ya komşudur.",
+    "legalBasis": []
+  },
+  "439": {
+    "summary": "Saksonya eyaletinin hükümet başkanına Ministerpräsident (eyalet başbakanı) denir.",
+    "whyCorrect": "Eyalet meclisi tarafından seçilir ve Saksonya eyalet hükümetini yönetir.",
+    "background": "13 alan eyaletinin hepsinde hükümet başkanına Ministerpräsident denir. Eyalet seçiminden sonra eyalet meclisi tarafından seçilir, eyalet politikasının ana hatlarını belirler ve eyalet bakanlarını atar. Ayrıca eyaleti dışarıda temsil eder ve Federal Konsey’de yer alır. Saksonya Almanya’nın doğusundadır ve Polonya ile Çekya’ya komşudur. 1990’da Federal Cumhuriyet’e katılan beş eyaletten biridir.",
+    "otherOptions": "“Erster Minister” İskoçya veya Galler’deki, “Premierminister” ise örneğin Birleşik Krallık’taki unvandır. Belediye başkanları şehirleri ve beldeleri yönetir – sadece şehir eyaletlerinde aynı zamanda eyalet hükümetinin başkanıdırlar.",
+    "memoryTip": "Alan eyaleti = Ministerpräsident.",
+    "legalBasis": []
+  },
+  "440": {
+    "summary": "Saksonya eyaletinin dışişleri bakanı yoktur.",
+    "whyCorrect": "Anayasa’ya göre dış politika federal yönetimin görevidir.",
+    "background": "Saksonya eyalet hükümeti eyalet başbakanından ve örneğin içişleri, adalet, maliye, eğitim (Kultus), ekonomi veya sosyal işler için birkaç eyalet bakanından oluşur. Ancak başka devletlerle ilişkilerden – Berlin’deki Dışişleri Bakanlığı ile – federal yönetim sorumludur (Anayasa madde 32 ve 73). Eyaletler yurt dışıyla ancak sınırlı ölçüde, örneğin ortak bölgelerle iş birliği yapabilir.",
+    "otherOptions": "Saksonya eyaletinde adalet, maliye ve içişleri bakanları vardır: Mahkemelerden ve cezaevlerinden, eyalet bütçesinden ve polis ile idareden sorumludurlar.",
+    "memoryTip": "Dış politika = federal yönetim. Hiçbir eyaletin dışişleri bakanı yoktur.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 32",
+        "url": "https://www.gesetze-im-internet.de/gg/art_32.html"
+      },
+      {
+        "label": "Anayasa (GG) md. 73",
+        "url": "https://www.gesetze-im-internet.de/gg/art_73.html"
+      }
+    ]
+  },
+  "441": {
+    "summary": "Saksonya-Anhalt eyaletinin arması 4 numaralı görseldir.",
+    "whyCorrect": "Arma şunu gösterir: üstte yeşil taçlı siyah-altın şeritler, altta kırmızı bir duvar üzerinde siyah bir ayı – Anhalt ayısı.",
+    "background": "Her eyaletin kendi arması vardır. Saksonya-Anhalt eyaletinin arması şunu gösterir: üstte yeşil taçlı siyah-altın şeritler, altta kırmızı bir duvar üzerinde siyah bir ayı – Anhalt ayısı. Arma örneğin resmî binalarda, eyalet belgelerinde ve eyalet bayrağında görülür. Saksonya-Anhalt, Doğu Almanya’nın ortasında, Elbe kıyısındadır. Martin Luther’in 1517’de Reformasyon’u başlattığı Wittenberg buradadır. Saksonya-Anhalt eyaletinde yaklaşık 2,1 milyon insan yaşar.",
+    "otherOptions": "Diğer görseller Saksonya-Anhalt eyaletine ait olmayan başka armaları gösterir. Sınav için kendi eyaletinin armasına dikkatle bakmaya değer – bu soru her eyalette çıkar.",
+    "memoryTip": "Saksonya-Anhalt arması: üstte yeşil taçlı siyah-altın şeritler, altta kırmızı bir duvar üzerinde siyah bir ayı.",
+    "legalBasis": []
+  },
+  "442": {
+    "summary": "Börde, Saksonya-Anhalt eyaletinde bir ilçedir (Landkreis).",
+    "whyCorrect": "Börde ilçesi Magdeburg’un batısındadır ve özellikle verimli topraklarıyla tanınır.",
+    "background": "Alan eyaletleri ilçelere (Landkreis) ve ilçeye bağlı olmayan şehirlere ayrılır. İlçeler, ilçe yolları, çöp toplama veya yabancılar dairesi gibi tek tek belediyeler için çok büyük olan görevleri üstlenir. Başlarında bir ilçe yöneticisi (Landrat) bulunur. Börde ilçesi Magdeburg’un batısındadır ve özellikle verimli topraklarıyla tanınır.",
+    "otherOptions": "Diğer adlar başka eyaletlere aittir: Ammerland Aşağı Saksonya eyaletindedir; Altötting Bavyera eyaletindedir; Uckermark Brandenburg eyaletindedir.",
+    "memoryTip": "Börde → Saksonya-Anhalt.",
+    "legalBasis": []
+  },
+  "443": {
+    "summary": "Saksonya-Anhalt eyaletinin parlamentosu – eyalet meclisi (Landtag) – 5 yıllığına seçilir.",
+    "whyCorrect": "eyalet meclisi (Landtag) için yasama dönemi 5 yıldır.",
+    "background": "Her eyaletin doğrudan seçilen kendi parlamentosu vardır (Anayasa madde 28). Saksonya-Anhalt eyaletinde buna eyalet meclisi (Landtag) denir. Örneğin okullar ve polisle ilgili eyalet yasalarını kabul eder, eyalet bütçesini onaylar ve eyalet hükümetinin başkanını seçer. Neredeyse bütün eyaletlerde yasama dönemi beş yıldır – sadece Bremen dört yılda bir seçim yapar.",
+    "otherOptions": "3, 4, 6 yıl yanlıştır. Karşılaştırma için: Federal Meclis dört yılda bir, Avrupa Parlamentosu beş yılda bir seçilir.",
+    "memoryTip": "Saksonya-Anhalt: eyalet meclisi (Landtag) 5 yılda bir.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 28",
+        "url": "https://www.gesetze-im-internet.de/gg/art_28.html"
+      }
+    ]
+  },
+  "444": {
+    "summary": "Saksonya-Anhalt eyaletinde yerel seçimlerde 16 yaşından itibaren oy kullanılabilir.",
+    "whyCorrect": "Oy verme yaşı Saksonya-Anhalt eyaletinin yasasında düzenlenir ve 16’dır.",
+    "background": "Saksonya-Anhalt eyaletinde 16 yaşındaki gençler bile yerel seçimlerde oy kullanabilir. Birçok eyalet, gençler şehirlerinde veya beldelerinde olanlara daha erken söz sahibi olabilsin diye yerel seçimlerde oy verme yaşını 16’ya indirdi. Federal seçimde ise oy verme yaşı hâlâ 18’dir. Yerel seçimlerde orada yaşayan diğer AB ülkelerinin vatandaşları da oy kullanabilir.",
+    "otherOptions": "14, 18, 20 Saksonya-Anhalt eyaleti için yanlıştır. Oy verme yaşı eyaletten eyalete farklıdır – kendi eyaletin için rakamı aklında tut.",
+    "memoryTip": "Saksonya-Anhalt: 16 yaşından itibaren oy.",
+    "legalBasis": []
+  },
+  "445": {
+    "summary": "Saksonya-Anhalt eyaletinin bayrağı sarı-siyah renklerindedir.",
+    "whyCorrect": "Eyalet bayrağının üstü sarı, altı siyahtır; ortasında eyalet arması bulunur.",
+    "background": "Federal bayrağın yanında her eyaletin kendi bayrağı vardır. Eyalet bayrağının üstü sarı, altı siyahtır; ortasında eyalet arması bulunur. Eyalet bayrağı örneğin eyalet meclisinde, bakanlıklarda ve bayramlarda resmî binalarda dalgalanır. Saksonya-Anhalt eyaletinin arması şunu gösterir: üstte yeşil taçlı siyah-altın şeritler, altta kırmızı bir duvar üzerinde siyah bir ayı – Anhalt ayısı.",
+    "otherOptions": "Diğer renk kombinasyonları Saksonya-Anhalt eyaletine ait değildir: mavi-beyaz-kırmızı Schleswig-Holstein eyaletinin bayrağıdır; yeşil-beyaz-kırmızı Kuzey Ren-Vestfalya eyaletinin bayrağıdır; beyaz-kırmızı Berlin, Hamburg, Türingen eyaletinin bayrağıdır.",
+    "memoryTip": "Saksonya-Anhalt: sarı-siyah.",
+    "legalBasis": []
+  },
+  "446": {
+    "summary": "Saksonya-Anhalt eyaletinde siyasi konularda eyalet siyasi eğitim merkezinden (Landeszentrale für politische Bildung) bilgi alınabilir.",
+    "whyCorrect": "Saksonya-Anhalt eyaletindeki siyasi eğitim merkezi siyaset hakkında tarafsız ve çoğu zaman ücretsiz bilgi verir.",
+    "background": "Her eyaletin bir siyasi eğitim kurumu vardır; buna ek olarak Federal Siyasi Eğitim Merkezi (bpb) bulunur. Ücretsiz kitaplar ve broşürler, seminerler, konferanslar, geziler ve çevrimiçi içerikler sunarlar – örneğin demokrasi, seçimler, tarih veya uyum hakkında. Önemli: Bu kurumlar tarafsızdır, yani hiçbir partinin reklamını yapmaz. Seçimlerden önce bpb’nin Wahl-O-Mat’ı iyi bilinen bir örnektir.",
+    "otherOptions": "Kiliseler dinî topluluklardır, siyaset için tarafsız bilgi kaynakları değildir. Ordnungsamt kamu düzeniyle ilgilenir, tüketici merkezi (Verbraucherzentrale) ise sözleşmeler veya şikâyetler gibi tüketici konularında danışmanlık yapar.",
+    "memoryTip": "Tarafsız siyasi eğitim: eyalet merkezi (ve federal merkez).",
+    "legalBasis": []
+  },
+  "447": {
+    "summary": "Saksonya-Anhalt eyaletinin başkenti: Magdeburg.",
+    "whyCorrect": "Saksonya-Anhalt eyaletinin meclisi ve hükümeti Magdeburg şehrindedir.",
+    "background": "Her alan eyaletinin parlamentonun, hükümetin ve bakanlıkların bulunduğu bir başkenti vardır. Magdeburg Elbe kıyısındadır ve Almanya’nın en eski şehirlerinden biridir. Halle (Saale) benzer büyüklüktedir, Dessau Bauhaus ile, Wittenberg ise Martin Luther ile tanınır. Saksonya-Anhalt, Doğu Almanya’nın ortasında, Elbe kıyısındadır. Martin Luther’in 1517’de Reformasyon’u başlattığı Wittenberg buradadır.",
+    "otherOptions": "Halle, Dessau, Wittenberg de Saksonya-Anhalt eyaletindeki şehirlerdir, ama eyalet başkenti değildir.",
+    "memoryTip": "Saksonya-Anhalt → Magdeburg.",
+    "legalBasis": []
+  },
+  "448": {
+    "summary": "Saksonya-Anhalt haritada 3 numaradır.",
+    "whyCorrect": "Saksonya-Anhalt, Doğu Almanya’nın ortasında, Elbe kıyısındadır. Martin Luther’in 1517’de Reformasyon’u başlattığı Wittenberg buradadır.",
+    "background": "Saksonya-Anhalt, Doğu Almanya’nın ortasında, Elbe kıyısındadır. Martin Luther’in 1517’de Reformasyon’u başlattığı Wittenberg buradadır. Almanya’nın 16 eyaleti vardır: 13 alan eyaleti ve Berlin, Hamburg ve Bremen olmak üzere üç şehir eyaleti. Kendi eyaletinin ve komşularının haritadaki yerini aklında tutmak faydalıdır.",
+    "otherOptions": "Diğer numaralar başka eyaletleri gösterir. Konuma dikkat et: kuzey mi güney mi, doğu mu batı mı ve Saksonya-Anhalt eyaletinin hangi ülkelere veya denizlere komşu olduğu.",
+    "memoryTip": "Konumu hatırla: Saksonya-Anhalt, Doğu Almanya’nın ortasında, Elbe kıyısındadır.",
+    "legalBasis": []
+  },
+  "449": {
+    "summary": "Saksonya-Anhalt eyaletinin hükümet başkanına Ministerpräsident (eyalet başbakanı) denir.",
+    "whyCorrect": "Eyalet meclisi tarafından seçilir ve Saksonya-Anhalt eyalet hükümetini yönetir.",
+    "background": "13 alan eyaletinin hepsinde hükümet başkanına Ministerpräsident denir. Eyalet seçiminden sonra eyalet meclisi tarafından seçilir, eyalet politikasının ana hatlarını belirler ve eyalet bakanlarını atar. Ayrıca eyaleti dışarıda temsil eder ve Federal Konsey’de yer alır. Saksonya-Anhalt, Doğu Almanya’nın ortasında, Elbe kıyısındadır. Martin Luther’in 1517’de Reformasyon’u başlattığı Wittenberg buradadır.",
+    "otherOptions": "“Erster Minister” İskoçya veya Galler’deki, “Premierminister” ise örneğin Birleşik Krallık’taki unvandır. Belediye başkanları şehirleri ve beldeleri yönetir – sadece şehir eyaletlerinde aynı zamanda eyalet hükümetinin başkanıdırlar.",
+    "memoryTip": "Alan eyaleti = Ministerpräsident.",
+    "legalBasis": []
+  },
+  "450": {
+    "summary": "Saksonya-Anhalt eyaletinin dışişleri bakanı yoktur.",
+    "whyCorrect": "Anayasa’ya göre dış politika federal yönetimin görevidir.",
+    "background": "Saksonya-Anhalt eyalet hükümeti eyalet başbakanından ve örneğin içişleri, adalet, maliye, eğitim (Kultus), ekonomi veya sosyal işler için birkaç eyalet bakanından oluşur. Ancak başka devletlerle ilişkilerden – Berlin’deki Dışişleri Bakanlığı ile – federal yönetim sorumludur (Anayasa madde 32 ve 73). Eyaletler yurt dışıyla ancak sınırlı ölçüde, örneğin ortak bölgelerle iş birliği yapabilir.",
+    "otherOptions": "Saksonya-Anhalt eyaletinde adalet, maliye ve içişleri bakanları vardır: Mahkemelerden ve cezaevlerinden, eyalet bütçesinden ve polis ile idareden sorumludurlar.",
+    "memoryTip": "Dış politika = federal yönetim. Hiçbir eyaletin dışişleri bakanı yoktur.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 32",
+        "url": "https://www.gesetze-im-internet.de/gg/art_32.html"
+      },
+      {
+        "label": "Anayasa (GG) md. 73",
+        "url": "https://www.gesetze-im-internet.de/gg/art_73.html"
+      }
+    ]
+  },
+  "451": {
+    "summary": "Türingen eyaletinin arması 4 numaralı görseldir.",
+    "whyCorrect": "Arma şunu gösterir: mavi zemin üzerinde, sekiz beyaz yıldızla çevrili kırmızı-beyaz çizgili bir aslan.",
+    "background": "Her eyaletin kendi arması vardır. Türingen eyaletinin arması şunu gösterir: mavi zemin üzerinde, sekiz beyaz yıldızla çevrili kırmızı-beyaz çizgili bir aslan. Arma örneğin resmî binalarda, eyalet belgelerinde ve eyalet bayrağında görülür. Türingen Almanya’nın ortasındadır ve ormanlarının çokluğu nedeniyle “Almanya’nın yeşil kalbi” olarak anılır. Türingen eyaletinde yaklaşık 2,1 milyon insan yaşar.",
+    "otherOptions": "Diğer görseller Türingen eyaletine ait olmayan başka armaları gösterir. Sınav için kendi eyaletinin armasına dikkatle bakmaya değer – bu soru her eyalette çıkar.",
+    "memoryTip": "Türingen arması: mavi zemin üzerinde, sekiz beyaz yıldızla çevrili kırmızı-beyaz çizgili bir aslan.",
+    "legalBasis": []
+  },
+  "452": {
+    "summary": "Wartburgkreis, Türingen eyaletinde bir ilçedir (Landkreis).",
+    "whyCorrect": "Wartburg ilçesi Türingen’in batısındadır; Martin Luther’in Yeni Ahit’i çevirdiği, Eisenach yakınındaki Wartburg Kalesi buradadır.",
+    "background": "Alan eyaletleri ilçelere (Landkreis) ve ilçeye bağlı olmayan şehirlere ayrılır. İlçeler, ilçe yolları, çöp toplama veya yabancılar dairesi gibi tek tek belediyeler için çok büyük olan görevleri üstlenir. Başlarında bir ilçe yöneticisi (Landrat) bulunur. Wartburg ilçesi Türingen’in batısındadır; Martin Luther’in Yeni Ahit’i çevirdiği, Eisenach yakınındaki Wartburg Kalesi buradadır.",
+    "otherOptions": "Diğer adlar başka eyaletlere aittir: Ammerland Aşağı Saksonya eyaletindedir; Altötting Bavyera eyaletindedir; Nordfriesland Schleswig-Holstein eyaletindedir.",
+    "memoryTip": "Wartburgkreis → Türingen.",
+    "legalBasis": []
+  },
+  "453": {
+    "summary": "Türingen eyaletinin parlamentosu – eyalet meclisi (Landtag) – 5 yıllığına seçilir.",
+    "whyCorrect": "eyalet meclisi (Landtag) için yasama dönemi 5 yıldır.",
+    "background": "Her eyaletin doğrudan seçilen kendi parlamentosu vardır (Anayasa madde 28). Türingen eyaletinde buna eyalet meclisi (Landtag) denir. Örneğin okullar ve polisle ilgili eyalet yasalarını kabul eder, eyalet bütçesini onaylar ve eyalet hükümetinin başkanını seçer. Neredeyse bütün eyaletlerde yasama dönemi beş yıldır – sadece Bremen dört yılda bir seçim yapar.",
+    "otherOptions": "3, 4, 6 yıl yanlıştır. Karşılaştırma için: Federal Meclis dört yılda bir, Avrupa Parlamentosu beş yılda bir seçilir.",
+    "memoryTip": "Türingen: eyalet meclisi (Landtag) 5 yılda bir.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 28",
+        "url": "https://www.gesetze-im-internet.de/gg/art_28.html"
+      }
+    ]
+  },
+  "454": {
+    "summary": "Türingen eyaletinde yerel seçimlerde 16 yaşından itibaren oy kullanılabilir.",
+    "whyCorrect": "Oy verme yaşı Türingen eyaletinin yasasında düzenlenir ve 16’dır.",
+    "background": "Türingen eyaletinde 16 yaşındaki gençler bile yerel seçimlerde oy kullanabilir. Birçok eyalet, gençler şehirlerinde veya beldelerinde olanlara daha erken söz sahibi olabilsin diye yerel seçimlerde oy verme yaşını 16’ya indirdi. Federal seçimde ise oy verme yaşı hâlâ 18’dir. Yerel seçimlerde orada yaşayan diğer AB ülkelerinin vatandaşları da oy kullanabilir.",
+    "otherOptions": "14, 18, 20 Türingen eyaleti için yanlıştır. Oy verme yaşı eyaletten eyalete farklıdır – kendi eyaletin için rakamı aklında tut.",
+    "memoryTip": "Türingen: 16 yaşından itibaren oy.",
+    "legalBasis": []
+  },
+  "455": {
+    "summary": "Türingen eyaletinin bayrağı beyaz-kırmızı renklerindedir.",
+    "whyCorrect": "Eyalet bayrağının üstü beyaz, altı kırmızıdır.",
+    "background": "Federal bayrağın yanında her eyaletin kendi bayrağı vardır. Eyalet bayrağının üstü beyaz, altı kırmızıdır. Eyalet bayrağı örneğin eyalet meclisinde, bakanlıklarda ve bayramlarda resmî binalarda dalgalanır. Türingen eyaletinin arması şunu gösterir: mavi zemin üzerinde, sekiz beyaz yıldızla çevrili kırmızı-beyaz çizgili bir aslan.",
+    "otherOptions": "Diğer renk kombinasyonları Türingen eyaletine ait değildir: mavi-beyaz-kırmızı Schleswig-Holstein eyaletinin bayrağıdır; yeşil-beyaz-kırmızı Kuzey Ren-Vestfalya eyaletinin bayrağıdır; siyah-altın Baden-Württemberg eyaletinin bayrağıdır.",
+    "memoryTip": "Türingen: beyaz-kırmızı.",
+    "legalBasis": []
+  },
+  "456": {
+    "summary": "Türingen eyaletinde siyasi konularda eyalet siyasi eğitim merkezinden (Landeszentrale für politische Bildung) bilgi alınabilir.",
+    "whyCorrect": "Türingen eyaletindeki siyasi eğitim merkezi siyaset hakkında tarafsız ve çoğu zaman ücretsiz bilgi verir.",
+    "background": "Her eyaletin bir siyasi eğitim kurumu vardır; buna ek olarak Federal Siyasi Eğitim Merkezi (bpb) bulunur. Ücretsiz kitaplar ve broşürler, seminerler, konferanslar, geziler ve çevrimiçi içerikler sunarlar – örneğin demokrasi, seçimler, tarih veya uyum hakkında. Önemli: Bu kurumlar tarafsızdır, yani hiçbir partinin reklamını yapmaz. Seçimlerden önce bpb’nin Wahl-O-Mat’ı iyi bilinen bir örnektir.",
+    "otherOptions": "Kiliseler dinî topluluklardır, siyaset için tarafsız bilgi kaynakları değildir. Ordnungsamt kamu düzeniyle ilgilenir, tüketici merkezi (Verbraucherzentrale) ise sözleşmeler veya şikâyetler gibi tüketici konularında danışmanlık yapar.",
+    "memoryTip": "Tarafsız siyasi eğitim: eyalet merkezi (ve federal merkez).",
+    "legalBasis": []
+  },
+  "457": {
+    "summary": "Türingen eyaletinin başkenti: Erfurt.",
+    "whyCorrect": "Türingen eyaletinin meclisi ve hükümeti Erfurt şehrindedir.",
+    "background": "Her alan eyaletinin parlamentonun, hükümetin ve bakanlıkların bulunduğu bir başkenti vardır. Erfurt Türingen’in en büyük şehridir ve iyi korunmuş bir Orta Çağ eski şehrine sahiptir. Jena bir üniversite şehridir, Eisenach Wartburg ile tanınır, ressam Otto Dix ise Gera’da doğmuştur. Türingen Almanya’nın ortasındadır ve ormanlarının çokluğu nedeniyle “Almanya’nın yeşil kalbi” olarak anılır.",
+    "otherOptions": "Eisenach, Gera, Jena de Türingen eyaletindeki şehirlerdir, ama eyalet başkenti değildir.",
+    "memoryTip": "Türingen → Erfurt.",
+    "legalBasis": []
+  },
+  "458": {
+    "summary": "Türingen haritada 2 numaradır.",
+    "whyCorrect": "Türingen Almanya’nın ortasındadır ve ormanlarının çokluğu nedeniyle “Almanya’nın yeşil kalbi” olarak anılır.",
+    "background": "Türingen Almanya’nın ortasındadır ve ormanlarının çokluğu nedeniyle “Almanya’nın yeşil kalbi” olarak anılır. Almanya’nın 16 eyaleti vardır: 13 alan eyaleti ve Berlin, Hamburg ve Bremen olmak üzere üç şehir eyaleti. Kendi eyaletinin ve komşularının haritadaki yerini aklında tutmak faydalıdır.",
+    "otherOptions": "Diğer numaralar başka eyaletleri gösterir. Konuma dikkat et: kuzey mi güney mi, doğu mu batı mı ve Türingen eyaletinin hangi ülkelere veya denizlere komşu olduğu.",
+    "memoryTip": "Konumu hatırla: Türingen Almanya’nın ortasındadır ve ormanlarının çokluğu nedeniyle “Almanya’nın yeşil kalbi” olarak anılır.",
+    "legalBasis": []
+  },
+  "459": {
+    "summary": "Türingen eyaletinin hükümet başkanına Ministerpräsident (eyalet başbakanı) denir.",
+    "whyCorrect": "Eyalet meclisi tarafından seçilir ve Türingen eyalet hükümetini yönetir.",
+    "background": "13 alan eyaletinin hepsinde hükümet başkanına Ministerpräsident denir. Eyalet seçiminden sonra eyalet meclisi tarafından seçilir, eyalet politikasının ana hatlarını belirler ve eyalet bakanlarını atar. Ayrıca eyaleti dışarıda temsil eder ve Federal Konsey’de yer alır. Türingen Almanya’nın ortasındadır ve ormanlarının çokluğu nedeniyle “Almanya’nın yeşil kalbi” olarak anılır.",
+    "otherOptions": "“Erster Minister” İskoçya veya Galler’deki, “Premierminister” ise örneğin Birleşik Krallık’taki unvandır. Belediye başkanları şehirleri ve beldeleri yönetir – sadece şehir eyaletlerinde aynı zamanda eyalet hükümetinin başkanıdırlar.",
+    "memoryTip": "Alan eyaleti = Ministerpräsident.",
+    "legalBasis": []
+  },
+  "460": {
+    "summary": "Türingen eyaletinin dışişleri bakanı yoktur.",
+    "whyCorrect": "Anayasa’ya göre dış politika federal yönetimin görevidir.",
+    "background": "Türingen eyalet hükümeti eyalet başbakanından ve örneğin içişleri, adalet, maliye, eğitim (Kultus), ekonomi veya sosyal işler için birkaç eyalet bakanından oluşur. Ancak başka devletlerle ilişkilerden – Berlin’deki Dışişleri Bakanlığı ile – federal yönetim sorumludur (Anayasa madde 32 ve 73). Eyaletler yurt dışıyla ancak sınırlı ölçüde, örneğin ortak bölgelerle iş birliği yapabilir.",
+    "otherOptions": "Türingen eyaletinde adalet, maliye ve içişleri bakanları vardır: Mahkemelerden ve cezaevlerinden, eyalet bütçesinden ve polis ile idareden sorumludurlar.",
+    "memoryTip": "Dış politika = federal yönetim. Hiçbir eyaletin dışişleri bakanı yoktur.",
+    "legalBasis": [
+      {
+        "label": "Anayasa (GG) md. 32",
+        "url": "https://www.gesetze-im-internet.de/gg/art_32.html"
+      },
+      {
+        "label": "Anayasa (GG) md. 73",
+        "url": "https://www.gesetze-im-internet.de/gg/art_73.html"
+      }
+    ]
   }
 }
