@@ -162,63 +162,103 @@ const texts: Record<number, Partial<Record<ExplanationLanguage, ExplanationText>
   },
   31: {
     de: { summary: 'Mehrere Parteien, die gemeinsam regieren, bilden eine Koalition.', whyCorrect: 'Hat keine Partei allein die Mehrheit im Parlament, schließen sich Parteien zu einer Koalition zusammen und bilden zusammen die Regierung.' },
+    en: { summary: 'Several parties governing together form a coalition.', whyCorrect: 'If no party has a majority in parliament on its own, parties join together in a coalition and form the government together.' },
+    tr: { summary: 'Birlikte hükümet kuran partiler bir koalisyon oluşturur.', whyCorrect: 'Hiçbir parti parlamentoda tek başına çoğunluğa sahip değilse, partiler bir koalisyonda birleşip hükümeti birlikte kurar.' },
   },
   32: {
     de: { summary: 'Die Presse ist keine staatliche Gewalt.', whyCorrect: 'Die drei staatlichen Gewalten sind Gesetzgebung, vollziehende Gewalt (Regierung) und Rechtsprechung; die Presse ist unabhängig vom Staat.' },
+    en: { summary: 'The press is not a power of the state.', whyCorrect: 'The three powers of the state are legislation, executive power (government) and the judiciary; the press is independent of the state.' },
+    tr: { summary: 'Basın bir devlet gücü değildir.', whyCorrect: 'Devletin üç gücü yasama, yürütme (hükümet) ve yargıdır; basın devletten bağımsızdır.' },
   },
   33: {
     de: { summary: 'Staat und Religionsgemeinschaften sind in Deutschland getrennt.', whyCorrect: 'Es gibt keine Staatskirche; der Staat ist religiös neutral und bevorzugt keine Religion.' },
+    en: { summary: 'In Germany, the state and religious communities are separate.', whyCorrect: 'There is no state church; the state is religiously neutral and does not favour any religion.' },
+    tr: { summary: 'Almanya’da devlet ve dinî topluluklar birbirinden ayrıdır.', whyCorrect: 'Devlet kilisesi yoktur; devlet dinler karşısında tarafsızdır ve hiçbir dini kayırmaz.' },
   },
   34: {
     de: { summary: 'Deutschland ist keine Monarchie.', whyCorrect: 'Deutschland ist eine Republik mit gewähltem Staatsoberhaupt; Demokratie, Rechtsstaat und Sozialstaat sind Grundprinzipien des Grundgesetzes.' },
+    en: { summary: 'Germany is not a monarchy.', whyCorrect: 'Germany is a republic with an elected head of state; democracy, the rule of law and the social state are core principles of the Basic Law.' },
+    tr: { summary: 'Almanya bir monarşi değildir.', whyCorrect: 'Almanya seçilmiş bir devlet başkanı olan bir cumhuriyettir; demokrasi, hukuk devleti ve sosyal devlet Anayasa’nın temel ilkeleridir.' },
   },
   35: {
     de: { summary: 'Die Sozialversicherung wird vor allem durch Sozialabgaben finanziert.', whyCorrect: 'Arbeitnehmer und Arbeitgeber zahlen Beiträge zur Kranken-, Pflege-, Renten- und Arbeitslosenversicherung; Kirchensteuer, Spenden und Vereinsbeiträge gehören nicht dazu.' },
+    en: { summary: 'Social insurance is mainly financed through social security contributions.', whyCorrect: 'Employees and employers pay contributions to health, long-term care, pension and unemployment insurance; church tax, donations and membership fees are not part of it.' },
+    tr: { summary: 'Sosyal sigorta esas olarak sosyal sigorta primleriyle finanse edilir.', whyCorrect: 'Çalışanlar ve işverenler sağlık, bakım, emeklilik ve işsizlik sigortasına prim öder; kilise vergisi, bağışlar ve aidatlar buna dahil değildir.' },
   },
   36: {
     de: { summary: 'Die Krankenversicherung schafft soziale Sicherheit.', whyCorrect: 'Sie ist Teil der Sozialversicherung und schützt Menschen bei Krankheit; Auto-, Gebäude- und Haftpflichtversicherung sind private Sachversicherungen.' },
+    en: { summary: 'Health insurance provides social security.', whyCorrect: 'It is part of social insurance and protects people when they are ill; car, building and liability insurance are private insurances for property.' },
+    tr: { summary: 'Sağlık sigortası sosyal güvence sağlar.', whyCorrect: 'Sosyal sigortanın bir parçasıdır ve insanları hastalıkta korur; araç, bina ve sorumluluk sigortası eşya için özel sigortalardır.' },
   },
   37: {
     de: { summary: 'In den meisten Bundesländern heißt der Regierungschef Ministerpräsident.', whyCorrect: 'Das gilt für die 13 Flächenländer; in den Stadtstaaten Berlin, Hamburg und Bremen heißt das Amt Bürgermeister.' },
+    en: { summary: 'In most federal states, the head of government is called Minister-President.', whyCorrect: 'This applies to the 13 territorial states; in the city states of Berlin, Hamburg and Bremen the office is called mayor.' },
+    tr: { summary: 'Çoğu eyalette hükümet başkanına Ministerpräsident denir.', whyCorrect: 'Bu 13 alan eyaleti için geçerlidir; Berlin, Hamburg ve Bremen şehir eyaletlerinde bu makama belediye başkanı denir.' },
   },
   38: {
     de: { summary: 'Deutschland ist ein demokratischer und sozialer Bundesstaat.', whyCorrect: 'So steht es in Artikel 20 des Grundgesetzes: Der Bund und 16 Länder bilden gemeinsam den Staat.' },
+    en: { summary: 'Germany is a democratic and social federal state.', whyCorrect: 'This is stated in Article 20 of the Basic Law: the federation and 16 states together form the state.' },
+    tr: { summary: 'Almanya demokratik ve sosyal bir federal devlettir.', whyCorrect: 'Anayasa’nın 20. maddesinde böyle yazar: Federal yönetim ve 16 eyalet birlikte devleti oluşturur.' },
   },
   39: {
     de: { summary: 'Jedes Bundesland hat eine eigene Regierung.', whyCorrect: 'Außenpolitik, Armee und Währung sind Sache des Bundes oder der EU; jedes Land hat aber eine eigene Landesregierung und ein Landesparlament.' },
+    en: { summary: 'Every federal state has its own government.', whyCorrect: 'Foreign policy, the army and currency are matters for the federation or the EU; but each state has its own government and parliament.' },
+    tr: { summary: 'Her eyaletin kendi hükümeti vardır.', whyCorrect: 'Dış politika, ordu ve para birimi federal yönetimin veya AB’nin işidir; ama her eyaletin kendi hükümeti ve parlamentosu vardır.' },
   },
   40: {
     de: { summary: 'Die Nationalhymne beginnt mit „Einigkeit und Recht und Freiheit“.', whyCorrect: 'Die Nationalhymne ist die dritte Strophe des „Liedes der Deutschen“ von Hoffmann von Fallersleben.' },
+    en: { summary: 'The national anthem begins with “Einigkeit und Recht und Freiheit”.', whyCorrect: 'The national anthem is the third verse of the “Song of the Germans” by Hoffmann von Fallersleben.' },
+    tr: { summary: 'Milli marş “Einigkeit und Recht und Freiheit” ile başlar.', whyCorrect: 'Milli marş, Hoffmann von Fallersleben’in “Almanların Şarkısı”nın üçüncü kıtasıdır.' },
   },
   41: {
     de: { summary: 'Mehrere Parteien vertreten die unterschiedlichen Meinungen der Bürgerinnen und Bürger.', whyCorrect: 'Erst durch mehrere Parteien haben Wählerinnen und Wähler eine echte Auswahl zwischen verschiedenen politischen Positionen.' },
+    en: { summary: 'Several parties represent the different opinions of citizens.', whyCorrect: 'Only with several parties do voters have a real choice between different political positions.' },
+    tr: { summary: 'Birden fazla parti, vatandaşların farklı görüşlerini temsil eder.', whyCorrect: 'Seçmenler ancak birden fazla parti varsa farklı siyasi görüşler arasında gerçek bir seçim yapabilir.' },
   },
   42: {
     de: { summary: 'Neue Gesetze beschließt das Parlament.', whyCorrect: 'Auf Bundesebene beschließt der Bundestag die Gesetze, oft zusammen mit dem Bundesrat; Regierung, Gerichte und Polizei beschließen keine Gesetze.' },
+    en: { summary: 'New laws are passed by parliament.', whyCorrect: 'At federal level, the Bundestag passes laws, often together with the Bundesrat; the government, courts and police do not pass laws.' },
+    tr: { summary: 'Yeni yasaları parlamento kabul eder.', whyCorrect: 'Federal düzeyde yasaları Federal Meclis, çoğu zaman Federal Konsey ile birlikte kabul eder; hükümet, mahkemeler ve polis yasa kabul etmez.' },
   },
   43: {
     de: { summary: 'Eine Partei kann verboten werden, wenn sie gegen die Verfassung kämpft.', whyCorrect: 'Nur das Bundesverfassungsgericht kann eine Partei verbieten, die die freiheitliche demokratische Grundordnung beseitigen will.' },
+    en: { summary: 'A party can be banned if it fights against the constitution.', whyCorrect: 'Only the Federal Constitutional Court can ban a party that seeks to abolish the free democratic basic order.' },
+    tr: { summary: 'Bir parti anayasaya karşı savaşırsa yasaklanabilir.', whyCorrect: 'Özgürlükçü demokratik temel düzeni ortadan kaldırmak isteyen bir partiyi yalnızca Federal Anayasa Mahkemesi yasaklayabilir.' },
   },
   44: {
     de: { summary: 'Den Bundespräsidenten oder die Bundespräsidentin wählt man nicht direkt.', whyCorrect: 'Das Staatsoberhaupt wird von der Bundesversammlung gewählt; Abgeordnete von EU-Parlament, Landtag und Bundestag wählen die Bürger direkt.' },
+    en: { summary: 'The Federal President is not elected directly.', whyCorrect: 'The head of state is elected by the Federal Convention; citizens directly elect members of the European Parliament, state parliaments and the Bundestag.' },
+    tr: { summary: 'Cumhurbaşkanı doğrudan seçilmez.', whyCorrect: 'Devlet başkanını Federal Kurul seçer; vatandaşlar Avrupa Parlamentosu, eyalet meclisi ve Federal Meclis üyelerini doğrudan seçer.' },
   },
   45: {
     de: { summary: 'Die Pflegeversicherung gehört zur Sozialversicherung.', whyCorrect: 'Sie ist neben Kranken-, Renten-, Arbeitslosen- und Unfallversicherung einer der fünf Zweige der Sozialversicherung.' },
+    en: { summary: 'Long-term care insurance is part of social insurance.', whyCorrect: 'Together with health, pension, unemployment and accident insurance, it is one of the five branches of social insurance.' },
+    tr: { summary: 'Bakım sigortası sosyal sigortanın bir parçasıdır.', whyCorrect: 'Sağlık, emeklilik, işsizlik ve iş kazası sigortasıyla birlikte sosyal sigortanın beş kolundan biridir.' },
   },
   46: {
     de: { summary: 'Der Staat baut zum Beispiel Straßen und Schulen.', whyCorrect: 'Öffentliche Infrastruktur ist eine staatliche Aufgabe; Lebensmittel, Kleidung und Fahrzeuge stellen private Unternehmen her.' },
+    en: { summary: 'The state builds, for example, roads and schools.', whyCorrect: 'Public infrastructure is a task of the state; food, clothing and vehicles are produced by private companies.' },
+    tr: { summary: 'Devlet örneğin yollar ve okullar yapar.', whyCorrect: 'Kamusal altyapı devletin görevidir; gıda, giysi ve araçları özel şirketler üretir.' },
   },
   47: {
     de: { summary: 'Der Staat bezahlt keine Urlaubsreisen.', whyCorrect: 'Kindergeld, die Förderung von Museen und die Unterstützung von Sportlerinnen und Sportlern sind staatliche Aufgaben, private Urlaubsreisen nicht.' },
+    en: { summary: 'The state does not pay for holidays.', whyCorrect: 'Child benefit, funding for museums and support for athletes are tasks of the state; private holidays are not.' },
+    tr: { summary: 'Devlet tatil yolculuklarını ödemez.', whyCorrect: 'Çocuk parası, müzelerin desteklenmesi ve sporculara yardım devletin görevleridir; özel tatiller değildir.' },
   },
   48: {
     de: { summary: 'Die Bürgerversammlung ist kein Verfassungsorgan.', whyCorrect: 'Verfassungsorgane sind unter anderem Bundestag, Bundesrat, Bundespräsident, Bundesregierung und Bundesverfassungsgericht.' },
+    en: { summary: 'The citizens’ assembly is not a constitutional body.', whyCorrect: 'Constitutional bodies include the Bundestag, the Bundesrat, the Federal President, the federal government and the Federal Constitutional Court.' },
+    tr: { summary: 'Vatandaş toplantısı bir anayasal organ değildir.', whyCorrect: 'Anayasal organlar arasında Federal Meclis, Federal Konsey, Cumhurbaşkanı, federal hükümet ve Federal Anayasa Mahkemesi vardır.' },
   },
   49: {
     de: { summary: 'Die Bundesländer bestimmen die Schulpolitik.', whyCorrect: 'Bildung ist in Deutschland Ländersache; deshalb haben die Länder eigene Schulgesetze und Lehrpläne.' },
+    en: { summary: 'The federal states decide school policy.', whyCorrect: 'Education is a matter for the states in Germany; that is why they have their own school laws and curricula.' },
+    tr: { summary: 'Okul politikasını eyaletler belirler.', whyCorrect: 'Almanya’da eğitim eyaletlerin işidir; bu yüzden her eyaletin kendi okul yasaları ve müfredatları vardır.' },
   },
   50: {
     de: { summary: 'Die Wirtschaftsform in Deutschland heißt soziale Marktwirtschaft.', whyCorrect: 'Sie verbindet einen freien Markt mit sozialem Ausgleich durch den Staat; Planwirtschaft gab es in der DDR.' },
+    en: { summary: 'Germany’s economic system is called the social market economy.', whyCorrect: 'It combines a free market with social balance provided by the state; the GDR had a planned economy.' },
+    tr: { summary: 'Almanya’nın ekonomik sistemine sosyal piyasa ekonomisi denir.', whyCorrect: 'Serbest piyasayı devletin sağladığı sosyal dengeyle birleştirir; DDR’de planlı ekonomi vardı.' },
   },
 };
 

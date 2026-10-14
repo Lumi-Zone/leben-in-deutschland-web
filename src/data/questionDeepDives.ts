@@ -224,6 +224,18 @@ const deepDives: Record<number, Partial<Record<DeepDiveLanguage, QuestionDeepDiv
       memoryTip: 'Diese Frage ist fast gleich wie Frage 6 – die Antwort ist immer Grundgesetz.',
       legalBasis: [law('Art. 79 GG', 'gg/art_79.html')],
     },
+    en: {
+      background: 'The constitution of the Federal Republic is called the Basic Law (Grundgesetz). It sets out the fundamental rights (Articles 1 to 19), the principles of the state such as democracy, the rule of law and federalism, and the tasks of the constitutional bodies, for example the Bundestag, the Bundesrat and the Federal President. All other laws must be compatible with the Basic Law. In case of dispute, the Federal Constitutional Court in Karlsruhe decides. The Basic Law can only be amended with two-thirds majorities in both the Bundestag and the Bundesrat.',
+      otherOptions: '“Federal Constitution” (Bundesverfassung) is the name of Switzerland’s constitution, not Germany’s. A code (Gesetzbuch) is a collection of laws on one area of law, for example the Civil Code (BGB) or the Criminal Code (StGB). “Constitutional Treaty” was the name of a planned EU treaty that failed in 2005.',
+      memoryTip: 'This question is almost the same as question 6 – the answer is always Grundgesetz (Basic Law).',
+      legalBasis: [law('Art. 79 Basic Law (GG)', 'gg/art_79.html')],
+    },
+    tr: {
+      background: 'Federal Almanya’nın anayasasının adı Grundgesetz’tir (Temel Yasa). Temel hakları (madde 1–19), demokrasi, hukuk devleti ve federal devlet gibi devlet ilkelerini ve Federal Meclis, Federal Konsey ve Cumhurbaşkanı gibi anayasal organların görevlerini düzenler. Diğer bütün yasalar Grundgesetz’e uygun olmak zorundadır. Anlaşmazlık olursa buna Karlsruhe’deki Federal Anayasa Mahkemesi karar verir. Grundgesetz ancak hem Federal Meclis’te hem Federal Konsey’de üçte iki çoğunlukla değiştirilebilir.',
+      otherOptions: '“Bundesverfassung” İsviçre’nin anayasasının adıdır, Almanya’nın değil. “Gesetzbuch” (kanun kitabı) bir hukuk alanındaki yasaların toplamıdır; örneğin Medeni Kanun (BGB) veya Ceza Kanunu (StGB). “Verfassungsvertrag” (Anayasa Antlaşması), 2005’te başarısız olan planlanmış bir AB antlaşmasının adıydı.',
+      memoryTip: 'Bu soru neredeyse 6. soruyla aynı – cevap her zaman Grundgesetz.',
+      legalBasis: [law('Anayasa (GG) md. 79', 'gg/art_79.html')],
+    },
   },
   12: {
     de: {
@@ -232,12 +244,36 @@ const deepDives: Record<number, Partial<Record<DeepDiveLanguage, QuestionDeepDiv
       memoryTip: 'Grundrechte kann keine Mehrheit abschaffen – weder die Hälfte noch zwei Drittel.',
       legalBasis: [law('Art. 5 GG', 'gg/art_5.html'), law('Art. 19 GG', 'gg/art_19.html'), law('Art. 79 GG', 'gg/art_79.html')],
     },
+    en: {
+      background: 'Freedom of the press is set out in Article 5 of the Basic Law: newspapers, broadcasters and online media may report freely, and “there shall be no censorship”. Fundamental rights can be restricted by law within limits, but according to Article 19, “in no case may the essence of a basic right be affected”. In addition, democracy is protected by the so-called eternity clause (Article 79(3)) – and there is no democracy without a free press.',
+      otherOptions: 'A simple majority is not even enough for a normal amendment to the Basic Law. Even with two thirds in the Bundestag (and the Bundesrat), freedom of the press could not be abolished, because its core is protected. The Bundesrat represents the federal states and cannot abolish fundamental rights either.',
+      memoryTip: 'No majority can abolish fundamental rights – neither half nor two thirds.',
+      legalBasis: [law('Art. 5 Basic Law (GG)', 'gg/art_5.html'), law('Art. 19 Basic Law (GG)', 'gg/art_19.html'), law('Art. 79 Basic Law (GG)', 'gg/art_79.html')],
+    },
+    tr: {
+      background: 'Basın özgürlüğü Anayasa’nın 5. maddesinde yer alır: Gazeteler, radyo-televizyon ve internet medyası özgürce haber yapabilir ve “sansür yapılmaz”. Temel haklar yasayla belirli sınırlar içinde kısıtlanabilir; ama 19. maddeye göre bir temel hakkın “özüne hiçbir durumda dokunulamaz”. Ayrıca demokrasi, “sonsuzluk maddesi” denen 79. maddenin 3. fıkrasıyla korunur – özgür basın olmadan da demokrasi olmaz.',
+      otherOptions: 'Basit çoğunluk normal bir anayasa değişikliği için bile yetmez. Federal Meclis’te (ve Federal Konsey’de) üçte iki çoğunluk olsa bile basın özgürlüğü kaldırılamaz, çünkü özü korunur. Federal Konsey eyaletlerin temsilcisidir ve o da temel hakları kaldıramaz.',
+      memoryTip: 'Hiçbir çoğunluk temel hakları kaldıramaz – ne yarısı ne de üçte ikisi.',
+      legalBasis: [law('Anayasa (GG) md. 5', 'gg/art_5.html'), law('Anayasa (GG) md. 19', 'gg/art_19.html'), law('Anayasa (GG) md. 79', 'gg/art_79.html')],
+    },
   },
   13: {
     de: {
       background: 'Im Bundestag gibt es zwei Seiten: die Regierungsparteien, die gemeinsam die Bundesregierung tragen, und die Opposition. Zur Opposition gehören alle Abgeordneten, deren Parteien nicht an der Regierung beteiligt sind. Ihre Aufgabe ist es, die Regierung zu kontrollieren und zu kritisieren und eigene Vorschläge zu machen – zum Beispiel durch Anfragen, Debatten oder Untersuchungsausschüsse. Eine starke Opposition ist wichtig für die Demokratie.',
       otherOptions: 'Die regierenden Parteien sind genau das Gegenteil der Opposition. Die Fraktion mit den meisten Abgeordneten stellt meistens die Regierung, muss es aber nicht. Die 5-Prozent-Hürde haben alle Parteien im Bundestag geschafft – Regierungs- und Oppositionsparteien.',
       memoryTip: 'Opposition = „gegenüber“ der Regierung: alle, die nicht mitregieren.',
+      legalBasis: [],
+    },
+    en: {
+      background: 'There are two sides in the Bundestag: the governing parties, which together support the federal government, and the opposition. The opposition consists of all members of parliament whose parties are not part of the government. Its job is to scrutinise and criticise the government and to make its own proposals – for example through parliamentary questions, debates or committees of inquiry. A strong opposition is important for democracy.',
+      otherOptions: 'The governing parties are the exact opposite of the opposition. The parliamentary group with the most members usually forms the government, but it does not have to. All parties in the Bundestag have passed the 5 percent threshold – governing parties and opposition parties alike.',
+      memoryTip: 'Opposition = the side “opposite” the government: everyone who is not governing.',
+      legalBasis: [],
+    },
+    tr: {
+      background: 'Federal Meclis’te iki taraf vardır: federal hükümeti birlikte oluşturan iktidar partileri ve muhalefet. Muhalefet, partisi hükümette yer almayan bütün milletvekillerinden oluşur. Görevi hükümeti denetlemek, eleştirmek ve kendi önerilerini sunmaktır – örneğin soru önergeleri, tartışmalar veya araştırma komisyonları aracılığıyla. Güçlü bir muhalefet demokrasi için önemlidir.',
+      otherOptions: 'İktidar partileri muhalefetin tam tersidir. En çok milletvekiline sahip grup genellikle hükümeti kurar, ama kurmak zorunda değildir. Federal Meclis’teki bütün partiler %5 barajını geçmiştir – hem iktidar hem muhalefet partileri.',
+      memoryTip: 'Muhalefet = hükümetin “karşısındakiler”: hükümette olmayan herkes.',
       legalBasis: [],
     },
   },
@@ -248,6 +284,18 @@ const deepDives: Record<number, Partial<Record<DeepDiveLanguage, QuestionDeepDiv
       memoryTip: 'Internet ja, Beleidigung und verbotene Symbole nein.',
       legalBasis: [law('Art. 5 GG', 'gg/art_5.html')],
     },
+    en: {
+      background: 'Freedom of expression (Article 5 of the Basic Law) means: I may freely say, write and share my opinion – on the street, in the newspaper and also online, for example on social media or in a blog. I may also criticise the government. But freedom of expression has limits: the law protects other people’s honour and bans certain symbols and hate speech.',
+      otherOptions: 'Insulting passers-by is an insult under criminal law and can be punished. Publicly displaying symbols of unconstitutional or banned organisations – such as Nazi symbols or symbols of Hamas and the “Islamic State” – is forbidden. And an opinion that contradicts the government is explicitly allowed.',
+      memoryTip: 'Online – yes. Insults and banned symbols – no.',
+      legalBasis: [law('Art. 5 Basic Law (GG)', 'gg/art_5.html')],
+    },
+    tr: {
+      background: 'İfade özgürlüğü (Anayasa madde 5) şu demektir: Görüşümü sokakta, gazetede ve internette, örneğin sosyal medyada veya bir blogda özgürce söyleyebilir, yazabilir ve paylaşabilirim. Hükümeti de eleştirebilirim. Ama ifade özgürlüğünün sınırları vardır: Yasalar başkalarının onurunu korur, belirli sembolleri ve nefret söylemini yasaklar.',
+      otherOptions: 'Yoldan geçenlere küfretmek hakarettir ve cezalandırılabilir. Anayasaya aykırı veya yasaklanmış örgütlerin sembollerini – örneğin Nazi sembollerini ya da Hamas ve “İslam Devleti” sembollerini – herkesin önünde göstermek yasaktır. Hükümete karşı çıkan bir görüş ise açıkça serbesttir.',
+      memoryTip: 'İnternet – evet. Hakaret ve yasak semboller – hayır.',
+      legalBasis: [law('Anayasa (GG) md. 5', 'gg/art_5.html')],
+    },
   },
   15: {
     de: {
@@ -255,6 +303,18 @@ const deepDives: Record<number, Partial<Record<DeepDiveLanguage, QuestionDeepDiv
       otherOptions: 'Militärdienst ist nicht verboten – Artikel 12a erlaubt ausdrücklich einen Wehrdienst. Die freie Berufswahl ist nicht verboten, sondern ein Grundrecht. Arbeit im Ausland ist ebenfalls erlaubt; jeder darf Deutschland verlassen und im Ausland arbeiten.',
       memoryTip: 'Verboten ist der Zwang, nicht die Arbeit: Zwangsarbeit.',
       legalBasis: [law('Art. 12 GG', 'gg/art_12.html')],
+    },
+    en: {
+      background: 'Article 12 of the Basic Law protects freedom of occupation. It also states that nobody may be forced to do a particular kind of work, and that forced labour is only permitted for people deprived of their liberty by a court decision, for example work in prison. History is part of the background: under National Socialism, millions of people were forced to do forced labour.',
+      otherOptions: 'Military service is not forbidden – Article 12a explicitly allows it. Free choice of occupation is not forbidden but a fundamental right. Working abroad is also allowed; anyone may leave Germany and work in another country.',
+      memoryTip: 'What is forbidden is the force, not the work: forced labour.',
+      legalBasis: [law('Art. 12 Basic Law (GG)', 'gg/art_12.html')],
+    },
+    tr: {
+      background: 'Anayasa’nın 12. maddesi meslek özgürlüğünü korur. Aynı maddede, kimsenin belirli bir işi yapmaya zorlanamayacağı ve zorla çalıştırmanın ancak mahkeme kararıyla özgürlüğü kısıtlanan kişiler için, örneğin cezaevinde çalışma olarak, mümkün olduğu yazar. Bunun arka planında tarih de vardır: Nasyonal Sosyalizm döneminde milyonlarca insan zorla çalıştırıldı.',
+      otherOptions: 'Askerlik hizmeti yasak değildir – 12a maddesi buna açıkça izin verir. Mesleği özgürce seçmek yasak değil, temel bir haktır. Yurt dışında çalışmak da serbesttir; herkes Almanya’dan ayrılıp başka bir ülkede çalışabilir.',
+      memoryTip: 'Yasak olan çalışmak değil, zorlamaktır: zorla çalıştırma.',
+      legalBasis: [law('Anayasa (GG) md. 12', 'gg/art_12.html')],
     },
   },
   16: {
@@ -264,6 +324,18 @@ const deepDives: Record<number, Partial<Record<DeepDiveLanguage, QuestionDeepDiv
       memoryTip: 'Meinung ist frei – falsche Behauptungen über Personen sind es nicht.',
       legalBasis: [law('Art. 5 GG', 'gg/art_5.html')],
     },
+    en: {
+      background: 'Freedom of expression is limited, among other things, by the “right to personal honour” (Article 5(2)). Anyone who publicly spreads false facts about a specific person can commit a criminal offence, for example defamation or slander. Those affected can also demand that the false claim be deleted or retracted. An opinion (“I think she is a bad politician”) is protected; an invented fact (“she stole money”) is not.',
+      otherOptions: 'Opinions about the federal government, discussions about religions and criticism of the state are covered by freedom of expression. In fact, criticism of the government and the state is exactly what freedom of expression is meant to protect.',
+      memoryTip: 'Opinions are free – false claims about people are not.',
+      legalBasis: [law('Art. 5 Basic Law (GG)', 'gg/art_5.html')],
+    },
+    tr: {
+      background: 'İfade özgürlüğü, diğerlerinin yanında “kişisel onur hakkı” ile sınırlanır (madde 5, fıkra 2). Belirli bir kişi hakkında herkesin önünde yanlış olgular yayan kişi, örneğin iftira veya karalama nedeniyle suç işlemiş olabilir. Mağdurlar ayrıca yanlış iddianın silinmesini veya geri alınmasını isteyebilir. Bir görüş (“Bence o kötü bir politikacı”) korunur, uydurulmuş bir olgu (“Para çaldı”) korunmaz.',
+      otherOptions: 'Federal hükümet hakkındaki görüşler, dinler hakkındaki tartışmalar ve devleti eleştirmek ifade özgürlüğü kapsamındadır. Zaten ifade özgürlüğü tam da hükümete ve devlete yönelik eleştiriyi korumak için vardır.',
+      memoryTip: 'Görüş serbesttir – kişiler hakkında yanlış iddialar değil.',
+      legalBasis: [law('Anayasa (GG) md. 5', 'gg/art_5.html')],
+    },
   },
   17: {
     de: {
@@ -271,6 +343,18 @@ const deepDives: Record<number, Partial<Record<DeepDiveLanguage, QuestionDeepDiv
       otherOptions: 'Meinungsfreiheit (Artikel 5), Petitionen (Artikel 17) und Versammlungsfreiheit (Artikel 8) sind Grundrechte und damit ausdrücklich erlaubt. Mit einer Petition kann man sich schriftlich mit Bitten oder Beschwerden an Behörden oder Parlamente wenden.',
       memoryTip: 'Drei Antworten sind Grundrechte – verboten ist nur die Ungleichbehandlung.',
       legalBasis: [law('Art. 3 GG', 'gg/art_3.html')],
+    },
+    en: {
+      background: 'Article 3 of the Basic Law states: “All persons shall be equal before the law.” Nobody may be disadvantaged because of their sex, parentage, language, origin, faith, political opinions or a disability. The state must treat everyone equally – for example at public offices, at school or in court. Unequal treatment by the state is therefore forbidden.',
+      otherOptions: 'Freedom of expression (Article 5), petitions (Article 17) and freedom of assembly (Article 8) are fundamental rights and therefore explicitly allowed. With a petition, you can address requests or complaints in writing to authorities or parliaments.',
+      memoryTip: 'Three answers are fundamental rights – only unequal treatment is forbidden.',
+      legalBasis: [law('Art. 3 Basic Law (GG)', 'gg/art_3.html')],
+    },
+    tr: {
+      background: 'Anayasa’nın 3. maddesi şöyle der: “Herkes yasa önünde eşittir.” Kimse cinsiyeti, soyu, dili, kökeni, inancı, siyasi görüşü veya engeli nedeniyle dezavantajlı duruma düşürülemez. Devlet herkese eşit davranmak zorundadır – örneğin resmî dairelerde, okulda veya mahkemede. Bu yüzden devletin eşitsiz muamelesi yasaktır.',
+      otherOptions: 'İfade özgürlüğü (madde 5), dilekçe hakkı (madde 17) ve toplanma özgürlüğü (madde 8) temel haklardır, yani açıkça serbesttir. Dilekçeyle resmî kurumlara veya parlamentolara yazılı olarak istek ya da şikâyet iletilebilir.',
+      memoryTip: 'Üç cevap temel haktır – yasak olan sadece eşitsiz muameledir.',
+      legalBasis: [law('Anayasa (GG) md. 3', 'gg/art_3.html')],
     },
   },
   18: {
@@ -280,6 +364,18 @@ const deepDives: Record<number, Partial<Record<DeepDiveLanguage, QuestionDeepDiv
       memoryTip: 'Artikel 1 – das Erste und Wichtigste: die Menschenwürde.',
       legalBasis: [law('Art. 1 GG', 'gg/art_1.html')],
     },
+    en: {
+      background: 'Article 1(1) is the most important sentence of the Basic Law: “Human dignity shall be inviolable. To respect and protect it shall be the duty of all state authority.” Every person has dignity, regardless of origin, religion or nationality. After the crimes of National Socialism, this sentence was deliberately placed at the very beginning. Under the eternity clause (Article 79(3)), Article 1 may never be changed.',
+      otherOptions: 'The other rights are also fundamental rights, but they are in other articles: the right to life in Article 2, freedom of religion in Article 4 and freedom of expression in Article 5.',
+      memoryTip: 'Article 1 – the first and most important: human dignity.',
+      legalBasis: [law('Art. 1 Basic Law (GG)', 'gg/art_1.html')],
+    },
+    tr: {
+      background: '1. maddenin 1. fıkrası Anayasa’nın en önemli cümlesidir: “İnsan onuru dokunulmazdır. Ona saygı göstermek ve onu korumak bütün devlet gücünün görevidir.” Kökeni, dini veya vatandaşlığı ne olursa olsun her insanın onuru vardır. Nasyonal Sosyalizmin suçlarından sonra bu cümle bilinçli olarak en başa konuldu. Sonsuzluk maddesine (madde 79, fıkra 3) göre 1. madde hiçbir zaman değiştirilemez.',
+      otherOptions: 'Diğer haklar da temel haktır, ama başka maddelerde yer alır: yaşam hakkı 2. maddede, din özgürlüğü 4. maddede ve ifade özgürlüğü 5. maddede.',
+      memoryTip: '1. madde – ilk ve en önemlisi: insan onuru.',
+      legalBasis: [law('Anayasa (GG) md. 1', 'gg/art_1.html')],
+    },
   },
   19: {
     de: {
@@ -287,6 +383,18 @@ const deepDives: Record<number, Partial<Record<DeepDiveLanguage, QuestionDeepDiv
       otherOptions: 'Den Beruf zu wechseln gehört zur Berufsfreiheit (Artikel 12), die Religion zu wechseln zur Glaubensfreiheit (Artikel 4). Die letzte Antwort ist eine Falle: Im Alltag bedeutet „freizügig“ auch „leicht bekleidet“ – mit dem Grundrecht hat das nichts zu tun.',
       memoryTip: 'Freizügigkeit = frei ziehen, also umziehen und den Wohnort frei wählen.',
       legalBasis: [law('Art. 11 GG', 'gg/art_11.html')],
+    },
+    en: {
+      background: 'Freedom of movement (Freizügigkeit, Article 11 of the Basic Law) means: you may decide freely where to live in Germany and move within the country. The Basic Law guarantees this right to all Germans. Citizens of the EU also enjoy EU freedom of movement. For other foreign nationals, residence law determines where they may live.',
+      otherOptions: 'Changing your job belongs to freedom of occupation (Article 12), changing your religion to freedom of faith (Article 4). The last answer is a trap: in everyday German, “freizügig” can also mean “scantily dressed” – which has nothing to do with the fundamental right.',
+      memoryTip: 'Freizügigkeit = moving freely: choosing and changing where you live.',
+      legalBasis: [law('Art. 11 Basic Law (GG)', 'gg/art_11.html')],
+    },
+    tr: {
+      background: 'Serbest dolaşım ve yerleşme hakkı (Freizügigkeit, Anayasa madde 11) şu demektir: Almanya’da nerede yaşayacağına özgürce karar verebilir ve ülke içinde taşınabilirsin. Anayasa bu hakkı bütün Almanlara güvence altına alır. AB vatandaşları ayrıca AB’nin serbest dolaşım hakkından yararlanır. Diğer yabancıların nerede yaşayabileceğini oturum hukuku belirler.',
+      otherOptions: 'Meslek değiştirmek meslek özgürlüğüne (madde 12), din değiştirmek inanç özgürlüğüne (madde 4) girer. Son cevap bir tuzaktır: Günlük Almancada “freizügig” “açık giyimli” anlamına da gelir – bunun temel hakla hiçbir ilgisi yoktur.',
+      memoryTip: 'Freizügigkeit = özgürce taşınmak: yaşadığın yeri seçmek ve değiştirmek.',
+      legalBasis: [law('Anayasa (GG) md. 11', 'gg/art_11.html')],
     },
   },
   20: {
@@ -296,12 +404,36 @@ const deepDives: Record<number, Partial<Record<DeepDiveLanguage, QuestionDeepDiv
       memoryTip: 'Gegen die Verfassung = verfassungswidrig.',
       legalBasis: [law('Art. 21 GG', 'gg/art_21.html')],
     },
+    en: {
+      background: 'A party that wants to establish a dictatorship is fighting against the free democratic basic order. According to Article 21(2) of the Basic Law, it is then unconstitutional. However, only the Federal Constitutional Court can ban a party. This happened to the Socialist Reich Party in 1952 and to the Communist Party (KPD) in 1956. Germany calls this a “defensive democracy”: democracy protects itself against its enemies.',
+      otherOptions: 'Tolerant, committed to the rule of law and law-abiding describe the exact opposite of a party that wants a dictatorship. A dictatorship abolishes elections, fundamental rights and independent courts.',
+      memoryTip: 'Against the constitution = unconstitutional (verfassungswidrig).',
+      legalBasis: [law('Art. 21 Basic Law (GG)', 'gg/art_21.html')],
+    },
+    tr: {
+      background: 'Diktatörlük kurmak isteyen bir parti, özgürlükçü demokratik temel düzene karşı savaşıyor demektir. Anayasa’nın 21. maddesinin 2. fıkrasına göre böyle bir parti anayasaya aykırıdır. Ancak bir partiyi yalnızca Federal Anayasa Mahkemesi yasaklayabilir. 1952’de Sosyalist Reich Partisi ve 1956’da Komünist Parti (KPD) bu şekilde yasaklandı. Almanya buna “kendini savunabilen demokrasi” der: Demokrasi kendini düşmanlarına karşı korur.',
+      otherOptions: 'Hoşgörülü, hukuk devletine bağlı ve yasalara saygılı, diktatörlük isteyen bir partinin tam tersini anlatır. Bir diktatörlük seçimleri, temel hakları ve bağımsız mahkemeleri ortadan kaldırır.',
+      memoryTip: 'Anayasaya karşı = anayasaya aykırı (verfassungswidrig).',
+      legalBasis: [law('Anayasa (GG) md. 21', 'gg/art_21.html')],
+    },
   },
   21: {
     de: {
       background: 'Das Wappen der Bundesrepublik Deutschland zeigt einen schwarzen Adler mit roten Krallen, rotem Schnabel und roter Zunge auf goldgelbem Grund – den Bundesadler. Er ist auf Ausweisen, Münzen, Behördenschildern und im Plenarsaal des Bundestages zu sehen. Die Farben Schwarz, Rot und Gold sind auch die Farben der Bundesflagge.',
       otherOptions: 'Bild 2 zeigt das Christusmonogramm, ein christliches Symbol. Bild 3 ist das Eiserne Kreuz, das Erkennungszeichen der Bundeswehr. Bild 4 ist das Staatswappen der DDR mit Hammer, Zirkel und Ährenkranz – es gilt seit der Wiedervereinigung 1990 nicht mehr.',
       memoryTip: 'Das Bundeswappen hat dieselben Farben wie die Flagge: Schwarz, Rot, Gold.',
+      legalBasis: [],
+    },
+    en: {
+      background: 'The coat of arms of the Federal Republic of Germany shows a black eagle with red claws, a red beak and a red tongue on a golden-yellow background – the federal eagle. You can see it on ID cards, coins, signs on public buildings and in the plenary hall of the Bundestag. Black, red and gold are also the colours of the federal flag.',
+      otherOptions: 'Image 2 shows the Chi-Rho, a Christian symbol. Image 3 is the Iron Cross, the emblem of the German armed forces (Bundeswehr). Image 4 is the state coat of arms of the GDR with hammer, compass and a wreath of wheat – it has not been used since reunification in 1990.',
+      memoryTip: 'The federal coat of arms has the same colours as the flag: black, red, gold.',
+      legalBasis: [],
+    },
+    tr: {
+      background: 'Federal Almanya’nın arması, altın sarısı zemin üzerinde kırmızı pençeli, kırmızı gagalı ve kırmızı dilli siyah bir kartal gösterir – federal kartal. Bu kartalı kimlik kartlarında, madeni paralarda, resmî binaların tabelalarında ve Federal Meclis’in genel kurul salonunda görebilirsin. Siyah, kırmızı ve altın rengi aynı zamanda federal bayrağın renkleridir.',
+      otherOptions: '2 numaralı görsel bir Hristiyan sembolü olan Chi-Rho monogramını gösterir. 3 numaralı görsel, Alman Silahlı Kuvvetleri’nin (Bundeswehr) amblemi olan Demir Haç’tır. 4 numaralı görsel çekiç, pergel ve başak çelengiyle DDR’in (Doğu Almanya) devlet armasıdır – 1990’daki yeniden birleşmeden beri kullanılmaz.',
+      memoryTip: 'Federal arma bayrakla aynı renklere sahiptir: siyah, kırmızı, altın.',
       legalBasis: [],
     },
   },
@@ -312,12 +444,36 @@ const deepDives: Record<number, Partial<Record<DeepDiveLanguage, QuestionDeepDiv
       memoryTip: 'Bundesrepublik Deutschland – die Antwort steckt im Namen.',
       legalBasis: [law('Art. 20 GG', 'gg/art_20.html')],
     },
+    en: {
+      background: 'Germany is a republic. This means the head of state is not a king and does not inherit the office, but is elected for a limited period. The Federal President is elected by the Federal Convention for five years. The country’s name already says it: Federal Republic of Germany. The monarchy in Germany ended in 1918.',
+      otherOptions: 'In a monarchy or a principality, a king or prince rules, usually by inheriting the office – for example in Liechtenstein or Monaco. Germany was a dictatorship under National Socialism (1933–1945); today the Basic Law rules this out.',
+      memoryTip: 'Federal Republic of Germany – the answer is in the name.',
+      legalBasis: [law('Art. 20 Basic Law (GG)', 'gg/art_20.html')],
+    },
+    tr: {
+      background: 'Almanya bir cumhuriyettir. Bu, devlet başkanının kral olmadığı ve makamı miras yoluyla almadığı, belirli bir süre için seçildiği anlamına gelir. Cumhurbaşkanını Federal Kurul beş yıllığına seçer. Ülkenin adı bile bunu söyler: Federal Almanya Cumhuriyeti. Almanya’da monarşi 1918’de sona erdi.',
+      otherOptions: 'Monarşide veya prenslikte genellikle makamı miras alan bir kral ya da prens yönetir – örneğin Lihtenştayn veya Monako’da. Almanya Nasyonal Sosyalizm döneminde (1933–1945) bir diktatörlüktü; bugün Anayasa bunu engeller.',
+      memoryTip: 'Federal Almanya Cumhuriyeti – cevap adında saklı.',
+      legalBasis: [law('Anayasa (GG) md. 20', 'gg/art_20.html')],
+    },
   },
   23: {
     de: {
       background: 'Die meisten Erwerbstätigen in Deutschland sind Arbeitnehmerinnen und Arbeitnehmer: Sie sind bei einer Firma oder bei einer Behörde angestellt und bekommen dafür Lohn oder Gehalt. Das gilt für rund neun von zehn Erwerbstätigen. Nur ein kleiner Teil arbeitet selbstständig, zum Beispiel mit einem eigenen Geschäft, einer Praxis oder als Freiberufler.',
       otherOptions: 'Viele Firmen in Deutschland sind Familienunternehmen, aber die meisten Menschen arbeiten nicht in kleinen Familienbetrieben. Ehrenamtliche Arbeit ist unbezahlt und wird zusätzlich zum Beruf geleistet. Selbstständige mit eigener Firma sind eine Minderheit.',
       memoryTip: 'Die meisten Menschen sind angestellt – bei einer Firma oder beim Staat.',
+      legalBasis: [],
+    },
+    en: {
+      background: 'Most people in work in Germany are employees: they work for a company or for a public authority and receive a wage or salary. This applies to about nine out of ten people in work. Only a small share are self-employed, for example with their own shop, practice or as freelancers.',
+      otherOptions: 'Many companies in Germany are family businesses, but most people do not work in small family firms. Voluntary work is unpaid and is done in addition to a job. Self-employed people with their own company are a minority.',
+      memoryTip: 'Most people are employed – by a company or by the state.',
+      legalBasis: [],
+    },
+    tr: {
+      background: 'Almanya’da çalışanların çoğu ücretli çalışandır: Bir şirkette veya bir kamu kurumunda çalışır ve karşılığında ücret ya da maaş alırlar. Bu, çalışan her on kişiden yaklaşık dokuzu için geçerlidir. Sadece küçük bir kısmı serbest çalışır; örneğin kendi dükkânı, muayenehanesi olanlar veya serbest meslek sahipleri.',
+      otherOptions: 'Almanya’daki birçok şirket aile şirketidir, ama insanların çoğu küçük aile işletmelerinde çalışmaz. Gönüllü çalışma ücretsizdir ve işe ek olarak yapılır. Kendi şirketi olan serbest çalışanlar azınlıktadır.',
+      memoryTip: 'İnsanların çoğu bir yerde çalışır – bir şirkette veya devlette.',
       legalBasis: [],
     },
   },
@@ -328,12 +484,36 @@ const deepDives: Record<number, Partial<Record<DeepDiveLanguage, QuestionDeepDiv
       memoryTip: '16 = 13 Flächenländer + 3 Stadtstaaten.',
       legalBasis: [],
     },
+    en: {
+      background: 'Germany has 16 federal states: 13 territorial states such as Bavaria or North Rhine-Westphalia and 3 city states – Berlin, Hamburg and Bremen. There have been 16 since reunification in 1990, when the five eastern states of Brandenburg, Mecklenburg-Western Pomerania, Saxony, Saxony-Anhalt and Thuringia joined and Berlin was reunited. Each state has its own constitution, parliament and government.',
+      otherOptions: '14, 15 and 17 are wrong. The question catalogue also contains 10 questions for each federal state; 3 questions about your own state come up in the test.',
+      memoryTip: '16 = 13 territorial states + 3 city states.',
+      legalBasis: [],
+    },
+    tr: {
+      background: 'Almanya’nın 16 eyaleti vardır: Bavyera veya Kuzey Ren-Vestfalya gibi 13 alan eyaleti ve 3 şehir eyaleti – Berlin, Hamburg ve Bremen. 1990’daki yeniden birleşmeden beri sayı 16’dır; o zaman doğudaki beş eyalet Brandenburg, Mecklenburg-Ön Pomeranya, Saksonya, Saksonya-Anhalt ve Türingen katıldı ve Berlin birleşti. Her eyaletin kendi anayasası, parlamentosu ve hükümeti vardır.',
+      otherOptions: '14, 15 ve 17 yanlıştır. Soru kataloğunda ayrıca her eyalet için 10 soru vardır; sınavda bunlardan kendi eyaletinle ilgili 3 soru çıkar.',
+      memoryTip: '16 = 13 alan eyaleti + 3 şehir eyaleti.',
+      legalBasis: [],
+    },
   },
   25: {
     de: {
       background: 'Elsass-Lothringen ist eine Region in Frankreich, an der Grenze zu Deutschland. Sie gehörte von 1871 bis 1918 zum Deutschen Reich, ist aber seit über hundert Jahren wieder französisch. Zur Bundesrepublik Deutschland hat sie nie gehört. Die 16 Bundesländer sind: Baden-Württemberg, Bayern, Berlin, Brandenburg, Bremen, Hamburg, Hessen, Mecklenburg-Vorpommern, Niedersachsen, Nordrhein-Westfalen, Rheinland-Pfalz, Saarland, Sachsen, Sachsen-Anhalt, Schleswig-Holstein und Thüringen.',
       otherOptions: 'Nordrhein-Westfalen ist das bevölkerungsreichste Bundesland mit der Hauptstadt Düsseldorf. Mecklenburg-Vorpommern (Hauptstadt Schwerin) und Sachsen-Anhalt (Hauptstadt Magdeburg) gehören zu den Ländern, die 1990 mit der Wiedervereinigung hinzukamen.',
       memoryTip: 'Elsass = Alsace: Das klingt französisch, und es ist französisch.',
+      legalBasis: [],
+    },
+    en: {
+      background: 'Alsace-Lorraine (Elsass-Lothringen) is a region in France on the German border. It belonged to the German Empire from 1871 to 1918, but has been French again for over a hundred years. It has never been part of the Federal Republic of Germany. The 16 federal states are: Baden-Württemberg, Bavaria, Berlin, Brandenburg, Bremen, Hamburg, Hesse, Mecklenburg-Western Pomerania, Lower Saxony, North Rhine-Westphalia, Rhineland-Palatinate, Saarland, Saxony, Saxony-Anhalt, Schleswig-Holstein and Thuringia.',
+      otherOptions: 'North Rhine-Westphalia is the most populous state, with Düsseldorf as its capital. Mecklenburg-Western Pomerania (capital Schwerin) and Saxony-Anhalt (capital Magdeburg) are among the states that joined with reunification in 1990.',
+      memoryTip: 'Elsass = Alsace: it sounds French, and it is French.',
+      legalBasis: [],
+    },
+    tr: {
+      background: 'Elsass-Lothringen (Alsas-Loren), Fransa’da, Almanya sınırında bir bölgedir. 1871’den 1918’e kadar Alman İmparatorluğu’na aitti, ama yüz yılı aşkın süredir yeniden Fransız toprağıdır. Federal Almanya Cumhuriyeti’ne hiç ait olmadı. 16 eyalet şunlardır: Baden-Württemberg, Bavyera, Berlin, Brandenburg, Bremen, Hamburg, Hessen, Mecklenburg-Ön Pomeranya, Aşağı Saksonya, Kuzey Ren-Vestfalya, Renanya-Pfalz, Saarland, Saksonya, Saksonya-Anhalt, Schleswig-Holstein ve Türingen.',
+      otherOptions: 'Kuzey Ren-Vestfalya en kalabalık eyalettir, başkenti Düsseldorf’tur. Mecklenburg-Ön Pomeranya (başkenti Schwerin) ve Saksonya-Anhalt (başkenti Magdeburg) 1990’da yeniden birleşmeyle katılan eyaletlerdendir.',
+      memoryTip: 'Elsass = Alsace: Kulağa Fransızca gelir, çünkü Fransız’dır.',
       legalBasis: [],
     },
   },
@@ -344,6 +524,18 @@ const deepDives: Record<number, Partial<Record<DeepDiveLanguage, QuestionDeepDiv
       memoryTip: 'Die drei Wörter aus Artikel 20: demokratisch, sozial, Bundesstaat.',
       legalBasis: [law('Art. 20 GG', 'gg/art_20.html')],
     },
+    en: {
+      background: 'Article 20 of the Basic Law begins: “The Federal Republic of Germany is a democratic and social federal state.” Democratic means the people elect their representatives. Social means the state provides social security, for example through pension, health and unemployment insurance. Federal state means power is shared between the federation and the 16 states.',
+      otherOptions: 'A communist republic or socialist state was the GDR, not the Federal Republic. Germany has not been a monarchy since 1918. The answer “social and socialist federal state” is a trap: “social” is right, “socialist” is not.',
+      memoryTip: 'The three words from Article 20: democratic, social, federal state.',
+      legalBasis: [law('Art. 20 Basic Law (GG)', 'gg/art_20.html')],
+    },
+    tr: {
+      background: 'Anayasa’nın 20. maddesi şu cümleyle başlar: “Federal Almanya Cumhuriyeti demokratik ve sosyal bir federal devlettir.” Demokratik: Halk temsilcilerini seçer. Sosyal: Devlet, örneğin emeklilik, sağlık ve işsizlik sigortasıyla sosyal güvence sağlar. Federal devlet: Güç, federal yönetim ile 16 eyalet arasında paylaşılır.',
+      otherOptions: 'Komünist cumhuriyet veya sosyalist devlet Federal Cumhuriyet değil, DDR’di (Doğu Almanya). Almanya 1918’den beri monarşi değildir. “Sosyal ve sosyalist federal devlet” cevabı bir tuzaktır: “sosyal” doğru, “sosyalist” yanlış.',
+      memoryTip: '20. maddedeki üç kelime: demokratik, sosyal, federal devlet.',
+      legalBasis: [law('Anayasa (GG) md. 20', 'gg/art_20.html')],
+    },
   },
   27: {
     de: {
@@ -351,6 +543,18 @@ const deepDives: Record<number, Partial<Record<DeepDiveLanguage, QuestionDeepDiv
       otherOptions: 'Ein sozialistischer Staat war die DDR bis 1990. Eine Diktatur gab es im Nationalsozialismus. Eine Monarchie mit Kaiser gab es bis 1918. Keines davon beschreibt das heutige Deutschland.',
       memoryTip: 'Bundesrepublik = Bundesstaat aus 16 Ländern.',
       legalBasis: [law('Art. 20 GG', 'gg/art_20.html'), law('Art. 79 GG', 'gg/art_79.html')],
+    },
+    en: {
+      background: 'Germany is a federal state: it consists of 16 states that together form the federation. The states have their own constitutions, parliaments and governments and are responsible, for example, for schools and the police. Through the Bundesrat, they take part in federal legislation. The Basic Law gives this federal order special protection: under the eternity clause it may not be abolished.',
+      otherOptions: 'The GDR was a socialist state until 1990. Germany was a dictatorship under National Socialism. There was a monarchy with an emperor until 1918. None of these describes Germany today.',
+      memoryTip: 'Federal Republic = a federal state of 16 states.',
+      legalBasis: [law('Art. 20 Basic Law (GG)', 'gg/art_20.html'), law('Art. 79 Basic Law (GG)', 'gg/art_79.html')],
+    },
+    tr: {
+      background: 'Almanya federal bir devlettir: Birlikte federasyonu oluşturan 16 eyaletten oluşur. Eyaletlerin kendi anayasaları, parlamentoları ve hükümetleri vardır; örneğin okullardan ve polisten sorumludurlar. Federal Konsey aracılığıyla federal yasamaya katılırlar. Anayasa bu federal düzeni özel olarak korur: Sonsuzluk maddesine göre kaldırılamaz.',
+      otherOptions: 'DDR 1990’a kadar sosyalist bir devletti. Nasyonal Sosyalizm döneminde diktatörlük vardı. 1918’e kadar imparatorlu bir monarşi vardı. Bunların hiçbiri bugünkü Almanya’yı anlatmaz.',
+      memoryTip: 'Federal Cumhuriyet = 16 eyaletten oluşan federal devlet.',
+      legalBasis: [law('Anayasa (GG) md. 20', 'gg/art_20.html'), law('Anayasa (GG) md. 79', 'gg/art_79.html')],
     },
   },
   28: {
@@ -360,12 +564,36 @@ const deepDives: Record<number, Partial<Record<DeepDiveLanguage, QuestionDeepDiv
       memoryTip: 'Demokratie heißt Volksherrschaft: Das Volk wählt.',
       legalBasis: [law('Art. 20 GG', 'gg/art_20.html'), law('Art. 38 GG', 'gg/art_38.html')],
     },
+    en: {
+      background: '“All state authority is derived from the people,” says Article 20 of the Basic Law. That is why eligible citizens elect the members of the Bundestag, usually every four years. German citizens aged 18 and over are eligible to vote. With the first vote you choose a person in your constituency, with the second vote a party.',
+      otherOptions: 'The military, the economy and the administration have no vote of their own in elections. Soldiers, business owners or civil servants may of course vote – but only as individual eligible citizens, not as institutions.',
+      memoryTip: 'Democracy means rule by the people: the people vote.',
+      legalBasis: [law('Art. 20 Basic Law (GG)', 'gg/art_20.html'), law('Art. 38 Basic Law (GG)', 'gg/art_38.html')],
+    },
+    tr: {
+      background: 'Anayasa’nın 20. maddesi “Bütün devlet gücü halktan gelir” der. Bu yüzden Federal Meclis milletvekillerini seçme hakkı olan vatandaşlar, genellikle dört yılda bir seçer. 18 yaşını doldurmuş Alman vatandaşları oy kullanabilir. Birinci oyla seçim bölgesindeki bir kişi, ikinci oyla bir parti seçilir.',
+      otherOptions: 'Ordunun, ekonominin ve idarenin seçimlerde kendi oyu yoktur. Askerler, işverenler veya memurlar elbette oy kullanabilir – ama kurum olarak değil, sadece tek tek seçmen vatandaşlar olarak.',
+      memoryTip: 'Demokrasi halkın yönetimi demektir: Halk seçer.',
+      legalBasis: [law('Anayasa (GG) md. 20', 'gg/art_20.html'), law('Anayasa (GG) md. 38', 'gg/art_38.html')],
+    },
   },
   29: {
     de: {
       background: 'Das Wappentier der Bundesrepublik Deutschland ist der Adler. Der Bundesadler ist schwarz auf goldenem Grund und eines der ältesten deutschen Hoheitszeichen. Man sieht ihn auf Münzen, Pässen und im Plenarsaal des Bundestages, wo eine große Adler-Skulptur hängt.',
       otherOptions: 'Löwe, Bär und Pferd sind Wappentiere einzelner Bundesländer und Städte: Der Bär ist das Wappentier Berlins, das springende Pferd findet man in den Wappen von Niedersachsen und Nordrhein-Westfalen, und Löwen zum Beispiel in den Wappen von Bayern und Hessen.',
       memoryTip: 'Der Bund hat den Adler – die Länder haben Löwe, Bär oder Pferd.',
+      legalBasis: [],
+    },
+    en: {
+      background: 'The heraldic animal of the Federal Republic of Germany is the eagle. The federal eagle is black on a gold background and is one of the oldest German state symbols. You can see it on coins, passports and in the plenary hall of the Bundestag, where a large eagle sculpture hangs.',
+      otherOptions: 'The lion, bear and horse are heraldic animals of individual states and cities: the bear is the symbol of Berlin, the leaping horse appears in the coats of arms of Lower Saxony and North Rhine-Westphalia, and lions appear, for example, in the coats of arms of Bavaria and Hesse.',
+      memoryTip: 'The federation has the eagle – the states have lions, bears or horses.',
+      legalBasis: [],
+    },
+    tr: {
+      background: 'Federal Almanya’nın arma hayvanı kartaldır. Federal kartal altın zemin üzerinde siyahtır ve en eski Alman devlet sembollerinden biridir. Onu madeni paralarda, pasaportlarda ve büyük bir kartal heykelinin asılı olduğu Federal Meclis genel kurul salonunda görebilirsin.',
+      otherOptions: 'Aslan, ayı ve at bazı eyaletlerin ve şehirlerin arma hayvanlarıdır: Ayı Berlin’in sembolüdür, şaha kalkmış at Aşağı Saksonya ve Kuzey Ren-Vestfalya armalarında yer alır, aslanlar ise örneğin Bavyera ve Hessen armalarında bulunur.',
+      memoryTip: 'Federal devletin kartalı var – eyaletlerin aslanı, ayısı veya atı.',
       legalBasis: [],
     },
   },
@@ -376,12 +604,36 @@ const deepDives: Record<number, Partial<Record<DeepDiveLanguage, QuestionDeepDiv
       memoryTip: 'Achte auf „kein“: Gesucht ist das, was nicht passt – die Zensur.',
       legalBasis: [law('Art. 5 GG', 'gg/art_5.html')],
     },
+    en: {
+      background: 'Article 5 of the Basic Law guarantees freedom of the press and states explicitly: “There shall be no censorship.” The state may therefore not tell newspapers, broadcasters and online media what to report, and may not check or ban articles before publication. Free media inform people and hold the government to account.',
+      otherOptions: 'Regular elections, freedom of expression and multiple parties are typical features of democracy. Press censorship, by contrast, exists in dictatorships – it is not part of our democracy.',
+      memoryTip: 'Watch for “not”: you are looking for what does not fit – censorship.',
+      legalBasis: [law('Art. 5 Basic Law (GG)', 'gg/art_5.html')],
+    },
+    tr: {
+      background: 'Anayasa’nın 5. maddesi basın özgürlüğünü güvence altına alır ve açıkça “Sansür yapılmaz” der. Yani devlet gazetelere, radyo-televizyona ve internet medyasına ne yazacaklarını söyleyemez, yazıları yayımlanmadan önce denetleyemez veya yasaklayamaz. Özgür medya insanları bilgilendirir ve hükümeti denetler.',
+      otherOptions: 'Düzenli seçimler, ifade özgürlüğü ve farklı partiler demokrasinin tipik özellikleridir. Basın sansürü ise diktatörlüklerde olur – bizim demokrasimizin parçası değildir.',
+      memoryTip: '“Değil” kelimesine dikkat: Uymayanı arıyorsun – sansürü.',
+      legalBasis: [law('Anayasa (GG) md. 5', 'gg/art_5.html')],
+    },
   },
   31: {
     de: {
       background: 'Meistens erreicht bei einer Bundestagswahl keine Partei allein mehr als die Hälfte der Sitze. Dann arbeiten mehrere Parteien zusammen, um eine Mehrheit zu haben und die Regierung zu bilden. Das nennt man Koalition. Ihre gemeinsamen Pläne schreiben die Parteien in einen Koalitionsvertrag. Nach der Bundestagswahl 2025 bildeten zum Beispiel CDU/CSU und SPD eine Koalition.',
       otherOptions: 'Eine Fraktion ist die Gruppe der Abgeordneten einer Partei im Parlament – sie arbeitet in einer Koalition mit anderen Fraktionen zusammen. Ein Ministerium ist eine Behörde, die von einer Ministerin oder einem Minister geleitet wird. „Einheit“ ist kein politischer Fachbegriff für eine Regierungsbildung.',
       memoryTip: 'Koalition = Zusammenarbeit von Parteien; Fraktion = Abgeordnete einer Partei.',
+      legalBasis: [],
+    },
+    en: {
+      background: 'In a federal election, no party usually wins more than half the seats on its own. Several parties then work together to form a majority and the government. This is called a coalition. The parties set out their joint plans in a coalition agreement. After the 2025 federal election, for example, the CDU/CSU and the SPD formed a coalition.',
+      otherOptions: 'A parliamentary group (Fraktion) is the group of a party’s members in parliament – in a coalition it works together with other groups. A ministry is an authority headed by a minister. “Unity” is not a political term for forming a government.',
+      memoryTip: 'Coalition = parties working together; Fraktion = a party’s members of parliament.',
+      legalBasis: [],
+    },
+    tr: {
+      background: 'Federal seçimde genellikle hiçbir parti tek başına sandalyelerin yarısından fazlasını alamaz. O zaman birkaç parti çoğunluğu sağlamak ve hükümeti kurmak için birlikte çalışır. Buna koalisyon denir. Partiler ortak planlarını bir koalisyon sözleşmesine yazar. Örneğin 2025 federal seçiminden sonra CDU/CSU ve SPD bir koalisyon kurdu.',
+      otherOptions: 'Fraktion (meclis grubu), bir partinin parlamentodaki milletvekillerinin grubudur – koalisyonda diğer gruplarla birlikte çalışır. Bakanlık, bir bakanın yönettiği bir kurumdur. “Birlik” (Einheit) hükümet kurmak için kullanılan siyasi bir terim değildir.',
+      memoryTip: 'Koalisyon = partilerin birlikte çalışması; Fraktion = bir partinin milletvekilleri.',
       legalBasis: [],
     },
   },
@@ -392,6 +644,18 @@ const deepDives: Record<number, Partial<Record<DeepDiveLanguage, QuestionDeepDiv
       memoryTip: 'Drei staatliche Gewalten: Gesetze machen, ausführen, Recht sprechen. Die Presse ist frei und gehört nicht dazu.',
       legalBasis: [law('Art. 20 GG', 'gg/art_20.html')],
     },
+    en: {
+      background: 'The Basic Law divides state power into three branches (Article 20(2)): legislation (the legislature, i.e. parliament), executive power (the executive, i.e. government and administration) and the judiciary (the courts). This separation of powers prevents any one body from gaining too much power.',
+      otherOptions: 'The press is often called the “fourth estate” because it scrutinises those in power. But that is only a metaphor: the press is not a state power, it is independent of the state. Legislation, government and the judiciary are the three powers of the state.',
+      memoryTip: 'Three state powers: making laws, carrying them out, judging. The press is free and not one of them.',
+      legalBasis: [law('Art. 20 Basic Law (GG)', 'gg/art_20.html')],
+    },
+    tr: {
+      background: 'Anayasa devlet gücünü üçe ayırır (madde 20, fıkra 2): yasama (parlamento), yürütme (hükümet ve idare) ve yargı (mahkemeler). Bu kuvvetler ayrılığı, tek bir kurumun çok fazla güç kazanmasını önler.',
+      otherOptions: 'Basına güçlüleri denetlediği için sık sık “dördüncü güç” denir. Ama bu sadece bir benzetmedir: Basın bir devlet gücü değildir, devletten bağımsızdır. Yasama, hükümet ve yargı devletin üç gücüdür.',
+      memoryTip: 'Devletin üç gücü: yasa yapmak, uygulamak, yargılamak. Basın özgürdür ve bunlara dahil değildir.',
+      legalBasis: [law('Anayasa (GG) md. 20', 'gg/art_20.html')],
+    },
   },
   33: {
     de: {
@@ -399,6 +663,18 @@ const deepDives: Record<number, Partial<Record<DeepDiveLanguage, QuestionDeepDiv
       otherOptions: 'Religionsgemeinschaften bilden nicht den Staat, der Staat ist nicht von ihnen abhängig, und sie bilden auch keine Einheit. Das wäre ein Gottesstaat oder eine Staatskirche, die das Grundgesetz ausschließt.',
       memoryTip: 'Keine Staatskirche: Staat und Religion sind getrennt.',
       legalBasis: [law('Art. 140 GG', 'gg/art_140.html'), law('Art. 4 GG', 'gg/art_4.html')],
+    },
+    en: {
+      background: 'In Germany, the state and religious communities are separate. The Basic Law adopts provisions of the Weimar Constitution for this: “There shall be no state church.” The state is religiously neutral and does not favour any religion. Still, the state and religious communities cooperate in some areas, for example on religious education in schools or the church tax, which the tax office collects for the churches.',
+      otherOptions: 'Religious communities do not form the state, the state does not depend on them, and they do not form a single unit. That would be a theocracy or a state church, which the Basic Law rules out.',
+      memoryTip: 'No state church: state and religion are separate.',
+      legalBasis: [law('Art. 140 Basic Law (GG)', 'gg/art_140.html'), law('Art. 4 Basic Law (GG)', 'gg/art_4.html')],
+    },
+    tr: {
+      background: 'Almanya’da devlet ve dinî topluluklar birbirinden ayrıdır. Anayasa bunun için Weimar Anayasası’nın kurallarını alır: “Devlet kilisesi yoktur.” Devlet dinler karşısında tarafsızdır ve hiçbir dini kayırmaz. Yine de devlet ve dinî topluluklar bazı alanlarda iş birliği yapar; örneğin okullardaki din dersinde veya vergi dairesinin kiliseler adına topladığı kilise vergisinde.',
+      otherOptions: 'Dinî topluluklar devleti oluşturmaz, devlet onlara bağımlı değildir ve birlikte bir bütün de oluşturmazlar. Bu bir din devleti veya devlet kilisesi olurdu; Anayasa bunu engeller.',
+      memoryTip: 'Devlet kilisesi yok: Devlet ve din ayrıdır.',
+      legalBasis: [law('Anayasa (GG) md. 140', 'gg/art_140.html'), law('Anayasa (GG) md. 4', 'gg/art_4.html')],
     },
   },
   34: {
@@ -408,12 +684,36 @@ const deepDives: Record<number, Partial<Record<DeepDiveLanguage, QuestionDeepDiv
       memoryTip: 'Gesucht ist, was Deutschland nicht ist: Seit 1918 gibt es keinen König mehr.',
       legalBasis: [law('Art. 20 GG', 'gg/art_20.html')],
     },
+    en: {
+      background: 'Germany is not a monarchy but a republic. The head of state is not a king or queen, but the Federal President, who is elected for five years. The monarchy in Germany ended in 1918 with the end of the German Empire.',
+      otherOptions: 'Democracy, the rule of law and the social state describe Germany correctly. These principles are in the Basic Law (Articles 20 and 28) and are among the most important features of the Federal Republic.',
+      memoryTip: 'You are looking for what Germany is not: there has been no king since 1918.',
+      legalBasis: [law('Art. 20 Basic Law (GG)', 'gg/art_20.html')],
+    },
+    tr: {
+      background: 'Almanya bir monarşi değil, cumhuriyettir. Devletin başında bir kral veya kraliçe değil, beş yıllığına seçilen Cumhurbaşkanı bulunur. Almanya’da monarşi 1918’de Alman İmparatorluğu’nun sona ermesiyle bitti.',
+      otherOptions: 'Demokrasi, hukuk devleti ve sosyal devlet Almanya’yı doğru anlatır. Bu ilkeler Anayasa’da (madde 20 ve 28) yer alır ve Federal Cumhuriyet’in en önemli özellikleri arasındadır.',
+      memoryTip: 'Almanya’nın ne olmadığını arıyorsun: 1918’den beri kral yok.',
+      legalBasis: [law('Anayasa (GG) md. 20', 'gg/art_20.html')],
+    },
   },
   35: {
     de: {
       background: 'Die Sozialversicherung wird vor allem durch Sozialabgaben finanziert: Beiträge, die von Lohn und Gehalt abgezogen werden. Bei den meisten Versicherungen zahlen Arbeitnehmerinnen und Arbeitnehmer und Arbeitgeber jeweils ungefähr die Hälfte. Zur Sozialversicherung gehören Kranken-, Pflege-, Renten-, Arbeitslosen- und Unfallversicherung. Die Unfallversicherung bezahlen die Arbeitgeber allein; der Staat gibt außerdem Zuschüsse aus Steuern, zum Beispiel für die Rente.',
       otherOptions: 'Die Kirchensteuer geht an die Kirchen, nicht an die Sozialversicherung. Spenden und Vereinsbeiträge sind freiwillige Zahlungen an Organisationen oder Vereine; damit finanziert der Staat keine Sozialversicherung.',
       memoryTip: 'Sozialversicherung wird mit Sozialabgaben bezahlt – das Wort steckt schon drin.',
+      legalBasis: [],
+    },
+    en: {
+      background: 'Social insurance is mainly financed through social security contributions, which are deducted from wages and salaries. For most types of insurance, employees and employers each pay roughly half. Social insurance includes health, long-term care, pension, unemployment and accident insurance. Accident insurance is paid by employers alone; the state also adds subsidies from taxes, for example for pensions.',
+      otherOptions: 'Church tax goes to the churches, not to social insurance. Donations and membership fees are voluntary payments to organisations or clubs; the state does not use them to finance social insurance.',
+      memoryTip: 'Social insurance is paid for with social contributions (Sozialabgaben) – the word is already in the name.',
+      legalBasis: [],
+    },
+    tr: {
+      background: 'Sosyal sigorta esas olarak ücret ve maaştan kesilen sosyal sigorta primleriyle finanse edilir. Çoğu sigortada çalışan ve işveren yaklaşık yarı yarıya öder. Sosyal sigortaya sağlık, bakım, emeklilik, işsizlik ve iş kazası sigortası dahildir. İş kazası sigortasını yalnızca işverenler öder; devlet ayrıca vergilerden, örneğin emeklilik için, katkı yapar.',
+      otherOptions: 'Kilise vergisi sosyal sigortaya değil, kiliselere gider. Bağışlar ve dernek aidatları kuruluşlara veya derneklere yapılan gönüllü ödemelerdir; devlet sosyal sigortayı bunlarla finanse etmez.',
+      memoryTip: 'Sosyal sigorta sosyal primlerle (Sozialabgaben) ödenir – kelime zaten adında var.',
       legalBasis: [],
     },
   },
@@ -424,12 +724,36 @@ const deepDives: Record<number, Partial<Record<DeepDiveLanguage, QuestionDeepDiv
       memoryTip: 'Soziale Sicherheit betrifft Menschen (Krankheit, Alter, Arbeitslosigkeit), nicht Autos oder Häuser.',
       legalBasis: [],
     },
+    en: {
+      background: 'Health insurance is part of social insurance and is compulsory in Germany. It pays for doctor’s visits, hospital stays and many medicines. Most people have statutory health insurance; some, such as civil servants or the self-employed, can take out private insurance. Together with pension, long-term care, unemployment and accident insurance, it provides social security.',
+      otherOptions: 'Car, building and liability insurance are private insurances. They protect against damage to property or against compensation claims. Liability insurance is compulsory for cars, but it is still not part of social security.',
+      memoryTip: 'Social security is about people (illness, old age, unemployment), not cars or houses.',
+      legalBasis: [],
+    },
+    tr: {
+      background: 'Sağlık sigortası sosyal sigortanın bir parçasıdır ve Almanya’da zorunludur. Doktor ziyaretlerini, hastane yatışlarını ve birçok ilacı karşılar. İnsanların çoğu yasal sağlık sigortasındadır; memurlar veya serbest çalışanlar gibi bazı kişiler özel sigorta yaptırabilir. Emeklilik, bakım, işsizlik ve iş kazası sigortasıyla birlikte sosyal güvence sağlar.',
+      otherOptions: 'Araç, bina ve sorumluluk sigortası özel sigortalardır. Eşyalara gelen zarara veya tazminat taleplerine karşı korurlar. Araçlar için sorumluluk sigortası zorunludur, ama yine de sosyal güvencenin parçası değildir.',
+      memoryTip: 'Sosyal güvence insanlarla ilgilidir (hastalık, yaşlılık, işsizlik), arabalar veya evlerle değil.',
+      legalBasis: [],
+    },
   },
   37: {
     de: {
       background: 'In 13 der 16 Bundesländer heißt der Regierungschef oder die Regierungschefin Ministerpräsident oder Ministerpräsidentin. Er oder sie wird vom Landtag gewählt und leitet die Landesregierung. In den drei Stadtstaaten gibt es andere Titel: In Berlin heißt das Amt Regierender Bürgermeister, in Hamburg Erster Bürgermeister und in Bremen Präsident des Senats.',
       otherOptions: 'Premierminister ist der Titel des britischen Regierungschefs, Erster Minister der von Schottland oder Wales. Senatoren und Senatorinnen sind in den Stadtstaaten Berlin, Hamburg und Bremen die Mitglieder der Landesregierung – also so etwas wie Landesminister, nicht die Chefs.',
       memoryTip: 'Land = Ministerpräsident; Bund = Bundeskanzler.',
+      legalBasis: [],
+    },
+    en: {
+      background: 'In 13 of the 16 federal states, the head of government is called Minister-President (Ministerpräsident or Ministerpräsidentin). They are elected by the state parliament and lead the state government. The three city states use other titles: in Berlin the office is called Governing Mayor, in Hamburg First Mayor and in Bremen President of the Senate.',
+      otherOptions: 'Prime Minister is the title of the British head of government, First Minister that of Scotland or Wales. In the city states of Berlin, Hamburg and Bremen, senators are the members of the state government – something like state ministers, not the heads.',
+      memoryTip: 'State = Minister-President; federation = Federal Chancellor.',
+      legalBasis: [],
+    },
+    tr: {
+      background: '16 eyaletin 13’ünde hükümet başkanına Ministerpräsident (eyalet başbakanı) denir. Eyalet meclisi tarafından seçilir ve eyalet hükümetini yönetir. Üç şehir eyaletinde başka unvanlar kullanılır: Berlin’de “Regierender Bürgermeister”, Hamburg’da “Erster Bürgermeister” ve Bremen’de “Senato Başkanı”.',
+      otherOptions: 'Premierminister İngiltere’nin hükümet başkanının unvanıdır, Erster Minister ise İskoçya veya Galler’inki. Berlin, Hamburg ve Bremen şehir eyaletlerinde senatörler eyalet hükümetinin üyeleridir – yani eyalet bakanı gibidirler, başkan değil.',
+      memoryTip: 'Eyalet = Ministerpräsident; federal düzey = Federal Şansölye.',
       legalBasis: [],
     },
   },
@@ -440,6 +764,18 @@ const deepDives: Record<number, Partial<Record<DeepDiveLanguage, QuestionDeepDiv
       memoryTip: 'Bundesrepublik → Bundesstaat.',
       legalBasis: [law('Art. 20 GG', 'gg/art_20.html')],
     },
+    en: {
+      background: 'According to Article 20 of the Basic Law, Germany is a “democratic and social federal state”. In a federal state, states join together to form one common state. The states keep their own responsibilities, for example for schools and the police; the federation is responsible, for example, for foreign policy and defence.',
+      otherOptions: 'A confederation (Staatenbund) is a loose association of independent states without a common state. The Federal Constitutional Court calls the European Union a “Staatenverbund” (association of states). In a centralised state like France, there are no states with their own parliaments and governments.',
+      memoryTip: 'Federal Republic → federal state (Bundesstaat).',
+      legalBasis: [law('Art. 20 Basic Law (GG)', 'gg/art_20.html')],
+    },
+    tr: {
+      background: 'Anayasa’nın 20. maddesine göre Almanya “demokratik ve sosyal bir federal devlettir”. Federal devlette eyaletler bir araya gelerek ortak bir devlet oluşturur. Eyaletler örneğin okullar ve polis gibi kendi sorumluluklarını korur; federal yönetim ise örneğin dış politika ve savunmadan sorumludur.',
+      otherOptions: 'Devletler birliği (Staatenbund), ortak bir devleti olmayan bağımsız devletlerin gevşek bir birleşimidir. Federal Anayasa Mahkemesi Avrupa Birliği’ni “Staatenverbund” olarak tanımlar. Fransa gibi merkezî bir devlette kendi parlamentosu ve hükümeti olan eyaletler yoktur.',
+      memoryTip: 'Federal Cumhuriyet → federal devlet (Bundesstaat).',
+      legalBasis: [law('Anayasa (GG) md. 20', 'gg/art_20.html')],
+    },
   },
   39: {
     de: {
@@ -448,12 +784,36 @@ const deepDives: Record<number, Partial<Record<DeepDiveLanguage, QuestionDeepDiv
       memoryTip: 'Außenpolitik, Armee und Geld macht der Bund – eine Regierung hat jedes Land.',
       legalBasis: [law('Art. 30 GG', 'gg/art_30.html')],
     },
+    en: {
+      background: 'Each of the 16 federal states has its own government, its own parliament (usually called Landtag) and its own constitution. The state government is responsible, for example, for schools, the police and universities. In most states it is headed by a Minister-President.',
+      otherOptions: 'Foreign policy, defence and currency are matters for the federation or the EU. The Bundeswehr is Germany’s only army, there is a foreign minister only at federal level, and people pay with the euro throughout Germany.',
+      memoryTip: 'Foreign policy, the army and money are federal matters – but every state has a government.',
+      legalBasis: [law('Art. 30 Basic Law (GG)', 'gg/art_30.html')],
+    },
+    tr: {
+      background: '16 eyaletin her birinin kendi hükümeti, kendi parlamentosu (çoğunlukla Landtag denir) ve kendi anayasası vardır. Eyalet hükümeti örneğin okullardan, polisten ve üniversitelerden sorumludur. Çoğu eyalette başında bir Ministerpräsident bulunur.',
+      otherOptions: 'Dış politika, savunma ve para birimi federal yönetimin veya AB’nin işidir. Bundeswehr Almanya’nın tek ordusudur, dışişleri bakanı yalnızca federal düzeyde vardır ve Almanya’nın her yerinde euro ile ödeme yapılır.',
+      memoryTip: 'Dış politika, ordu ve para federal düzeyin işidir – ama her eyaletin bir hükümeti vardır.',
+      legalBasis: [law('Anayasa (GG) md. 30', 'gg/art_30.html')],
+    },
   },
   40: {
     de: {
       background: 'Die deutsche Nationalhymne ist die dritte Strophe des „Liedes der Deutschen“. Den Text schrieb August Heinrich Hoffmann von Fallersleben 1841, die Melodie stammt von Joseph Haydn. Seit 1991 ist offiziell nur die dritte Strophe die Nationalhymne. Sie beginnt mit den Worten „Einigkeit und Recht und Freiheit für das deutsche Vaterland“.',
       otherOptions: '„Völker, hört die Signale“ stammt aus der „Internationale“, einem Lied der Arbeiterbewegung. „Freude schöner Götterfunken“ ist der Anfang von Beethovens „Ode an die Freude“, der Europahymne. „Deutschland einig Vaterland“ ist eine Zeile aus der Nationalhymne der DDR.',
       memoryTip: 'Einigkeit, Recht, Freiheit – diese Worte stehen auch auf dem Rand der deutschen 2-Euro-Münze.',
+      legalBasis: [],
+    },
+    en: {
+      background: 'The German national anthem is the third verse of the “Song of the Germans” (Lied der Deutschen). The lyrics were written by August Heinrich Hoffmann von Fallersleben in 1841, and the melody is by Joseph Haydn. Since 1991, only the third verse has officially been the national anthem. It begins with the words “Einigkeit und Recht und Freiheit für das deutsche Vaterland” (Unity and justice and freedom for the German fatherland).',
+      otherOptions: '“Völker, hört die Signale” comes from “The Internationale”, a song of the labour movement. “Freude schöner Götterfunken” is the beginning of Beethoven’s “Ode to Joy”, the European anthem. “Deutschland einig Vaterland” is a line from the national anthem of the GDR.',
+      memoryTip: 'Unity, justice, freedom – these words are also on the edge of the German 2-euro coin.',
+      legalBasis: [],
+    },
+    tr: {
+      background: 'Alman milli marşı “Almanların Şarkısı”nın (Lied der Deutschen) üçüncü kıtasıdır. Sözlerini 1841’de August Heinrich Hoffmann von Fallersleben yazdı, bestesi Joseph Haydn’a aittir. 1991’den beri resmî olarak yalnızca üçüncü kıta milli marştır. “Einigkeit und Recht und Freiheit für das deutsche Vaterland” (Alman vatanı için birlik, hukuk ve özgürlük) sözleriyle başlar.',
+      otherOptions: '“Völker, hört die Signale” işçi hareketinin şarkısı “Enternasyonal”den gelir. “Freude schöner Götterfunken” Beethoven’ın Avrupa marşı olan “Neşeye Övgü”sünün başlangıcıdır. “Deutschland einig Vaterland” DDR milli marşından bir dizedir.',
+      memoryTip: 'Birlik, hukuk, özgürlük – bu kelimeler Alman 2 euroluğunun kenarında da yazar.',
       legalBasis: [],
     },
   },
@@ -464,6 +824,18 @@ const deepDives: Record<number, Partial<Record<DeepDiveLanguage, QuestionDeepDiv
       memoryTip: 'Viele Meinungen → viele Parteien.',
       legalBasis: [law('Art. 21 GG', 'gg/art_21.html')],
     },
+    en: {
+      background: 'In a democracy, people have different opinions and interests. Parties gather these opinions, turn them into programmes and stand for election. Only if there are several parties do voters have a real choice. Article 21 of the Basic Law says that parties participate in forming the political will of the people.',
+      otherOptions: 'Several parties do not automatically prevent bribery – there are laws and controls for that. In a democracy, demonstrations should not be prevented; they are protected by freedom of assembly. Economic competition is a matter for the economy, not the reason for having several parties.',
+      memoryTip: 'Many opinions → many parties.',
+      legalBasis: [law('Art. 21 Basic Law (GG)', 'gg/art_21.html')],
+    },
+    tr: {
+      background: 'Demokraside insanların farklı görüşleri ve çıkarları vardır. Partiler bu görüşleri toplar, programlara dönüştürür ve seçime girer. Seçmenlerin gerçek bir seçeneği ancak birden fazla parti varsa olur. Anayasa’nın 21. maddesi, partilerin halkın siyasi iradesinin oluşumuna katıldığını söyler.',
+      otherOptions: 'Birden fazla parti olması rüşveti kendiliğinden önlemez – bunun için yasalar ve denetimler vardır. Demokraside gösteriler engellenmemelidir; toplanma özgürlüğüyle korunurlar. Ekonomik rekabet ekonominin konusudur, birden fazla parti olmasının nedeni değildir.',
+      memoryTip: 'Çok görüş → çok parti.',
+      legalBasis: [law('Anayasa (GG) md. 21', 'gg/art_21.html')],
+    },
   },
   42: {
     de: {
@@ -471,6 +843,18 @@ const deepDives: Record<number, Partial<Record<DeepDiveLanguage, QuestionDeepDiv
       otherOptions: 'Die Regierung kann Gesetze vorschlagen, beschließt sie aber nicht. Gerichte wenden Gesetze an und können prüfen, ob sie mit dem Grundgesetz vereinbar sind. Die Polizei sorgt dafür, dass Gesetze eingehalten werden.',
       memoryTip: 'Parlament = Gesetze machen; Regierung = ausführen; Gerichte = Recht sprechen.',
       legalBasis: [law('Art. 77 GG', 'gg/art_77.html')],
+    },
+    en: {
+      background: 'New federal laws are passed by parliament: the Bundestag, together with the Bundesrat for many laws. Proposals for laws can come from the federal government, from the Bundestag or from the Bundesrat. The state parliaments are responsible for state laws. This is part of the separation of powers: parliament makes the laws.',
+      otherOptions: 'The government can propose laws but does not pass them. Courts apply laws and can review whether they are compatible with the Basic Law. The police make sure laws are followed.',
+      memoryTip: 'Parliament = makes laws; government = carries them out; courts = judge.',
+      legalBasis: [law('Art. 77 Basic Law (GG)', 'gg/art_77.html')],
+    },
+    tr: {
+      background: 'Yeni federal yasaları parlamento kabul eder: Federal Meclis, birçok yasada Federal Konsey ile birlikte. Yasa önerileri federal hükümetten, Federal Meclis’ten veya Federal Konsey’den gelebilir. Eyalet yasalarından eyalet meclisleri sorumludur. Bu kuvvetler ayrılığının bir parçasıdır: Yasaları parlamento yapar.',
+      otherOptions: 'Hükümet yasa önerebilir ama kabul etmez. Mahkemeler yasaları uygular ve Anayasa’ya uygun olup olmadıklarını denetleyebilir. Polis yasalara uyulmasını sağlar.',
+      memoryTip: 'Parlamento = yasa yapar; hükümet = uygular; mahkemeler = yargılar.',
+      legalBasis: [law('Anayasa (GG) md. 77', 'gg/art_77.html')],
     },
   },
   43: {
@@ -480,6 +864,18 @@ const deepDives: Record<number, Partial<Record<DeepDiveLanguage, QuestionDeepDiv
       memoryTip: 'Verboten wird nur, wer gegen die Verfassung kämpft – nicht, wer kritisiert.',
       legalBasis: [law('Art. 21 GG', 'gg/art_21.html')],
     },
+    en: {
+      background: 'A party can be banned if it seeks to abolish the free democratic basic order or endangers the existence of Germany (Article 21 of the Basic Law). Only the Federal Constitutional Court can impose a ban. An application can be made by the Bundestag, the Bundesrat or the federal government. The hurdles are high so that parties cannot simply be banned for political reasons.',
+      otherOptions: 'An expensive election campaign, criticism of the head of state or a programme with new ideas are allowed in a democracy. Criticism and new political directions are part of the democratic competition between parties.',
+      memoryTip: 'Only those who fight the constitution are banned – not those who criticise.',
+      legalBasis: [law('Art. 21 Basic Law (GG)', 'gg/art_21.html')],
+    },
+    tr: {
+      background: 'Bir parti, özgürlükçü demokratik temel düzeni ortadan kaldırmak isterse veya Almanya’nın varlığını tehlikeye atarsa yasaklanabilir (Anayasa madde 21). Yasak kararını yalnızca Federal Anayasa Mahkemesi verebilir. Bunun için Federal Meclis, Federal Konsey veya federal hükümet başvurabilir. Partilerin siyasi nedenlerle kolayca yasaklanmaması için engeller yüksektir.',
+      otherOptions: 'Pahalı bir seçim kampanyası, devlet başkanını eleştirmek veya yeni fikirler içeren bir program demokraside serbesttir. Eleştiri ve yeni siyasi yönelimler partiler arasındaki demokratik rekabetin parçasıdır.',
+      memoryTip: 'Sadece anayasaya karşı savaşan yasaklanır – eleştiren değil.',
+      legalBasis: [law('Anayasa (GG) md. 21', 'gg/art_21.html')],
+    },
   },
   44: {
     de: {
@@ -488,12 +884,36 @@ const deepDives: Record<number, Partial<Record<DeepDiveLanguage, QuestionDeepDiv
       memoryTip: 'Präsident → Bundesversammlung; Parlamente → das Volk.',
       legalBasis: [law('Art. 54 GG', 'gg/art_54.html')],
     },
+    en: {
+      background: 'The Federal President is not elected directly by the people but by the Federal Convention. It is made up of all members of the Bundestag and the same number of delegates chosen by the state parliaments. The term of office is five years; one re-election is possible.',
+      otherOptions: 'Citizens directly elect the members of the European Parliament, the state parliament and the Bundestag. EU citizens living in Germany may also vote in local elections and European elections.',
+      memoryTip: 'President → Federal Convention; parliaments → the people.',
+      legalBasis: [law('Art. 54 Basic Law (GG)', 'gg/art_54.html')],
+    },
+    tr: {
+      background: 'Cumhurbaşkanını halk doğrudan değil, Federal Kurul (Bundesversammlung) seçer. Federal Kurul, bütün Federal Meclis üyelerinden ve eyalet meclislerinin belirlediği aynı sayıda temsilciden oluşur. Görev süresi beş yıldır; bir kez yeniden seçilmek mümkündür.',
+      otherOptions: 'Vatandaşlar Avrupa Parlamentosu, eyalet meclisi ve Federal Meclis üyelerini doğrudan seçer. Almanya’da yaşayan AB vatandaşları da yerel seçimlerde ve Avrupa seçimlerinde oy kullanabilir.',
+      memoryTip: 'Cumhurbaşkanı → Federal Kurul; parlamentolar → halk.',
+      legalBasis: [law('Anayasa (GG) md. 54', 'gg/art_54.html')],
+    },
   },
   45: {
     de: {
       background: 'Die Pflegeversicherung gehört zur Sozialversicherung. Sie wurde 1995 als jüngster Zweig eingeführt und hilft Menschen, die wegen Krankheit, Behinderung oder Alter dauerhaft Pflege brauchen – zu Hause oder im Pflegeheim. Wer gesetzlich krankenversichert ist, ist automatisch auch in der Pflegeversicherung. Die Beiträge teilen sich Arbeitnehmer und Arbeitgeber; wer keine Kinder hat, zahlt einen kleinen Zuschlag.',
       otherOptions: 'Die Unfallversicherung ist selbst ein Zweig der Sozialversicherung, aber die Pflegeversicherung gehört nicht zu ihr. Hausrats-, Haftpflicht- und Feuerversicherungen sind private Versicherungen für Sachschäden.',
       memoryTip: 'Fünf Zweige der Sozialversicherung: Kranken-, Pflege-, Renten-, Arbeitslosen- und Unfallversicherung.',
+      legalBasis: [],
+    },
+    en: {
+      background: 'Long-term care insurance is part of social insurance. It was introduced in 1995 as the newest branch and helps people who need long-term care because of illness, disability or old age – at home or in a care home. Anyone with statutory health insurance is automatically covered by long-term care insurance. Employees and employers share the contributions; people without children pay a small surcharge.',
+      otherOptions: 'Accident insurance is itself a branch of social insurance, but long-term care insurance is not part of it. Household contents, liability and fire insurance are private insurances against damage to property.',
+      memoryTip: 'Five branches of social insurance: health, long-term care, pension, unemployment and accident insurance.',
+      legalBasis: [],
+    },
+    tr: {
+      background: 'Bakım sigortası sosyal sigortanın bir parçasıdır. 1995’te en yeni kol olarak getirildi ve hastalık, engellilik veya yaşlılık nedeniyle uzun süreli bakıma ihtiyaç duyan insanlara – evde ya da bakımevinde – yardım eder. Yasal sağlık sigortası olan herkes otomatik olarak bakım sigortasına da dahildir. Primleri çalışan ve işveren paylaşır; çocuğu olmayanlar küçük bir ek prim öder.',
+      otherOptions: 'İş kazası sigortası da sosyal sigortanın bir koludur, ama bakım sigortası ona dahil değildir. Ev eşyası, sorumluluk ve yangın sigortaları eşya hasarlarına karşı özel sigortalardır.',
+      memoryTip: 'Sosyal sigortanın beş kolu: sağlık, bakım, emeklilik, işsizlik ve iş kazası sigortası.',
       legalBasis: [],
     },
   },
@@ -504,12 +924,36 @@ const deepDives: Record<number, Partial<Record<DeepDiveLanguage, QuestionDeepDiv
       memoryTip: 'Der Staat baut, was alle brauchen: Straßen und Schulen.',
       legalBasis: [],
     },
+    en: {
+      background: 'The state provides public infrastructure: it builds and maintains roads, bridges, schools and hospitals. Depending on the task, the federation, the states or the municipalities are responsible – motorways, for example, are federal, while school buildings are usually provided by towns and municipalities. This is paid for mainly from taxes.',
+      otherOptions: 'In the social market economy, food, clothing, cars and buses are produced and sold by private companies. The state does not hand out free newspapers to everyone; the press is independent of the state.',
+      memoryTip: 'The state builds what everyone needs: roads and schools.',
+      legalBasis: [],
+    },
+    tr: {
+      background: 'Devlet kamusal altyapıyı sağlar: Yolları, köprüleri, okulları ve hastaneleri yapar ve bakımını üstlenir. Göreve göre federal yönetim, eyaletler veya belediyeler sorumludur – örneğin otoyollar federal yönetimin, okul binaları ise genellikle şehirlerin ve belediyelerin işidir. Bunlar esas olarak vergilerle ödenir.',
+      otherOptions: 'Sosyal piyasa ekonomisinde gıdayı, giysiyi, arabaları ve otobüsleri özel şirketler üretir ve satar. Devlet herkese ücretsiz gazete dağıtmaz; basın devletten bağımsızdır.',
+      memoryTip: 'Devlet herkesin ihtiyaç duyduğunu yapar: yollar ve okullar.',
+      legalBasis: [],
+    },
   },
   47: {
     de: {
       background: 'Der Staat unterstützt Familien, Kultur und Sport. Er zahlt zum Beispiel Kindergeld für Kinder, fördert Museen und Theater und unterstützt Sportlerinnen und Sportler. Für Urlaubsreisen müssen die Menschen aber selbst bezahlen – das ist keine Aufgabe des Staates.',
       otherOptions: 'Kindergeld zahlt die Familienkasse an Eltern. Museen werden vor allem von Ländern und Städten gefördert. Sportförderung gibt es für Spitzensport und Breitensport, etwa für Vereine. Alle drei gehören also zu den Aufgaben des Staates.',
       memoryTip: 'Gesucht ist das, was nicht passt: Urlaub zahlt man selbst.',
+      legalBasis: [],
+    },
+    en: {
+      background: 'The state supports families, culture and sport. For example, it pays child benefit (Kindergeld), funds museums and theatres and supports athletes. But people have to pay for their own holidays – that is not a task of the state.',
+      otherOptions: 'Child benefit is paid to parents by the Family Benefits Office (Familienkasse). Museums are funded mainly by the states and cities. Sport is funded at both elite and grassroots level, for example through clubs. All three are tasks of the state.',
+      memoryTip: 'You are looking for what does not fit: you pay for your holidays yourself.',
+      legalBasis: [],
+    },
+    tr: {
+      background: 'Devlet aileleri, kültürü ve sporu destekler. Örneğin çocuklar için çocuk parası (Kindergeld) öder, müzeleri ve tiyatroları destekler ve sporculara yardım eder. Ama tatil yolculuklarını insanlar kendileri ödemek zorundadır – bu devletin görevi değildir.',
+      otherOptions: 'Çocuk parasını ebeveynlere Familienkasse (Aile Kasası) öder. Müzeler esas olarak eyaletler ve şehirler tarafından desteklenir. Spor, hem profesyonel hem de amatör düzeyde, örneğin kulüpler aracılığıyla desteklenir. Üçü de devletin görevleri arasındadır.',
+      memoryTip: 'Uymayanı arıyorsun: Tatilini kendin ödersin.',
       legalBasis: [],
     },
   },
@@ -520,6 +964,18 @@ const deepDives: Record<number, Partial<Record<DeepDiveLanguage, QuestionDeepDiv
       memoryTip: 'Verfassungsorgane beginnen mit „Bundes-“ – die Bürgerversammlung passt nicht.',
       legalBasis: [],
     },
+    en: {
+      background: 'Constitutional bodies are the highest bodies of the federation set out in the Basic Law: the Bundestag, the Bundesrat, the federal government, the Federal President, the Federal Convention and the Federal Constitutional Court. They share the tasks of the state and keep a check on each other. The Federal Constitutional Court in Karlsruhe ensures that all other bodies respect the Basic Law.',
+      otherOptions: 'The Bundesrat, the Federal President and the federal government are constitutional bodies. A “citizens’ assembly” (Bürgerversammlung) exists only at local level in some states, as a meeting of a municipality’s residents. It is not a constitutional body of the federation.',
+      memoryTip: 'Constitutional bodies start with “Bundes-” (federal) – the citizens’ assembly does not fit.',
+      legalBasis: [],
+    },
+    tr: {
+      background: 'Anayasal organlar, federal düzeyde Anayasa’da düzenlenen en üst organlardır: Federal Meclis, Federal Konsey, federal hükümet, Cumhurbaşkanı, Federal Kurul ve Federal Anayasa Mahkemesi. Devletin görevlerini paylaşır ve birbirlerini denetlerler. Karlsruhe’deki Federal Anayasa Mahkemesi, diğer bütün organların Anayasa’ya uymasını gözetir.',
+      otherOptions: 'Federal Konsey, Cumhurbaşkanı ve federal hükümet anayasal organlardır. “Vatandaş toplantısı” (Bürgerversammlung) yalnızca bazı eyaletlerde, yerel düzeyde bir belediye sakinlerinin toplantısı olarak vardır. Federal düzeyde bir anayasal organ değildir.',
+      memoryTip: 'Anayasal organlar “Bundes-” (federal) ile başlar – vatandaş toplantısı uymaz.',
+      legalBasis: [],
+    },
   },
   49: {
     de: {
@@ -528,12 +984,36 @@ const deepDives: Record<number, Partial<Record<DeepDiveLanguage, QuestionDeepDiv
       memoryTip: 'Schule ist Ländersache – deshalb sind die Sommerferien überall verschieden.',
       legalBasis: [law('Art. 30 GG', 'gg/art_30.html')],
     },
+    en: {
+      background: 'In Germany, the federal states are responsible for schools. This is called the cultural sovereignty of the states. That is why each state has its own school laws, curricula, types of schools and holiday dates. To keep qualifications comparable, the states coordinate in the Standing Conference of Ministers of Education (Kultusministerkonferenz).',
+      otherOptions: 'Teachers teach according to the states’ rules but do not make school policy. The Federal Ministry for Family Affairs is responsible for families, senior citizens, women and youth, not schools. Universities train teachers but do not decide school policy.',
+      memoryTip: 'Schools are a matter for the states – that is why summer holidays differ everywhere.',
+      legalBasis: [law('Art. 30 Basic Law (GG)', 'gg/art_30.html')],
+    },
+    tr: {
+      background: 'Almanya’da okullardan eyaletler sorumludur. Buna eyaletlerin kültür egemenliği denir. Bu yüzden her eyaletin kendi okul yasaları, müfredatları, okul türleri ve tatil tarihleri vardır. Diplomaların karşılaştırılabilir kalması için eyaletler Kültür Bakanları Konferansı’nda (Kultusministerkonferenz) uzlaşır.',
+      otherOptions: 'Öğretmenler eyaletlerin kurallarına göre ders verir, ama eğitim politikası yapmaz. Federal Aile Bakanlığı okullardan değil; ailelerden, yaşlılardan, kadınlardan ve gençlerden sorumludur. Üniversiteler öğretmen yetiştirir, ama okul politikasını belirlemez.',
+      memoryTip: 'Okul eyaletlerin işidir – bu yüzden yaz tatilleri her yerde farklıdır.',
+      legalBasis: [law('Anayasa (GG) md. 30', 'gg/art_30.html')],
+    },
   },
   50: {
     de: {
       background: 'Die Wirtschaftsform in Deutschland heißt soziale Marktwirtschaft. Unternehmen produzieren und verkaufen frei, Preise entstehen durch Angebot und Nachfrage. Der Staat sorgt aber für einen sozialen Ausgleich, zum Beispiel durch Sozialversicherung, Kündigungsschutz, Mindestlohn und Regeln für fairen Wettbewerb. Als Vater der sozialen Marktwirtschaft gilt Ludwig Erhard, der erste Wirtschaftsminister der Bundesrepublik.',
       otherOptions: 'In einer Planwirtschaft oder gelenkten Zentralwirtschaft bestimmt der Staat, was produziert wird und was es kostet – so war es in der DDR. Eine „freie Zentralwirtschaft“ gibt es nicht; frei und zentral gelenkt passen nicht zusammen.',
       memoryTip: 'Markt + sozialer Ausgleich = soziale Marktwirtschaft.',
+      legalBasis: [],
+    },
+    en: {
+      background: 'Germany’s economic system is called the social market economy. Companies produce and sell freely, and prices are set by supply and demand. But the state ensures social balance, for example through social insurance, protection against dismissal, the minimum wage and rules for fair competition. Ludwig Erhard, the first economics minister of the Federal Republic, is considered the father of the social market economy.',
+      otherOptions: 'In a planned economy or a centrally directed economy, the state decides what is produced and what it costs – as in the GDR. A “free central economy” does not exist; free and centrally directed do not go together.',
+      memoryTip: 'Market + social balance = social market economy.',
+      legalBasis: [],
+    },
+    tr: {
+      background: 'Almanya’nın ekonomik sistemine sosyal piyasa ekonomisi denir. Şirketler özgürce üretir ve satar, fiyatlar arz ve talebe göre oluşur. Ama devlet, örneğin sosyal sigorta, işten çıkarmaya karşı koruma, asgari ücret ve adil rekabet kurallarıyla sosyal dengeyi sağlar. Federal Cumhuriyet’in ilk ekonomi bakanı Ludwig Erhard sosyal piyasa ekonomisinin babası kabul edilir.',
+      otherOptions: 'Planlı ekonomide veya merkezden yönlendirilen ekonomide neyin üretileceğine ve fiyatına devlet karar verir – DDR’de olduğu gibi. “Serbest merkezî ekonomi” diye bir şey yoktur; serbest ve merkezden yönlendirilen bir arada olmaz.',
+      memoryTip: 'Piyasa + sosyal denge = sosyal piyasa ekonomisi.',
       legalBasis: [],
     },
   },
