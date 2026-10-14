@@ -238,8 +238,8 @@ const homeSchemaGraph = {
 	<main class="home-page">
         <section class="home-hero home-shell">
             <div>
-                <p class="home-eyebrow"><i aria-hidden="true"></i>Einbürgerungstest · 2026</p>
-                <h1>{isGerman ? <>Dein nächstes<br/>Kapitel <em>beginnt<br/>hier.</em></> : lang === 'tr' ? <>Yeni bir hayat.<br/><em>İlk adım burada.</em></> : lang === 'en' ? <>Your next chapter<br/><em>starts here.</em></> : t('hero.title')}</h1>
+                <p class="home-eyebrow"><i aria-hidden="true"></i>{isGerman ? 'Dein nächstes Kapitel beginnt hier' : lang === 'tr' ? 'Yeni bir hayat, ilk adım burada' : lang === 'en' ? 'Your next chapter starts here' : 'Einbürgerungstest · 2026'}</p>
+                <h1>{isGerman ? <>Einbürgerungstest 2026 <em>online üben.</em></> : lang === 'tr' ? <>Almanya vatandaşlık testi 2026: <em>online çalış.</em></> : lang === 'en' ? <>German citizenship test 2026: <em>practice online.</em></> : t('hero.title')}</h1>
                 <p class="home-description">{isGerman ? 'Mach Deutschland zu deinem Zuhause. Bereite dich mit allen offiziellen Fragen auf deinen Einbürgerungstest vor – in deinem Tempo, in deiner Sprache.' : lang === 'tr' ? 'Almanya’yı evin yap. Tüm resmî sorularla vatandaşlık sınavına kendi hızında, kendi dilinde hazırlan.' : lang === 'en' ? 'Make Germany your home. Prepare for your citizenship test with all official questions, at your pace and in your language.' : heroDescription}</p>
                 <div class="home-actions">
                     <a class="home-button" href={getPath(`${lang}/frage/1`)} data-umami-event="start-quiz-click" data-umami-event-location="home-hero" data-umami-event-lang={lang}>{t('home.start_quiz')} <span aria-hidden="true">↗</span></a>
