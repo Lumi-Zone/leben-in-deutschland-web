@@ -915,5 +915,314 @@
         "url": "https://www.gesetze-im-internet.de/gg/art_54.html"
       }
     ]
+  },
+  "76": {
+    "summary": "CDU steht für Christlich Demokratische Union.",
+    "whyCorrect": "Die CDU ist eine der großen Volksparteien in Deutschland und wurde 1945 gegründet.",
+    "background": "Die Christlich Demokratische Union (CDU) wurde nach dem Zweiten Weltkrieg gegründet. Sie wollte katholische und evangelische Christen in einer Partei der Mitte zusammenbringen. Die CDU hat viele Bundeskanzler gestellt: Konrad Adenauer, Ludwig Erhard, Kurt Georg Kiesinger, Helmut Kohl, Angela Merkel und seit 2025 Friedrich Merz. In Bayern tritt die CDU nicht an – dort gibt es ihre Schwesterpartei CSU. Im Bundestag bilden CDU und CSU eine gemeinsame Fraktion, die „Union“.",
+    "otherOptions": "„Christliche Deutsche Union“ klingt ähnlich, aber das D steht für „Demokratisch“, nicht für „Deutsch“. Ein „Club Deutscher Unternehmer“ und ein „Christlicher Deutscher Umweltschutz“ sind erfundene Antworten.",
+    "memoryTip": "C-D-U: Christlich – Demokratisch – Union.",
+    "legalBasis": []
+  },
+  "77": {
+    "summary": "Die Bundeswehr ist die deutsche Armee.",
+    "whyCorrect": "Sie wurde 1955 gegründet und dient vor allem der Verteidigung Deutschlands und seiner Verbündeten.",
+    "background": "Die Bundeswehr ist die Armee der Bundesrepublik Deutschland. Nach Artikel 87a des Grundgesetzes stellt der Bund Streitkräfte zur Verteidigung auf. Die Bundeswehr gilt als „Parlamentsarmee“: Bewaffnete Einsätze im Ausland muss der Bundestag vorher genehmigen. Im Frieden hat der Verteidigungsminister oder die Verteidigungsministerin den Oberbefehl, im Verteidigungsfall der Bundeskanzler. Deutschland ist mit der Bundeswehr Mitglied der NATO.",
+    "otherOptions": "Die Polizei ist für die innere Sicherheit zuständig und gehört meist zu den Ländern; dazu kommt die Bundespolizei. Ein Hafen ist ein Ort für Schiffe, und eine Bürgerinitiative ist ein Zusammenschluss von Bürgerinnen und Bürgern für ein bestimmtes Anliegen.",
+    "memoryTip": "Bundes-Wehr = Wehr (Verteidigung) des Bundes = Armee.",
+    "legalBasis": [
+      {
+        "label": "Art. 87a GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_87a.html"
+      }
+    ]
+  },
+  "78": {
+    "summary": "SPD steht für Sozialdemokratische Partei Deutschlands.",
+    "whyCorrect": "Die SPD ist die älteste Partei Deutschlands; ihre Wurzeln reichen bis 1863 zurück.",
+    "background": "Die Sozialdemokratische Partei Deutschlands (SPD) entstand aus der Arbeiterbewegung des 19. Jahrhunderts. Sie setzt sich traditionell für Arbeitnehmerrechte und soziale Gerechtigkeit ein. Die SPD stellte die Bundeskanzler Willy Brandt, Helmut Schmidt, Gerhard Schröder und Olaf Scholz. Seit 2025 regiert sie zusammen mit CDU/CSU im Bund.",
+    "otherOptions": "„Sozialistische Partei“ ist falsch – die SPD ist sozialdemokratisch, nicht sozialistisch. In der DDR gab es die SED (Sozialistische Einheitspartei Deutschlands). „Sozialpolitische“ und „Sozialgerechte Partei“ sind erfundene Namen.",
+    "memoryTip": "S-P-D: Sozialdemokratische Partei Deutschlands.",
+    "legalBasis": []
+  },
+  "79": {
+    "summary": "FDP steht für Freie Demokratische Partei.",
+    "whyCorrect": "Die FDP ist eine liberale Partei und wurde 1948 gegründet.",
+    "background": "Die Freie Demokratische Partei (FDP) vertritt liberale Positionen: Sie betont die Freiheit des Einzelnen, Bürgerrechte und eine marktwirtschaftliche Wirtschaftspolitik. Der erste Bundespräsident, Theodor Heuss, kam aus der FDP. Die Partei war oft kleiner Koalitionspartner in Bundesregierungen, zuletzt von 2021 bis 2024. Bei der Bundestagswahl 2025 scheiterte sie an der 5-Prozent-Hürde und ist seitdem nicht im Bundestag vertreten.",
+    "otherOptions": "„Freie Deutschland Partei“, „Friedliche Demonstrative Partei“ und „Führende Demokratische Partei“ sind erfundene Namen. Merke: Das D steht für „Demokratische“, das P für „Partei“.",
+    "memoryTip": "F-D-P: Freie – Demokratische – Partei.",
+    "legalBasis": []
+  },
+  "80": {
+    "summary": "Für die Auslegung des Grundgesetzes ist das Bundesverfassungsgericht zuständig.",
+    "whyCorrect": "Das Gericht in Karlsruhe prüft, ob Gesetze und staatliches Handeln mit dem Grundgesetz vereinbar sind.",
+    "background": "Das Bundesverfassungsgericht in Karlsruhe wurde 1951 eingerichtet und wird oft „Hüter der Verfassung“ genannt. Es kann Gesetze für verfassungswidrig erklären, entscheidet Streit zwischen Verfassungsorganen und kann Parteien verbieten. Jeder Mensch kann eine Verfassungsbeschwerde einlegen, wenn er sich durch den Staat in seinen Grundrechten verletzt fühlt (Artikel 93). Die 16 Richterinnen und Richter werden je zur Hälfte von Bundestag und Bundesrat mit Zweidrittelmehrheit gewählt.",
+    "otherOptions": "Amtsgerichte und Oberlandesgerichte sind ordentliche Gerichte für Zivil- und Strafsachen, etwa Mietstreitigkeiten oder Diebstahl. Verwaltungsgerichte entscheiden Streit zwischen Bürgern und Behörden. Über das Grundgesetz entscheidet am Ende nur das Bundesverfassungsgericht.",
+    "memoryTip": "Verfassung = Grundgesetz → Bundesverfassungsgericht.",
+    "legalBasis": [
+      {
+        "label": "Art. 93 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_93.html"
+      }
+    ]
+  },
+  "81": {
+    "summary": "Den Bundeskanzler oder die Bundeskanzlerin wählt der Bundestag.",
+    "whyCorrect": "Der Bundespräsident schlägt eine Person vor, und der Bundestag wählt sie mit der Mehrheit seiner Mitglieder (Artikel 63).",
+    "background": "In Deutschland wird der Kanzler oder die Kanzlerin nicht direkt vom Volk gewählt, sondern vom Bundestag. Gewählt ist, wer die Stimmen der Mehrheit aller Abgeordneten bekommt – die sogenannte Kanzlermehrheit. Deshalb ist es so wichtig, dass die Regierungsparteien im Bundestag eine Mehrheit haben. Indirekt bestimmen die Wählerinnen und Wähler mit ihrer Stimme bei der Bundestagswahl aber mit, wer Kanzler wird.",
+    "otherOptions": "Der Bundesrat vertritt die Länder und wählt den Kanzler nicht. Die Bundesversammlung wählt den Bundespräsidenten, nicht den Kanzler. Das Volk wählt den Bundestag, aber nicht direkt den Kanzler.",
+    "memoryTip": "Volk → Bundestag → Kanzler.",
+    "legalBasis": [
+      {
+        "label": "Art. 63 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_63.html"
+      }
+    ]
+  },
+  "82": {
+    "summary": "Das Bundeskabinett leitet der Bundeskanzler oder die Bundeskanzlerin.",
+    "whyCorrect": "Der Kanzler bestimmt die Richtlinien der Politik und leitet die Geschäfte der Bundesregierung (Artikel 65).",
+    "background": "Das Bundeskabinett ist die Bundesregierung: der Bundeskanzler oder die Bundeskanzlerin und die Bundesministerinnen und -minister. Es trifft sich in der Regel einmal pro Woche im Kanzleramt. Der Kanzler hat die sogenannte Richtlinienkompetenz – er gibt die große politische Linie vor. Innerhalb dieser Linie leitet jede Ministerin und jeder Minister das eigene Ministerium selbstständig.",
+    "otherOptions": "Der Bundestagspräsident leitet die Sitzungen des Bundestages, der Bundesratspräsident die des Bundesrates. Der Bundespräsident ist Staatsoberhaupt, gehört aber nicht zur Regierung und leitet das Kabinett nicht.",
+    "memoryTip": "Kanzler = Chef der Regierung und des Kabinetts.",
+    "legalBasis": [
+      {
+        "label": "Art. 65 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_65.html"
+      }
+    ]
+  },
+  "83": {
+    "summary": "Den deutschen Bundeskanzler oder die Bundeskanzlerin wählt der Bundestag.",
+    "whyCorrect": "Das ist dieselbe Frage wie Frage 81: Gewählt wird im Bundestag, auf Vorschlag des Bundespräsidenten (Artikel 63).",
+    "background": "Nach einer Bundestagswahl verhandeln die Parteien über eine Koalition. Haben sie sich geeinigt, schlägt der Bundespräsident dem Bundestag eine Person vor – meist die Spitzenkandidatin oder den Spitzenkandidaten der stärksten Partei. Bekommt sie die Mehrheit der Stimmen aller Abgeordneten, ernennt der Bundespräsident sie zum Kanzler oder zur Kanzlerin. Der Bundestag kann den Kanzler auch wieder abwählen – aber nur, indem er gleichzeitig einen neuen wählt (konstruktives Misstrauensvotum, Artikel 67).",
+    "otherOptions": "Das Volk wählt nur den Bundestag. Die Bundesversammlung wählt den Bundespräsidenten. Die Bundesregierung wird vom Kanzler erst gebildet – sie kann ihn also nicht wählen.",
+    "memoryTip": "Kanzler wählt der Bundestag – abwählen kann er ihn nur mit einem Nachfolger.",
+    "legalBasis": [
+      {
+        "label": "Art. 63 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_63.html"
+      },
+      {
+        "label": "Art. 67 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_67.html"
+      }
+    ]
+  },
+  "84": {
+    "summary": "Die Hauptaufgabe des Bundespräsidenten ist es, das Land zu repräsentieren.",
+    "whyCorrect": "Er oder sie vertritt Deutschland nach innen und außen; regiert wird das Land von der Bundesregierung.",
+    "background": "Der Bundespräsident ist das Staatsoberhaupt. Er vertritt Deutschland völkerrechtlich, empfängt Staatsgäste, besucht andere Länder und hält wichtige Reden, etwa an Gedenktagen. Er unterschreibt die Gesetze und prüft dabei, ob sie ordnungsgemäß zustande gekommen sind. Er ernennt Kanzler, Minister, Bundesrichter und Beamte. Politische Macht im Alltag hat er aber wenig – das Grundgesetz hat das nach den Erfahrungen der Weimarer Republik bewusst so geregelt.",
+    "otherOptions": "Das Land regiert die Bundesregierung mit dem Kanzler an der Spitze. Gesetze entwerfen meist die Ministerien oder Abgeordnete, beschließen tut sie das Parlament. Über die Einhaltung der Gesetze wachen Behörden, Polizei und vor allem die Gerichte.",
+    "memoryTip": "Präsident = repräsentiert; Kanzler = regiert.",
+    "legalBasis": [
+      {
+        "label": "Art. 59 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_59.html"
+      },
+      {
+        "label": "Art. 82 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_82.html"
+      }
+    ]
+  },
+  "85": {
+    "summary": "Den Bundesrat bilden die Regierungsvertreter der Bundesländer.",
+    "whyCorrect": "Im Bundesrat sitzen Mitglieder der 16 Landesregierungen (Artikel 51).",
+    "background": "Über den Bundesrat wirken die Länder an der Gesetzgebung des Bundes mit. Er besteht nicht aus gewählten Abgeordneten, sondern aus Mitgliedern der Landesregierungen – zum Beispiel Ministerpräsidenten und Landesministern. Jedes Land hat je nach Einwohnerzahl drei bis sechs Stimmen, insgesamt sind es 69. Ein Land muss seine Stimmen einheitlich abgeben. Der Bundesrat tagt in Berlin im ehemaligen Preußischen Herrenhaus.",
+    "otherOptions": "Die Abgeordneten des Bundestages bilden den Bundestag, nicht den Bundesrat. Die Bundesminister gehören zur Bundesregierung. Parteimitglieder als solche haben im Bundesrat keinen Sitz.",
+    "memoryTip": "Bundesrat = Rat der Länder: Landesregierungen sitzen dort.",
+    "legalBasis": [
+      {
+        "label": "Art. 50 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_50.html"
+      },
+      {
+        "label": "Art. 51 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_51.html"
+      }
+    ]
+  },
+  "86": {
+    "summary": "Den Bundespräsidenten oder die Bundespräsidentin wählt die Bundesversammlung.",
+    "whyCorrect": "Die Bundesversammlung tritt nur zu diesem Zweck zusammen, in der Regel alle fünf Jahre (Artikel 54).",
+    "background": "Die Bundesversammlung besteht aus allen Abgeordneten des Bundestages und genauso vielen Mitgliedern, die von den Landesparlamenten bestimmt werden. Die Länder schicken oft auch bekannte Persönlichkeiten aus Kultur, Sport oder Gesellschaft. Gewählt ist, wer im ersten oder zweiten Wahlgang die absolute Mehrheit bekommt; im dritten Wahlgang reicht die einfache Mehrheit. Die Bundesversammlung tagt im Reichstagsgebäude in Berlin.",
+    "otherOptions": "Der Bundesrat vertritt die Länder bei der Gesetzgebung, wählt aber nicht den Präsidenten. „Bundesparlament“ meint den Bundestag – seine Abgeordneten sind zwar Teil der Bundesversammlung, allein wählen sie den Präsidenten aber nicht. Das Bundesverfassungsgericht ist ein Gericht und wählt niemanden.",
+    "memoryTip": "Präsident ← Bundesversammlung (Bundestag + Vertreter der Länder).",
+    "legalBasis": [
+      {
+        "label": "Art. 54 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_54.html"
+      }
+    ]
+  },
+  "87": {
+    "summary": "Staatsoberhaupt der Bundesrepublik ist der Bundespräsident oder die Bundespräsidentin.",
+    "whyCorrect": "Er oder sie steht protokollarisch an erster Stelle und vertritt den Staat nach außen.",
+    "background": "In der Rangfolge der Ämter steht der Bundespräsident an erster Stelle, danach folgen Bundestagspräsident, Bundeskanzler, Bundesratspräsident und der Präsident des Bundesverfassungsgerichts. Der Bundespräsident hat seinen Amtssitz im Schloss Bellevue in Berlin. Er soll über den Parteien stehen und das ganze Land repräsentieren – viele Präsidenten lassen deshalb ihre Parteimitgliedschaft während der Amtszeit ruhen.",
+    "otherOptions": "Der Bundeskanzler ist Regierungschef, nicht Staatsoberhaupt. Der Bundestagspräsident leitet das Parlament. Der Bundesratspräsident ist eine Falle: Er vertritt den Bundespräsidenten, wenn dieser verhindert ist (Artikel 57) – Staatsoberhaupt ist er deshalb aber nicht.",
+    "memoryTip": "Staatsoberhaupt = Bundespräsident; Regierungschef = Bundeskanzler.",
+    "legalBasis": [
+      {
+        "label": "Art. 54 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_54.html"
+      },
+      {
+        "label": "Art. 57 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_57.html"
+      }
+    ]
+  },
+  "88": {
+    "summary": "Die parlamentarische Opposition kontrolliert die Regierung.",
+    "whyCorrect": "Sie stellt kritische Fragen, macht Gegenvorschläge und kann Untersuchungsausschüsse einsetzen.",
+    "background": "Zur Opposition gehören alle Fraktionen im Bundestag, die nicht an der Regierung beteiligt sind. Sie hat eine wichtige Kontrollaufgabe: In Debatten, Fragestunden und mit schriftlichen Anfragen fordert sie die Regierung heraus, ihre Politik zu erklären. Schon ein Viertel der Abgeordneten kann einen Untersuchungsausschuss verlangen (Artikel 44) oder ein Gesetz vom Bundesverfassungsgericht prüfen lassen. Die Opposition ist außerdem eine mögliche Regierung von morgen.",
+    "otherOptions": "Wer Bundesminister wird, entscheidet der Bundeskanzler. Wer im Bundesrat sitzt, bestimmen die Landesregierungen. Die Regierungschefs der Länder werden von den Landtagen gewählt. Darauf hat die Opposition im Bundestag keinen Einfluss.",
+    "memoryTip": "Regierung regiert – Opposition kontrolliert.",
+    "legalBasis": [
+      {
+        "label": "Art. 44 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_44.html"
+      }
+    ]
+  },
+  "89": {
+    "summary": "Die Vereinigung der Abgeordneten einer Partei im Parlament heißt Fraktion.",
+    "whyCorrect": "Im Bundestag braucht eine Fraktion mindestens fünf Prozent der Abgeordneten.",
+    "background": "Abgeordnete derselben Partei schließen sich im Parlament zu einer Fraktion zusammen. Die Fraktion bespricht ihre Positionen gemeinsam, verteilt die Arbeit in den Ausschüssen und bestimmt, wer im Plenum spricht. Fraktionen haben besondere Rechte, zum Beispiel Redezeit, Sitze in Ausschüssen und Geld für ihre Arbeit. CDU und CSU bilden im Bundestag eine gemeinsame Fraktion.",
+    "otherOptions": "Ein Verband ist eine Interessenvertretung außerhalb des Parlaments, etwa ein Wirtschafts- oder Sozialverband. Der Ältestenrat ist ein Gremium, das den Bundestagspräsidenten bei der Organisation der Parlamentsarbeit unterstützt. Opposition sind alle Fraktionen, die nicht regieren.",
+    "memoryTip": "Fraktion = Partei im Parlament.",
+    "legalBasis": []
+  },
+  "90": {
+    "summary": "Die Bundesländer wirken über den Bundesrat an der Gesetzgebung des Bundes mit.",
+    "whyCorrect": "Artikel 50 des Grundgesetzes: „Durch den Bundesrat wirken die Länder bei der Gesetzgebung und Verwaltung des Bundes … mit.“",
+    "background": "Jedes Bundesgesetz geht nach dem Beschluss im Bundestag an den Bundesrat. Bei Zustimmungsgesetzen – etwa wenn die Länder ein Gesetz ausführen oder Geld dafür ausgeben müssen – kann das Gesetz ohne den Bundesrat nicht in Kraft treten. Bei anderen Gesetzen kann der Bundesrat Einspruch einlegen, den der Bundestag aber überstimmen kann. Bei Streit kann der Vermittlungsausschuss einen Kompromiss suchen.",
+    "otherOptions": "Die Bundesversammlung wählt nur den Bundespräsidenten. Im Bundestag sitzen gewählte Abgeordnete des Bundes, keine Vertreter der Länder. Die Bundesregierung ist die Regierung des Bundes.",
+    "memoryTip": "Länder → Bundesrat → Mitsprache bei Bundesgesetzen.",
+    "legalBasis": [
+      {
+        "label": "Art. 50 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_50.html"
+      },
+      {
+        "label": "Art. 77 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_77.html"
+      }
+    ]
+  },
+  "91": {
+    "summary": "Das Regieren im Bund wird schwieriger, wenn sich durch einen Regierungswechsel in einem Land die Mehrheit im Bundesrat ändert.",
+    "whyCorrect": "Im Bundesrat sitzen die Landesregierungen; ändert sich eine Landesregierung, ändern sich auch die Stimmen im Bundesrat.",
+    "background": "Für viele Bundesgesetze braucht die Bundesregierung auch eine Mehrheit im Bundesrat – mindestens 35 der 69 Stimmen. Wenn nach einer Landtagswahl eine Partei an die Landesregierung kommt, die im Bund in der Opposition ist, kann die Bundesregierung diese Mehrheit verlieren. Dann muss sie mit den Ländern verhandeln und Kompromisse eingehen. Deshalb werden Landtagswahlen auch bundesweit aufmerksam beobachtet.",
+    "otherOptions": "Die Mehrheit im Bundestag ändert sich durch eine Landtagswahl nicht – der Bundestag wird nur bei der Bundestagswahl gewählt. Neue Parteien im Bundesrat machen das Regieren nicht automatisch leichter, und ob ein Land reich oder arm ist, spielt für die Stimmen im Bundesrat keine Rolle.",
+    "memoryTip": "Landtagswahl → Landesregierung → Bundesrat → Bundespolitik.",
+    "legalBasis": [
+      {
+        "label": "Art. 51 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_51.html"
+      },
+      {
+        "label": "Art. 77 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_77.html"
+      }
+    ]
+  },
+  "92": {
+    "summary": "CSU steht für Christlich-Soziale Union.",
+    "whyCorrect": "Die CSU ist die Schwesterpartei der CDU und tritt nur in Bayern an.",
+    "background": "Die Christlich-Soziale Union (CSU) wurde 1945 in Bayern gegründet. Sie tritt nur in Bayern zu Wahlen an, dafür tritt die CDU dort nicht an. Im Bundestag bilden CDU und CSU eine gemeinsame Fraktion, die „Union“. Die CSU stellt seit Jahrzehnten fast immer den bayerischen Ministerpräsidenten, seit 2018 Markus Söder.",
+    "otherOptions": "„Christlich Sichere Union“ und „Christlich Süddeutsche Union“ sind erfundene Namen – auch wenn die CSU tatsächlich eine süddeutsche Partei ist. Ein „Christlich Sozialer Unternehmerverband“ ist keine Partei.",
+    "memoryTip": "CSU = Christlich-Soziale Union – das S steht für „Sozial“.",
+    "legalBasis": []
+  },
+  "93": {
+    "summary": "Je mehr Zweitstimmen eine Partei bekommt, desto mehr Sitze erhält sie im Parlament.",
+    "whyCorrect": "Die Zweitstimme entscheidet über die Verteilung der Sitze im Bundestag.",
+    "background": "Bei der Bundestagswahl hat jede Wählerin und jeder Wähler zwei Stimmen. Mit der Erststimme wählt man eine Person im eigenen Wahlkreis, mit der Zweitstimme eine Partei. Die Zweitstimmen bestimmen, wie viele der 630 Sitze jede Partei bekommt (Verhältniswahl). Eine Partei braucht dafür in der Regel mindestens fünf Prozent der Zweitstimmen. Seit der Wahlrechtsreform von 2023 bekommen Wahlkreissieger nur dann einen Sitz, wenn er durch die Zweitstimmen ihrer Partei gedeckt ist.",
+    "otherOptions": "Erst- und Zweitstimme sind unabhängig voneinander; viele Zweitstimmen bedeuten nicht weniger Erststimmen. Wie viele Direktkandidaten ins Parlament kommen, hängt von den Erststimmen in den Wahlkreisen ab. Und je mehr Zweitstimmen eine Partei hat, desto kleiner ist eher das Risiko, eine Koalition bilden zu müssen.",
+    "memoryTip": "Zweitstimme = die wichtigere Stimme: Sie bestimmt die Sitze.",
+    "legalBasis": [
+      {
+        "label": "Art. 38 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_38.html"
+      }
+    ]
+  },
+  "94": {
+    "summary": "An der Bundestagswahl darf man ab 18 Jahren teilnehmen.",
+    "whyCorrect": "Das Grundgesetz legt das Wahlalter für den Bundestag auf 18 Jahre fest (Artikel 38).",
+    "background": "Wahlberechtigt bei der Bundestagswahl ist, wer die deutsche Staatsangehörigkeit hat, mindestens 18 Jahre alt ist und seit mindestens drei Monaten in Deutschland lebt (oder als Deutscher im Ausland bestimmte Voraussetzungen erfüllt). Für andere Wahlen gelten teilweise andere Regeln: Bei der Europawahl darf man in Deutschland seit 2024 schon ab 16 wählen, und in mehreren Bundesländern auch bei Kommunal- oder Landtagswahlen.",
+    "otherOptions": "16 gilt in Deutschland für die Europawahl und für manche Wahlen in den Ländern, aber nicht für die Bundestagswahl. 21 und 23 Jahre sind zu hoch; das Wahlalter von 21 Jahren galt in der Bundesrepublik bis 1970.",
+    "memoryTip": "Bundestag: wählen ab 18.",
+    "legalBasis": [
+      {
+        "label": "Art. 38 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_38.html"
+      }
+    ]
+  },
+  "95": {
+    "summary": "Für die meisten Kinder in Deutschland gilt Schulpflicht.",
+    "whyCorrect": "Kinder müssen in Deutschland eine Schule besuchen; Unterricht zu Hause ist grundsätzlich nicht erlaubt.",
+    "background": "Die Schulpflicht beginnt meist mit sechs Jahren und dauert je nach Bundesland neun oder zehn Jahre Vollzeitschule; danach gilt oft noch eine Berufsschulpflicht. Geregelt wird sie in den Schulgesetzen der Länder. Die Schulpflicht gilt für alle Kinder, die in Deutschland leben, unabhängig von ihrer Staatsangehörigkeit. Eltern, die ihre Kinder nicht zur Schule schicken, können ein Bußgeld bekommen.",
+    "otherOptions": "Eine Wahlpflicht gibt es in Deutschland nicht, und Kinder dürfen ohnehin noch nicht wählen. Schweigepflicht haben zum Beispiel Ärztinnen, Anwälte oder Priester gegenüber anderen Menschen. Eine Religionspflicht gibt es wegen der Religionsfreiheit nicht.",
+    "memoryTip": "Kinder → Schule → Schulpflicht.",
+    "legalBasis": [
+      {
+        "label": "Art. 7 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_7.html"
+      }
+    ]
+  },
+  "96": {
+    "summary": "Holocaustleugnung kann mit Freiheitsstrafe bis zu fünf Jahren oder mit Geldstrafe bestraft werden.",
+    "whyCorrect": "Das regelt § 130 des Strafgesetzbuches (Volksverhetzung).",
+    "background": "Im Holocaust ermordeten die Nationalsozialisten rund sechs Millionen Jüdinnen und Juden aus ganz Europa. Wer diesen Völkermord öffentlich oder in einer Versammlung leugnet, billigt oder verharmlost, macht sich in Deutschland strafbar, wenn dies den öffentlichen Frieden stören kann. Das Strafgesetzbuch sieht dafür Freiheitsstrafe bis zu fünf Jahren oder Geldstrafe vor. Hier endet die Meinungsfreiheit, weil die Würde der Opfer und der öffentliche Frieden geschützt werden.",
+    "otherOptions": "Eine Kürzung von Sozialleistungen oder Sozialstunden sind keine Strafen, die das Gesetz für Holocaustleugnung vorsieht. Und Holocaustleugnung ist nicht erlaubt – sie ist eine Straftat.",
+    "memoryTip": "Holocaust leugnen = Straftat (§ 130 StGB): bis zu fünf Jahre Haft.",
+    "legalBasis": [
+      {
+        "label": "§ 130 StGB",
+        "url": "https://www.gesetze-im-internet.de/stgb/__130.html"
+      }
+    ]
+  },
+  "97": {
+    "summary": "Wer fest angestellt ist, zahlt automatisch Beiträge zur Sozialversicherung.",
+    "whyCorrect": "Der Arbeitgeber zieht die Beiträge vom Lohn ab und überweist sie direkt an die Sozialversicherung.",
+    "background": "Bei einer festen Anstellung sind Arbeitnehmerinnen und Arbeitnehmer in der Regel pflichtversichert in der Kranken-, Pflege-, Renten- und Arbeitslosenversicherung. Man muss die Beiträge nicht selbst überweisen: Der Arbeitgeber behält sie vom Bruttolohn ein, legt seinen eigenen Anteil dazu und zahlt alles an die Krankenkasse, die es weiterverteilt. Auf der Gehaltsabrechnung sieht man die Beiträge genau. Zusätzlich zieht der Arbeitgeber die Lohnsteuer ab.",
+    "otherOptions": "Sozialhilfe, Kindergeld und Wohngeld sind Leistungen, die man vom Staat bekommt, wenn man bestimmte Voraussetzungen erfüllt – man bezahlt sie nicht.",
+    "memoryTip": "Angestellt = Sozialversicherung wird automatisch abgezogen.",
+    "legalBasis": []
+  },
+  "98": {
+    "summary": "Wechseln Abgeordnete ihre Fraktion, kann die Regierung ihre Mehrheit verlieren.",
+    "whyCorrect": "Abgeordnete behalten ihr Mandat; hat die Regierung nur eine knappe Mehrheit, können wenige Wechsel sie kosten.",
+    "background": "Nach Artikel 38 des Grundgesetzes sind Abgeordnete „Vertreter des ganzen Volkes, an Aufträge und Weisungen nicht gebunden und nur ihrem Gewissen unterworfen“. Das nennt man freies Mandat. Deshalb dürfen sie ihre Fraktion oder Partei wechseln und bleiben trotzdem im Bundestag. Wechseln Abgeordnete von einer Regierungsfraktion zur Opposition, kann die Koalition ihre Mehrheit verlieren – und damit Schwierigkeiten bekommen, Gesetze durchzusetzen.",
+    "otherOptions": "Abgeordnete dürfen nach einem Fraktionswechsel weiter an den Sitzungen teilnehmen. Der Bundespräsident muss nicht zustimmen. Und die Wählerinnen und Wähler dürfen nicht neu wählen – bis zur nächsten Wahl bleibt das Mandat bestehen.",
+    "memoryTip": "Freies Mandat: Der Sitz gehört dem Abgeordneten, nicht der Partei.",
+    "legalBasis": [
+      {
+        "label": "Art. 38 GG",
+        "url": "https://www.gesetze-im-internet.de/gg/art_38.html"
+      }
+    ]
+  },
+  "99": {
+    "summary": "Die Sozialversicherungen bezahlen Arbeitgeber und Arbeitnehmer gemeinsam.",
+    "whyCorrect": "Die Beiträge werden in den meisten Zweigen ungefähr je zur Hälfte geteilt.",
+    "background": "Kranken-, Pflege-, Renten- und Arbeitslosenversicherung werden in der Regel zu etwa gleichen Teilen von Arbeitnehmern und Arbeitgebern finanziert. Es gibt einige Besonderheiten: Die gesetzliche Unfallversicherung zahlen die Arbeitgeber allein, und bei der Krankenversicherung und Pflegeversicherung gibt es Zusatzbeiträge oder Zuschläge, etwa für Kinderlose. Außerdem gibt der Staat aus Steuern Geld dazu, besonders für die Rentenversicherung.",
+    "otherOptions": "Nur die Arbeitnehmer oder nur die Arbeitgeber – beides stimmt nicht, denn die Kosten werden geteilt. „Alle Staatsangehörigen“ ist auch falsch: Beiträge zahlt, wer versicherungspflichtig beschäftigt ist, unabhängig von der Staatsangehörigkeit.",
+    "memoryTip": "Sozialversicherung = halbe-halbe zwischen Arbeitgeber und Arbeitnehmer.",
+    "legalBasis": []
+  },
+  "100": {
+    "summary": "Die Lebensversicherung gehört nicht zur gesetzlichen Sozialversicherung.",
+    "whyCorrect": "Eine Lebensversicherung ist eine freiwillige private Versicherung.",
+    "background": "Die gesetzliche Sozialversicherung hat fünf Zweige: Kranken-, Pflege-, Renten-, Arbeitslosen- und Unfallversicherung. Sie ist für die meisten Beschäftigten Pflicht und wird über Beiträge von Arbeitnehmern und Arbeitgebern finanziert. Eine Lebensversicherung dagegen schließt man freiwillig bei einem privaten Versicherungsunternehmen ab, etwa um Angehörige im Todesfall abzusichern oder fürs Alter zu sparen.",
+    "otherOptions": "Die gesetzliche Rentenversicherung, die Arbeitslosenversicherung und die Pflegeversicherung sind alle Teil der gesetzlichen Sozialversicherung.",
+    "memoryTip": "„Gesetzlich“ = Pflicht und staatlich organisiert; Lebensversicherung = privat und freiwillig.",
+    "legalBasis": []
   }
 }

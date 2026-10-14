@@ -915,5 +915,314 @@
         "url": "https://www.gesetze-im-internet.de/gg/art_54.html"
       }
     ]
+  },
+  "76": {
+    "summary": "CDU stands for Christian Democratic Union (Christlich Demokratische Union).",
+    "whyCorrect": "The CDU is one of Germany’s major parties and was founded in 1945.",
+    "background": "The Christian Democratic Union (CDU) was founded after the Second World War. It aimed to bring Catholic and Protestant Christians together in a party of the centre. The CDU has provided many federal chancellors: Konrad Adenauer, Ludwig Erhard, Kurt Georg Kiesinger, Helmut Kohl, Angela Merkel and, since 2025, Friedrich Merz. The CDU does not run in Bavaria – its sister party, the CSU, runs there. In the Bundestag, the CDU and CSU form a joint parliamentary group, known as the “Union”.",
+    "otherOptions": "“Christian German Union” sounds similar, but the D stands for “Democratic”, not “German”. A “Club of German Entrepreneurs” and a “Christian German Environmental Protection” are invented answers.",
+    "memoryTip": "C-D-U: Christian – Democratic – Union.",
+    "legalBasis": []
+  },
+  "77": {
+    "summary": "The Bundeswehr is the German army (armed forces).",
+    "whyCorrect": "It was founded in 1955 and serves mainly to defend Germany and its allies.",
+    "background": "The Bundeswehr is the armed forces of the Federal Republic of Germany. According to Article 87a of the Basic Law, the federation establishes armed forces for defence. The Bundeswehr is considered a “parliamentary army”: armed deployments abroad must first be approved by the Bundestag. In peacetime the Minister of Defence holds command; in a state of defence, the Federal Chancellor. With the Bundeswehr, Germany is a member of NATO.",
+    "otherOptions": "The police are responsible for internal security and mostly belong to the federal states; there is also the Federal Police. A port is a place for ships, and a citizens’ initiative is a group of citizens working on a particular issue.",
+    "memoryTip": "Bundes-Wehr = the federation’s defence (Wehr) = the army.",
+    "legalBasis": [
+      {
+        "label": "Art. 87a Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_87a.html"
+      }
+    ]
+  },
+  "78": {
+    "summary": "SPD stands for Social Democratic Party of Germany (Sozialdemokratische Partei Deutschlands).",
+    "whyCorrect": "The SPD is Germany’s oldest party; its roots go back to 1863.",
+    "background": "The Social Democratic Party of Germany (SPD) grew out of the labour movement of the 19th century. It traditionally campaigns for workers’ rights and social justice. The SPD provided the federal chancellors Willy Brandt, Helmut Schmidt, Gerhard Schröder and Olaf Scholz. Since 2025 it has governed together with the CDU/CSU at federal level.",
+    "otherOptions": "“Socialist Party” is wrong – the SPD is social democratic, not socialist. The GDR had the SED (Socialist Unity Party of Germany). “Social Policy Party” and “Socially Fair Party” are invented names.",
+    "memoryTip": "S-P-D: Social Democratic Party of Germany.",
+    "legalBasis": []
+  },
+  "79": {
+    "summary": "FDP stands for Free Democratic Party (Freie Demokratische Partei).",
+    "whyCorrect": "The FDP is a liberal party and was founded in 1948.",
+    "background": "The Free Democratic Party (FDP) holds liberal positions: it emphasises individual freedom, civil rights and a market-oriented economic policy. The first Federal President, Theodor Heuss, came from the FDP. The party was often the junior coalition partner in federal governments, most recently from 2021 to 2024. In the 2025 federal election it failed to pass the 5 percent threshold and has not been represented in the Bundestag since.",
+    "otherOptions": "“Free Germany Party”, “Peaceful Demonstrative Party” and “Leading Democratic Party” are invented names. Remember: the D stands for “Democratic”, the P for “Party”.",
+    "memoryTip": "F-D-P: Free – Democratic – Party.",
+    "legalBasis": []
+  },
+  "80": {
+    "summary": "The Federal Constitutional Court is responsible for interpreting the Basic Law.",
+    "whyCorrect": "The court in Karlsruhe reviews whether laws and state action are compatible with the Basic Law.",
+    "background": "The Federal Constitutional Court in Karlsruhe was established in 1951 and is often called the “guardian of the constitution”. It can declare laws unconstitutional, decides disputes between constitutional bodies and can ban parties. Anyone can lodge a constitutional complaint if they feel their fundamental rights have been violated by the state (Article 93). Its 16 judges are elected half by the Bundestag and half by the Bundesrat, each with a two-thirds majority.",
+    "otherOptions": "Local courts (Amtsgerichte) and higher regional courts (Oberlandesgerichte) are ordinary courts for civil and criminal cases, such as tenancy disputes or theft. Administrative courts decide disputes between citizens and authorities. In the end, only the Federal Constitutional Court decides on the Basic Law.",
+    "memoryTip": "Constitution = Basic Law → Federal Constitutional Court.",
+    "legalBasis": [
+      {
+        "label": "Art. 93 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_93.html"
+      }
+    ]
+  },
+  "81": {
+    "summary": "The Federal Chancellor is elected by the Bundestag.",
+    "whyCorrect": "The Federal President proposes a person, and the Bundestag elects them by a majority of its members (Article 63).",
+    "background": "In Germany, the Chancellor is not elected directly by the people but by the Bundestag. The person elected is the one who receives the votes of a majority of all members – the so-called chancellor majority. That is why it is so important that the governing parties have a majority in the Bundestag. Indirectly, however, voters help decide who becomes Chancellor through their vote in the federal election.",
+    "otherOptions": "The Bundesrat represents the states and does not elect the Chancellor. The Federal Convention elects the Federal President, not the Chancellor. The people elect the Bundestag, but not the Chancellor directly.",
+    "memoryTip": "People → Bundestag → Chancellor.",
+    "legalBasis": [
+      {
+        "label": "Art. 63 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_63.html"
+      }
+    ]
+  },
+  "82": {
+    "summary": "The federal cabinet is led by the Federal Chancellor.",
+    "whyCorrect": "The Chancellor determines the general guidelines of policy and conducts the business of the federal government (Article 65).",
+    "background": "The federal cabinet is the federal government: the Federal Chancellor and the federal ministers. It usually meets once a week in the Chancellery. The Chancellor has the so-called authority to set policy guidelines – setting the broad political direction. Within this direction, each minister runs their own ministry independently.",
+    "otherOptions": "The President of the Bundestag chairs the sessions of the Bundestag, and the President of the Bundesrat those of the Bundesrat. The Federal President is the head of state but is not part of the government and does not lead the cabinet.",
+    "memoryTip": "Chancellor = head of the government and the cabinet.",
+    "legalBasis": [
+      {
+        "label": "Art. 65 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_65.html"
+      }
+    ]
+  },
+  "83": {
+    "summary": "The German Federal Chancellor is elected by the Bundestag.",
+    "whyCorrect": "This is the same question as question 81: the vote takes place in the Bundestag, on the proposal of the Federal President (Article 63).",
+    "background": "After a federal election, the parties negotiate a coalition. Once they have agreed, the Federal President proposes a person to the Bundestag – usually the lead candidate of the strongest party. If that person receives a majority of the votes of all members, the Federal President appoints them Chancellor. The Bundestag can also remove the Chancellor – but only by electing a successor at the same time (constructive vote of no confidence, Article 67).",
+    "otherOptions": "The people only elect the Bundestag. The Federal Convention elects the Federal President. The federal government is only formed by the Chancellor – so it cannot elect the Chancellor.",
+    "memoryTip": "The Bundestag elects the Chancellor – and can only remove them by electing a successor.",
+    "legalBasis": [
+      {
+        "label": "Art. 63 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_63.html"
+      },
+      {
+        "label": "Art. 67 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_67.html"
+      }
+    ]
+  },
+  "84": {
+    "summary": "The Federal President’s main task is to represent the country.",
+    "whyCorrect": "The President represents Germany at home and abroad; the country is governed by the federal government.",
+    "background": "The Federal President is the head of state. The President represents Germany under international law, receives state guests, visits other countries and gives important speeches, for example on days of remembrance. The President signs laws and checks that they have been passed properly, and appoints the Chancellor, ministers, federal judges and civil servants. But the President has little political power in everyday politics – the Basic Law deliberately arranged it this way after the experience of the Weimar Republic.",
+    "otherOptions": "The country is governed by the federal government headed by the Chancellor. Laws are usually drafted by ministries or members of parliament and passed by parliament. Compliance with laws is monitored by authorities, the police and above all the courts.",
+    "memoryTip": "President = represents; Chancellor = governs.",
+    "legalBasis": [
+      {
+        "label": "Art. 59 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_59.html"
+      },
+      {
+        "label": "Art. 82 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_82.html"
+      }
+    ]
+  },
+  "85": {
+    "summary": "The Bundesrat is made up of government representatives of the federal states.",
+    "whyCorrect": "Members of the 16 state governments sit in the Bundesrat (Article 51).",
+    "background": "Through the Bundesrat, the states take part in federal legislation. It is not made up of elected members of parliament, but of members of the state governments – for example Minister-Presidents and state ministers. Each state has three to six votes depending on its population, 69 in total. A state must cast its votes as a block. The Bundesrat meets in Berlin in the former Prussian House of Lords.",
+    "otherOptions": "The members of the Bundestag form the Bundestag, not the Bundesrat. Federal ministers belong to the federal government. Party members as such have no seat in the Bundesrat.",
+    "memoryTip": "Bundesrat = council of the states: the state governments sit there.",
+    "legalBasis": [
+      {
+        "label": "Art. 50 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_50.html"
+      },
+      {
+        "label": "Art. 51 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_51.html"
+      }
+    ]
+  },
+  "86": {
+    "summary": "The Federal President is elected by the Federal Convention.",
+    "whyCorrect": "The Federal Convention meets only for this purpose, usually every five years (Article 54).",
+    "background": "The Federal Convention consists of all members of the Bundestag and the same number of members chosen by the state parliaments. The states often also send well-known figures from culture, sport or society. A candidate is elected with an absolute majority in the first or second round; in the third round a simple majority is enough. The Federal Convention meets in the Reichstag building in Berlin.",
+    "otherOptions": "The Bundesrat represents the states in legislation but does not elect the President. “Federal parliament” means the Bundestag – its members are part of the Federal Convention, but they do not elect the President on their own. The Federal Constitutional Court is a court and does not elect anyone.",
+    "memoryTip": "President ← Federal Convention (Bundestag + representatives of the states).",
+    "legalBasis": [
+      {
+        "label": "Art. 54 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_54.html"
+      }
+    ]
+  },
+  "87": {
+    "summary": "The head of state of the Federal Republic is the Federal President.",
+    "whyCorrect": "The President ranks first in protocol and represents the state externally.",
+    "background": "In the order of precedence of offices, the Federal President comes first, followed by the President of the Bundestag, the Federal Chancellor, the President of the Bundesrat and the President of the Federal Constitutional Court. The Federal President’s official residence is Bellevue Palace in Berlin. The President is meant to stand above party politics and represent the whole country – which is why many presidents suspend their party membership during their term.",
+    "otherOptions": "The Federal Chancellor is the head of government, not the head of state. The President of the Bundestag chairs parliament. The President of the Bundesrat is a trap: they deputise for the Federal President when the latter is unable to act (Article 57) – but that does not make them head of state.",
+    "memoryTip": "Head of state = Federal President; head of government = Federal Chancellor.",
+    "legalBasis": [
+      {
+        "label": "Art. 54 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_54.html"
+      },
+      {
+        "label": "Art. 57 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_57.html"
+      }
+    ]
+  },
+  "88": {
+    "summary": "The parliamentary opposition scrutinises the government.",
+    "whyCorrect": "It asks critical questions, makes counter-proposals and can set up committees of inquiry.",
+    "background": "The opposition consists of all parliamentary groups in the Bundestag that are not part of the government. It has an important scrutiny role: in debates, question time and written questions, it challenges the government to explain its policies. Just one quarter of the members can demand a committee of inquiry (Article 44) or have a law reviewed by the Federal Constitutional Court. The opposition is also a possible government of tomorrow.",
+    "otherOptions": "The Federal Chancellor decides who becomes a federal minister. The state governments decide who sits in the Bundesrat. The heads of the state governments are elected by the state parliaments. The opposition in the Bundestag has no influence on any of this.",
+    "memoryTip": "The government governs – the opposition scrutinises.",
+    "legalBasis": [
+      {
+        "label": "Art. 44 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_44.html"
+      }
+    ]
+  },
+  "89": {
+    "summary": "The association of a party’s members in parliament is called a parliamentary group (Fraktion).",
+    "whyCorrect": "In the Bundestag, a parliamentary group needs at least five percent of the members.",
+    "background": "Members of the same party join together in parliament to form a Fraktion. The group discusses its positions together, divides the work in the committees and decides who speaks in the plenary. Parliamentary groups have special rights, for example speaking time, committee seats and funding for their work. The CDU and CSU form a joint parliamentary group in the Bundestag.",
+    "otherOptions": "An association (Verband) represents interests outside parliament, such as a business or welfare association. The Council of Elders (Ältestenrat) is a body that helps the President of the Bundestag organise parliamentary work. The opposition is all groups that are not in government.",
+    "memoryTip": "Fraktion = a party in parliament.",
+    "legalBasis": []
+  },
+  "90": {
+    "summary": "The federal states take part in federal legislation through the Bundesrat.",
+    "whyCorrect": "Article 50 of the Basic Law: “The states shall participate through the Bundesrat in the legislation and administration of the federation.”",
+    "background": "After being passed by the Bundestag, every federal law goes to the Bundesrat. For laws requiring consent – for example when the states have to implement a law or spend money on it – the law cannot enter into force without the Bundesrat. For other laws, the Bundesrat can raise an objection, which the Bundestag can override. In case of disagreement, the mediation committee can seek a compromise.",
+    "otherOptions": "The Federal Convention only elects the Federal President. The Bundestag is made up of elected federal members of parliament, not representatives of the states. The federal government is the government of the federation.",
+    "memoryTip": "States → Bundesrat → a say in federal laws.",
+    "legalBasis": [
+      {
+        "label": "Art. 50 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_50.html"
+      },
+      {
+        "label": "Art. 77 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_77.html"
+      }
+    ]
+  },
+  "91": {
+    "summary": "Governing at federal level becomes more difficult if a change of government in a state changes the majority in the Bundesrat.",
+    "whyCorrect": "The state governments sit in the Bundesrat; if a state government changes, the votes in the Bundesrat change too.",
+    "background": "For many federal laws, the federal government also needs a majority in the Bundesrat – at least 35 of the 69 votes. If, after a state election, a party that is in opposition at federal level joins the state government, the federal government can lose this majority. It then has to negotiate with the states and make compromises. That is why state elections are watched closely across the country.",
+    "otherOptions": "The majority in the Bundestag does not change through a state election – the Bundestag is only elected in the federal election. New parties in the Bundesrat do not automatically make governing easier, and whether a state is rich or poor plays no role in its Bundesrat votes.",
+    "memoryTip": "State election → state government → Bundesrat → federal politics.",
+    "legalBasis": [
+      {
+        "label": "Art. 51 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_51.html"
+      },
+      {
+        "label": "Art. 77 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_77.html"
+      }
+    ]
+  },
+  "92": {
+    "summary": "CSU stands for Christian Social Union (Christlich-Soziale Union).",
+    "whyCorrect": "The CSU is the CDU’s sister party and runs only in Bavaria.",
+    "background": "The Christian Social Union (CSU) was founded in Bavaria in 1945. It runs in elections only in Bavaria, and in return the CDU does not run there. In the Bundestag, the CDU and CSU form a joint parliamentary group, the “Union”. For decades the CSU has almost always provided the Bavarian Minister-President, since 2018 Markus Söder.",
+    "otherOptions": "“Christian Safe Union” and “Christian South German Union” are invented names – even though the CSU really is a southern German party. A “Christian Social Business Association” is not a party.",
+    "memoryTip": "CSU = Christian Social Union – the S stands for “Social”.",
+    "legalBasis": []
+  },
+  "93": {
+    "summary": "The more second votes a party receives, the more seats it gets in parliament.",
+    "whyCorrect": "The second vote determines the distribution of seats in the Bundestag.",
+    "background": "In the federal election, every voter has two votes. With the first vote you choose a person in your constituency, with the second vote a party. The second votes determine how many of the 630 seats each party receives (proportional representation). A party usually needs at least five percent of the second votes for this. Since the 2023 electoral reform, constituency winners only receive a seat if it is covered by their party’s second votes.",
+    "otherOptions": "First and second votes are independent of each other; many second votes do not mean fewer first votes. How many constituency candidates enter parliament depends on the first votes in the constituencies. And more second votes actually make it less likely that a party has to form a coalition.",
+    "memoryTip": "Second vote = the more important vote: it decides the seats.",
+    "legalBasis": [
+      {
+        "label": "Art. 38 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_38.html"
+      }
+    ]
+  },
+  "94": {
+    "summary": "You can vote in the Bundestag election from the age of 18.",
+    "whyCorrect": "The Basic Law sets the voting age for the Bundestag at 18 (Article 38).",
+    "background": "Eligible to vote in the federal election are German citizens who are at least 18 years old and have lived in Germany for at least three months (or meet certain conditions as Germans abroad). Other elections partly have different rules: since 2024, people in Germany can vote in the European election from 16, and in several federal states also in local or state elections.",
+    "otherOptions": "16 applies in Germany for the European election and some elections in the states, but not for the federal election. 21 and 23 are too high; a voting age of 21 applied in the Federal Republic until 1970.",
+    "memoryTip": "Bundestag: vote from 18.",
+    "legalBasis": [
+      {
+        "label": "Art. 38 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_38.html"
+      }
+    ]
+  },
+  "95": {
+    "summary": "Compulsory schooling applies to most children in Germany.",
+    "whyCorrect": "Children in Germany must attend school; home schooling is generally not allowed.",
+    "background": "Compulsory schooling usually starts at the age of six and lasts nine or ten years of full-time school, depending on the federal state; after that, there is often an obligation to attend vocational school. It is regulated in the states’ school laws. Compulsory schooling applies to all children living in Germany, regardless of their nationality. Parents who do not send their children to school can be fined.",
+    "otherOptions": "Germany has no compulsory voting, and children cannot vote anyway. Confidentiality obligations apply, for example, to doctors, lawyers or priests towards other people. There is no religious obligation because of freedom of religion.",
+    "memoryTip": "Children → school → compulsory schooling.",
+    "legalBasis": [
+      {
+        "label": "Art. 7 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_7.html"
+      }
+    ]
+  },
+  "96": {
+    "summary": "Denying the Holocaust can be punished with imprisonment of up to five years or a fine.",
+    "whyCorrect": "This is set out in Section 130 of the Criminal Code (incitement to hatred).",
+    "background": "In the Holocaust, the National Socialists murdered around six million Jews from all over Europe. Anyone in Germany who publicly or in an assembly denies, approves of or trivialises this genocide commits a criminal offence if it is capable of disturbing public peace. The Criminal Code provides for imprisonment of up to five years or a fine. This is where freedom of expression ends, because the dignity of the victims and public peace are protected.",
+    "otherOptions": "Cutting social benefits or community service hours are not penalties the law provides for Holocaust denial. And Holocaust denial is not allowed – it is a criminal offence.",
+    "memoryTip": "Denying the Holocaust = a crime (Section 130 StGB): up to five years in prison.",
+    "legalBasis": [
+      {
+        "label": "§ 130 StGB (Criminal Code)",
+        "url": "https://www.gesetze-im-internet.de/stgb/__130.html"
+      }
+    ]
+  },
+  "97": {
+    "summary": "Anyone in permanent employment automatically pays social insurance contributions.",
+    "whyCorrect": "The employer deducts the contributions from the wage and pays them directly to social insurance.",
+    "background": "With permanent employment, employees are usually compulsorily insured in health, long-term care, pension and unemployment insurance. You do not have to transfer the contributions yourself: the employer deducts them from your gross pay, adds its own share and pays everything to the health insurance fund, which passes it on. Your payslip shows the contributions exactly. The employer also deducts income tax.",
+    "otherOptions": "Social assistance, child benefit and housing benefit are benefits you receive from the state if you meet certain conditions – you do not pay them.",
+    "memoryTip": "Employed = social insurance is deducted automatically.",
+    "legalBasis": []
+  },
+  "98": {
+    "summary": "If members of the Bundestag change parliamentary groups, the government can lose its majority.",
+    "whyCorrect": "Members keep their seat; if the government has only a narrow majority, a few switches can cost it.",
+    "background": "According to Article 38 of the Basic Law, members of parliament are “representatives of the whole people, not bound by orders or instructions and responsible only to their conscience”. This is called the free mandate. That is why they may change their parliamentary group or party and still remain in the Bundestag. If members switch from a governing group to the opposition, the coalition can lose its majority – and with it, struggle to pass laws.",
+    "otherOptions": "Members may continue to attend sessions after changing groups. The Federal President does not have to agree. And voters do not get to vote again – the seat remains until the next election.",
+    "memoryTip": "Free mandate: the seat belongs to the member, not the party.",
+    "legalBasis": [
+      {
+        "label": "Art. 38 Basic Law (GG)",
+        "url": "https://www.gesetze-im-internet.de/gg/art_38.html"
+      }
+    ]
+  },
+  "99": {
+    "summary": "Social insurance is paid for jointly by employers and employees.",
+    "whyCorrect": "In most branches, the contributions are split roughly half and half.",
+    "background": "Health, long-term care, pension and unemployment insurance are usually financed in roughly equal parts by employees and employers. There are a few special features: statutory accident insurance is paid by employers alone, and health and long-term care insurance include additional contributions or surcharges, for example for people without children. The state also adds money from taxes, especially for pension insurance.",
+    "otherOptions": "Only employees or only employers – both are wrong, because the costs are shared. “All citizens” is also wrong: contributions are paid by those in employment subject to social insurance, regardless of nationality.",
+    "memoryTip": "Social insurance = split half and half between employer and employee.",
+    "legalBasis": []
+  },
+  "100": {
+    "summary": "Life insurance is not part of statutory social insurance.",
+    "whyCorrect": "Life insurance is a voluntary private insurance.",
+    "background": "Statutory social insurance has five branches: health, long-term care, pension, unemployment and accident insurance. It is compulsory for most employees and financed through contributions from employees and employers. Life insurance, on the other hand, is taken out voluntarily with a private insurance company, for example to protect relatives in case of death or to save for old age.",
+    "otherOptions": "Statutory pension insurance, unemployment insurance and long-term care insurance are all part of statutory social insurance.",
+    "memoryTip": "“Statutory” = compulsory and organised by the state; life insurance = private and voluntary.",
+    "legalBasis": []
   }
 }
