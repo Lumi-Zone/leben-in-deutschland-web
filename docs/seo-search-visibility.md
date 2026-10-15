@@ -28,6 +28,30 @@ Bu değişiklikler mevcut Astro / GitHub Pages yayını içindir. Yeni alan adı
 
 `npm run build` üretim çıktısını oluşturur ve SEO denetimini çalıştırır. Yalnızca mevcut çıktıyı kontrol etmek için `npm run seo:audit` kullanın. Mevcut `prebuild` Instagram kartlarını da üretir; bu SEO denetiminin parçası değildir.
 
+## Dillere göre trafik kaynağı (ölçüm: 15 Ekim 2026, son 90 gün, Umami)
+
+Çin ve Singapur kaynaklı bot ziyaretleri hariç tutmak için dil kırılımı `country=DE` ile okundu.
+
+| Dil yolu | DE ziyaretçi | ChatGPT (`utm_source=chatgpt.com`) | Ana giriş sayfası |
+|---|---:|---:|---|
+| `/de/` | 708 | 111 | `/de/`, `/de/fragen/`, Bing'den blog yazıları |
+| `/fa/` | 42 | 26 | `/fa/fragen/` (iPhone, Leipzig/München) |
+| `/ar/` | 37 | 12 | `/ar/fragen/` |
+| `/es/` | 30 | 0 | soru sayfaları |
+| `/ru/` | 23 | 3 | `/ru/`, Yandex |
+| `/en/` | 64 | 3 | `/en/`, `/en/fragen/` |
+| `/ua/`, `/tr/`, `/ps/`, `/pl/`, `/ro/`, `/it/` | ≤ 7 | ≤ 5 | — |
+
+- Almanca dışındaki dillerde neredeyse tek kaynak ChatGPT'dir. ChatGPT, kullanıcının dilinde sorulan "Almanya vatandaşlık testi soruları" sorusuna o dilde başlığı olan `/[dil]/fragen/` sayfasını öneriyor. Sıçrama, `/fragen/` dizininin yayına girdiği 7 Eylül 2026 haftasında başladı (haftalık ChatGPT ziyaretçisi 2 → 19 → 38).
+- ChatGPT uygulaması referrer göndermez; ziyaret Umami'de "direct" görünür, yalnızca `utm_source=chatgpt.com` ile ayrılır. `chatgpt-referral-landing` olayı bu yüzden 15 Ekim'e kadar hiç tetiklenmedi; artık UTM'e de bakıyor.
+- Google'dan 90 günde yalnızca 6 yönlendirme geldi. Arama trafiği Bing ailesinden (Bing, DuckDuckGo, Yahoo, Ecosia: ~260) ve yalnızca Almanca blog yazılarına geliyor.
+- Bing `site:` sorgusu (15 Ekim): tüm alan adı ~56 sonuç; `/ar/` 21 (başlığı Arapça "سؤال N:" olan soru sayfaları), `/ru/` 6, `/fa/` 1. Farsça soru sayfalarının başlığı "Question N:" ile İngilizce başlıyordu.
+- Dil değiştirme olaylarında en çok seçilen hedef dil Arapça (38), ardından İngilizce (20) ve Rusça (10).
+
+15 Ekim'de yapılan değişiklikler: 8 dilde eksik olan 84 arayüz metni (soru sayfası başlıkları dahil) çevrildi; eyalet sayfalarının başlık/açıklama/H1'i 12 dile yerelleştirildi (Arap alfabesi ve Kiril için yerel eyalet adlarıyla); iki cevap sayfası (`einbuergerungstest-online`, `leben-in-deutschland-online`) 9 dile daha çevrilip indekslenebilir yapıldı; `fa` için hreflang `fa-IR` yerine `fa` oldu (Dari okuyucuları); Farsça/Dari açıklama yazısı eklendi.
+
+Karşılaştırma için 4–6 hafta sonra aynı ölçümü tekrarlayın: dil başına `country=DE` ziyaretçi, `utmSource=chatgpt.com` giriş sayfaları ve Bing `site:lid-einbuergerung.de/fa/` sonuç sayısı.
+
 ## İçerik bakımı
 
 Soruların ve sınav bilgilerinin BAMF kaynağıyla karşılaştırılmasını sürdürün. Yayın veya güncelleme tarihlerini yalnızca içerik gerçekten değiştiğinde yenileyin. Resmî kaynak bağlantısı tek başına bütün içeriklerin güncel olduğunun kanıtı değildir. Bu çalışma tüm blog yazılarının hukukî doğruluk incelemesini içermez.

@@ -13,7 +13,7 @@ import {
   type QuestionTranslationContent,
 } from '../../../utils/questions';
 import { truncateText, getSeoLanguageMeta } from '../../../utils/seo';
-import { searchCopy, QUESTION_SOURCE_URL } from '../../../i18n/seo';
+import { searchCopy, testNames, QUESTION_SOURCE_URL } from '../../../i18n/seo';
 import { explanationLabels, getQuestionExplanation } from '../../../data/questionExplanations';
 import { deepDiveLabels, getQuestionDeepDive } from '../../../data/questionDeepDives';
 
@@ -83,7 +83,7 @@ const translate = useTranslations(lang);
 const questionLabel = `${translate("favorites.goto_question")} ${question.id}`;
 const questionText = currentContent.question.replace(/\s+/g, ' ').trim();
 const pageTitleQuestion = truncateText(questionText, 72);
-const pageTitle = `${questionLabel}: ${pageTitleQuestion} | Einbürgerungstest 2026`;
+const pageTitle = `${questionLabel}: ${pageTitleQuestion} | ${testNames[lang]}`;
 const schema = {
   "@context": "https://schema.org/",
   "@type": "Quiz",

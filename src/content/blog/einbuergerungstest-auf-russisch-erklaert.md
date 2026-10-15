@@ -5,6 +5,7 @@ description: "Einbürgerungstest auf Russisch: 33 Fragen, 17 richtige Antworten,
 pubDate: 2026-05-11
 updatedDate: 2026-05-11
 author: "Redaktion LiD"
+contentLang: ru
 image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80"
 tags: ["Einbürgerungstest", "Russisch", "Vorbereitung", "BAMF"]
 ---

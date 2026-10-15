@@ -321,11 +321,14 @@ const bannerDismissLabel = bannerTranslate('banner.dismiss');
 		</script>
 		<script is:inline>
 			(() => {
-				const host = document.referrer ? new URL(document.referrer).hostname.toLowerCase() : '';
-				const isChatGptReferral = host === 'chatgpt.com'
-					|| host.endsWith('.chatgpt.com')
-					|| host === 'chat.openai.com';
-				if (!isChatGptReferral) return;
+				const referrerHost = document.referrer ? new URL(document.referrer).hostname.toLowerCase() : '';
+				// The ChatGPT apps send no referrer but tag links with utm_source=chatgpt.com.
+				const utmSource = (new URLSearchParams(window.location.search).get('utm_source') || '').toLowerCase();
+				const isChatGptHost = (value) => value === 'chatgpt.com'
+					|| value.endsWith('.chatgpt.com')
+					|| value === 'chat.openai.com';
+				const host = isChatGptHost(referrerHost) ? referrerHost : utmSource;
+				if (!isChatGptHost(host)) return;
 
 				const storageKey = `ai-referral:${window.location.pathname}`;
 				try {

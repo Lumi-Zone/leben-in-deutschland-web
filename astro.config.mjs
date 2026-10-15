@@ -16,7 +16,7 @@ const sitemapLocales = {
   ua: 'uk-UA',
   ru: 'ru-RU',
   pl: 'pl-PL',
-  fa: 'fa-IR',
+  fa: 'fa',
   ps: 'ps',
   ro: 'ro-RO',
   it: 'it-IT',
@@ -67,7 +67,6 @@ function shouldIncludeInSitemap(pageUrl) {
   if (pathname === '/') return false;
   if (!hasSupportedLang) return true;
   if (personalToolRoutes.has(route)) return false;
-  if (seoLandingRoutes.has(route) && !['de', 'en', 'tr'].includes(lang)) return false;
   if (route === 'blog' && !['de', 'en', 'tr'].includes(lang)) return false;
   if (pathname.startsWith('/de/blog/topic/')) {
     const topicSlug = pathname.split('/').filter(Boolean)[3] ?? '';

@@ -5,6 +5,7 @@ description: "Einbürgerungstest auf Ukrainisch: 33 Fragen, 17 richtige Antworte
 pubDate: 2026-05-11
 updatedDate: 2026-05-27
 author: "Redaktion LiD"
+contentLang: uk
 image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1600&q=80"
 tags: ["Einbürgerungstest", "Ukrainisch", "Vorbereitung", "BAMF"]
 ---

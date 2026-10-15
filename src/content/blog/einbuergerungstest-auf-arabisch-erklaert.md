@@ -4,6 +4,7 @@ description: "Einbürgerungstest auf Arabisch: 33 Fragen, 17 richtige Antworten,
 pubDate: 2026-05-11
 updatedDate: 2026-05-11
 author: "Redaktion LiD"
+contentLang: ar
 image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1600&q=80"
 tags: ["Einbürgerungstest", "Arabisch", "Vorbereitung", "BAMF"]
 ---

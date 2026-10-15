@@ -9,17 +9,16 @@ import {
   getSeoLandingContent,
   type SeoLandingVariant,
 } from '../data/seoLandingContent';
-import type { SupportedLang } from '../types/language';
+import { SUPPORTED_LANGUAGES, type SupportedLang } from '../types/language';
+import { searchCopy } from '../i18n/seo';
 
 interface Props { lang: SupportedLang; variant: SeoLandingVariant }
 const { lang, variant } = Astro.props;
 const { contentLang, copy } = getSeoLandingContent(variant, lang);
-const isIndexable = ['de', 'en', 'tr'].includes(lang);
-const canonicalLang = isIndexable ? lang : contentLang;
 const siteUrl = Astro.site || 'https://lid-einbuergerung.de';
-const canonicalPath = getPath(`${canonicalLang}/${variant}/`);
+const canonicalPath = getPath(`${lang}/${variant}/`);
 const pageUrl = new URL(canonicalPath, siteUrl).href;
-const homeUrl = new URL(getPath(`${canonicalLang}/`), siteUrl).href;
+const homeUrl = new URL(getPath(`${lang}/`), siteUrl).href;
 const storeLinks = buildStoreUrls({ source: 'seo-landing', lang, variant });
 const guideLabels = {
   de: ['LiD und Einbürgerungstest im Vergleich', '15 oder 17 richtige Antworten?', '33, 310 und 460 Fragen erklärt'],
@@ -31,6 +30,22 @@ const guideSlugs = [
   'wie-viele-richtige-antworten-brauche-ich-einbuergerungstest',
   'wie-viele-fragen-hat-der-einbuergerungstest',
 ];
+// Explainers written in the reader's language; they live under /de/blog/.
+const languageExplainers: Partial<Record<SupportedLang, { slug: string; label: string }>> = {
+  ar: { slug: 'einbuergerungstest-auf-arabisch-erklaert', label: 'شرح اختبار التجنيس بالعربية' },
+  ru: { slug: 'einbuergerungstest-auf-russisch-erklaert', label: 'Тест на гражданство: объяснение на русском' },
+  ua: { slug: 'einbuergerungstest-auf-ukrainisch-erklaert', label: 'Тест на громадянство: пояснення українською' },
+  fa: { slug: 'einbuergerungstest-auf-persisch-dari-erklaert', label: 'توضیح آزمون تابعیت به فارسی و دری' },
+};
+const hasTranslatedGuides = lang === 'de' || lang === 'en' || lang === 'tr';
+const explainer = languageExplainers[lang];
+const guideLinks = hasTranslatedGuides
+  ? guideSlugs.map((slug, index) => ({ href: getPath(`${lang}/blog/${slug}/`), label: guideLabels[lang][index] }))
+  : [
+      { href: getPath(`${lang}/fragen/`), label: searchCopy[lang].catalog },
+      ...(explainer ? [{ href: getPath(`de/blog/${explainer.slug}/`), label: explainer.label }] : []),
+    ];
+const resourceLang = hasTranslatedGuides ? lang : 'de';
 const schema = {
   '@context': 'https://schema.org',
   '@graph': [
@@ -46,9 +61,8 @@ const schema = {
 ---
 
 <Layout title={copy.title} description={copy.description} keywords={copy.keywords} canonical={canonicalPath}
-  jsonLd={schema} lang={contentLang} noindex={!isIndexable} alternateLangs={['de', 'en', 'tr']}
-  disableAlternates={!isIndexable}>
-  <Header lang={lang} disableAlternates={!isIndexable} />
+  jsonLd={schema} lang={contentLang} alternateLangs={[...SUPPORTED_LANGUAGES]}>
+  <Header lang={lang} />
   <main class="app-page bg-slate-50">
     <section class="border-b border-slate-200 bg-slate-950 text-white">
       <div class="container mx-auto max-w-5xl px-4 py-12 md:py-16">
@@ -79,7 +93,7 @@ const schema = {
           <h2 class="text-3xl font-extrabold text-slate-950">{copy.distinctionTitle}</h2>
           {copy.distinctionParagraphs.map((paragraph) => <p class="mt-4 leading-relaxed text-slate-700">{paragraph}</p>)}
           <div class="mt-6 flex flex-col gap-2">
-            {guideSlugs.map((slug, index) => <a class="text-sm font-semibold text-blue-700 hover:underline" href={getPath(`${canonicalLang}/blog/${slug}/`)}>{guideLabels[contentLang][index]} →</a>)}
+            {guideLinks.map((guide) => <a class="text-sm font-semibold text-blue-700 hover:underline" href={guide.href}>{guide.label} →</a>)}
           </div>
         </article>
         <aside class="rounded-2xl border border-emerald-200 bg-emerald-50 p-6">
@@ -101,7 +115,7 @@ const schema = {
         <div class="mt-6 flex flex-col gap-3 sm:flex-row">
           <a href={storeLinks.ios} target="_blank" rel="noopener noreferrer" data-umami-event="app-store-click" data-umami-event-location="seo-answer" data-umami-event-lang={lang} class="rounded-xl bg-slate-950 px-5 py-3 text-center font-bold text-white">App Store</a>
           <a href={storeLinks.android} target="_blank" rel="noopener noreferrer" data-umami-event="play-store-click" data-umami-event-location="seo-answer" data-umami-event-lang={lang} class="rounded-xl border border-slate-300 bg-white px-5 py-3 text-center font-bold text-slate-950">Google Play</a>
-          <a href={getPath(`${canonicalLang}/fuer-kurse-und-beratung/`)} class="rounded-xl border border-blue-200 bg-blue-50 px-5 py-3 text-center font-bold text-blue-800">{copy.resourceLabel}</a>
+          <a href={getPath(`${resourceLang}/fuer-kurse-und-beratung/`)} class="rounded-xl border border-blue-200 bg-blue-50 px-5 py-3 text-center font-bold text-blue-800">{copy.resourceLabel}</a>
         </div>
       </article>
       <aside>

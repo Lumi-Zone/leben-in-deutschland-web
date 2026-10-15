@@ -82,13 +82,19 @@ for (const lang of ['de', 'en', 'tr', 'ar', 'ua', 'ru', 'pl', 'fa', 'ps', 'ro', 
 
 const priorityLanguages = ['de', 'en', 'tr'];
 const answerLandings = ['leben-in-deutschland-online', 'einbuergerungstest-online'];
-for (const lang of priorityLanguages) {
+for (const lang of ['de', 'en', 'tr', 'ar', 'ua', 'ru', 'pl', 'fa', 'ps', 'ro', 'it', 'es']) {
   for (const route of answerLandings) {
     const url = `${origin}/${lang}/${route}/`;
     const page = pages.get(url);
     assertPage(page && !page.noindex, `${url}: translated answer page must be indexable`);
     assertPage(page?.body.includes('bamf.de') && page?.body.includes('oet.bamf.de'), `${url}: official sources must be rendered beside the answer`);
   }
+  if (lang !== 'de') {
+    const stateTitle = pages.get(`${origin}/${lang}/bayern-fragen/`)?.html.match(/<title>([^<]*)<\/title>/)?.[1] ?? '';
+    assertPage(!stateTitle.includes('Bundesland 2026'), `${lang}: state page title is still the German fallback`);
+  }
+}
+for (const lang of priorityLanguages) {
 
   for (let id = 1; id <= 30; id += 1) {
     const url = `${origin}/${lang}/frage/${id}/`;

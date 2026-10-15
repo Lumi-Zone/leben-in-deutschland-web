@@ -15,7 +15,8 @@ export const SEO_LANGUAGE_META: Record<
   ua: { htmlLang: 'uk-UA', hrefLang: 'uk-UA', ogLocale: 'uk_UA' },
   ru: { htmlLang: 'ru-RU', hrefLang: 'ru-RU', ogLocale: 'ru_RU' },
   pl: { htmlLang: 'pl-PL', hrefLang: 'pl-PL', ogLocale: 'pl_PL' },
-  fa: { htmlLang: 'fa-IR', hrefLang: 'fa-IR', ogLocale: 'fa_IR' },
+  // Plain "fa" so Dari readers in Afghanistan are not excluded by an Iran-only tag.
+  fa: { htmlLang: 'fa', hrefLang: 'fa', ogLocale: 'fa_IR' },
   ps: { htmlLang: 'ps', hrefLang: 'ps', ogLocale: 'ps_AF' },
   ro: { htmlLang: 'ro-RO', hrefLang: 'ro-RO', ogLocale: 'ro_RO' },
   it: { htmlLang: 'it-IT', hrefLang: 'it-IT', ogLocale: 'it_IT' },

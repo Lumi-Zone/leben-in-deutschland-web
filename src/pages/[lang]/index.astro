@@ -2,7 +2,8 @@
 import Layout from '../../layouts/Layout.astro';
 import questions from '../../data/questions.json';
 import { useTranslations } from '../../i18n/ui';
-import { searchCopy, QUESTION_SOURCE_URL } from '../../i18n/seo';
+import { fillState, searchCopy, stateCopy, QUESTION_SOURCE_URL } from '../../i18n/seo';
+import { getSeoLandingContent } from '../../data/seoLandingContent';
 import HomePractice from '../../components/HomePractice';
 import { buildQuestionSessionItem } from '../../utils/questions';
 import PhoneSlider from '../../components/PhoneSlider';
@@ -11,7 +12,7 @@ import ReviewsSlider from '../../components/ReviewsSlider';
 import ContinueLearningCard from '../../components/ContinueLearningCard';
 import OnboardingStarter from '../../components/OnboardingStarter';
 import { getReviews } from '../../data/reviews';
-import { GERMAN_STATES } from '../../data/germanStates';
+import { GERMAN_STATES, getStateDisplayName } from '../../data/germanStates';
 import { getCollection } from 'astro:content';
 import { getBlogImageAlt, getOptimizedImageUrl, resolveBlogImage } from '../../utils/blog';
 import { SUPPORTED_LANGUAGES, type SupportedLang } from '../../types/language';
@@ -105,13 +106,13 @@ const importantPages = [
 		href: getPath(`${lang}/frage/1`),
 	},
 	{
-		label: isGerman ? 'Leben in Deutschland online' : 'Online practice',
-		description: isGerman ? 'Digital lernen, Online-Test üben und direkt zur Prüfungssimulation wechseln.' : heroDescription,
+		label: isGerman ? 'Leben in Deutschland online' : getSeoLandingContent('leben-in-deutschland-online', lang).copy.heading,
+		description: isGerman ? 'Digital lernen, Online-Test üben und direkt zur Prüfungssimulation wechseln.' : getSeoLandingContent('leben-in-deutschland-online', lang).copy.description,
 		href: getPath(`${lang}/leben-in-deutschland-online`),
 	},
 	{
-		label: isGerman ? 'Einbürgerungstest online üben' : 'Online naturalization test',
-		description: isGerman ? 'Einbürgerungstest digital trainieren: Fragen, Testmodus und App.' : t("features.exam.desc"),
+		label: isGerman ? 'Einbürgerungstest online üben' : getSeoLandingContent('einbuergerungstest-online', lang).copy.heading,
+		description: isGerman ? 'Einbürgerungstest digital trainieren: Fragen, Testmodus und App.' : getSeoLandingContent('einbuergerungstest-online', lang).copy.description,
 		href: getPath(`${lang}/einbuergerungstest-online`),
 	},
 	{
@@ -189,7 +190,7 @@ const stateListSchema = {
 	itemListElement: stateLinks.map((state, index) => ({
 		'@type': 'ListItem',
 		position: index + 1,
-		name: `${state.name} Fragen`,
+		name: fillState(stateCopy[lang].heading, getStateDisplayName(state, lang)),
 		url: new URL(getPath(`${lang}/${state.slug}-fragen/`), siteUrl).href,
 	})),
 };
@@ -286,7 +287,7 @@ const homeSchemaGraph = {
         <section class="home-section home-shell" id="bundesland-fragen">
             <div class="home-states">
                 <div class="home-section-head"><div><p class="home-eyebrow">16 BUNDESLÄNDER</p><h2>{isGerman ? <>Dein Zuhause.<br/>Deine Fragen.</> : t('progress.topic_land')}</h2></div><p>{isGerman ? 'Berlin, Bayern oder irgendwo dazwischen? Lerne die 10 Zusatzfragen für das Bundesland, in dem du lebst.' : lang === 'tr' ? 'Yaşadığın eyaleti seç ve sınavda çıkacak 10 ek soruya hazırlan.' : lang === 'en' ? 'Choose where you live and prepare for your state’s 10 additional questions.' : t('features.learn.desc')}</p></div>
-                <div class="home-state-grid">{stateLinks.map((state)=><a href={getPath(`${lang}/${state.slug}-fragen`)} data-umami-event="state-page-opened" data-umami-event-state={state.name} data-umami-event-lang={lang}><span>{state.name}</span><span aria-hidden="true">↗</span></a>)}</div>
+                <div class="home-state-grid">{stateLinks.map((state)=><a href={getPath(`${lang}/${state.slug}-fragen`)} data-umami-event="state-page-opened" data-umami-event-state={state.name} data-umami-event-lang={lang}><span>{getStateDisplayName(state, lang)}</span><span aria-hidden="true">↗</span></a>)}</div>
             </div>
         </section>
 
