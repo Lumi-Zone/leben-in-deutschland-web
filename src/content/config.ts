@@ -10,7 +10,7 @@ const blogCollection = defineCollection({
         reviewedAt: z.date().optional(),
         lang: z.enum(['de', 'en', 'tr']).default('de'),
         /** Language of the article body when it differs from the route language, e.g. a Persian explainer under /de/blog/. */
-        contentLang: z.enum(['ar', 'fa', 'ru', 'uk']).optional(),
+        contentLang: z.enum(['ar', 'fa', 'ps', 'ru', 'uk']).optional(),
         translationKey: z.string().optional(),
         sources: z.array(z.object({
             name: z.string(),

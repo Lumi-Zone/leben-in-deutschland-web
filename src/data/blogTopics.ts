@@ -66,7 +66,7 @@ export const BLOG_TOPICS: BlogTopic[] = [
     slug: 'bundeslaender-mehrsprachig',
     name: 'Bundesländer & Sprachen',
     description: 'Bundesland-Fragen und mehrsprachige Erklärungen zum Einbürgerungstest.',
-    keywords: ['Bundesländer', 'Bundesland-Fragen', 'Geografie', 'Türkisch', 'Türkçe', 'Russisch', 'Arabisch', 'Ukrainisch', 'Persisch', 'Dari'],
+    keywords: ['Bundesländer', 'Bundesland-Fragen', 'Geografie', 'Türkisch', 'Türkçe', 'Russisch', 'Arabisch', 'Ukrainisch', 'Persisch', 'Dari', 'Paschtu'],
   },
 ];
 
