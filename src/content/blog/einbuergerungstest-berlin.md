@@ -7,6 +7,10 @@ updatedDate: 2026-10-14
 reviewedAt: 2026-10-14
 author: "Redaktion"
 tags: ["Einbürgerungstest", "Berlin", "Prüfstelle", "Anmeldung", "Einbürgerung", "Behörde"]
+practice:
+  heading: "Für den Einbürgerungstest in Berlin üben"
+  description: "Trainieren Sie die 10 Berlin-Fragen und die allgemeinen Fragen mit Erklärungen. Prüfen Sie anschließend Ihr Wissen in einer kostenlosen Probeprüfung – ohne Anmeldung."
+  state: "berlin"
 sources:
   - name: "Service-Portal Berlin: Zum Einbürgerungstest anmelden"
     url: "https://service.berlin.de/dienstleistung/351180/"

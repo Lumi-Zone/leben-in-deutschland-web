@@ -7,6 +7,10 @@ updatedDate: 2026-10-14
 reviewedAt: 2026-10-14
 author: "Redaktion"
 tags: ["Einbürgerungstest", "Hamburg", "Prüfstelle", "Anmeldung", "Einbürgerung", "Behörde"]
+practice:
+  heading: "Für den Einbürgerungstest in Hamburg üben"
+  description: "Lernen Sie die 10 Hamburg-Fragen und die allgemeinen Fragen mit Erklärungen. Mit einer kostenlosen Probeprüfung sehen Sie, welche Themen Sie noch wiederholen möchten – ohne Anmeldung."
+  state: "hamburg"
 sources:
   - name: "Hamburg.de: Amt für Migration – Einbürgerungsangelegenheiten"
     url: "https://www.hamburg.de/politik-und-verwaltung/behoerden/behoerde-fuer-inneres-und-sport/aemter/amt-fuer-migration/einbuergerungsangelegenheiten"

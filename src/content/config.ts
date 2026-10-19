@@ -1,4 +1,5 @@
 import { defineCollection, z } from 'astro:content';
+import { GERMAN_STATES } from '../data/germanStates';
 
 const blogCollection = defineCollection({
     schema: z.object({
@@ -19,6 +20,12 @@ const blogCollection = defineCollection({
         author: z.string(),
         image: z.string().optional(),
         tags: z.array(z.string()).optional(),
+        practice: z.object({
+            heading: z.string(),
+            description: z.string(),
+            startQuestionId: z.number().int().min(1).max(300).default(1),
+            state: z.string().refine((slug) => GERMAN_STATES.some((state) => state.slug === slug), 'Unknown Bundesland.').optional(),
+        }).optional(),
     }).superRefine((value, context) => {
         if (!value.translationKey) return;
         if (!value.reviewedAt) {

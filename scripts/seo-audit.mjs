@@ -117,6 +117,93 @@ for (const lang of priorityLanguages) {
 }
 
 const canonicalAppId = `${origin}/de/app/#mobile-app`;
+const priorityPaths = [
+  'de/', 'de/fragen/', 'de/einbuergerungstest-online/', 'de/leben-in-deutschland-online/', 'de/exam/',
+  ...['einbuergerungstest-berlin', 'einbuergerungstest-hamburg', 'einbuergerungstest-frankfurt', 'schwierige-fragen', 'einbuergerungstest-schnell-lernen-7-tage-plan'].map((slug) => `de/blog/${slug}/`),
+  ...['berlin', 'hamburg', 'hessen', 'bayern', 'nordrhein-westfalen'].map((state) => `de/${state}-fragen/`),
+  'fa/', 'fa/fragen/', 'ar/', 'ar/fragen/', 'tr/fragen/',
+];
+for (const route of priorityPaths) {
+  const url = `${origin}/${route}`;
+  const page = pages.get(url);
+  assertPage(page && !page.noindex && page.canonical === url && sitemapUrls.has(url), `${route}: priority page must remain indexable, canonical and in the sitemap`);
+  if (route.startsWith('de/blog/')) {
+    assertPage((page?.body.match(/data-guide-placement="(?:top|bottom)"/g) ?? []).length === 2, `${route}: priority guide must keep both practice cards`);
+    assertPage(page?.anchors.includes('/de/exam/'), `${route}: priority guide must link to the test`);
+  }
+}
+
+for (const lang of ['de', 'tr', 'ar', 'fa']) {
+  const targets = [`${origin}/${lang}/fragen/`, ...(lang === 'de' ? answerLandings.map((route) => `${origin}/de/${route}/`) : [])];
+  for (const url of targets) {
+    const page = pages.get(url);
+    assertPage(page?.body.includes(`data-explained-examples="${lang}"`), `${url}: missing localized worked examples`);
+    for (const id of [1, 19, 20]) assertPage(page?.body.includes(`data-explained-example="${id}"`) && page?.anchors.includes(`/${lang}/frage/${id}/`), `${url}: missing example ${id} or its practice link`);
+  }
+}
+const stateGuides = { berlin: 'berlin', hamburg: 'hamburg', hessen: 'frankfurt', bayern: 'muenchen', 'nordrhein-westfalen': 'koeln' };
+for (const [state, city] of Object.entries(stateGuides)) {
+  const page = pages.get(`${origin}/de/${state}-fragen/`);
+  assertPage(page?.body.includes(`data-state-study="${state}"`), `${state}: missing state study context`);
+  assertPage(page?.anchors.includes(`/de/exam/?state=${state}`), `${state}: missing state-specific test entry`);
+  assertPage(page?.anchors.includes(`/de/blog/einbuergerungstest-${city}/`), `${state}: missing city guide`);
+  assertPage(page?.body.includes('oet.bamf.de') && page?.body.includes('bamf.de/'), `${state}: missing official sources`);
+}
+for (const lang of ['de', 'en', 'tr', 'ar', 'ua', 'ru', 'pl', 'fa', 'ps', 'ro', 'it', 'es']) {
+  const exam = pages.get(`${origin}/${lang}/exam/`);
+  assertPage(exam?.body.includes('data-exam-state'), `${lang}: exam must offer state selection before starting`);
+  const home = pages.get(`${origin}/${lang}/`);
+  assertPage(home?.anchors.includes(`/${lang}/fragen/#bundeslaender`), `${lang}: general state shortcut must open the state selector`);
+}
+for (const lang of ['en', 'tr', 'ar', 'fa']) {
+  const home = pages.get(`${origin}/${lang}/`);
+  const section = home?.body.match(/<section\b[^>]*data-home-guides="[^"]+"[^>]*>([\s\S]*?)<\/section>/)?.[1] ?? '';
+  const links = tags(section, 'a').map((tag) => attr(tag, 'href')).filter((href) => /\/blog\/[^/#]+\/$/.test(href));
+  const explainer = { ar: 'arabisch', fa: 'persisch-dari' }[lang];
+  assertPage(links.length > 0 && links.every((href) => explainer ? href === `/de/blog/einbuergerungstest-auf-${explainer}-erklaert/` : href.startsWith(`/${lang}/blog/`)), `${lang}: home guide cards must match the reader's language`);
+}
+
+for (const lang of priorityLanguages) {
+  const hub = pages.get(`${origin}/${lang}/blog/`);
+  assertPage(hub?.body.includes('id="lernwege"'), `${lang}: blog is missing study paths`);
+  const paths = [...(hub?.body ?? '').matchAll(/<section\b[^>]*data-study-intent="([^"]+)"[^>]*>([\s\S]*?)<\/section>/g)];
+  assertPage(paths.length === 3, `${lang}: expected three study intent groups`);
+  const practiceRoutes = { understand: 'frage/1/', prepare: 'fragen/', check: 'exam/' };
+  const clusteredGuides = new Set();
+  for (const [, intent, content] of paths) {
+    const links = tags(content, 'a').map((tag) => attr(tag, 'href'));
+    assertPage(links.includes(`/${lang}/${practiceRoutes[intent]}`), `${lang}/${intent}: missing matching practice destination`);
+    const guides = links.filter((href) => /^\/[a-z]{2}\/blog\/[^/#]+\/$/.test(href));
+    assertPage(guides.length > 0, `${lang}/${intent}: no published guides`);
+    for (const href of guides) {
+      assertPage(href.startsWith(`/${lang}/blog/`), `${href}: study guide language does not match hub`);
+      assertPage(!clusteredGuides.has(href), `${href}: guide belongs to multiple study intents`);
+      clusteredGuides.add(href);
+      const guide = pages.get(`${origin}${href}`);
+      const navigation = guide?.body.match(/<section\b[^>]*data-study-guide-group="([^"]+)"[^>]*>([\s\S]*?)<\/section>/);
+      assertPage(navigation?.[1] === intent, `${href}: missing reciprocal study intent navigation`);
+      const guideLinks = tags(navigation?.[2] ?? '', 'a').map((tag) => attr(tag, 'href'));
+      assertPage(guideLinks.includes(`/${lang}/blog/#lernwege`), `${href}: missing link back to study paths`);
+      assertPage(guideLinks.includes(`/${lang}/${practiceRoutes[intent]}`), `${href}: missing practice destination`);
+      assertPage(!guideLinks.includes(href), `${href}: next step must not link to itself`);
+    }
+  }
+  assertPage(hub?.anchors.includes(`/${lang}/fragen/#bundeslaender`), `${lang}: study paths must link to state practice`);
+}
+
+for (const lang of ['ar', 'fa']) {
+  for (let id = 1; id <= 20; id += 1) {
+    const url = `${origin}/${lang}/frage/${id}/`;
+    const page = pages.get(url);
+    assertPage(page?.body.includes(`data-explanation-language="${lang}"`), `${url}: missing explanation in the page language`);
+    assertPage(page?.html.includes('dir="rtl"'), `${url}: explanation page must use right-to-left layout`);
+  }
+  const outsidePilot = pages.get(`${origin}/${lang}/frage/21/`);
+  assertPage(!outsidePilot?.body.includes('data-question-explanation'), `${lang}: untranslated explanation must not appear as localized content`);
+  const catalogue = pages.get(`${origin}/${lang}/fragen/`);
+  assertPage(catalogue?.body.includes('explanation-pilot-title') && catalogue.anchors.includes(`/${lang}/frage/19/`), `${lang}: catalogue must link to the explanation pilot`);
+}
+
 const canonicalOrganizationId = `${origin}/de/#organization`;
 for (const lang of priorityLanguages) {
   const homeHtml = pages.get(`${origin}/${lang}/`)?.html ?? '';

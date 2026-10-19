@@ -41,12 +41,22 @@ const appId = MOBILE_APP_ENTITY_ID;
 const reviewsData = getReviews(lang);
 const heroDescription = stripHtml(t("hero.subtitle"));
 const blogPosts = await getCollection('blog');
+const blogLanguage = lang === 'en' || lang === 'tr' ? lang : 'de';
+const explainerLanguage = lang === 'ua' ? 'uk' : lang;
+const nativeGuideCopy = {
+    ar: { title: 'اختبار التجنيس: دليل مبسّط بالعربية', description: 'تعرّف على شكل الاختبار وطريقة الاستعداد له، ثم تدرّب على الأسئلة بالألمانية مع ترجمة مساعدة.' },
+    fa: { title: 'راهنمای ساده آزمون تابعیت به فارسی و دری', description: 'با ساختار آزمون و روش آمادگی آشنا شوید، سپس پرسش‌های آلمانی را با ترجمه کمکی تمرین کنید.' },
+}[lang as 'ar' | 'fa'];
+const nativeExplainers = blogPosts.filter((post) => post.data.contentLang === explainerLanguage);
 const recentBlogPosts = blogPosts
-  .filter((post) => post.data.lang === 'de')
+  .filter((post) => nativeExplainers.length ? nativeExplainers.includes(post) : post.data.lang === blogLanguage)
 	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf() || a.id.localeCompare(b.id))
 	.slice(0, 3)
 	.map((post) => ({
 		...post,
+		title: nativeGuideCopy?.title ?? post.data.title,
+		description: nativeGuideCopy?.description ?? post.data.description,
+		url: getPath(`${post.data.lang}/blog/${post.data.translationKey ?? post.slug}/`),
 		image: resolveBlogImage(post),
 		imageCard: getOptimizedImageUrl(resolveBlogImage(post), 768),
 		imageAlt: getBlogImageAlt(post.data.title),
@@ -123,12 +133,12 @@ const importantPages = [
 	{
 		label: isGerman ? 'Bundesland-Fragen lernen' : `${t("progress.topic_land")} Fragen`,
 		description: isGerman ? 'Die 10 Zusatzfragen für Berlin, Bayern, Hamburg und alle Bundesländer.' : heroDescription,
-		href: getPath(`${lang}/berlin-fragen`),
+		href: getPath(`${lang}/fragen/#bundeslaender`),
 	},
 	{
 		label: isGerman ? 'BAMF 300 Fragen & Erklärungen' : t("blog.title"),
 		description: isGerman ? 'Ratgeber zu Einbürgerungstest, Leben in Deutschland Test und Prüfungsvorbereitung.' : t("blog.subtitle"),
-		href: getPath('de/blog'),
+		href: getPath(`${blogLanguage}/blog/#lernwege`),
 	},
 	{
 		label: isGerman ? 'Hilfe & häufige Fragen' : t("nav.support"),
@@ -301,9 +311,9 @@ const homeSchemaGraph = {
             <div class="home-app-downloads"><p>{isGerman ? 'Dein Lernbegleiter. Immer dabei.' : t('question.practice_app')}</p><div class="home-actions"><a class="home-button" href={homeStore.ios} data-umami-event="app-store-click" data-umami-event-location="home-app" data-umami-event-lang={lang}>App Store <span aria-hidden="true">↗</span></a><a class="home-button secondary" href={homeStore.android} data-umami-event="play-store-click" data-umami-event-location="home-app" data-umami-event-lang={lang}>Google Play <span aria-hidden="true">↗</span></a></div><AppInstallQr lang={lang} placement="home-qr" /></div>
         </section>
 
-        <section class="home-section home-shell home-blog">
-            <div class="home-section-head"><div><p class="home-eyebrow">{t('nav.blog')}</p><h2>{isGerman ? 'Gut vorbereitet. Gut informiert.' : t('blog.title')}</h2></div><a class="home-text-link" href={getPath('de/blog')}>{t('nav.blog')} <span aria-hidden="true">→</span></a></div>
-            <div class="home-blog-grid">{recentBlogPosts.map((post)=><article><a href={getPath(`de/blog/${post.data.translationKey ?? post.slug}`)} data-umami-event="blog-post-opened" data-umami-event-location="home-section" data-umami-event-lang={lang} data-umami-event-slug={post.data.translationKey ?? post.slug}><div class="home-blog-image"><img src={post.imageCard} alt={post.imageAlt} width="768" height="480" loading="lazy" decoding="async"/></div><p class="home-blog-date">{post.data.pubDate.toLocaleDateString(lang)}</p><h3>{post.data.title}</h3><p class="home-blog-description">{post.data.description}</p><span class="home-text-link">{t('blog.read_more')} <span aria-hidden="true">↗</span></span></a></article>)}</div>
+        <section class="home-section home-shell home-blog" data-home-guides={lang}>
+            <div class="home-section-head"><div><p class="home-eyebrow">{t('nav.blog')}</p><h2>{isGerman ? 'Gut vorbereitet. Gut informiert.' : t('blog.title')}</h2></div><a class="home-text-link" href={getPath(`${blogLanguage}/blog/#lernwege`)}>{t('nav.blog')} <span aria-hidden="true">→</span></a></div>
+            <div class="home-blog-grid">{recentBlogPosts.map((post)=><article><a href={post.url} data-umami-event="blog-post-opened" data-umami-event-location="home-section" data-umami-event-lang={lang} data-umami-event-slug={post.data.translationKey ?? post.slug}><div class="home-blog-image"><img src={post.imageCard} alt={nativeGuideCopy ? post.title : post.imageAlt} width="768" height="480" loading="lazy" decoding="async"/></div><p class="home-blog-date">{post.data.pubDate.toLocaleDateString(lang)}</p><h3>{post.title}</h3><p class="home-blog-description">{post.description}</p><span class="home-text-link">{t('blog.read_more')} <span aria-hidden="true">↗</span></span></a></article>)}</div>
         </section>
 
         <div class="home-reviews"><ReviewsSlider client:visible lang={lang} reviewsData={reviewsData}/></div>

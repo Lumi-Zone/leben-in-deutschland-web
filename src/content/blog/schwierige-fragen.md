@@ -1,16 +1,33 @@
 ---
 title: "Einbürgerungstest: Schwierige Fragen einfach verstehen"
-description: "Diese Fragetypen sind oft schwierig. So erkennen Sie die richtige Antwort im Einbürgerungstest leichter."
+seoTitle: "Einbürgerungstest: Schwierige Fragen mit Erklärungen üben"
+description: "Bundestag oder Bundesrat? Aktives oder passives Wahlrecht? Verstehen Sie typische Verwechslungen und üben Sie passende Fragen mit Erklärungen."
 pubDate: 2025-12-04
-updatedDate: 2026-05-27
+updatedDate: 2026-10-16
 author: "Leben in Deutschland Team"
 image: "https://images.unsplash.com/photo-1534644107580-3a4dbd494a95?auto=format&fit=crop&w=1600&q=80"
 tags: ["Schwierige Fragen", "Analyse", "Lernen"]
+practice:
+  heading: "Schwierige Begriffe direkt an einer Frage üben"
+  description: "Beginnen Sie mit einer Frage zu den Grundrechten und lesen Sie die Erklärung zur Antwort. Anschließend können Sie weiterlernen oder eine kostenlose Probeprüfung starten."
+  startQuestionId: 19
 ---
 
 Viele Menschen lernen viel, machen aber trotzdem bei denselben Themen Fehler. Oft liegt es nicht am Fleiß. Es liegt an ähnlichen Antworten, kleinen Wörtern oder Begriffen, die man leicht verwechselt.
 
 Hier sehen Sie 10 schwierige Fragetypen im Einbürgerungstest und eine einfache Lernstrategie.
+
+## Drei Übungsfragen zum Einstieg
+
+Beantworten Sie zuerst die Frage und öffnen Sie danach die Erklärung. Diese Beispiele sind eine redaktionelle Auswahl zu typischen Begriffsverwechslungen; sie sind keine Rangliste nach Fehlerhäufigkeit.
+
+| Thema | Übung | Worauf Sie achten sollten |
+| --- | --- | --- |
+| Grundrechte | [Frage 19: Was bedeutet Freizügigkeit?](/de/frage/19/) | Unterscheiden Sie die Wahl des Wohnorts von der Wahl des Berufs oder der Religion. |
+| Verfassungsorgane | [Frage 85: Wer bildet den Bundesrat?](/de/frage/85/) | Überlegen Sie, wie die Bundesländer auf Bundesebene vertreten sind. |
+| Wahlrecht | [Frage 115: Was bedeutet aktives Wahlrecht?](/de/frage/115/) | Trennen Sie „selbst wählen“ von „gewählt werden können“. |
+
+Wenn Sie bereits auf dieser Website geübt haben, finden Sie Ihre bisherigen Fehler unter [Fehlerfragen wiederholen](/de/focus/). Für einen vollständigen Probelauf öffnen Sie die [Prüfungssimulation](/de/exam/).
 
 ## 1) Bundestag, Bundesrat, Bundesregierung
 Hier werden Aufgaben oft verwechselt.

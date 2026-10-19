@@ -3,6 +3,8 @@ import Layout from '../../../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
 import { useTranslations } from '../../../i18n/ui';
 import Header from '../../../components/Header.astro';
+import BlogStudyPaths from '../../../components/BlogStudyPaths.astro';
+import { studyPathCopy, type StudyPathLanguage } from '../../../data/blogStudyPaths';
 import { getPath } from '../../../utils/navigation';
 import type { SupportedLang } from '../../../types/language';
 import { getAuthorByName } from '../../../data/blogAuthors';
@@ -20,7 +22,8 @@ export async function getStaticPaths() {
   return ['de', 'en', 'tr'].map((lang) => ({ params: { lang }, props: { lang: lang as SupportedLang } }));
 }
 
-const { lang } = Astro.props as { lang: SupportedLang };
+const { lang } = Astro.props as { lang: StudyPathLanguage };
+const studyCopy = studyPathCopy[lang];
 const t = useTranslations(lang);
 const posts = (await getCollection('blog')).filter((post) => post.data.lang === lang);
 const sortedPosts = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf() || a.id.localeCompare(b.id));
@@ -111,8 +114,8 @@ const blogGridPosts = normalizedPosts.slice(1);
 const blogListSchema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
-  name: t('blog.title'),
-  description: t('blog.subtitle'),
+  name: studyCopy.pageTitle,
+  description: studyCopy.description,
   url: blogIndexUrl,
   inLanguage: lang,
   mainEntity: {
@@ -149,8 +152,8 @@ const breadcrumbSchema = {
 ---
 
 <Layout
-  title={`${t('blog.title')} - Leben in Deutschland`}
-  description={t('blog.subtitle')}
+  title={studyCopy.pageTitle}
+  description={studyCopy.description}
   image={heroImage}
   canonical={canonicalPath}
   keywords={seoKeywords}
@@ -171,6 +174,8 @@ const breadcrumbSchema = {
         <h1 class="text-3xl md:text-5xl font-bold text-slate-900 tracking-tight mb-4">{t('blog.title')}</h1>
         <p class="text-base md:text-xl text-slate-600 max-w-3xl">{t('blog.subtitle')}</p>
       </header>
+
+      <BlogStudyPaths lang={lang} posts={posts} />
 
       <section class="bg-white border border-slate-200 rounded-2xl p-4 md:p-5 shadow-sm mb-6 md:mb-8" aria-label="Blog filters">
         <div class="grid gap-3 md:grid-cols-[2fr_1fr]">

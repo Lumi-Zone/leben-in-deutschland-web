@@ -1,0 +1,57 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { BLOG_STUDY_PATHS, studyPathCopy, type StudyPathLanguage } from '../data/blogStudyPaths';
+import { getPath } from '../utils/navigation';
+
+interface Props {
+  lang: StudyPathLanguage;
+  posts: CollectionEntry<'blog'>[];
+  currentGuide?: string;
+}
+
+const { lang, posts, currentGuide } = Astro.props;
+const copy = studyPathCopy[lang];
+const localizedPosts = new Map(posts.filter((post) => post.data.lang === lang).map((post) => [post.data.translationKey ?? post.slug, post]));
+const paths = BLOG_STUDY_PATHS.map((path) => ({
+  ...path,
+  copy: copy.paths[path.id],
+  guides: path.guideSlugs.flatMap((slug) => {
+    const post = localizedPosts.get(slug);
+    return post ? [{ slug, title: post.data.title, href: getPath(`${lang}/blog/${slug}/`) }] : [];
+  }),
+  practiceHref: getPath(`${lang}/${path.practiceRoute}`),
+}));
+if (paths.some((path) => path.guides.length === 0)) throw new Error(`A study path has no published guides in ${lang}.`);
+const currentIndex = currentGuide ? paths.findIndex((path) => path.guides.some((guide) => guide.slug === currentGuide)) : -1;
+const currentPath = paths[currentIndex];
+const nextPath = currentIndex >= 0 ? paths[currentIndex + 1] : undefined;
+const placement = currentGuide ? 'guide-sidebar' : 'blog-index';
+---
+
+{!currentGuide && <nav id="lernwege" aria-labelledby="study-paths-title" class="mb-8 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm md:p-7 scroll-mt-24" data-study-paths>
+  <h2 id="study-paths-title" class="text-2xl font-bold text-slate-950">{copy.heading}</h2>
+  <p class="mt-2 max-w-3xl leading-relaxed text-slate-600">{copy.intro}</p>
+  <div class="mt-6 grid gap-5 lg:grid-cols-3">
+    {paths.map((path, index) => <section id={path.anchor} aria-labelledby={`${path.anchor}-title`} class="flex min-w-0 flex-col rounded-xl border border-slate-200 bg-slate-50 p-5 scroll-mt-24" data-study-intent={path.id}>
+      <span aria-hidden="true" class="mb-3 flex h-9 w-9 items-center justify-center rounded-lg bg-blue-100 font-bold text-blue-800">{index + 1}</span>
+      <h3 id={`${path.anchor}-title`} class="text-xl font-bold text-slate-950">{path.copy.title}</h3>
+      <p class="mt-2 text-sm leading-relaxed text-slate-600">{path.copy.description}</p>
+      <ul class="my-5 space-y-3 text-sm">
+        {path.guides.map((guide) => <li><a href={guide.href} class="font-semibold text-blue-800 underline decoration-blue-200 underline-offset-4 hover:decoration-blue-800" data-umami-event="study-path-click" data-umami-event-lang={lang} data-umami-event-intent={path.id} data-umami-event-destination="guide" data-umami-event-placement={placement}>{guide.title}</a></li>)}
+      </ul>
+      <a href={path.practiceHref} class="mt-auto inline-flex min-h-11 items-center justify-center rounded-xl bg-blue-700 px-4 py-3 text-center text-sm font-bold text-white hover:bg-blue-800" data-umami-event="study-path-click" data-umami-event-lang={lang} data-umami-event-intent={path.id} data-umami-event-destination="practice" data-umami-event-placement={placement}>{path.copy.practice} →</a>
+      {path.id === 'check' && <a href={getPath(`${lang}/fragen/#bundeslaender`)} class="mt-3 text-sm font-semibold text-blue-800 underline underline-offset-4" data-umami-event="study-path-click" data-umami-event-lang={lang} data-umami-event-intent={path.id} data-umami-event-destination="state" data-umami-event-placement={placement}>{copy.statePractice} →</a>}
+    </section>)}
+  </div>
+</nav>}
+
+{currentGuide && currentPath && <section class="rounded-2xl border border-blue-200 bg-blue-50 p-5" aria-labelledby="study-next-step-title" data-study-guide-group={currentPath.id}>
+  <h2 id="study-next-step-title" class="text-lg font-bold text-slate-950">{copy.nextStep}</h2>
+  <p class="mt-2 text-sm font-semibold text-blue-900">{currentPath.copy.title}</p>
+  <ul class="my-4 space-y-3 text-sm">
+    {currentPath.guides.filter((guide) => guide.slug !== currentGuide).slice(0, 2).map((guide) => <li><a href={guide.href} class="font-semibold text-blue-800 underline decoration-blue-200 underline-offset-4 hover:decoration-blue-800" data-umami-event="study-path-click" data-umami-event-lang={lang} data-umami-event-intent={currentPath.id} data-umami-event-destination="guide" data-umami-event-placement={placement} data-umami-event-guide={currentGuide}>{guide.title}</a></li>)}
+  </ul>
+  <a href={currentPath.practiceHref} class="inline-flex min-h-11 w-full items-center justify-center rounded-xl bg-blue-700 px-4 py-3 text-center text-sm font-bold text-white hover:bg-blue-800" data-umami-event="study-path-click" data-umami-event-lang={lang} data-umami-event-intent={currentPath.id} data-umami-event-destination="practice" data-umami-event-placement={placement} data-umami-event-guide={currentGuide}>{currentPath.copy.practice} →</a>
+  {nextPath && <a href={getPath(`${lang}/blog/#${nextPath.anchor}`)} class="mt-4 block text-sm font-semibold text-blue-800 underline underline-offset-4" data-umami-event="study-path-click" data-umami-event-lang={lang} data-umami-event-intent={currentPath.id} data-umami-event-destination="next-path" data-umami-event-placement={placement} data-umami-event-guide={currentGuide}>{copy.nextPath}: {nextPath.copy.title} →</a>}
+  <a href={getPath(`${lang}/blog/#lernwege`)} class="mt-4 block text-sm font-semibold text-slate-700 underline underline-offset-4">{copy.allPaths} →</a>
+</section>}

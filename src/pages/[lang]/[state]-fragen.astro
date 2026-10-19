@@ -3,6 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import questions from '../../data/questions.json';
 import { useTranslations } from '../../i18n/ui';
 import StateQuestionExplorer from '../../components/StateQuestionExplorer';
+import StateStudyGuide from '../../components/StateStudyGuide.astro';
 import { GERMAN_STATES, getStateDisplayName } from '../../data/germanStates';
 import { SUPPORTED_LANGUAGES, type SupportedLang } from '../../types/language';
 import { getLocalizedQuestionText } from '../../utils/questions';
@@ -110,6 +111,7 @@ const breadcrumbSchema = {
         </p>
       </div>
 
+      {lang === 'de' && <StateStudyGuide stateSlug={stateSlug} stateName={stateName} questions={stateQuestions} />}
       <StateQuestionExplorer
         client:visible
         lang={lang}

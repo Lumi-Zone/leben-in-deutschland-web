@@ -1,11 +1,15 @@
 ---
 title: "Einbürgerungstest schnell lernen: 7-Tage-Plan für 2026"
+seoTitle: "Einbürgerungstest in 7 Tagen lernen: Plan & Übungsfragen"
 description: "Nur wenig Zeit bis zum Einbürgerungstest? Dieser 7-Tage-Plan zeigt, wie Sie Fragen, Bundesland und Simulation gezielt üben."
 pubDate: 2026-06-19
-updatedDate: 2026-06-19
+updatedDate: 2026-10-16
 author: "Lern-Coach Team"
 image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1600&q=80"
 tags: ["Einbürgerungstest", "Schnell lernen", "7 Tage Plan", "Prüfungssimulation", "Leben in Deutschland"]
+practice:
+  heading: "Mit Tag 1 des Lernplans beginnen"
+  description: "Öffnen Sie die erste Frage mit Erklärung und arbeiten Sie sich durch den Katalog. Wenn Sie Ihren Lernstand prüfen möchten, starten Sie eine kostenlose Probeprüfung mit 33 Fragen."
 ---
 
 Der Termin ist bald und Sie fragen sich: **Kann ich den Einbürgerungstest schnell lernen?** Ja, Sie können in kurzer Zeit viel schaffen. Wichtig ist aber ein klarer Plan. Wer ohne Struktur lernt, verliert Zeit und wiederholt oft die falschen Dinge.
@@ -33,7 +37,7 @@ Starten Sie nicht mit Panik. Starten Sie mit einem Überblick.
 Machen Sie heute drei Dinge:
 
 1. Beginnen Sie mit **[Frage 1](/de/frage/1/)**.
-2. Wählen Sie Ihr Bundesland aus.
+2. Wählen Sie Ihr Bundesland im [Fragenkatalog mit allen 16 Bundesländern](/de/fragen/#bundeslaender) aus.
 3. Notieren Sie schwierige Themen.
 
 Typische schwere Themen sind:
@@ -74,6 +78,8 @@ Wenn Sie unsicher sind, lesen Sie auch **[Das Grundgesetz einfach erklärt](/de/
 ## Tag 4: Bundesland-Fragen
 
 Heute geht es nur um Ihr Bundesland. Viele Menschen denken: "Das sind nur 10 Fragen, das mache ich später." Genau das ist ein Fehler.
+
+Öffnen Sie die passende Übung, zum Beispiel [Berlin](/de/berlin-fragen/), [Hamburg](/de/hamburg-fragen/), [Hessen](/de/hessen-fragen/), [Bayern](/de/bayern-fragen/) oder [Nordrhein-Westfalen](/de/nordrhein-westfalen-fragen/). Alle weiteren Länder finden Sie im [Fragenkatalog](/de/fragen/).
 
 Lernen Sie:
 

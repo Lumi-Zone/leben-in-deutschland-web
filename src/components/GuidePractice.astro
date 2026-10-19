@@ -1,0 +1,73 @@
+---
+import { GERMAN_STATES, getStateDisplayName } from '../data/germanStates';
+import { getPath } from '../utils/navigation';
+
+interface Props {
+  guide: string;
+  lang: 'de' | 'en' | 'tr';
+  placement: 'top' | 'bottom';
+  practice: {
+    heading: string;
+    description: string;
+    startQuestionId: number;
+    state?: string;
+  };
+}
+
+const { guide, lang, placement, practice } = Astro.props;
+const state = GERMAN_STATES.find((entry) => entry.slug === practice.state);
+const labels = {
+  de: { questions: 'Fragen mit Erklärungen üben', exam: 'Probeprüfung mit 33 Fragen starten', state: 'Fragen für' },
+  en: { questions: 'Practise questions with explanations', exam: 'Start a 33-question practice test', state: 'Questions for' },
+  tr: { questions: 'Açıklamalı sorularla çalış', exam: '33 soruluk deneme sınavına başla', state: 'Eyalet soruları:' },
+}[lang];
+const links = [
+  ...(state ? [{ destination: 'state', href: getPath(`${lang}/${state.slug}-fragen/`), label: `${labels.state} ${getStateDisplayName(state, lang)}` }] : []),
+  { destination: 'questions', href: getPath(`${lang}/frage/${practice.startQuestionId}/`), label: labels.questions },
+  { destination: 'exam', href: getPath(`${lang}/exam/`), label: labels.exam },
+];
+const headingId = `guide-practice-${placement}-title`;
+---
+
+<section
+  class:list={['rounded-xl border border-emerald-200 bg-emerald-50 p-5', placement === 'top' ? 'mb-8' : 'mt-8']}
+  aria-labelledby={headingId}
+  data-guide-practice={guide}
+  data-guide-lang={lang}
+  data-guide-placement={placement}
+>
+  <h2 id={headingId} class="text-xl font-bold text-slate-950">{practice.heading}</h2>
+  <p class="mt-2 text-sm leading-relaxed text-slate-700">{practice.description}</p>
+  <div class="mt-4 flex flex-wrap gap-3">
+    {links.map((link, index) => (
+      <a
+        href={link.href}
+        data-guide-practice-link={link.destination}
+        class:list={[
+          'inline-flex min-h-11 items-center justify-center rounded-lg px-4 py-2.5 text-sm font-semibold transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-800',
+          index === 0
+            ? 'bg-emerald-800 text-white hover:bg-emerald-900'
+            : 'border border-emerald-200 bg-white text-emerald-900 hover:bg-emerald-100',
+        ]}
+      >{link.label} →</a>
+    ))}
+  </div>
+</section>
+
+<script>
+  import { trackEvent } from '../utils/analytics';
+
+  document.querySelectorAll<HTMLAnchorElement>('[data-guide-practice-link]').forEach((link) => {
+    link.addEventListener('click', () => {
+      const section = link.closest<HTMLElement>('[data-guide-practice]');
+      if (!section) return;
+      trackEvent('guide-practice-click', {
+        guide: section.dataset.guidePractice,
+        lang: section.dataset.guideLang,
+        placement: section.dataset.guidePlacement,
+        destination: link.dataset.guidePracticeLink,
+        target: new URL(link.href).pathname,
+      });
+    });
+  });
+</script>

@@ -7,6 +7,10 @@ updatedDate: 2026-10-14
 reviewedAt: 2026-10-14
 author: "Redaktion"
 tags: ["Einbürgerungstest", "Frankfurt", "Hessen", "Prüfstelle", "Anmeldung", "Einbürgerung", "Behörde"]
+practice:
+  heading: "In Frankfurt vorbereiten: Hessen-Fragen üben"
+  description: "Üben Sie die 10 Hessen-Fragen und die allgemeinen Fragen mit Erklärungen. Starten Sie danach eine kostenlose Probeprüfung mit 33 Fragen – ohne Anmeldung."
+  state: "hessen"
 sources:
   - name: "Stadt Frankfurt am Main: Standesamt – Staatsangehörigkeit, Einbürgerungen, Namensänderungen"
     url: "https://frankfurt.de/service-und-rathaus/verwaltung/aemter-und-institutionen/standesamt/staatsangehoerigkeit-einbuergerungen-namensaenderungen"
