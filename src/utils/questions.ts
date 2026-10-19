@@ -18,6 +18,7 @@ export type QuestionTranslations = {
 
 export interface QuestionSessionItem {
     id: number;
+    stateName?: string | null;
     imagePath: string | null;
     questionDe: string;
     questionLocalized: string;
@@ -125,6 +126,7 @@ export function buildQuestionSessionItem(
 
     return {
         id: question.id,
+        stateName: question.area_code === 'land' ? question.thema : null,
         imagePath: getQuestionImagePath(question),
         questionDe: question.q_de || '',
         questionLocalized: getLocalizedQuestionText(question, lang),

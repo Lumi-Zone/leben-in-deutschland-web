@@ -6,6 +6,9 @@ import { recordHabitAttempt } from '../utils/learningHabits';
 import { trackEvent } from '../utils/analytics';
 import type { QuestionSessionItem } from '../utils/questions';
 import QuestionImage from './QuestionImage';
+import SharePractice from './SharePractice';
+import { SITE_ORIGIN } from '../utils/siteIdentity';
+import { buildExamSession } from '../utils/examSession';
 
 interface Labels {
     title: string;
@@ -27,13 +30,14 @@ interface Labels {
     restart: string;
     noQuestions: string;
     noWrongAnswers: string;
+    state: string;
 }
 
 interface Props {
     lang: string;
     pool: QuestionSessionItem[];
     labels: Labels;
-    totalQuestions?: number;
+    stateOptions: { slug: string; name: string; label: string }[];
     durationMinutes?: number;
     passThreshold?: number;
 }
@@ -49,35 +53,29 @@ function formatTime(totalSeconds: number): string {
     return `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
 }
 
-function pickRandomQuestions(pool: QuestionSessionItem[], count: number): QuestionSessionItem[] {
-    const shuffled = [...pool];
-    for (let i = shuffled.length - 1; i > 0; i -= 1) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-    }
-    return shuffled.slice(0, Math.min(count, shuffled.length));
-}
-
 export default function ExamSimulator({
     lang,
     pool,
     labels,
-    totalQuestions = DEFAULT_TOTAL_QUESTIONS,
+    stateOptions,
     durationMinutes = DEFAULT_DURATION_MINUTES,
     passThreshold = DEFAULT_PASS_THRESHOLD,
 }: Props) {
-    const [examQuestions, setExamQuestions] = useState<QuestionSessionItem[]>(() =>
-        pickRandomQuestions(pool, totalQuestions)
-    );
-    const [answers, setAnswers] = useState<number[]>(() =>
-        new Array(Math.min(totalQuestions, pool.length)).fill(-1)
-    );
+    const [selectedState, setSelectedState] = useState('');
+    const [examQuestions, setExamQuestions] = useState<QuestionSessionItem[]>([]);
+    const [answers, setAnswers] = useState<number[]>([]);
     const [currentIndex, setCurrentIndex] = useState(0);
     const [started, setStarted] = useState(false);
     const [finished, setFinished] = useState(false);
     const [secondsLeft, setSecondsLeft] = useState(durationMinutes * 60);
     const hasSavedResults = useRef(false);
     const hasTrackedFinish = useRef(false);
+
+    useEffect(() => {
+        const slug = new URLSearchParams(window.location.search).get('state');
+        const state = stateOptions.find((option) => option.slug === slug);
+        if (state) setSelectedState(state.name);
+    }, [stateOptions]);
 
     const answeredCount = useMemo(() => answers.filter((value) => value >= 0).length, [answers]);
 
@@ -134,20 +132,26 @@ export default function ExamSimulator({
 
         trackEvent('exam-finished', {
             lang,
+            state: selectedState,
             score,
             answered_count: answeredCount,
             passed: isPassed,
             total_questions: examQuestions.length,
         });
         hasTrackedFinish.current = true;
-    }, [answeredCount, examQuestions.length, finished, isPassed, lang, score, started]);
+    }, [answeredCount, examQuestions.length, finished, isPassed, lang, score, selectedState, started]);
 
     const currentQuestion = examQuestions[currentIndex];
 
     const handleStart = () => {
+        const nextQuestions = buildExamSession(pool, selectedState);
+        if (nextQuestions.length !== DEFAULT_TOTAL_QUESTIONS) return;
+        setExamQuestions(nextQuestions);
+        setAnswers(new Array(nextQuestions.length).fill(-1));
         trackEvent('exam-started', {
             lang,
-            total_questions: examQuestions.length,
+            state: selectedState,
+            total_questions: nextQuestions.length,
             duration_minutes: durationMinutes,
             pass_threshold: passThreshold,
         });
@@ -178,13 +182,13 @@ export default function ExamSimulator({
     const handleRestart = () => {
         trackEvent('exam-restarted', {
             lang,
+            state: selectedState,
             score,
             answered_count: answeredCount,
             total_questions: examQuestions.length,
         });
-        const nextQuestions = pickRandomQuestions(pool, totalQuestions);
-        setExamQuestions(nextQuestions);
-        setAnswers(new Array(nextQuestions.length).fill(-1));
+        setExamQuestions([]);
+        setAnswers([]);
         setCurrentIndex(0);
         setSecondsLeft(durationMinutes * 60);
         setStarted(false);
@@ -206,10 +210,18 @@ export default function ExamSimulator({
             <div className="max-w-3xl mx-auto premium-panel p-8 md:p-10 text-center">
                 <h2 className="text-3xl font-bold text-gray-900 mb-4">{labels.title}</h2>
                 <p className="text-gray-600 mb-6">{labels.subtitle}</p>
+                <label className="mb-6 block text-start text-sm font-semibold text-gray-800">
+                    {labels.state}
+                    <select value={selectedState} onChange={(event) => setSelectedState(event.target.value)} required
+                        className="mt-2 block min-h-11 w-full rounded-xl border border-gray-300 bg-white px-3 py-3 text-gray-900" data-exam-state>
+                        <option value="">— {labels.state} —</option>
+                        {stateOptions.map((state) => <option key={state.slug} value={state.name}>{state.label}</option>)}
+                    </select>
+                </label>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-8 text-sm">
                     <div className="premium-panel-soft px-4 py-3">
                         <div className="text-gray-500">{labels.progress}</div>
-                        <div className="font-semibold text-gray-900">{examQuestions.length}</div>
+                        <div className="font-semibold text-gray-900">{DEFAULT_TOTAL_QUESTIONS}</div>
                     </div>
                     <div className="premium-panel-soft px-4 py-3">
                         <div className="text-gray-500">{labels.timer}</div>
@@ -218,14 +230,15 @@ export default function ExamSimulator({
                     <div className="premium-panel-soft px-4 py-3">
                         <div className="text-gray-500">{labels.passRule}</div>
                         <div className="font-semibold text-gray-900">
-                            {passThreshold} / {examQuestions.length}
+                            {passThreshold} / {DEFAULT_TOTAL_QUESTIONS}
                         </div>
                     </div>
                 </div>
                 <button
                     type="button"
                     onClick={handleStart}
-                    className="inline-flex items-center justify-center px-8 py-3 rounded-xl bg-blue-600 text-white font-semibold hover:bg-blue-700 transition-colors"
+                    disabled={!selectedState}
+                    className="inline-flex items-center justify-center px-8 py-3 rounded-xl bg-blue-600 text-white font-semibold hover:bg-blue-700 transition-colors disabled:cursor-not-allowed disabled:opacity-50"
                 >
                     {labels.start}
                 </button>
@@ -238,6 +251,7 @@ export default function ExamSimulator({
             <div className="max-w-4xl mx-auto">
                 <div className="premium-panel p-8 md:p-10 mb-8">
                     <h2 className="text-3xl font-bold text-gray-900 mb-4">{labels.resultTitle}</h2>
+                    <p className="mb-4 text-sm text-gray-600">{labels.state}: {stateOptions.find((state) => state.name === selectedState)?.label}</p>
                     <div className="flex flex-wrap items-center gap-3 mb-6">
                         <span
                             className={`inline-flex items-center px-3 py-1 rounded-full text-sm font-semibold ${
@@ -254,13 +268,16 @@ export default function ExamSimulator({
                         </span>
                     </div>
                     <p className="text-gray-600 mb-6">{labels.passRule}</p>
-                    <button
-                        type="button"
-                        onClick={handleRestart}
-                        className="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-blue-600 text-white font-semibold hover:bg-blue-700 transition-colors"
-                    >
-                        {labels.restart}
-                    </button>
+                    <div className="flex flex-wrap items-center gap-3">
+                        <button
+                            type="button"
+                            onClick={handleRestart}
+                            className="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-blue-600 text-white font-semibold hover:bg-blue-700 transition-colors"
+                        >
+                            {labels.restart}
+                        </button>
+                        <SharePractice lang={lang} canonicalUrl={new URL(getPath(`${lang}/exam/`), SITE_ORIGIN).href} kind="exam" />
+                    </div>
                 </div>
 
                 <div className="premium-panel p-8">
@@ -298,6 +315,7 @@ export default function ExamSimulator({
     return (
         <div className="max-w-4xl mx-auto">
             <div className="premium-panel p-5 md:p-6 mb-5">
+                <p className="mb-3 text-sm font-semibold text-gray-700">{labels.state}: {stateOptions.find((state) => state.name === selectedState)?.label}</p>
                 <div className="flex flex-wrap items-center justify-between gap-3 mb-3">
                     <div className="text-sm text-gray-600">
                         {labels.progress}: <strong className="text-gray-900">{currentIndex + 1}</strong> /{' '}

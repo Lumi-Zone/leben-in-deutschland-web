@@ -7,6 +7,8 @@ import { useTranslations } from '../../i18n/ui';
 import { getPath } from '../../utils/navigation';
 import { SUPPORTED_LANGUAGES, type SupportedLang } from '../../types/language';
 import { buildQuestionSessionPool } from '../../utils/questions';
+import { GERMAN_STATES, getStateDisplayName } from '../../data/germanStates';
+import { BAMF_TEST_SOURCE } from '../../data/seoLandingContent';
 
 export function getStaticPaths() {
   return SUPPORTED_LANGUAGES.map((lang) => ({ params: { lang }, props: { lang } }));
@@ -103,11 +105,20 @@ const breadcrumbSchema = {
         </div>
       </header>
 
+      {isGerman && <section class="premium-panel mx-auto mb-6 max-w-3xl p-6" aria-labelledby="exam-preparation-title" data-exam-preparation>
+        <h2 id="exam-preparation-title" class="text-xl font-bold">So nutzen Sie die Probeprüfung</h2>
+        <p class="mt-3 leading-relaxed">Wählen Sie zuerst Ihr Bundesland. Die Übung enthält dann 30 allgemeine Fragen und drei Fragen dieses Bundeslandes. Nach dem Abschluss sehen Sie Ihr Ergebnis und können die falsch oder nicht beantworteten Fragen einzeln nacharbeiten.</p>
+        <p class="mt-3 text-sm leading-relaxed text-slate-600">Diese Simulation ist eine unabhängige Lernhilfe und stellt kein anerkanntes Prüfungsergebnis aus. Informationen zum echten Test: <a class="text-blue-800 underline" href={BAMF_TEST_SOURCE}>BAMF: Einbürgerungstest ↗</a>.</p>
+        <nav class="mt-4 flex flex-wrap gap-4 font-semibold" aria-label="Vorbereitung auf die Probeprüfung"><a class="text-blue-800 underline" href={getPath('de/fragen/#bundeslaender')}>Landesfragen vorher wiederholen →</a><a class="text-blue-800 underline" href={getPath('de/blog/wie-viele-richtige-antworten-brauche-ich-einbuergerungstest/')}>Bestehensgrenzen verstehen →</a></nav>
+      </section>}
+
       <ExamSimulator
         client:visible
         lang={lang}
         pool={examPool}
+        stateOptions={GERMAN_STATES.map((state) => ({ slug: state.slug, name: state.name, label: getStateDisplayName(state, lang) }))}
         labels={{
+          state: t('progress.topic_land'),
           title: t("exam.title"),
           subtitle: t("exam.subtitle"),
           start: t("exam.start"),
