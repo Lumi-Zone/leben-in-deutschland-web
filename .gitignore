@@ -34,5 +34,6 @@ public/instagram/questions/
 public/instagram/series-v1/
 public/instagram/growth-v1/
 
-# generated YouTube videos (scripts/video/render-video.mjs)
+# YouTube video tooling and the videos it generates (kept local only)
+scripts/video/
 video-output/
