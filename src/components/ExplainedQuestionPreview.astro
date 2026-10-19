@@ -1,0 +1,38 @@
+---
+import questions from '../data/questions.json';
+import { getQuestionExplanation, explanationLabels } from '../data/questionExplanations';
+import { getLocalizedQuestionText, buildQuestionSessionItem } from '../utils/questions';
+import { getPath } from '../utils/navigation';
+import type { SupportedLang } from '../types/language';
+
+interface Props { lang: SupportedLang }
+const { lang } = Astro.props;
+const copy = {
+  de: { title: 'Drei Fragen mit Erklärung ausprobieren', intro: 'Lesen Sie die Frage, überlegen Sie zuerst selbst und öffnen Sie dann die Antwort mit Begründung.', answer: 'Antwort und Erklärung anzeigen', practice: 'Diese Frage üben' },
+  tr: { title: 'Açıklamalı üç soruyu deneyin', intro: 'Soruyu okuyup önce kendiniz cevaplayın. Ardından doğru cevabı ve gerekçesini açın.', answer: 'Cevabı ve açıklamayı göster', practice: 'Bu soruyla çalış' },
+  ar: { title: 'جرّب ثلاثة أسئلة مع الشرح', intro: 'اقرأ السؤال وحاول الإجابة أولًا، ثم افتح الإجابة الصحيحة وشرحها.', answer: 'عرض الإجابة والشرح', practice: 'تدرّب على هذا السؤال' },
+  fa: { title: 'سه پرسش را همراه با توضیح امتحان کنید', intro: 'پرسش را بخوانید و ابتدا خودتان پاسخ دهید. سپس پاسخ درست و دلیل آن را باز کنید.', answer: 'نمایش پاسخ و توضیح', practice: 'این پرسش را تمرین کنید' },
+}[lang as 'de' | 'tr' | 'ar' | 'fa'];
+const examples = copy ? [1, 19, 20].map((id) => {
+  const question = questions.find((item) => item.id === id)!;
+  const session = buildQuestionSessionItem(question, lang);
+  const explanation = getQuestionExplanation(id, lang)!;
+  return { id, text: getLocalizedQuestionText(question, lang), answer: session.optionsLocalized[session.correctIndex], explanation };
+}) : [];
+---
+{copy && <section class="premium-panel p-6 md:p-8 mb-8" aria-labelledby="explained-examples-title" data-explained-examples={lang}>
+  <h2 id="explained-examples-title" class="text-2xl font-bold text-slate-950">{copy.title}</h2>
+  <p class="mt-3 leading-relaxed text-slate-600">{copy.intro}</p>
+  <div class="mt-5 grid gap-4 lg:grid-cols-3">
+    {examples.map((example) => <article class="min-w-0 rounded-xl border border-slate-200 bg-slate-50 p-4" data-explained-example={example.id}>
+      <h3 class="font-bold leading-relaxed text-slate-950">#{example.id} · {example.text}</h3>
+      <details class="mt-4">
+        <summary class="cursor-pointer font-semibold text-emerald-900">{copy.answer}</summary>
+        <p class="mt-3 font-semibold text-slate-900">{example.answer}</p>
+        <p class="mt-3 text-sm leading-relaxed text-slate-700">{example.explanation.whyCorrect}</p>
+        <a class="mt-3 inline-block text-sm text-blue-800 underline" href={example.explanation.sourceUrl}>{explanationLabels[example.explanation.language].source}: {example.explanation.sourceName} ↗</a>
+      </details>
+      <a href={getPath(`${lang}/frage/${example.id}/`)} class="mt-4 inline-flex min-h-11 items-center font-semibold text-blue-800 underline underline-offset-4" data-umami-event="explained-example-click" data-umami-event-lang={lang} data-umami-event-question-id={example.id}>{copy.practice} →</a>
+    </article>)}
+  </div>
+</section>}

@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Header from './Header.astro';
+import ExplainedQuestionPreview from './ExplainedQuestionPreview.astro';
 import { buildStoreUrls } from '../utils/appLinks';
 import { getPath } from '../utils/navigation';
 import {
@@ -88,6 +89,7 @@ const schema = {
       </div>
     </section>
 
+    {lang === 'de' && <div class="container mx-auto max-w-6xl px-4"><ExplainedQuestionPreview lang={lang} /></div>}
     <section class="border-y border-slate-200 bg-white">
       <div class="container mx-auto grid max-w-6xl gap-8 px-4 py-12 lg:grid-cols-[minmax(0,1fr)_340px]">
         <article>

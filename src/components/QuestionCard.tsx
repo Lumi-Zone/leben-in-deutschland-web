@@ -7,6 +7,7 @@ import { recordHabitAttempt } from '../utils/learningHabits';
 import { trackEvent } from '../utils/analytics';
 import { buildStoreUrl } from '../utils/appLinks';
 import QuestionImage from './QuestionImage';
+import { getSeoLanguageMeta } from '../utils/seo';
 
 interface Props {
     id: number;
@@ -148,6 +149,7 @@ export default function QuestionCard({
     const deContent = data['de'];
     // Get translated content if language is not German
     const transContent = currentLang !== 'de' ? data[currentLang] || null : null;
+    const translationDirection = ['ar', 'fa', 'ps'].includes(currentLang) ? 'rtl' : 'ltr';
 
     const handleSelect = (index: number) => {
         if (showResult) return;
@@ -278,7 +280,7 @@ export default function QuestionCard({
                 {/* Question Header */}
                 <div className="mb-6">
                     <div className="flex items-start justify-between gap-4">
-                        <h1 className="text-xl font-bold text-gray-900 leading-relaxed">
+                        <h1 lang="de" dir="ltr" className="text-xl font-bold text-gray-900 leading-relaxed">
                             <span className="text-blue-600 mr-2">#{id}</span>
                             {deContent.question}
                         </h1>
@@ -312,7 +314,7 @@ export default function QuestionCard({
                         </button>
                     </div>
                     {transContent && transContent.question && (
-                        <h2 className="text-lg text-gray-600 mt-2 font-medium border-t border-gray-100 pt-2">
+                        <h2 lang={getSeoLanguageMeta(currentLang).htmlLang} dir={translationDirection} className="text-lg text-gray-600 mt-2 font-medium border-t border-gray-100 pt-2">
                             {transContent.question}
                         </h2>
                     )}
@@ -346,14 +348,14 @@ export default function QuestionCard({
                                 aria-checked={selected === idx}
                                 aria-disabled={showResult}
                             >
-                                <div className="flex items-start">
-                                    <span className="flex-shrink-0 w-8 h-8 flex items-center justify-center bg-gray-100 rounded-lg mr-4 text-sm font-bold text-gray-600 mt-0.5">
+                                <div className="flex items-start gap-4">
+                                    <span className="flex-shrink-0 w-8 h-8 flex items-center justify-center bg-gray-100 rounded-lg text-sm font-bold text-gray-600 mt-0.5">
                                         {String.fromCharCode(65 + idx)}
                                     </span>
-                                    <div className="flex-1">
-                                        <div className="font-medium text-gray-900">{deOption}</div>
+                                    <div className="min-w-0 flex-1">
+                                        <div lang="de" dir="ltr" className="font-medium text-gray-900">{deOption}</div>
                                         {transOption && (
-                                            <div className="text-gray-500 text-sm mt-1">{transOption}</div>
+                                            <div lang={getSeoLanguageMeta(currentLang).htmlLang} dir={translationDirection} className="text-gray-500 text-sm mt-1 text-start">{transOption}</div>
                                         )}
                                     </div>
                                 </div>
@@ -373,7 +375,7 @@ export default function QuestionCard({
                         </p>
                         {!isCorrect && (
                             <p className="text-red-600 mb-4">
-                                {correctAnswerLabel} <strong>{deContent.options[correctIndex]}</strong>
+                                {correctAnswerLabel} <strong><bdi lang="de" dir="ltr">{deContent.options[correctIndex]}</bdi></strong>
                             </p>
                         )}
 
