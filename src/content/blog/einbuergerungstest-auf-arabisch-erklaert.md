@@ -1,15 +1,16 @@
 ---
 title: "Einbürgerungstest auf Arabisch 2026: einfach erklärt | شرح مبسط"
+seoTitle: "الامتحان السياسي في ألمانيا 2026: شرح بالعربي"
 description: "Einbürgerungstest auf Arabisch: 33 Fragen, 17 richtige Antworten, 60 Minuten und einfache Vorbereitung erklärt."
 pubDate: 2026-05-11
-updatedDate: 2026-05-11
+updatedDate: 2026-10-20
 author: "Redaktion LiD"
 contentLang: ar
 image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1600&q=80"
 tags: ["Einbürgerungstest", "Arabisch", "Vorbereitung", "BAMF"]
 ---
 
-**Einbürgerungstest** هو اختبار لمن يريد التقديم على الجنسية الألمانية. من خلال هذا الاختبار تثبت أن لديك معرفة أساسية بالنظام القانوني والمجتمع والتاريخ والديمقراطية في ألمانيا.
+**Einbürgerungstest** هو اختبار لمن يريد التقديم على الجنسية الألمانية، ويسمّيه كثير من العرب في ألمانيا «**الامتحان السياسي**». من خلال هذا الاختبار تثبت أن لديك معرفة أساسية بالنظام القانوني والمجتمع والتاريخ والديمقراطية في ألمانيا.
 
 في هذا المقال نشرح الاختبار باللغة العربية بطريقة بسيطة وعملية، مع التركيز على ما تحتاجه فعلا للتحضير.
 
@@ -157,3 +158,5 @@ tags: ["Einbürgerungstest", "Arabisch", "Vorbereitung", "BAMF"]
 
 ## الخطوة التالية
 تابع التحضير مع **[Einbürgerungstest 2026: 33 Fragen einfach erklärt](/de/blog/33-fragen-erklaert/)** و **[Bundesland-Fragen im Einbürgerungstest](/de/blog/bundesland-fragen-erklaert/)** و **[Einbürgerungstest online üben 2026](/de/blog/einbuergerungstest-online-ueben-2026/)**.
+
+تدرّب على [أسئلة الامتحان السياسي الـ300 مترجمة بالعربي](/ar/fragen/)، واقرأ بقية شروط الجنسية مثل مدة الإقامة واللغة والرسوم والفرق مع الإقامة الدائمة في **[شروط الحصول على الجنسية الألمانية 2026](/de/blog/einbuergerung-voraussetzungen-auf-arabisch/)**.

@@ -1,9 +1,9 @@
 ---
 title: "Einbürgerungstest auf Ukrainisch 2026: einfach erklärt | просте пояснення"
-seoTitle: "Einbürgerungstest auf Ukrainisch 2026 erklärt"
+seoTitle: "Тест Leben in Deutschland українською 2026: просто про тест"
 description: "Einbürgerungstest auf Ukrainisch: 33 Fragen, 17 richtige Antworten, 60 Minuten und einfache Vorbereitung erklärt."
 pubDate: 2026-05-11
-updatedDate: 2026-05-27
+updatedDate: 2026-10-20
 author: "Redaktion LiD"
 contentLang: uk
 image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1600&q=80"
@@ -158,3 +158,5 @@ tags: ["Einbürgerungstest", "Ukrainisch", "Vorbereitung", "BAMF"]
 
 ## Наступний крок
 Продовжуйте підготовку з матеріалами **[Einbürgerungstest 2026: 33 Fragen einfach erklärt](/de/blog/33-fragen-erklaert/)**, **[Bundesland-Fragen im Einbürgerungstest](/de/blog/bundesland-fragen-erklaert/)** та **[Einbürgerungstest online üben 2026](/de/blog/einbuergerungstest-online-ueben-2026/)**.
+
+Тренуйтеся на [усіх 300 запитаннях тесту з перекладом українською](/ua/fragen/). Чи можна отримати громадянство з тимчасовим захистом (параграф 24) і які ще умови діють, читайте у статті **[Громадянство Німеччини для українців 2026](/de/blog/einbuergerung-voraussetzungen-auf-ukrainisch/)**.

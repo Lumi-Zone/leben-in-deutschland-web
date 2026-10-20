@@ -149,3 +149,5 @@ tags: ["Einbürgerungstest", "Persisch", "Dari", "Vorbereitung", "BAMF"]
 
 ## قدم بعدی
 آمادگی را با **[تمام ۳۰۰ سؤال به فارسی](/fa/fragen/)**، **[Bundesland-Fragen im Einbürgerungstest](/de/blog/bundesland-fragen-erklaert/)** و **[Einbürgerungstest 2026: 33 Fragen einfach erklärt](/de/blog/33-fragen-erklaert/)** ادامه دهید.
+
+شرایط دیگر تابعیت مانند مدت اقامت، زبان B1، هزینه‌ها و تفاوت با اقامت دائم را در **[شرایط تابعیت آلمان ۲۰۲۶](/de/blog/einbuergerung-voraussetzungen-auf-persisch/)** بخوانید.

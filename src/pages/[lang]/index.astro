@@ -44,18 +44,20 @@ const blogPosts = await getCollection('blog');
 const blogLanguage = lang === 'en' || lang === 'tr' ? lang : 'de';
 const explainerLanguage = lang === 'ua' ? 'uk' : lang;
 const nativeGuideCopy = {
-    ar: { title: 'اختبار التجنيس: دليل مبسّط بالعربية', description: 'تعرّف على شكل الاختبار وطريقة الاستعداد له، ثم تدرّب على الأسئلة بالألمانية مع ترجمة مساعدة.' },
+    ar: { title: 'الامتحان السياسي (اختبار التجنيس): دليل مبسّط بالعربية', description: 'تعرّف على شكل الاختبار وطريقة الاستعداد له، ثم تدرّب على الأسئلة بالألمانية مع ترجمة مساعدة.' },
     fa: { title: 'راهنمای ساده آزمون تابعیت به فارسی و دری', description: 'با ساختار آزمون و روش آمادگی آشنا شوید، سپس پرسش‌های آلمانی را با ترجمه کمکی تمرین کنید.' },
 }[lang as 'ar' | 'fa'];
 const nativeExplainers = blogPosts.filter((post) => post.data.contentLang === explainerLanguage);
+/** The short card copy describes the test explainer; other native-language guides keep their own titles. */
+const isNativeTestExplainer = (post: (typeof blogPosts)[number]) => post.slug.startsWith('einbuergerungstest-auf-');
 const recentBlogPosts = blogPosts
   .filter((post) => nativeExplainers.length ? nativeExplainers.includes(post) : post.data.lang === blogLanguage)
 	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf() || a.id.localeCompare(b.id))
 	.slice(0, 3)
 	.map((post) => ({
 		...post,
-		title: nativeGuideCopy?.title ?? post.data.title,
-		description: nativeGuideCopy?.description ?? post.data.description,
+		title: isNativeTestExplainer(post) ? nativeGuideCopy?.title ?? post.data.title : post.data.title,
+		description: isNativeTestExplainer(post) ? nativeGuideCopy?.description ?? post.data.description : post.data.description,
 		url: getPath(`${post.data.lang}/blog/${post.data.translationKey ?? post.slug}/`),
 		image: resolveBlogImage(post),
 		imageCard: getOptimizedImageUrl(resolveBlogImage(post), 768),

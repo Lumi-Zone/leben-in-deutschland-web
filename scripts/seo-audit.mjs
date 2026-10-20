@@ -11,6 +11,12 @@ const assertPage = (condition, message) => { if (!condition) errors.push(message
 const decode = (value) => value.replaceAll('&amp;', '&').replaceAll('&quot;', '"').replaceAll('&#39;', "'");
 const attr = (tag, name) => decode(tag.match(new RegExp(`(?:\\s|^)${name}="([^"]*)"`, 'i'))?.[1] ?? '');
 const tags = (html, name) => [...html.matchAll(new RegExp(`<${name}\\b[^>]*>`, 'gi'))].map(([tag]) => tag);
+// Native-language guides (e.g. Persian) are published under /de/blog/ with a contentLang frontmatter field.
+const blogDirectory = path.resolve('src/content/blog');
+const blogFiles = await Promise.all((await readdir(blogDirectory)).filter((name) => /^[^.]+\.md$/.test(name)).map(async (name) => ({
+  slug: name.replace(/\.md$/, ''),
+  contentLang: (await readFile(path.join(blogDirectory, name), 'utf8')).match(/^contentLang:\s*(\S+)/m)?.[1],
+})));
 async function walk(directory) {
   for (const entry of await readdir(directory, { withFileTypes: true })) {
     const file = path.join(directory, entry.name);
@@ -160,7 +166,9 @@ for (const lang of ['en', 'tr', 'ar', 'fa']) {
   const section = home?.body.match(/<section\b[^>]*data-home-guides="[^"]+"[^>]*>([\s\S]*?)<\/section>/)?.[1] ?? '';
   const links = tags(section, 'a').map((tag) => attr(tag, 'href')).filter((href) => /\/blog\/[^/#]+\/$/.test(href));
   const explainer = { ar: 'arabisch', fa: 'persisch-dari' }[lang];
-  assertPage(links.length > 0 && links.every((href) => explainer ? href === `/de/blog/einbuergerungstest-auf-${explainer}-erklaert/` : href.startsWith(`/${lang}/blog/`)), `${lang}: home guide cards must match the reader's language`);
+  const nativeGuides = new Set(blogFiles.filter((file) => file.contentLang === lang).map((file) => `/de/blog/${file.slug}/`));
+  assertPage(links.length > 0 && links.every((href) => explainer ? nativeGuides.has(href) : href.startsWith(`/${lang}/blog/`)), `${lang}: home guide cards must match the reader's language`);
+  if (explainer) assertPage(links.includes(`/de/blog/einbuergerungstest-auf-${explainer}-erklaert/`), `${lang}: home must link the native-language test explainer`);
 }
 
 for (const lang of priorityLanguages) {

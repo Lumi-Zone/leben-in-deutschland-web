@@ -1,9 +1,9 @@
 ---
 title: "Einbürgerungstest auf Russisch 2026: einfach erklärt | простое объяснение"
-seoTitle: "Einbürgerungstest auf Russisch 2026 einfach erklärt"
+seoTitle: "Тест Leben in Deutschland на русском 2026: просто о тесте"
 description: "Einbürgerungstest auf Russisch: 33 Fragen, 17 richtige Antworten, 60 Minuten und einfache Vorbereitung erklärt."
 pubDate: 2026-05-11
-updatedDate: 2026-05-11
+updatedDate: 2026-10-20
 author: "Redaktion LiD"
 contentLang: ru
 image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80"
@@ -158,3 +158,5 @@ tags: ["Einbürgerungstest", "Russisch", "Vorbereitung", "BAMF"]
 
 ## Следующий шаг
 Продолжите подготовку с материалами **[Einbürgerungstest 2026: 33 Fragen einfach erklärt](/de/blog/33-fragen-erklaert/)**, **[Bundesland-Fragen im Einbürgerungstest](/de/blog/bundesland-fragen-erklaert/)** и **[Einbürgerungstest online üben 2026](/de/blog/einbuergerungstest-online-ueben-2026/)**.
+
+Тренируйтесь на [всех 300 вопросах теста Leben in Deutschland на русском](/ru/fragen/). Остальные условия гражданства — срок проживания, язык, двойное гражданство и отличие от ПМЖ — описаны в статье **[Гражданство Германии 2026: условия](/de/blog/einbuergerung-voraussetzungen-auf-russisch/)**.
