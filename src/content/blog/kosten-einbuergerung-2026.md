@@ -2,7 +2,7 @@
 title: "Einbürgerung Kosten 2026: Gebühren einfach erklärt"
 description: "Was kostet die Einbürgerung? Antrag, Einbürgerungstest, Sprachzertifikat, Übersetzungen und Ausweis einfach erklärt."
 pubDate: 2026-01-09
-updatedDate: 2026-05-27
+updatedDate: 2026-10-20
 author: "Redaktion"
 image: "https://images.unsplash.com/photo-1711344397160-b23d5deaa012?auto=format&fit=crop&w=1600&q=80"
 tags: ["Kosten", "Gebühren", "Finanzen"]
@@ -34,7 +34,7 @@ Sie müssen viele Dokumente aus Ihrem Heimatland vorlegen (Geburtsurkunde, Heira
 
 ## 5. Der deutsche Ausweis
 Nachdem Sie die Einbürgerungsurkunde erhalten haben, brauchen Sie natürlich die deutschen Dokumente.
-*   **Personalausweis**: ca. 37 Euro (ab 24 Jahren).
+*   **Personalausweis**: ca. 37 Euro (ab 24 Jahren). Eine Gebührenerhöhung ist angekündigt; den aktuellen Betrag nennt Ihr Bürgeramt.
 *   **Reisepass**: ca. 70 Euro (ab 24 Jahren).
 
 ## Gesamtkosten-Beispiel

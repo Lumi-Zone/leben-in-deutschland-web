@@ -3,7 +3,7 @@ title: "Wahlen in Deutschland einfach erklärt: Erststimme, Zweitstimme, 5%-Hür
 seoTitle: "Wahlen: Erststimme, Zweitstimme und 5%-Hürde"
 description: "Wie funktionieren Wahlen in Deutschland? Erststimme, Zweitstimme, Wahlrecht und 5%-Hürde einfach erklärt."
 pubDate: 2025-10-15
-updatedDate: 2026-05-27
+updatedDate: 2026-10-20
 author: "Lern-Coach Team"
 image: "https://images.unsplash.com/photo-1631540698890-6bfd5d47671a?auto=format&fit=crop&w=1600&q=80"
 tags: ["Wahlen", "Politik", "Bundestag"]
@@ -16,7 +16,7 @@ Bei der Bundestagswahl dürfen alle deutschen Staatsbürger ab 18 Jahren wählen
 
 ## Das Wahlsystem
 Jeder Wähler hat bei der Bundestagswahl zwei Stimmen:
-1.  **Erststimme**: Damit wählen Sie einen Kandidaten direkt aus Ihrem Wahlkreis (Direktmandat). Wer die meisten Stimmen hat, zieht in den Bundestag ein.
+1.  **Erststimme**: Damit wählen Sie einen Kandidaten direkt aus Ihrem Wahlkreis (Direktmandat). Wer die meisten Stimmen hat, gewinnt den Wahlkreis. Seit der Wahlrechtsreform 2023 zieht er aber nur in den Bundestag ein, wenn der Sitz durch die Zweitstimmen seiner Partei gedeckt ist.
 2.  **Zweitstimme**: Dies ist die wichtigere Stimme! Sie wählen damit eine Partei. Die Zweitstimme entscheidet, wie viele Sitze eine Partei insgesamt im Bundestag bekommt.
 
 ## Die 5%-Hürde

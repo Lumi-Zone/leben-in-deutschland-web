@@ -30,7 +30,7 @@ Dieser Teil bereitet speziell auf den "Leben in Deutschland"-Test vor. Themen si
 *   **Kultur**: Feiertage, Umgangsformen, religiöse Vielfalt.
 
 ## Abschluss
-Der Kurs endet mit zwei Prüfungen: dem "Deutsch-Test für Zuwanderer" (DTZ) und dem Test "Leben in Deutschland". Wer beide besteht, erhält das "Zertifikat Integrationskurs". Dies verkürzt die Zeit bis zur Einbürgerung!
+Der Kurs endet mit zwei Prüfungen: dem "Deutsch-Test für Zuwanderer" (DTZ) und dem Test "Leben in Deutschland". Wer beide besteht, erhält das "Zertifikat Integrationskurs". Für die Einbürgerung kann es als Nachweis für Deutschkenntnisse (B1) und Wissen über Deutschland dienen. Eine kürzere Wartezeit bringt es seit der Reform 2024 nicht mehr: Für alle gelten in der Regel fünf Jahre Aufenthalt.
 
 <!-- seo-enhanced -->
 ## Schnelle Zusammenfassung
