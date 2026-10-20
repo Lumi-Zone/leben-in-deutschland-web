@@ -1,5 +1,7 @@
 # Kurs ve danışma merkezleri için şeffaf tanıtım
 
+16 Ekim 2026 için [kaynakları doğrulanmış ilk 20 aday ve üç kuruma özel gönderilmemiş taslak](./outreach-pilot-2026-10-16.md) hazırlandı.
+
 Paylaşılacak ana kaynak sayfası:
 
 - Almanca: `https://lid-einbuergerung.de/de/fuer-kurse-und-beratung/`
