@@ -1,42 +1,113 @@
 ---
-title: "Einbürgerung Antrag 2026: Checkliste für Unterlagen"
-description: "Welche Unterlagen brauchen Sie für die Einbürgerung? Eine einfache Checkliste für Antrag, Nachweise und Vorbereitung."
+title: "Einbürgerungsantrag 2026: Formular, Unterlagen und Antrag stellen"
+seoTitle: "Einbürgerung Antrag 2026: Formular, Unterlagen, Checkliste"
+description: "Wo beantragen Sie die Einbürgerung, wo gibt es das Antragsformular und welche Unterlagen brauchen Sie? Checkliste für den Antrag auf deutsche Staatsbürgerschaft 2026."
 pubDate: 2026-02-05
-updatedDate: 2026-05-27
+updatedDate: 2026-10-20
+reviewedAt: 2026-10-20
+lang: de
+translationKey: "einbuergerung-antrag-checkliste-2026"
+sources:
+  - name: "§ 10 StAG – Einbürgerungsanspruch (gesetze-im-internet.de)"
+    url: "https://www.gesetze-im-internet.de/stag/__10.html"
+  - name: "§ 38 StAG – Gebühren (gesetze-im-internet.de)"
+    url: "https://www.gesetze-im-internet.de/stag/__38.html"
+  - name: "Landeshauptstadt Stuttgart: Einbürgerung mit Einbürgerungsanspruch beantragen"
+    url: "https://www.stuttgart.de/organigramm/leistungen/einbuergerung-fuer-auslaender-mit-einbuergerungsanspruch-beantragen.php"
+  - name: "Bayerisches Staatsministerium des Innern: Informationen zur Einbürgerung (PDF)"
+    url: "https://www.stmi.bayern.de/assets/stmi/mui/einb%C3%BCrgerung.pdf"
 author: "Rechtsredaktion"
 image: "https://images.unsplash.com/photo-1606327054629-64c8b0fd6e4f?auto=format&fit=crop&w=1600&q=80"
 tags: ["Einbürgerung", "Antrag", "Checkliste", "Dokumente"]
 ---
 
-Gut sortierte Unterlagen helfen oft bei einer schnelleren Bearbeitung. Viele Verzögerungen entstehen, weil Nachweise fehlen oder unklar sind.
+**Den Antrag auf Einbürgerung stellen Sie bei der Einbürgerungsbehörde Ihres Wohnorts. Das Antragsformular bekommen Sie von dieser Behörde, meist als PDF auf ihrer Website oder über ein Online-Portal.** Ein einheitliches Formular, das jede Behörde akzeptiert, gibt es in der Praxis nicht. Jede Behörde legt fest, welche Formulare, Erklärungen und Kopien sie verlangt und ob Sie online, per Post oder persönlich einreichen.
 
-## Welche Unterlagen sind meistens wichtig?
-Oft prüft die Behörde Pass, Aufenthaltstitel, Sprachzertifikat, Einbürgerungstest und Einkommen. Je nach Fall kann die Behörde weitere Nachweise verlangen.
+Diese Checkliste ist eine Orientierung, keine Rechtsberatung. Verbindlich ist die Liste Ihrer Behörde.
 
-## So bauen Sie Ihre Mappe auf
-- Abschnitt 1: Identität und Aufenthalt
-- Abschnitt 2: Sprache und Einbürgerungstest
-- Abschnitt 3: Einkommen, Beruf, Absicherung
-- Abschnitt 4: Zusatzunterlagen je Einzelfall
+## Wo beantrage ich die Einbürgerung?
 
-## Typische Fehler vermeiden
-Schlechte Scans, verschiedene Schreibweisen von Namen oder fehlende Zeiten führen oft zu Rückfragen. Benennen Sie Dateien klar und prüfen Sie Daten zweimal.
+Zuständig ist die **Einbürgerungsbehörde (Staatsangehörigkeitsbehörde) Ihres Hauptwohnsitzes**. Je nach Bundesland ist das die Stadtverwaltung, das Landratsamt oder eine Landesbehörde. Suchen Sie auf der Website Ihrer Stadt nach „Einbürgerung“ oder „Staatsangehörigkeit“.
 
-<!-- seo-enhanced -->
-## Schnelle Zusammenfassung
-- Eine klare Checkliste reduziert Rückfragen der Behörde.
-- Vollständige und gleiche Angaben beschleunigen den Prozess.
-- Vorab sortierte Dokumente helfen auch im Termin.
+Wer im Ausland lebt, wendet sich an das Bundesverwaltungsamt.
 
-## Häufige Fragen (FAQ)
-### Reichen Kopien oder brauche ich Originale?
-Das hängt von der Behörde ab. In vielen Fällen werden Kopien eingereicht und Originale im Termin vorgelegt.
+## Antragsformular: PDF, online oder per Post?
 
-### Soll ich Unterlagen ohne Aufforderung mitschicken?
-Reichen Sie nur Unterlagen ein, die zur Anforderung passen. Zu viele unnötige Dokumente können die Prüfung verlangsamen.
+Das hängt von Ihrer Behörde ab:
 
-### Was ist der wichtigste Erfolgsfaktor?
-Vollständige Unterlagen und eine klare Reihenfolge in Ihrer Mappe.
+- **Online:** Einige Länder und Städte bieten den Einbürgerungsantrag online an. Nach den Informationen des bayerischen Innenministeriums kann der Antrag in Bayern online oder in Papierform bei der Einbürgerungsbehörde gestellt werden.
+- **Per Post:** Andere Behörden wollen den Antrag ausschließlich schriftlich. Die Stadt Stuttgart nimmt Anträge zum Beispiel nur per Post an und bittet ausdrücklich, keine Mappen oder Klarsichthüllen zu verwenden.
+- **Termin:** Manche Behörden vergeben zuerst einen Beratungstermin und händigen die Formulare dort aus.
 
-## Nächster Schritt
-Lesen Sie auch **[Einbürgerung 2026: Voraussetzungen und Ablauf](/de/blog/einbuergerung-ablauf/)** und **[Einbürgerung Kosten 2026](/de/blog/kosten-einbuergerung-2026/)**.
+Laden Sie Formulare nur von der offiziellen Website Ihrer Behörde herunter. Formulare anderer Städte werden oft nicht akzeptiert.
+
+## Diese Formulare gehören meist zum Antrag
+
+Neben dem eigentlichen Antragsformular verlangen viele Behörden weitere Erklärungen, zum Beispiel:
+
+- **Bekenntnis- und Loyalitätserklärung:** Bekenntnis zur freiheitlichen demokratischen Grundordnung und zur besonderen historischen Verantwortung Deutschlands; ab 16 Jahren
+- Erklärung zu Straftaten
+- Hinweis zur Sicherheitsabfrage
+- Einwilligung zum Datenschutz
+- Bescheinigung über das Beschäftigungsverhältnis
+
+## Checkliste: Unterlagen für die Einbürgerung
+
+Typische Unterlagen, wie sie zum Beispiel die Stadt Stuttgart nennt:
+
+**Identität und Familie**
+
+- gültiger Reisepass mit Aufenthaltstitel (kein Pass? Siehe [Einbürgerung ohne Pass](/de/blog/einbuergerung-ohne-pass/))
+- ein biometrisches Passfoto
+- Geburtsurkunde
+- Heiratsurkunde oder Auszug aus dem Familienregister, falls verheiratet
+- Geburtsurkunden der Kinder; bei minderjährigen Kindern aus geschiedenen Ehen der Sorgerechtsnachweis
+- ausländische Urkunden mit Übersetzung durch in Deutschland anerkannte Übersetzer
+
+**Sprache und Wissen**
+
+- B1-Zertifikat oder deutscher Schulabschluss
+- Bescheinigung über den bestandenen Einbürgerungstest (ab 16 Jahren) oder deutscher Schulabschluss
+
+**Einkommen und Arbeit**
+
+- die letzten drei Gehaltsabrechnungen
+- Nachweis über den Beginn des aktuellen Arbeitsverhältnisses
+- Gehaltsnachweis des Ehepartners
+- Bescheide über öffentliche Leistungen, falls Sie welche erhalten
+
+**Schule und Ausbildung**
+
+- Schulabschlusszeugnisse; bei Schülerinnen und Schülern die aktuellen Zeugnisse
+
+Die Behörde kann weitere Nachweise anfordern.
+
+## Tipps zum Ausfüllen
+
+- **Namen einheitlich schreiben:** genau wie im Pass, in allen Formularen gleich.
+- **Lücken vermeiden:** Wohnorte, Aufenthaltszeiten und Arbeitsverhältnisse vollständig angeben.
+- **Nur Verlangtes einreichen:** zusätzliche Unterlagen ohne Aufforderung machen die Prüfung nicht schneller.
+- **Kopien und Originale:** Fragen Sie, ob Kopien reichen und wann Originale vorgelegt werden.
+- **Hilfe holen:** Bei Fragen zum Formular helfen die Einbürgerungsbehörde und Migrationsberatungsstellen.
+
+## Was kostet der Antrag?
+
+Die Gebühr beträgt **255 Euro pro Erwachsenem** und **51 Euro pro miteingebürgertem minderjährigen Kind ohne eigenes Einkommen** ([§ 38 StAG](https://www.gesetze-im-internet.de/stag/__38.html)). Wann und wie Sie zahlen, teilt Ihnen die Behörde mit. Mehr: [Einbürgerung Kosten](/de/blog/kosten-einbuergerung-2026/).
+
+## Und danach?
+
+Die Behörde prüft Ihre Angaben, holt Auskünfte ein und meldet sich bei fehlenden Unterlagen. Die Bearbeitung dauert oft mehrere Monate: [Bearbeitungszeit der Einbürgerung](/de/blog/bearbeitungszeit-einbuergerung/). Welche Bedingungen Sie insgesamt erfüllen müssen, steht in [Einbürgerung Voraussetzungen](/de/blog/einbuergerung-ablauf/).
+
+## Häufige Fragen
+
+### Kann ich den Antrag ohne Einbürgerungstest stellen?
+
+Viele Behörden nehmen den Antrag an und lassen Nachweise nachreichen. Eingebürgert werden Sie aber erst, wenn der Nachweis vorliegt, außer Sie sind befreit. Ein bestandener Test vorab spart Zeit: [Einbürgerungstest Termine](/de/blog/einbuergerungstest-termine-wartezeit-2026/).
+
+### Gibt es einen Antrag auf doppelte Staatsbürgerschaft?
+
+Nein, einen eigenen Antrag dafür gibt es nicht. Sie stellen den normalen Einbürgerungsantrag; seit Juni 2024 müssen Sie Ihre bisherige Staatsangehörigkeit nicht mehr aufgeben. Siehe [Doppelte Staatsbürgerschaft](/de/blog/doppelte-staatsbuergerschaft/).
+
+### Der Antrag ist abgegeben: Kann ich noch für den Test lernen?
+
+Ja. Üben Sie [alle 300 Fragen mit Antworten](/de/fragen/), die Fragen Ihres [Bundeslandes](/de/fragen/#bundeslaender) und die [Probeprüfung mit 33 Fragen](/de/exam/). Mit der [App Leben in Deutschland](/de/app/) sehen Sie Ihren Lernfortschritt und wiederholen gezielt falsch beantwortete Fragen.
