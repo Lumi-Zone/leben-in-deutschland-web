@@ -22,7 +22,13 @@ const examUrl = new URL(getPath(`${lang}/exam/`), siteUrl).href;
 const isGerman = lang === 'de';
 const examTitle = isGerman
   ? 'Einbürgerungstest Prüfungssimulation 2026 | 33 Fragen online üben'
-  : `${t("exam.title")} | ${t("hero.title")}`;
+  : lang === 'ar'
+    ? 'نموذج الامتحان السياسي في ألمانيا 2026 | 33 سؤالًا أونلاين'
+    : lang === 'ru'
+      ? 'Пробный тест на гражданство Германии 2026 | 33 вопроса онлайн'
+      : lang === 'tr'
+        ? 'Almanya Vatandaşlık Testi Deneme Sınavı 2026 | 33 soru online'
+        : `${t("exam.title")} | ${t("hero.title")}`;
 const examDescription = isGerman
   ? 'Starten Sie eine realistische Einbürgerungstest Prüfungssimulation mit 33 zufälligen Fragen, Zeitlimit und direkter Auswertung.'
   : t("exam.subtitle");

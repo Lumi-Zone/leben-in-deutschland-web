@@ -51,7 +51,7 @@ const schema = {
   },
 };
 ---
-<Layout title={`${copy.catalog} | Leben in Deutschland`} description={copy.description} lang={lang} canonical={url} jsonLd={schema}>
+<Layout title={copy.catalog.includes('Leben in Deutschland') ? copy.catalog : `${copy.catalog} | Leben in Deutschland`} description={copy.description} lang={lang} canonical={url} jsonLd={schema}>
   <Header lang={lang} />
   <main class="app-page">
     <div class="app-page-shell">
