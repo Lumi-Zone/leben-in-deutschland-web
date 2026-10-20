@@ -119,4 +119,4 @@ Birçok eyalette güvenlik makamlarına rutin sorgulamalar yapılıyor. Aşağı
 
 ### Vatandaşlığın diğer şartlarını nerede bulabilirim?
 
-Oturum süresi, dil, test ve geçim hakkında genel bir bakışı şu yazı veriyor: **[Einbürgerung: Ablauf Schritt für Schritt](/de/blog/einbuergerung-ablauf/)** (Almanca).
+Oturum süresi, dil, test ve geçim hakkında genel bir bakışı şu yazı veriyor: **[Einbürgerung: Ablauf Schritt für Schritt](/tr/blog/almanya-vatandaslik-sartlari/)** (Almanca).

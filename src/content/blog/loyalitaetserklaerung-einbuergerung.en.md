@@ -64,7 +64,7 @@ In particular, you recognise:
 | g) The human rights set out in the Basic Law. | **Basic rights:** for example human dignity, equality of men and women, religious freedom, freedom of expression. |
 | h) Antisemitic, racist or other acts motivated by contempt for human beings are incompatible with human dignity and contrary to the commitment. | **No contempt for human beings:** Anyone who attacks or demeans people because of their origin, religion or skin colour violates the basic order. This point was added in 2024. |
 
-More on basic rights in the article **[Das Grundgesetz](/de/blog/das-grundgesetz/)** (in German).
+More on basic rights in the article **[Das Grundgesetz](/en/blog/das-grundgesetz/)** (in German).
 
 ## Part 3: Historical responsibility and the ban on wars of aggression
 
@@ -98,7 +98,7 @@ The form expressly points out the consequences:
 
 ## The solemn declaration when you receive the certificate
 
-Before you are handed your naturalisation certificate (Einbürgerungsurkunde), you also make a short solemn declaration under Section 16 StAG. In essence, you declare that you will respect the Basic Law and the laws of the Federal Republic of Germany and refrain from anything that could harm it. Many offices combine this with a naturalisation ceremony. What to do afterwards is explained in the article **[Einbürgerungsurkunde erhalten](/de/blog/einbuergerungsurkunde-erhalten-was-danach/)** (in German).
+Before you are handed your naturalisation certificate (Einbürgerungsurkunde), you also make a short solemn declaration under Section 16 StAG. In essence, you declare that you will respect the Basic Law and the laws of the Federal Republic of Germany and refrain from anything that could harm it. Many offices combine this with a naturalisation ceremony. What to do afterwards is explained in the article **[Einbürgerungsurkunde erhalten](/en/blog/einbuergerungsurkunde-erhalten-was-danach/)** (in German).
 
 ## Questions about the declaration of loyalty at your appointment
 
@@ -108,7 +108,7 @@ Many offices leave it at the signature. Some ask whether you have understood the
 
 ### When do I sign the declaration of loyalty?
 
-It varies: usually when you submit the application, sometimes at a later appointment or shortly before you are handed the certificate. Many offices require you to sign in the presence of the caseworker. Which other documents you need is listed in the **[Checkliste für den Einbürgerungsantrag](/de/blog/einbuergerung-antrag-checkliste-2026/)** (in German).
+It varies: usually when you submit the application, sometimes at a later appointment or shortly before you are handed the certificate. Many offices require you to sign in the presence of the caseworker. Which other documents you need is listed in the **[Checkliste für den Einbürgerungsantrag](/en/blog/einbuergerung-antrag-checkliste-2026/)** (in German).
 
 ### Is the declaration of loyalty available in my language?
 
@@ -120,7 +120,7 @@ Do not choose option 1 too quickly. Describe the activity under option 3 or, if 
 
 ### Do my children have to sign?
 
-Children under 16 generally do not make the commitment themselves. For older children, the obligation applies as it does for adults. More in the article **[Einbürgerung mit Kindern](/de/blog/einbuergerung-mit-kindern/)** (in German).
+Children under 16 generally do not make the commitment themselves. For older children, the obligation applies as it does for adults. More in the article **[Einbürgerung mit Kindern](/en/blog/einbuergerung-mit-kindern/)** (in German).
 
 ### What happens if I do not understand something?
 

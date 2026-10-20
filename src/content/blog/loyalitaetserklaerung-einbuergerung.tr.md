@@ -64,7 +64,7 @@ Form bir seçimle başlar. Sizin için geçerli olan ifadeyi işaretlersiniz:
 | g) Anayasa'da somutlaştırılmış insan hakları. | **Temel haklar:** örneğin insan onuru, kadın-erkek eşitliği, din özgürlüğü, ifade özgürlüğü. |
 | h) Antisemit, ırkçı veya başka şekilde insanlık dışı saiklerle işlenen eylemler insan onuruyla bağdaşmaz ve bağlılık beyanına aykırıdır. | **İnsanı aşağılamaya yer yok:** İnsanlara kökenleri, dinleri veya ten renkleri yüzünden saldıran ya da onları aşağılayan temel düzene aykırı davranır. Bu madde 2024'te eklendi. |
 
-Temel haklar hakkında daha fazlası şu yazıda: **[Das Grundgesetz](/de/blog/das-grundgesetz/)** (Almanca).
+Temel haklar hakkında daha fazlası şu yazıda: **[Das Grundgesetz](/tr/blog/das-grundgesetz/)** (Almanca).
 
 ## Bölüm 3: Tarihi sorumluluk ve saldırı savaşı yasağı
 
@@ -98,7 +98,7 @@ Form, sonuçlara açıkça dikkat çeker:
 
 ## Belge teslim edilirken resmî ant
 
-Vatandaşlık belgesi (Einbürgerungsurkunde) size teslim edilmeden önce § 16 StAG uyarınca ayrıca kısa bir resmî ant verirsiniz. Özetle, Almanya Federal Cumhuriyeti'nin Anayasası'na ve kanunlarına saygı göstereceğinizi ve ona zarar verebilecek her şeyden kaçınacağınızı beyan edersiniz. Birçok daire bunu bir vatandaşlık töreniyle birleştiriyor. Sonrasında yapılacakları şu yazı anlatıyor: **[Einbürgerungsurkunde erhalten](/de/blog/einbuergerungsurkunde-erhalten-was-danach/)** (Almanca).
+Vatandaşlık belgesi (Einbürgerungsurkunde) size teslim edilmeden önce § 16 StAG uyarınca ayrıca kısa bir resmî ant verirsiniz. Özetle, Almanya Federal Cumhuriyeti'nin Anayasası'na ve kanunlarına saygı göstereceğinizi ve ona zarar verebilecek her şeyden kaçınacağınızı beyan edersiniz. Birçok daire bunu bir vatandaşlık töreniyle birleştiriyor. Sonrasında yapılacakları şu yazı anlatıyor: **[Einbürgerungsurkunde erhalten](/tr/blog/einbuergerungsurkunde-erhalten-was-danach/)** (Almanca).
 
 ## Randevuda sadakat beyanıyla ilgili sorular
 
@@ -108,7 +108,7 @@ Birçok daire sadece imzayla yetiniyor. Bazıları içeriği anlayıp anlamadı�
 
 ### Sadakat beyanını ne zaman imzalıyorum?
 
-Değişiyor: çoğunlukla başvuruyu teslim ederken, bazen daha sonraki bir randevuda ya da belge teslim edilmeden kısa süre önce. Birçok daire memurun yanında imzalamanızı istiyor. Başka hangi belgelere ihtiyacınız olduğu şu listede: **[Checkliste für den Einbürgerungsantrag](/de/blog/einbuergerung-antrag-checkliste-2026/)** (Almanca).
+Değişiyor: çoğunlukla başvuruyu teslim ederken, bazen daha sonraki bir randevuda ya da belge teslim edilmeden kısa süre önce. Birçok daire memurun yanında imzalamanızı istiyor. Başka hangi belgelere ihtiyacınız olduğu şu listede: **[Checkliste für den Einbürgerungsantrag](/tr/blog/einbuergerung-antrag-checkliste-2026/)** (Almanca).
 
 ### Sadakat beyanı benim dilimde var mı?
 
@@ -120,7 +120,7 @@ Federal İçişleri Bakanlığı, bağlılık beyanının ve bir bilgi notunun �
 
 ### Çocuklarımın da imzalaması gerekiyor mu?
 
-16 yaşından küçük çocuklar bağlılık beyanını kural olarak kendileri vermez. Daha büyük çocuklar için yükümlülük yetişkinlerde olduğu gibi geçerlidir. Daha fazlası şu yazıda: **[Einbürgerung mit Kindern](/de/blog/einbuergerung-mit-kindern/)** (Almanca).
+16 yaşından küçük çocuklar bağlılık beyanını kural olarak kendileri vermez. Daha büyük çocuklar için yükümlülük yetişkinlerde olduğu gibi geçerlidir. Daha fazlası şu yazıda: **[Einbürgerung mit Kindern](/tr/blog/einbuergerung-mit-kindern/)** (Almanca).
 
 ### Bir şeyi anlamazsam ne olur?
 

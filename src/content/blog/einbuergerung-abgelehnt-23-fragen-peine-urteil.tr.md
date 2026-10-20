@@ -112,4 +112,4 @@ Kanun, vatandaşlık testiyle kanıtladığınız bilgileri istiyor. Yine de Alm
 
 ### Bu dava dindar insanlar için ne anlama geliyor?
 
-Camiye gitmek gibi dini pratikler din özgürlüğü kapsamında korunur ve tek başına şüphe sebebi değildir. Mahkeme, nesnel olarak doğrulanabilir bir cevabı olmayan sorulara açıkça eleştirel baktı. Daha fazlası şu yazıda: **[Religionsfreiheit in Deutschland](/de/blog/religionsfreiheit/)** (Almanca).
+Camiye gitmek gibi dini pratikler din özgürlüğü kapsamında korunur ve tek başına şüphe sebebi değildir. Mahkeme, nesnel olarak doğrulanabilir bir cevabı olmayan sorulara açıkça eleştirel baktı. Daha fazlası şu yazıda: **[Religionsfreiheit in Deutschland](/tr/blog/religionsfreiheit/)** (Almanca).

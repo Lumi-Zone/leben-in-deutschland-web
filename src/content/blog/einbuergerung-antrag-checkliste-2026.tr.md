@@ -96,7 +96,7 @@ Harç **yetişkin başına 255 Euro**, kendi geliri olmayan ve ebeveyniyle birli
 
 ## Sonra ne olur?
 
-Daire bilgilerinizi kontrol eder, gerekli sorguları yapar ve eksik belge varsa size yazar. İşlem çoğu zaman birkaç ay sürer. Ayrıntılar (Almanca): [Bearbeitungszeit der Einbürgerung](/de/blog/bearbeitungszeit-einbuergerung/) ve [Einbürgerung Voraussetzungen](/de/blog/einbuergerung-ablauf/).
+Daire bilgilerinizi kontrol eder, gerekli sorguları yapar ve eksik belge varsa size yazar. İşlem çoğu zaman birkaç ay sürer. Ayrıntılar (Almanca): [Bearbeitungszeit der Einbürgerung](/tr/blog/bearbeitungszeit-einbuergerung/) ve [Einbürgerung Voraussetzungen](/tr/blog/almanya-vatandaslik-sartlari/).
 
 ## Sık sorulan sorular
 

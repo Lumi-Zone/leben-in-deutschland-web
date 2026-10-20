@@ -125,4 +125,4 @@ Bazı daireler bu durumda, kimi zaman birkaç hafta sonra, ikinci bir randevu ve
 
 ### Bu sadece Aşağı Saksonya için mi geçerli?
 
-Meclis belgesi sadece Aşağı Saksonya'yı kapsıyor. Başka eyaletlerde de görüşme yapan ya da soru soran daireler var. Sizin şehrinizde nasıl olduğunu vatandaşlık dairenizden öğrenebilirsiniz. Genel süreci şu yazı anlatıyor: **[Einbürgerung: Ablauf Schritt für Schritt](/de/blog/einbuergerung-ablauf/)** (Almanca).
+Meclis belgesi sadece Aşağı Saksonya'yı kapsıyor. Başka eyaletlerde de görüşme yapan ya da soru soran daireler var. Sizin şehrinizde nasıl olduğunu vatandaşlık dairenizden öğrenebilirsiniz. Genel süreci şu yazı anlatıyor: **[Einbürgerung: Ablauf Schritt für Schritt](/tr/blog/almanya-vatandaslik-sartlari/)** (Almanca).

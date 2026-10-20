@@ -112,4 +112,4 @@ The law requires knowledge that you prove with the naturalisation test. Even so,
 
 ### What does the case mean for people who are religious?
 
-Religious practice such as visiting a mosque is protected by religious freedom and is not in itself a reason for doubt. The court expressly viewed questions without an objectively verifiable answer critically. More in the article **[Religionsfreiheit in Deutschland](/de/blog/religionsfreiheit/)** (in German).
+Religious practice such as visiting a mosque is protected by religious freedom and is not in itself a reason for doubt. The court expressly viewed questions without an objectively verifiable answer critically. More in the article **[Religionsfreiheit in Deutschland](/en/blog/religionsfreiheit/)** (in German).

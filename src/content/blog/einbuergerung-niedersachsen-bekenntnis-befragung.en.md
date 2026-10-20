@@ -125,4 +125,4 @@ Several offices offer a second appointment in this case, sometimes after a few w
 
 ### Does this only apply to Lower Saxony?
 
-The printed paper only covers Lower Saxony. There are also offices in other federal states that hold conversations or ask questions. Your naturalisation office can tell you how it works in your city. The general procedure is explained in the article **[Einbürgerung: Ablauf Schritt für Schritt](/de/blog/einbuergerung-ablauf/)** (in German).
+The printed paper only covers Lower Saxony. There are also offices in other federal states that hold conversations or ask questions. Your naturalisation office can tell you how it works in your city. The general procedure is explained in the article **[Einbürgerung: Ablauf Schritt für Schritt](/en/blog/german-citizenship-requirements/)** (in German).

@@ -119,4 +119,4 @@ In many federal states, there are standard enquiries with security authorities. 
 
 ### Where can I find the other requirements for naturalisation?
 
-An overview of the residence period, language, test and livelihood is given in the article **[Einbürgerung: Ablauf Schritt für Schritt](/de/blog/einbuergerung-ablauf/)** (in German) and in English in **[German citizenship requirements](/en/blog/german-citizenship-requirements/)**.
+An overview of the residence period, language, test and livelihood is given in the article **[Einbürgerung: Ablauf Schritt für Schritt](/en/blog/german-citizenship-requirements/)** (in German) and in English in **[German citizenship requirements](/en/blog/german-citizenship-requirements/)**.
