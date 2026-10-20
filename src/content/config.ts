@@ -1,5 +1,6 @@
 import { defineCollection, z } from 'astro:content';
 import { GERMAN_STATES } from '../data/germanStates';
+import { SUPPORTED_LANGUAGES } from '../types/language';
 
 const blogCollection = defineCollection({
     schema: z.object({
@@ -9,7 +10,7 @@ const blogCollection = defineCollection({
         pubDate: z.date(),
         updatedDate: z.date().optional(),
         reviewedAt: z.date().optional(),
-        lang: z.enum(['de', 'en', 'tr']).default('de'),
+        lang: z.enum(SUPPORTED_LANGUAGES).default('de'),
         /** Language of the article body when it differs from the route language, e.g. a Persian explainer under /de/blog/. */
         contentLang: z.enum(['ar', 'fa', 'ps', 'ru', 'uk']).optional(),
         translationKey: z.string().optional(),

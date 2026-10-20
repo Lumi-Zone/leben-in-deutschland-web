@@ -31,6 +31,7 @@ import Header from '../../components/Header.astro';
 import SocialLinks from '../../components/SocialLinks.astro';
 import { SOCIAL_PROFILE_URLS } from '../../utils/social';
 import { getPath } from '../../utils/navigation';
+import { getBlogLanguages } from '../../utils/blogTranslations';
 
 const siteUrl = Astro.site || 'https://lid-einbuergerung.de';
 const homeUrl = new URL(getPath(`${lang}/`), siteUrl).href;
@@ -41,7 +42,7 @@ const appId = MOBILE_APP_ENTITY_ID;
 const reviewsData = getReviews(lang);
 const heroDescription = stripHtml(t("hero.subtitle"));
 const blogPosts = await getCollection('blog');
-const blogLanguage = lang === 'en' || lang === 'tr' ? lang : 'de';
+const blogLanguage = getBlogLanguages(blogPosts).includes(lang) ? lang : 'de';
 const explainerLanguage = lang === 'ua' ? 'uk' : lang;
 const nativeGuideCopy = {
     ar: { title: 'الامتحان السياسي (اختبار التجنيس): دليل مبسّط بالعربية', description: 'تعرّف على شكل الاختبار وطريقة الاستعداد له، ثم تدرّب على الأسئلة بالألمانية مع ترجمة مساعدة.' },

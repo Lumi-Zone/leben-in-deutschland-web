@@ -1,10 +1,12 @@
 ---
 import { GERMAN_STATES, getStateDisplayName } from '../data/germanStates';
 import { getPath } from '../utils/navigation';
+import { blogCopy } from '../i18n/blog';
+import type { SupportedLang } from '../types/language';
 
 interface Props {
   guide: string;
-  lang: 'de' | 'en' | 'tr';
+  lang: SupportedLang;
   placement: 'top' | 'bottom';
   practice: {
     heading: string;
@@ -16,11 +18,8 @@ interface Props {
 
 const { guide, lang, placement, practice } = Astro.props;
 const state = GERMAN_STATES.find((entry) => entry.slug === practice.state);
-const labels = {
-  de: { questions: 'Fragen mit Erklärungen üben', exam: 'Probeprüfung mit 33 Fragen starten', state: 'Fragen für' },
-  en: { questions: 'Practise questions with explanations', exam: 'Start a 33-question practice test', state: 'Questions for' },
-  tr: { questions: 'Açıklamalı sorularla çalış', exam: '33 soruluk deneme sınavına başla', state: 'Eyalet soruları:' },
-}[lang];
+const copy = blogCopy[lang];
+const labels = { questions: copy.practiceQuestions, exam: copy.practiceExam, state: copy.practiceState };
 const links = [
   ...(state ? [{ destination: 'state', href: getPath(`${lang}/${state.slug}-fragen/`), label: `${labels.state} ${getStateDisplayName(state, lang)}` }] : []),
   { destination: 'questions', href: getPath(`${lang}/frage/${practice.startQuestionId}/`), label: labels.questions },

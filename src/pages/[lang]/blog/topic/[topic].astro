@@ -5,73 +5,65 @@ import { getCollection } from 'astro:content';
 import { useTranslations } from '../../../../i18n/ui';
 import { getPath } from '../../../../utils/navigation';
 import type { SupportedLang } from '../../../../types/language';
-import { BLOG_TOPICS, BLOG_TOPIC_ALIASES, getBlogTopicBySlug, getBlogTopicsForTags } from '../../../../data/blogTopics';
+import { BLOG_TOPICS, BLOG_TOPIC_ALIASES, getBlogTopicBySlug, getLocalizedTopic } from '../../../../data/blogTopics';
+import { blogCopy, blogLocales } from '../../../../i18n/blog';
+import { testNames } from '../../../../i18n/seo';
 import {
   getBlogImageAlt,
   getOptimizedImageSizes,
   getOptimizedImageSrcset,
   getOptimizedImageUrl,
-  resolveBlogImage,
 } from '../../../../utils/blog';
+import { getBlogLanguages, getPostImage, getRouteSlug, getTopicPosts } from '../../../../utils/blogTranslations';
 
 export async function getStaticPaths() {
-  return [
-    ...BLOG_TOPICS.map((topic) => ({
-      params: { lang: 'de', topic: topic.slug },
-      props: { lang: 'de' as SupportedLang, topic: topic.slug },
+  const posts = await getCollection('blog');
+  return getBlogLanguages(posts).flatMap((lang) => [
+    // German keeps every topic page; other languages only get topics they have guides for.
+    ...BLOG_TOPICS.filter((topic) => lang === 'de' || getTopicPosts(posts, lang, topic.slug).length > 0).map((topic) => ({
+      params: { lang, topic: topic.slug },
+      props: { lang, topic: topic.slug },
     })),
-    ...BLOG_TOPIC_ALIASES.map((alias) => ({
-      params: { lang: 'de', topic: alias.slug },
-      props: { lang: 'de' as SupportedLang, topic: alias.topicSlug },
-    })),
-  ];
+    ...(lang === 'de' ? BLOG_TOPIC_ALIASES.map((alias) => ({
+      params: { lang, topic: alias.slug },
+      props: { lang, topic: alias.topicSlug },
+    })) : []),
+  ]);
 }
 
 const { lang, topic } = Astro.props as { lang: SupportedLang; topic: string };
 const t = useTranslations(lang);
 const posts = await getCollection('blog');
 
-const localeByLang: Record<string, string> = {
-  de: 'de-DE',
-  en: 'en-US',
-  tr: 'tr-TR',
-  ar: 'ar',
-  ua: 'uk-UA',
-  ru: 'ru-RU',
-  pl: 'pl-PL',
-  fa: 'fa-IR',
-  ps: 'ps',
-  ro: 'ro-RO',
-  it: 'it-IT',
-  es: 'es-ES',
-};
-const locale = localeByLang[lang] || 'de-DE';
+const locale = blogLocales[lang];
 const dateFormatter = new Intl.DateTimeFormat(locale, { year: 'numeric', month: 'long', day: 'numeric' });
 
-const topicData = getBlogTopicBySlug(topic);
-if (!topicData) throw new Error(`Unknown blog topic: ${topic}`);
+const baseTopic = getBlogTopicBySlug(topic);
+if (!baseTopic) throw new Error(`Unknown blog topic: ${topic}`);
+const topicData = getLocalizedTopic(baseTopic, lang);
+const labels = blogCopy[lang];
 const isLegacyTopicUrl = Astro.params.topic !== topicData.slug;
 
-const topicPosts = posts
-  .filter((post) => post.data.lang === 'de' && getBlogTopicsForTags(post.data.tags).some((entry) => entry.slug === topic))
+const topicPosts = getTopicPosts(posts, lang, topic)
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf() || a.id.localeCompare(b.id))
   .map((post) => {
-    const image = resolveBlogImage(post);
+    const image = getPostImage(post, posts);
     return {
       ...post,
       image,
       imageAlt: getBlogImageAlt(post.data.title),
       srcset: getOptimizedImageSrcset(image),
       imageSrc: getOptimizedImageUrl(image, 1366),
-      url: getPath(`de/blog/${post.data.translationKey ?? post.slug}`),
+      url: getPath(`${lang}/blog/${getRouteSlug(post)}`),
       dateLabel: dateFormatter.format(post.data.pubDate),
     };
   });
 
 const siteUrl = Astro.site || 'https://lid-einbuergerung.de';
-const canonicalPath = getPath(`de/blog/topic/${topic}/`);
+const canonicalPath = getPath(`${lang}/blog/topic/${topic}/`);
 const canonicalUrl = new URL(canonicalPath, siteUrl).href;
-const isPrimaryBlogLocale = lang === 'de';
+// Only German topic pages are indexed (see the sitemap filter); translated ones stay crawlable navigation.
+const noindex = lang !== 'de' || topicPosts.length < 2 || isLegacyTopicUrl;
 
 const breadcrumbSchema = {
   '@context': 'https://schema.org',
@@ -87,7 +79,7 @@ const breadcrumbSchema = {
       '@type': 'ListItem',
       position: 2,
       name: t('nav.blog'),
-      item: new URL(getPath('de/blog/'), siteUrl).href,
+      item: new URL(getPath(`${lang}/blog/`), siteUrl).href,
     },
     {
       '@type': 'ListItem',
@@ -100,11 +92,11 @@ const breadcrumbSchema = {
 ---
 
 <Layout
-  title={`${topicData.name} | Einbürgerungstest Ratgeber`}
+  title={`${topicData.name} | ${labels.topicTitleSuffix}`}
   description={topicData.description}
   canonical={canonicalPath}
-  keywords={`${topicData.name}, Einbürgerungstest, Leben in Deutschland, Blog`}
-  noindex={!isPrimaryBlogLocale || topicPosts.length < 2 || isLegacyTopicUrl}
+  keywords={`${topicData.name}, ${testNames[lang]}, Leben in Deutschland, Blog`}
+  noindex={noindex}
   disableAlternates={true}
   lang={lang}
 >
@@ -125,7 +117,7 @@ const breadcrumbSchema = {
         <h1 class="mt-3 text-3xl md:text-5xl font-bold text-slate-900 tracking-tight">{topicData.name}</h1>
         <p class="mt-3 max-w-3xl text-slate-600">{topicData.description}</p>
         <p class="mt-3 text-slate-600">
-          {topicPosts.length} Beiträge in dieser Kategorie.
+          {labels.topicCount(topicPosts.length)}
         </p>
       </div>
 

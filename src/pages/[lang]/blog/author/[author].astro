@@ -5,70 +5,61 @@ import { getCollection } from 'astro:content';
 import { useTranslations } from '../../../../i18n/ui';
 import { getPath } from '../../../../utils/navigation';
 import type { SupportedLang } from '../../../../types/language';
-import { getAllAuthors, getAuthorByName, getAuthorBySlug } from '../../../../data/blogAuthors';
+import { getAllAuthors, getAuthorByName, getAuthorBySlug, getLocalizedAuthor } from '../../../../data/blogAuthors';
+import { blogCopy, blogLocales, getEditorialPolicyLang } from '../../../../i18n/blog';
+import { testNames } from '../../../../i18n/seo';
 import {
   getBlogImageAlt,
   getOptimizedImageSizes,
   getOptimizedImageSrcset,
   getOptimizedImageUrl,
-  resolveBlogImage,
   toSlug,
 } from '../../../../utils/blog';
+import { getBlogLanguages, getPostImage, getRouteSlug } from '../../../../utils/blogTranslations';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
-  const authors = getAllAuthors();
-  const authorSlugs = new Set(authors.map((entry) => entry.slug));
-  posts.forEach((post) => authorSlugs.add(toSlug(post.data.author)));
-
-  return Array.from(authorSlugs).map((authorSlug) => ({
-    params: { lang: 'de', author: authorSlug },
-    props: { lang: 'de' as SupportedLang, author: authorSlug },
-  }));
+  return getBlogLanguages(posts).flatMap((lang) => {
+    const langPosts = posts.filter((post) => post.data.lang === lang);
+    // German keeps every known profile; other languages only list authors with guides in that language.
+    const authorSlugs = new Set(lang === 'de' ? getAllAuthors().map((entry) => entry.slug) : []);
+    langPosts.forEach((post) => authorSlugs.add(toSlug(post.data.author)));
+    return Array.from(authorSlugs).map((authorSlug) => ({
+      params: { lang, author: authorSlug },
+      props: { lang, author: authorSlug },
+    }));
+  });
 }
 
 const { lang, author } = Astro.props as { lang: SupportedLang; author: string };
 const t = useTranslations(lang);
 const posts = await getCollection('blog');
 const matchedPostAuthor = posts.find((post) => toSlug(post.data.author) === author)?.data.author;
-const profile = getAuthorBySlug(author) ?? getAuthorByName(matchedPostAuthor ?? author);
+const profile = getLocalizedAuthor(getAuthorBySlug(author) ?? getAuthorByName(matchedPostAuthor ?? author), lang);
+const labels = blogCopy[lang];
 
-const localeByLang: Record<string, string> = {
-  de: 'de-DE',
-  en: 'en-US',
-  tr: 'tr-TR',
-  ar: 'ar',
-  ua: 'uk-UA',
-  ru: 'ru-RU',
-  pl: 'pl-PL',
-  fa: 'fa-IR',
-  ps: 'ps',
-  ro: 'ro-RO',
-  it: 'it-IT',
-  es: 'es-ES',
-};
-const locale = localeByLang[lang] || 'de-DE';
+const locale = blogLocales[lang];
 const dateFormatter = new Intl.DateTimeFormat(locale, { year: 'numeric', month: 'long', day: 'numeric' });
 
 const authorPosts = posts
-  .filter((post) => post.data.lang === 'de' && toSlug(post.data.author) === profile.slug)
+  .filter((post) => post.data.lang === lang && toSlug(post.data.author) === profile.slug)
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf() || a.id.localeCompare(b.id))
   .map((post) => {
-    const image = resolveBlogImage(post);
+    const image = getPostImage(post, posts);
     return {
       ...post,
       image,
       imageAlt: getBlogImageAlt(post.data.title),
       srcset: getOptimizedImageSrcset(image),
       imageSrc: getOptimizedImageUrl(image, 1366),
-      url: getPath(`de/blog/${post.data.translationKey ?? post.slug}`),
+      url: getPath(`${lang}/blog/${getRouteSlug(post)}`),
       dateLabel: dateFormatter.format(post.data.pubDate),
     };
   });
 
 const siteUrl = Astro.site || 'https://lid-einbuergerung.de';
-const canonicalPath = getPath(`de/blog/author/${author}/`);
-const isPrimaryBlogLocale = lang === 'de';
+const canonicalPath = getPath(`${lang}/blog/author/${author}/`);
+const editorialPolicyPath = lang === 'de' ? getPath('de/blog/redaktionsrichtlinien') : getPath(`${getEditorialPolicyLang(lang)}/redaktionsrichtlinien/`);
 const canonicalUrl = new URL(canonicalPath, siteUrl).href;
 
 const authorSchema = {
@@ -84,8 +75,8 @@ const authorSchema = {
   title={`${profile.name} - ${t('blog.title')}`}
   description={profile.bio}
   canonical={canonicalPath}
-  keywords={`${profile.name}, ${profile.role}, Einbürgerungstest Blog, Leben in Deutschland`}
-  noindex={!isPrimaryBlogLocale}
+  keywords={`${profile.name}, ${profile.role}, ${testNames[lang]}, Leben in Deutschland`}
+  noindex={lang !== 'de'}
   disableAlternates={true}
   lang={lang}
 >
@@ -103,7 +94,7 @@ const authorSchema = {
           {profile.role}
         </p>
         <p class="mt-4 text-slate-600 max-w-3xl">{profile.bio}</p>
-        <a href={getPath('de/blog/redaktionsrichtlinien')} class="mt-4 inline-flex text-sm font-semibold text-blue-700 hover:underline">Redaktionelle Richtlinien und Quellenstandard</a>
+        <a href={editorialPolicyPath} class="mt-4 inline-flex text-sm font-semibold text-blue-700 hover:underline">{labels.policy}</a>
       </div>
 
       <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">

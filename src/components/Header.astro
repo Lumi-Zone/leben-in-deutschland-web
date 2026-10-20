@@ -3,6 +3,8 @@ import LanguageSwitcher from './LanguageSwitcher.astro';
 import { useTranslations, type UiLanguage } from '../i18n/ui';
 
 import { getPath } from '../utils/navigation';
+import { getCollection } from 'astro:content';
+import { getBlogLanguages } from '../utils/blogTranslations';
 import type { SupportedLang } from '../types/language';
 
 interface Props {
@@ -15,7 +17,7 @@ const { lang, disableAlternates = false, alternateLangs } = Astro.props as Props
 const t = useTranslations(lang as UiLanguage);
 const currentPath = Astro.url.pathname;
 const appDownloadHref = getPath(`${lang}/app`);
-const blogLanguage = lang === 'de' || lang === 'en' || lang === 'tr' ? lang : 'de';
+const blogLanguage = getBlogLanguages(await getCollection('blog')).includes(lang) ? lang : 'de';
 
 const navLinks = [
   { href: getPath(`${lang}/frage/1`), label: t('home.start_quiz'), destination: 'questions' },
