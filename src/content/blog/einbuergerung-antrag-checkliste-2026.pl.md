@@ -43,7 +43,7 @@ Pobieraj formularze tylko z oficjalnej strony swojego urzędu. Formularze innych
 
 Oprócz samego wniosku wiele urzędów wymaga innych oświadczeń, np.:
 
-- **Oświadczenie o przywiązaniu i lojalności:** wobec wolnościowego porządku demokratycznego i szczególnej odpowiedzialności historycznej Niemiec; od 16 lat ([więcej o oświadczeniu, po niemiecku](/de/blog/loyalitaetserklaerung-einbuergerung/))
+- **Oświadczenie o przywiązaniu i lojalności:** wobec wolnościowego porządku demokratycznego i szczególnej odpowiedzialności historycznej Niemiec; od 16 lat ([więcej o oświadczeniu, po niemiecku](/de/blog/loyalitaetserklaerung-einbuergerung/), po niemiecku)
 - oświadczenie o przestępstwach
 - pouczenie o kontroli bezpieczeństwa
 - zgoda na przetwarzanie danych
@@ -94,7 +94,7 @@ Opłata wynosi **255 € za osobę dorosłą** i **51 € za niepełnoletnie dzi
 
 ## Co dalej?
 
-Urząd sprawdza Twoje dane, prowadzi zapytania i kontaktuje się z Tobą, jeśli czegoś brakuje. Rozpatrzenie trwa często kilka miesięcy. Wszystkie warunki opisano w artykule [warunki naturalizacji](/de/blog/einbuergerung-ablauf/).
+Urząd sprawdza Twoje dane, prowadzi zapytania i kontaktuje się z Tobą, jeśli czegoś brakuje. Rozpatrzenie trwa często kilka miesięcy. Wszystkie warunki opisano w artykule [warunki naturalizacji](/de/blog/einbuergerung-ablauf/) (po niemiecku).
 
 ## Najczęstsze pytania
 

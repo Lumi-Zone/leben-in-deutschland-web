@@ -28,7 +28,7 @@ Dawniej wielu wnioskodawców musiało zrzec się dotychczasowego obywatelstwa. T
 Dla Ciebie oznacza to:
 
 - składasz **zwykły wniosek o naturalizację** w swoim urzędzie: [wniosek i dokumenty](/pl/blog/einbuergerung-antrag-checkliste-2026/);
-- spełniasz zwykłe [warunki naturalizacji](/de/blog/einbuergerung-ablauf/), m.in. B1 i test na obywatelstwo;
+- spełniasz zwykłe [warunki naturalizacji](/de/blog/einbuergerung-ablauf/) (po niemiecku), m.in. B1 i test na obywatelstwo;
 - Niemcy nie wymagają zwolnienia z dotychczasowego obywatelstwa.
 
 ## Przypadek 2: jesteś Niemcem i chcesz drugie obywatelstwo

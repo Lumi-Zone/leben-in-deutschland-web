@@ -119,4 +119,4 @@ Lo que cuenta es el resultado total. Para la naturalización normalmente necesit
 Justo antes del examen repasa sobre todo las preguntas falladas y practica exámenes completos con tiempo.
 
 ## Siguiente paso
-Lee también **[El examen 2026: las 33 preguntas explicadas](/de/blog/33-fragen-erklaert/)** y **[El día del examen](/de/blog/tipps-fuer-den-pruefungstag/)** (en alemán).
+Lee también **[El examen 2026: las 33 preguntas explicadas](/es/blog/33-fragen-erklaert/)** y **[El día del examen](/es/blog/tipps-fuer-den-pruefungstag/)**.

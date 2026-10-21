@@ -58,7 +58,7 @@ All'esame reale ci sono 3 domande sul Land, che fanno parte delle 33 domande.
 No. Per l'esame basta il tuo Land. Gli altri di solito non servono.
 
 ## Il test di cittadinanza nella tua città
-Informazioni concrete su centri d'esame, iscrizione e autorità competente (in tedesco) ci sono per [Berlin](/de/blog/einbuergerungstest-berlin/), [Hamburg](/de/blog/einbuergerungstest-hamburg/), [Monaco](/de/blog/einbuergerungstest-muenchen/), [Colonia](/de/blog/einbuergerungstest-koeln/), [Frankfurt am Main](/de/blog/einbuergerungstest-frankfurt/) e [Stoccarda](/de/blog/einbuergerungstest-stuttgart/).
+Informazioni concrete su centri d'esame, iscrizione e autorità competente ci sono per [Berlin](/it/blog/einbuergerungstest-berlin/), [Hamburg](/it/blog/einbuergerungstest-hamburg/), [Monaco](/it/blog/einbuergerungstest-muenchen/), [Colonia](/it/blog/einbuergerungstest-koeln/), [Frankfurt am Main](/it/blog/einbuergerungstest-frankfurt/) e [Stoccarda](/it/blog/einbuergerungstest-stuttgart/).
 
 ## Prossimo passo
-Leggi anche **[Quante domande ha il test di cittadinanza?](/it/blog/wie-viele-fragen-hat-der-einbuergerungstest/)** e **[Gli argomenti del test di cittadinanza](/de/blog/wichtige-themengebiete/)**.
+Leggi anche **[Quante domande ha il test di cittadinanza?](/it/blog/wie-viele-fragen-hat-der-einbuergerungstest/)** e **[Gli argomenti del test di cittadinanza](/de/blog/wichtige-themengebiete/)** (in tedesco).

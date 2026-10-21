@@ -198,4 +198,4 @@ Tak, zwłaszcza przy krótkich powtórkach. Aplikacja ułatwia codzienną naukę
 
 ## Następny krok
 
-Zacznij teraz od **[ćwiczenia pytań](/pl/fragen/)**, otwórz **[symulację egzaminu](/pl/exam/)** albo przeczytaj **[Test 2026: 33 pytania w prostych słowach](/de/blog/33-fragen-erklaert/)** (po niemiecku).
+Zacznij teraz od **[ćwiczenia pytań](/pl/fragen/)**, otwórz **[symulację egzaminu](/pl/exam/)** albo przeczytaj **[Test 2026: 33 pytania w prostych słowach](/pl/blog/33-fragen-erklaert/)**.

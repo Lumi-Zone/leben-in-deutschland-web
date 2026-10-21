@@ -119,4 +119,4 @@ Liczy się wynik ogólny. Do naturalizacji zwykle potrzeba co najmniej 17 popraw
 Tuż przed testem powtarzaj przede wszystkim błędne pytania i ćwicz pełne testy z limitem czasu.
 
 ## Następny krok
-Przeczytaj też **[Test 2026: 33 pytania w prostych słowach](/de/blog/33-fragen-erklaert/)** i **[Dzień egzaminu](/de/blog/tipps-fuer-den-pruefungstag/)** (po niemiecku).
+Przeczytaj też **[Test 2026: 33 pytania w prostych słowach](/pl/blog/33-fragen-erklaert/)** i **[Dzień egzaminu](/pl/blog/tipps-fuer-den-pruefungstag/)**.

@@ -58,7 +58,7 @@ tags: ["Федеральні землі", "Запитання", "Поради"]
 Ні. Для іспиту достатньо вашої землі. Інші землі зазвичай не потрібні.
 
 ## Тест на громадянство у вашому місті
-Конкретна інформація про екзаменаційні центри, реєстрацію та відповідальний орган (німецькою) є для [Berlin](/de/blog/einbuergerungstest-berlin/), [Hamburg](/de/blog/einbuergerungstest-hamburg/), [Мюнхена](/de/blog/einbuergerungstest-muenchen/), [Кельна](/de/blog/einbuergerungstest-koeln/), [Frankfurt am Main](/de/blog/einbuergerungstest-frankfurt/) і [Штутгарта](/de/blog/einbuergerungstest-stuttgart/).
+Конкретна інформація про екзаменаційні центри, реєстрацію та відповідальний орган є для [Berlin](/ua/blog/einbuergerungstest-berlin/), [Hamburg](/ua/blog/einbuergerungstest-hamburg/), [Мюнхена](/ua/blog/einbuergerungstest-muenchen/), [Кельна](/ua/blog/einbuergerungstest-koeln/), [Frankfurt am Main](/ua/blog/einbuergerungstest-frankfurt/) і [Штутгарта](/ua/blog/einbuergerungstest-stuttgart/).
 
 ## Наступний крок
-Прочитайте також **[Скільки запитань у тесті на громадянство?](/ua/blog/wie-viele-fragen-hat-der-einbuergerungstest/)** і **[Теми тесту на громадянство](/de/blog/wichtige-themengebiete/)**.
+Прочитайте також **[Скільки запитань у тесті на громадянство?](/ua/blog/wie-viele-fragen-hat-der-einbuergerungstest/)** і **[Теми тесту на громадянство](/de/blog/wichtige-themengebiete/)** (німецькою).

@@ -33,6 +33,6 @@ En ciudades grandes como Berlín, Hamburgo, Múnich o Fráncfort, las fechas pue
 
 ## Paso 4: prepara las preguntas del estado correcto
 
-Estudia las 300 preguntas generales y las 10 preguntas del estado federado donde tienes registrada tu residencia principal. La hoja de examen real tiene 30 preguntas generales y 3 del estado. Mientras esperas la cita puedes [practicar las 300 preguntas con traducción al español](/es/fragen/) y [hacer un examen de prueba de 33 preguntas](/es/exam/). Después del examen, lee [cuándo llegan los resultados](/de/blog/einbuergerungstest-ergebnis-wartezeit-bescheinigung/) (en alemán).
+Estudia las 300 preguntas generales y las 10 preguntas del estado federado donde tienes registrada tu residencia principal. La hoja de examen real tiene 30 preguntas generales y 3 del estado. Mientras esperas la cita puedes [practicar las 300 preguntas con traducción al español](/es/fragen/) y [hacer un examen de prueba de 33 preguntas](/es/exam/). Después del examen, lee [cuándo llegan los resultados](/es/blog/einbuergerungstest-ergebnis-wartezeit-bescheinigung/).
 
 Empieza por la [información del BAMF sobre el examen de ciudadanía](https://www.bamf.de/DE/Themen/Integration/ZugewanderteTeilnehmende/Einbuergerung/einbuergerung-node.html) y considera vinculantes para la cita las indicaciones del centro elegido.

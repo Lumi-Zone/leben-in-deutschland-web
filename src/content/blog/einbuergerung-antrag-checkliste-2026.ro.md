@@ -43,7 +43,7 @@ Descarcă formulare doar de pe site-ul oficial al autorității tale. Formularel
 
 Pe lângă formularul de cerere, multe autorități cer și alte declarații, de exemplu:
 
-- **Declarația de angajament și loialitate:** față de ordinea democratică liberă și de responsabilitatea istorică specială a Germaniei; de la 16 ani ([mai multe despre declarația de loialitate, în germană](/de/blog/loyalitaetserklaerung-einbuergerung/))
+- **Declarația de angajament și loialitate:** față de ordinea democratică liberă și de responsabilitatea istorică specială a Germaniei; de la 16 ani ([mai multe despre declarația de loialitate, în germană](/de/blog/loyalitaetserklaerung-einbuergerung/), în germană)
 - declarație privind infracțiunile
 - informare despre verificarea de securitate
 - acordul privind protecția datelor
@@ -94,7 +94,7 @@ Taxa este de **255 € de adult** și **51 € pentru fiecare copil minor fără
 
 ## Ce urmează?
 
-Autoritatea îți verifică datele, face interogări și te contactează dacă lipsește ceva. Procesarea durează adesea câteva luni. Toate condițiile sunt explicate în [condițiile naturalizării](/de/blog/einbuergerung-ablauf/).
+Autoritatea îți verifică datele, face interogări și te contactează dacă lipsește ceva. Procesarea durează adesea câteva luni. Toate condițiile sunt explicate în [condițiile naturalizării](/de/blog/einbuergerung-ablauf/) (în germană).
 
 ## Întrebări frecvente
 

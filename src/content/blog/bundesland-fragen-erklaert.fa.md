@@ -58,7 +58,7 @@ tags: ["ایالت‌ها", "سؤال‌ها", "نکته‌ها"]
 نه. برای آزمون ایالت خودتان کافی است. ایالت‌های دیگر معمولاً لازم نیستند.
 
 ## آزمون تابعیت در شهر شما
-اطلاعات مشخص درباره مراکز آزمون، ثبت‌نام و اداره مسئول (به آلمانی) برای [Berlin](/de/blog/einbuergerungstest-berlin/), [Hamburg](/de/blog/einbuergerungstest-hamburg/), [مونیخ](/de/blog/einbuergerungstest-muenchen/), [کلن](/de/blog/einbuergerungstest-koeln/), [Frankfurt am Main](/de/blog/einbuergerungstest-frankfurt/) و [اشتوتگارت](/de/blog/einbuergerungstest-stuttgart/) موجود است.
+اطلاعات مشخص درباره مراکز آزمون، ثبت‌نام و اداره مسئول برای [Berlin](/fa/blog/einbuergerungstest-berlin/), [Hamburg](/fa/blog/einbuergerungstest-hamburg/), [مونیخ](/fa/blog/einbuergerungstest-muenchen/), [کلن](/fa/blog/einbuergerungstest-koeln/), [Frankfurt am Main](/fa/blog/einbuergerungstest-frankfurt/) و [اشتوتگارت](/fa/blog/einbuergerungstest-stuttgart/) موجود است.
 
 ## گام بعدی
-همچنین **[آزمون تابعیت چند سؤال دارد؟](/fa/blog/wie-viele-fragen-hat-der-einbuergerungstest/)** و **[موضوع‌های آزمون تابعیت](/de/blog/wichtige-themengebiete/)** را بخوانید.
+همچنین **[آزمون تابعیت چند سؤال دارد؟](/fa/blog/wie-viele-fragen-hat-der-einbuergerungstest/)** و **[موضوع‌های آزمون تابعیت](/de/blog/wichtige-themengebiete/)** (به آلمانی) را بخوانید.

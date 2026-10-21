@@ -67,4 +67,4 @@ Sì: documenti completi al primo tentativo e una pianificazione anticipata degli
 Idealmente prima del primo appuntamento con l'autorità, per preparare tasse e documenti senza fretta.
 
 ## Prossimo passo
-Leggi anche **[Domanda di cittadinanza: elenco dei documenti](/it/blog/einbuergerung-antrag-checkliste-2026/)** e **[Tempi di elaborazione](/de/blog/bearbeitungszeit-einbuergerung/)**.
+Leggi anche **[Domanda di cittadinanza: elenco dei documenti](/it/blog/einbuergerung-antrag-checkliste-2026/)** e **[Tempi di elaborazione](/de/blog/bearbeitungszeit-einbuergerung/)** (in tedesco).

@@ -43,7 +43,7 @@ Scarica i moduli solo dal sito ufficiale della tua autorità. I moduli di altre 
 
 Oltre al modulo di domanda, molte autorità chiedono altre dichiarazioni, per esempio:
 
-- **Dichiarazione di impegno e lealtà:** verso l'ordinamento democratico liberale e la particolare responsabilità storica della Germania; dai 16 anni ([di più sulla dichiarazione di lealtà, in tedesco](/de/blog/loyalitaetserklaerung-einbuergerung/))
+- **Dichiarazione di impegno e lealtà:** verso l'ordinamento democratico liberale e la particolare responsabilità storica della Germania; dai 16 anni ([di più sulla dichiarazione di lealtà, in tedesco](/de/blog/loyalitaetserklaerung-einbuergerung/), in tedesco)
 - dichiarazione sui reati
 - informativa sul controllo di sicurezza
 - consenso al trattamento dei dati
@@ -94,7 +94,7 @@ La tassa è di **255 € per adulto** e **51 € per ogni figlio minorenne senza
 
 ## Cosa succede dopo?
 
-L'autorità verifica i tuoi dati, svolge accertamenti e ti contatta se manca qualcosa. L'elaborazione richiede spesso diversi mesi. Tutti i requisiti sono spiegati in [requisiti per la naturalizzazione](/de/blog/einbuergerung-ablauf/).
+L'autorità verifica i tuoi dati, svolge accertamenti e ti contatta se manca qualcosa. L'elaborazione richiede spesso diversi mesi. Tutti i requisiti sono spiegati in [requisiti per la naturalizzazione](/de/blog/einbuergerung-ablauf/) (in tedesco).
 
 ## Domande frequenti
 

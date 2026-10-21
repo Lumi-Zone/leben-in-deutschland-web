@@ -198,4 +198,4 @@ Sí, sobre todo para repasos cortos. Una app facilita estudiar cada día y no ol
 
 ## Siguiente paso
 
-Empieza ahora con la **[práctica de preguntas](/es/fragen/)**, abre el **[simulacro de examen](/es/exam/)** o lee **[El examen 2026: las 33 preguntas explicadas](/de/blog/33-fragen-erklaert/)** (en alemán).
+Empieza ahora con la **[práctica de preguntas](/es/fragen/)**, abre el **[simulacro de examen](/es/exam/)** o lee **[El examen 2026: las 33 preguntas explicadas](/es/blog/33-fragen-erklaert/)**.

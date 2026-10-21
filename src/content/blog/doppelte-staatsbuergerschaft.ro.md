@@ -28,7 +28,7 @@ Dacă poți păstra efectiv ambele pașapoarte depinde adesea de **celălalt sta
 Pentru tine înseamnă:
 
 - depui **cererea obișnuită de naturalizare** la autoritatea ta: [cererea și documentele](/ro/blog/einbuergerung-antrag-checkliste-2026/);
-- îndeplinești [condițiile obișnuite de naturalizare](/de/blog/einbuergerung-ablauf/), inclusiv B1 și testul de cetățenie;
+- îndeplinești [condițiile obișnuite de naturalizare](/de/blog/einbuergerung-ablauf/) (în germană), inclusiv B1 și testul de cetățenie;
 - Germania nu cere renunțarea la cetățenia anterioară.
 
 ## Cazul 2: ești german și vrei a doua cetățenie

@@ -119,4 +119,4 @@ Conta il risultato complessivo. Per la naturalizzazione di norma servono almeno 
 Subito prima del test ripassa soprattutto le domande sbagliate ed esercitati con test completi a tempo.
 
 ## Prossimo passo
-Leggi anche **[Il test 2026: le 33 domande spiegate](/de/blog/33-fragen-erklaert/)** e **[Il giorno dell'esame](/de/blog/tipps-fuer-den-pruefungstag/)** (in tedesco).
+Leggi anche **[Il test 2026: le 33 domande spiegate](/it/blog/33-fragen-erklaert/)** e **[Il giorno dell'esame](/it/blog/tipps-fuer-den-pruefungstag/)**.

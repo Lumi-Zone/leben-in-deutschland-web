@@ -33,6 +33,6 @@ Locurile se pot ocupa repede. Înscrie-te imediat ce știi când îți trebuie c
 
 ## Pasul 4: pregătește întrebările landului corect
 
-Învață cele 300 de întrebări generale și cele 10 întrebări ale landului în care ai domiciliul principal. Foaia reală de examen are 30 de întrebări generale și 3 despre land. Cât aștepți programarea, poți [exersa toate cele 300 de întrebări cu traducere în română](/ro/fragen/) și [da un examen de probă cu 33 de întrebări](/ro/exam/). După test citește [când vin rezultatele](/de/blog/einbuergerungstest-ergebnis-wartezeit-bescheinigung/) (în germană).
+Învață cele 300 de întrebări generale și cele 10 întrebări ale landului în care ai domiciliul principal. Foaia reală de examen are 30 de întrebări generale și 3 despre land. Cât aștepți programarea, poți [exersa toate cele 300 de întrebări cu traducere în română](/ro/fragen/) și [da un examen de probă cu 33 de întrebări](/ro/exam/). După test citește [când vin rezultatele](/ro/blog/einbuergerungstest-ergebnis-wartezeit-bescheinigung/).
 
 Pornește de la [informațiile BAMF despre testul de cetățenie](https://www.bamf.de/DE/Themen/Integration/ZugewanderteTeilnehmende/Einbuergerung/einbuergerung-node.html) și consideră obligatorii instrucțiunile centrului ales pentru programare.

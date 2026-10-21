@@ -58,7 +58,7 @@ En el examen real hay 3 preguntas del estado. Forman parte de las 33 preguntas.
 No. Para el examen basta con tu estado. Los demás normalmente no hacen falta.
 
 ## El examen de ciudadanía en tu ciudad
-Hay información concreta sobre centros de examen, inscripción y autoridad competente (en alemán) para [Berlin](/de/blog/einbuergerungstest-berlin/), [Hamburg](/de/blog/einbuergerungstest-hamburg/), [Múnich](/de/blog/einbuergerungstest-muenchen/), [Colonia](/de/blog/einbuergerungstest-koeln/), [Frankfurt am Main](/de/blog/einbuergerungstest-frankfurt/) y [Stuttgart](/de/blog/einbuergerungstest-stuttgart/).
+Hay información concreta sobre centros de examen, inscripción y autoridad competente para [Berlin](/es/blog/einbuergerungstest-berlin/), [Hamburg](/es/blog/einbuergerungstest-hamburg/), [Múnich](/es/blog/einbuergerungstest-muenchen/), [Colonia](/es/blog/einbuergerungstest-koeln/), [Frankfurt am Main](/es/blog/einbuergerungstest-frankfurt/) y [Stuttgart](/es/blog/einbuergerungstest-stuttgart/).
 
 ## Siguiente paso
-Lee también **[¿Cuántas preguntas tiene el examen de ciudadanía?](/es/blog/wie-viele-fragen-hat-der-einbuergerungstest/)** y **[Los temas del examen de ciudadanía](/de/blog/wichtige-themengebiete/)**.
+Lee también **[¿Cuántas preguntas tiene el examen de ciudadanía?](/es/blog/wie-viele-fragen-hat-der-einbuergerungstest/)** y **[Los temas del examen de ciudadanía](/de/blog/wichtige-themengebiete/)** (en alemán).

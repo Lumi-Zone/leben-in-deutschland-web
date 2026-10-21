@@ -58,7 +58,7 @@ tags: ["الولايات", "الأسئلة", "نصائح"]
 لا. تكفي ولايتك للامتحان، والولايات الأخرى ليست ضرورية عادةً.
 
 ## اختبار التجنيس في مدينتك
-معلومات محددة عن مراكز الامتحان والتسجيل والسلطة المختصة (بالألمانية) متوفرة لـ[Berlin](/de/blog/einbuergerungstest-berlin/), [Hamburg](/de/blog/einbuergerungstest-hamburg/), [ميونخ](/de/blog/einbuergerungstest-muenchen/), [كولونيا](/de/blog/einbuergerungstest-koeln/), [Frankfurt am Main](/de/blog/einbuergerungstest-frankfurt/) و[شتوتغارت](/de/blog/einbuergerungstest-stuttgart/).
+معلومات محددة عن مراكز الامتحان والتسجيل والسلطة المختصة متوفرة لـ[Berlin](/ar/blog/einbuergerungstest-berlin/), [Hamburg](/ar/blog/einbuergerungstest-hamburg/), [ميونخ](/ar/blog/einbuergerungstest-muenchen/), [كولونيا](/ar/blog/einbuergerungstest-koeln/), [Frankfurt am Main](/ar/blog/einbuergerungstest-frankfurt/) و[شتوتغارت](/ar/blog/einbuergerungstest-stuttgart/).
 
 ## الخطوة التالية
-اقرأ أيضًا **[كم سؤالًا في اختبار التجنيس؟](/ar/blog/wie-viele-fragen-hat-der-einbuergerungstest/)** و**[مواضيع اختبار التجنيس](/de/blog/wichtige-themengebiete/)**.
+اقرأ أيضًا **[كم سؤالًا في اختبار التجنيس؟](/ar/blog/wie-viele-fragen-hat-der-einbuergerungstest/)** و**[مواضيع اختبار التجنيس](/de/blog/wichtige-themengebiete/)** (بالألمانية).

@@ -67,4 +67,4 @@ tags: ["التكاليف", "الرسوم", "المال"]
 قبل أول موعد لدى السلطة، حتى تجهّز الرسوم والإثباتات دون ضغط.
 
 ## الخطوة التالية
-اقرأ أيضًا **[طلب التجنيس: قائمة الوثائق](/ar/blog/einbuergerung-antrag-checkliste-2026/)** و**[مدة معالجة التجنيس](/de/blog/bearbeitungszeit-einbuergerung/)**.
+اقرأ أيضًا **[طلب التجنيس: قائمة الوثائق](/ar/blog/einbuergerung-antrag-checkliste-2026/)** و**[مدة معالجة التجنيس](/de/blog/bearbeitungszeit-einbuergerung/)** (بالألمانية).

@@ -58,7 +58,7 @@ tags: ["ایالتونه", "پوښتنې", "لارښوونې"]
 نه. د ازموینې لپاره ستاسو خپل ایالت بس دی. نور ایالتونه معمولاً اړین نه دي.
 
 ## په ستاسو ښار کې د تابعیت ازموینه
-د ازموینیزو مرکزونو، نوم لیکنې او مسؤلې ادارې په اړه ځانګړي معلومات (په آلماني) د [Berlin](/de/blog/einbuergerungstest-berlin/), [Hamburg](/de/blog/einbuergerungstest-hamburg/), [مونشن](/de/blog/einbuergerungstest-muenchen/), [کولن](/de/blog/einbuergerungstest-koeln/), [Frankfurt am Main](/de/blog/einbuergerungstest-frankfurt/) او [شټوټګارټ](/de/blog/einbuergerungstest-stuttgart/) لپاره شته.
+د ازموینیزو مرکزونو، نوم لیکنې او مسؤلې ادارې په اړه ځانګړي معلومات د [Berlin](/ps/blog/einbuergerungstest-berlin/), [Hamburg](/ps/blog/einbuergerungstest-hamburg/), [مونشن](/ps/blog/einbuergerungstest-muenchen/), [کولن](/ps/blog/einbuergerungstest-koeln/), [Frankfurt am Main](/ps/blog/einbuergerungstest-frankfurt/) او [شټوټګارټ](/ps/blog/einbuergerungstest-stuttgart/) لپاره شته.
 
 ## بل ګام
-همدارنګه **[د تابعیت ازموینه څو پوښتنې لري؟](/ps/blog/wie-viele-fragen-hat-der-einbuergerungstest/)** او **[د تابعیت ازموینې موضوعګانې](/de/blog/wichtige-themengebiete/)** ولولئ.
+همدارنګه **[د تابعیت ازموینه څو پوښتنې لري؟](/ps/blog/wie-viele-fragen-hat-der-einbuergerungstest/)** او **[د تابعیت ازموینې موضوعګانې](/de/blog/wichtige-themengebiete/)** (په آلماني) ولولئ.

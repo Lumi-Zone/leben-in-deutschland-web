@@ -67,4 +67,4 @@ tags: ["هزینه‌ها", "عوارض", "امور مالی"]
 بهتر است پیش از اولین وقت اداری، تا عوارض و مدارک را بدون فشار آماده کنید.
 
 ## گام بعدی
-همچنین **[درخواست تابعیت: فهرست مدارک](/fa/blog/einbuergerung-antrag-checkliste-2026/)** و **[مدت رسیدگی](/de/blog/bearbeitungszeit-einbuergerung/)** را بخوانید.
+همچنین **[درخواست تابعیت: فهرست مدارک](/fa/blog/einbuergerung-antrag-checkliste-2026/)** و **[مدت رسیدگی](/de/blog/bearbeitungszeit-einbuergerung/)** (به آلمانی) را بخوانید.

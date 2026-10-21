@@ -119,4 +119,4 @@ Contează rezultatul total. Pentru naturalizare ai nevoie de obicei de cel puți
 Chiar înainte de test repetă mai ales întrebările greșite și exersează teste complete cu timp.
 
 ## Pasul următor
-Citește și **[Testul 2026: cele 33 de întrebări pe înțeles](/de/blog/33-fragen-erklaert/)** și **[Ziua examenului](/de/blog/tipps-fuer-den-pruefungstag/)** (în germană).
+Citește și **[Testul 2026: cele 33 de întrebări pe înțeles](/ro/blog/33-fragen-erklaert/)** și **[Ziua examenului](/ro/blog/tipps-fuer-den-pruefungstag/)**.

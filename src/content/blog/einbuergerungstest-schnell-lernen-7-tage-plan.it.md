@@ -198,4 +198,4 @@ Sì, soprattutto per i ripassi brevi. Un'app rende più facile studiare ogni gio
 
 ## Prossimo passo
 
-Inizia ora con l'**[esercitazione sulle domande](/it/fragen/)**, apri la **[simulazione d'esame](/it/exam/)** o leggi **[Il test 2026: le 33 domande spiegate](/de/blog/33-fragen-erklaert/)** (in tedesco).
+Inizia ora con l'**[esercitazione sulle domande](/it/fragen/)**, apri la **[simulazione d'esame](/it/exam/)** o leggi **[Il test 2026: le 33 domande spiegate](/it/blog/33-fragen-erklaert/)**.

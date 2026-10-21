@@ -67,4 +67,4 @@ Da: documentele complete de prima dată și planificarea din timp a programăril
 Ideal înainte de prima programare la autoritate, ca să pregătești fără grabă taxele și dovezile.
 
 ## Pasul următor
-Citește și **[Cererea de cetățenie: lista documentelor](/ro/blog/einbuergerung-antrag-checkliste-2026/)** și **[Durata procesării](/de/blog/bearbeitungszeit-einbuergerung/)**.
+Citește și **[Cererea de cetățenie: lista documentelor](/ro/blog/einbuergerung-antrag-checkliste-2026/)** și **[Durata procesării](/de/blog/bearbeitungszeit-einbuergerung/)** (în germană).

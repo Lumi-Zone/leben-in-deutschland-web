@@ -43,7 +43,7 @@ Descarga los formularios solo de la web oficial de tu autoridad. Los formularios
 
 Además del formulario de solicitud, muchas autoridades piden otras declaraciones, por ejemplo:
 
-- **Declaración de compromiso y lealtad:** con el orden democrático liberal y con la responsabilidad histórica especial de Alemania; a partir de los 16 años ([más sobre la declaración de lealtad, en alemán](/de/blog/loyalitaetserklaerung-einbuergerung/))
+- **Declaración de compromiso y lealtad:** con el orden democrático liberal y con la responsabilidad histórica especial de Alemania; a partir de los 16 años ([más sobre la declaración de lealtad, en alemán](/de/blog/loyalitaetserklaerung-einbuergerung/), en alemán)
 - declaración sobre delitos
 - aviso sobre la comprobación de seguridad
 - consentimiento de protección de datos
@@ -94,7 +94,7 @@ La tasa es de **255 € por adulto** y **51 € por cada hijo menor sin ingresos
 
 ## ¿Qué pasa después?
 
-La autoridad revisa tus datos, hace consultas y se pone en contacto contigo si falta algo. La tramitación suele durar varios meses. Todos los requisitos están explicados en [requisitos de la naturalización](/de/blog/einbuergerung-ablauf/).
+La autoridad revisa tus datos, hace consultas y se pone en contacto contigo si falta algo. La tramitación suele durar varios meses. Todos los requisitos están explicados en [requisitos de la naturalización](/de/blog/einbuergerung-ablauf/) (en alemán).
 
 ## Preguntas frecuentes
 

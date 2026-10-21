@@ -67,4 +67,4 @@ Tak: kompletne dokumenty za pierwszym razem i wczesne planowanie terminów pomag
 Najlepiej przed pierwszą wizytą w urzędzie, aby spokojnie przygotować opłaty i dokumenty.
 
 ## Następny krok
-Przeczytaj też **[Wniosek o obywatelstwo: lista dokumentów](/pl/blog/einbuergerung-antrag-checkliste-2026/)** i **[Czas rozpatrywania](/de/blog/bearbeitungszeit-einbuergerung/)**.
+Przeczytaj też **[Wniosek o obywatelstwo: lista dokumentów](/pl/blog/einbuergerung-antrag-checkliste-2026/)** i **[Czas rozpatrywania](/de/blog/bearbeitungszeit-einbuergerung/)** (po niemiecku).

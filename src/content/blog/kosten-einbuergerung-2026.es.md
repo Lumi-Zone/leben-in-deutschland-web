@@ -67,4 +67,4 @@ Sí: presentar los documentos completos a la primera y planificar las citas con 
 Lo ideal es antes de la primera cita con la autoridad, para preparar tasas y pruebas sin prisa.
 
 ## Siguiente paso
-Lee también **[Solicitud de ciudadanía: lista de documentos](/es/blog/einbuergerung-antrag-checkliste-2026/)** y **[Plazos de tramitación](/de/blog/bearbeitungszeit-einbuergerung/)**.
+Lee también **[Solicitud de ciudadanía: lista de documentos](/es/blog/einbuergerung-antrag-checkliste-2026/)** y **[Plazos de tramitación](/de/blog/bearbeitungszeit-einbuergerung/)** (en alemán).

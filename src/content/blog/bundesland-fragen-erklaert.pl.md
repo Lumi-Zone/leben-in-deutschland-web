@@ -58,7 +58,7 @@ Na prawdziwym egzaminie są 3 pytania o land. Należą one do 33 pytań egzamina
 Nie. Na egzamin wystarczy Twój land. Pozostałe landy zwykle nie są potrzebne.
 
 ## Test na obywatelstwo w Twoim mieście
-Konkretne informacje o ośrodkach, zapisach i właściwym urzędzie (po niemiecku) znajdziesz dla miast: [Berlin](/de/blog/einbuergerungstest-berlin/), [Hamburg](/de/blog/einbuergerungstest-hamburg/), [Monachium](/de/blog/einbuergerungstest-muenchen/), [Kolonia](/de/blog/einbuergerungstest-koeln/), [Frankfurt am Main](/de/blog/einbuergerungstest-frankfurt/) i [Stuttgart](/de/blog/einbuergerungstest-stuttgart/).
+Konkretne informacje o ośrodkach, zapisach i właściwym urzędzie znajdziesz dla miast: [Berlin](/pl/blog/einbuergerungstest-berlin/), [Hamburg](/pl/blog/einbuergerungstest-hamburg/), [Monachium](/pl/blog/einbuergerungstest-muenchen/), [Kolonia](/pl/blog/einbuergerungstest-koeln/), [Frankfurt am Main](/pl/blog/einbuergerungstest-frankfurt/) i [Stuttgart](/pl/blog/einbuergerungstest-stuttgart/).
 
 ## Następny krok
-Przeczytaj też **[Ile pytań ma test na obywatelstwo?](/pl/blog/wie-viele-fragen-hat-der-einbuergerungstest/)** i **[Tematy testu na obywatelstwo](/de/blog/wichtige-themengebiete/)**.
+Przeczytaj też **[Ile pytań ma test na obywatelstwo?](/pl/blog/wie-viele-fragen-hat-der-einbuergerungstest/)** i **[Tematy testu na obywatelstwo](/de/blog/wichtige-themengebiete/)** (po niemiecku).

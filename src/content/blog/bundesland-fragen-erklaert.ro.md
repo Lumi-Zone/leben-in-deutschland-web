@@ -58,7 +58,7 @@ La examenul real sunt 3 întrebări despre land. Ele fac parte din cele 33 de î
 Nu. Pentru examen ajunge landul tău. Celelalte landuri de obicei nu sunt necesare.
 
 ## Testul de cetățenie în orașul tău
-Informații concrete despre centre de examinare, înscriere și autoritatea competentă (în germană) găsești pentru [Berlin](/de/blog/einbuergerungstest-berlin/), [Hamburg](/de/blog/einbuergerungstest-hamburg/), [München](/de/blog/einbuergerungstest-muenchen/), [Köln](/de/blog/einbuergerungstest-koeln/), [Frankfurt am Main](/de/blog/einbuergerungstest-frankfurt/) și [Stuttgart](/de/blog/einbuergerungstest-stuttgart/).
+Informații concrete despre centre de examinare, înscriere și autoritatea competentă găsești pentru [Berlin](/ro/blog/einbuergerungstest-berlin/), [Hamburg](/ro/blog/einbuergerungstest-hamburg/), [München](/ro/blog/einbuergerungstest-muenchen/), [Köln](/ro/blog/einbuergerungstest-koeln/), [Frankfurt am Main](/ro/blog/einbuergerungstest-frankfurt/) și [Stuttgart](/ro/blog/einbuergerungstest-stuttgart/).
 
 ## Pasul următor
-Citește și **[Câte întrebări are testul de cetățenie?](/ro/blog/wie-viele-fragen-hat-der-einbuergerungstest/)** și **[Temele testului de cetățenie](/de/blog/wichtige-themengebiete/)**.
+Citește și **[Câte întrebări are testul de cetățenie?](/ro/blog/wie-viele-fragen-hat-der-einbuergerungstest/)** și **[Temele testului de cetățenie](/de/blog/wichtige-themengebiete/)** (în germană).

@@ -198,4 +198,4 @@ Da, mai ales pentru recapitulări scurte. O aplicație face mai ușoară învă�
 
 ## Pasul următor
 
-Începe acum cu **[exersarea întrebărilor](/ro/fragen/)**, deschide **[simularea de examen](/ro/exam/)** sau citește **[Testul 2026: cele 33 de întrebări pe înțeles](/de/blog/33-fragen-erklaert/)** (în germană).
+Începe acum cu **[exersarea întrebărilor](/ro/fragen/)**, deschide **[simularea de examen](/ro/exam/)** sau citește **[Testul 2026: cele 33 de întrebări pe înțeles](/ro/blog/33-fragen-erklaert/)**.

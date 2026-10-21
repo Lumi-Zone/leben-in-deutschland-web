@@ -33,6 +33,6 @@ Nelle grandi città come Berlino, Amburgo, Monaco o Francoforte le date possono 
 
 ## Passo 4: prepara le domande del Land giusto
 
-Studia le 300 domande generali e le 10 domande del Land in cui hai la residenza principale. Il foglio d'esame reale ha 30 domande generali e 3 sul Land. Mentre aspetti la data puoi [esercitarti con tutte le 300 domande con traduzione italiana](/it/fragen/) e [fare una simulazione d'esame da 33 domande](/it/exam/). Dopo il test leggi [quando arrivano i risultati](/de/blog/einbuergerungstest-ergebnis-wartezeit-bescheinigung/) (in tedesco).
+Studia le 300 domande generali e le 10 domande del Land in cui hai la residenza principale. Il foglio d'esame reale ha 30 domande generali e 3 sul Land. Mentre aspetti la data puoi [esercitarti con tutte le 300 domande con traduzione italiana](/it/fragen/) e [fare una simulazione d'esame da 33 domande](/it/exam/). Dopo il test leggi [quando arrivano i risultati](/it/blog/einbuergerungstest-ergebnis-wartezeit-bescheinigung/).
 
 Parti dalle [informazioni del BAMF sul test di cittadinanza](https://www.bamf.de/DE/Themen/Integration/ZugewanderteTeilnehmende/Einbuergerung/einbuergerung-node.html) e considera vincolanti per l'appuntamento le istruzioni del centro scelto.

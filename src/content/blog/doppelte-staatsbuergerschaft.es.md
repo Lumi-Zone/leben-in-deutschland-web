@@ -28,7 +28,7 @@ Antes, muchos solicitantes tenían que renunciar a su nacionalidad anterior. Est
 Para ti significa:
 
 - presentas la **solicitud normal de naturalización** ante tu autoridad: [solicitud y documentos](/es/blog/einbuergerung-antrag-checkliste-2026/);
-- cumples los [requisitos habituales de naturalización](/de/blog/einbuergerung-ablauf/), entre ellos B1 y el examen de ciudadanía;
+- cumples los [requisitos habituales de naturalización](/de/blog/einbuergerung-ablauf/) (en alemán), entre ellos B1 y el examen de ciudadanía;
 - Alemania no exige que renuncies a tu nacionalidad anterior.
 
 ## Caso 2: eres alemán y quieres una segunda nacionalidad

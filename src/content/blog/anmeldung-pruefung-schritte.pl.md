@@ -33,6 +33,6 @@ W dużych miastach, takich jak Berlin, Hamburg, Monachium czy Frankfurt, terminy
 
 ## Krok 4: przygotuj właściwe pytania o land
 
-Naucz się 300 pytań ogólnych i 10 pytań kraju związkowego, w którym masz zameldowanie na pobyt stały. Prawdziwy arkusz ma 30 pytań ogólnych i 3 o land. Czekając na termin, możesz [ćwiczyć wszystkie 300 pytań z polskim tłumaczeniem](/pl/fragen/) i [zrobić egzamin próbny z 33 pytaniami](/pl/exam/). Po teście przeczytaj, [kiedy przychodzą wyniki](/de/blog/einbuergerungstest-ergebnis-wartezeit-bescheinigung/) (po niemiecku).
+Naucz się 300 pytań ogólnych i 10 pytań kraju związkowego, w którym masz zameldowanie na pobyt stały. Prawdziwy arkusz ma 30 pytań ogólnych i 3 o land. Czekając na termin, możesz [ćwiczyć wszystkie 300 pytań z polskim tłumaczeniem](/pl/fragen/) i [zrobić egzamin próbny z 33 pytaniami](/pl/exam/). Po teście przeczytaj, [kiedy przychodzą wyniki](/pl/blog/einbuergerungstest-ergebnis-wartezeit-bescheinigung/).
 
 Zacznij od [informacji BAMF o teście na obywatelstwo](https://www.bamf.de/DE/Themen/Integration/ZugewanderteTeilnehmende/Einbuergerung/einbuergerung-node.html) i traktuj wskazówki wybranego ośrodka jako wiążące dla terminu.

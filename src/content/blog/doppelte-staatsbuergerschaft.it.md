@@ -28,7 +28,7 @@ In passato molti richiedenti dovevano rinunciare alla cittadinanza precedente. Q
 Per te significa:
 
 - presenti la **normale domanda di naturalizzazione** alla tua autorità: [domanda e documenti](/it/blog/einbuergerung-antrag-checkliste-2026/);
-- soddisfi i consueti [requisiti per la naturalizzazione](/de/blog/einbuergerung-ablauf/), tra cui B1 e test di cittadinanza;
+- soddisfi i consueti [requisiti per la naturalizzazione](/de/blog/einbuergerung-ablauf/) (in tedesco), tra cui B1 e test di cittadinanza;
 - la Germania non chiede di uscire dalla cittadinanza precedente.
 
 ## Caso 2: sei tedesco e vuoi una seconda cittadinanza

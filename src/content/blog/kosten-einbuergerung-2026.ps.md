@@ -67,4 +67,4 @@ tags: ["لګښتونه", "فیسونه", "مالي چارې"]
 غوره دا ده چې له ادارې سره له لومړۍ کتنې مخکې یې پیل کړئ.
 
 ## بل ګام
-همدارنګه **[د تابعیت غوښتنلیک: د اسنادو لېست](/ps/blog/einbuergerung-antrag-checkliste-2026/)** او **[د پروسس موده](/de/blog/bearbeitungszeit-einbuergerung/)** ولولئ.
+همدارنګه **[د تابعیت غوښتنلیک: د اسنادو لېست](/ps/blog/einbuergerung-antrag-checkliste-2026/)** او **[د پروسس موده](/de/blog/bearbeitungszeit-einbuergerung/)** (په آلماني) ولولئ.
