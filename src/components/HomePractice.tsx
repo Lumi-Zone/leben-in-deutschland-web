@@ -20,7 +20,7 @@ export default function HomePractice({ question, lang, labels }: Props) {
     markQuestionSolved(question.id);
     recordQuestionAttempt(question.id, index === question.correctIndex);
     recordHabitAttempt();
-    trackEvent('question-answered', { lang, question_id: question.id, selected_index: index, correct: index === question.correctIndex, location: 'home-hero' });
+    trackEvent('question-answered', { correct: index === question.correctIndex });
   }
   return (
     <div className="home-practice">
