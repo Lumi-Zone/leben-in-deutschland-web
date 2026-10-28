@@ -1,6 +1,6 @@
 ---
 title: "Datenschutzerklärung"
-lastUpdated: "12. Oktober 2026"
+lastUpdated: "3. November 2026"
 ---
 
 Diese Datenschutzerklärung beschreibt, wie und warum wir Ihre persönlichen Daten erfassen, speichern, verwenden und/oder weitergeben, wenn Sie unsere Dienste nutzen, einschließlich wenn Sie:
@@ -62,7 +62,7 @@ Wir verwenden Adapty, um den Abonnementstatus zu verwalten. Adapty verarbeitet d
 
 ### Werbung in der Anwendung
 
-Die kostenlose Version der Anwendung zeigt Werbung über Google Mobile Ads (AdMob) an. Google kann Geräteinformationen, die Werbe-ID und Daten zur Interaktion mit Anzeigen verarbeiten, um Anzeigen auszuliefern und zu messen. Soweit erforderlich, werden Sie in einem Einwilligungsdialog nach Ihrer Auswahl gefragt. Die Werbe-ID (IDFA) wird nur dann für personalisierte Werbung verwendet, wenn Sie das Tracking in der iOS-Abfrage erlauben; andernfalls wird nicht personalisierte Werbung angefordert.
+Die kostenlose Version der Anwendung zeigt Werbung über Google Mobile Ads (AdMob) an. Google kann Geräteinformationen, die Werbe-ID und Daten zur Interaktion mit Anzeigen verarbeiten, um Anzeigen auszuliefern und zu messen. Soweit erforderlich, werden Sie in einem Einwilligungsdialog nach Ihrer Auswahl gefragt. Ob Anzeigen personalisiert werden, richtet sich nach Ihrer Auswahl im Einwilligungsdialog, die Sie jederzeit unter Einstellungen → Datenschutzeinstellungen ändern können. Die Werbe-ID (IDFA) wird nur verwendet, wenn Sie das Tracking in der iOS-Abfrage erlauben.
 
 ### Werbemessung (Meta)
 

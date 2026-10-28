@@ -1,6 +1,6 @@
 ---
 title: "Privacy Policy"
-lastUpdated: "October 12, 2026"
+lastUpdated: "November 3, 2026"
 ---
 
 This Privacy Notice for us describes how and why we might access, collect, store, use, and/or share your personal information when you use our services, including when you:
@@ -62,7 +62,7 @@ We use Adapty to manage subscription status. Adapty processes the product purcha
 
 ### Advertising in the Application
 
-The free version of the application displays advertisements through Google Mobile Ads (AdMob). Google may process device information, the advertising identifier and ad interaction data to deliver and measure ads. Where required, you are asked for your choices in a consent dialog. The advertising identifier (IDFA) is used for personalized ads only if you allow tracking in the iOS prompt; otherwise non-personalized ads are requested.
+The free version of the application displays advertisements through Google Mobile Ads (AdMob). Google may process device information, the advertising identifier and ad interaction data to deliver and measure ads. Where required, you are asked for your choices in a consent dialog. Whether ads are personalized depends on your choice in the consent dialog, which you can change at any time under Settings → Privacy settings. The advertising identifier (IDFA) is used only if you allow tracking in the iOS prompt.
 
 ### Advertising Measurement (Meta)
 
