@@ -1,11 +1,12 @@
 ---
 title: "Datenschutzerklärung"
-lastUpdated: "3. November 2026"
+lastUpdated: "28. Oktober 2026"
 ---
 
 Diese Datenschutzerklärung beschreibt, wie und warum wir Ihre persönlichen Daten erfassen, speichern, verwenden und/oder weitergeben, wenn Sie unsere Dienste nutzen, einschließlich wenn Sie:
 
 *   Unsere mobile Anwendung (**Leben in Deutschland - Test**) herunterladen und nutzen oder eine andere unserer Anwendungen nutzen, die auf diese Datenschutzerklärung verweist
+*   Unsere Website **lid-einbuergerung.de** besuchen und deren Lernangebote nutzen
 *   Auf andere Weise mit uns in Kontakt treten, einschließlich Vertrieb, Marketing oder Veranstaltungen
 
 **Fragen oder Bedenken?** Das Lesen dieser Datenschutzerklärung hilft Ihnen, Ihre Datenschutzrechte und Wahlmöglichkeiten zu verstehen. Wir sind dafür verantwortlich, Entscheidungen darüber zu treffen, wie Ihre persönlichen Daten verarbeitet werden. Wenn Sie mit unseren Richtlinien und Praktiken nicht einverstanden sind, nutzen Sie unsere Dienste bitte nicht.
@@ -73,6 +74,18 @@ Wir bewerben die Anwendung auf Facebook und Instagram und verwenden das Meta SDK
 Wir verwenden Umami Analytics, einen datenschutzfreundlichen Webanalyse-Dienst von Umami Software, Inc., um zu verstehen, wie unsere Website genutzt wird und welche Inhalte verbessert werden sollten.
 
 Umami verarbeitet aggregierte Nutzungsdaten wie Seitenaufrufe, Referrer-URLs, Browser, Betriebssysteme, Gerätetypen, Länder und Kampagnenparameter. Nach Angaben von Umami verwendet der Tracking-Code keine Cookies, speichert keine personenbezogenen Inhalte aus Formularen und identifiziert Besucher nicht websiteübergreifend.
+
+### Vorbereitung von Werbung auf der Website
+
+Wir haben die Teilnahme unserer Website an Google AdSense beantragt und bereiten einen Einwilligungsdialog mit der Google-Plattform zur Einwilligungsverwaltung (CMP) vor. Derzeit ist auf der Website noch kein AdSense-Werbecode eingebunden; über die Website werden noch keine AdSense-Anzeigen ausgeliefert.
+
+Vor der Aktivierung der Website-Werbung aktualisieren wir diese Erklärung mit den Angaben zur tatsächlichen Einbindung. Bei einer Aktivierung können Google und die im Einwilligungsdialog genannten Werbepartner unter anderem IP-Adressen, Browser- und Geräteinformationen, ungefähre Standortdaten, Cookies oder ähnliche Kennungen sowie Interaktionen mit Anzeigen verarbeiten, um Werbung bereitzustellen und deren Leistung zu messen. Welche Partner und Zwecke berücksichtigt werden, wird im Einwilligungsdialog erläutert.
+
+Soweit für die Speicherung oder den Zugriff auf Informationen auf Ihrem Gerät oder die Verarbeitung personenbezogener Daten eine Einwilligung erforderlich ist, holen wir diese vor den entsprechenden Vorgängen ein. Nicht personalisierte Werbung kann ebenfalls einwilligungspflichtige Cookies verwenden. Ob und welche Anzeigen nach einer Ablehnung angezeigt werden können, hängt von den zulässigen eingeschränkten Anzeigenformaten und der jeweiligen Konfiguration ab.
+
+Wenn der Einwilligungsdialog auf der Website aktiv ist, können Sie Ihre Auswahl über den von Google am Seitenende eingeblendeten Link **„Datenschutz- und Cookie-Einstellungen“** erneut aufrufen, ändern oder widerrufen. Ein Widerruf gilt für die Zukunft. Die Einstellungen der mobilen Anwendung gelten unabhängig davon und müssen dort separat geändert werden.
+
+Weitere Informationen finden Sie in [Googles Datenschutzerklärung](https://policies.google.com/privacy?hl=de) und unter [So verwendet Google Informationen von Websites oder Apps, auf bzw. in denen unsere Dienste genutzt werden](https://policies.google.com/technologies/partner-sites?hl=de).
 
 Alle persönlichen Informationen, die Sie uns zur Verfügung stellen, müssen wahr, vollständig und genau sein, und Sie müssen uns über Änderungen solcher persönlichen Informationen informieren.
 

@@ -1,11 +1,12 @@
 ---
 title: "Privacy Policy"
-lastUpdated: "November 3, 2026"
+lastUpdated: "October 28, 2026"
 ---
 
 This Privacy Notice for us describes how and why we might access, collect, store, use, and/or share your personal information when you use our services, including when you:
 
 *   Download and use our mobile application (**Leben in Deutschland - Test**), or any other application of ours that links to this Privacy Notice
+*   Visit our website **lid-einbuergerung.de** and use its learning features
 *   Engage with us in other related ways, including any sales, marketing, or events
 
 **Questions or concerns?** Reading this Privacy Notice will help you understand your privacy rights and choices. We are responsible for making decisions about how your personal information is processed. If you do not agree with our policies and practices, please do not use our Services.
@@ -73,6 +74,18 @@ We advertise the application on Facebook and Instagram and use the Meta SDK to m
 We use Umami Analytics, a privacy-friendly web analytics service from Umami Software, Inc., to understand how our website is used and which content should be improved.
 
 Umami processes aggregated usage data such as page views, referrer URLs, browsers, operating systems, device types, countries, and campaign parameters. According to Umami, the tracking code does not use cookies, does not store personal content from forms, and does not identify visitors across websites.
+
+### Preparing Advertising on the Website
+
+We have applied for our website to participate in Google AdSense and are preparing a consent message using Google's consent management platform (CMP). No AdSense advertising code is currently embedded on the website, and the website does not yet serve AdSense ads.
+
+Before activating website advertising, we will update this notice to describe the actual implementation. Once activated, Google and the advertising partners listed in the consent message may process information such as IP addresses, browser and device information, approximate location, cookies or similar identifiers, and interactions with ads to deliver advertising and measure its performance. The consent message will explain the partners and purposes involved.
+
+Where consent is required to store or access information on your device or process personal information, we will obtain it before the corresponding activities. Non-personalized advertising may also use cookies that require consent. Whether any ads can be shown after consent is declined depends on the permitted limited ad formats and the actual configuration.
+
+When the website's consent message is active, you can reopen it to change or withdraw your choices using the **"Privacy and cookie settings"** link that Google displays at the bottom of the page. Withdrawal applies to future processing. The mobile application's privacy settings are separate and must be changed within the application.
+
+For more information, see [Google's Privacy Policy](https://policies.google.com/privacy?hl=en) and [How Google uses information from sites or apps that use our services](https://policies.google.com/technologies/partner-sites?hl=en).
 
 All personal information that you provide to us must be true, complete, and accurate, and you must notify us of any changes to such personal information.
 
