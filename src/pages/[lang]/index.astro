@@ -2,7 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import questions from '../../data/questions.json';
 import { useTranslations } from '../../i18n/ui';
-import { fillState, searchCopy, stateCopy, QUESTION_SOURCE_URL } from '../../i18n/seo';
+import { fillState, homeSearchCopy, searchCopy, stateCopy, QUESTION_SOURCE_URL } from '../../i18n/seo';
 import { getSeoLandingContent } from '../../data/seoLandingContent';
 import HomePractice from '../../components/HomePractice';
 import { buildQuestionSessionItem } from '../../utils/questions';
@@ -67,16 +67,17 @@ const recentBlogPosts = blogPosts
 const stateLinks = GERMAN_STATES;
 const isGerman = lang === 'de';
 const homeStore = buildStoreUrls({ source: 'home-app', lang });
-const seoTitle = isGerman
+const localizedHomeSearchCopy = homeSearchCopy[lang];
+const seoTitle = localizedHomeSearchCopy?.title ?? (isGerman
 	? 'Einbürgerungstest 2026 online üben | Leben in Deutschland 300 Fragen'
 	: lang === 'en'
 		? 'Leben in Deutschland Test 2026 in English | Free 300 Questions'
 		: searchCopy[lang].catalog.includes('Leben in Deutschland')
 			? searchCopy[lang].catalog
-			: `${t("hero.title")} | ${searchCopy[lang].catalog}`;
-const seoDescription = isGerman
+			: `${t("hero.title")} | ${searchCopy[lang].catalog}`);
+const seoDescription = localizedHomeSearchCopy?.description ?? (isGerman
 	? 'Üben Sie den Leben in Deutschland Test 2026 kostenlos online: 300 offizielle BAMF-Fragen, Bundesland-Fragen, Prüfungssimulation und einfache Erklärungen.'
-	: heroDescription;
+	: heroDescription);
 const seoKeywords = isGerman
 	? [
 		'einbürgerungstest 2026 online üben',
