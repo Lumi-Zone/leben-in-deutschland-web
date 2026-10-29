@@ -6,6 +6,7 @@ import { recordQuestionAttempt } from '../utils/questionStats';
 import { recordHabitAttempt } from '../utils/learningHabits';
 import { trackEvent } from '../utils/analytics';
 import { buildStoreUrl } from '../utils/appLinks';
+import { launchAppOrStore } from '../utils/appLaunch';
 import QuestionImage from './QuestionImage';
 import { getSeoLanguageMeta } from '../utils/seo';
 
@@ -87,22 +88,26 @@ export default function QuestionCard({
     const [jumpValue, setJumpValue] = useState('');
     const [jumpError, setJumpError] = useState('');
     const jumpInputRef = useRef<HTMLInputElement | null>(null);
+    const cancelAppLaunch = useRef<(() => void) | undefined>(undefined);
 
     useEffect(() => {
         setFavorite(isQuestionFavorite(id));
         setJumpValue('');
         setJumpError('');
+        return () => cancelAppLaunch.current?.();
     }, [id]);
 
     // Opens the question in the app when it is installed, otherwise sends the
     // visitor to the store with the placement attached so the install can be
     // attributed back to this question page.
     const handlePracticeInApp = () => {
+        cancelAppLaunch.current?.();
         const appScheme = `lebenindeutschland://question/${id}`;
 
         const userAgent = navigator.userAgent || '';
         const isAndroid = /android/i.test(userAgent);
-        const isIOS = /iPad|iPhone|iPod/.test(userAgent);
+        const isIOS = /iPad|iPhone|iPod/.test(userAgent)
+            || (/Macintosh/.test(userAgent) && navigator.maxTouchPoints > 1);
         const isMobile = isAndroid || isIOS;
 
         const storeUrl = buildStoreUrl({
@@ -113,36 +118,18 @@ export default function QuestionCard({
         });
 
         trackEvent('practice-app-click', {
-            lang: currentLang,
-            question_id: id,
+            // The page URL already carries language and question id. Each custom
+            // property also consumes Umami quota; only platform is needed here.
             platform: isAndroid ? 'android' : isIOS ? 'ios' : 'desktop',
-            destination: isAndroid ? 'play-store' : 'app-store',
         });
-
-        if (!isMobile) {
-            window.open(storeUrl, '_blank', 'noopener');
-            return;
-        }
-
-        // If the scheme is handled, the page is backgrounded before the timer
-        // fires. Without this guard the visitor is bounced to the store on
-        // returning from the app, which reads as a broken link.
-        let cancelled = false;
-        const cancel = () => {
-            if (document.visibilityState === 'hidden') cancelled = true;
-        };
-        document.addEventListener('visibilitychange', cancel);
-        window.addEventListener('pagehide', () => {
-            cancelled = true;
+        cancelAppLaunch.current = launchAppOrStore({
+            appUrl: appScheme,
+            storeUrl,
+            isMobile,
+            onStoreRedirect: () => trackEvent(isAndroid ? 'play-store-click' : 'app-store-click', {
+                location: 'question-page',
+            }),
         });
-
-        window.location.href = appScheme;
-
-        window.setTimeout(() => {
-            document.removeEventListener('visibilitychange', cancel);
-            if (cancelled || document.visibilityState === 'hidden') return;
-            window.location.href = storeUrl;
-        }, 1200);
     };
 
     // Always get German content

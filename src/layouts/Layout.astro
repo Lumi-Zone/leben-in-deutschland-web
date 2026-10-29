@@ -298,7 +298,18 @@ const bannerDismissLabel = bannerTranslate('banner.dismiss');
 				if (!dismissalExpired) return;
 
 				banner.hidden = false;
-				track('smart-banner-shown', { platform, context });
+				// A study visit may span hundreds of question pages. Keep the existing
+				// banner event, but count it at most once per tab/platform/context in
+				// 30 minutes. Storage failure skips this optional impression event.
+				// Store clicks are still recorded on every deliberate click below.
+				try {
+					const shownKey = `smart-banner-shown-at:${platform}:${context}`;
+					const lastShown = Number(sessionStorage.getItem(shownKey)) || 0;
+					if (Date.now() - lastShown >= 30 * 60 * 1000 && typeof window.umami?.track === 'function') {
+						sessionStorage.setItem(shownKey, String(Date.now()));
+						track('smart-banner-shown', { platform, context });
+					}
+				} catch { /* Optional impressions must not consume quota on every page. */ }
 
 				closeButton.addEventListener('click', () => {
 					banner.hidden = true;
@@ -355,7 +366,8 @@ const bannerDismissLabel = bannerTranslate('banner.dismiss');
 				report();
 			})();
 		</script>
-		<script is:inline>
+		<script>
+			import { prefixAppleCampaignOrigin } from '../utils/appLinks';
 			(() => {
 				// A visitor who scanned a desktop QR code, or arrived from a social
 				// post, carries that origin in the URL. Fold it into the campaign token
@@ -367,7 +379,7 @@ const bannerDismissLabel = bannerTranslate('banner.dismiss');
 				const origin = arrival.replace(/[^a-z0-9_-]/g, '').slice(0, 24);
 				if (!origin) return;
 
-				const links = document.querySelectorAll('a[href*="apps.apple.com"], a[href*="play.google.com"]');
+				const links = document.querySelectorAll<HTMLAnchorElement>('a[href*="apps.apple.com"], a[href*="play.google.com"]');
 				for (const link of links) {
 					let url;
 					try {
@@ -378,7 +390,7 @@ const bannerDismissLabel = bannerTranslate('banner.dismiss');
 
 					if (url.hostname.endsWith('apps.apple.com')) {
 						const existing = url.searchParams.get('ct');
-						url.searchParams.set('ct', (existing ? origin + '-' + existing : origin).slice(0, 40));
+						url.searchParams.set('ct', prefixAppleCampaignOrigin(existing || '', origin));
 					} else {
 						const referrer = new URLSearchParams(url.searchParams.get('referrer') || '');
 						referrer.set('utm_source', origin);

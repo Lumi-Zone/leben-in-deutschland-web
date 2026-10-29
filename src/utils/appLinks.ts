@@ -75,8 +75,18 @@ const APPLE_PROVIDER_TOKEN =
 const UTM_SOURCE = 'lid-web';
 const UTM_CAMPAIGN = 'web2app';
 
-/** Apple truncates campaign tokens beyond 40 characters. */
-const APPLE_CAMPAIGN_MAX_LENGTH = 40;
+/** App Store Connect's campaign-name field accepts up to 30 characters. */
+const APPLE_CAMPAIGN_MAX_LENGTH = 30;
+
+/** Keep the placement intact when an arrival source is prefixed to the token. */
+export function prefixAppleCampaignOrigin(placement: string, origin: string): string {
+  const campaign = placement.slice(0, APPLE_CAMPAIGN_MAX_LENGTH);
+  const safeOrigin = origin.toLowerCase().replace(/[^a-z0-9_-]/g, '');
+  if (!safeOrigin) return campaign;
+  if (!campaign) return safeOrigin.slice(0, APPLE_CAMPAIGN_MAX_LENGTH);
+  const available = APPLE_CAMPAIGN_MAX_LENGTH - campaign.length - 1;
+  return available > 0 ? `${safeOrigin.slice(0, available)}-${campaign}` : campaign;
+}
 
 /**
  * Apple hides any campaign that has not been installed by at least five distinct
