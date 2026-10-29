@@ -57,6 +57,7 @@ async function walk(directory) {
 await access(root);
 await walk(root);
 const sitemapUrls = new Set();
+const sitemapLastModified = new Map();
 const sitemapFiles = (await readdir(root)).filter((file) => /^sitemap-\d+\.xml$/.test(file));
 assert(sitemapFiles.length > 0, 'No generated sitemap found; run npm run build first.');
 for (const file of sitemapFiles) {
@@ -67,6 +68,11 @@ for (const file of sitemapFiles) {
     const page = pages.get(url);
     assertPage(page && !page.noindex && page.canonical === url, `${url}: sitemap target missing, noindex, or noncanonical`);
   }
+  for (const [, entry] of xml.matchAll(/<url>([\s\S]*?)<\/url>/g)) {
+    const url = decode(entry.match(/<loc>([^<]+)<\/loc>/)?.[1] ?? '');
+    const lastModified = entry.match(/<lastmod>([^<]+)<\/lastmod>/)?.[1];
+    if (url && lastModified) sitemapLastModified.set(url, lastModified);
+  }
   for (const tag of tags(xml, 'xhtml:link')) {
     const target = pages.get(attr(tag, 'href'));
     assertPage(target && !target.noindex, `${file}: invalid sitemap alternate ${attr(tag, 'href')}`);
@@ -74,6 +80,10 @@ for (const file of sitemapFiles) {
 }
 for (const [url, page] of pages) {
   if (!page.noindex) assertPage(sitemapUrls.has(url), `${url}: missing from sitemap`);
+  if (page.html.includes('property="article:modified_time"') || page.html.includes('"dateModified"')) {
+    const lastModified = sitemapLastModified.get(url);
+    assertPage(Boolean(lastModified) && !Number.isNaN(new Date(lastModified).valueOf()), `${url}: explicit modification date missing from sitemap`);
+  }
   for (const alternate of page.alternates) {
     const target = pages.get(alternate.href);
     assertPage(target && !target.noindex && target.canonical === alternate.href, `${url}: invalid hreflang ${alternate.href}`);
