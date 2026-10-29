@@ -4,16 +4,18 @@ import { readFile } from 'node:fs/promises';
 import vm from 'node:vm';
 import ts from 'typescript';
 
-async function moduleFromSource(path, replacements = []) {
+async function moduleUrlFromSource(path, replacements = []) {
   const source = await readFile(new URL(path, import.meta.url), 'utf8');
   let compiled = ts.transpileModule(source, { compilerOptions: { module: ts.ModuleKind.ESNext } }).outputText;
   for (const [from, to] of replacements) compiled = compiled.replace(from, to);
-  return import(`data:text/javascript;base64,${Buffer.from(compiled).toString('base64')}`);
+  return `data:text/javascript;base64,${Buffer.from(compiled).toString('base64')}`;
 }
-const { launchAppOrStore } = await moduleFromSource('../src/utils/appLaunch.ts');
-const { buildStoreUrl, prefixAppleCampaignOrigin } = await moduleFromSource('../src/utils/appLinks.ts', [
-  ["'./siteIdentity'", JSON.stringify(new URL('../src/utils/siteIdentity.ts', import.meta.url).href)],
-]);
+const { launchAppOrStore } = await import(await moduleUrlFromSource('../src/utils/appLaunch.ts'));
+// CI uses Node 20, which cannot import a raw .ts file. Compile dependencies too.
+const siteIdentityUrl = await moduleUrlFromSource('../src/utils/siteIdentity.ts');
+const { buildStoreUrl, prefixAppleCampaignOrigin } = await import(await moduleUrlFromSource('../src/utils/appLinks.ts', [
+  ["'./siteIdentity'", JSON.stringify(siteIdentityUrl)],
+]));
 
 function launcher() {
   const navigations = [], events = [], timers = new Set(), visibility = new Set(), hides = new Set();
