@@ -32,6 +32,12 @@ const { location, lang, class: className } = Astro.props;
             <circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none" />
           </svg>
         )}
+        {profile.platform === 'youtube' && (
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <rect x="2.5" y="5" width="19" height="14" rx="4.5" />
+            <path d="M10.2 9.2v5.6l4.8-2.8z" fill="currentColor" stroke="none" />
+          </svg>
+        )}
         {profile.platform === 'facebook' && (
           <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
             <path d="M17.5 2.5h-2.75a4.75 4.75 0 0 0-4.75 4.75V10.5H7v4h3v7h4v-7h3l1-4h-4V7.25c0-.55.45-1 1-1h2.5z" />

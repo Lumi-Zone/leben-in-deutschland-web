@@ -1,6 +1,6 @@
 ---
 title: "Datenschutzerklärung"
-lastUpdated: "28. Oktober 2026"
+lastUpdated: "30. Oktober 2026"
 ---
 
 Diese Datenschutzerklärung beschreibt, wie und warum wir Ihre persönlichen Daten erfassen, speichern, verwenden und/oder weitergeben, wenn Sie unsere Dienste nutzen, einschließlich wenn Sie:
@@ -193,3 +193,16 @@ Wenn Sie Fragen oder Kommentare zu dieser Mitteilung haben, kontaktieren Sie uns
 <h2 id="review">13. WIE KÖNNEN SIE DIE DATEN, DIE WIR VON IHNEN SAMMELN, ÜBERPRÜFEN, AKTUALISIEREN ODER LÖSCHEN?</h2>
 
 Basierend auf den geltenden Gesetzen Ihres Landes oder Ihres Wohnsitzstaates in den USA haben Sie möglicherweise das Recht, Zugang zu den persönlichen Informationen zu verlangen, die wir von Ihnen sammeln, Details darüber zu erfahren, wie wir sie verarbeitet haben, Ungenauigkeiten zu korrigieren oder Ihre persönlichen Informationen zu löschen. Sie haben möglicherweise auch das Recht, Ihre Einwilligung zur Verarbeitung Ihrer persönlichen Informationen zu widerrufen.
+
+<h2 id="youtube">14. YOUTUBE-KANAL UND YOUTUBE API SERVICES</h2>
+
+**Kurz gesagt:** Wir laden unsere eigenen Lernvideos über die YouTube API Services auf unseren eigenen YouTube-Kanal hoch. Dabei greifen wir nicht auf Daten von Website-Besuchern, App-Nutzern oder anderen YouTube-Nutzern zu.
+
+Auf unserem YouTube-Kanal [Leben in Deutschland 2026](https://www.youtube.com/@einbuergerungstest-deutschland) veröffentlichen wir kurze Lernvideos zu den Fragen des Einbürgerungstests. Zum Hochladen und Planen dieser Videos nutzen wir die YouTube API Services mit einem eigenen, nur intern verwendeten Werkzeug („LiD Shorts Uploader“).
+
+- **Wessen Daten:** Das Werkzeug meldet sich ausschließlich bei unserem eigenen YouTube-Kanal an. Es erhebt, speichert oder teilt keine Daten von Besuchern dieser Website, Nutzern unserer App oder anderen YouTube-Nutzern.
+- **Welche Daten:** Verwendet werden nur die Kennung und der Name unseres eigenen Kanals (um sicherzustellen, dass auf den richtigen Kanal hochgeladen wird) sowie die Kennungen und Veröffentlichungszeiten der von uns hochgeladenen Videos. Diese Angaben werden nur auf unserem eigenen Rechner gespeichert und nicht weitergegeben.
+- **Speicherdauer und Löschung:** Der Zugriffsschlüssel für unseren Kanal bleibt auf unserem Rechner und wird gelöscht, sobald wir das Werkzeug nicht mehr verwenden. Der Zugriff kann jederzeit in den Google-Kontoeinstellungen unter [Drittanbieter-Apps mit Kontozugriff](https://myaccount.google.com/permissions) widerrufen werden. Angaben zu einem Video löschen wir, wenn das Video vom Kanal entfernt wird.
+- **Website und App:** Unsere Website und unsere App betten keine YouTube-Videos ein und nutzen die YouTube API Services nicht für Besucher. Der Link zu unserem Kanal ist ein einfacher Link; Daten verarbeitet YouTube erst, wenn Sie ihn öffnen.
+
+Wenn Sie unsere Videos auf YouTube ansehen, gelten die [Nutzungsbedingungen von YouTube](https://www.youtube.com/t/terms). Wie Google Daten verarbeitet, erklärt die [Datenschutzerklärung von Google](https://policies.google.com/privacy). Fragen zu diesem Abschnitt richten Sie bitte an die in Abschnitt 12 genannte E-Mail-Adresse.

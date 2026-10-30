@@ -11,9 +11,11 @@ export const INSTAGRAM_URL = 'https://www.instagram.com/einbuergerungstest2026/'
  * Page settings this can become the shorter vanity URL.
  */
 export const FACEBOOK_URL = 'https://www.facebook.com/profile.php?id=61593945635647';
+/** Channel "Leben in Deutschland 2026" (UCwWpY5VnUcN3YIrDkmYDR2Q), where the question Shorts are published. */
+export const YOUTUBE_URL = 'https://www.youtube.com/@einbuergerungstest-deutschland';
 
 /** Analytics keeps these as a closed set so platform reports stay comparable. */
-export type SocialPlatform = 'x' | 'instagram' | 'facebook';
+export type SocialPlatform = 'x' | 'instagram' | 'facebook' | 'youtube';
 
 export interface SocialProfile {
   platform: SocialPlatform;
@@ -24,6 +26,7 @@ export interface SocialProfile {
 
 export const SOCIAL_PROFILES: SocialProfile[] = [
   { platform: 'instagram', label: 'Instagram', url: INSTAGRAM_URL },
+  { platform: 'youtube', label: 'YouTube', url: YOUTUBE_URL },
   { platform: 'facebook', label: 'Facebook', url: FACEBOOK_URL },
   { platform: 'x', label: 'X', url: X_URL },
 ];

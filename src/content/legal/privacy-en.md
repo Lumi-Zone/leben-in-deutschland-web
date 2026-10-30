@@ -1,6 +1,6 @@
 ---
 title: "Privacy Policy"
-lastUpdated: "October 28, 2026"
+lastUpdated: "October 30, 2026"
 ---
 
 This Privacy Notice for us describes how and why we might access, collect, store, use, and/or share your personal information when you use our services, including when you:
@@ -197,3 +197,16 @@ If you have questions or comments about this notice, please contact us by email 
 ## 13. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?
 
 Based on the applicable laws of your country or state of residence in the US, you may have the right to request access to the personal information we collect from you, details about how we have processed it, correct inaccuracies, or delete your personal information. You may also have the right to withdraw your consent to our processing of your personal information.
+
+## 14. YOUTUBE CHANNEL AND YOUTUBE API SERVICES
+
+**In Short:** We upload our own learning videos to our own YouTube channel using the YouTube API Services. We do not access data of website visitors, app users or other YouTube users.
+
+On our YouTube channel [Leben in Deutschland 2026](https://www.youtube.com/@einbuergerungstest-deutschland) we publish short learning videos about the questions of the naturalization test. To upload and schedule these videos we use the YouTube API Services through our own internal tool ("LiD Shorts Uploader").
+
+*   **Whose data:** The tool signs in only to our own YouTube channel. It does not collect, store or share data of visitors to this website, users of our app or other YouTube users.
+*   **What data:** It uses only the ID and name of our own channel (to make sure it uploads to the right channel) and the IDs and publishing times of the videos we upload. This information is stored only on our own computer and is not shared.
+*   **Retention and deletion:** The access token for our channel stays on our computer and is deleted when we stop using the tool. Access can be revoked at any time in the Google Account settings under [Third-party apps with account access](https://myaccount.google.com/permissions). We delete the information about a video when the video is removed from the channel.
+*   **Website and app:** Our website and app do not embed YouTube videos and do not use the YouTube API Services for visitors. The link to our channel is a plain link; YouTube processes data only once you open it.
+
+When you watch our videos on YouTube, the [YouTube Terms of Service](https://www.youtube.com/t/terms) apply. How Google processes data is explained in the [Google Privacy Policy](https://policies.google.com/privacy). Please send questions about this section to the email address in section 12.
