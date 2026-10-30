@@ -14,6 +14,8 @@ Bu değişiklikler mevcut Astro / GitHub Pages yayını içindir. Yeni alan adı
 - Umami'de ChatGPT yönlendirmesinin açılış sayfası ve diliyle `chatgpt-referral-landing` olayı olarak ölçülmesi. Mağaza tıklama olayları mevcut dil ve konum parametrelerini korur.
 - Tutarlı son eğik çizgi; JSON-LD dil kodları BCP 47 biçiminde (`ua` adresi için `uk-UA`); JSON-LD içinde HTML kapanışına karşı güvenli serileştirme.
 - OAI-SearchBot için açık erişim. Önceki `User-agent: * / Allow: /` politikası zaten izin veriyordu; bu değişiklik erişim niyetini açık hâle getirir, yeni bir sıralama sinyali değildir. Model eğitimi politikası değişmedi.
+- Google-Extended için açık erişim. Bu token Gemini Apps'in Google Arama ile grounding kullanımına ve gelecekteki Gemini modellerinin eğitimine izin verir; Google Arama'ya eklenme veya sıralama üzerinde etkisi yoktur.
+- İndekslenebilir sayfaların `nosnippet` taşımadığı ve `max-snippet:-1` ile üretken Google Arama özelliklerine uygun kaldığı her derlemede denetlenir.
 - İsteğe bağlı Google/Bing doğrulama etiketleri ve GitHub Actions değişkenleri.
 - Her üretim derlemesinden sonra otomatik SEO denetimi: canonical, noindex, sitemap kapsamı, hreflang hedefleri ve karşılıklılığı, JSON-LD, H1, açıklama, soru dizinleri ve cevapların HTML çıktısı.
 
@@ -23,7 +25,7 @@ Bu değişiklikler mevcut Astro / GitHub Pages yayını içindir. Yeni alan adı
 2. Google Search Console ve Bing Webmaster Tools içinde mevcut alan adı mülkünü kullanın. Doğrulama zaten tamamlandıysa yeni etiket gerekmez. Gerekliyse verilen etiketin yalnızca `content` değerini `PUBLIC_GOOGLE_SITE_VERIFICATION` veya `PUBLIC_BING_SITE_VERIFICATION` adlı GitHub repository variable olarak kaydedip yeniden derleyin. DNS doğrulaması da kullanılabilir; kodda sahte doğrulama değeri yoktur.
 3. `https://lid-einbuergerung.de/sitemap-index.xml` adresini bu araçlara gönderin. Ana sayfa ve `/de/fragen/`, `/tr/fragen/` gibi yeni dizinleri URL inceleme aracıyla kontrol edin. Binlerce sayfayı tekrar tekrar elle göndermeyin.
 4. Yayından sonra gerçek alan adında robots.txt, sitemap, canonical ve yanıt kodlarını kontrol edin. CDN veya güvenlik duvarı varsa OpenAI'nin yayımladığı arama tarayıcısı IP aralıklarının engellenmediğini doğrulayın. robots.txt tek başına HTTP erişimini kanıtlamaz.
-5. Search Console / Bing gösterim, tıklama, indeksleme ve sorgu raporlarını; Umami'de `chatgpt-referral-landing`, `app-store-click` ve `play-store-click` olaylarını dil/açılış sayfası kırılımında takip edin. Tarihli bir başlangıç ölçümü tutup değişiklikleri karşılaştırın. AI yönlendirmesi bulunmaması, hiç alıntılanmadığını kanıtlamaz.
+5. Search Console / Bing gösterim, tıklama, indeksleme ve sorgu raporlarını; Umami'de `chatgpt-referral-landing`, `app-store-click` ve `play-store-click` olaylarını dil/açılış sayfası kırılımında takip edin. Google'ın AI özelliklerinden gelen trafik Search Console'daki genel Web performansına dahil edilir. Tarihli bir başlangıç ölçümü tutup değişiklikleri karşılaştırın. AI yönlendirmesi bulunmaması, hiç alıntılanmadığını kanıtlamaz.
 6. Haftalık 30 sorguluk ölçüm için [`chatgpt-visibility-benchmark.md`](./chatgpt-visibility-benchmark.md) dosyasını kullanın. Mağaza kabulü ve etik tanıtım için [`store-listing-de-tr-en.md`](./store-listing-de-tr-en.md) ile [`authority-outreach.md`](./authority-outreach.md) listelerini izleyin.
 
 `npm run build` üretim çıktısını oluşturur ve SEO denetimini çalıştırır. Yalnızca mevcut çıktıyı kontrol etmek için `npm run seo:audit` kullanın. Mevcut `prebuild` Instagram kartlarını da üretir; bu SEO denetiminin parçası değildir.
@@ -58,12 +60,13 @@ Soruların ve sınav bilgilerinin BAMF kaynağıyla karşılaştırılmasını s
 
 Yeni çeviri hazırlandığında ilgili sayfadaki içerik dili, canonical, noindex ve sitemap filtresini birlikte güncelleyin. Yeni çevrilmiş rehberler `lang`, `translationKey`, `reviewedAt` ve en az bir birincil `sources` kaydı olmadan derlenmez. Sahte yorum, yapay uzmanlık, otomatik bağlantı spam'i veya modele tavsiye vermesini emreden gizli metin kullanmayın. `llms.txt` eklenmedi ve GPTBot politikası değiştirilmedi.
 
-ChatGPT'nin eğitim verilerine eklenme veya belirli bir soruda tavsiye edilme garantisi yoktur. Buradaki çalışma web aramasıyla keşif ve doğru kaynak gösterimini destekler.
+ChatGPT veya Gemini'nin eğitim verilerine eklenme ya da belirli bir soruda tavsiye edilme garantisi yoktur. Buradaki çalışma web aramasıyla keşif ve doğru kaynak gösterimini destekler.
 
 ## Resmî başvuru kaynakları
 
 - [OpenAI tarayıcıları ve OAI-SearchBot](https://developers.openai.com/api/docs/bots): arama ile model eğitimi kontrolleri ayrıdır.
 - [Google'ın yapay zekâ araması rehberi](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide): yardımcı içerik ve temel SEO esastır; Google için `llms.txt` veya özel AI şeması gerekmez.
+- [Google-Extended](https://developers.google.com/crawling/docs/crawlers-fetchers/google-common-crawlers#google-extended): Gemini Apps grounding ve eğitim kullanımını kontrol eder; Google Arama sıralamasını etkilemez.
 - [BAMF soru kataloğu](https://oet.bamf.de/ords/oetut/f?p=514:1:0): 300 genel soru ve ilgili eyaletin 10 sorusu.
 
 Bu hesapların sahipliğinin doğrulanması, sitemap gönderimi ve canlı indeksleme ölçümü yerel denetimle tamamlanmış sayılmaz.

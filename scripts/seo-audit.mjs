@@ -28,7 +28,11 @@ async function walk(directory) {
       const canonicalTags = links.filter((tag) => attr(tag, 'rel') === 'canonical');
       const canonical = attr(canonicalTags[0] ?? '', 'href');
       const meta = tags(html, 'meta');
-      const noindex = meta.some((tag) => attr(tag, 'name') === 'robots' && attr(tag, 'content').includes('noindex'));
+      const robotsDirective = meta
+        .filter((tag) => attr(tag, 'name').toLowerCase() === 'robots')
+        .map((tag) => attr(tag, 'content').toLowerCase())
+        .join(',');
+      const noindex = robotsDirective.includes('noindex');
       const alternates = links.filter((tag) => attr(tag, 'hreflang')).map((tag) => ({ lang: attr(tag, 'hreflang'), href: attr(tag, 'href') }));
       const body = html.slice(html.indexOf('<body'));
       const anchors = tags(body, 'a').map((tag) => attr(tag, 'href'));
@@ -39,6 +43,8 @@ async function walk(directory) {
       if (!noindex) {
         assertPage(canonical === url, `${url}: canonical mismatch: ${canonical}`);
         assertPage((body.match(/<h1\b/g) ?? []).length === 1, `${url}: expected one rendered H1`);
+        assertPage(!robotsDirective.includes('nosnippet'), `${url}: nosnippet blocks use in Google AI search features`);
+        assertPage(robotsDirective.includes('max-snippet:-1'), `${url}: unlimited search snippets must remain enabled`);
       }
       for (const [, json] of html.matchAll(/<script[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g)) {
         try { JSON.parse(json); } catch { errors.push(`${url}: invalid JSON-LD`); }
@@ -233,6 +239,7 @@ for (const lang of priorityLanguages) {
 }
 const robots = await readFile(path.join(root, 'robots.txt'), 'utf8');
 assertPage(/User-agent: OAI-SearchBot\s+Allow: \//.test(robots), 'ChatGPT Search crawler must be allowed');
+assertPage(/User-agent: Google-Extended\s+Allow: \//.test(robots), 'Gemini grounding and model access must be allowed');
 assertPage(robots.includes(`${origin}/sitemap-index.xml`), 'robots.txt sitemap missing');
 if (errors.length) {
   console.error(errors.slice(0, 40).join('\n'));

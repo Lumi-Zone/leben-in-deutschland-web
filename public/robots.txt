@@ -1,8 +1,13 @@
 User-agent: *
 Allow: /
 
-# ChatGPT Search discovery. Training crawler policy remains unchanged.
+# ChatGPT Search discovery. This does not change GPTBot training access.
 User-agent: OAI-SearchBot
+Allow: /
+
+# Gemini Apps grounding and future Gemini model training. Google Search ranking
+# is controlled by Googlebot and is unaffected by this standalone token.
+User-agent: Google-Extended
 Allow: /
 
 Sitemap: https://lid-einbuergerung.de/sitemap-index.xml
