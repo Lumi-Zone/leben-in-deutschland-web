@@ -198,7 +198,7 @@ If you have questions or comments about this notice, please contact us by email 
 
 Based on the applicable laws of your country or state of residence in the US, you may have the right to request access to the personal information we collect from you, details about how we have processed it, correct inaccuracies, or delete your personal information. You may also have the right to withdraw your consent to our processing of your personal information.
 
-## 14. YOUTUBE CHANNEL AND YOUTUBE API SERVICES
+<h2 id="youtube">14. YOUTUBE CHANNEL AND YOUTUBE API SERVICES</h2>
 
 **In Short:** We upload our own learning videos to our own YouTube channel using the YouTube API Services. We do not access data of website visitors, app users or other YouTube users.
 
