@@ -1,9 +1,12 @@
 User-agent: *
 Allow: /
+# Searchers should land on the PDF pages, which carry measurement and the app links.
+Disallow: /downloads/
 
 # ChatGPT Search discovery. This does not change GPTBot training access.
 User-agent: OAI-SearchBot
 Allow: /
+Disallow: /downloads/
 
 # Gemini Apps grounding and future Gemini model training. Google Search ranking
 # is controlled by Googlebot and is unaffected by this standalone token.

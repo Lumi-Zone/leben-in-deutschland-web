@@ -6,7 +6,7 @@
     "prebuild": "npm run instagram:cards",
     "dev": "astro dev",
     "build": "astro build",
-    "postbuild": "npm run sitemap:dates && npm run sitemap:test && npm run share:test && npm run exam:test && npm run growth:test && npm run seo:audit && npm run links:audit && npm run indexnow:manifest",
+    "postbuild": "npm run sitemap:dates && npm run sitemap:test && npm run share:test && npm run exam:test && npm run growth:test && npm run pdf:test && npm run seo:audit && npm run links:audit && npm run indexnow:manifest",
     "seo:audit": "node scripts/seo-audit.mjs",
     "sitemap:dates": "node scripts/sitemap-lastmod.mjs",
     "sitemap:test": "node --test scripts/sitemap-lastmod.test.mjs",
@@ -33,6 +33,8 @@
     "qrcode:test": "node --test scripts/qrcode.test.mjs",
     "applinks:test": "node --test scripts/applinks.test.mjs",
     "growth:test": "node --test scripts/growth-measurement.test.mjs",
+    "pdf:catalog": "node scripts/pdf/generate-catalog.mjs",
+    "pdf:test": "node --test scripts/pdf/catalog.test.mjs",
     "links:audit": "node scripts/link-audit.mjs",
     "indexnow:manifest": "node scripts/indexnow.mjs manifest",
     "indexnow:test": "node --test scripts/indexnow.test.mjs",
@@ -56,6 +58,8 @@
     "typescript": "^5.9.3"
   },
   "devDependencies": {
+    "@fontsource/noto-sans": "^5.3.0",
+    "@fontsource/noto-sans-arabic": "^5.3.0",
     "@tailwindcss/typography": "^0.5.19",
     "sharp": "^0.34.5"
   }

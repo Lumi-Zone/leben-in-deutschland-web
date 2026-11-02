@@ -32,6 +32,7 @@ export type InstallSource =
   | 'app-page-sticky'
   | 'app-page-qr'
   | 'seo-landing'
+  | 'pdf-guide'
   | 'question-page'
   | 'exam-result'
   | 'smart-banner'

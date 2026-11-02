@@ -4,6 +4,7 @@ import ExplainedQuestionPreview from '../../components/ExplainedQuestionPreview.
 import Header from '../../components/Header.astro';
 import questions from '../../data/questions.json';
 import { GERMAN_STATES, getStateDisplayName } from '../../data/germanStates';
+import { PDF_ROUTE, isPdfLanguage, pdfLandingContent } from '../../data/pdfLandingContent';
 import { getSeoLandingContent } from '../../data/seoLandingContent';
 import { SUPPORTED_LANGUAGES, type SupportedLang } from '../../types/language';
 import { useTranslations } from '../../i18n/ui';
@@ -62,6 +63,7 @@ const schema = {
         <p class="mt-4">{copy.independence}</p>
         <a class="text-link inline-block mt-3" href={QUESTION_SOURCE_URL}>{copy.source} ↗</a>
         <p class="mt-4"><a class="text-link" href={getPath(`${lang}/einbuergerungstest-online/`)}>{testGuide.heading} →</a></p>
+        {isPdfLanguage(lang) && <p class="mt-2"><a class="text-link" href={getPath(`${lang}/${PDF_ROUTE}/`)}>{pdfLandingContent[lang].catalogueLink} →</a></p>}
       </header>
       {explanationPilot && <section class="mb-6 border-s-4 border-emerald-300 ps-4" aria-labelledby="explanation-pilot-title">
         <h2 id="explanation-pilot-title" class="text-lg font-bold">{explanationPilot.title}</h2>

@@ -241,6 +241,15 @@ const robots = await readFile(path.join(root, 'robots.txt'), 'utf8');
 assertPage(/User-agent: OAI-SearchBot\s+Allow: \//.test(robots), 'ChatGPT Search crawler must be allowed');
 assertPage(/User-agent: Google-Extended\s+Allow: \//.test(robots), 'Gemini grounding and model access must be allowed');
 assertPage(robots.includes(`${origin}/sitemap-index.xml`), 'robots.txt sitemap missing');
+assertPage(/User-agent: \*\s+Allow: \/[\s\S]*?Disallow: \/downloads\//.test(robots), 'PDF files must stay out of the index so searchers land on the PDF pages');
+for (const lang of ['de', 'ar', 'tr', 'ua', 'en']) {
+  const url = `${origin}/${lang}/einbuergerungstest-fragen-pdf/`;
+  const page = pages.get(url);
+  assertPage(page && !page.noindex, `${url}: PDF page must be indexable`);
+  assertPage(page?.body.includes(`data-pdf-download="${lang}"`), `${url}: missing PDF download button`);
+  assertPage(page?.body.includes('oet.bamf.de') && page?.body.includes('bamf.de/'), `${url}: official sources must be rendered`);
+  assertPage(pages.get(`${origin}/${lang}/fragen/`)?.anchors.includes(`/${lang}/einbuergerungstest-fragen-pdf/`), `${lang}: catalogue must link to the PDF page`);
+}
 if (errors.length) {
   console.error(errors.slice(0, 40).join('\n'));
   console.error(`${errors.length} SEO errors across ${pages.size} pages.`);

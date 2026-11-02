@@ -1,0 +1,32 @@
+{
+  "catalogueStand": "2025-05-07",
+  "answersCheckedOn": "2026-11-02",
+  "sourceHash": "4f97ad8c882a762e6c27071c355f8bd76612d5bfec605ed7a2726a7ee20dafaf",
+  "files": {
+    "de": {
+      "path": "/downloads/leben-in-deutschland-fragen-und-antworten-de.pdf",
+      "bytes": 1979159,
+      "pages": 43
+    },
+    "ar": {
+      "path": "/downloads/leben-in-deutschland-fragen-und-antworten-ar.pdf",
+      "bytes": 3281031,
+      "pages": 91
+    },
+    "tr": {
+      "path": "/downloads/leben-in-deutschland-fragen-und-antworten-tr.pdf",
+      "bytes": 2839856,
+      "pages": 84
+    },
+    "ua": {
+      "path": "/downloads/leben-in-deutschland-fragen-und-antworten-ua.pdf",
+      "bytes": 2938142,
+      "pages": 85
+    },
+    "en": {
+      "path": "/downloads/leben-in-deutschland-fragen-und-antworten-en.pdf",
+      "bytes": 2737973,
+      "pages": 85
+    }
+  }
+}

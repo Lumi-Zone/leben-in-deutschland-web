@@ -25,7 +25,7 @@ const sitemapLocales = {
 const personalToolRoutes = new Set(['favorites', 'progress', 'focus']);
 const legalRoutesWithGermanAndEnglish = new Set(['datenschutz', 'terms-of-service', 'subscription-terms']);
 const localizedSupportLanguages = new Set(['de', 'en', 'tr', 'ar']);
-const seoLandingRoutes = new Set(['leben-in-deutschland-online', 'einbuergerungstest-online']);
+const seoLandingRoutes = new Set(['leben-in-deutschland-online', 'einbuergerungstest-online', 'einbuergerungstest-fragen-pdf']);
 const primaryBlogTopicRoutes = new Set([
   'einbuergerungstest',
   'lernen-vorbereitung',
