@@ -202,7 +202,7 @@ Based on the applicable laws of your country or state of residence in the US, yo
 
 **In Short:** We upload our own learning videos to our own YouTube channel using the YouTube API Services. We do not access data of website visitors, app users or other YouTube users.
 
-On our YouTube channel [Leben in Deutschland 2026](https://www.youtube.com/@einbuergerungstest-deutschland) we publish short learning videos about the questions of the naturalization test. To upload and schedule these videos we use the YouTube API Services through our own internal tool ("LiD Shorts Uploader").
+On our YouTube channel [Leben in Deutschland 2026](https://www.youtube.com/@einfach-leben-in-deutschland) we publish short learning videos about the questions of the naturalization test. To upload and schedule these videos we use the YouTube API Services through our own internal tool ("LiD Shorts Uploader").
 
 *   **Whose data:** The tool signs in only to our own YouTube channel. It does not collect, store or share data of visitors to this website, users of our app or other YouTube users.
 *   **What data:** It uses only the ID and name of our own channel (to make sure it uploads to the right channel) and the IDs and publishing times of the videos we upload. This information is stored only on our own computer and is not shared.

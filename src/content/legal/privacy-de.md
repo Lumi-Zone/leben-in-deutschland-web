@@ -198,7 +198,7 @@ Basierend auf den geltenden Gesetzen Ihres Landes oder Ihres Wohnsitzstaates in 
 
 **Kurz gesagt:** Wir laden unsere eigenen Lernvideos über die YouTube API Services auf unseren eigenen YouTube-Kanal hoch. Dabei greifen wir nicht auf Daten von Website-Besuchern, App-Nutzern oder anderen YouTube-Nutzern zu.
 
-Auf unserem YouTube-Kanal [Leben in Deutschland 2026](https://www.youtube.com/@einbuergerungstest-deutschland) veröffentlichen wir kurze Lernvideos zu den Fragen des Einbürgerungstests. Zum Hochladen und Planen dieser Videos nutzen wir die YouTube API Services mit einem eigenen, nur intern verwendeten Werkzeug („LiD Shorts Uploader“).
+Auf unserem YouTube-Kanal [Leben in Deutschland 2026](https://www.youtube.com/@einfach-leben-in-deutschland) veröffentlichen wir kurze Lernvideos zu den Fragen des Einbürgerungstests. Zum Hochladen und Planen dieser Videos nutzen wir die YouTube API Services mit einem eigenen, nur intern verwendeten Werkzeug („LiD Shorts Uploader“).
 
 - **Wessen Daten:** Das Werkzeug meldet sich ausschließlich bei unserem eigenen YouTube-Kanal an. Es erhebt, speichert oder teilt keine Daten von Besuchern dieser Website, Nutzern unserer App oder anderen YouTube-Nutzern.
 - **Welche Daten:** Verwendet werden nur die Kennung und der Name unseres eigenen Kanals (um sicherzustellen, dass auf den richtigen Kanal hochgeladen wird) sowie die Kennungen und Veröffentlichungszeiten der von uns hochgeladenen Videos. Diese Angaben werden nur auf unserem eigenen Rechner gespeichert und nicht weitergegeben.

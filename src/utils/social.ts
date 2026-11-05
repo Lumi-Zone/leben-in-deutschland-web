@@ -12,7 +12,7 @@ export const INSTAGRAM_URL = 'https://www.instagram.com/einbuergerungstest2026/'
  */
 export const FACEBOOK_URL = 'https://www.facebook.com/profile.php?id=61593945635647';
 /** Channel "Leben in Deutschland 2026" (UCwWpY5VnUcN3YIrDkmYDR2Q), where the question Shorts are published. */
-export const YOUTUBE_URL = 'https://www.youtube.com/@einbuergerungstest-deutschland';
+export const YOUTUBE_URL = 'https://www.youtube.com/@einfach-leben-in-deutschland';
 
 /** Analytics keeps these as a closed set so platform reports stay comparable. */
 export type SocialPlatform = 'x' | 'instagram' | 'facebook' | 'youtube';
