@@ -75,3 +75,11 @@ export function getQuestionExplanation(id: number, lang: string): QuestionExplan
     isFallback: !['de', 'en', 'tr'].includes(lang),
   };
 }
+
+// A question page is indexable only when its explanation is written in the page's own language.
+// The other translations repeat the catalogue text without one, so they stay noindex and out of
+// the sitemap; astro.config.mjs applies the same rule to the sitemap.
+export function hasOwnLanguageExplanation(id: number, lang: string): boolean {
+  const explanation = getQuestionExplanation(id, lang);
+  return Boolean(explanation && !explanation.isFallback && explanation.language === lang);
+}

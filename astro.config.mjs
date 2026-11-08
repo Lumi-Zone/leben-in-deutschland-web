@@ -1,5 +1,6 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
+import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 
 import react from '@astrojs/react';
@@ -38,7 +39,13 @@ const primaryBlogTopicRoutes = new Set([
   'kosten-finanzen',
   'bundeslaender-mehrsprachig',
 ]);
-const reactJsxDevRuntimeShim = fileURLToPath(new URL('./src/shims/react-jsx-dev-runtime.js', import.meta.url));
+// Question ids with an explanation written in each language. Mirrors hasOwnLanguageExplanation in
+// src/data/questionExplanations.ts: other translated question pages are noindex and stay out of the sitemap.
+const explainedQuestionIds = Object.fromEntries(['de', 'en', 'tr', 'ar', 'fa'].map((lang) => {
+  const content = JSON.parse(readFileSync(new URL(`./src/data/questionContent/${lang}.json`, import.meta.url), 'utf8'));
+  return [lang, new Set(Object.keys(content).filter((id) => content[id]))];
+}));
+const reactJsxDevRuntimeShim =fileURLToPath(new URL('./src/shims/react-jsx-dev-runtime.js', import.meta.url));
 const { WEEKLY, MONTHLY, YEARLY } = ChangeFreqEnum;
 
 /**
@@ -67,6 +74,10 @@ function shouldIncludeInSitemap(pageUrl) {
   if (pathname === '/') return false;
   if (!hasSupportedLang) return true;
   if (personalToolRoutes.has(route)) return false;
+  if (route === 'frage') {
+    const questionId = pathname.split('/').filter(Boolean)[2] ?? '';
+    if (!explainedQuestionIds[lang]?.has(questionId)) return false;
+  }
   // Topic and author pages outside German are noindexed navigation pages.
   if (route === 'blog' && lang !== 'de' && /^\/[a-z]{2}\/blog\/(topic|author)\//.test(`${pathname}/`)) return false;
   if (pathname.startsWith('/de/blog/topic/')) {

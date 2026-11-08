@@ -15,7 +15,7 @@ import {
 } from '../../../utils/questions';
 import { truncateText, getSeoLanguageMeta } from '../../../utils/seo';
 import { searchCopy, testNames, QUESTION_SOURCE_URL } from '../../../i18n/seo';
-import { explanationLabels, getQuestionExplanation } from '../../../data/questionExplanations';
+import { explanationLabels, getQuestionExplanation, hasOwnLanguageExplanation } from '../../../data/questionExplanations';
 import { deepDiveLabels, getQuestionDeepDive } from '../../../data/questionDeepDives';
 
 interface QuestionPageProps {
@@ -113,6 +113,9 @@ const questionUrl = new URL(getPath(`${lang}/frage/${question.id}/`), siteUrl).h
 const questionPreview = truncateText(questionText, 145);
 const questionExplanation = getQuestionExplanation(question.id, lang);
 const renderedExplanation = questionExplanation && !questionExplanation.isFallback ? questionExplanation : undefined;
+// Only translations with their own explanation are indexed; hreflang links stay within that set.
+const indexableLangs = SUPPORTED_LANGUAGES.filter((code) => hasOwnLanguageExplanation(question.id, code));
+const isIndexable = indexableLangs.includes(lang);
 const explanationCopy = explanationLabels[questionExplanation?.language ?? 'de'];
 const deepDive = renderedExplanation ? getQuestionDeepDive(question.id, lang) : undefined;
 const deepDiveCopy = lang === 'en' || lang === 'tr' ? deepDiveLabels[lang] : deepDiveLabels.de;
@@ -169,6 +172,9 @@ const learningResourceSchema = {
   image="/logo.png"
   ogType="article"
   jsonLd={[schema, breadcrumbSchema, learningResourceSchema]}
+  noindex={!isIndexable}
+  disableAlternates={!isIndexable}
+  alternateLangs={isIndexable ? indexableLangs : undefined}
   prevHref={question.prevId ? getPath(`${lang}/frage/${question.prevId}/`) : undefined}
   nextHref={question.nextId ? getPath(`${lang}/frage/${question.nextId}/`) : undefined}
   lang={lang}
